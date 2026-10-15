@@ -1,7 +1,8 @@
-# Forma
+# Diagrama
 
 Scientific diagram learning app for iPhone and iPad (SwiftUI + PencilKit),
-based on the *Forma Scientific Diagram Platform PRD* v1.2.
+based on the product requirements document v1.2 (drafted under the working
+name *Forma Scientific Diagram Platform PRD*).
 
 ## First version scope
 - Lessons: plant cell, leaf transverse section, water (H₂O) Lewis structure
