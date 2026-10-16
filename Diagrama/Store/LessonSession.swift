@@ -54,6 +54,12 @@ final class LessonSession {
         layers.append(InkLayer(drawing: drawing, canvasSide: canvasSide, image: drawing.lightImage(side: canvasSide)))
     }
 
+    func removeLayers(from index: Int) {
+        guard index < layers.count else { return }
+        layers.removeSubrange(index...)
+        cropCache = [:]
+    }
+
     /// A layer's ink re-rendered sharply for just the part of the diagram a zoomed step shows.
     func layerImage(_ i: Int, crop: CGRect, pointsWide: CGFloat) -> UIImage {
         let key = "\(i)|\(crop.debugDescription)|\(Int(pointsWide))"

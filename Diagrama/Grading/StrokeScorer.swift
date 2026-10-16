@@ -34,6 +34,13 @@ enum StrokeScorer {
     static let recallPrecisionPass = 0.5
 
     private static let sampleSpacing: CGFloat = 8
+    /// Shapes this small (diagram units) are dots: a quick dab draws them, as on paper.
+    static let dotSize: CGFloat = 24
+    /// Ink counted toward a part must span at least this share of the part, so ink near one
+    /// end (say, an arrow's tip) can't complete a whole small part like the arrowhead.
+    static let minimumSpan = 0.6
+
+    static func isDot(_ g: Polyline) -> Bool { max(g.bounds.width, g.bounds.height) <= dotSize }
 
     /// Tolerance in diagram units. Fingers and capacitive styluses get a wider band than
     /// pens (PRD §05), measured in on-screen points so it feels the same on every device.
@@ -76,7 +83,14 @@ enum StrokeScorer {
         for (g, guide) in guides.enumerated() {
             let samples = guide.resampled(spacing: sampleSpacing)
             let covered = samples.map { s in inkByGuide[g].contains { $0.distance(to: s) <= tolerance } }
-            let count = covered.filter { $0 }.count
+            var count = covered.filter { $0 }.count
+            if !isDot(guide) {
+                let extent = max(guide.bounds.width, guide.bounds.height)
+                let ink = CGRect.enclosing(inkByGuide[g])
+                let span = inkByGuide[g].isEmpty ? 0 : max(ink.width, ink.height)
+                let spanShare = Double(span / max(extent, 1)) / minimumSpan
+                if spanShare < 1 { count = Int(Double(count) * spanShare) }
+            }
             perGuide.append(samples.isEmpty ? 1 : Double(count) / Double(samples.count))
             untraced += zip(samples, covered).filter { !$0.1 }.map(\.0)
             longestGap = max(longestGap, CGFloat(longestRun(of: false, in: covered, wraps: guide.closed)) * guide.length / CGFloat(max(samples.count, 1)))

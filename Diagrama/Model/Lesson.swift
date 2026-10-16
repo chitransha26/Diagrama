@@ -122,7 +122,10 @@ struct Structure: Identifiable {
     /// The guides for a trace step, split into the pieces drawn one zoomed view at a time.
     func segments(_ part: TracePart) -> [(guides: [Polyline], focus: CGRect?)] {
         let all = part == .outline ? outlines : details
-        guard focusEach else { return [(all, focus)] }
+        guard focusEach else {
+            if let focus { return [(all, focus)] }
+            return Self.autoSegments(all)
+        }
         return (groups ?? outlines.indices.map { [$0] }).map { group in
             let members = group.map { outlines[$0] }
             let box = members.map(\.bounds).reduce(CGRect.null) { $0.union($1) }
@@ -133,6 +136,74 @@ struct Structure: Identifiable {
 
     var outline: Polyline { outlines[0] }
     var fillName: String { colorName ?? name }
+
+    /// A part smaller than this (diagram units) is zoomed into automatically.
+    static let smallPart: CGFloat = 220
+    /// Nearby small parts share one zoomed view, up to this size.
+    static let zoomWindow: CGFloat = 300
+    /// Smallest comfortable size for a closed shape and for a stroke, in diagram units at
+    /// zoom 1 on a small iPhone (24 pt and 14 pt on a 350 pt canvas).
+    static let closedMinimum: CGFloat = 69
+    static let openMinimum: CGFloat = 40
+
+    /// Splits guides into views without any per-lesson setup: parts big enough to trace
+    /// comfortably are drawn unzoomed together; small parts (an eye, an arrowhead, a dot)
+    /// are zoomed into, with neighbours sharing a view. Order follows the guides' order.
+    static func autoSegments(_ guides: [Polyline]) -> [(guides: [Polyline], focus: CGRect?)] {
+        guard !guides.isEmpty else { return [(guides, nil)] }
+        // 1. Cluster guides that touch or nearly touch (an arrow's line and head, an eye and mouth).
+        var parent = Array(guides.indices)
+        func find(_ i: Int) -> Int { parent[i] == i ? i : find(parent[i]) }
+        let padded = guides.map { $0.bounds.insetBy(dx: -15, dy: -15) }
+        for i in guides.indices {
+            for j in guides.indices where j > i && padded[i].intersects(padded[j]) {
+                parent[find(j)] = find(i)
+            }
+        }
+        var clusters: [[Int]] = []
+        var index: [Int: Int] = [:]
+        for i in guides.indices {
+            let root = find(i)
+            if let c = index[root] { clusters[c].append(i) } else { index[root] = clusters.count; clusters.append([i]) }
+        }
+        func box(_ c: [Int]) -> CGRect { c.map { guides[$0].bounds }.reduce(CGRect.null) { $0.union($1) } }
+        /// The zoom a cluster needs so its smallest part is comfortable for a finger.
+        func neededZoom(_ c: [Int]) -> CGFloat {
+            c.map { i -> CGFloat in
+                let g = guides[i]
+                guard !StrokeScorer.isDot(g) else { return 1 }
+                let size = max(g.bounds.width, g.bounds.height)
+                return (g.closed ? closedMinimum : openMinimum) / max(size, 1)
+            }.max() ?? 1
+        }
+        func zoomFor(_ b: CGRect) -> CGFloat { min(Viewport.maxZoom, DiagramSpace.size / (max(b.width, b.height) + 100)) }
+        let small = clusters.filter { max(box($0).width, box($0).height) < smallPart || neededZoom($0) > 1 }
+        guard !small.isEmpty else { return [(guides, nil)] }
+        // 2. Merge neighbouring small clusters into shared zoom windows, as long as the shared
+        //    view still zooms in enough for every part in it.
+        var windows: [[Int]] = []
+        for c in small {
+            if let w = windows.indices.first(where: {
+                let merged = windows[$0] + c
+                let u = box(merged)
+                return max(u.width, u.height) <= zoomWindow && zoomFor(u) >= neededZoom(merged)
+            }) {
+                windows[w] += c
+            } else {
+                windows.append(c)
+            }
+        }
+        let smallSet = Set(small.flatMap { $0 })
+        // 3. Big parts first, unzoomed; then each zoom window, in drawing order.
+        var result: [(order: Int, guides: [Polyline], focus: CGRect?)] = []
+        let big = clusters.flatMap { $0 }.filter { !smallSet.contains($0) }.sorted()
+        if !big.isEmpty { result.append((big[0], big.map { guides[$0] }, nil)) }
+        for w in windows {
+            let members = w.sorted()
+            result.append((members[0], members.map { guides[$0] }, box(members).insetBy(dx: -50, dy: -50)))
+        }
+        return result.sorted { $0.order < $1.order }.map { ($0.guides, $0.focus) }
+    }
 }
 
 struct Lesson: Identifiable {

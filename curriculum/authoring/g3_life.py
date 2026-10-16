@@ -4,11 +4,15 @@ from lib import save, straight_arrow
 
 
 def fish(x, y, length=70, facing=1):
-    """A simple fish: body plus tail. facing 1 = swimming right, -1 = left."""
-    h = length * 0.38
-    tail_x = x - facing * length * 0.5
-    return [{"ellipse": [x, y, length * 0.5, h * 0.5]},
-            {"polygon": [tail_x, y, tail_x - facing * length * 0.3, y - h * 0.5, tail_x - facing * length * 0.3, y + h * 0.5]}]
+    """A fish: a tapered body with a pointed nose, and a forked tail.
+    facing 1 = swimming right, -1 = left."""
+    f, L, h = facing, length, length * 0.42
+    nose, joint = x + f * 0.5 * L, x - f * 0.38 * L
+    body = (f"M {nose} {y} C {x + f * 0.3 * L} {y - 0.55 * h} {x - f * 0.2 * L} {y - 0.6 * h} {joint} {y} "
+            f"C {x - f * 0.2 * L} {y + 0.6 * h} {x + f * 0.3 * L} {y + 0.55 * h} {nose} {y} Z")
+    tail_back = x - f * 0.66 * L
+    tail = [joint, y, tail_back, y - 0.5 * h, x - f * 0.56 * L, y, tail_back, y + 0.5 * h]
+    return [{"path": body}, {"polygon": [round(v, 1) for v in tail]}]
 
 
 # ---------------------------------------------------------------- How a fossil forms
@@ -305,16 +309,16 @@ inherit = {
 }
 
 # ---------------------------------------------------------------- School of fish
-school_positions = [(560, 380), (660, 360), (610, 450), (710, 440), (560, 520), (660, 530), (760, 520), (710, 610), (610, 600)]
+school_positions = [(600, 360), (770, 380), (650, 500), (820, 520), (600, 640), (770, 660)]
 school = {
     "id": "g3-school-of-fish", "title": "Animals in groups: a school of fish", "grade": "3", "subject": "Life science",
     "standard": "3-LS2-1", "minutes": 7,
     "keywords": ["group", "school", "fish", "predator", "survival", "behavior", "herd", "flock"],
     "structures": [
-        {"id": "school", "name": "school of fish", "pen": "fine", "outlines": sum((fish(x, y, 70, 1) for x, y in school_positions), [])},
+        {"id": "school", "name": "school of fish", "pen": "fine", "outlines": sum((fish(x, y, 120, 1) for x, y in school_positions), [])},
         {"id": "predator", "name": "predator", "pen": "bold", "outlines": fish(250, 500, 260, 1),
-         "details": [{"circle": [340, 486, 8]}, {"line": [362, 508, 380, 504]}]},
-        {"id": "escape", "name": "escape arrows", "outlines": straight_arrow(820, 360, 920, 280) + straight_arrow(830, 600, 930, 690)},
+         "details": [{"circle": [330, 490, 9]}, {"line": [352, 512, 376, 506]}]},
+        {"id": "escape", "name": "escape arrows", "outlines": straight_arrow(870, 300, 950, 230) + straight_arrow(880, 740, 950, 810)},
     ],
     "steps": [
         {"type": "trace", "title": "School of fish", "structure": "school", "instruction": "Trace every small fish in the group.",

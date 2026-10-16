@@ -125,6 +125,23 @@ struct StrokeScorerTests {
         #expect(!StrokeScorer.isComplete(r))
     }
 
+    @Test func inkAtAnArrowTipDoesNotCompleteTheArrowhead() {
+        let line = Shapes.line(CGPoint(x: 100, y: 500), CGPoint(x: 400, y: 500))
+        let head = Polyline(points: [CGPoint(x: 370, y: 480), CGPoint(x: 400, y: 500), CGPoint(x: 370, y: 520)], closed: false)
+        let traced = [line.resampled(spacing: 4)]
+        let r = StrokeScorer.score(strokes: traced, guides: [line, head], tolerance: 32)
+        #expect(!StrokeScorer.isComplete(r))
+        let both = traced + [head.resampled(spacing: 3)]
+        #expect(StrokeScorer.isComplete(StrokeScorer.score(strokes: both, guides: [line, head], tolerance: 32)))
+    }
+
+    @Test func aDabDrawsADot() {
+        let dots = [Shapes.circle(100, 100, 7), Shapes.circle(140, 100, 7)]
+        let r = StrokeScorer.score(strokes: [[CGPoint(x: 100, y: 100), CGPoint(x: 101, y: 101)]], guides: dots, tolerance: 32)
+        #expect(r.guideCoverage[0] >= StrokeScorer.guidePass)
+        #expect(r.guideCoverage[1] == 0)
+    }
+
     @Test func pencilToleranceIsTighterThanFinger() {
         #expect(StrokeScorer.tolerance(isPencil: true, scale: 0.4) < StrokeScorer.tolerance(isPencil: false, scale: 0.4))
     }
@@ -411,5 +428,30 @@ struct LessonFileTests {
         #expect(lines.count == 2)
         #expect(lines[0].closed && !lines[1].closed)
         #expect(abs(lines[1].points.last!.x - 200) < 0.5 && abs(lines[1].points.last!.y - 200) < 0.5)
+    }
+}
+
+struct TraceabilityTests {
+    /// Every traced shape must be comfortable to draw with a finger on a small iPhone at the
+    /// zoom the app shows it: closed shapes at least 24 pt, strokes at least 14 pt. Dots are dabbed.
+    @Test func everyPartIsBigEnoughToTrace() {
+        let canvasPoints: CGFloat = 350
+        let minimum: CGFloat = 24
+        var tooSmall: [String] = []
+        for lesson in Catalog.lessons {
+            for step in lesson.steps {
+                guard case .trace(let id, let part) = step.kind else { continue }
+                for segment in lesson.structure(id).segments(part) {
+                    let zoom = Viewport(focus: segment.focus).zoom
+                    for g in segment.guides where !StrokeScorer.isDot(g) {
+                        let size = max(g.bounds.width, g.bounds.height) * canvasPoints / 1000 * zoom
+                        if size < (g.closed ? minimum : 14) {
+                            tooSmall.append("\(lesson.id) · \(step.title): \(Int(size)) pt")
+                        }
+                    }
+                }
+            }
+        }
+        #expect(tooSmall.isEmpty, "Too small to trace:\n\(Set(tooSmall).sorted().joined(separator: "\n"))")
     }
 }

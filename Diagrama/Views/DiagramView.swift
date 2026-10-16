@@ -206,6 +206,7 @@ struct Viewport {
     let origin: CGPoint
 
     static let whole = Viewport(zoom: 1, origin: .zero)
+    static let maxZoom: CGFloat = 4
 
     init(zoom: CGFloat, origin: CGPoint) {
         self.zoom = zoom
@@ -214,7 +215,7 @@ struct Viewport {
 
     init(focus: CGRect?) {
         guard let f = focus else { self = .whole; return }
-        self.init(center: CGPoint(x: f.midX, y: f.midY), zoom: min(3, DiagramSpace.size / max(f.width, f.height, 1)))
+        self.init(center: CGPoint(x: f.midX, y: f.midY), zoom: min(Viewport.maxZoom, DiagramSpace.size / max(f.width, f.height, 1)))
     }
 
     init(center: CGPoint, zoom: CGFloat) {

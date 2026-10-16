@@ -99,17 +99,16 @@ struct TraceStepView: View {
     @State private var segment = 0
     @State private var segmentStart = 0
     @State private var segmentScores: [Double] = []
+    @State private var segmentSmoothness: [Double] = []
     @State private var advancing = false
+    /// Layers already in the session when this step began, so Restart can drop this step's.
+    @State private var layersAtStart: Int?
 
     private var structure: Structure { session.lesson.structure(structureID) }
     private var segments: [(guides: [Polyline], focus: CGRect?)] { structure.segments(part) }
     private var guides: [Polyline] { segments[segment].guides }
-    /// Every piece shares the first piece's zoom, so the canvas's coordinates never change.
-    private var viewport: Viewport {
-        let first = Viewport(focus: segments[0].focus)
-        guard let f = segments[segment].focus, first.zoom > 1 else { return first }
-        return Viewport(center: CGPoint(x: f.midX, y: f.midY), zoom: first.zoom)
-    }
+    /// Each piece is drawn on its own layer, so each can have its own zoom.
+    private var viewport: Viewport { Viewport(focus: segments[segment].focus) }
     private var needsRestart: Bool {
         guard let r = result, !passed else { return false }
         return r.precision < StrokeScorer.restartBelow && r.coverage > 0.2
@@ -172,14 +171,17 @@ struct TraceStepView: View {
             ContinueButton(enabled: passed) {
                 session.addLayer(drawing, canvasSide: fullSide)
                 session.recordTrace(TraceRecord(
-                    match: segmentScores.isEmpty ? 0 : segmentScores.reduce(0, +) / Double(segmentScores.count),
-                    smoothness: StrokeScorer.smoothness(strokes: drawing.strokes.flatMap(\.visibleScreenSegments)),
+                    match: average(segmentScores),
+                    smoothness: average(segmentSmoothness),
                     firstTry: !corrected
                 ))
                 session.advance()
             }
         }
-        .onAppear { playDemo(after: 0.4) }
+        .onAppear {
+            if layersAtStart == nil { layersAtStart = session.layers.count }
+            playDemo(after: 0.4)
+        }
         #if DEBUG
         .task(id: segment) { await autodrawForTesting() }
         #endif
@@ -242,14 +244,17 @@ struct TraceStepView: View {
         result = r
         guard !advancing, StrokeScorer.isComplete(r) else { return }
         segmentScores.append(r.score)
+        segmentSmoothness.append(StrokeScorer.smoothness(strokes: drawing.strokes.flatMap(\.visibleScreenSegments)))
         if segment + 1 < segments.count {
             advancing = true
             // Move the zoom on to the next piece, as ArtWorkout does between parts.
             Task { @MainActor in
                 try? await Task.sleep(for: .seconds(0.5))
+                session.addLayer(drawing, canvasSide: fullSide)
                 withAnimation(.easeInOut(duration: 0.45)) {
                     segment += 1
-                    segmentStart = drawing.strokes.count
+                    drawing = PKDrawing()
+                    segmentStart = 0
                     result = nil
                 }
                 advancing = false
@@ -271,11 +276,17 @@ struct TraceStepView: View {
         evaluate()
     }
 
+    private func average(_ v: [Double]) -> Double {
+        v.isEmpty ? 0 : v.reduce(0, +) / Double(v.count)
+    }
+
     private func restart() {
+        if let start = layersAtStart { session.removeLayers(from: start) }
         drawing = PKDrawing()
         segment = 0
         segmentStart = 0
         segmentScores = []
+        segmentSmoothness = []
         result = nil
         corrected = true
         erasing = false
