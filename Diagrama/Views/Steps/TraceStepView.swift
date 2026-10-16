@@ -146,10 +146,10 @@ struct TraceStepView: View {
                         }
                         InkCanvas(
                             drawing: $drawing,
-                            tool: erasing ? PKEraserTool(.vector) : structure.pen.tool(scale: full / DiagramSpace.size),
+                            tool: erasing ? Eraser.tool : structure.pen.tool(scale: full / DiagramSpace.size),
                             isEnabled: !passed
                         ) { added, isPencil in
-                            if added { lastWasPencil = isPencil } else { corrected = true }
+                            if erasing { corrected = true } else if added { lastWasPencil = isPencil }
                             evaluate()
                         }
                     }
@@ -164,7 +164,7 @@ struct TraceStepView: View {
                 session.addLayer(drawing, canvasSide: fullSide)
                 session.recordTrace(TraceRecord(
                     match: segmentScores.isEmpty ? 0 : segmentScores.reduce(0, +) / Double(segmentScores.count),
-                    smoothness: StrokeScorer.smoothness(strokes: drawing.strokes.map(\.screenPoints)),
+                    smoothness: StrokeScorer.smoothness(strokes: drawing.strokes.flatMap(\.visibleScreenSegments)),
                     firstTry: !corrected
                 ))
                 session.advance()
@@ -217,7 +217,7 @@ struct TraceStepView: View {
     private func evaluate() {
         guard fullSide > 0 else { return }
         let scale = fullSide / DiagramSpace.size
-        let pts = drawing.strokes.dropFirst(segmentStart).map { $0.diagramPoints(scale: scale) }
+        let pts = drawing.strokes.dropFirst(segmentStart).flatMap { $0.diagramSegments(scale: scale) }
         guard !pts.isEmpty else { result = nil; return }
         let r = StrokeScorer.score(
             strokes: pts, guides: guides,
@@ -337,7 +337,7 @@ struct RecallStepView: View {
                     }
                     InkCanvas(
                         drawing: $drawing,
-                        tool: erasing ? PKEraserTool(.vector) : Pen.pen.tool(scale: side / DiagramSpace.size),
+                        tool: erasing ? Eraser.tool : Pen.pen.tool(scale: side / DiagramSpace.size),
                         isEnabled: !passed
                     ) { added, isPencil in
                         if added { lastWasPencil = isPencil }
@@ -391,7 +391,7 @@ struct RecallStepView: View {
         guard side > 0 else { return }
         let scale = side / DiagramSpace.size
         let r = StrokeScorer.scoreRecall(
-            strokes: drawing.strokes.map { $0.diagramPoints(scale: scale) }, guides: guides,
+            strokes: drawing.strokes.flatMap { $0.diagramSegments(scale: scale) }, guides: guides,
             tolerance: StrokeScorer.tolerance(isPencil: lastWasPencil, scale: scale)
         )
         tries += 1

@@ -85,18 +85,25 @@ final class TouchTypeRecorder: UIGestureRecognizer {
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent) { state = .failed }
 }
 
+/// The eraser rubs out just the ink it passes over, like a real eraser, rather than
+/// deleting whole strokes.
+enum Eraser {
+    static let tool = PKEraserTool(.bitmap, width: 16)
+}
+
 extension PKStroke {
-    /// The stroke's points in on-screen points.
-    var screenPoints: [CGPoint] {
-        path.interpolatedPoints(by: .distance(3)).map { $0.location.applying(transform) }
+    /// The parts of the stroke still visible, in on-screen points. Partly erased strokes are
+    /// masked rather than cut, so only the unmasked ranges count.
+    var visibleScreenSegments: [[CGPoint]] {
+        let ranges: [ClosedRange<CGFloat>?] = mask == nil ? [nil] : maskedPathRanges.map { $0 }
+        return ranges
+            .map { r in path.interpolatedPoints(in: r, by: .distance(3)).map { $0.location.applying(transform) } }
+            .filter { !$0.isEmpty }
     }
 
-    /// The stroke's points in diagram space.
-    func diagramPoints(scale: CGFloat) -> [CGPoint] {
-        path.interpolatedPoints(by: .distance(3)).map {
-            let p = $0.location.applying(transform)
-            return CGPoint(x: p.x / scale, y: p.y / scale)
-        }
+    /// The visible parts of the stroke in diagram space.
+    func diagramSegments(scale: CGFloat) -> [[CGPoint]] {
+        visibleScreenSegments.map { $0.map { CGPoint(x: $0.x / scale, y: $0.y / scale) } }
     }
 }
 

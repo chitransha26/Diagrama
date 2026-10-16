@@ -27,7 +27,7 @@ struct LewisDrawStepView: View {
                     PrintedAtoms(atoms: step.target.atoms, positions: step.positions)
                     InkCanvas(
                         drawing: $drawing,
-                        tool: erasing ? PKEraserTool(.vector) : Pen.pen.tool(scale: side / DiagramSpace.size),
+                        tool: erasing ? Eraser.tool : Pen.pen.tool(scale: side / DiagramSpace.size),
                         isEnabled: !passed
                     ) { _, _ in issues = [] }
                 }
@@ -66,7 +66,7 @@ struct LewisDrawStepView: View {
         guard side > 0 else { return }
         let scale = side / DiagramSpace.size
         let reading = LewisInterpreter.read(
-            strokes: drawing.strokes.map { $0.diagramPoints(scale: scale) },
+            strokes: drawing.strokes.flatMap { $0.diagramSegments(scale: scale) },
             atoms: step.target.atoms, positions: step.positions
         )
         let found = reading.notes + ChemistryValidator.issues(in: reading.molecule, target: step.target)
