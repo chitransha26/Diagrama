@@ -23,6 +23,8 @@ struct LessonView: View {
             if session.finished {
                 ResultsView(session: session) { dismiss() }
             } else {
+                // Drawing steps keep all guidance in one place, under the canvas.
+                if !session.step.isDrawing {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(session.step.title).font(.title2.bold())
                     // Always two lines tall, so the canvas stays put from step to step.
@@ -34,6 +36,8 @@ struct LessonView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal)
                 .padding(.top, 4)
+
+                }
 
                 // No transition: two live drawing canvases at once would split the learner's strokes.
                 stepView

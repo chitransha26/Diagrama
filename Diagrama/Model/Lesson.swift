@@ -142,6 +142,11 @@ struct LessonStep: Identifiable {
     let kind: StepKind
     /// What the part just drawn is and does, shown when the learner finishes drawing it.
     var note: PartNote? = nil
+
+    var isDrawing: Bool {
+        if case .trace = kind { return true }
+        return false
+    }
 }
 
 /// A short study note about a drawn part: its function, and a tip to help remember it.

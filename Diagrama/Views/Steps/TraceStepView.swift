@@ -213,11 +213,6 @@ struct TraceStepView: View {
             if passed, let note = session.step.note {
                 NoteCard(title: session.step.title, note: note)
                     .transition(.scale(scale: 0.85, anchor: .bottom).combined(with: .opacity))
-            } else {
-                drawingLabel
-            }
-            if passed && session.step.note != nil {
-                EmptyView()
             } else if needsRestart {
                 FeedbackRow(kind: .wrong, text: "More of your line is off the guide than on it. Restart this step and follow the dashed line.")
                 Button("Restart step", systemImage: "arrow.counterclockwise", action: restart)
@@ -225,24 +220,13 @@ struct TraceStepView: View {
             } else if let r = result {
                 FeedbackRow(kind: passed ? .correct : .info, text: message(for: r))
             } else {
-                FeedbackRow(kind: .info, text: "Start at the blue dot and follow the dashed line.")
+                FeedbackRow(kind: .info, text: session.step.instruction)
             }
         }
         }
         .scrollBounceBehavior(.basedOnSize)
         // Fixed height so the canvas never shifts or resizes under the learner's hand.
         .frame(height: 156, alignment: .top)
-    }
-
-    /// Names the part while it is being drawn, so learners connect the shape to its name.
-    private var drawingLabel: some View {
-        HStack(spacing: 6) {
-            Image(systemName: "pencil.tip").foregroundStyle(Theme.indigo)
-            Text("You're drawing:").foregroundStyle(.secondary)
-            Text(session.step.title).bold()
-        }
-        .font(.subheadline)
-        .accessibilityElement(children: .combine)
     }
 
     private func evaluate() {
