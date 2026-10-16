@@ -97,12 +97,7 @@ struct ResultsView: View {
     }
 
     @MainActor private func renderSnapshot() -> UIImage? {
-        let content: AnyView
-        if let m = session.finalMolecule {
-            content = AnyView(MoleculeCanvas(molecule: m.molecule, positions: m.positions))
-        } else {
-            content = AnyView(LearnerDiagram(session: session))
-        }
+        let content = LearnerDiagram(session: session)
         let renderer = ImageRenderer(content: content.frame(width: 600, height: 600))
         renderer.scale = 2
         return renderer.uiImage

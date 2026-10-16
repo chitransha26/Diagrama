@@ -1,11 +1,6 @@
 import PencilKit
 import SwiftUI
 
-struct MoleculeSnapshot {
-    let molecule: Molecule
-    let positions: [CGPoint]
-}
-
 /// One finished step's ink. Like ArtWorkout, every step draws on its own layer, created for
 /// the learner, so erasing in one step can't damage another. Learners never see layers.
 struct InkLayer {
@@ -46,7 +41,6 @@ final class LessonSession {
     /// Topics answered wrongly on the first try.
     private(set) var review: [String] = []
     var recallPassed = false
-    var finalMolecule: MoleculeSnapshot?
 
     init(lesson: Lesson) {
         self.lesson = lesson

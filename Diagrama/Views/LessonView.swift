@@ -79,8 +79,8 @@ struct LessonView: View {
             ChoiceStepView(session: session, step: step)
         case .order(let step):
             OrderStepView(session: session, step: step)
-        case .build(let step):
-            BuildStepView(session: session, step: step)
+        case .drawLewis(let step):
+            LewisDrawStepView(session: session, step: step)
         }
     }
 }
@@ -94,6 +94,7 @@ struct LegendSheet: View {
                 Section {
                     Text(lesson.colorMode.explanation)
                 }
+                if !lesson.legend.isEmpty {
                 Section("Legend") {
                     ForEach(lesson.legend) { entry in
                         HStack(spacing: 12) {
@@ -109,6 +110,7 @@ struct LegendSheet: View {
                         }
                         .accessibilityElement(children: .combine)
                     }
+                }
                 }
             }
             .navigationTitle(lesson.colorMode.title)

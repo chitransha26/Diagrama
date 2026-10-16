@@ -29,13 +29,13 @@ enum Subject: String, CaseIterable, Identifiable {
 enum ColorMode {
     /// Colors as seen in a fresh, unstained sample under a light microscope.
     case lightMicroscope
-    /// A naming convention with no real-world color (e.g. atom colors).
-    case elementConvention
+    /// Plain ink, for representations with no real-world color (e.g. Lewis structures).
+    case inkOnly
 
     var title: String {
         switch self {
         case .lightMicroscope: "Microscope colors"
-        case .elementConvention: "Element colors"
+        case .inkOnly: "Ink only"
         }
     }
 
@@ -43,8 +43,8 @@ enum ColorMode {
         switch self {
         case .lightMicroscope:
             "These are the colors you'd see in a fresh, unstained sample under a light microscope. Most parts are nearly clear; the green comes from chloroplasts."
-        case .elementConvention:
-            "Chemists use these colors to tell elements apart: red for oxygen, white for hydrogen. Atoms don't really have colors, and red here never means a mistake."
+        case .inkOnly:
+            "Lewis structures are drawn in plain ink. Atoms have no real color, so nothing is colored in this lesson."
         }
     }
 }
@@ -77,14 +77,18 @@ struct Structure: Identifiable {
     /// Zoom into each outline in turn (with the details inside it), for small repeated
     /// parts such as chloroplasts.
     var focusEach = false
+    /// With `focusEach`, outlines drawn together in one zoomed view (e.g. the three strokes
+    /// of each letter H). Defaults to one outline per view.
+    var groups: [[Int]]? = nil
 
     /// The guides for a trace step, split into the pieces drawn one zoomed view at a time.
     func segments(_ part: TracePart) -> [(guides: [Polyline], focus: CGRect?)] {
         let all = part == .outline ? outlines : details
         guard focusEach else { return [(all, focus)] }
-        return outlines.map { o in
-            let box = o.bounds
-            let guides = part == .outline ? [o] : details.filter { box.contains(CGPoint(x: $0.bounds.midX, y: $0.bounds.midY)) }
+        return (groups ?? outlines.indices.map { [$0] }).map { group in
+            let members = group.map { outlines[$0] }
+            let box = members.map(\.bounds).reduce(CGRect.null) { $0.union($1) }
+            let guides = part == .outline ? members : details.filter { box.contains(CGPoint(x: $0.bounds.midX, y: $0.bounds.midY)) }
             return (guides, box.insetBy(dx: -60, dy: -60))
         }
     }
@@ -146,7 +150,8 @@ enum StepKind {
     case label(LabelStep)
     case choice(ChoiceStep)
     case order(OrderStep)
-    case build(BuildStep)
+    /// Draw a Lewis structure's bonds and lone pairs freehand around printed atom symbols.
+    case drawLewis(LewisStep)
     /// Draw the listed structures from memory, with no guide.
     case recall(structures: [String])
 }
@@ -200,9 +205,9 @@ struct OrderStep {
     let hint: String
 }
 
-struct BuildStep {
+struct LewisStep {
     let target: MoleculeTarget
-    /// Where each atom sits, in diagram space. Positions don't affect grading.
+    /// Where each printed atom symbol sits, in diagram space. Grading uses only which atoms
+    /// the learner's lines and dots belong to, never their exact positions.
     let positions: [CGPoint]
-    var isRecall = false
 }

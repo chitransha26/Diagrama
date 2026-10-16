@@ -155,7 +155,7 @@ struct ContentTests {
                 case .label(let l):
                     for t in l.targets { #expect(l.vocabulary.contains(t.answer), "\(lesson.id) missing \(t.answer)") }
                 case .choice(let c): #expect(c.options.filter(\.correct).count == 1, "\(lesson.id): \(c.question)")
-                case .build(let b): #expect(b.positions.count == b.target.atoms.count)
+                case .drawLewis(let l): #expect(l.positions.count == l.target.atoms.count)
                 case .order(let o): #expect(o.items.count > 1)
                 }
             }
@@ -225,5 +225,80 @@ struct ProgressStoreTests {
         let dir = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
         ProgressStore(directory: dir).add(record(true, daysAgo: 0), image: nil)
         #expect(ProgressStore(directory: dir).attempts.count == 1)
+    }
+}
+
+struct LewisInterpreterTests {
+    private let atoms: [Element] = [.O, .H, .H]
+    private let positions = [CGPoint(x: 470, y: 560), CGPoint(x: 720, y: 380), CGPoint(x: 250, y: 400)]
+
+    private func line(_ a: CGPoint, _ b: CGPoint) -> [CGPoint] {
+        (0...20).map { a.lerp(to: b, CGFloat($0) / 20) }
+    }
+
+    private func dot(_ p: CGPoint) -> [CGPoint] {
+        [p, CGPoint(x: p.x + 3, y: p.y + 2)]
+    }
+
+    /// Bonds drawn from just outside one symbol to just outside the other.
+    private func bond(_ i: Int, _ j: Int) -> [CGPoint] {
+        let a = positions[i], b = positions[j]
+        return line(a.lerp(to: b, 0.25), a.lerp(to: b, 0.75))
+    }
+
+    private var lonePairs: [[CGPoint]] {
+        let o = positions[0]
+        return [dot(CGPoint(x: o.x - 15, y: o.y + 90)), dot(CGPoint(x: o.x + 15, y: o.y + 90)),
+                dot(CGPoint(x: o.x - 90, y: o.y + 15)), dot(CGPoint(x: o.x - 90, y: o.y - 15))]
+    }
+
+    private func grade(_ strokes: [[CGPoint]]) -> [String] {
+        let r = LewisInterpreter.read(strokes: strokes, atoms: atoms, positions: positions)
+        return r.notes + ChemistryValidator.issues(in: r.molecule, target: WaterLesson.water)
+    }
+
+    @Test func correctDrawingPasses() {
+        #expect(grade([bond(0, 1), bond(0, 2)] + lonePairs).isEmpty)
+    }
+
+    @Test func strokeDirectionDoesNotMatter() {
+        let reversed = [Array(bond(0, 1).reversed()), bond(0, 2)] + lonePairs
+        #expect(grade(reversed).isEmpty)
+    }
+
+    @Test func missingLonePairIsCaught() {
+        let issues = grade([bond(0, 1), bond(0, 2)] + lonePairs.prefix(2))
+        #expect(issues.contains { $0.contains("8 valence electrons") })
+    }
+
+    @Test func oddDotIsNamed() {
+        let issues = grade([bond(0, 1), bond(0, 2)] + lonePairs.prefix(3))
+        #expect(issues.first?.contains("odd number of dots around oxygen") == true)
+    }
+
+    @Test func twoLinesMakeADoubleBond() {
+        let r = LewisInterpreter.read(strokes: [bond(0, 1), bond(0, 1)], atoms: atoms, positions: positions)
+        #expect(r.molecule.bondOrder(0, 1) == 2)
+    }
+
+    @Test func hydrogenToHydrogenLineIsWrong() {
+        let issues = grade([bond(0, 1), bond(0, 2), bond(1, 2)] + lonePairs)
+        #expect(issues.contains { $0.contains("not bonded in water") })
+    }
+
+    @Test func strayLineIsReported() {
+        let stray = line(CGPoint(x: 60, y: 900), CGPoint(x: 300, y: 900))
+        let r = LewisInterpreter.read(strokes: [bond(0, 1), bond(0, 2), stray] + lonePairs, atoms: atoms, positions: positions)
+        #expect(r.notes.contains { $0.contains("doesn't run from one atom to another") })
+    }
+
+    @Test func guidedLessonGuidesFormACorrectStructure() {
+        // The traced bonds and lone pairs in the guided steps must themselves read as correct water.
+        let lesson = WaterLesson.lesson
+        let strokes = (lesson.structure("bonds").outlines + lesson.structure("lonePairs").outlines).map(\.points)
+        let r = LewisInterpreter.read(strokes: strokes, atoms: atoms,
+                                      positions: [CGPoint(x: 500, y: 400), CGPoint(x: 300, y: 580), CGPoint(x: 700, y: 580)])
+        #expect(r.notes.isEmpty)
+        #expect(ChemistryValidator.issues(in: r.molecule, target: WaterLesson.water).isEmpty)
     }
 }
