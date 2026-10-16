@@ -44,6 +44,15 @@ struct LearnView: View {
             }
             .navigationTitle("Diagrama")
             .searchable(text: $query, prompt: "Search, e.g. plasma membrane")
+            #if DEBUG
+            .onAppear {
+                // `-openLesson <id>` opens a lesson straight away, for testing. Debug builds only.
+                let args = ProcessInfo.processInfo.arguments
+                if active == nil, let i = args.firstIndex(of: "-openLesson"), i + 1 < args.count {
+                    active = Catalog.lesson(id: args[i + 1])
+                }
+            }
+            #endif
             .fullScreenCover(item: $active) { lesson in
                 LessonView(lesson: lesson)
                     .environment(store)

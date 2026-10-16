@@ -200,8 +200,12 @@ struct TraceStepView: View {
     #endif
 
     @ViewBuilder private var feedback: some View {
+        ScrollView {
         VStack(alignment: .leading, spacing: 8) {
-            if needsRestart {
+            if passed, let note = session.step.note {
+                NoteCard(title: session.step.title, note: note)
+                    .transition(.opacity.combined(with: .move(edge: .bottom)))
+            } else if needsRestart {
                 FeedbackRow(kind: .wrong, text: "More of your line is off the guide than on it. Restart this step and follow the dashed line.")
                 Button("Restart step", systemImage: "arrow.counterclockwise", action: restart)
                     .buttonStyle(.bordered)
@@ -211,8 +215,10 @@ struct TraceStepView: View {
                 FeedbackRow(kind: .info, text: "Start at the blue dot and follow the dashed line.")
             }
         }
-        // Fixed height so the canvas never shifts under the learner's hand.
-        .frame(height: 92, alignment: .top)
+        }
+        .scrollBounceBehavior(.basedOnSize)
+        // Fixed height so the canvas never shifts or resizes under the learner's hand.
+        .frame(height: 156, alignment: .top)
     }
 
     private func evaluate() {

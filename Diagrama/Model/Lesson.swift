@@ -140,6 +140,14 @@ struct LessonStep: Identifiable {
     let title: String
     let instruction: String
     let kind: StepKind
+    /// What the part just drawn is and does, shown when the learner finishes drawing it.
+    var note: PartNote? = nil
+}
+
+/// A short study note about a drawn part: its function, and a tip to help remember it.
+struct PartNote {
+    let text: String
+    var remember: String? = nil
 }
 
 enum StepKind {

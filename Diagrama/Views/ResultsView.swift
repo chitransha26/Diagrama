@@ -57,6 +57,8 @@ struct ResultsView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                 }
 
+                LessonNotes(lesson: session.lesson)
+
                 ContinueButton(title: "Done", action: onDone)
             }
             .padding()

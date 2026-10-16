@@ -225,6 +225,18 @@ struct ContentTests {
         }
     }
 
+    @Test func everyDrawingStepHasANote() {
+        for lesson in Catalog.lessons {
+            for step in lesson.steps {
+                if case .trace = step.kind {
+                    #expect(step.note != nil, "\(lesson.id): \(step.title) has no note")
+                    let length = (step.note?.text.count ?? 0) + (step.note?.remember?.count ?? 0)
+                    #expect(length <= 180, "\(lesson.id): \(step.title) note is too long for the card")
+                }
+            }
+        }
+    }
+
     @Test func searchFindsSynonyms() {
         #expect(Catalog.lessons.filter { $0.matches("plasma membrane") }.map(\.id) == ["plant-cell"])
         #expect(Catalog.lessons.filter { $0.matches("H2O") }.map(\.id) == ["water-lewis"])

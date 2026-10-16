@@ -87,6 +87,9 @@ private struct GalleryDetail: View {
                       systemImage: attempt.independent ? "checkmark.circle" : "circle.lefthalf.filled")
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(Theme.indigo)
+                if let lesson = Catalog.lesson(id: attempt.lessonID) {
+                    LessonNotes(lesson: lesson).padding(.top, 8)
+                }
             }
             .padding()
         }

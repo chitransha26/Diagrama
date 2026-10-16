@@ -67,13 +67,17 @@ enum WaterLesson {
                 ]
             ))),
             LessonStep(title: "Oxygen", instruction: "Trace the O. Oxygen goes in the middle because it can form two bonds.",
-                       kind: .trace(structure: "oxygen", part: .outline)),
+                       kind: .trace(structure: "oxygen", part: .outline),
+                       note: PartNote(text: "Oxygen has 6 valence electrons and needs 2 more to fill its outer shell, so it forms 2 bonds. That's why it goes in the center.", remember: "O for oxygen; it's in group 16.")),
             LessonStep(title: "Hydrogens", instruction: "Trace each H. Hydrogen can form only one bond, so it goes on the outside.",
-                       kind: .trace(structure: "hydrogens", part: .outline)),
+                       kind: .trace(structure: "hydrogens", part: .outline),
+                       note: PartNote(text: "Hydrogen has 1 electron and needs just 1 more, so it forms only one bond and always sits on the outside.")),
             LessonStep(title: "Bonds", instruction: "Draw a line from the O to each H. Each line is a pair of shared electrons.",
-                       kind: .trace(structure: "bonds", part: .outline)),
+                       kind: .trace(structure: "bonds", part: .outline),
+                       note: PartNote(text: "Each line is a covalent bond: a pair of electrons shared between two atoms, one from each.", remember: "One line = two shared electrons.")),
             LessonStep(title: "Lone pairs", instruction: "Add oxygen's two lone pairs, two dots each. Now oxygen has 8 electrons around it.",
-                       kind: .trace(structure: "lonePairs", part: .outline)),
+                       kind: .trace(structure: "lonePairs", part: .outline),
+                       note: PartNote(text: "These 4 electrons belong to oxygen alone. With 2 bonds and 2 lone pairs, oxygen has a full octet of 8.", remember: "Lone pairs push the hydrogens together, so water is bent.")),
             LessonStep(title: "Why bent?", instruction: "Connect your drawing to the molecule's shape.", kind: .choice(ChoiceStep(
                 question: "Water's H–O–H angle is about 104.5°, not 180°. Why?",
                 options: [
