@@ -28,7 +28,8 @@ struct LewisDrawStepView: View {
                     InkCanvas(
                         drawing: $drawing,
                         tool: erasing ? Eraser.tool : Pen.pen.tool(scale: side / DiagramSpace.size),
-                        isEnabled: !passed
+                        isEnabled: !passed,
+                        onLift: { if erasing { DispatchQueue.main.async { erasing = false } } }
                     ) { _, _ in issues = [] }
                 }
                 .onAppear { self.side = side }

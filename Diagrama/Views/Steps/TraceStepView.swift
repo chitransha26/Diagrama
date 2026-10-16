@@ -147,7 +147,8 @@ struct TraceStepView: View {
                         InkCanvas(
                             drawing: $drawing,
                             tool: erasing ? Eraser.tool : structure.pen.tool(scale: full / DiagramSpace.size),
-                            isEnabled: !passed
+                            isEnabled: !passed,
+                        onLift: { if erasing { DispatchQueue.main.async { erasing = false } } }
                         ) { added, isPencil in
                             if erasing { corrected = true } else if added { lastWasPencil = isPencil }
                             evaluate()
@@ -338,7 +339,8 @@ struct RecallStepView: View {
                     InkCanvas(
                         drawing: $drawing,
                         tool: erasing ? Eraser.tool : Pen.pen.tool(scale: side / DiagramSpace.size),
-                        isEnabled: !passed
+                        isEnabled: !passed,
+                        onLift: { if erasing { DispatchQueue.main.async { erasing = false } } }
                     ) { added, isPencil in
                         if added { lastWasPencil = isPencil }
                         result = nil

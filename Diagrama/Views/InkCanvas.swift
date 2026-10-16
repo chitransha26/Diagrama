@@ -9,6 +9,8 @@ struct InkCanvas: UIViewRepresentable {
     @Binding var drawing: PKDrawing
     var tool: PKTool
     var isEnabled = true
+    /// Called when the learner lifts the pen, finger or eraser.
+    var onLift: () -> Void = {}
     var onChange: (_ added: Bool, _ isPencil: Bool) -> Void
 
     func makeCoordinator() -> Coordinator { Coordinator(self) }
@@ -62,6 +64,10 @@ struct InkCanvas: UIViewRepresentable {
             }
             parent.drawing = new
             parent.onChange(added, recorder?.lastType == .pencil)
+        }
+
+        func canvasViewDidEndUsingTool(_ canvasView: PKCanvasView) {
+            parent.onLift()
         }
     }
 }
