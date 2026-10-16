@@ -6,7 +6,15 @@ struct LessonView: View {
     @State private var showLegend = false
 
     init(lesson: Lesson) {
-        _session = State(initialValue: LessonSession(lesson: lesson))
+        let session = LessonSession(lesson: lesson)
+        #if DEBUG
+        // `-step <n>` starts at that step, for testing. Debug builds only.
+        let args = ProcessInfo.processInfo.arguments
+        if let i = args.firstIndex(of: "-step"), i + 1 < args.count, let n = Int(args[i + 1]) {
+            session.skipForTesting(to: n)
+        }
+        #endif
+        _session = State(initialValue: session)
     }
 
     var body: some View {

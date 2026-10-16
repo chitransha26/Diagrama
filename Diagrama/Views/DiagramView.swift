@@ -245,3 +245,68 @@ struct SquareStage<Content: View>: View {
         }
     }
 }
+
+/// A name tag pinned beside the part being drawn, where the learner's eyes already are.
+/// Sits above the part, or below it when there's more room there, and stays inside the
+/// visible area when the view is zoomed.
+struct PartNameTag: View {
+    let name: String
+    /// The part's bounds, in diagram space.
+    let target: CGRect
+    let viewport: Viewport
+
+    private let height: CGFloat = 36
+
+    var body: some View {
+        GeometryReader { geo in
+            let unit = geo.size.width / DiagramSpace.size
+            let side = DiagramSpace.size / viewport.zoom
+            let visible = CGRect(x: viewport.origin.x * unit, y: viewport.origin.y * unit, width: side * unit, height: side * unit)
+            let box = CGRect(x: target.minX * unit, y: target.minY * unit, width: target.width * unit, height: target.height * unit)
+            let roomAbove = box.minY - visible.minY
+            let above = roomAbove >= height + 14 || roomAbove >= visible.maxY - box.maxY
+            let halfWidth = CGFloat(name.count) * 4.5 + 16
+            let x = min(max(box.midX, visible.minX + halfWidth + 6), visible.maxX - halfWidth - 6)
+            // Leave a gap so the tag never covers the blue start dot on the guide.
+            let gap: CGFloat = 12
+            let y = above
+                ? max(box.minY - height / 2 - gap, visible.minY + height / 2 + 2)
+                : min(box.maxY + height / 2 + gap, visible.maxY - height / 2 - 2)
+            tag(pointingDown: above)
+                .position(x: x, y: y)
+        }
+        .allowsHitTesting(false)
+        .accessibilityElement()
+        .accessibilityLabel("You're drawing \(name)")
+    }
+
+    private func tag(pointingDown: Bool) -> some View {
+        VStack(spacing: 0) {
+            if !pointingDown { pointer.rotationEffect(.degrees(180)) }
+            Text(name)
+                .font(.subheadline.bold())
+                .foregroundStyle(.white)
+                .lineLimit(1)
+                .padding(.horizontal, 12)
+                .padding(.vertical, 5)
+                .background(Capsule().fill(Theme.indigo))
+            if pointingDown { pointer }
+        }
+        .shadow(color: .black.opacity(0.15), radius: 3, y: 1)
+    }
+
+    private var pointer: some View {
+        PointerTriangle().fill(Theme.indigo).frame(width: 12, height: 6)
+    }
+}
+
+private struct PointerTriangle: Shape {
+    func path(in rect: CGRect) -> Path {
+        var p = Path()
+        p.move(to: CGPoint(x: rect.minX, y: rect.minY))
+        p.addLine(to: CGPoint(x: rect.maxX, y: rect.minY))
+        p.addLine(to: CGPoint(x: rect.midX, y: rect.maxY))
+        p.closeSubpath()
+        return p
+    }
+}

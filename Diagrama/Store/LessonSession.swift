@@ -79,6 +79,16 @@ final class LessonSession {
         if correct { scienceFirstTry += 1 } else { review.append(topic) }
     }
 
+    #if DEBUG
+    /// Jumps to a step for testing, marking earlier drawing steps as drawn. Debug builds only.
+    func skipForTesting(to step: Int) {
+        for s in lesson.steps.prefix(step) {
+            if case .trace(let id, let part) = s.kind { revealed.insert(part.key(id)) }
+        }
+        index = min(step, lesson.steps.count - 1)
+    }
+    #endif
+
     func advance() {
         if index + 1 < lesson.steps.count {
             index += 1

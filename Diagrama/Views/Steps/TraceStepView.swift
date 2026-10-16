@@ -153,6 +153,14 @@ struct TraceStepView: View {
                             if erasing { corrected = true } else if added { lastWasPencil = isPencil }
                             evaluate()
                         }
+                        if !passed {
+                            PartNameTag(
+                                name: session.step.title,
+                                target: guides.map(\.bounds).reduce(CGRect.null) { $0.union($1) },
+                                viewport: viewport
+                            )
+                            .transition(.opacity)
+                        }
                     }
                     .onAppear { fullSide = full }
                     .onChange(of: full) { _, new in fullSide = new }
