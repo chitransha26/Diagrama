@@ -91,6 +91,8 @@ struct LessonView: View {
             ChoiceStepView(session: session, step: step)
         case .order(let step):
             OrderStepView(session: session, step: step)
+        case .identify(let step):
+            IdentifyStepView(session: session, step: step)
         case .drawLewis(let step):
             LewisDrawStepView(session: session, step: step)
         }

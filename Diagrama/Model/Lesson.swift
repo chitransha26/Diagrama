@@ -143,9 +143,12 @@ struct LessonStep: Identifiable {
     /// What the part just drawn is and does, shown when the learner finishes drawing it.
     var note: PartNote? = nil
 
+    /// Steps that work on the learner's drawing keep all guidance under the canvas.
     var isDrawing: Bool {
-        if case .trace = kind { return true }
-        return false
+        switch kind {
+        case .trace, .identify: true
+        default: false
+        }
     }
 }
 
@@ -163,6 +166,8 @@ enum StepKind {
     case label(LabelStep)
     case choice(ChoiceStep)
     case order(OrderStep)
+    /// Find a region that can't be traced (like the cytoplasm) by tapping it in the drawing.
+    case identify(IdentifyStep)
     /// Draw a Lewis structure's bonds and lone pairs freehand around printed atom symbols.
     case drawLewis(LewisStep)
     /// Draw the listed structures from memory, with no guide.
@@ -216,6 +221,15 @@ struct OrderStep {
     let why: String
     /// Nudge shown after a wrong order.
     let hint: String
+}
+
+struct IdentifyStep {
+    let name: String
+    /// A tap counts when its topmost drawn structure is this one (e.g. the membrane, for
+    /// the cytoplasm inside it but outside every organelle).
+    let structureID: String
+    /// Explanations for tapping other structures, keyed by structure ID.
+    var mistakes: [String: String] = [:]
 }
 
 struct LewisStep {

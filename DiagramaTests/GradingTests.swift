@@ -187,6 +187,7 @@ struct ContentTests {
                 case .label(let l):
                     for t in l.targets { #expect(l.vocabulary.contains(t.answer), "\(lesson.id) missing \(t.answer)") }
                 case .choice(let c): #expect(c.options.filter(\.correct).count == 1, "\(lesson.id): \(c.question)")
+                case .identify(let i): #expect(ids.contains(i.structureID), "\(lesson.id)")
                 case .drawLewis(let l): #expect(l.positions.count == l.target.atoms.count)
                 case .order(let o): #expect(o.items.count > 1)
                 }
@@ -228,7 +229,7 @@ struct ContentTests {
     @Test func everyDrawingStepHasANote() {
         for lesson in Catalog.lessons {
             for step in lesson.steps {
-                if case .trace = step.kind {
+                if step.isDrawing {
                     #expect(step.note != nil, "\(lesson.id): \(step.title) has no note")
                     let length = (step.note?.text.count ?? 0) + (step.note?.remember?.count ?? 0)
                     #expect(length <= 180, "\(lesson.id): \(step.title) note is too long for the card")
@@ -344,5 +345,21 @@ struct LewisInterpreterTests {
                                       positions: [CGPoint(x: 500, y: 400), CGPoint(x: 300, y: 580), CGPoint(x: 700, y: 580)])
         #expect(r.notes.isEmpty)
         #expect(ChemistryValidator.issues(in: r.molecule, target: WaterLesson.water).isEmpty)
+    }
+}
+
+struct IdentifyTests {
+    private let lesson = PlantCellLesson.lesson
+    private let drawn: Set<String> = ["wall", "membrane", "vacuole", "nucleus", "chloroplast"]
+
+    @Test func cytoplasmIsTheSpaceAroundTheOrganelles() {
+        // Between the membrane and the vacuole: cytoplasm (the membrane region).
+        #expect(lesson.hit(at: CGPoint(x: 220, y: 720), among: drawn)?.structure.id == "membrane")
+        // Inside the vacuole, nucleus or a chloroplast: not cytoplasm.
+        #expect(lesson.hit(at: CGPoint(x: 580, y: 480), among: drawn)?.structure.id == "vacuole")
+        #expect(lesson.hit(at: CGPoint(x: 220, y: 330), among: drawn)?.structure.id == "nucleus")
+        #expect(lesson.hit(at: CGPoint(x: 225, y: 600), among: drawn)?.structure.id == "chloroplast")
+        // Outside the cell.
+        #expect(lesson.hit(at: CGPoint(x: 40, y: 40), among: drawn) == nil)
     }
 }

@@ -72,6 +72,15 @@ enum PlantCellLesson {
             LessonStep(title: "Thylakoids", instruction: "Draw the stacked membranes inside each chloroplast. They capture light energy.",
                        kind: .trace(structure: "chloroplast", part: .details),
                        note: PartNote(text: "Stacked membranes inside the chloroplast that hold the chlorophyll. This is where light energy is first captured.", remember: "Stacks of thylakoids look like piles of coins, called grana.")),
+            LessonStep(title: "Cytoplasm", instruction: "You can't draw it, but it fills most of the cell. Tap the cytoplasm: the space inside the membrane, around the organelles.",
+                       kind: .identify(IdentifyStep(name: "cytoplasm", structureID: "membrane", mistakes: [
+                           "vacuole": "That's the central vacuole, a separate sac of water. The cytoplasm is the space around it.",
+                           "nucleus": "That's the nucleus. The cytoplasm surrounds it but doesn't go inside.",
+                           "chloroplast": "That's a chloroplast. Chloroplasts sit in the cytoplasm; tap the space around them.",
+                           "wall": "That's the cell wall. The cytoplasm is inside the membrane, the next line in.",
+                       ])),
+                       note: PartNote(text: "A jelly-like fluid filling the cell around the organelles. Many of the cell's chemical reactions happen here.",
+                                      remember: "In living leaf cells it flows, carrying chloroplasts around.")),
             LessonStep(title: "Color", instruction: "In a fresh, unstained cell only the chloroplasts have color. The green is chlorophyll.",
                        kind: .color(structures: ["chloroplast"])),
             LessonStep(title: "Label the cell", instruction: "Pick the right name for each numbered marker.", kind: .label(LabelStep(
