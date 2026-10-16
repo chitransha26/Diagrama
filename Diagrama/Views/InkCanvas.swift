@@ -147,16 +147,19 @@ enum Eraser {
 extension PKStroke {
     /// The parts of the stroke still visible, in on-screen points. Partly erased strokes are
     /// masked rather than cut, so only the unmasked ranges count.
-    var visibleScreenSegments: [[CGPoint]] {
+    var visibleScreenSegments: [[CGPoint]] { visibleSegments(spacing: 3) }
+
+    private func visibleSegments(spacing: CGFloat) -> [[CGPoint]] {
         let ranges: [ClosedRange<CGFloat>?] = mask == nil ? [nil] : maskedPathRanges.map { $0 }
         return ranges
-            .map { r in path.interpolatedPoints(in: r, by: .distance(3)).map { $0.location.applying(transform) } }
+            .map { r in path.interpolatedPoints(in: r, by: .distance(spacing)).map { $0.location.applying(transform) } }
             .filter { !$0.isEmpty }
     }
 
-    /// The visible parts of the stroke in diagram space.
+    /// The visible parts of the stroke in diagram space, read densely: zoom magnifies the
+    /// gaps between points, and at 4x a sparser reading left gaps wider than the tolerance.
     func diagramSegments(scale: CGFloat) -> [[CGPoint]] {
-        visibleScreenSegments.map { $0.map { CGPoint(x: $0.x / scale, y: $0.y / scale) } }
+        visibleSegments(spacing: 0.5).map { $0.map { CGPoint(x: $0.x / scale, y: $0.y / scale) } }
     }
 }
 
