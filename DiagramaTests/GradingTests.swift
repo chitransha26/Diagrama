@@ -454,6 +454,13 @@ struct LessonFileTests {
         #expect(Catalog.loaded.problems.isEmpty, "\(Catalog.loaded.problems.joined(separator: "\n"))")
     }
 
+    @Test func everyLessonListsItsSources() {
+        for l in Catalog.lessons {
+            #expect(!l.sources.isEmpty, "\(l.id) lists no sources")
+            #expect(l.sources.contains { $0.title.hasPrefix("NGSS") || $0.title.hasPrefix("AP ") }, "\(l.id) doesn't cite its standard")
+        }
+    }
+
     @Test func lessonIDsAreUnique() {
         let ids = Catalog.lessons.map(\.id)
         #expect(ids.count == Set(ids).count)

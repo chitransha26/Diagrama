@@ -5,11 +5,21 @@
  "subject": "Life science",
  "standard": "3-LS3-1",
  "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS 3-LS3-1: Analyze data that plants and animals have traits inherited from parents and that variation exists"
+  },
+  {
+   "title": "Raven Biology (LibreTexts): Garden pea characteristics revealed the basics of heredity",
+   "url": "https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/Map%3A_Raven_Biology_12th_Edition/12%3A_Patterns_of_Inheritance/12.02%3A_Monohybrid_Crosses-_The_Principle_of_Segregation/12.2.7%3A_Garden_Pea_Characteristics_Revealed_the_Basics_of_Heredity"
+  }
+ ],
  "keywords": [
   "inheritance",
   "traits",
   "parents",
   "offspring",
+  "variation",
   "pea plant",
   "Mendel",
   "flower color"
@@ -45,9 +55,9 @@
  ],
  "structures": [
   {
-   "id": "purpleParent",
-   "name": "purple parent",
-   "colorName": "purple flower",
+   "id": "parentsFlowers",
+   "name": "parents",
+   "colorName": "purple flowers",
    "outlines": [
     {
      "path": "M 276 250 C 276 190 364 190 364 250 Z"
@@ -67,15 +77,7 @@
       24,
       16
      ]
-    }
-   ],
-   "fill": "#7B4F9E"
-  },
-  {
-   "id": "whiteParent",
-   "name": "white parent",
-   "colorName": "white flower",
-   "outlines": [
+    },
     {
      "path": "M 636 250 C 636 190 724 190 724 250 Z"
     },
@@ -96,7 +98,7 @@
      ]
     }
    ],
-   "fill": "#F4F1EA"
+   "fill": "#7B4F9E"
   },
   {
    "id": "family",
@@ -153,9 +155,9 @@
    ]
   },
   {
-   "id": "offspring",
-   "name": "offspring",
-   "colorName": "offspring flowers",
+   "id": "purpleKids",
+   "name": "purple offspring",
+   "colorName": "purple offspring",
    "outlines": [
     {
      "path": "M 156 720 C 156 660 244 660 244 720 Z"
@@ -213,7 +215,15 @@
       24,
       16
      ]
-    },
+    }
+   ],
+   "fill": "#7B4F9E"
+  },
+  {
+   "id": "whiteKid",
+   "name": "white offspring",
+   "colorName": "white offspring",
+   "outlines": [
     {
      "path": "M 756 720 C 756 660 844 660 844 720 Z"
     },
@@ -234,26 +244,18 @@
      ]
     }
    ],
-   "fill": "#7B4F9E"
+   "fill": "#F4F1EA"
   }
  ],
  "steps": [
   {
    "type": "trace",
-   "title": "Purple parent",
-   "structure": "purpleParent",
-   "instruction": "Trace the first parent's flower.",
+   "title": "Parents",
+   "structure": "parentsFlowers",
+   "instruction": "Trace the two parent flowers.",
    "note": {
-    "text": "Pea plants were studied by Gregor Mendel in the 1860s. This parent plant has purple flowers."
-   }
-  },
-  {
-   "type": "trace",
-   "title": "White parent",
-   "structure": "whiteParent",
-   "instruction": "Trace the second parent's flower.",
-   "note": {
-    "text": "This parent has white flowers. Flower color is a trait, a feature passed from parents to offspring."
+    "text": "These are pea plants, like the ones Gregor Mendel studied in the 1860s. Both parents have purple flowers.",
+    "remember": "Traits are passed from parents to offspring."
    }
   },
   {
@@ -267,47 +269,56 @@
   },
   {
    "type": "trace",
-   "title": "Offspring",
-   "structure": "offspring",
-   "instruction": "Trace the four offspring flowers.",
+   "title": "Purple offspring",
+   "structure": "purpleKids",
+   "instruction": "Trace the first three offspring.",
    "note": {
-    "text": "Offspring inherit traits from both parents, so they look like their parents.",
-    "remember": "Traits are passed from parents to offspring."
+    "text": "Most offspring inherit purple flowers, just like their parents."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "White offspring",
+   "structure": "whiteKid",
+   "instruction": "Trace the last offspring.",
+   "note": {
+    "text": "This one has white flowers, even though both parents are purple. Offspring of the same parents can differ: that's variation.",
+    "remember": "Same parents, different offspring."
    }
   },
   {
    "type": "color",
    "title": "Color",
    "structures": [
-    "purpleParent",
-    "whiteParent",
-    "offspring"
+    "parentsFlowers",
+    "purpleKids",
+    "whiteKid"
    ],
-   "instruction": "Color the flowers to see which color the offspring inherited."
+   "instruction": "Color the flowers to compare the family."
   },
   {
    "type": "choice",
    "title": "Explain",
    "instruction": "Look at the colors.",
    "showsDiagram": true,
-   "question": "Mendel saw that when he crossed purple and white pea plants, all the offspring were purple. What does that show?",
+   "question": "Both parents are purple, but one offspring is white. What does this show?",
    "options": [
     {
-     "text": "Offspring inherit traits from their parents, and some traits can hide others",
+     "text": "Offspring inherit traits from their parents, but they can vary",
      "correct": true,
-     "feedback": "Yes. The offspring got a color from their parents. White was hidden this time, but it can reappear in later generations."
+     "feedback": "Yes. The parents carried a hidden white trait and passed it on. Mendel saw about 3 purple to every 1 white in this generation."
     },
     {
-     "text": "The white parent passed on nothing",
-     "feedback": "Both parents passed on traits. The white trait was hidden, not lost: it shows up again in the next generation."
+     "text": "The white one isn't related to the parents",
+     "feedback": "It came from these parents. Hidden traits can reappear in offspring."
     },
     {
      "text": "Flower color is random",
-     "feedback": "Mendel found clear patterns. Color is inherited, not random."
+     "feedback": "Mendel found clear patterns: about 3 purple to 1 white. Color is inherited."
     },
     {
-     "text": "Sunlight turned them purple",
-     "feedback": "These plants grew in the same conditions. The color came from their parents."
+     "text": "Sunlight turned it white",
+     "feedback": "These plants grew in the same conditions. The color came from the parents."
     }
    ]
   }

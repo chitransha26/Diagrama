@@ -21,6 +21,12 @@ struct LessonFile: Decodable {
     var printed: [PrintedFile]?
     /// Structures to draw from memory; all of them if omitted.
     var recall: [String]?
+    var sources: [SourceFile]?
+
+    struct SourceFile: Decodable {
+        let title: String
+        var url: String?
+    }
 
     struct PrintedFile: Decodable {
         let text: String
@@ -169,7 +175,8 @@ extension LessonFile {
             legend: try (legend ?? []).map { LegendEntry(name: $0.name, color: try $0.color.map(Self.color), meaning: $0.meaning) },
             structures: built, steps: try steps.map(step), grade: grade, standard: standard,
             printed: (printed ?? []).map { PrintedText(text: $0.text, at: CGPoint(x: $0.at[0], y: $0.at[1]), size: $0.size ?? 46) },
-            recallStructures: recall ?? []
+            recallStructures: recall ?? [],
+            sources: (sources ?? []).map { Source(title: $0.title, url: $0.url.flatMap(URL.init(string:))) }
         )
     }
 

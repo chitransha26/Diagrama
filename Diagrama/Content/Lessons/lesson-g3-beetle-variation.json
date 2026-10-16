@@ -5,6 +5,11 @@
  "subject": "Life science",
  "standard": "3-LS4-2",
  "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS 3-LS4-2: Explain how variations among individuals of a species give advantages in surviving and reproducing"
+  }
+ ],
  "keywords": [
   "variation",
   "traits",
@@ -808,7 +813,7 @@
    "structure": "brownOld",
    "instruction": "Trace the three brown beetles in the top row.",
    "note": {
-    "text": "Long ago, most of these beetles were brown. They live on green leaves."
+    "text": "In this example, most of the beetles long ago were brown. They live on green leaves."
    }
   },
   {

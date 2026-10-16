@@ -5,6 +5,15 @@
  "subject": "Physics",
  "standard": "3-PS2-3",
  "minutes": 7,
+ "sources": [
+  {
+   "title": "NGSS 3-PS2-3: Ask questions about cause and effect of magnetic interactions between objects not in contact"
+  },
+  {
+   "title": "OpenStax Physics: Magnetism",
+   "url": "https://openstax.org/books/physics/pages/20-1-magnetic-fields-field-lines-and-force"
+  }
+ ],
  "keywords": [
   "magnet",
   "north pole",

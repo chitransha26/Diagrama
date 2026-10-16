@@ -5,6 +5,19 @@
  "subject": "Life science",
  "standard": "3-LS1-1",
  "minutes": 10,
+ "sources": [
+  {
+   "title": "NGSS 3-LS1-1: Develop models to describe that organisms have unique and diverse life cycles"
+  },
+  {
+   "title": "Froglife: Common frog",
+   "url": "https://www.froglife.org/info-advice/amphibians-and-reptiles/common-frog-2/"
+  },
+  {
+   "title": "Natural History Museum: Frogspawn, tadpoles and froglets",
+   "url": "https://www.nhm.ac.uk/discover/frogspawn-tadpoles-and-froglets.html"
+  }
+ ],
  "keywords": [
   "frog",
   "tadpole",
@@ -309,7 +322,7 @@
    "structure": "eggs",
    "instruction": "Trace the clump of frog eggs.",
    "note": {
-    "text": "Stage 1. Frogs lay hundreds of eggs in water, in a clump of jelly called frogspawn. The jelly protects them.",
+    "text": "Stage 1. A frog lays hundreds or even thousands of eggs in water, in a clump of jelly called frogspawn. The jelly protects them.",
     "remember": "Frog eggs always need water."
    }
   },
@@ -320,7 +333,7 @@
    "part": "details",
    "instruction": "Draw the dark embryo in the middle of each egg.",
    "note": {
-    "text": "Each black dot is an embryo. It feeds on its yolk and grows into a tadpole in about a week."
+    "text": "Each black dot is an embryo. It feeds on its yolk and hatches as a tadpole in 1 to 4 weeks, faster in warm water."
    }
   },
   {

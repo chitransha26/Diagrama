@@ -5,6 +5,15 @@
  "subject": "Life science",
  "standard": "3-LS4-3",
  "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS 3-LS4-3: Argue that in a habitat some organisms survive well, some less well, and some not at all"
+  },
+  {
+   "title": "Wikipedia (citing Kettlewell, Majerus, Cook): Industrial melanism",
+   "url": "https://en.wikipedia.org/wiki/Industrial_melanism"
+  }
+ ],
  "keywords": [
   "camouflage",
   "peppered moth",

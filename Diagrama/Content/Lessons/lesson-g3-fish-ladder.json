@@ -1,0 +1,305 @@
+{
+ "id": "g3-fish-ladder",
+ "title": "When a dam blocks salmon: a fish ladder",
+ "grade": "3",
+ "subject": "Life science",
+ "standard": "3-LS4-4",
+ "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS 3-LS4-4: Make a claim about the merit of a solution to a problem caused when the environment changes"
+  },
+  {
+   "title": "NOAA Fisheries: Fish ladders",
+   "url": "https://www.westcoast.fisheries.noaa.gov/fish_passage/about_dams_and_fish/fish_ladders.html"
+  },
+  {
+   "title": "NOAA Fisheries: Adult upstream passage on the West Coast",
+   "url": "https://www.fisheries.noaa.gov/west-coast/endangered-species-conservation/adult-upstream-passage-west-coast"
+  }
+ ],
+ "keywords": [
+  "dam",
+  "salmon",
+  "fish ladder",
+  "fish passage",
+  "habitat change",
+  "environment",
+  "solution",
+  "migration"
+ ],
+ "printed": [
+  {
+   "text": "Upstream",
+   "at": [
+    230,
+    250
+   ]
+  },
+  {
+   "text": "Downstream",
+   "at": [
+    790,
+    880
+   ]
+  }
+ ],
+ "structures": [
+  {
+   "id": "river",
+   "name": "river",
+   "outlines": [
+    {
+     "line": [
+      60,
+      320,
+      430,
+      320
+     ]
+    },
+    {
+     "line": [
+      570,
+      760,
+      940,
+      760
+     ]
+    },
+    {
+     "line": [
+      60,
+      900,
+      940,
+      900
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dam",
+   "name": "dam",
+   "pen": "bold",
+   "outlines": [
+    {
+     "rect": [
+      430,
+      260,
+      140,
+      640,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ladder",
+   "name": "fish ladder",
+   "outlines": [
+    {
+     "line": [
+      940,
+      800,
+      885,
+      800,
+      885,
+      724,
+      830,
+      724,
+      830,
+      648,
+      775,
+      648,
+      775,
+      572,
+      720,
+      572,
+      720,
+      496,
+      665,
+      496,
+      665,
+      420,
+      610,
+      420,
+      610,
+      344,
+      570,
+      344
+     ]
+    }
+   ]
+  },
+  {
+   "id": "salmon",
+   "name": "salmon",
+   "outlines": [
+    {
+     "path": "M 720.0 830 C 744.0 802.28 804.0 799.76 825.6 830 C 804.0 860.24 744.0 857.72 720.0 830 Z"
+    },
+    {
+     "polygon": [
+      825.6,
+      830,
+      859.2,
+      804.8,
+      847.2,
+      830,
+      859.2,
+      855.2
+     ]
+    }
+   ],
+   "details": [
+    {
+     "circle": [
+      737,
+      826,
+      9
+     ]
+    }
+   ]
+  },
+  {
+   "id": "route",
+   "name": "route past the dam",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      880,
+      690,
+      620,
+      360,
+      580,
+      220,
+      420,
+      220,
+      370,
+      290
+     ]
+    },
+    {
+     "line": [
+      400.4,
+      274.8,
+      370,
+      290,
+      374.5,
+      256.3
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "River",
+   "structure": "river",
+   "instruction": "Trace the water on both sides and the riverbed.",
+   "note": {
+    "text": "Salmon hatch in rivers, swim to the sea, then return upstream to the same river to lay their eggs.",
+    "remember": "Salmon must swim upstream to have young."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Dam",
+   "structure": "dam",
+   "instruction": "Trace the dam across the river.",
+   "note": {
+    "text": "People build dams to store water and make electricity. But a dam is a wall the salmon can't swim past: their environment has changed."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Fish ladder",
+   "structure": "ladder",
+   "instruction": "Trace the steps beside the dam.",
+   "note": {
+    "text": "A fish ladder is a set of water-filled steps. Salmon swim or leap from pool to pool to climb past the dam, resting in the pools.",
+    "remember": "A ladder lets fish climb over a dam."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Salmon",
+   "structure": "salmon",
+   "instruction": "Trace the salmon waiting below the dam.",
+   "note": {
+    "text": "Salmon are strong swimmers and jumpers, which is why ladders work well for them."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Eye",
+   "structure": "salmon",
+   "part": "details",
+   "instruction": "Dab the salmon's eye.",
+   "note": {
+    "text": "Salmon use smell and other senses to find their way back to the river where they hatched."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Route",
+   "structure": "route",
+   "instruction": "Draw the arrow showing the salmon's way up the ladder and over the dam.",
+   "note": {
+    "text": "The flowing water at the bottom of the ladder attracts the fish and guides them in."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "The problem",
+   "instruction": "Use what you've drawn.",
+   "showsDiagram": true,
+   "question": "Why could fewer salmon live in this river after the dam was built?",
+   "options": [
+    {
+     "text": "The dam blocks them from swimming upstream to lay eggs",
+     "correct": true,
+     "feedback": "Yes. If adults can't reach their spawning grounds, fewer young salmon hatch each year."
+    },
+    {
+     "text": "Salmon don't like electricity",
+     "feedback": "The problem is the wall itself: it blocks their path upstream."
+    },
+    {
+     "text": "The dam makes the water too cold",
+     "feedback": "The main problem is that the dam blocks the way upstream."
+    },
+    {
+     "text": "Salmon live only in the sea",
+     "feedback": "Salmon need rivers too: they lay their eggs upstream."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Judge the solution",
+   "instruction": "Think about what each idea solves.",
+   "showsDiagram": true,
+   "question": "Which solution best helps the salmon while keeping the dam working?",
+   "options": [
+    {
+     "text": "Build a fish ladder beside the dam",
+     "correct": true,
+     "feedback": "Yes. Salmon can climb past, and the dam still stores water and makes electricity. Engineers design each ladder to suit the kind of fish."
+    },
+    {
+     "text": "Remove the dam",
+     "feedback": "That would help the salmon, but people would lose the water and electricity. A ladder solves both problems."
+    },
+    {
+     "text": "Build the dam taller",
+     "feedback": "That makes the wall even harder to pass. Salmon need a way around it."
+    },
+    {
+     "text": "Add more fish below the dam",
+     "feedback": "They still couldn't reach their spawning grounds upstream."
+    }
+   ]
+  }
+ ]
+}

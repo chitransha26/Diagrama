@@ -5,6 +5,15 @@
  "subject": "Physics",
  "standard": "3-PS2-1",
  "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS 3-PS2-1: Investigate the effects of balanced and unbalanced forces on the motion of an object"
+  },
+  {
+   "title": "OpenStax Physics: Newton's first law of motion",
+   "url": "https://openstax.org/books/physics/pages/4-2-newtons-first-law-of-motion-inertia"
+  }
+ ],
  "keywords": [
   "force",
   "push",

@@ -10,9 +10,10 @@ bars = [{"rect": [x - 35, 820 - t * 20, 70, t * 20, 2]} for x, (_, t) in zip(xs,
 graph = {
     "id": "g3-temperature-graph", "title": "Graphing a week of temperatures", "grade": "3", "subject": "Earth & space",
     "standard": "3-ESS2-1", "minutes": 8,
-    "keywords": ["weather", "temperature", "bar graph", "data", "graph", "degrees"],
+    "sources": [{"title": "NGSS 3-ESS2-1: Represent data in tables and graphs to describe typical weather conditions during a season"}],
+    "keywords": ["weather", "temperature", "bar graph", "season", "spring", "data", "graph", "degrees"],
     "printed": [{"text": "  ".join(f"{d} {t}°" for d, t in temps), "at": [530, 90], "size": 38},
-                {"text": "°C", "at": [180, 180]}, {"text": "Day", "at": [530, 930]}]
+                {"text": "°C", "at": [180, 180]}, {"text": "A week in spring", "at": [530, 160], "size": 36}, {"text": "Day", "at": [530, 930]}]
                + [{"text": str(v), "at": [140, 820 - v * 20], "size": 36} for v in (0, 10, 20, 30)]
                + [{"text": d, "at": [x, 860], "size": 38} for x, (d, _) in zip(xs, temps)],
     "structures": [
@@ -37,13 +38,21 @@ graph = {
              {"text": "Wednesday", "feedback": "Wednesday was warm at 21 degrees, but Thursday's bar is taller."},
              {"text": "Friday", "feedback": "Friday cooled down to 18 degrees. Look for the tallest bar."}]},
         {"type": "choice", "title": "Find the pattern", "instruction": "Look at how the bars change.", "showsDiagram": True,
-         "question": "What pattern does the graph show this week?",
+         "question": "What pattern does this week in spring show?",
          "options": [
              {"text": "It got warmer each day until Thursday, then cooled on Friday", "correct": True,
-              "feedback": "Right. Graphs make patterns easy to spot. Weather data over many weeks shows what each season is usually like."},
+              "feedback": "Right. Graphs make patterns easy to spot."},
              {"text": "Every day was the same", "feedback": "The bars have different heights, so the temperatures changed."},
              {"text": "It got colder all week", "feedback": "The bars get taller from Monday to Thursday, so it got warmer."},
              {"text": "Friday was the warmest", "feedback": "Friday's bar is shorter than Thursday's."}]},
+        {"type": "choice", "title": "Describe a season", "instruction": "Think like a weather scientist.", "showsDiagram": False,
+         "question": "You want to describe what spring weather is usually like where you live. What's the best way?",
+         "options": [
+             {"text": "Graph temperatures from many springs and look for the pattern", "correct": True,
+              "feedback": "Yes. One week can be unusual. Data from many years shows what weather to expect in a season."},
+             {"text": "Look at one warm day", "feedback": "One day can be unusual. You need lots of data to see what's typical."},
+             {"text": "Guess from what you're wearing today", "feedback": "That's one moment. Scientists use measurements over many seasons."},
+             {"text": "Check the weather in a different country", "feedback": "Each place has its own climate. Use data from where you live."}]},
     ],
 }
 
@@ -61,6 +70,8 @@ def lat_line(lat):
 climate = {
     "id": "g3-climate-zones", "title": "Climate zones of the world", "grade": "3", "subject": "Earth & space",
     "standard": "3-ESS2-2", "minutes": 8,
+    "sources": [{"title": "NGSS 3-ESS2-2: Obtain and combine information to describe climates in different regions of the world"},
+                {"title": "Meteoblue Meteoscool: General climate zones", "url": "https://content.meteoblue.com/en/research-education/educational-resources/meteoscool/general-climate-zones/"}],
     "keywords": ["climate", "climate zones", "tropical", "temperate", "polar", "equator", "latitude"],
     "structures": [
         {"id": "globe", "name": "Earth", "pen": "bold", "outlines": [{"circle": [C, C, R]}]},
@@ -119,6 +130,9 @@ for pts in arms:
 hurricane = {
     "id": "g3-hurricane", "title": "Structure of a hurricane", "grade": "3", "subject": "Earth & space",
     "standard": "3-ESS3-1", "minutes": 8,
+    "sources": [{"title": "NGSS 3-ESS3-1: Make a claim about the merit of a design solution that reduces the impacts of a weather-related hazard"},
+                {"title": "Hurricane Science: Hurricane structure", "url": "https://hurricanescience.org/science/science/hurricanestructure/"},
+                {"title": "Environment Canada: Hurricane structure and motion", "url": "https://www.canada.ca/en/environment-climate-change/services/archive/hurricanes/structure-and-motion.html"}],
     "keywords": ["hurricane", "storm", "eye", "eyewall", "rain bands", "weather hazard", "tropical cyclone"],
     "structures": [
         {"id": "eye", "name": "eye", "outlines": [{"circle": [C, C, 42]}]},

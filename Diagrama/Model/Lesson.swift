@@ -80,6 +80,12 @@ enum ColorMode {
     }
 }
 
+/// Where a lesson's facts were checked.
+struct Source: Hashable {
+    let title: String
+    var url: URL?
+}
+
 /// Words printed on the worksheet, like axis labels: always shown, never traced.
 struct PrintedText {
     let text: String
@@ -225,6 +231,8 @@ struct Lesson: Identifiable {
     var printed: [PrintedText] = []
     /// Structures to draw in the from-memory step. Empty means all of them.
     var recallStructures: [String] = []
+    /// Where the lesson's facts were verified. Every lesson must have at least one.
+    var sources: [Source] = []
 
     /// Every lesson with drawing ends with two screens after its questions: copy the finished
     /// diagram while looking at it, then draw it from memory. Lessons that already have a memory

@@ -110,6 +110,19 @@ struct LegendSheet: View {
                 Section {
                     Text(lesson.colorMode.explanation)
                 }
+                if !lesson.sources.isEmpty {
+                    Section("Checked against") {
+                        ForEach(lesson.sources, id: \.self) { source in
+                            if let url = source.url {
+                                Link(source.title, destination: url)
+                            } else {
+                                Text(source.title)
+                            }
+                        }
+                        Text("Spot a mistake? Tell us, and we'll fix it.")
+                            .font(.footnote).foregroundStyle(.secondary)
+                    }
+                }
                 if !lesson.legend.isEmpty {
                 Section("Legend") {
                     ForEach(lesson.legend) { entry in

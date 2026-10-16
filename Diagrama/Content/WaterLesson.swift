@@ -97,7 +97,15 @@ enum WaterLesson {
                        ]))),
         ],
         grade: "10-11",
-        standard: "HS-PS1-2"
+        standard: "HS-PS1-1",
+        sources: [
+            Source(title: "NGSS HS-PS1-1: Use the periodic table to predict properties of elements based on their outermost electrons"),
+            Source(title: "AP Chemistry, Unit 2: Lewis diagrams"),
+            Source(title: "OpenStax Chemistry 2e, 7.3: Lewis symbols and structures",
+                   url: URL(string: "https://openstax.org/books/chemistry-2e/pages/7-3-lewis-symbols-and-structures")),
+            Source(title: "OpenStax Chemistry 2e, 7.6: Molecular structure and polarity",
+                   url: URL(string: "https://openstax.org/books/chemistry-2e/pages/7-6-molecular-structure-and-polarity")),
+        ]
     )
 }
 

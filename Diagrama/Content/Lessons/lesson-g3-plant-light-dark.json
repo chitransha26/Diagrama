@@ -5,6 +5,15 @@
  "subject": "Life science",
  "standard": "3-LS3-2",
  "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS 3-LS3-2: Use evidence to support the explanation that traits can be influenced by the environment"
+  },
+  {
+   "title": "LibreTexts Botany: Etiolation and shade avoidance",
+   "url": "https://bio.libretexts.org/Bookshelves/Botany/Botany_(Ha_Morrow_and_Algiers)/04:_Plant_Physiology_and_Regulation/4.02:_Environmental_Responses/4.2.04:_Etiolation_and_Shade_Avoidance"
+  }
+ ],
  "keywords": [
   "environment",
   "traits",

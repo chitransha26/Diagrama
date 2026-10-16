@@ -153,6 +153,10 @@ enum LeafSectionLesson {
                        kind: .recall(structures: ["palisade", "vein"])),
         ],
         grade: "7",
-        standard: "MS-LS1-6"
+        standard: "MS-LS1-6",
+        sources: [
+            Source(title: "NGSS MS-LS1-6: Construct a scientific explanation for the role of photosynthesis in the cycling of matter and flow of energy"),
+            Source(title: "OpenStax Biology 2e, 30.4: Leaves", url: URL(string: "https://openstax.org/books/biology-2e/pages/30-4-leaves")),
+        ]
     )
 }

@@ -5,6 +5,15 @@
  "subject": "Life science",
  "standard": "3-LS4-1",
  "minutes": 10,
+ "sources": [
+  {
+   "title": "NGSS 3-LS4-1: Analyze data from fossils to provide evidence of organisms and environments long ago"
+  },
+  {
+   "title": "National Park Service: Permineralization and replacement",
+   "url": "https://home.nps.gov/articles/000/permineralization-and-replacement.htm"
+  }
+ ],
  "keywords": [
   "fossil",
   "sediment",
@@ -504,7 +513,7 @@
    "part": "details",
    "instruction": "Draw the bones, now turned to stone.",
    "note": {
-    "text": "Minerals from water seep into the bones and slowly replace them, turning them to stone. Now it's a fossil."
+    "text": "Minerals carried by groundwater fill the tiny spaces in the bones and slowly replace them, turning them to stone."
    }
   },
   {

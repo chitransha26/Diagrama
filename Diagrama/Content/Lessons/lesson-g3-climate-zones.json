@@ -5,6 +5,15 @@
  "subject": "Earth & space",
  "standard": "3-ESS2-2",
  "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS 3-ESS2-2: Obtain and combine information to describe climates in different regions of the world"
+  },
+  {
+   "title": "Meteoblue Meteoscool: General climate zones",
+   "url": "https://content.meteoblue.com/en/research-education/educational-resources/meteoscool/general-climate-zones/"
+  }
+ ],
  "keywords": [
   "climate",
   "climate zones",

@@ -5,6 +5,19 @@
  "subject": "Life science",
  "standard": "3-LS1-1",
  "minutes": 10,
+ "sources": [
+  {
+   "title": "NGSS 3-LS1-1: Develop models to describe that organisms have unique and diverse life cycles"
+  },
+  {
+   "title": "Penn State Extension: Summer flock care",
+   "url": "https://extension.psu.edu/summer-flock-care-keeping-your-birds-cool-and-comfortable"
+  },
+  {
+   "title": "Incubator Warehouse: How long does it take to incubate chicken eggs (21-day guide)",
+   "url": "https://incubatorwarehouse.com/blogs/poultry-pals/how-long-does-it-take-to-incubate-chicken-eggs-21-day-guide"
+  }
+ ],
  "keywords": [
   "chicken",
   "hen",
@@ -295,7 +308,7 @@
    "structure": "embryo",
    "instruction": "Trace the second egg.",
    "note": {
-    "text": "Stage 2. The hen sits on the egg to keep it at about 38 °C. Inside, the embryo grows for 21 days.",
+    "text": "Stage 2. The hen sits on the egg to keep it at about 37.5 °C. Inside, the embryo grows for 21 days.",
     "remember": "21 days from egg to chick."
    }
   },
@@ -335,7 +348,7 @@
    "structure": "hen",
    "instruction": "Trace the adult hen's body and head.",
    "note": {
-    "text": "Stage 4. In about 5 to 6 months the chick grows into an adult. A hen can then lay eggs, starting the cycle again."
+    "text": "Stage 4. In about 5 months the chick grows into an adult. A hen can then lay eggs, starting the cycle again."
    }
   },
   {
@@ -354,7 +367,7 @@
    "structure": "comb",
    "instruction": "Trace the comb on the hen's head.",
    "note": {
-    "text": "The comb is red skin on top of the head. It helps the chicken lose heat on hot days.",
+    "text": "The comb is red skin on top of the head, full of blood vessels. It helps the chicken lose heat on hot days.",
     "remember": "Chickens can't sweat; the comb helps them cool down."
    }
   },

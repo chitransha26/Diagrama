@@ -7,6 +7,8 @@ from lib import arc_arrow, head_at, r, save, straight_arrow
 forces = {
     "id": "g3-balanced-forces", "title": "Balanced and unbalanced forces: tug of war", "grade": "3",
     "subject": "Physics", "standard": "3-PS2-1", "minutes": 8,
+    "sources": [{"title": "NGSS 3-PS2-1: Investigate the effects of balanced and unbalanced forces on the motion of an object"},
+                {"title": "OpenStax Physics: Newton's first law of motion", "url": "https://openstax.org/books/physics/pages/4-2-newtons-first-law-of-motion-inertia"}],
     "keywords": ["force", "push", "pull", "balanced", "unbalanced", "tug of war", "motion", "arrow"],
     "printed": [{"text": "Balanced", "at": [500, 150]}, {"text": "Unbalanced", "at": [500, 590]}],
     "structures": [
@@ -70,6 +72,8 @@ swing.append(head_at((pivot[0] + 560 * math.cos(t0), pivot[1] + 560 * math.sin(t
 pendulum = {
     "id": "g3-pendulum", "title": "A pendulum's swing", "grade": "3", "subject": "Physics",
     "standard": "3-PS2-2", "minutes": 7,
+    "sources": [{"title": "NGSS 3-PS2-2: Observe an object's motion to show that a pattern can be used to predict future motion"},
+                {"title": "OpenStax University Physics: The simple pendulum", "url": "https://openstax.org/books/university-physics-volume-1/pages/15-4-pendulums"}],
     "keywords": ["pendulum", "swing", "pattern", "motion", "predict", "clock"],
     "structures": [
         {"id": "pivot", "name": "pivot", "pen": "bold", "outlines": [{"line": [420, 140, 580, 140]}]},
@@ -109,6 +113,8 @@ def magnet(x, y):
 magnets = {
     "id": "g3-magnets", "title": "Magnets attract and repel", "grade": "3", "subject": "Physics",
     "standard": "3-PS2-3", "minutes": 7,
+    "sources": [{"title": "NGSS 3-PS2-3: Ask questions about cause and effect of magnetic interactions between objects not in contact"},
+                {"title": "OpenStax Physics: Magnetism", "url": "https://openstax.org/books/physics/pages/20-1-magnetic-fields-field-lines-and-force"}],
     "keywords": ["magnet", "north pole", "south pole", "attract", "repel", "magnetic force"],
     "printed": [
         {"text": "Attract", "at": [500, 170]}, {"text": "Repel", "at": [500, 600]},

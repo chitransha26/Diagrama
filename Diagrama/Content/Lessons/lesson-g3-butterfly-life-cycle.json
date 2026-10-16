@@ -17,6 +17,19 @@
   "egg"
  ],
  "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS 3-LS1-1: Develop models to describe that organisms have unique and diverse life cycles"
+  },
+  {
+   "title": "Monarch Joint Venture: Monarch life cycle",
+   "url": "https://monarchjointventure.org/monarch-biology/life-cycle"
+  },
+  {
+   "title": "University of Maryland Extension: Metamorphosis life stages of the monarch butterfly",
+   "url": "https://extension.umd.edu/sites/extension.umd.edu/files/publications/Metamorphosis-Life-Stages-Monarch-Butterfly-Milkweed_FS-1144_ada.pdf"
+  }
+ ],
  "legend": [
   {
    "name": "Milkweed leaf",
@@ -355,7 +368,7 @@
    "structure": "egg",
    "instruction": "Trace the tiny egg on the leaf.",
    "note": {
-    "text": "Stage 1. A monarch lays one egg at a time on the underside of a leaf. After about 4 days, a caterpillar hatches.",
+    "text": "Stage 1. A monarch lays one egg at a time on the underside of a leaf. After 3 to 5 days, a caterpillar hatches.",
     "remember": "An egg is about the size of a pinhead."
    }
   },
@@ -386,7 +399,7 @@
    "part": "details",
    "instruction": "Draw the lines between the body segments.",
    "note": {
-    "text": "Its body is made of segments, which let it bend and stretch. It sheds its skin about 5 times as it grows."
+    "text": "Its body is made of segments, which let it bend and stretch. It grows in five stages, shedding its skin each time it outgrows it."
    }
   },
   {
@@ -395,7 +408,7 @@
    "structure": "chrysalis",
    "instruction": "Trace the twig and the chrysalis hanging from it.",
    "note": {
-    "text": "Stage 3, the pupa. Inside, the caterpillar's body breaks down and rebuilds into a butterfly over about 10 days.",
+    "text": "Stage 3, the pupa. Inside, the caterpillar's body breaks down and rebuilds into a butterfly over 1 to 2 weeks.",
     "remember": "Butterflies make a chrysalis; moths spin a cocoon."
    }
   },

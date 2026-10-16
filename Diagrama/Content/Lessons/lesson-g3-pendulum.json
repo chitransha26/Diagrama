@@ -5,6 +5,15 @@
  "subject": "Physics",
  "standard": "3-PS2-2",
  "minutes": 7,
+ "sources": [
+  {
+   "title": "NGSS 3-PS2-2: Observe an object's motion to show that a pattern can be used to predict future motion"
+  },
+  {
+   "title": "OpenStax University Physics: The simple pendulum",
+   "url": "https://openstax.org/books/university-physics-volume-1/pages/15-4-pendulums"
+  }
+ ],
  "keywords": [
   "pendulum",
   "swing",

@@ -65,7 +65,13 @@ the app, so a lesson can't break them; the rest need checking by hand when autho
 - **Chemistry is drawn like on paper:** trace the printed element letters (no handwriting),
   draw bonds as lines and lone pairs as dots; graded by the bond structure, not the picture.
 - **Words on the page** (axis labels, N/S poles) are printed, never answers to a question.
-- **All new content needs teacher or scientist review before release** (PRD).
+- **Every fact is checked against an authoritative source** (OpenStax, NGSS, NOAA, NPS,
+  university extension services, peer-reviewed work), and every lesson cites its NGSS (or AP)
+  standard and its sources, shown in the lesson's info panel. Links are checked to be real;
+  a source is never guessed. **(enforced)**
+- **Every lesson must match its standard**, not just its topic (e.g. 3-LS3-1 needs both
+  inheritance and variation).
+- Teacher or scientist review is a later, pre-launch step (PRD §09).
 
 ## Curriculum
 - NGSS for grades 3–12, plus AP Biology and AP Chemistry; mapped in `curriculum/coverage.csv`.
@@ -78,6 +84,9 @@ the app, so a lesson can't break them; the rest need checking by hand when autho
   tried it and approved.
 
 ## Still open
+- **A content notice** for legal protection, such as "Content is checked against [sources].
+  Spot a mistake? Report it." plus terms of service. A lawyer should review the wording;
+  "not intended for educational use" is not recommended for an education app.
 - A **Watch** button to replay the demo stroke (it currently plays once at the start).
 - A **targeted hint after repeated mistakes** (PRD §04).
 - **Read-aloud audio**, needed before K–2.

@@ -5,6 +5,19 @@
  "subject": "Earth & space",
  "standard": "3-ESS3-1",
  "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS 3-ESS3-1: Make a claim about the merit of a design solution that reduces the impacts of a weather-related hazard"
+  },
+  {
+   "title": "Hurricane Science: Hurricane structure",
+   "url": "https://hurricanescience.org/science/science/hurricanestructure/"
+  },
+  {
+   "title": "Environment Canada: Hurricane structure and motion",
+   "url": "https://www.canada.ca/en/environment-climate-change/services/archive/hurricanes/structure-and-motion.html"
+  }
+ ],
  "keywords": [
   "hurricane",
   "storm",

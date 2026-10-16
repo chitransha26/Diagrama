@@ -125,6 +125,10 @@ enum PlantCellLesson {
                        kind: .recall(structures: ["wall", "nucleus"])),
         ],
         grade: "7",
-        standard: "MS-LS1-2"
+        standard: "MS-LS1-2",
+        sources: [
+            Source(title: "NGSS MS-LS1-2: Develop and use a model to describe the function of a cell as a whole and ways parts of cells contribute"),
+            Source(title: "OpenStax Biology 2e, 4.3: Eukaryotic cells", url: URL(string: "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells")),
+        ]
     )
 }

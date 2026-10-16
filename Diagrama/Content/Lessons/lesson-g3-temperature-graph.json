@@ -5,10 +5,17 @@
  "subject": "Earth & space",
  "standard": "3-ESS2-1",
  "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS 3-ESS2-1: Represent data in tables and graphs to describe typical weather conditions during a season"
+  }
+ ],
  "keywords": [
   "weather",
   "temperature",
   "bar graph",
+  "season",
+  "spring",
   "data",
   "graph",
   "degrees"
@@ -28,6 +35,14 @@
     180,
     180
    ]
+  },
+  {
+   "text": "A week in spring",
+   "at": [
+    530,
+    160
+   ],
+   "size": 36
   },
   {
    "text": "Day",
@@ -266,12 +281,12 @@
    "title": "Find the pattern",
    "instruction": "Look at how the bars change.",
    "showsDiagram": true,
-   "question": "What pattern does the graph show this week?",
+   "question": "What pattern does this week in spring show?",
    "options": [
     {
      "text": "It got warmer each day until Thursday, then cooled on Friday",
      "correct": true,
-     "feedback": "Right. Graphs make patterns easy to spot. Weather data over many weeks shows what each season is usually like."
+     "feedback": "Right. Graphs make patterns easy to spot."
     },
     {
      "text": "Every day was the same",
@@ -284,6 +299,32 @@
     {
      "text": "Friday was the warmest",
      "feedback": "Friday's bar is shorter than Thursday's."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Describe a season",
+   "instruction": "Think like a weather scientist.",
+   "showsDiagram": false,
+   "question": "You want to describe what spring weather is usually like where you live. What's the best way?",
+   "options": [
+    {
+     "text": "Graph temperatures from many springs and look for the pattern",
+     "correct": true,
+     "feedback": "Yes. One week can be unusual. Data from many years shows what weather to expect in a season."
+    },
+    {
+     "text": "Look at one warm day",
+     "feedback": "One day can be unusual. You need lots of data to see what's typical."
+    },
+    {
+     "text": "Guess from what you're wearing today",
+     "feedback": "That's one moment. Scientists use measurements over many seasons."
+    },
+    {
+     "text": "Check the weather in a different country",
+     "feedback": "Each place has its own climate. Use data from where you live."
     }
    ]
   }

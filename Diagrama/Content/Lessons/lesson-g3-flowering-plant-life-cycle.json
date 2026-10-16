@@ -5,6 +5,19 @@
  "subject": "Life science",
  "standard": "3-LS1-1",
  "minutes": 10,
+ "sources": [
+  {
+   "title": "NGSS 3-LS1-1: Develop models to describe that organisms have unique and diverse life cycles"
+  },
+  {
+   "title": "University of Maryland Extension: Tomato pollination and bumblebee visits",
+   "url": "https://extension.umd.edu/resource/tomato-pollination-and-bumblebee-visits"
+  },
+  {
+   "title": "UConn IPM: Pollination of greenhouse tomatoes",
+   "url": "https://ipm.cahnr.uconn.edu/pollination-of-greenhouse-tomatoes/"
+  }
+ ],
  "keywords": [
   "plant",
   "seed",
@@ -388,7 +401,7 @@
    "structure": "flower",
    "instruction": "Trace all five petals.",
    "note": {
-    "text": "Flowers are how the plant reproduces. Bees and wind carry pollen between flowers: this is pollination.",
+    "text": "Flowers are how the plant reproduces. When wind or a buzzing bumblebee shakes a tomato flower, pollen falls inside it: pollination.",
     "remember": "No pollination, no fruit."
    }
   },
@@ -399,7 +412,7 @@
    "part": "details",
    "instruction": "Draw the center of the flower.",
    "note": {
-    "text": "The center holds the parts that make pollen and the part that becomes the fruit."
+    "text": "The center holds the parts that make pollen and the part that becomes the fruit. A tomato flower can pollinate itself."
    }
   },
   {
@@ -523,9 +536,9 @@
    "question": "What has to happen before a flower can turn into a fruit with seeds?",
    "options": [
     {
-     "text": "Pollen has to reach the flower (pollination)",
+     "text": "Pollen has to reach the right part of the flower (pollination)",
      "correct": true,
-     "feedback": "Yes. Once pollinated, part of the flower grows into a fruit with seeds inside."
+     "feedback": "Yes. In a tomato, wind or a buzzing bumblebee shakes pollen loose. Once pollinated, part of the flower grows into a fruit with seeds inside."
     },
     {
      "text": "The flower has to lose its leaves",

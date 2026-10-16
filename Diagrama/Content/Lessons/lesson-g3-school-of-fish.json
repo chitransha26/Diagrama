@@ -5,6 +5,15 @@
  "subject": "Life science",
  "standard": "3-LS2-1",
  "minutes": 7,
+ "sources": [
+  {
+   "title": "NGSS 3-LS2-1: Construct an argument that some animals form groups that help members survive"
+  },
+  {
+   "title": "How It Works: Why do fish live in schools?",
+   "url": "https://www.howitworksdaily.com/why-do-fish-live-in-schools/"
+  }
+ ],
  "keywords": [
   "group",
   "school",
@@ -212,7 +221,7 @@
    "structure": "predator",
    "instruction": "Trace the big fish hunting them.",
    "note": {
-    "text": "A predator hunts other animals for food. A big fish like a tuna hunts small fish."
+    "text": "A predator hunts other animals for food. Bigger fish, like tuna, hunt small fish such as sardines."
    }
   },
   {
