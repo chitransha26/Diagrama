@@ -42,11 +42,15 @@ enum StrokeScorer {
 
     static func isDot(_ g: Polyline) -> Bool { max(g.bounds.width, g.bounds.height) <= dotSize }
 
-    /// Tolerance in diagram units. Fingers and capacitive styluses get a wider band than
-    /// pens (PRD §05), measured in on-screen points so it feels the same on every device.
+    /// How far ink may stray from a guide, in on-screen points. Fingers and capacitive
+    /// styluses get a wider band than pens (PRD §05).
+    static let fingerTolerance: CGFloat = 10
+    static let pencilTolerance: CGFloat = 6
+
+    /// Tolerance in diagram units for the current zoom. It's fixed on screen, so zooming in
+    /// makes it tighter on the diagram, never looser on screen.
     static func tolerance(isPencil: Bool, scale: CGFloat) -> CGFloat {
-        let points: CGFloat = isPencil ? 8 : 12
-        return max(points / max(scale, 0.01), 12)
+        (isPencil ? pencilTolerance : fingerTolerance) / max(scale, 0.01)
     }
 
     /// A trace is complete only when every guide is fully drawn, with no real gaps, and

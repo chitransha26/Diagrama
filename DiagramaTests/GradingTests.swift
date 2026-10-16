@@ -142,6 +142,25 @@ struct StrokeScorerTests {
         #expect(r.guideCoverage[1] == 0)
     }
 
+    @Test func toleranceIsTheSameOnScreenAtEveryZoom() {
+        for zoom in [1.0, 2.0, 4.0] as [CGFloat] {
+            let scale = 0.37 * zoom   // points per diagram unit on a small iPhone
+            #expect(abs(StrokeScorer.tolerance(isPencil: false, scale: scale) * scale - StrokeScorer.fingerTolerance) < 0.001)
+        }
+    }
+
+    @Test func aLineBesideTheGuideIsFlagged() {
+        // A body drawn 16 pt inside the guide at 4x zoom, as a learner did on purpose.
+        let scale: CGFloat = 0.37 * 4
+        let guide = Shapes.ellipse(500, 500, 60, 25)
+        let offset = 16 / scale
+        let ink = [Shapes.ellipse(500, 500, 60 - offset, 25 - offset).resampled(spacing: 3)]
+        let r = StrokeScorer.score(strokes: ink, guides: [guide], tolerance: StrokeScorer.tolerance(isPencil: false, scale: scale))
+        #expect(r.precision < 0.5)
+        #expect(!r.offGuidePoints.isEmpty)
+        #expect(!StrokeScorer.isComplete(r))
+    }
+
     @Test func pencilToleranceIsTighterThanFinger() {
         #expect(StrokeScorer.tolerance(isPencil: true, scale: 0.4) < StrokeScorer.tolerance(isPencil: false, scale: 0.4))
     }
