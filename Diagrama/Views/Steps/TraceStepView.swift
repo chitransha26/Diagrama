@@ -147,6 +147,7 @@ struct TraceStepView: View {
                             drawing: $drawing,
                             tool: erasing ? Eraser.tool : structure.pen.tool,
                             isEnabled: !passed,
+                            viewport: viewport,
                         onLift: { if erasing { DispatchQueue.main.async { erasing = false } } }
                         ) { added, isPencil in
                             if erasing { corrected = true } else if added { lastWasPencil = isPencil }

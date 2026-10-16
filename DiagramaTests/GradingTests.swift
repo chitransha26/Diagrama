@@ -135,6 +135,20 @@ struct StrokeScorerTests {
         #expect(StrokeScorer.isComplete(StrokeScorer.score(strokes: both, guides: [line, head], tolerance: 32)))
     }
 
+    @Test func aRoundedCornerStillCompletesASharpTip() {
+        // A forked tail traced with its tips rounded off, as hands and pen smoothing do.
+        let tail = Polyline(points: [CGPoint(x: 400, y: 500), CGPoint(x: 340, y: 450), CGPoint(x: 360, y: 500), CGPoint(x: 340, y: 550)], closed: true)
+        let tol: CGFloat = 8
+        let rounded = tail.resampled(spacing: 3).map { p -> CGPoint in
+            // pull points near each tip slightly inward, like a rounded corner
+            let tips = [CGPoint(x: 340, y: 450), CGPoint(x: 340, y: 550)]
+            guard let t = tips.first(where: { $0.distance(to: p) < 14 }) else { return p }
+            return p.lerp(to: CGPoint(x: 370, y: 500), (14 - t.distance(to: p)) / 14 * 0.45)
+        }
+        let r = StrokeScorer.score(strokes: [rounded], guides: [tail], tolerance: tol)
+        #expect(StrokeScorer.isComplete(r))
+    }
+
     @Test func aDabDrawsADot() {
         let dots = [Shapes.circle(100, 100, 7), Shapes.circle(140, 100, 7)]
         let r = StrokeScorer.score(strokes: [[CGPoint(x: 100, y: 100), CGPoint(x: 101, y: 101)]], guides: dots, tolerance: 32)

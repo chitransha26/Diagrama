@@ -86,7 +86,14 @@ enum StrokeScorer {
         var totalSamples = 0, totalCovered = 0
         for (g, guide) in guides.enumerated() {
             let samples = guide.resampled(spacing: sampleSpacing)
-            let covered = samples.map { s in inkByGuide[g].contains { $0.distance(to: s) <= tolerance } }
+            let corners = sharpCorners(guide)
+            // Hands and pens round off sharp corners (a tail tip, an arrow point), so the tip
+            // itself gets a little more leeway than the rest of the line.
+            let covered = samples.map { s -> Bool in
+                let nearCorner = corners.contains { $0.distance(to: s) <= tolerance * 2.5 }
+                let reach = nearCorner ? tolerance * 2 : tolerance
+                return inkByGuide[g].contains { $0.distance(to: s) <= reach }
+            }
             var count = covered.filter { $0 }.count
             if !isDot(guide) {
                 let extent = max(guide.bounds.width, guide.bounds.height)
@@ -110,6 +117,23 @@ enum StrokeScorer {
             longestGap: longestGap,
             untraced: untraced
         )
+    }
+
+    /// Points where a guide turns sharply (more than 60 degrees), like a tail tip or arrow point.
+    static func sharpCorners(_ guide: Polyline) -> [CGPoint] {
+        let p = guide.points
+        guard p.count >= 3 else { return guide.closed ? [] : [] }
+        var result: [CGPoint] = []
+        let range = guide.closed ? Array(p.indices) : Array(1..<(p.count - 1))
+        for i in range {
+            let a = p[(i - 1 + p.count) % p.count], b = p[i], c = p[(i + 1) % p.count]
+            let v1 = CGPoint(x: b.x - a.x, y: b.y - a.y), v2 = CGPoint(x: c.x - b.x, y: c.y - b.y)
+            let l1 = hypot(v1.x, v1.y), l2 = hypot(v2.x, v2.y)
+            guard l1 > 0, l2 > 0 else { continue }
+            let cosTurn = (v1.x * v2.x + v1.y * v2.y) / (l1 * l2)
+            if cosTurn < 0.5 { result.append(b) }   // turn sharper than 60 degrees
+        }
+        return result
     }
 
     /// Longest run of `value` in `flags`, treating closed shapes as a loop.

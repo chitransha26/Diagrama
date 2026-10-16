@@ -9,6 +9,9 @@ struct InkCanvas: UIViewRepresentable {
     @Binding var drawing: PKDrawing
     var tool: PKTool
     var isEnabled = true
+    /// For zoomed tracing, the canvas spans the whole diagram but only part is on screen.
+    /// It refuses touches outside that part, so they reach the toolbar and buttons around it.
+    var viewport: Viewport = .whole
     /// Two-finger pinch to zoom and pan, for free drawing without guides. One finger draws.
     var allowsZoom = false
     /// Called when the learner lifts the pen, finger or eraser.
@@ -17,8 +20,20 @@ struct InkCanvas: UIViewRepresentable {
 
     func makeCoordinator() -> Coordinator { Coordinator(self) }
 
-    func makeUIView(context: Context) -> PKCanvasView {
-        let view = PKCanvasView()
+    /// A canvas that only accepts touches inside the part that's visible on screen.
+    final class Canvas: PKCanvasView {
+        var viewport: Viewport = .whole
+
+        override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+            let unit = bounds.width / DiagramSpace.size
+            let side = DiagramSpace.size / viewport.zoom * unit
+            let visible = CGRect(x: viewport.origin.x * unit, y: viewport.origin.y * unit, width: side, height: side)
+            return visible.contains(point) && super.point(inside: point, with: event)
+        }
+    }
+
+    func makeUIView(context: Context) -> Canvas {
+        let view = Canvas()
         view.drawingPolicy = .anyInput
         view.backgroundColor = .clear
         view.isOpaque = false
@@ -38,8 +53,9 @@ struct InkCanvas: UIViewRepresentable {
         return view
     }
 
-    func updateUIView(_ view: PKCanvasView, context: Context) {
+    func updateUIView(_ view: Canvas, context: Context) {
         context.coordinator.parent = self
+        view.viewport = viewport
         view.isUserInteractionEnabled = isEnabled
         view.tool = tool
         view.isScrollEnabled = allowsZoom
