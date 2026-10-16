@@ -91,7 +91,7 @@ enum WaterLesson {
                 ],
                 showsDiagram: true
             ))),
-            LessonStep(title: "From memory", instruction: "The atoms have moved. Draw the bonds and lone pairs yourself, then press Check.",
+            LessonStep(title: "From memory", instruction: "The atoms have moved. Draw a line for each bond and two dots for each lone pair, then press Check.",
                        kind: .drawLewis(LewisStep(target: water, positions: [
                            CGPoint(x: 470, y: 560), CGPoint(x: 720, y: 380), CGPoint(x: 250, y: 400),
                        ]))),

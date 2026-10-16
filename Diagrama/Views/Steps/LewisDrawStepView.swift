@@ -40,7 +40,7 @@ struct LewisDrawStepView: View {
                 if passed {
                     FeedbackRow(kind: .correct, text: "Correct, from memory. Every atom has a full outer shell, and all \(step.target.valenceElectrons) valence electrons are placed.")
                 } else if issues.isEmpty {
-                    FeedbackRow(kind: .info, text: "Lines between atoms are bonds. Pairs of dots beside an atom are lone pairs.")
+                    FeedbackRow(kind: .info, text: session.step.instruction)
                 } else {
                     ForEach(issues.prefix(2), id: \.self) { FeedbackRow(kind: .wrong, text: $0) }
                 }

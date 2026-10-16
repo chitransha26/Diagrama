@@ -146,7 +146,7 @@ struct LessonStep: Identifiable {
     /// Steps that work on the learner's drawing keep all guidance under the canvas.
     var isDrawing: Bool {
         switch kind {
-        case .trace, .identify: true
+        case .trace, .identify, .color, .recall, .drawLewis: true
         default: false
         }
     }
@@ -230,6 +230,9 @@ struct IdentifyStep {
     let structureID: String
     /// Explanations for tapping other structures, keyed by structure ID.
     var mistakes: [String: String] = [:]
+    /// When set, taps inside the structure's own closed details (e.g. the cells, when looking
+    /// for the air spaces between them) are wrong, and get this explanation.
+    var insideDetailsMistake: String? = nil
 }
 
 struct LewisStep {

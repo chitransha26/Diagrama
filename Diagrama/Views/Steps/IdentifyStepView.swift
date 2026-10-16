@@ -52,7 +52,11 @@ struct IdentifyStepView: View {
     private func tap(_ point: CGPoint) {
         guard found == nil else { return }
         let hit = session.lesson.hit(at: point, among: session.revealed)
-        if hit?.structure.id == step.structureID {
+        if let hit, hit.structure.id == step.structureID, let msg = step.insideDetailsMistake,
+           hit.structure.details.contains(where: { $0.closed && $0.path.contains(point) }) {
+            missed = true
+            feedback = msg
+        } else if hit?.structure.id == step.structureID {
             session.recordScience(correct: !missed, topic: "Find the \(step.name)")
             withAnimation(.spring(response: 0.45, dampingFraction: 0.7)) { found = point }
         } else {

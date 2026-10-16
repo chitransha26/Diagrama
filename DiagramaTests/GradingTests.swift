@@ -229,7 +229,12 @@ struct ContentTests {
     @Test func everyDrawingStepHasANote() {
         for lesson in Catalog.lessons {
             for step in lesson.steps {
-                if step.isDrawing {
+                var teachesAPart = false
+                switch step.kind {
+                case .trace, .identify: teachesAPart = true
+                default: break
+                }
+                if teachesAPart {
                     #expect(step.note != nil, "\(lesson.id): \(step.title) has no note")
                     let length = (step.note?.text.count ?? 0) + (step.note?.remember?.count ?? 0)
                     #expect(length <= 180, "\(lesson.id): \(step.title) note is too long for the card")
@@ -361,5 +366,14 @@ struct IdentifyTests {
         #expect(lesson.hit(at: CGPoint(x: 225, y: 600), among: drawn)?.structure.id == "chloroplast")
         // Outside the cell.
         #expect(lesson.hit(at: CGPoint(x: 40, y: 40), among: drawn) == nil)
+    }
+
+    @Test func airSpacesAreBetweenTheSpongyCells() {
+        let leaf = LeafSectionLesson.lesson
+        let spongy = leaf.structure("spongy")
+        let gap = CGPoint(x: 650, y: 600), cell = CGPoint(x: 130, y: 530)
+        #expect(leaf.hit(at: gap, among: ["spongy"])?.structure.id == "spongy")
+        #expect(!spongy.details.contains { $0.path.contains(gap) })
+        #expect(spongy.details.contains { $0.path.contains(cell) })
     }
 }

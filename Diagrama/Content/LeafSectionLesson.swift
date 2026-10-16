@@ -80,6 +80,13 @@ enum LeafSectionLesson {
             LessonStep(title: "Spongy cells", instruction: "Draw the loosely packed spongy cells. The gaps between them are air spaces for gases.",
                        kind: .trace(structure: "spongy", part: .details),
                        note: PartNote(text: "Round, irregular cells. The gaps between them form air channels linking the stomata to the palisade layer.")),
+            LessonStep(title: "Air spaces", instruction: "You can't draw empty space, but it matters. Tap an air space: a gap between the spongy cells.",
+                       kind: .identify(IdentifyStep(name: "air space", structureID: "spongy", mistakes: [
+                           "palisade": "That's the palisade layer. Its cells are packed tightly, with almost no air spaces.",
+                           "vein": "That's the vein. The air spaces are the gaps between the round spongy cells.",
+                       ], insideDetailsMistake: "That's a spongy cell. The air spaces are the gaps between the cells.")),
+                       note: PartNote(text: "Gaps between the spongy cells. Carbon dioxide entering through the stomata spreads through them to the cells that photosynthesize.",
+                                      remember: "No air spaces, no CO₂ for photosynthesis.")),
             LessonStep(title: "Vein", instruction: "Trace the vascular bundle, the leaf's vein.",
                        kind: .trace(structure: "vein", part: .outline),
                        note: PartNote(text: "The vascular bundle is the leaf's plumbing. It brings water in, carries sugar out, and helps hold the leaf up.")),

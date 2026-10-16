@@ -375,7 +375,7 @@ struct RecallStepView: View {
                         FeedbackRow(kind: .wrong, text: "Not quite: only \(Int((r.coverage * 100).rounded()))% lines up with the \(names). Check the shapes and where they sit, then try again.")
                     }
                 } else {
-                    FeedbackRow(kind: .info, text: "Draw the \(names). Press Check when you're done.")
+                    FeedbackRow(kind: .info, text: session.step.instruction)
                 }
             }
             .frame(height: 92, alignment: .top)

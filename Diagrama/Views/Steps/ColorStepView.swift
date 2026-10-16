@@ -15,38 +15,7 @@ struct ColorStepView: View {
     }
 
     var body: some View {
-        VStack(spacing: 12) {
-            if let s = current, let color = s.fill {
-                HStack(spacing: 12) {
-                    Circle()
-                        .fill(color)
-                        .overlay(Circle().stroke(Theme.ink.opacity(0.35)))
-                        .frame(width: 34, height: 34)
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text("Fill the \(s.fillName)").font(.headline)
-                        Text(s.outlines.count > 1 ? "Tap each of the \(s.outlines.count) parts." : "Tap inside it.")
-                            .font(.subheadline).foregroundStyle(.secondary)
-                    }
-                    Spacer()
-                    Image(systemName: "paintbrush.pointed.fill").foregroundStyle(Theme.indigo)
-                }
-                .padding(12)
-                .background(RoundedRectangle(cornerRadius: 14).fill(Color(.secondarySystemBackground)))
-                .accessibilityElement(children: .combine)
-            } else {
-                // Same size as the instruction card, so the canvas doesn't move.
-                HStack(spacing: 12) {
-                    Image(systemName: "checkmark.circle.fill").font(.system(size: 30)).foregroundStyle(Theme.lime)
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text("All colored").font(.headline)
-                        Text("Every colored part is filled.").font(.subheadline).foregroundStyle(.secondary)
-                    }
-                    Spacer()
-                }
-                .padding(12)
-                .background(RoundedRectangle(cornerRadius: 14).fill(Color(.secondarySystemBackground)))
-            }
-
+        VStack(spacing: 10) {
             SquareStage { side in
                 LearnerDiagram(session: session)
                     .contentShape(Rectangle())
@@ -55,17 +24,39 @@ struct ColorStepView: View {
                     }
             }
 
-            Group {
+            // Everything to read sits here, under the canvas.
+            VStack(alignment: .leading, spacing: 8) {
+                task
                 if let feedback {
                     FeedbackRow(kind: feedback.kind, text: feedback.text)
                 } else {
-                    FeedbackRow(kind: .info, text: "The color is picked for you. Find the part and tap it.")
+                    FeedbackRow(kind: .info, text: session.step.instruction)
                 }
             }
-            .frame(height: 64, alignment: .top)
+            .frame(height: 156, alignment: .top)
 
             ContinueButton(enabled: current == nil) { session.advance() }
         }
+    }
+
+    /// The current color and the part it goes on, picked by the app.
+    @ViewBuilder private var task: some View {
+        HStack(spacing: 10) {
+            if let s = current, let color = s.fill {
+                Circle()
+                    .fill(color)
+                    .overlay(Circle().stroke(Theme.ink.opacity(0.35)))
+                    .frame(width: 26, height: 26)
+                Text("Fill the \(s.fillName)").font(.headline)
+                if s.outlines.count > 1 {
+                    Text("· tap all \(s.outlines.count)").font(.subheadline).foregroundStyle(.secondary)
+                }
+            } else {
+                Image(systemName: "checkmark.circle.fill").font(.title3).foregroundStyle(Theme.lime)
+                Text("All colored").font(.headline)
+            }
+        }
+        .accessibilityElement(children: .combine)
     }
 
     private func isFilled(_ s: Structure) -> Bool {
