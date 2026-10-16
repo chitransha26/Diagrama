@@ -20,10 +20,14 @@ struct DiagramView: View {
     var guides: [Polyline] = []
     var offGuide: [CGPoint] = []
     var markers: [DiagramMarker] = []
+    /// False draws on a transparent background, for overlays.
+    var paper = true
 
     var body: some View {
         Canvas { ctx, size in
-            ctx.fill(Path(CGRect(origin: .zero, size: size)), with: .color(Theme.paper))
+            if paper {
+                ctx.fill(Path(CGRect(origin: .zero, size: size)), with: .color(Theme.paper))
+            }
             let s = size.width / DiagramSpace.size
             ctx.scaleBy(x: s, y: s)
 
@@ -167,8 +171,13 @@ struct LearnerDiagram: View {
     var body: some View {
         ZStack {
             DiagramView(lesson: session.lesson, revealed: session.revealed, filled: session.filled,
-                        templateOpacity: session.layers.isEmpty ? 0.8 : 0.25, markers: markers)
+                        templateOpacity: session.layers.isEmpty ? 0.8 : 0.25)
             InkLayers(session: session)
+            if !markers.isEmpty {
+                // Markers go above the learner's ink so they're never hidden.
+                DiagramView(lesson: session.lesson, revealed: [], markers: markers, paper: false)
+                    .allowsHitTesting(false)
+            }
         }
     }
 }

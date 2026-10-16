@@ -13,6 +13,7 @@ struct LabelStepView: View {
     private var allCorrect: Bool { step.targets.allSatisfy { checked[$0.id] == true } }
 
     var body: some View {
+        ScrollViewReader { proxy in
         ScrollView {
             VStack(spacing: 14) {
                 LearnerDiagram(session: session, markers: markers)
@@ -25,13 +26,20 @@ struct LabelStepView: View {
                     row(for: target)
                 }
 
-                if allCorrect {
-                    ContinueButton { session.advance() }
-                } else {
-                    ContinueButton(title: "Check labels", enabled: answers.count == step.targets.count) { check() }
+                Group {
+                    if allCorrect {
+                        ContinueButton { session.advance() }
+                    } else {
+                        ContinueButton(title: "Check labels", enabled: answers.count == step.targets.count) { check() }
+                    }
                 }
+                .id("action")
             }
             .padding(.bottom)
+        }
+        .onChange(of: allCorrect) { _, done in
+            if done { withAnimation { proxy.scrollTo("action", anchor: .bottom) } }
+        }
         }
     }
 
@@ -104,6 +112,7 @@ struct ChoiceStepView: View {
     @State private var solved = false
 
     var body: some View {
+        ScrollViewReader { proxy in
         ScrollView {
             VStack(alignment: .leading, spacing: 14) {
                 if step.showsDiagram, !session.lesson.structures.isEmpty {
@@ -143,9 +152,14 @@ struct ChoiceStepView: View {
 
                 if solved {
                     ContinueButton { session.advance() }
+                        .id("action")
                 }
             }
             .padding(.bottom)
+        }
+        .onChange(of: solved) { _, done in
+            if done { withAnimation { proxy.scrollTo("action", anchor: .bottom) } }
+        }
         }
     }
 

@@ -174,7 +174,32 @@ struct TraceStepView: View {
             }
         }
         .onAppear { playDemo(after: 0.4) }
+        #if DEBUG
+        .task(id: segment) { await autodrawForTesting() }
+        #endif
     }
+
+    #if DEBUG
+    /// With the `-autodraw` launch argument, traces each guide perfectly, so later steps can
+    /// be checked quickly in the simulator. Debug builds only.
+    private func autodrawForTesting() async {
+        guard ProcessInfo.processInfo.arguments.contains("-autodraw") else { return }
+        try? await Task.sleep(for: .seconds(0.6))
+        guard fullSide > 0, !passed else { return }
+        let scale = fullSide / DiagramSpace.size
+        for g in guides {
+            let pts = g.closed ? g.points + [g.points[0]] : g.points
+            let stroke = PKStroke(ink: PKInk(.pen, color: UIColor(Theme.ink)), path: PKStrokePath(
+                controlPoints: pts.enumerated().map { i, p in
+                    PKStrokePoint(location: CGPoint(x: p.x * scale, y: p.y * scale), timeOffset: Double(i) * 0.01,
+                                  size: CGSize(width: 4, height: 4), opacity: 1, force: 1, azimuth: 0, altitude: .pi / 2)
+                },
+                creationDate: .now))
+            drawing.strokes.append(stroke)
+        }
+        evaluate()
+    }
+    #endif
 
     @ViewBuilder private var feedback: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -245,8 +270,7 @@ struct TraceStepView: View {
     }
 
     private func message(for r: TraceResult) -> String {
-        let what = part == .outline ? structure.name : "\(structure.name) details"
-        let name = what.prefix(1).uppercased() + what.dropFirst()
+        let name = session.step.title
         if !passed, segments.count > 1, r.coverage >= StrokeScorer.tracePass {
             return "Good. On to the next one."
         }

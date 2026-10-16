@@ -128,7 +128,7 @@ private struct ScoreCard: View {
             HStack(alignment: .firstTextBaseline, spacing: 2) {
                 Text(value).font(.system(size: 30, weight: .bold, design: .rounded)).monospacedDigit()
                 if let outOf {
-                    Text("/\(outOf)").font(.subheadline.weight(.semibold)).foregroundStyle(.secondary)
+                    Text(verbatim: "/\(outOf)").font(.subheadline.weight(.semibold)).foregroundStyle(.secondary)
                 }
             }
             Text(caption).font(.caption).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
