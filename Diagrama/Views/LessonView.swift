@@ -83,6 +83,8 @@ struct LessonView: View {
             TraceStepView(session: session, structureID: structure, part: part)
         case .color(let structures):
             ColorStepView(session: session, structureIDs: structures)
+        case .study:
+            StudyStepView(session: session)
         case .recall(let structures):
             RecallStepView(session: session, structureIDs: structures)
         case .label(let step):

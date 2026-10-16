@@ -19,6 +19,8 @@ struct LessonFile: Decodable {
     var structures: [StructureFile]?
     let steps: [StepFile]
     var printed: [PrintedFile]?
+    /// Structures to draw from memory; all of them if omitted.
+    var recall: [String]?
 
     struct PrintedFile: Decodable {
         let text: String
@@ -166,7 +168,8 @@ extension LessonFile {
             minutes: minutes, keywords: keywords ?? [], colorMode: mode,
             legend: try (legend ?? []).map { LegendEntry(name: $0.name, color: try $0.color.map(Self.color), meaning: $0.meaning) },
             structures: built, steps: try steps.map(step), grade: grade, standard: standard,
-            printed: (printed ?? []).map { PrintedText(text: $0.text, at: CGPoint(x: $0.at[0], y: $0.at[1]), size: $0.size ?? 46) }
+            printed: (printed ?? []).map { PrintedText(text: $0.text, at: CGPoint(x: $0.at[0], y: $0.at[1]), size: $0.size ?? 46) },
+            recallStructures: recall ?? []
         )
     }
 

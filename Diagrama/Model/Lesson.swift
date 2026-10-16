@@ -217,12 +217,36 @@ struct Lesson: Identifiable {
     let colorMode: ColorMode
     let legend: [LegendEntry]
     let structures: [Structure]
-    let steps: [LessonStep]
+    var steps: [LessonStep]
     /// School grade, e.g. "4", "7" or "10-11".
     var grade = "7"
     /// The standard this lesson supports, e.g. "MS-LS1-2" (NGSS) or "AP Biology".
     var standard = ""
     var printed: [PrintedText] = []
+    /// Structures to draw in the from-memory step. Empty means all of them.
+    var recallStructures: [String] = []
+
+    /// Every lesson with drawing ends by studying the finished diagram, then drawing it from
+    /// memory. Lessons that already have a memory step get the study screen just before it.
+    func withMemorySteps() -> Lesson {
+        guard steps.contains(where: { if case .trace = $0.kind { return true }; return false }) else { return self }
+        let study = LessonStep(title: "Study it", instruction: "Take a good look at the whole diagram. Next, you'll draw it from memory.", kind: .study)
+        var copy = self
+        if let i = steps.firstIndex(where: {
+            switch $0.kind { case .recall, .drawLewis: true; default: false }
+        }) {
+            if i == 0 || { if case .study = steps[i - 1].kind { return false }; return true }() {
+                copy.steps.insert(study, at: i)
+            }
+        } else {
+            let ids = recallStructures.isEmpty ? structures.map(\.id) : recallStructures
+            copy.steps += [study, LessonStep(
+                title: "From memory",
+                instruction: "Now draw it from memory, without guides. Any size and position is fine. Press Check when you're done.",
+                kind: .recall(structures: ids))]
+        }
+        return copy
+    }
 
     var band: GradeBand { GradeBand(grade: grade) }
 
@@ -262,7 +286,7 @@ struct LessonStep: Identifiable {
     /// Steps that work on the learner's drawing keep all guidance under the canvas.
     var isDrawing: Bool {
         switch kind {
-        case .trace, .identify, .color, .recall, .drawLewis: true
+        case .trace, .identify, .color, .recall, .drawLewis, .study: true
         default: false
         }
     }
@@ -288,6 +312,8 @@ enum StepKind {
     case drawLewis(LewisStep)
     /// Draw the listed structures from memory, with no guide.
     case recall(structures: [String])
+    /// Look at the finished diagram, with nothing to do, before drawing it from memory.
+    case study
 }
 
 enum TracePart {

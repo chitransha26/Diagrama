@@ -220,6 +220,7 @@ struct ContentTests {
                     #expect(ids.isSuperset(of: s), "\(lesson.id)")
                     for id in s { #expect(lesson.structure(id).fill != nil, "\(lesson.id): \(id) is clear, so it can't be filled") }
                 case .recall(let s): #expect(ids.isSuperset(of: s), "\(lesson.id)")
+                case .study: break
                 case .label(let l):
                     for t in l.targets { #expect(l.vocabulary.contains(t.answer), "\(lesson.id) missing \(t.answer)") }
                 case .choice(let c): #expect(c.options.filter(\.correct).count == 1, "\(lesson.id): \(c.question)")
@@ -275,6 +276,17 @@ struct ContentTests {
                     let length = (step.note?.text.count ?? 0) + (step.note?.remember?.count ?? 0)
                     #expect(length <= 180, "\(lesson.id): \(step.title) note is too long for the card")
                 }
+            }
+        }
+    }
+
+    @Test func everyDrawingLessonEndsWithStudyThenMemory() {
+        for lesson in Catalog.lessons where lesson.steps.contains(where: { if case .trace = $0.kind { return true }; return false }) {
+            let memory = lesson.steps.firstIndex { switch $0.kind { case .recall, .drawLewis: true; default: false } }
+            #expect(memory != nil, "\(lesson.id) has no from-memory step")
+            if let m = memory {
+                #expect(m > 0 && { if case .study = lesson.steps[m - 1].kind { return true }; return false }(),
+                        "\(lesson.id): no study screen before drawing from memory")
             }
         }
     }

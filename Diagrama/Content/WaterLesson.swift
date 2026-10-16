@@ -105,6 +105,7 @@ enum Catalog {
     static let loaded = LessonFile.bundled()
 
     static let lessons: [Lesson] = ([PlantCellLesson.lesson, LeafSectionLesson.lesson, WaterLesson.lesson] + loaded.lessons)
+        .map { $0.withMemorySteps() }
         .sorted { ($0.band.sortOrder, $0.grade, $0.title) < ($1.band.sortOrder, $1.grade, $1.title) }
 
     static func lesson(id: String) -> Lesson? { lessons.first { $0.id == id } }
