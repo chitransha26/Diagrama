@@ -220,7 +220,7 @@ struct ContentTests {
                     #expect(ids.isSuperset(of: s), "\(lesson.id)")
                     for id in s { #expect(lesson.structure(id).fill != nil, "\(lesson.id): \(id) is clear, so it can't be filled") }
                 case .recall(let s): #expect(ids.isSuperset(of: s), "\(lesson.id)")
-                case .study: break
+                case .copy(let s): #expect(ids.isSuperset(of: s), "\(lesson.id)")
                 case .label(let l):
                     for t in l.targets { #expect(l.vocabulary.contains(t.answer), "\(lesson.id) missing \(t.answer)") }
                 case .choice(let c): #expect(c.options.filter(\.correct).count == 1, "\(lesson.id): \(c.question)")
@@ -280,14 +280,23 @@ struct ContentTests {
         }
     }
 
-    @Test func everyDrawingLessonEndsWithStudyThenMemory() {
+    @Test func everyDrawingLessonEndsWithCopyThenMemory() {
         for lesson in Catalog.lessons where lesson.steps.contains(where: { if case .trace = $0.kind { return true }; return false }) {
-            let memory = lesson.steps.firstIndex { switch $0.kind { case .recall, .drawLewis: true; default: false } }
-            #expect(memory != nil, "\(lesson.id) has no from-memory step")
-            if let m = memory {
-                #expect(m > 0 && { if case .study = lesson.steps[m - 1].kind { return true }; return false }(),
-                        "\(lesson.id): no study screen before drawing from memory")
+            let memory = lesson.steps.lastIndex { step in
+                switch step.kind {
+                case .recall: return true
+                case .drawLewis(let s): return !s.copying
+                default: return false
+                }
             }
+            #expect(memory != nil, "\(lesson.id) has no from-memory step")
+            guard let m = memory, m > 0 else { continue }
+            let isCopy: Bool = switch lesson.steps[m - 1].kind {
+            case .copy: true
+            case .drawLewis(let s): s.copying
+            default: false
+            }
+            #expect(isCopy, "\(lesson.id): no copy screen before drawing from memory")
         }
     }
 

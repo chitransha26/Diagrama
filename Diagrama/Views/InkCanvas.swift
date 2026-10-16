@@ -9,6 +9,8 @@ struct InkCanvas: UIViewRepresentable {
     @Binding var drawing: PKDrawing
     var tool: PKTool
     var isEnabled = true
+    /// Two-finger pinch to zoom and pan, for free drawing without guides. One finger draws.
+    var allowsZoom = false
     /// Called when the learner lifts the pen, finger or eraser.
     var onLift: () -> Void = {}
     var onChange: (_ added: Bool, _ isPencil: Bool) -> Void
@@ -40,6 +42,10 @@ struct InkCanvas: UIViewRepresentable {
         context.coordinator.parent = self
         view.isUserInteractionEnabled = isEnabled
         view.tool = tool
+        view.isScrollEnabled = allowsZoom
+        view.maximumZoomScale = allowsZoom ? 4 : 1
+        if !allowsZoom, view.zoomScale != 1 { view.setZoomScale(1, animated: true) }
+        if view.zoomScale == 1, view.contentSize != view.bounds.size { view.contentSize = view.bounds.size }
         if view.drawing != drawing {
             view.drawing = drawing
         }

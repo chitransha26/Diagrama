@@ -226,26 +226,38 @@ struct Lesson: Identifiable {
     /// Structures to draw in the from-memory step. Empty means all of them.
     var recallStructures: [String] = []
 
-    /// Every lesson with drawing ends by studying the finished diagram, then drawing it from
-    /// memory. Lessons that already have a memory step get the study screen just before it.
+    /// Every lesson with drawing ends with two screens after its questions: copy the finished
+    /// diagram while looking at it, then draw it from memory. Lessons that already have a memory
+    /// step get the copy screen just before it.
     func withMemorySteps() -> Lesson {
         guard steps.contains(where: { if case .trace = $0.kind { return true }; return false }) else { return self }
-        let study = LessonStep(title: "Study it", instruction: "Take a good look at the whole diagram. Next, you'll draw it from memory.", kind: .study)
-        var copy = self
-        if let i = steps.firstIndex(where: {
-            switch $0.kind { case .recall, .drawLewis: true; default: false }
-        }) {
-            if i == 0 || { if case .study = steps[i - 1].kind { return false }; return true }() {
-                copy.steps.insert(study, at: i)
+        var lesson = self
+        let copyText = "Look at the picture and draw it again in the space below. Any size is fine."
+        if let i = steps.firstIndex(where: { switch $0.kind { case .recall, .drawLewis: true; default: false } }) {
+            if i > 0, case .copy = steps[i - 1].kind { return self }
+            switch steps[i].kind {
+            case .recall(let ids):
+                lesson.steps.insert(LessonStep(title: "Copy it", instruction: copyText, kind: .copy(structures: ids)), at: i)
+            case .drawLewis(let s):
+                var copying = s
+                copying.copying = true
+                copying.positions = s.positions.map { CGPoint(x: DiagramSpace.size - $0.x, y: $0.y) }
+                lesson.steps.insert(LessonStep(
+                    title: "Copy it",
+                    instruction: "Look at the picture and draw the same bonds and lone pairs around these atoms.",
+                    kind: .drawLewis(copying)), at: i)
+            default: break
             }
         } else {
             let ids = recallStructures.isEmpty ? structures.map(\.id) : recallStructures
-            copy.steps += [study, LessonStep(
-                title: "From memory",
-                instruction: "Now draw it from memory, without guides. Any size and position is fine. Press Check when you're done.",
-                kind: .recall(structures: ids))]
+            lesson.steps += [
+                LessonStep(title: "Copy it", instruction: copyText, kind: .copy(structures: ids)),
+                LessonStep(title: "From memory",
+                           instruction: "Now draw it from memory, without looking. Any size and position is fine. Press Check when you're done.",
+                           kind: .recall(structures: ids)),
+            ]
         }
-        return copy
+        return lesson
     }
 
     var band: GradeBand { GradeBand(grade: grade) }
@@ -286,7 +298,7 @@ struct LessonStep: Identifiable {
     /// Steps that work on the learner's drawing keep all guidance under the canvas.
     var isDrawing: Bool {
         switch kind {
-        case .trace, .identify, .color, .recall, .drawLewis, .study: true
+        case .trace, .identify, .color, .recall, .drawLewis, .copy: true
         default: false
         }
     }
@@ -312,8 +324,8 @@ enum StepKind {
     case drawLewis(LewisStep)
     /// Draw the listed structures from memory, with no guide.
     case recall(structures: [String])
-    /// Look at the finished diagram, with nothing to do, before drawing it from memory.
-    case study
+    /// Recreate the listed structures on a blank canvas while looking at the finished diagram.
+    case copy(structures: [String])
 }
 
 enum TracePart {
@@ -381,5 +393,7 @@ struct LewisStep {
     let target: MoleculeTarget
     /// Where each printed atom symbol sits, in diagram space. Grading uses only which atoms
     /// the learner's lines and dots belong to, never their exact positions.
-    let positions: [CGPoint]
+    var positions: [CGPoint]
+    /// Shows the finished structure above the canvas to copy from.
+    var copying = false
 }

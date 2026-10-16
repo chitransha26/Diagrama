@@ -22,6 +22,10 @@ struct LewisDrawStepView: View {
                 onRestart: { drawing = PKDrawing(); issues = [] }
             )
 
+            if step.copying {
+                ReferencePicture(lesson: session.lesson)
+            }
+
             SquareStage { side in
                 ZStack {
                     PrintedAtoms(atoms: step.target.atoms, positions: step.positions)
@@ -38,7 +42,7 @@ struct LewisDrawStepView: View {
 
             VStack(alignment: .leading, spacing: 6) {
                 if passed {
-                    FeedbackRow(kind: .correct, text: "Correct, from memory. Every atom has a full outer shell, and all \(step.target.valenceElectrons) valence electrons are placed.")
+                    FeedbackRow(kind: .correct, text: step.copying ? "Correct. Now you've drawn water's Lewis structure yourself." : "Correct, from memory. Every atom has a full outer shell, and all \(step.target.valenceElectrons) valence electrons are placed.")
                 } else if issues.isEmpty {
                     FeedbackRow(kind: .info, text: session.step.instruction)
                 } else {
@@ -51,7 +55,7 @@ struct LewisDrawStepView: View {
                 Spacer()
                 if passed || checks >= 3 {
                     ContinueButton {
-                        session.recallPassed = passed
+                        if !step.copying { session.recallPassed = passed }
                         session.advance()
                     }
                     .frame(maxWidth: 200)
@@ -73,7 +77,7 @@ struct LewisDrawStepView: View {
         let found = reading.notes + ChemistryValidator.issues(in: reading.molecule, target: step.target)
         checks += 1
         if checks == 1 {
-            session.recordScience(correct: found.isEmpty, topic: "Lewis structure of \(step.target.name), from memory")
+            session.recordScience(correct: found.isEmpty, topic: "Lewis structure of \(step.target.name)\(step.copying ? ", copied" : ", from memory")")
         }
         issues = found
         if found.isEmpty {

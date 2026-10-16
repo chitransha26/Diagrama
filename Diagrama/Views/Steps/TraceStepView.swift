@@ -331,6 +331,8 @@ struct TraceStepView: View {
 struct RecallStepView: View {
     @Bindable var session: LessonSession
     let structureIDs: [String]
+    /// Copy mode: the finished diagram stays visible above the canvas, and there's no peeking.
+    var copying = false
 
     @State private var drawing = PKDrawing()
     @State private var lastWasPencil = false
@@ -354,6 +356,10 @@ struct RecallStepView: View {
                 onRestart: { drawing = PKDrawing(); result = nil }
             )
 
+            if copying {
+                ReferencePicture(lesson: session.lesson)
+            }
+
             SquareStage { side in
                 ZStack {
                     if peeked {
@@ -366,6 +372,7 @@ struct RecallStepView: View {
                         drawing: $drawing,
                         tool: erasing ? Eraser.tool : Pen.pen.tool,
                         isEnabled: !passed,
+                        allowsZoom: !peeked,
                         onLift: { if erasing { DispatchQueue.main.async { erasing = false } } }
                     ) { added, isPencil in
                         if added { lastWasPencil = isPencil }
@@ -376,23 +383,27 @@ struct RecallStepView: View {
                 .onChange(of: side) { _, new in self.side = new }
             }
 
-            VStack(alignment: .leading, spacing: 8) {
+            VStack(alignment: .leading, spacing: 6) {
                 if let r = result {
                     if passed {
-                        FeedbackRow(kind: .correct, text: peeked
-                                    ? "That matches. Next time, try it without peeking."
-                                    : "Your \(names) match the real layout. Drawn from memory!")
+                        FeedbackRow(kind: .correct, text: copying
+                                    ? "Nice copy! Your drawing matches the picture."
+                                    : peeked ? "That matches. Next time, try it without peeking."
+                                    : "It matches the real layout. Drawn from memory!")
                     } else {
-                        FeedbackRow(kind: .wrong, text: "Not quite: only \(Int((r.coverage * 100).rounded()))% lines up with the \(names). Check the shapes and where they sit, then try again.")
+                        FeedbackRow(kind: .wrong, text: copying
+                                    ? "Not quite: only \(Int((r.coverage * 100).rounded()))% matches. Compare your shapes with the picture and try again."
+                                    : "Not quite: only \(Int((r.coverage * 100).rounded()))% matches. Check the shapes and where they sit, then try again.")
                     }
                 } else {
                     FeedbackRow(kind: .info, text: session.step.instruction)
+                    FeedbackRow(kind: .info, text: "Pinch with two fingers to zoom in on small parts.")
                 }
             }
-            .frame(height: 92, alignment: .top)
+            .frame(height: copying ? 70 : 92, alignment: .top)
 
             HStack(spacing: 12) {
-                if tries > 0 && !passed && !peeked {
+                if tries > 0 && !passed && !peeked && !copying {
                     Button {
                         peeked = true
                     } label: {
@@ -403,7 +414,7 @@ struct RecallStepView: View {
                 Spacer()
                 if passed || tries >= 3 {
                     ContinueButton {
-                        session.recallPassed = passed && !peeked
+                        if !copying { session.recallPassed = passed && !peeked }
                         session.advance()
                     }
                     .frame(maxWidth: 200)
@@ -427,5 +438,19 @@ struct RecallStepView: View {
         if StrokeScorer.recallPassed(r) {
             withAnimation { passed = true; erasing = false }
         }
+    }
+}
+
+/// The finished diagram, in its real colors, shown above the canvas to copy from.
+struct ReferencePicture: View {
+    let lesson: Lesson
+
+    var body: some View {
+        DiagramView(lesson: lesson, revealed: Set(lesson.structures.flatMap { [$0.id, TracePart.details.key($0.id)] }))
+            .aspectRatio(1, contentMode: .fit)
+            .frame(maxHeight: 170)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            .overlay(RoundedRectangle(cornerRadius: 12).stroke(Theme.ink.opacity(0.12)))
+            .accessibilityLabel("Picture to copy")
     }
 }
