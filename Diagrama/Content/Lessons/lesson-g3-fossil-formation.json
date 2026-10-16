@@ -1,0 +1,572 @@
+{
+ "id": "g3-fossil-formation",
+ "title": "How a fossil forms",
+ "grade": "3",
+ "subject": "Life science",
+ "standard": "3-LS4-1",
+ "minutes": 10,
+ "keywords": [
+  "fossil",
+  "sediment",
+  "rock layers",
+  "erosion",
+  "extinct",
+  "evidence"
+ ],
+ "printed": [
+  {
+   "text": "1",
+   "at": [
+    60,
+    80
+   ]
+  },
+  {
+   "text": "2",
+   "at": [
+    540,
+    80
+   ]
+  },
+  {
+   "text": "3",
+   "at": [
+    60,
+    560
+   ]
+  },
+  {
+   "text": "4",
+   "at": [
+    540,
+    560
+   ]
+  }
+ ],
+ "structures": [
+  {
+   "id": "lake",
+   "name": "lake",
+   "outlines": [
+    {
+     "line": [
+      80.0,
+      134,
+      126.25,
+      146,
+      172.5,
+      134,
+      218.75,
+      146,
+      265.0,
+      134,
+      311.25,
+      146,
+      357.5,
+      134,
+      403.75,
+      146,
+      450.0,
+      134
+     ]
+    },
+    {
+     "line": [
+      80,
+      400,
+      450,
+      400
+     ]
+    }
+   ]
+  },
+  {
+   "id": "deadFish",
+   "name": "fish",
+   "outlines": [
+    {
+     "ellipse": [
+      270,
+      372,
+      75.0,
+      28.5
+     ]
+    },
+    {
+     "polygon": [
+      195.0,
+      372,
+      150.0,
+      343.5,
+      150.0,
+      400.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "buried",
+   "name": "first layers",
+   "outlines": [
+    {
+     "line": [
+      560,
+      400,
+      930,
+      400
+     ]
+    },
+    {
+     "line": [
+      560.0,
+      324,
+      606.25,
+      336,
+      652.5,
+      324,
+      698.75,
+      336,
+      745.0,
+      324,
+      791.25,
+      336,
+      837.5,
+      324,
+      883.75,
+      336,
+      930.0,
+      324
+     ]
+    },
+    {
+     "line": [
+      560.0,
+      274,
+      606.25,
+      286,
+      652.5,
+      274,
+      698.75,
+      286,
+      745.0,
+      274,
+      791.25,
+      286,
+      837.5,
+      274,
+      883.75,
+      286,
+      930.0,
+      274
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      680,
+      372,
+      800,
+      372
+     ]
+    },
+    {
+     "circle": [
+      814,
+      372,
+      13
+     ]
+    },
+    {
+     "line": [
+      775,
+      354,
+      775,
+      390
+     ]
+    },
+    {
+     "line": [
+      750,
+      352,
+      750,
+      392
+     ]
+    },
+    {
+     "line": [
+      725,
+      354,
+      725,
+      390
+     ]
+    },
+    {
+     "line": [
+      700,
+      358,
+      700,
+      386
+     ]
+    },
+    {
+     "polygon": [
+      680,
+      372,
+      650,
+      354,
+      650,
+      390
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rock",
+   "name": "rock layers",
+   "outlines": [
+    {
+     "line": [
+      80,
+      880,
+      450,
+      880
+     ]
+    },
+    {
+     "line": [
+      80.0,
+      804,
+      126.25,
+      816,
+      172.5,
+      804,
+      218.75,
+      816,
+      265.0,
+      804,
+      311.25,
+      816,
+      357.5,
+      804,
+      403.75,
+      816,
+      450.0,
+      804
+     ]
+    },
+    {
+     "line": [
+      80.0,
+      744,
+      126.25,
+      756,
+      172.5,
+      744,
+      218.75,
+      756,
+      265.0,
+      744,
+      311.25,
+      756,
+      357.5,
+      744,
+      403.75,
+      756,
+      450.0,
+      744
+     ]
+    },
+    {
+     "line": [
+      80.0,
+      684,
+      126.25,
+      696,
+      172.5,
+      684,
+      218.75,
+      696,
+      265.0,
+      684,
+      311.25,
+      696,
+      357.5,
+      684,
+      403.75,
+      696,
+      450.0,
+      684
+     ]
+    },
+    {
+     "line": [
+      80.0,
+      624,
+      126.25,
+      636,
+      172.5,
+      624,
+      218.75,
+      636,
+      265.0,
+      624,
+      311.25,
+      636,
+      357.5,
+      624,
+      403.75,
+      636,
+      450.0,
+      624
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      210,
+      852,
+      330,
+      852
+     ]
+    },
+    {
+     "circle": [
+      344,
+      852,
+      13
+     ]
+    },
+    {
+     "line": [
+      305,
+      834,
+      305,
+      870
+     ]
+    },
+    {
+     "line": [
+      280,
+      832,
+      280,
+      872
+     ]
+    },
+    {
+     "line": [
+      255,
+      834,
+      255,
+      870
+     ]
+    },
+    {
+     "line": [
+      230,
+      838,
+      230,
+      866
+     ]
+    },
+    {
+     "polygon": [
+      210,
+      852,
+      180,
+      834,
+      180,
+      870
+     ]
+    }
+   ]
+  },
+  {
+   "id": "exposed",
+   "name": "eroded hillside",
+   "outlines": [
+    {
+     "path": "M 560 880 L 930 880 L 930 640 C 860 640 820 700 760 760 C 720 800 640 820 560 830 Z"
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      680,
+      852,
+      800,
+      852
+     ]
+    },
+    {
+     "circle": [
+      814,
+      852,
+      13
+     ]
+    },
+    {
+     "line": [
+      775,
+      834,
+      775,
+      870
+     ]
+    },
+    {
+     "line": [
+      750,
+      832,
+      750,
+      872
+     ]
+    },
+    {
+     "line": [
+      725,
+      834,
+      725,
+      870
+     ]
+    },
+    {
+     "line": [
+      700,
+      838,
+      700,
+      866
+     ]
+    },
+    {
+     "polygon": [
+      680,
+      852,
+      650,
+      834,
+      650,
+      870
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Lake",
+   "structure": "lake",
+   "instruction": "In picture 1, trace the water's surface and the lake bottom.",
+   "note": {
+    "text": "Most fossils form in water, where mud and sand can quickly cover a body.",
+    "remember": "Fossils need fast burial."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Fish",
+   "structure": "deadFish",
+   "instruction": "Trace the fish lying on the lake bottom.",
+   "note": {
+    "text": "When an animal dies, its body sinks. Soon only its hard parts, like bones, teeth and shells, are left."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Mud layers",
+   "structure": "buried",
+   "instruction": "In picture 2, trace the lake bottom and the layers of mud on top.",
+   "note": {
+    "text": "Rivers wash mud and sand over the bones, layer after layer. These layers are called sediment."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Bones",
+   "structure": "buried",
+   "part": "details",
+   "instruction": "Draw the skeleton under the mud.",
+   "note": {
+    "text": "Buried bones are protected from scavengers and weather, so they don't fall apart."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Rock layers",
+   "structure": "rock",
+   "instruction": "In picture 3, trace the many layers piled on top.",
+   "note": {
+    "text": "Over millions of years the weight of new layers presses the old ones into solid rock.",
+    "remember": "Deeper layers are older."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Fossil",
+   "structure": "rock",
+   "part": "details",
+   "instruction": "Draw the bones, now turned to stone.",
+   "note": {
+    "text": "Minerals from water seep into the bones and slowly replace them, turning them to stone. Now it's a fossil."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Erosion",
+   "structure": "exposed",
+   "instruction": "In picture 4, trace the worn-away hillside.",
+   "note": {
+    "text": "The rock is pushed up into land. Wind and water wear it away until the fossil reaches the surface."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Found!",
+   "structure": "exposed",
+   "part": "details",
+   "instruction": "Draw the fossil near the surface.",
+   "note": {
+    "text": "Scientists study fossils to learn which organisms lived long ago and what their environments were like."
+   }
+  },
+  {
+   "type": "order",
+   "title": "In order",
+   "items": [
+    "Fish dies and sinks",
+    "Buried by mud",
+    "Bones turn to stone",
+    "Erosion exposes it"
+   ],
+   "instruction": "Tap the steps in the order they happen.",
+   "why": "A body is buried quickly, its bones are replaced by minerals deep in rock, and erosion later brings it to the surface.",
+   "hint": "What has to cover the bones first?"
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Use what you've drawn.",
+   "showsDiagram": true,
+   "question": "Scientists find a fish fossil on top of a dry mountain. What does that tell them?",
+   "options": [
+    {
+     "text": "The area was once under water",
+     "correct": true,
+     "feedback": "Yes. Fish live in water, so this rock formed in a lake or sea long ago and was later pushed up."
+    },
+    {
+     "text": "Fish used to live on mountains",
+     "feedback": "Fish have always needed water. The land moved, not the fish's habits."
+    },
+    {
+     "text": "A bird dropped it there",
+     "feedback": "The fossil formed inside the rock layers, so it formed where it lies."
+    },
+    {
+     "text": "It tells us nothing",
+     "feedback": "Fossils are evidence of past life and past environments."
+    }
+   ]
+  }
+ ]
+}

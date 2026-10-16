@@ -1,0 +1,332 @@
+{
+ "id": "g3-plant-light-dark",
+ "title": "Environment changes traits: plant in light vs dark",
+ "grade": "3",
+ "subject": "Life science",
+ "standard": "3-LS3-2",
+ "minutes": 8,
+ "keywords": [
+  "environment",
+  "traits",
+  "light",
+  "chlorophyll",
+  "etiolated",
+  "plant growth"
+ ],
+ "colorMode": "illustration",
+ "legend": [
+  {
+   "name": "Leaves in light",
+   "color": "#4F8F34",
+   "meaning": "Deep green with chlorophyll"
+  },
+  {
+   "name": "Leaves in the dark",
+   "color": "#E3DD9A",
+   "meaning": "Pale yellow: no chlorophyll made"
+  },
+  {
+   "name": "Flowerpot",
+   "color": "#C0643A",
+   "meaning": "Terracotta clay"
+  }
+ ],
+ "structures": [
+  {
+   "id": "sun",
+   "name": "sun",
+   "outlines": [
+    {
+     "circle": [
+      140,
+      150,
+      34
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      186,
+      150,
+      212,
+      150
+     ]
+    },
+    {
+     "line": [
+      172.2,
+      182.2,
+      190.4,
+      200.4
+     ]
+    },
+    {
+     "line": [
+      140,
+      196,
+      140,
+      222
+     ]
+    },
+    {
+     "line": [
+      107.80000000000001,
+      182.2,
+      89.6,
+      200.4
+     ]
+    },
+    {
+     "line": [
+      94,
+      150,
+      68,
+      150
+     ]
+    },
+    {
+     "line": [
+      107.80000000000001,
+      117.80000000000001,
+      89.6,
+      99.6
+     ]
+    },
+    {
+     "line": [
+      140,
+      104,
+      140,
+      78
+     ]
+    },
+    {
+     "line": [
+      172.2,
+      117.80000000000001,
+      190.4,
+      99.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cupboard",
+   "name": "dark cupboard",
+   "pen": "bold",
+   "outlines": [
+    {
+     "rect": [
+      540,
+      90,
+      400,
+      830,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pots",
+   "name": "pots",
+   "colorName": "pots",
+   "outlines": [
+    {
+     "polygon": [
+      200,
+      760,
+      400,
+      760,
+      370,
+      890,
+      230,
+      890
+     ]
+    },
+    {
+     "polygon": [
+      640,
+      760,
+      840,
+      760,
+      810,
+      890,
+      670,
+      890
+     ]
+    }
+   ],
+   "fill": "#C0643A"
+  },
+  {
+   "id": "greenPlant",
+   "name": "plant in the light",
+   "colorName": "green leaves",
+   "outlines": [
+    {
+     "path": "M 300 640 C 250 600 214 612 208 632 C 240 652 276 650 300 640 Z"
+    },
+    {
+     "path": "M 300 590 C 350 550 386 562 392 582 C 360 602 324 600 300 590 Z"
+    },
+    {
+     "path": "M 300 690 C 352 660 382 676 386 694 C 352 712 320 706 300 690 Z"
+    }
+   ],
+   "fill": "#4F8F34",
+   "details": [
+    {
+     "line": [
+      300,
+      760,
+      300,
+      560
+     ]
+    }
+   ]
+  },
+  {
+   "id": "palePlant",
+   "name": "plant in the dark",
+   "colorName": "pale leaves",
+   "outlines": [
+    {
+     "path": "M 740 240 C 712 222 692 228 690 240 C 708 252 728 250 740 240 Z"
+    },
+    {
+     "path": "M 740 300 C 768 282 788 288 790 300 C 772 312 752 310 740 300 Z"
+    }
+   ],
+   "fill": "#E3DD9A",
+   "details": [
+    {
+     "line": [
+      740,
+      760,
+      744,
+      600,
+      736,
+      440,
+      742,
+      220
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Sun",
+   "structure": "sun",
+   "instruction": "Trace the sun.",
+   "note": {
+    "text": "The left plant grows in sunlight. Plants use light to make their food."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sunlight",
+   "structure": "sun",
+   "part": "details",
+   "instruction": "Draw the sun's rays.",
+   "note": {
+    "text": "Light also triggers the plant to make chlorophyll, the green pigment in its leaves."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Dark cupboard",
+   "structure": "cupboard",
+   "instruction": "Trace the cupboard around the right side.",
+   "note": {
+    "text": "The right plant grows from the same kind of seed, but in a dark cupboard with no light."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Pots",
+   "structure": "pots",
+   "instruction": "Trace both flowerpots.",
+   "note": {
+    "text": "Same seeds, same soil, same water. The only difference is light. That makes it a fair test."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Plant in light",
+   "structure": "greenPlant",
+   "instruction": "Trace the leaves of the plant in the light.",
+   "note": {
+    "text": "In light, the plant grows short and sturdy, with large, deep-green leaves."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Stem",
+   "structure": "greenPlant",
+   "part": "details",
+   "instruction": "Draw its short, strong stem.",
+   "note": {
+    "text": "A sturdy stem holds the leaves up toward the light."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Plant in the dark",
+   "structure": "palePlant",
+   "instruction": "Trace the small leaves at the top of the dark plant.",
+   "note": {
+    "text": "In the dark, leaves stay small and pale yellow, because the plant can't make chlorophyll without light.",
+    "remember": "No light, no green."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Long stem",
+   "structure": "palePlant",
+   "part": "details",
+   "instruction": "Draw its long, thin stem.",
+   "note": {
+    "text": "It grows tall and spindly, stretching to find light, using up the food stored in its seed."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "pots",
+    "greenPlant",
+    "palePlant"
+   ],
+   "instruction": "Color both plants to compare them."
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Compare the two plants.",
+   "showsDiagram": true,
+   "question": "Both plants came from the same kind of seed. Why do they look so different?",
+   "options": [
+    {
+     "text": "Their environment was different: one had light and one didn't",
+     "correct": true,
+     "feedback": "Yes. Plants inherit traits from their parents, but their environment changes how those traits show up."
+    },
+    {
+     "text": "They had different parents",
+     "feedback": "They're the same kind of plant. Only the light was different."
+    },
+    {
+     "text": "The pale one got too much water",
+     "feedback": "Both got the same water. Light was the only difference."
+    },
+    {
+     "text": "The pale one is a different species",
+     "feedback": "Same seeds, same species. The darkness changed how it grew."
+    }
+   ]
+  }
+ ]
+}

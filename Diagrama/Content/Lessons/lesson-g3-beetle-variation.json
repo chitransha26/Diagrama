@@ -1,0 +1,891 @@
+{
+ "id": "g3-beetle-variation",
+ "title": "Variation: beetles of different colors",
+ "grade": "3",
+ "subject": "Life science",
+ "standard": "3-LS4-2",
+ "minutes": 9,
+ "keywords": [
+  "variation",
+  "traits",
+  "beetle",
+  "survival",
+  "advantage",
+  "generations",
+  "camouflage"
+ ],
+ "colorMode": "illustration",
+ "printed": [
+  {
+   "text": "Long ago",
+   "at": [
+    500,
+    170
+   ]
+  },
+  {
+   "text": "Many generations later",
+   "at": [
+    500,
+    590
+   ]
+  }
+ ],
+ "legend": [
+  {
+   "name": "Green beetle",
+   "color": "#5E9E3E",
+   "meaning": "Matches green leaves"
+  },
+  {
+   "name": "Brown beetle",
+   "color": "#7A5230",
+   "meaning": "Stands out on green leaves"
+  }
+ ],
+ "structures": [
+  {
+   "id": "greenOld",
+   "name": "green beetles",
+   "colorName": "green beetles",
+   "outlines": [
+    {
+     "ellipse": [
+      170,
+      310,
+      30,
+      44
+     ]
+    },
+    {
+     "circle": [
+      170,
+      258,
+      15
+     ]
+    },
+    {
+     "ellipse": [
+      500,
+      310,
+      30,
+      44
+     ]
+    },
+    {
+     "circle": [
+      500,
+      258,
+      15
+     ]
+    }
+   ],
+   "fill": "#5E9E3E"
+  },
+  {
+   "id": "brownOld",
+   "name": "brown beetles",
+   "colorName": "brown beetles",
+   "outlines": [
+    {
+     "ellipse": [
+      335,
+      310,
+      30,
+      44
+     ]
+    },
+    {
+     "circle": [
+      335,
+      258,
+      15
+     ]
+    },
+    {
+     "ellipse": [
+      665,
+      310,
+      30,
+      44
+     ]
+    },
+    {
+     "circle": [
+      665,
+      258,
+      15
+     ]
+    },
+    {
+     "ellipse": [
+      830,
+      310,
+      30,
+      44
+     ]
+    },
+    {
+     "circle": [
+      830,
+      258,
+      15
+     ]
+    }
+   ],
+   "fill": "#7A5230",
+   "details": [
+    {
+     "line": [
+      140,
+      290,
+      118,
+      280
+     ]
+    },
+    {
+     "line": [
+      200,
+      290,
+      222,
+      280
+     ]
+    },
+    {
+     "line": [
+      140,
+      312,
+      118,
+      302
+     ]
+    },
+    {
+     "line": [
+      200,
+      312,
+      222,
+      302
+     ]
+    },
+    {
+     "line": [
+      140,
+      334,
+      118,
+      324
+     ]
+    },
+    {
+     "line": [
+      200,
+      334,
+      222,
+      324
+     ]
+    },
+    {
+     "line": [
+      170,
+      270,
+      170,
+      352
+     ]
+    },
+    {
+     "line": [
+      305,
+      290,
+      283,
+      280
+     ]
+    },
+    {
+     "line": [
+      365,
+      290,
+      387,
+      280
+     ]
+    },
+    {
+     "line": [
+      305,
+      312,
+      283,
+      302
+     ]
+    },
+    {
+     "line": [
+      365,
+      312,
+      387,
+      302
+     ]
+    },
+    {
+     "line": [
+      305,
+      334,
+      283,
+      324
+     ]
+    },
+    {
+     "line": [
+      365,
+      334,
+      387,
+      324
+     ]
+    },
+    {
+     "line": [
+      335,
+      270,
+      335,
+      352
+     ]
+    },
+    {
+     "line": [
+      470,
+      290,
+      448,
+      280
+     ]
+    },
+    {
+     "line": [
+      530,
+      290,
+      552,
+      280
+     ]
+    },
+    {
+     "line": [
+      470,
+      312,
+      448,
+      302
+     ]
+    },
+    {
+     "line": [
+      530,
+      312,
+      552,
+      302
+     ]
+    },
+    {
+     "line": [
+      470,
+      334,
+      448,
+      324
+     ]
+    },
+    {
+     "line": [
+      530,
+      334,
+      552,
+      324
+     ]
+    },
+    {
+     "line": [
+      500,
+      270,
+      500,
+      352
+     ]
+    },
+    {
+     "line": [
+      635,
+      290,
+      613,
+      280
+     ]
+    },
+    {
+     "line": [
+      695,
+      290,
+      717,
+      280
+     ]
+    },
+    {
+     "line": [
+      635,
+      312,
+      613,
+      302
+     ]
+    },
+    {
+     "line": [
+      695,
+      312,
+      717,
+      302
+     ]
+    },
+    {
+     "line": [
+      635,
+      334,
+      613,
+      324
+     ]
+    },
+    {
+     "line": [
+      695,
+      334,
+      717,
+      324
+     ]
+    },
+    {
+     "line": [
+      665,
+      270,
+      665,
+      352
+     ]
+    },
+    {
+     "line": [
+      800,
+      290,
+      778,
+      280
+     ]
+    },
+    {
+     "line": [
+      860,
+      290,
+      882,
+      280
+     ]
+    },
+    {
+     "line": [
+      800,
+      312,
+      778,
+      302
+     ]
+    },
+    {
+     "line": [
+      860,
+      312,
+      882,
+      302
+     ]
+    },
+    {
+     "line": [
+      800,
+      334,
+      778,
+      324
+     ]
+    },
+    {
+     "line": [
+      860,
+      334,
+      882,
+      324
+     ]
+    },
+    {
+     "line": [
+      830,
+      270,
+      830,
+      352
+     ]
+    }
+   ]
+  },
+  {
+   "id": "greenNew",
+   "name": "green beetles",
+   "colorName": "green beetles",
+   "outlines": [
+    {
+     "ellipse": [
+      170,
+      730,
+      30,
+      44
+     ]
+    },
+    {
+     "circle": [
+      170,
+      678,
+      15
+     ]
+    },
+    {
+     "ellipse": [
+      335,
+      730,
+      30,
+      44
+     ]
+    },
+    {
+     "circle": [
+      335,
+      678,
+      15
+     ]
+    },
+    {
+     "ellipse": [
+      500,
+      730,
+      30,
+      44
+     ]
+    },
+    {
+     "circle": [
+      500,
+      678,
+      15
+     ]
+    },
+    {
+     "ellipse": [
+      665,
+      730,
+      30,
+      44
+     ]
+    },
+    {
+     "circle": [
+      665,
+      678,
+      15
+     ]
+    }
+   ],
+   "fill": "#5E9E3E"
+  },
+  {
+   "id": "brownNew",
+   "name": "brown beetle",
+   "colorName": "brown beetle",
+   "outlines": [
+    {
+     "ellipse": [
+      830,
+      730,
+      30,
+      44
+     ]
+    },
+    {
+     "circle": [
+      830,
+      678,
+      15
+     ]
+    }
+   ],
+   "fill": "#7A5230",
+   "details": [
+    {
+     "line": [
+      140,
+      710,
+      118,
+      700
+     ]
+    },
+    {
+     "line": [
+      200,
+      710,
+      222,
+      700
+     ]
+    },
+    {
+     "line": [
+      140,
+      732,
+      118,
+      722
+     ]
+    },
+    {
+     "line": [
+      200,
+      732,
+      222,
+      722
+     ]
+    },
+    {
+     "line": [
+      140,
+      754,
+      118,
+      744
+     ]
+    },
+    {
+     "line": [
+      200,
+      754,
+      222,
+      744
+     ]
+    },
+    {
+     "line": [
+      170,
+      690,
+      170,
+      772
+     ]
+    },
+    {
+     "line": [
+      305,
+      710,
+      283,
+      700
+     ]
+    },
+    {
+     "line": [
+      365,
+      710,
+      387,
+      700
+     ]
+    },
+    {
+     "line": [
+      305,
+      732,
+      283,
+      722
+     ]
+    },
+    {
+     "line": [
+      365,
+      732,
+      387,
+      722
+     ]
+    },
+    {
+     "line": [
+      305,
+      754,
+      283,
+      744
+     ]
+    },
+    {
+     "line": [
+      365,
+      754,
+      387,
+      744
+     ]
+    },
+    {
+     "line": [
+      335,
+      690,
+      335,
+      772
+     ]
+    },
+    {
+     "line": [
+      470,
+      710,
+      448,
+      700
+     ]
+    },
+    {
+     "line": [
+      530,
+      710,
+      552,
+      700
+     ]
+    },
+    {
+     "line": [
+      470,
+      732,
+      448,
+      722
+     ]
+    },
+    {
+     "line": [
+      530,
+      732,
+      552,
+      722
+     ]
+    },
+    {
+     "line": [
+      470,
+      754,
+      448,
+      744
+     ]
+    },
+    {
+     "line": [
+      530,
+      754,
+      552,
+      744
+     ]
+    },
+    {
+     "line": [
+      500,
+      690,
+      500,
+      772
+     ]
+    },
+    {
+     "line": [
+      635,
+      710,
+      613,
+      700
+     ]
+    },
+    {
+     "line": [
+      695,
+      710,
+      717,
+      700
+     ]
+    },
+    {
+     "line": [
+      635,
+      732,
+      613,
+      722
+     ]
+    },
+    {
+     "line": [
+      695,
+      732,
+      717,
+      722
+     ]
+    },
+    {
+     "line": [
+      635,
+      754,
+      613,
+      744
+     ]
+    },
+    {
+     "line": [
+      695,
+      754,
+      717,
+      744
+     ]
+    },
+    {
+     "line": [
+      665,
+      690,
+      665,
+      772
+     ]
+    },
+    {
+     "line": [
+      800,
+      710,
+      778,
+      700
+     ]
+    },
+    {
+     "line": [
+      860,
+      710,
+      882,
+      700
+     ]
+    },
+    {
+     "line": [
+      800,
+      732,
+      778,
+      722
+     ]
+    },
+    {
+     "line": [
+      860,
+      732,
+      882,
+      722
+     ]
+    },
+    {
+     "line": [
+      800,
+      754,
+      778,
+      744
+     ]
+    },
+    {
+     "line": [
+      860,
+      754,
+      882,
+      744
+     ]
+    },
+    {
+     "line": [
+      830,
+      690,
+      830,
+      772
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Green beetles",
+   "structure": "greenOld",
+   "instruction": "In the top row, trace the two green beetles.",
+   "note": {
+    "text": "Beetles of the same kind can differ in color. Differences like this are called variation.",
+    "remember": "Same species, different traits."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Brown beetles",
+   "structure": "brownOld",
+   "instruction": "Trace the three brown beetles in the top row.",
+   "note": {
+    "text": "Long ago, most of these beetles were brown. They live on green leaves."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Legs",
+   "structure": "brownOld",
+   "part": "details",
+   "instruction": "Draw the legs and wing line on every top-row beetle.",
+   "note": {
+    "text": "Like all insects, each beetle has six legs. Its hard front wings meet in a line down its back."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Green beetles",
+   "structure": "greenNew",
+   "instruction": "In the bottom row, trace the four green beetles.",
+   "note": {
+    "text": "Birds eat the beetles they can see. Green beetles were harder to spot on leaves, so more survived and had young."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Brown beetle",
+   "structure": "brownNew",
+   "instruction": "Trace the last beetle in the bottom row.",
+   "note": {
+    "text": "Young beetles inherit their parents' color. Over many generations, green became the common color.",
+    "remember": "Traits that help survival get passed on more."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Legs",
+   "structure": "brownNew",
+   "part": "details",
+   "instruction": "Draw the legs and wing line on every bottom-row beetle.",
+   "note": {
+    "text": "The beetles still look alike in every other way. Only the share of each color changed."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "greenOld",
+    "brownOld",
+    "greenNew",
+    "brownNew"
+   ],
+   "instruction": "Color the beetles to compare the two rows."
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Compare the two rows.",
+   "showsDiagram": true,
+   "question": "Why are most beetles green many generations later?",
+   "options": [
+    {
+     "text": "Green beetles were hidden from birds, so more survived to have young",
+     "correct": true,
+     "feedback": "Yes. Being green gave them an advantage on green leaves, and they passed the trait on."
+    },
+    {
+     "text": "Brown beetles painted themselves green",
+     "feedback": "Beetles can't change their color. More green ones survived and reproduced."
+    },
+    {
+     "text": "Birds only eat green beetles",
+     "feedback": "It's the opposite: birds catch the beetles they can see, the brown ones."
+    },
+    {
+     "text": "Leaves made the beetles green",
+     "feedback": "Color is inherited from parents, not caused by leaves."
+    }
+   ]
+  }
+ ]
+}

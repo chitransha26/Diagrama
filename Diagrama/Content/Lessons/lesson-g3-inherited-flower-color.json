@@ -1,0 +1,315 @@
+{
+ "id": "g3-inherited-flower-color",
+ "title": "Inherited traits: flower color in a family",
+ "grade": "3",
+ "subject": "Life science",
+ "standard": "3-LS3-1",
+ "minutes": 8,
+ "keywords": [
+  "inheritance",
+  "traits",
+  "parents",
+  "offspring",
+  "pea plant",
+  "Mendel",
+  "flower color"
+ ],
+ "colorMode": "illustration",
+ "printed": [
+  {
+   "text": "Parents",
+   "at": [
+    500,
+    130
+   ]
+  },
+  {
+   "text": "Offspring",
+   "at": [
+    500,
+    820
+   ]
+  }
+ ],
+ "legend": [
+  {
+   "name": "Purple pea flower",
+   "color": "#7B4F9E",
+   "meaning": "Purple petals"
+  },
+  {
+   "name": "White pea flower",
+   "color": "#F4F1EA",
+   "meaning": "White petals"
+  }
+ ],
+ "structures": [
+  {
+   "id": "purpleParent",
+   "name": "purple parent",
+   "colorName": "purple flower",
+   "outlines": [
+    {
+     "path": "M 276 250 C 276 190 364 190 364 250 Z"
+    },
+    {
+     "ellipse": [
+      298,
+      268,
+      24,
+      16
+     ]
+    },
+    {
+     "ellipse": [
+      342,
+      268,
+      24,
+      16
+     ]
+    }
+   ],
+   "fill": "#7B4F9E"
+  },
+  {
+   "id": "whiteParent",
+   "name": "white parent",
+   "colorName": "white flower",
+   "outlines": [
+    {
+     "path": "M 636 250 C 636 190 724 190 724 250 Z"
+    },
+    {
+     "ellipse": [
+      658,
+      268,
+      24,
+      16
+     ]
+    },
+    {
+     "ellipse": [
+      702,
+      268,
+      24,
+      16
+     ]
+    }
+   ],
+   "fill": "#F4F1EA"
+  },
+  {
+   "id": "family",
+   "name": "family lines",
+   "outlines": [
+    {
+     "line": [
+      320,
+      300,
+      320,
+      420,
+      680,
+      420,
+      680,
+      300
+     ]
+    },
+    {
+     "line": [
+      500,
+      420,
+      500,
+      520
+     ]
+    },
+    {
+     "line": [
+      200,
+      640,
+      200,
+      520,
+      800,
+      520,
+      800,
+      640
+     ]
+    },
+    {
+     "line": [
+      400,
+      520,
+      400,
+      640
+     ]
+    },
+    {
+     "line": [
+      600,
+      520,
+      600,
+      640
+     ]
+    }
+   ]
+  },
+  {
+   "id": "offspring",
+   "name": "offspring",
+   "colorName": "offspring flowers",
+   "outlines": [
+    {
+     "path": "M 156 720 C 156 660 244 660 244 720 Z"
+    },
+    {
+     "ellipse": [
+      178,
+      738,
+      24,
+      16
+     ]
+    },
+    {
+     "ellipse": [
+      222,
+      738,
+      24,
+      16
+     ]
+    },
+    {
+     "path": "M 356 720 C 356 660 444 660 444 720 Z"
+    },
+    {
+     "ellipse": [
+      378,
+      738,
+      24,
+      16
+     ]
+    },
+    {
+     "ellipse": [
+      422,
+      738,
+      24,
+      16
+     ]
+    },
+    {
+     "path": "M 556 720 C 556 660 644 660 644 720 Z"
+    },
+    {
+     "ellipse": [
+      578,
+      738,
+      24,
+      16
+     ]
+    },
+    {
+     "ellipse": [
+      622,
+      738,
+      24,
+      16
+     ]
+    },
+    {
+     "path": "M 756 720 C 756 660 844 660 844 720 Z"
+    },
+    {
+     "ellipse": [
+      778,
+      738,
+      24,
+      16
+     ]
+    },
+    {
+     "ellipse": [
+      822,
+      738,
+      24,
+      16
+     ]
+    }
+   ],
+   "fill": "#7B4F9E"
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Purple parent",
+   "structure": "purpleParent",
+   "instruction": "Trace the first parent's flower.",
+   "note": {
+    "text": "Pea plants were studied by Gregor Mendel in the 1860s. This parent plant has purple flowers."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "White parent",
+   "structure": "whiteParent",
+   "instruction": "Trace the second parent's flower.",
+   "note": {
+    "text": "This parent has white flowers. Flower color is a trait, a feature passed from parents to offspring."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Family lines",
+   "structure": "family",
+   "instruction": "Draw the lines joining the parents to their offspring.",
+   "note": {
+    "text": "A family tree shows who came from whom. All four offspring come from these two parents."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Offspring",
+   "structure": "offspring",
+   "instruction": "Trace the four offspring flowers.",
+   "note": {
+    "text": "Offspring inherit traits from both parents, so they look like their parents.",
+    "remember": "Traits are passed from parents to offspring."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "purpleParent",
+    "whiteParent",
+    "offspring"
+   ],
+   "instruction": "Color the flowers to see which color the offspring inherited."
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Look at the colors.",
+   "showsDiagram": true,
+   "question": "Mendel saw that when he crossed purple and white pea plants, all the offspring were purple. What does that show?",
+   "options": [
+    {
+     "text": "Offspring inherit traits from their parents, and some traits can hide others",
+     "correct": true,
+     "feedback": "Yes. The offspring got a color from their parents. White was hidden this time, but it can reappear in later generations."
+    },
+    {
+     "text": "The white parent passed on nothing",
+     "feedback": "Both parents passed on traits. The white trait was hidden, not lost: it shows up again in the next generation."
+    },
+    {
+     "text": "Flower color is random",
+     "feedback": "Mendel found clear patterns. Color is inherited, not random."
+    },
+    {
+     "text": "Sunlight turned them purple",
+     "feedback": "These plants grew in the same conditions. The color came from their parents."
+    }
+   ]
+  }
+ ]
+}

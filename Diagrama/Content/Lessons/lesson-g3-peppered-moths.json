@@ -1,0 +1,292 @@
+{
+ "id": "g3-peppered-moths",
+ "title": "Camouflage: peppered moths on bark",
+ "grade": "3",
+ "subject": "Life science",
+ "standard": "3-LS4-3",
+ "minutes": 8,
+ "keywords": [
+  "camouflage",
+  "peppered moth",
+  "adaptation",
+  "survive",
+  "habitat",
+  "predator",
+  "natural selection"
+ ],
+ "colorMode": "illustration",
+ "legend": [
+  {
+   "name": "Lichen-covered bark",
+   "color": "#C9C6B5",
+   "meaning": "Pale gray-green, before pollution"
+  },
+  {
+   "name": "Soot-darkened bark",
+   "color": "#3B3833",
+   "meaning": "Blackened by factory smoke"
+  },
+  {
+   "name": "Light moth",
+   "color": "#E6E1D3",
+   "meaning": "Pale with dark speckles (speckles not shown)"
+  },
+  {
+   "name": "Dark moth",
+   "color": "#2A2826",
+   "meaning": "Almost black"
+  }
+ ],
+ "structures": [
+  {
+   "id": "lightBark",
+   "name": "pale tree trunk",
+   "colorName": "pale bark",
+   "outlines": [
+    {
+     "rect": [
+      120,
+      110,
+      300,
+      790,
+      30
+     ]
+    }
+   ],
+   "fill": "#C9C6B5"
+  },
+  {
+   "id": "darkBark",
+   "name": "dark tree trunk",
+   "colorName": "dark bark",
+   "outlines": [
+    {
+     "rect": [
+      580,
+      110,
+      300,
+      790,
+      30
+     ]
+    }
+   ],
+   "fill": "#3B3833"
+  },
+  {
+   "id": "lightMoths",
+   "name": "light moths",
+   "colorName": "light moths",
+   "pen": "fine",
+   "outlines": [
+    {
+     "polygon": [
+      270,
+      322,
+      292,
+      306,
+      328,
+      316,
+      320,
+      336,
+      296,
+      354,
+      270,
+      342,
+      244,
+      354,
+      220,
+      336,
+      212,
+      316,
+      248,
+      306
+     ]
+    },
+    {
+     "polygon": [
+      730,
+      322,
+      752,
+      306,
+      788,
+      316,
+      780,
+      336,
+      756,
+      354,
+      730,
+      342,
+      704,
+      354,
+      680,
+      336,
+      672,
+      316,
+      708,
+      306
+     ]
+    }
+   ],
+   "fill": "#E6E1D3"
+  },
+  {
+   "id": "darkMoths",
+   "name": "dark moths",
+   "colorName": "dark moths",
+   "pen": "fine",
+   "outlines": [
+    {
+     "polygon": [
+      270,
+      642,
+      292,
+      626,
+      328,
+      636,
+      320,
+      656,
+      296,
+      674,
+      270,
+      662,
+      244,
+      674,
+      220,
+      656,
+      212,
+      636,
+      248,
+      626
+     ]
+    },
+    {
+     "polygon": [
+      730,
+      642,
+      752,
+      626,
+      788,
+      636,
+      780,
+      656,
+      756,
+      674,
+      730,
+      662,
+      704,
+      674,
+      680,
+      656,
+      672,
+      636,
+      708,
+      626
+     ]
+    }
+   ],
+   "fill": "#2A2826"
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Pale trunk",
+   "structure": "lightBark",
+   "instruction": "Trace the tree trunk on the left.",
+   "note": {
+    "text": "In clean air, tree bark is covered in pale lichen. This was normal in England before the 1800s."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Dark trunk",
+   "structure": "darkBark",
+   "instruction": "Trace the tree trunk on the right.",
+   "note": {
+    "text": "Factory smoke in the 1800s killed the lichen and coated bark in black soot."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Light moths",
+   "structure": "lightMoths",
+   "instruction": "Trace a light moth on each tree.",
+   "note": {
+    "text": "Most peppered moths were pale and speckled, a perfect match for lichen-covered bark.",
+    "remember": "Camouflage: blending in to stay hidden."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Dark moths",
+   "structure": "darkMoths",
+   "instruction": "Trace a dark moth on each tree.",
+   "note": {
+    "text": "A few peppered moths are born dark. On pale bark, birds spot and eat them easily."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "lightBark",
+    "darkBark",
+    "lightMoths",
+    "darkMoths"
+   ],
+   "instruction": "Color the trees and moths, then look at which moths are easy to see."
+  },
+  {
+   "type": "choice",
+   "title": "Spot the moth",
+   "instruction": "Look at the colored trees.",
+   "showsDiagram": true,
+   "question": "On the dark, sooty tree, which moth is a hungry bird more likely to catch?",
+   "options": [
+    {
+     "text": "The light moth",
+     "correct": true,
+     "feedback": "Yes. It stands out against the dark bark, while the dark moth blends in."
+    },
+    {
+     "text": "The dark moth",
+     "feedback": "The dark moth matches the sooty bark, so it's hidden. The light one stands out."
+    },
+    {
+     "text": "Both equally",
+     "feedback": "Look at the colors: one moth matches the bark and one doesn't."
+    },
+    {
+     "text": "Neither: birds don't eat moths",
+     "feedback": "Many birds eat moths. That's why camouflage matters."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Think about many generations.",
+   "showsDiagram": true,
+   "question": "As the trees got darker, what happened to the moths over many years?",
+   "options": [
+    {
+     "text": "Dark moths became more common, because more of them survived to have young",
+     "correct": true,
+     "feedback": "Right. Dark moths survived better, so more young were dark. When the air was cleaned up, pale moths became common again."
+    },
+    {
+     "text": "Each light moth turned dark",
+     "feedback": "A moth can't change its color. More dark moths survived and passed their color on."
+    },
+    {
+     "text": "All the moths died",
+     "feedback": "The moths that matched the bark survived and kept the species going."
+    },
+    {
+     "text": "Nothing changed",
+     "feedback": "Scientists recorded a big change: dark moths went from rare to common."
+    }
+   ]
+  }
+ ]
+}
