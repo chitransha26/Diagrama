@@ -1,0 +1,186 @@
+{
+ "id": "g3-pendulum",
+ "title": "A pendulum's swing",
+ "grade": "3",
+ "subject": "Physics",
+ "standard": "3-PS2-2",
+ "minutes": 7,
+ "keywords": [
+  "pendulum",
+  "swing",
+  "pattern",
+  "motion",
+  "predict",
+  "clock"
+ ],
+ "structures": [
+  {
+   "id": "pivot",
+   "name": "pivot",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      420,
+      140,
+      580,
+      140
+     ]
+    }
+   ]
+  },
+  {
+   "id": "strings",
+   "name": "strings",
+   "pen": "fine",
+   "outlines": [
+    {
+     "line": [
+      500,
+      140,
+      280.0,
+      521.1
+     ]
+    },
+    {
+     "line": [
+      500,
+      140,
+      500.0,
+      580.0
+     ]
+    },
+    {
+     "line": [
+      500,
+      140,
+      720.0,
+      521.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bobs",
+   "name": "bob",
+   "outlines": [
+    {
+     "circle": [
+      280.0,
+      521.1,
+      32
+     ]
+    },
+    {
+     "circle": [
+      500.0,
+      580.0,
+      32
+     ]
+    },
+    {
+     "circle": [
+      720.0,
+      521.1,
+      32
+     ]
+    }
+   ]
+  },
+  {
+   "id": "swing",
+   "name": "swing path",
+   "outlines": [
+    {
+     "path": "M 727.8 651.6 A 560 560 0 0 1 272.2 651.6"
+    },
+    {
+     "line": [
+      288.2,
+      672.1,
+      272.2,
+      651.6,
+      298.2,
+      649.8
+     ]
+    },
+    {
+     "line": [
+      701.8,
+      649.8,
+      727.8,
+      651.6,
+      711.8,
+      672.1
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Pivot",
+   "structure": "pivot",
+   "instruction": "Trace the bar the pendulum hangs from.",
+   "note": {
+    "text": "The pivot is the fixed point the pendulum swings around. It doesn't move."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Strings",
+   "structure": "strings",
+   "instruction": "Trace the string in all three positions: left, middle and right.",
+   "note": {
+    "text": "We draw the same pendulum three times to show where it is at different moments as it swings."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Bob",
+   "structure": "bobs",
+   "instruction": "Trace the weight, called the bob, in each position.",
+   "note": {
+    "text": "The bob swings fastest at the bottom and slows to a stop for an instant at each side before swinging back.",
+    "remember": "Fastest at the bottom, slowest at the sides."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Swing path",
+   "structure": "swing",
+   "instruction": "Draw the curved path the bob follows, with arrows at both ends.",
+   "note": {
+    "text": "The bob swings back and forth along the same path, and each swing takes the same time. That repeating pattern lets us predict it.",
+    "remember": "Pendulum clocks use this steady pattern."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Predict",
+   "instruction": "Use the pattern you drew.",
+   "showsDiagram": true,
+   "question": "The bob has just reached the far left. Where will it go next?",
+   "options": [
+    {
+     "text": "Back through the middle toward the right",
+     "correct": true,
+     "feedback": "Yes. It always swings back along the same path: the pattern repeats."
+    },
+    {
+     "text": "It stays on the left",
+     "feedback": "It stops only for an instant at the side, then gravity pulls it back down."
+    },
+    {
+     "text": "Higher up on the left",
+     "feedback": "A pendulum never swings higher than where it started. It swings back."
+    },
+    {
+     "text": "Somewhere random",
+     "feedback": "Its motion follows a pattern, so we can predict exactly where it goes next."
+    }
+   ]
+  }
+ ]
+}

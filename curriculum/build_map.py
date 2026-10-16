@@ -57,7 +57,7 @@ D = [
     ("3", "Life", "Frog life cycle", "3-LS1-1", "process"),
     ("3", "Life", "Flowering plant life cycle", "3-LS1-1", "process"),
     ("3", "Life", "Chicken life cycle", "3-LS1-1", "process"),
-    ("3", "Life", "Animals in groups: a wolf pack", "3-LS2-1", "trace"),
+    ("3", "Life", "Animals in groups: a school of fish", "3-LS2-1", "trace"),
     ("3", "Life", "Inherited traits: flower color in a family", "3-LS3-1", "compare"),
     ("3", "Life", "Environment changes traits: plant in light vs dark", "3-LS3-2", "compare"),
     ("3", "Life", "How a fossil forms", "3-LS4-1", "process"),

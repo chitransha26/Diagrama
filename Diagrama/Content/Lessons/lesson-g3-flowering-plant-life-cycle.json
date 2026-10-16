@@ -1,0 +1,545 @@
+{
+ "id": "g3-flowering-plant-life-cycle",
+ "title": "Flowering plant life cycle",
+ "grade": "3",
+ "subject": "Life science",
+ "standard": "3-LS1-1",
+ "minutes": 10,
+ "keywords": [
+  "plant",
+  "seed",
+  "seedling",
+  "flower",
+  "fruit",
+  "pollination",
+  "germination",
+  "tomato",
+  "life cycle"
+ ],
+ "colorMode": "illustration",
+ "legend": [
+  {
+   "name": "Tomato seed",
+   "color": "#D8C28A",
+   "meaning": "Pale tan"
+  },
+  {
+   "name": "Leaves",
+   "color": "#5A9B3C",
+   "meaning": "Green from chlorophyll"
+  },
+  {
+   "name": "Flower petals",
+   "color": "#F2C230",
+   "meaning": "Tomato flowers are yellow"
+  },
+  {
+   "name": "Tomato",
+   "color": "#D9412B",
+   "meaning": "A ripe tomato is red"
+  }
+ ],
+ "structures": [
+  {
+   "id": "seed",
+   "name": "seed",
+   "colorName": "seed",
+   "focus": [
+    420,
+    140,
+    160,
+    120
+   ],
+   "outlines": [
+    {
+     "ellipse": [
+      500,
+      200,
+      42,
+      28
+     ]
+    }
+   ],
+   "fill": "#D8C28A",
+   "details": [
+    {
+     "path": "M 478 200 C 486 186 506 184 516 196"
+    }
+   ]
+  },
+  {
+   "id": "seedling",
+   "name": "seedling",
+   "colorName": "seedling leaves",
+   "outlines": [
+    {
+     "path": "M 790 478 C 760 452 728 456 722 470 C 744 486 770 488 790 478 Z"
+    },
+    {
+     "path": "M 790 478 C 820 452 852 456 858 470 C 836 486 810 488 790 478 Z"
+    }
+   ],
+   "fill": "#5A9B3C",
+   "details": [
+    {
+     "line": [
+      790,
+      478,
+      790,
+      560
+     ]
+    },
+    {
+     "line": [
+      720,
+      560,
+      860,
+      560
+     ]
+    },
+    {
+     "line": [
+      790,
+      560,
+      776,
+      590
+     ]
+    },
+    {
+     "line": [
+      790,
+      560,
+      806,
+      592
+     ]
+    }
+   ]
+  },
+  {
+   "id": "leaves",
+   "name": "leaves",
+   "colorName": "leaves",
+   "outlines": [
+    {
+     "path": "M 500 820 C 460 790 426 798 418 814 C 446 834 476 832 500 820 Z"
+    },
+    {
+     "path": "M 500 780 C 540 750 574 758 582 774 C 554 794 524 792 500 780 Z"
+    }
+   ],
+   "fill": "#5A9B3C",
+   "details": [
+    {
+     "line": [
+      500,
+      900,
+      500,
+      740
+     ]
+    },
+    {
+     "line": [
+      430,
+      900,
+      570,
+      900
+     ]
+    }
+   ]
+  },
+  {
+   "id": "flower",
+   "name": "flower",
+   "colorName": "flower petals",
+   "pen": "fine",
+   "focus": [
+    440,
+    650,
+    120,
+    120
+   ],
+   "outlines": [
+    {
+     "circle": [
+      500,
+      686,
+      15
+     ]
+    },
+    {
+     "circle": [
+      524.7,
+      703.94,
+      15
+     ]
+    },
+    {
+     "circle": [
+      515.34,
+      733.06,
+      15
+     ]
+    },
+    {
+     "circle": [
+      484.66,
+      733.06,
+      15
+     ]
+    },
+    {
+     "circle": [
+      475.3,
+      703.94,
+      15
+     ]
+    }
+   ],
+   "fill": "#F2C230",
+   "details": [
+    {
+     "circle": [
+      500,
+      712,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fruit",
+   "name": "fruit",
+   "colorName": "tomato",
+   "outlines": [
+    {
+     "circle": [
+      220,
+      508,
+      54
+     ]
+    }
+   ],
+   "fill": "#D9412B",
+   "details": [
+    {
+     "ellipse": [
+      200,
+      500,
+      6,
+      4
+     ]
+    },
+    {
+     "ellipse": [
+      236,
+      494,
+      6,
+      4
+     ]
+    },
+    {
+     "ellipse": [
+      214,
+      528,
+      6,
+      4
+     ]
+    },
+    {
+     "ellipse": [
+      244,
+      522,
+      6,
+      4
+     ]
+    },
+    {
+     "line": [
+      220,
+      454,
+      220,
+      434
+     ]
+    }
+   ]
+  },
+  {
+   "id": "arrows",
+   "name": "arrows",
+   "outlines": [
+    {
+     "path": "M 640.8 235.1 A 300 300 0 0 1 764.9 359.2"
+    },
+    {
+     "line": [
+      764.9,
+      333.2,
+      764.9,
+      359.2,
+      743.3,
+      344.6
+     ]
+    },
+    {
+     "path": "M 764.9 640.8 A 300 300 0 0 1 640.8 764.9"
+    },
+    {
+     "line": [
+      666.8,
+      764.9,
+      640.8,
+      764.9,
+      655.4,
+      743.3
+     ]
+    },
+    {
+     "path": "M 359.2 764.9 A 300 300 0 0 1 235.1 640.8"
+    },
+    {
+     "line": [
+      235.1,
+      666.8,
+      235.1,
+      640.8,
+      256.7,
+      655.4
+     ]
+    },
+    {
+     "path": "M 235.1 359.2 A 300 300 0 0 1 359.2 235.1"
+    },
+    {
+     "line": [
+      333.2,
+      235.1,
+      359.2,
+      235.1,
+      344.6,
+      256.7
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Seed",
+   "structure": "seed",
+   "instruction": "Trace the seed.",
+   "note": {
+    "text": "Stage 1. A seed holds a tiny baby plant (the embryo) and a store of food, wrapped in a tough seed coat.",
+    "remember": "A seed is a baby plant with a packed lunch."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Embryo",
+   "structure": "seed",
+   "part": "details",
+   "instruction": "Draw the curled embryo inside the seed.",
+   "note": {
+    "text": "With water and warmth, the embryo wakes up and starts to grow. This is called germination."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Seedling",
+   "structure": "seedling",
+   "instruction": "Trace the seedling's first two leaves.",
+   "note": {
+    "text": "Stage 2. The first leaves (seed leaves) feed the seedling with food stored in the seed until true leaves grow.",
+    "remember": "Roots grow down, the shoot grows up toward light."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Stem and roots",
+   "structure": "seedling",
+   "part": "details",
+   "instruction": "Draw the stem, the soil line and the roots.",
+   "note": {
+    "text": "Roots hold the plant in place and take in water and minerals. The stem carries them up to the leaves."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Leaves",
+   "structure": "leaves",
+   "instruction": "Trace the grown plant's leaves.",
+   "note": {
+    "text": "Stage 3. The adult plant makes its own food in its leaves, using sunlight, water and air."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Stem",
+   "structure": "leaves",
+   "part": "details",
+   "instruction": "Draw the stem and the soil line.",
+   "note": {
+    "text": "The stem holds the leaves and flowers up toward the light."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Flower",
+   "structure": "flower",
+   "instruction": "Trace all five petals.",
+   "note": {
+    "text": "Flowers are how the plant reproduces. Bees and wind carry pollen between flowers: this is pollination.",
+    "remember": "No pollination, no fruit."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Flower center",
+   "structure": "flower",
+   "part": "details",
+   "instruction": "Draw the center of the flower.",
+   "note": {
+    "text": "The center holds the parts that make pollen and the part that becomes the fruit."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Fruit",
+   "structure": "fruit",
+   "instruction": "Trace the tomato.",
+   "note": {
+    "text": "Stage 4. After pollination, part of the flower swells into a fruit. A tomato is a fruit because it holds seeds.",
+    "remember": "If it has seeds inside, it's a fruit."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Seeds inside",
+   "structure": "fruit",
+   "part": "details",
+   "instruction": "Draw the seeds inside and the stem on top.",
+   "note": {
+    "text": "Each seed can grow into a new plant, so the cycle starts again."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "The cycle",
+   "structure": "arrows",
+   "instruction": "Draw the arrows from stage to stage, going clockwise.",
+   "note": {
+    "text": "The seeds inside the fruit grow into new plants, and the cycle starts again.",
+    "remember": "Seed, seedling, adult plant, fruit."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "seed",
+    "seedling",
+    "leaves",
+    "flower",
+    "fruit"
+   ],
+   "instruction": "These are a tomato plant's real colors, simplified."
+  },
+  {
+   "type": "order",
+   "title": "Stage order",
+   "items": [
+    "Seed",
+    "Seedling",
+    "Flowering plant",
+    "Fruit with seeds"
+   ],
+   "instruction": "Tap the stages in order, starting from the seed.",
+   "why": "A seed sprouts into a seedling, grows into a flowering plant, and after pollination makes fruit with new seeds.",
+   "hint": "What has to happen before there can be fruit?"
+  },
+  {
+   "type": "label",
+   "title": "Label the stages",
+   "instruction": "Pick the right name for each numbered stage.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      500,
+      200
+     ],
+     "answer": "Seed",
+     "role": "Holds the embryo and its food."
+    },
+    {
+     "n": 2,
+     "at": [
+      790,
+      520
+     ],
+     "answer": "Seedling",
+     "role": "A young plant growing its first leaves and roots."
+    },
+    {
+     "n": 3,
+     "at": [
+      500,
+      712
+     ],
+     "answer": "Flower",
+     "role": "Where pollination happens.",
+     "mistakes": {
+      "Fruit": "The fruit comes after the flower is pollinated. This is still the flower."
+     }
+    },
+    {
+     "n": 4,
+     "at": [
+      220,
+      508
+     ],
+     "answer": "Fruit",
+     "role": "Grows from the flower and holds the seeds."
+    }
+   ],
+   "vocabulary": [
+    "Seed",
+    "Seedling",
+    "Flower",
+    "Fruit",
+    "Spore",
+    "Pupa"
+   ],
+   "commonMistakes": {
+    "Spore": "Ferns and mushrooms make spores. Flowering plants make seeds.",
+    "Pupa": "Pupa is an insect stage. Plants don't have one."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Use what you've drawn.",
+   "showsDiagram": true,
+   "question": "What has to happen before a flower can turn into a fruit with seeds?",
+   "options": [
+    {
+     "text": "Pollen has to reach the flower (pollination)",
+     "correct": true,
+     "feedback": "Yes. Once pollinated, part of the flower grows into a fruit with seeds inside."
+    },
+    {
+     "text": "The flower has to lose its leaves",
+     "feedback": "The plant keeps its leaves to make food. The fruit needs pollination."
+    },
+    {
+     "text": "The seeds have to sprout first",
+     "feedback": "Seeds form inside the fruit, so they can't sprout before it exists."
+    },
+    {
+     "text": "Nothing; every flower becomes a fruit",
+     "feedback": "Flowers that aren't pollinated usually wither without making fruit."
+    }
+   ]
+  }
+ ]
+}

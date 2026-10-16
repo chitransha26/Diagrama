@@ -1,0 +1,485 @@
+{
+ "id": "g3-chicken-life-cycle",
+ "title": "Chicken life cycle",
+ "grade": "3",
+ "subject": "Life science",
+ "standard": "3-LS1-1",
+ "minutes": 10,
+ "keywords": [
+  "chicken",
+  "hen",
+  "chick",
+  "egg",
+  "embryo",
+  "bird",
+  "life cycle",
+  "incubation"
+ ],
+ "colorMode": "illustration",
+ "legend": [
+  {
+   "name": "Eggshell",
+   "color": "#EBD5B3",
+   "meaning": "Brown-tinted, like many hens' eggs"
+  },
+  {
+   "name": "Chick",
+   "color": "#F4D35E",
+   "meaning": "Yellow, fluffy down feathers"
+  },
+  {
+   "name": "Hen",
+   "color": "#A0522D",
+   "meaning": "Red-brown, like a Rhode Island Red"
+  },
+  {
+   "name": "Comb",
+   "color": "#D93A2B",
+   "meaning": "Red skin on the head"
+  }
+ ],
+ "structures": [
+  {
+   "id": "egg",
+   "name": "egg",
+   "colorName": "eggshell",
+   "outlines": [
+    {
+     "ellipse": [
+      500,
+      200,
+      46,
+      60
+     ]
+    }
+   ],
+   "fill": "#EBD5B3"
+  },
+  {
+   "id": "embryo",
+   "name": "egg with embryo",
+   "colorName": "eggshell",
+   "outlines": [
+    {
+     "ellipse": [
+      790,
+      500,
+      46,
+      60
+     ]
+    }
+   ],
+   "fill": "#EBD5B3",
+   "details": [
+    {
+     "path": "M 792 470 C 820 478 820 520 794 530 C 772 536 762 514 774 500 C 784 490 800 500 794 510"
+    },
+    {
+     "circle": [
+      786,
+      472,
+      9
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chick",
+   "name": "chick",
+   "colorName": "chick",
+   "outlines": [
+    {
+     "circle": [
+      510,
+      816,
+      40
+     ]
+    },
+    {
+     "circle": [
+      474,
+      770,
+      24
+     ]
+    }
+   ],
+   "fill": "#F4D35E",
+   "details": [
+    {
+     "polygon": [
+      452,
+      768,
+      436,
+      774,
+      452,
+      780
+     ]
+    },
+    {
+     "circle": [
+      468,
+      764,
+      4
+     ]
+    },
+    {
+     "line": [
+      500,
+      855,
+      498,
+      884,
+      488,
+      892
+     ]
+    },
+    {
+     "line": [
+      522,
+      855,
+      524,
+      884,
+      534,
+      892
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hen",
+   "name": "hen",
+   "colorName": "hen",
+   "outlines": [
+    {
+     "path": "M 168 500 C 172 450 250 440 288 470 L 316 432 C 330 470 324 520 300 548 C 270 580 190 580 176 548 C 168 534 166 516 168 500 Z"
+    },
+    {
+     "circle": [
+      176,
+      466,
+      24
+     ]
+    }
+   ],
+   "fill": "#A0522D",
+   "details": [
+    {
+     "polygon": [
+      156,
+      462,
+      136,
+      470,
+      156,
+      476
+     ]
+    },
+    {
+     "circle": [
+      170,
+      460,
+      4
+     ]
+    },
+    {
+     "line": [
+      214,
+      572,
+      212,
+      612,
+      200,
+      620
+     ]
+    },
+    {
+     "line": [
+      250,
+      572,
+      252,
+      612,
+      264,
+      620
+     ]
+    }
+   ]
+  },
+  {
+   "id": "comb",
+   "name": "comb",
+   "colorName": "comb",
+   "pen": "fine",
+   "focus": [
+    130,
+    410,
+    100,
+    80
+   ],
+   "outlines": [
+    {
+     "path": "M 160 446 C 158 430 168 426 172 438 C 174 424 186 424 186 438 C 190 428 200 430 196 446 Z"
+    }
+   ],
+   "fill": "#D93A2B"
+  },
+  {
+   "id": "arrows",
+   "name": "arrows",
+   "outlines": [
+    {
+     "path": "M 640.8 235.1 A 300 300 0 0 1 764.9 359.2"
+    },
+    {
+     "line": [
+      764.9,
+      333.2,
+      764.9,
+      359.2,
+      743.3,
+      344.6
+     ]
+    },
+    {
+     "path": "M 764.9 640.8 A 300 300 0 0 1 640.8 764.9"
+    },
+    {
+     "line": [
+      666.8,
+      764.9,
+      640.8,
+      764.9,
+      655.4,
+      743.3
+     ]
+    },
+    {
+     "path": "M 359.2 764.9 A 300 300 0 0 1 235.1 640.8"
+    },
+    {
+     "line": [
+      235.1,
+      666.8,
+      235.1,
+      640.8,
+      256.7,
+      655.4
+     ]
+    },
+    {
+     "path": "M 235.1 359.2 A 300 300 0 0 1 359.2 235.1"
+    },
+    {
+     "line": [
+      333.2,
+      235.1,
+      359.2,
+      235.1,
+      344.6,
+      256.7
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Egg",
+   "structure": "egg",
+   "instruction": "Trace the egg.",
+   "note": {
+    "text": "Stage 1. A hen lays an egg with a hard shell. If it was fertilized, an embryo can grow inside when it's kept warm.",
+    "remember": "Bird eggs have hard shells; frog eggs have jelly."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Embryo",
+   "structure": "embryo",
+   "instruction": "Trace the second egg.",
+   "note": {
+    "text": "Stage 2. The hen sits on the egg to keep it at about 38 °C. Inside, the embryo grows for 21 days.",
+    "remember": "21 days from egg to chick."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Growing chick",
+   "structure": "embryo",
+   "part": "details",
+   "instruction": "Draw the curled-up embryo inside the egg.",
+   "note": {
+    "text": "The embryo feeds on the yolk. Near the end, it fills the whole egg and gets ready to hatch."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Chick",
+   "structure": "chick",
+   "instruction": "Trace the chick's body and head.",
+   "note": {
+    "text": "Stage 3. The chick pecks its way out of the shell using a tiny bump on its beak called the egg tooth.",
+    "remember": "Chicks are covered in soft down, not feathers."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Beak, eye and feet",
+   "structure": "chick",
+   "part": "details",
+   "instruction": "Draw the chick's beak, eye and feet.",
+   "note": {
+    "text": "Chicks can walk and peck for food within hours of hatching."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Hen",
+   "structure": "hen",
+   "instruction": "Trace the adult hen's body and head.",
+   "note": {
+    "text": "Stage 4. In about 5 to 6 months the chick grows into an adult. A hen can then lay eggs, starting the cycle again."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Beak and legs",
+   "structure": "hen",
+   "part": "details",
+   "instruction": "Draw the hen's beak, eye and legs.",
+   "note": {
+    "text": "Strong legs and feet let chickens scratch the ground to find seeds and insects."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Comb",
+   "structure": "comb",
+   "instruction": "Trace the comb on the hen's head.",
+   "note": {
+    "text": "The comb is red skin on top of the head. It helps the chicken lose heat on hot days.",
+    "remember": "Chickens can't sweat; the comb helps them cool down."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "The cycle",
+   "structure": "arrows",
+   "instruction": "Draw the arrows from stage to stage, going clockwise.",
+   "note": {
+    "text": "The adult hen lays eggs, and the cycle starts again. Unlike a butterfly or frog, a chick already looks like a small adult.",
+    "remember": "Egg, embryo, chick, adult."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "egg",
+    "embryo",
+    "chick",
+    "hen",
+    "comb"
+   ],
+   "instruction": "These are a chicken's real colors, simplified."
+  },
+  {
+   "type": "order",
+   "title": "Stage order",
+   "items": [
+    "Egg",
+    "Embryo in the egg",
+    "Chick",
+    "Adult hen"
+   ],
+   "instruction": "Tap the stages in order, starting from the egg.",
+   "why": "A fertilized egg develops into an embryo, which hatches as a chick and grows into an adult.",
+   "hint": "What grows inside the egg before it hatches?"
+  },
+  {
+   "type": "label",
+   "title": "Label the stages",
+   "instruction": "Pick the right name for each numbered stage.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      500,
+      200
+     ],
+     "answer": "Egg",
+     "role": "Laid by the hen, with a hard protective shell."
+    },
+    {
+     "n": 2,
+     "at": [
+      790,
+      560
+     ],
+     "answer": "Embryo",
+     "role": "Grows inside the egg for 21 days, feeding on the yolk.",
+     "mistakes": {
+      "Chick": "This one hasn't hatched yet. Inside the egg, it's an embryo."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      510,
+      816
+     ],
+     "answer": "Chick",
+     "role": "Hatched, covered in down, and able to walk."
+    },
+    {
+     "n": 4,
+     "at": [
+      240,
+      520
+     ],
+     "answer": "Hen",
+     "synonyms": [
+      "Adult"
+     ],
+     "role": "A grown female chicken that lays eggs."
+    }
+   ],
+   "vocabulary": [
+    "Egg",
+    "Embryo",
+    "Chick",
+    "Hen",
+    "Adult",
+    "Tadpole",
+    "Larva"
+   ],
+   "commonMistakes": {
+    "Tadpole": "Tadpoles are young frogs. Chickens hatch already looking like small birds.",
+    "Larva": "Larvae are found in insects and frogs. A chick isn't one."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Use what you've drawn.",
+   "showsDiagram": true,
+   "question": "How is a chicken's life cycle different from a butterfly's?",
+   "options": [
+    {
+     "text": "A chick already looks like a small adult; a caterpillar looks nothing like a butterfly",
+     "correct": true,
+     "feedback": "Yes. Chickens just grow bigger. Butterflies go through metamorphosis, changing their whole body."
+    },
+    {
+     "text": "Chickens don't come from eggs",
+     "feedback": "They do: every chick hatches from an egg."
+    },
+    {
+     "text": "Chickens have more stages",
+     "feedback": "Both have four stages, but a butterfly's change shape completely."
+    },
+    {
+     "text": "A chick lives underwater",
+     "feedback": "Chicks live on land from the moment they hatch."
+    }
+   ]
+  }
+ ]
+}

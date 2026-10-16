@@ -119,7 +119,7 @@ struct ChoiceStepView: View {
                     LearnerDiagram(session: session)
                         .aspectRatio(1, contentMode: .fit)
                         .clipShape(RoundedRectangle(cornerRadius: 16))
-                        .frame(maxWidth: 260)
+                        .frame(maxWidth: 330)
                         .frame(maxWidth: .infinity)
                 }
                 Text(step.question).font(.title3.weight(.semibold))

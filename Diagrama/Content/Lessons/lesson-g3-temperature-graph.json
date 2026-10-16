@@ -1,0 +1,291 @@
+{
+ "id": "g3-temperature-graph",
+ "title": "Graphing a week of temperatures",
+ "grade": "3",
+ "subject": "Earth & space",
+ "standard": "3-ESS2-1",
+ "minutes": 8,
+ "keywords": [
+  "weather",
+  "temperature",
+  "bar graph",
+  "data",
+  "graph",
+  "degrees"
+ ],
+ "printed": [
+  {
+   "text": "Mon 12°  Tue 15°  Wed 21°  Thu 24°  Fri 18°",
+   "at": [
+    530,
+    90
+   ],
+   "size": 38
+  },
+  {
+   "text": "°C",
+   "at": [
+    180,
+    180
+   ]
+  },
+  {
+   "text": "Day",
+   "at": [
+    530,
+    930
+   ]
+  },
+  {
+   "text": "0",
+   "at": [
+    140,
+    820
+   ],
+   "size": 36
+  },
+  {
+   "text": "10",
+   "at": [
+    140,
+    620
+   ],
+   "size": 36
+  },
+  {
+   "text": "20",
+   "at": [
+    140,
+    420
+   ],
+   "size": 36
+  },
+  {
+   "text": "30",
+   "at": [
+    140,
+    220
+   ],
+   "size": 36
+  },
+  {
+   "text": "Mon",
+   "at": [
+    270,
+    860
+   ],
+   "size": 38
+  },
+  {
+   "text": "Tue",
+   "at": [
+    390,
+    860
+   ],
+   "size": 38
+  },
+  {
+   "text": "Wed",
+   "at": [
+    510,
+    860
+   ],
+   "size": 38
+  },
+  {
+   "text": "Thu",
+   "at": [
+    630,
+    860
+   ],
+   "size": 38
+  },
+  {
+   "text": "Fri",
+   "at": [
+    750,
+    860
+   ],
+   "size": 38
+  }
+ ],
+ "structures": [
+  {
+   "id": "axes",
+   "name": "axes",
+   "outlines": [
+    {
+     "line": [
+      180,
+      210,
+      180,
+      820,
+      860,
+      820
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      170,
+      620,
+      190,
+      620
+     ]
+    },
+    {
+     "line": [
+      170,
+      420,
+      190,
+      420
+     ]
+    },
+    {
+     "line": [
+      170,
+      220,
+      190,
+      220
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bars",
+   "name": "bars",
+   "outlines": [
+    {
+     "rect": [
+      235,
+      580,
+      70,
+      240,
+      2
+     ]
+    },
+    {
+     "rect": [
+      355,
+      520,
+      70,
+      300,
+      2
+     ]
+    },
+    {
+     "rect": [
+      475,
+      400,
+      70,
+      420,
+      2
+     ]
+    },
+    {
+     "rect": [
+      595,
+      340,
+      70,
+      480,
+      2
+     ]
+    },
+    {
+     "rect": [
+      715,
+      460,
+      70,
+      360,
+      2
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Axes",
+   "structure": "axes",
+   "instruction": "Trace the two axes of the graph.",
+   "note": {
+    "text": "The side axis shows temperature in degrees Celsius. The bottom axis shows the days of the week.",
+    "remember": "Read across the bottom, up the side."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Scale marks",
+   "structure": "axes",
+   "part": "details",
+   "instruction": "Draw the tick marks at 10, 20 and 30 degrees.",
+   "note": {
+    "text": "Evenly spaced marks make a scale, so every degree takes up the same height on the graph."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Bars",
+   "structure": "bars",
+   "instruction": "Draw a bar for each day, as tall as that day's temperature.",
+   "note": {
+    "text": "Each bar's height shows the temperature from the table at the top. Comparing bars shows patterns at a glance.",
+    "remember": "Taller bar, warmer day."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Read the graph",
+   "instruction": "Use the bars you drew.",
+   "showsDiagram": true,
+   "question": "Which day was the warmest?",
+   "options": [
+    {
+     "text": "Thursday",
+     "correct": true,
+     "feedback": "Yes. Thursday's bar is the tallest, at 24 degrees."
+    },
+    {
+     "text": "Monday",
+     "feedback": "Monday's bar is the shortest, so it was the coolest day."
+    },
+    {
+     "text": "Wednesday",
+     "feedback": "Wednesday was warm at 21 degrees, but Thursday's bar is taller."
+    },
+    {
+     "text": "Friday",
+     "feedback": "Friday cooled down to 18 degrees. Look for the tallest bar."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Find the pattern",
+   "instruction": "Look at how the bars change.",
+   "showsDiagram": true,
+   "question": "What pattern does the graph show this week?",
+   "options": [
+    {
+     "text": "It got warmer each day until Thursday, then cooled on Friday",
+     "correct": true,
+     "feedback": "Right. Graphs make patterns easy to spot. Weather data over many weeks shows what each season is usually like."
+    },
+    {
+     "text": "Every day was the same",
+     "feedback": "The bars have different heights, so the temperatures changed."
+    },
+    {
+     "text": "It got colder all week",
+     "feedback": "The bars get taller from Monday to Thursday, so it got warmer."
+    },
+    {
+     "text": "Friday was the warmest",
+     "feedback": "Friday's bar is shorter than Thursday's."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,280 @@
+{
+ "id": "g3-balanced-forces",
+ "title": "Balanced and unbalanced forces: tug of war",
+ "grade": "3",
+ "subject": "Physics",
+ "standard": "3-PS2-1",
+ "minutes": 8,
+ "keywords": [
+  "force",
+  "push",
+  "pull",
+  "balanced",
+  "unbalanced",
+  "tug of war",
+  "motion",
+  "arrow"
+ ],
+ "printed": [
+  {
+   "text": "Balanced",
+   "at": [
+    500,
+    150
+   ]
+  },
+  {
+   "text": "Unbalanced",
+   "at": [
+    500,
+    590
+   ]
+  }
+ ],
+ "structures": [
+  {
+   "id": "ropes",
+   "name": "rope and flag",
+   "outlines": [
+    {
+     "line": [
+      150,
+      320,
+      850,
+      320
+     ]
+    },
+    {
+     "polygon": [
+      500,
+      320,
+      500,
+      260,
+      540,
+      280
+     ]
+    },
+    {
+     "line": [
+      150,
+      760,
+      850,
+      760
+     ]
+    },
+    {
+     "polygon": [
+      500,
+      760,
+      500,
+      700,
+      540,
+      720
+     ]
+    }
+   ]
+  },
+  {
+   "id": "balanced",
+   "name": "balanced pulls",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      420,
+      380,
+      200,
+      380
+     ]
+    },
+    {
+     "line": [
+      223.0,
+      392.2,
+      200,
+      380,
+      223.0,
+      367.8
+     ]
+    },
+    {
+     "line": [
+      580,
+      380,
+      800,
+      380
+     ]
+    },
+    {
+     "line": [
+      777.0,
+      367.8,
+      800,
+      380,
+      777.0,
+      392.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "unbalanced",
+   "name": "unbalanced pulls",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      420,
+      820,
+      150,
+      820
+     ]
+    },
+    {
+     "line": [
+      173.0,
+      832.2,
+      150,
+      820,
+      173.0,
+      807.8
+     ]
+    },
+    {
+     "line": [
+      580,
+      820,
+      690,
+      820
+     ]
+    },
+    {
+     "line": [
+      667.0,
+      807.8,
+      690,
+      820,
+      667.0,
+      832.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "motion",
+   "name": "motion arrow",
+   "outlines": [
+    {
+     "line": [
+      560,
+      650,
+      440,
+      650
+     ]
+    },
+    {
+     "line": [
+      463.0,
+      662.2,
+      440,
+      650,
+      463.0,
+      637.8
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Ropes",
+   "structure": "ropes",
+   "instruction": "Trace both ropes and the flags tied to their middles.",
+   "note": {
+    "text": "In tug of war, two teams pull a rope in opposite directions. The flag shows which way the rope moves."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Balanced pulls",
+   "structure": "balanced",
+   "instruction": "Draw the two arrows for the top rope. They're the same length.",
+   "note": {
+    "text": "An arrow shows a force: it points in the force's direction, and a longer arrow means a stronger force. Equal and opposite forces are balanced.",
+    "remember": "Balanced forces: no change in motion."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Unbalanced pulls",
+   "structure": "unbalanced",
+   "instruction": "Draw the two arrows for the bottom rope. The left one is longer.",
+   "note": {
+    "text": "When one pull is stronger, the forces are unbalanced. Unbalanced forces change an object's motion.",
+    "remember": "The longer arrow wins."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Motion",
+   "structure": "motion",
+   "instruction": "Draw the arrow showing which way the bottom flag moves.",
+   "note": {
+    "text": "The rope moves toward the stronger pull. The bigger the difference between the forces, the faster its motion changes."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Predict",
+   "instruction": "Use the arrows you drew.",
+   "showsDiagram": true,
+   "question": "In the top rope, both teams pull equally hard. What happens to the flag?",
+   "options": [
+    {
+     "text": "It stays still",
+     "correct": true,
+     "feedback": "Right. The forces are balanced, so the rope's motion doesn't change: it stays still."
+    },
+    {
+     "text": "It moves left",
+     "feedback": "That needs a stronger pull to the left. These pulls are equal."
+    },
+    {
+     "text": "It moves right",
+     "feedback": "That needs a stronger pull to the right. These pulls are equal."
+    },
+    {
+     "text": "The rope breaks",
+     "feedback": "Equal pulls don't move the rope. A rope only breaks if the forces are too big for it."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Change it",
+   "instruction": "Think about the bottom rope.",
+   "showsDiagram": true,
+   "question": "How could the right-hand team stop the flag from moving left?",
+   "options": [
+    {
+     "text": "Pull harder until both pulls are equal",
+     "correct": true,
+     "feedback": "Yes. Making the forces equal balances them, and the rope stops changing its motion."
+    },
+    {
+     "text": "Let go of the rope",
+     "feedback": "Then only the left team pulls, and the flag moves left even faster."
+    },
+    {
+     "text": "Pull more gently",
+     "feedback": "A weaker pull makes the difference bigger, so the flag moves left faster."
+    },
+    {
+     "text": "Nothing can stop it",
+     "feedback": "Balancing the forces stops the change in motion."
+    }
+   ]
+  }
+ ]
+}

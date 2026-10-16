@@ -1,0 +1,346 @@
+{
+ "id": "g3-magnets",
+ "title": "Magnets attract and repel",
+ "grade": "3",
+ "subject": "Physics",
+ "standard": "3-PS2-3",
+ "minutes": 7,
+ "keywords": [
+  "magnet",
+  "north pole",
+  "south pole",
+  "attract",
+  "repel",
+  "magnetic force"
+ ],
+ "printed": [
+  {
+   "text": "Attract",
+   "at": [
+    500,
+    170
+   ]
+  },
+  {
+   "text": "Repel",
+   "at": [
+    500,
+    600
+   ]
+  },
+  {
+   "text": "N",
+   "at": [
+    195,
+    265
+   ]
+  },
+  {
+   "text": "S",
+   "at": [
+    345,
+    265
+   ]
+  },
+  {
+   "text": "N",
+   "at": [
+    655,
+    265
+   ]
+  },
+  {
+   "text": "S",
+   "at": [
+    805,
+    265
+   ]
+  },
+  {
+   "text": "N",
+   "at": [
+    195,
+    695
+   ]
+  },
+  {
+   "text": "S",
+   "at": [
+    345,
+    695
+   ]
+  },
+  {
+   "text": "S",
+   "at": [
+    655,
+    695
+   ]
+  },
+  {
+   "text": "N",
+   "at": [
+    805,
+    695
+   ]
+  }
+ ],
+ "structures": [
+  {
+   "id": "attract",
+   "name": "attracting magnets",
+   "outlines": [
+    {
+     "rect": [
+      120,
+      220,
+      300,
+      90,
+      8
+     ]
+    },
+    {
+     "rect": [
+      580,
+      220,
+      300,
+      90,
+      8
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      270,
+      220,
+      270,
+      310
+     ]
+    },
+    {
+     "line": [
+      730,
+      220,
+      730,
+      310
+     ]
+    }
+   ]
+  },
+  {
+   "id": "attractArrows",
+   "name": "attraction arrows",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      330,
+      380,
+      450,
+      380
+     ]
+    },
+    {
+     "line": [
+      427.0,
+      367.8,
+      450,
+      380,
+      427.0,
+      392.2
+     ]
+    },
+    {
+     "line": [
+      670,
+      380,
+      550,
+      380
+     ]
+    },
+    {
+     "line": [
+      573.0,
+      392.2,
+      550,
+      380,
+      573.0,
+      367.8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "repel",
+   "name": "repelling magnets",
+   "outlines": [
+    {
+     "rect": [
+      120,
+      650,
+      300,
+      90,
+      8
+     ]
+    },
+    {
+     "rect": [
+      580,
+      650,
+      300,
+      90,
+      8
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      270,
+      650,
+      270,
+      740
+     ]
+    },
+    {
+     "line": [
+      730,
+      650,
+      730,
+      740
+     ]
+    }
+   ]
+  },
+  {
+   "id": "repelArrows",
+   "name": "repulsion arrows",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      450,
+      810,
+      330,
+      810
+     ]
+    },
+    {
+     "line": [
+      353.0,
+      822.2,
+      330,
+      810,
+      353.0,
+      797.8
+     ]
+    },
+    {
+     "line": [
+      550,
+      810,
+      670,
+      810
+     ]
+    },
+    {
+     "line": [
+      647.0,
+      797.8,
+      670,
+      810,
+      647.0,
+      822.2
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Magnets",
+   "structure": "attract",
+   "instruction": "Trace the two top magnets.",
+   "note": {
+    "text": "Every magnet has two ends, called poles: north (N) and south (S). The magnetic force is strongest at the poles."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Poles",
+   "structure": "attract",
+   "part": "details",
+   "instruction": "Draw the line splitting each magnet into its two poles.",
+   "note": {
+    "text": "Here, the south pole of one magnet faces the north pole of the other.",
+    "remember": "Opposite poles attract."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Attract",
+   "structure": "attractArrows",
+   "instruction": "Draw the arrows showing the magnets pulling together.",
+   "note": {
+    "text": "Opposite poles pull toward each other, even without touching. Magnetic force can act across a gap."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Magnets",
+   "structure": "repel",
+   "instruction": "Trace the two bottom magnets.",
+   "note": {
+    "text": "This time the second magnet is turned around, so two south poles face each other."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Poles",
+   "structure": "repel",
+   "part": "details",
+   "instruction": "Draw the line splitting each magnet into its two poles.",
+   "note": {
+    "text": "Look at the letters in the middle: S faces S.",
+    "remember": "Same poles repel."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Repel",
+   "structure": "repelArrows",
+   "instruction": "Draw the arrows showing the magnets pushing apart.",
+   "note": {
+    "text": "Like poles push each other away. You can feel this push when you try to force them together."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Predict",
+   "instruction": "Use the magnets you drew.",
+   "showsDiagram": true,
+   "question": "You turn the bottom-right magnet around so its N faces the other magnet's S. What happens?",
+   "options": [
+    {
+     "text": "They attract",
+     "correct": true,
+     "feedback": "Yes. Now opposite poles face each other, so they pull together."
+    },
+    {
+     "text": "They repel even harder",
+     "feedback": "Repelling happens when the same poles face each other. N and S are opposites."
+    },
+    {
+     "text": "Nothing changes",
+     "feedback": "Turning a magnet around swaps which pole faces the other magnet, which changes the force."
+    },
+    {
+     "text": "They lose their magnetism",
+     "feedback": "Turning a magnet doesn't remove its magnetism. It changes which poles face each other."
+    }
+   ]
+  }
+ ]
+}

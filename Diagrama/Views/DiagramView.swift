@@ -33,10 +33,16 @@ struct DiagramView: View {
             let s = size.width / DiagramSpace.size
             ctx.scaleBy(x: s, y: s)
 
-            for st in lesson.structures where revealed.contains(st.id) {
-                for (i, o) in st.outlines.enumerated() {
-                    let isFilled = filled?.contains("\(st.id)#\(i)") ?? true
-                    ctx.fill(o.path, with: .color(isFilled ? (st.fill ?? Theme.paper) : Theme.paper))
+            let visible = lesson.structures.filter { revealed.contains($0.id) }
+            // Fills first, then every line on top, so a fill can never hide a line drawn earlier.
+            for st in visible {
+                guard let color = st.fill else { continue }
+                for (i, o) in st.outlines.enumerated() where o.closed && (filled?.contains("\(st.id)#\(i)") ?? true) {
+                    ctx.fill(o.path, with: .color(color))
+                }
+            }
+            for st in visible {
+                for o in st.outlines {
                     ctx.stroke(o.path, with: .color(Theme.ink.opacity(templateOpacity)), lineWidth: 2 / s)
                 }
                 if revealed.contains(TracePart.details.key(st.id)) {
@@ -44,6 +50,11 @@ struct DiagramView: View {
                         ctx.stroke(d.path, with: .color(Theme.ink.opacity(templateOpacity * 0.6)), lineWidth: 1.4 / s)
                     }
                 }
+            }
+
+            // Printed words belong to the page, so overlays (paper: false) don't repeat them.
+            for t in lesson.printed where paper {
+                ctx.draw(Text(t.text).font(.system(size: t.size, weight: .medium)).foregroundStyle(Theme.ink), at: t.at)
             }
 
             for g in guides {

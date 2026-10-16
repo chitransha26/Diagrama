@@ -18,6 +18,13 @@ struct LessonFile: Decodable {
     var legend: [LegendFile]?
     var structures: [StructureFile]?
     let steps: [StepFile]
+    var printed: [PrintedFile]?
+
+    struct PrintedFile: Decodable {
+        let text: String
+        let at: [CGFloat]
+        var size: CGFloat?
+    }
 
     struct LegendFile: Decodable {
         let name: String
@@ -158,7 +165,8 @@ extension LessonFile {
             id: id, title: title, level: level ?? GradeBand(grade: grade).rawValue, subject: subject,
             minutes: minutes, keywords: keywords ?? [], colorMode: mode,
             legend: try (legend ?? []).map { LegendEntry(name: $0.name, color: try $0.color.map(Self.color), meaning: $0.meaning) },
-            structures: built, steps: try steps.map(step), grade: grade, standard: standard
+            structures: built, steps: try steps.map(step), grade: grade, standard: standard,
+            printed: (printed ?? []).map { PrintedText(text: $0.text, at: CGPoint(x: $0.at[0], y: $0.at[1]), size: $0.size ?? 46) }
         )
     }
 

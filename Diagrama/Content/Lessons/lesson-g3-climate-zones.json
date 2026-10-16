@@ -1,0 +1,203 @@
+{
+ "id": "g3-climate-zones",
+ "title": "Climate zones of the world",
+ "grade": "3",
+ "subject": "Earth & space",
+ "standard": "3-ESS2-2",
+ "minutes": 8,
+ "keywords": [
+  "climate",
+  "climate zones",
+  "tropical",
+  "temperate",
+  "polar",
+  "equator",
+  "latitude"
+ ],
+ "structures": [
+  {
+   "id": "globe",
+   "name": "Earth",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      500,
+      500,
+      340
+     ]
+    }
+   ]
+  },
+  {
+   "id": "equator",
+   "name": "equator",
+   "outlines": [
+    {
+     "line": [
+      160.0,
+      500.0,
+      840.0,
+      500.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tropics",
+   "name": "tropic lines",
+   "outlines": [
+    {
+     "line": [
+      188.2,
+      364.4,
+      811.8,
+      364.4
+     ]
+    },
+    {
+     "line": [
+      188.2,
+      635.6,
+      811.8,
+      635.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "polar",
+   "name": "polar circles",
+   "outlines": [
+    {
+     "line": [
+      364.4,
+      188.2,
+      635.6,
+      188.2
+     ]
+    },
+    {
+     "line": [
+      364.4,
+      811.8,
+      635.6,
+      811.8
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Earth",
+   "structure": "globe",
+   "instruction": "Trace the outline of the Earth.",
+   "note": {
+    "text": "Earth is a sphere, so sunlight hits different places at different angles. That's why climates differ."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Equator",
+   "structure": "equator",
+   "instruction": "Draw the equator across the middle.",
+   "note": {
+    "text": "The equator circles Earth halfway between the poles. The sun is almost straight overhead here all year.",
+    "remember": "Equator: the hottest, sunniest belt."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Tropic lines",
+   "structure": "tropics",
+   "instruction": "Draw the two lines on either side of the equator.",
+   "note": {
+    "text": "Between these lines is the tropical zone. It's warm all year, and many places have a wet and a dry season."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Polar circles",
+   "structure": "polar",
+   "instruction": "Draw the two short lines near the top and bottom.",
+   "note": {
+    "text": "Beyond these lines are the polar zones. Sunlight arrives at a low slant, so it's cold all year.",
+    "remember": "Between tropical and polar lies temperate: four seasons."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Label the zones",
+   "instruction": "Pick the climate zone for each numbered spot.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      500,
+      500
+     ],
+     "answer": "Tropical",
+     "role": "Near the equator: hot all year."
+    },
+    {
+     "n": 2,
+     "at": [
+      640,
+      280
+     ],
+     "answer": "Temperate",
+     "role": "Middle latitudes: warm summers, cool winters.",
+     "mistakes": {
+      "Tropical": "The tropical zone hugs the equator. This spot is farther north, where seasons change."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      500,
+      175
+     ],
+     "answer": "Polar",
+     "role": "Near the poles: cold all year."
+    }
+   ],
+   "vocabulary": [
+    "Tropical",
+    "Temperate",
+    "Polar",
+    "Desert"
+   ],
+   "commonMistakes": {
+    "Desert": "Deserts are dry places. They're found in several zones, so desert isn't one of these three bands."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Use what you've drawn.",
+   "showsDiagram": true,
+   "question": "Why is it warmer near the equator than near the poles?",
+   "options": [
+    {
+     "text": "Sunlight hits the equator more directly",
+     "correct": true,
+     "feedback": "Yes. Direct rays concentrate energy on a small area. At the poles, slanted rays spread the same energy thin."
+    },
+    {
+     "text": "The equator is closer to the sun",
+     "feedback": "The difference in distance is tiny. It's the angle of the sunlight that matters."
+    },
+    {
+     "text": "There is more land at the equator",
+     "feedback": "Climate zones form because of sunlight angle, not how much land there is."
+    },
+    {
+     "text": "The poles have no sunlight",
+     "feedback": "The poles get sunlight, but at a low angle, so it's weaker."
+    }
+   ]
+  }
+ ]
+}

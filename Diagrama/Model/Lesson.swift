@@ -80,6 +80,13 @@ enum ColorMode {
     }
 }
 
+/// Words printed on the worksheet, like axis labels: always shown, never traced.
+struct PrintedText {
+    let text: String
+    let at: CGPoint
+    var size: CGFloat = 46
+}
+
 struct LegendEntry: Identifiable {
     let name: String
     /// Nil means the part is clear (colorless).
@@ -144,6 +151,7 @@ struct Lesson: Identifiable {
     var grade = "7"
     /// The standard this lesson supports, e.g. "MS-LS1-2" (NGSS) or "AP Biology".
     var standard = ""
+    var printed: [PrintedText] = []
 
     var band: GradeBand { GradeBand(grade: grade) }
 

@@ -1,0 +1,518 @@
+{
+ "id": "g3-frog-life-cycle",
+ "title": "Frog life cycle",
+ "grade": "3",
+ "subject": "Life science",
+ "standard": "3-LS1-1",
+ "minutes": 10,
+ "keywords": [
+  "frog",
+  "tadpole",
+  "froglet",
+  "frogspawn",
+  "amphibian",
+  "life cycle",
+  "metamorphosis"
+ ],
+ "colorMode": "illustration",
+ "legend": [
+  {
+   "name": "Tadpole",
+   "color": "#4A4636",
+   "meaning": "Dark brown, for hiding on pond bottoms"
+  },
+  {
+   "name": "Froglet",
+   "color": "#5E7F3A",
+   "meaning": "Turning green as it grows"
+  },
+  {
+   "name": "Adult frog",
+   "color": "#6B9A3F",
+   "meaning": "Green, like many pond frogs"
+  },
+  {
+   "name": "Egg jelly",
+   "color": null,
+   "meaning": "Clear jelly around each black embryo"
+  }
+ ],
+ "structures": [
+  {
+   "id": "eggs",
+   "name": "frog eggs",
+   "pen": "fine",
+   "focus": [
+    400,
+    120,
+    200,
+    140
+   ],
+   "outlines": [
+    {
+     "circle": [
+      452,
+      178,
+      22
+     ]
+    },
+    {
+     "circle": [
+      498,
+      168,
+      22
+     ]
+    },
+    {
+     "circle": [
+      544,
+      182,
+      22
+     ]
+    },
+    {
+     "circle": [
+      474,
+      220,
+      22
+     ]
+    },
+    {
+     "circle": [
+      522,
+      216,
+      22
+     ]
+    }
+   ],
+   "details": [
+    {
+     "circle": [
+      452,
+      178,
+      6
+     ]
+    },
+    {
+     "circle": [
+      498,
+      168,
+      6
+     ]
+    },
+    {
+     "circle": [
+      544,
+      182,
+      6
+     ]
+    },
+    {
+     "circle": [
+      474,
+      220,
+      6
+     ]
+    },
+    {
+     "circle": [
+      522,
+      216,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tadpole",
+   "name": "tadpole",
+   "colorName": "tadpole",
+   "outlines": [
+    {
+     "ellipse": [
+      756,
+      500,
+      42,
+      30
+     ]
+    },
+    {
+     "path": "M 797 490 C 840 474 880 500 922 488 C 882 512 840 528 797 510 Z"
+    }
+   ],
+   "fill": "#4A4636",
+   "details": [
+    {
+     "circle": [
+      738,
+      492,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "froglet",
+   "name": "froglet",
+   "colorName": "froglet",
+   "outlines": [
+    {
+     "ellipse": [
+      486,
+      804,
+      44,
+      30
+     ]
+    },
+    {
+     "path": "M 528 794 C 560 790 586 796 604 802 C 586 808 560 816 528 814 Z"
+    }
+   ],
+   "fill": "#5E7F3A",
+   "details": [
+    {
+     "circle": [
+      462,
+      790,
+      6
+     ]
+    },
+    {
+     "line": [
+      470,
+      828,
+      454,
+      852,
+      436,
+      852
+     ]
+    },
+    {
+     "line": [
+      500,
+      832,
+      506,
+      858,
+      524,
+      860
+     ]
+    }
+   ]
+  },
+  {
+   "id": "frog",
+   "name": "adult frog",
+   "colorName": "adult frog",
+   "outlines": [
+    {
+     "ellipse": [
+      220,
+      518,
+      44,
+      58
+     ]
+    },
+    {
+     "circle": [
+      200,
+      466,
+      11
+     ]
+    },
+    {
+     "circle": [
+      240,
+      466,
+      11
+     ]
+    }
+   ],
+   "fill": "#6B9A3F",
+   "details": [
+    {
+     "path": "M 254 548 C 300 560 304 604 262 606 L 286 622"
+    },
+    {
+     "path": "M 186.0 548 C 140.0 560 136.0 604 178.0 606 L 154.0 622"
+    },
+    {
+     "path": "M 252 492 L 280 514 L 292 508"
+    },
+    {
+     "path": "M 188.0 492 L 160.0 514 L 148.0 508"
+    }
+   ]
+  },
+  {
+   "id": "arrows",
+   "name": "arrows",
+   "outlines": [
+    {
+     "path": "M 640.8 235.1 A 300 300 0 0 1 764.9 359.2"
+    },
+    {
+     "line": [
+      764.9,
+      333.2,
+      764.9,
+      359.2,
+      743.3,
+      344.6
+     ]
+    },
+    {
+     "path": "M 764.9 640.8 A 300 300 0 0 1 640.8 764.9"
+    },
+    {
+     "line": [
+      666.8,
+      764.9,
+      640.8,
+      764.9,
+      655.4,
+      743.3
+     ]
+    },
+    {
+     "path": "M 359.2 764.9 A 300 300 0 0 1 235.1 640.8"
+    },
+    {
+     "line": [
+      235.1,
+      666.8,
+      235.1,
+      640.8,
+      256.7,
+      655.4
+     ]
+    },
+    {
+     "path": "M 235.1 359.2 A 300 300 0 0 1 359.2 235.1"
+    },
+    {
+     "line": [
+      333.2,
+      235.1,
+      359.2,
+      235.1,
+      344.6,
+      256.7
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Eggs",
+   "structure": "eggs",
+   "instruction": "Trace the clump of frog eggs.",
+   "note": {
+    "text": "Stage 1. Frogs lay hundreds of eggs in water, in a clump of jelly called frogspawn. The jelly protects them.",
+    "remember": "Frog eggs always need water."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Embryos",
+   "structure": "eggs",
+   "part": "details",
+   "instruction": "Draw the dark embryo in the middle of each egg.",
+   "note": {
+    "text": "Each black dot is an embryo. It feeds on its yolk and grows into a tadpole in about a week."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Tadpole",
+   "structure": "tadpole",
+   "instruction": "Trace the tadpole's body and tail.",
+   "note": {
+    "text": "Stage 2. A tadpole lives underwater, breathes with gills, and swims with its tail. It eats algae.",
+    "remember": "Tadpoles are fish-like: gills and a tail."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Tadpole eye",
+   "structure": "tadpole",
+   "part": "details",
+   "instruction": "Draw the tadpole's eye.",
+   "note": {
+    "text": "Its eyes are on the sides of its head, helping it watch for predators all around."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Froglet",
+   "structure": "froglet",
+   "instruction": "Trace the froglet's body and shrinking tail.",
+   "note": {
+    "text": "Stage 3. Legs grow, back legs first. Lungs form, and the tail shrinks as the body absorbs it.",
+    "remember": "A froglet is half tadpole, half frog."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Froglet legs",
+   "structure": "froglet",
+   "part": "details",
+   "instruction": "Draw the froglet's eye and its new legs.",
+   "note": {
+    "text": "With legs and lungs, a froglet can climb out of the water and breathe air for the first time."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Adult frog",
+   "structure": "frog",
+   "instruction": "Trace the adult frog's body and eyes.",
+   "note": {
+    "text": "Stage 4. The adult lives on land and in water. It breathes with lungs and through its skin, and eats insects.",
+    "remember": "Amphibian means “double life”: water, then land."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Legs",
+   "structure": "frog",
+   "part": "details",
+   "instruction": "Draw the frog's long back legs and short front legs.",
+   "note": {
+    "text": "Long, strong back legs let a frog jump many times its body length to catch food and escape danger."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "The cycle",
+   "structure": "arrows",
+   "instruction": "Draw the arrows from stage to stage, going clockwise.",
+   "note": {
+    "text": "Adult frogs return to water to lay eggs, so the cycle starts again. The change from tadpole to frog is metamorphosis.",
+    "remember": "Egg, tadpole, froglet, frog."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "tadpole",
+    "froglet",
+    "frog"
+   ],
+   "instruction": "These are simplified real colors. The egg jelly stays clear."
+  },
+  {
+   "type": "order",
+   "title": "Stage order",
+   "items": [
+    "Egg",
+    "Tadpole",
+    "Froglet",
+    "Adult frog"
+   ],
+   "instruction": "Tap the stages in order, starting from the egg.",
+   "why": "The egg hatches into a tadpole, which grows legs and lungs as a froglet, then becomes an adult that lays eggs.",
+   "hint": "Which stage has gills and lives only in water?"
+  },
+  {
+   "type": "label",
+   "title": "Label the stages",
+   "instruction": "Pick the right name for each numbered stage.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      498,
+      168
+     ],
+     "answer": "Egg",
+     "synonyms": [
+      "Frogspawn"
+     ],
+     "role": "Laid in water, protected by jelly."
+    },
+    {
+     "n": 2,
+     "at": [
+      756,
+      500
+     ],
+     "answer": "Tadpole",
+     "synonyms": [
+      "Larva"
+     ],
+     "role": "Lives underwater and breathes with gills.",
+     "mistakes": {
+      "Froglet": "A froglet has legs. This one has only a tail, so it's a tadpole."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      486,
+      804
+     ],
+     "answer": "Froglet",
+     "role": "Has legs and lungs, but still a short tail.",
+     "mistakes": {
+      "Tadpole": "Look at the legs: tadpoles don't have any yet. This is a froglet."
+     }
+    },
+    {
+     "n": 4,
+     "at": [
+      220,
+      530
+     ],
+     "answer": "Adult frog",
+     "synonyms": [
+      "Frog"
+     ],
+     "role": "Breathes air and can reproduce."
+    }
+   ],
+   "vocabulary": [
+    "Egg",
+    "Frogspawn",
+    "Tadpole",
+    "Larva",
+    "Froglet",
+    "Adult frog",
+    "Pupa",
+    "Chrysalis"
+   ],
+   "commonMistakes": {
+    "Pupa": "Frogs have no pupa stage. They change gradually, growing legs while still swimming.",
+    "Chrysalis": "A chrysalis belongs to butterflies. Frogs change gradually, without one."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Use what you've drawn.",
+   "showsDiagram": true,
+   "question": "Why does a tadpole have gills, while an adult frog has lungs?",
+   "options": [
+    {
+     "text": "Tadpoles live underwater; adult frogs also live on land and breathe air",
+     "correct": true,
+     "feedback": "Yes. Gills take oxygen from water, and lungs take it from air. The frog's body changes as its home changes."
+    },
+    {
+     "text": "Gills help tadpoles swim faster",
+     "feedback": "Tadpoles swim with their tails. Gills are for breathing underwater."
+    },
+    {
+     "text": "Lungs help adult frogs jump",
+     "feedback": "Jumping uses the strong back legs. Lungs are for breathing air."
+    },
+    {
+     "text": "Adult frogs never go in water",
+     "feedback": "Many adult frogs spend lots of time in water, and they return to it to lay eggs."
+    }
+   ]
+  }
+ ]
+}
