@@ -27,7 +27,7 @@ struct LewisDrawStepView: View {
                     PrintedAtoms(atoms: step.target.atoms, positions: step.positions)
                     InkCanvas(
                         drawing: $drawing,
-                        tool: erasing ? Eraser.tool : Pen.pen.tool(scale: side / DiagramSpace.size),
+                        tool: erasing ? Eraser.tool : Pen.pen.tool,
                         isEnabled: !passed,
                         onLift: { if erasing { DispatchQueue.main.async { erasing = false } } }
                     ) { _, _ in issues = [] }

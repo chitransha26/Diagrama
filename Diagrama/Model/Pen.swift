@@ -6,13 +6,14 @@ struct Pen: Equatable {
     enum Kind { case fineLiner, pen, boldPen, pencil }
 
     let kind: Kind
-    /// Line width in diagram units, so lines keep their proportions on every screen size.
+    /// Line width in on-screen points. Fixed on screen, not scaled with the zoom, so each
+    /// pen always looks distinct: a fine liner stays fine on a zoomed-in part.
     let width: CGFloat
 
-    static let fineLiner = Pen(kind: .fineLiner, width: 5)
-    static let pen = Pen(kind: .pen, width: 11)
-    static let boldPen = Pen(kind: .boldPen, width: 18)
-    static let pencil = Pen(kind: .pencil, width: 12)
+    static let fineLiner = Pen(kind: .fineLiner, width: 2)
+    static let pen = Pen(kind: .pen, width: 3.5)
+    static let boldPen = Pen(kind: .boldPen, width: 6.5)
+    static let pencil = Pen(kind: .pencil, width: 4)
 
     var name: String {
         switch kind {
@@ -32,12 +33,12 @@ struct Pen: Equatable {
         }
     }
 
-    func tool(scale: CGFloat) -> PKInkingTool {
+    var tool: PKInkingTool {
         let type: PKInkingTool.InkType = switch kind {
         case .fineLiner: .monoline
         case .pen, .boldPen: .pen
         case .pencil: .pencil
         }
-        return PKInkingTool(type, color: UIColor(Theme.ink), width: max(1.5, width * scale))
+        return PKInkingTool(type, color: UIColor(Theme.ink), width: width)
     }
 }

@@ -146,7 +146,7 @@ struct TraceStepView: View {
                         }
                         InkCanvas(
                             drawing: $drawing,
-                            tool: erasing ? Eraser.tool : structure.pen.tool(scale: full / DiagramSpace.size),
+                            tool: erasing ? Eraser.tool : structure.pen.tool,
                             isEnabled: !passed,
                         onLift: { if erasing { DispatchQueue.main.async { erasing = false } } }
                         ) { added, isPencil in
@@ -195,10 +195,11 @@ struct TraceStepView: View {
         let scale = fullSide / DiagramSpace.size
         for g in guides {
             let pts = g.closed ? g.points + [g.points[0]] : g.points
-            let stroke = PKStroke(ink: PKInk(.pen, color: UIColor(Theme.ink)), path: PKStrokePath(
+            let tool = structure.pen.tool
+            let stroke = PKStroke(ink: PKInk(tool.inkType, color: tool.color), path: PKStrokePath(
                 controlPoints: pts.enumerated().map { i, p in
                     PKStrokePoint(location: CGPoint(x: p.x * scale, y: p.y * scale), timeOffset: Double(i) * 0.01,
-                                  size: CGSize(width: 4, height: 4), opacity: 1, force: 1, azimuth: 0, altitude: .pi / 2)
+                                  size: CGSize(width: tool.width, height: tool.width), opacity: 1, force: 1, azimuth: 0, altitude: .pi / 2)
                 },
                 creationDate: .now))
             drawing.strokes.append(stroke)
@@ -352,7 +353,7 @@ struct RecallStepView: View {
                     }
                     InkCanvas(
                         drawing: $drawing,
-                        tool: erasing ? Eraser.tool : Pen.pen.tool(scale: side / DiagramSpace.size),
+                        tool: erasing ? Eraser.tool : Pen.pen.tool,
                         isEnabled: !passed,
                         onLift: { if erasing { DispatchQueue.main.async { erasing = false } } }
                     ) { added, isPencil in
