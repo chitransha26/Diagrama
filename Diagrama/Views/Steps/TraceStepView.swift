@@ -94,7 +94,8 @@ struct TraceStepView: View {
     @State private var lastWasPencil = false
     @State private var erasing = false
     @State private var corrected = false
-    @State private var fullSide: CGFloat = 0
+    /// Side of the drawing canvas in points. Strokes are in this unzoomed space.
+    @State private var canvasSide: CGFloat = 0
     /// Which zoomed piece is being drawn, and the first stroke that belongs to it.
     @State private var segment = 0
     @State private var segmentStart = 0
@@ -130,7 +131,7 @@ struct TraceStepView: View {
             }
 
             SquareStage { side in
-                ZoomedStage(viewport: viewport, side: side) { full in
+                ZoomedStage(viewport: viewport, side: side) { _ in
                     ZStack {
                         DiagramView(
                             lesson: session.lesson, revealed: session.revealed, filled: session.filled,
@@ -143,16 +144,6 @@ struct TraceStepView: View {
                         if !passed, let first = guides.first {
                             GuideDemo(guide: first, progress: demo)
                         }
-                        InkCanvas(
-                            drawing: $drawing,
-                            tool: erasing ? Eraser.tool : structure.pen.tool,
-                            isEnabled: !passed,
-                            viewport: viewport,
-                        onLift: { if erasing { DispatchQueue.main.async { erasing = false } } }
-                        ) { added, isPencil in
-                            if erasing { corrected = true } else if added { lastWasPencil = isPencil }
-                            evaluate()
-                        }
                         if !passed {
                             PartNameTag(
                                 name: session.step.title,
@@ -162,15 +153,27 @@ struct TraceStepView: View {
                             .transition(.opacity)
                         }
                     }
-                    .onAppear { fullSide = full }
-                    .onChange(of: full) { _, new in fullSide = new }
                 }
+                .overlay {
+                    InkCanvas(
+                        drawing: $drawing,
+                        tool: erasing ? Eraser.tool(zoom: viewport.zoom) : structure.pen.tool(zoom: viewport.zoom),
+                        isEnabled: !passed,
+                        viewport: viewport,
+                        onLift: { if erasing { DispatchQueue.main.async { erasing = false } } }
+                    ) { added, isPencil in
+                        if erasing { corrected = true } else if added { lastWasPencil = isPencil }
+                        evaluate()
+                    }
+                }
+                .onAppear { canvasSide = side }
+                .onChange(of: side) { _, new in canvasSide = new }
             }
 
             feedback
 
             ContinueButton(enabled: passed) {
-                session.addLayer(drawing, canvasSide: fullSide)
+                session.addLayer(drawing, canvasSide: canvasSide)
                 session.recordTrace(TraceRecord(
                     match: average(segmentScores),
                     smoothness: average(segmentSmoothness),
@@ -194,11 +197,11 @@ struct TraceStepView: View {
     private func autodrawForTesting() async {
         guard ProcessInfo.processInfo.arguments.contains("-autodraw") else { return }
         try? await Task.sleep(for: .seconds(0.6))
-        guard fullSide > 0, !passed else { return }
-        let scale = fullSide / DiagramSpace.size
+        guard canvasSide > 0, !passed else { return }
+        let scale = canvasSide / DiagramSpace.size
         for g in guides {
             let pts = g.closed ? g.points + [g.points[0]] : g.points
-            let tool = structure.pen.tool
+            let tool = structure.pen.tool(zoom: viewport.zoom)
             let stroke = PKStroke(ink: PKInk(tool.inkType, color: tool.color), path: PKStrokePath(
                 controlPoints: pts.enumerated().map { i, p in
                     PKStrokePoint(location: CGPoint(x: p.x * scale, y: p.y * scale), timeOffset: Double(i) * 0.01,
@@ -234,13 +237,14 @@ struct TraceStepView: View {
     }
 
     private func evaluate() {
-        guard fullSide > 0 else { return }
-        let scale = fullSide / DiagramSpace.size
+        guard canvasSide > 0 else { return }
+        let scale = canvasSide / DiagramSpace.size
         let pts = drawing.strokes.dropFirst(segmentStart).flatMap { $0.diagramSegments(scale: scale) }
         guard !pts.isEmpty else { result = nil; return }
         let r = StrokeScorer.score(
             strokes: pts, guides: guides,
-            tolerance: StrokeScorer.tolerance(isPencil: lastWasPencil, scale: scale)
+            // Tolerance is on screen, where the zoom magnifies the canvas.
+            tolerance: StrokeScorer.tolerance(isPencil: lastWasPencil, scale: scale * viewport.zoom)
         )
         result = r
         guard !advancing, StrokeScorer.isComplete(r) else { return }
@@ -251,7 +255,7 @@ struct TraceStepView: View {
             // Move the zoom on to the next piece, as ArtWorkout does between parts.
             Task { @MainActor in
                 try? await Task.sleep(for: .seconds(0.5))
-                session.addLayer(drawing, canvasSide: fullSide)
+                session.addLayer(drawing, canvasSide: canvasSide)
                 withAnimation(.easeInOut(duration: 0.45)) {
                     segment += 1
                     drawing = PKDrawing()

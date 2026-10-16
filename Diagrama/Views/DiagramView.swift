@@ -237,6 +237,9 @@ struct ZoomedStage<Content: View>: View {
         content(full)
             .frame(width: full, height: full)
             .offset(x: -viewport.origin.x * unit, y: -viewport.origin.y * unit)
+            // The zoomed picture is bigger than its box. It's display-only, so its cropped-off
+            // part must never catch taps meant for the toolbar and buttons around the box.
+            .allowsHitTesting(false)
             .frame(width: side, height: side, alignment: .topLeading)
             .clipped()
     }

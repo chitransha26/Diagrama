@@ -9,8 +9,9 @@ struct InkCanvas: UIViewRepresentable {
     @Binding var drawing: PKDrawing
     var tool: PKTool
     var isEnabled = true
-    /// For zoomed tracing, the canvas spans the whole diagram but only part is on screen.
-    /// It refuses touches outside that part, so they reach the toolbar and buttons around it.
+    /// For zoomed tracing: the canvas stays exactly the size of its box and zooms its own
+    /// content (PencilKit's built-in zoom), so nothing overflows onto the toolbar around it.
+    /// Stroke coordinates stay in unzoomed canvas space, whatever the zoom.
     var viewport: Viewport = .whole
     /// Two-finger pinch to zoom and pan, for free drawing without guides. One finger draws.
     var allowsZoom = false
@@ -20,15 +21,29 @@ struct InkCanvas: UIViewRepresentable {
 
     func makeCoordinator() -> Coordinator { Coordinator(self) }
 
-    /// A canvas that only accepts touches inside the part that's visible on screen.
+    /// Applies the requested zoom once the canvas knows its size.
     final class Canvas: PKCanvasView {
-        var viewport: Viewport = .whole
+        var target: Viewport = .whole
+        var fixedZoom = false
+        private var applied: (CGFloat, CGPoint, CGSize)?
 
-        override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
-            let unit = bounds.width / DiagramSpace.size
-            let side = DiagramSpace.size / viewport.zoom * unit
-            let visible = CGRect(x: viewport.origin.x * unit, y: viewport.origin.y * unit, width: side, height: side)
-            return visible.contains(point) && super.point(inside: point, with: event)
+        override func layoutSubviews() {
+            super.layoutSubviews()
+            applyTarget()
+        }
+
+        func applyTarget() {
+            guard fixedZoom, bounds.width > 0 else { return }
+            let key = (target.zoom, target.origin, bounds.size)
+            if let a = applied, a.0 == key.0, a.1 == key.1, a.2 == key.2 { return }
+            applied = key
+            if zoomScale != 1 { setZoomScale(1, animated: false) }
+            contentSize = bounds.size
+            minimumZoomScale = 1
+            maximumZoomScale = max(1, target.zoom)
+            setZoomScale(target.zoom, animated: false)
+            let unit = bounds.width / DiagramSpace.size * target.zoom
+            contentOffset = CGPoint(x: target.origin.x * unit, y: target.origin.y * unit)
         }
     }
 
@@ -55,13 +70,20 @@ struct InkCanvas: UIViewRepresentable {
 
     func updateUIView(_ view: Canvas, context: Context) {
         context.coordinator.parent = self
-        view.viewport = viewport
         view.isUserInteractionEnabled = isEnabled
         view.tool = tool
         view.isScrollEnabled = allowsZoom
-        view.maximumZoomScale = allowsZoom ? 4 : 1
-        if !allowsZoom, view.zoomScale != 1 { view.setZoomScale(1, animated: true) }
-        if view.zoomScale == 1, view.contentSize != view.bounds.size { view.contentSize = view.bounds.size }
+        if viewport.zoom > 1 {
+            // Guided, app-controlled zoom: the learner doesn't pan or pinch.
+            view.fixedZoom = true
+            view.target = viewport
+            view.applyTarget()
+        } else {
+            view.fixedZoom = false
+            view.maximumZoomScale = allowsZoom ? 4 : 1
+            if !allowsZoom, view.zoomScale != 1 { view.setZoomScale(1, animated: true) }
+            if view.zoomScale == 1, view.contentSize != view.bounds.size { view.contentSize = view.bounds.size }
+        }
         if view.drawing != drawing {
             view.drawing = drawing
         }
@@ -117,6 +139,9 @@ final class TouchTypeRecorder: UIGestureRecognizer {
 /// deleting whole strokes.
 enum Eraser {
     static let tool = PKEraserTool(.bitmap, width: 16)
+
+    /// The same on-screen size at any zoom (canvas units are magnified by the zoom).
+    static func tool(zoom: CGFloat) -> PKEraserTool { PKEraserTool(.bitmap, width: 16 / max(zoom, 1)) }
 }
 
 extension PKStroke {

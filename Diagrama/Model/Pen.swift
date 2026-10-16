@@ -33,6 +33,12 @@ struct Pen: Equatable {
         }
     }
 
+    /// The pen at the same on-screen width under the canvas's built-in zoom.
+    func tool(zoom: CGFloat) -> PKInkingTool {
+        let t = tool
+        return PKInkingTool(t.inkType, color: t.color, width: width / max(zoom, 1))
+    }
+
     var tool: PKInkingTool {
         let type: PKInkingTool.InkType = switch kind {
         case .fineLiner: .monoline

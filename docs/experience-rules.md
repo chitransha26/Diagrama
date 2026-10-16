@@ -38,7 +38,7 @@ the app, so a lesson can't break them; the rest need checking by hand when autho
 - **Automatic zoom** into any part too small for a finger, with nearby small parts sharing
   a view and an "x of N" counter. **(enforced)**
 - **Nothing moves:** the canvas never shifts or resizes during a step, and toolbar buttons
-  always respond, zoomed or not.
+  always respond, zoomed or not. **(enforced)**
 
 ## Tracing rules (how strict)
 - A part is complete only when **every** piece of it is traced (96%+), with no untraced gap
