@@ -48,8 +48,8 @@ struct ColorStepView: View {
                     .overlay(Circle().stroke(Theme.ink.opacity(0.35)))
                     .frame(width: 26, height: 26)
                 Text("Fill the \(s.fillName)").font(.headline)
-                if s.outlines.count > 1 {
-                    Text("· tap all \(s.outlines.count)").font(.subheadline).foregroundStyle(.secondary)
+                if s.fillable.count > 1 {
+                    Text("· tap all \(s.fillable.count)").font(.subheadline).foregroundStyle(.secondary)
                 }
             } else {
                 Image(systemName: "checkmark.circle.fill").font(.title3).foregroundStyle(Theme.lime)
@@ -60,7 +60,7 @@ struct ColorStepView: View {
     }
 
     private func isFilled(_ s: Structure) -> Bool {
-        s.outlines.indices.allSatisfy { session.filled.contains("\(s.id)#\($0)") }
+        s.fillable.allSatisfy { session.filled.contains("\(s.id)#\($0)") }
     }
 
     private func fill(at location: CGPoint, side: CGFloat) {
@@ -84,7 +84,7 @@ struct ColorStepView: View {
                 let name = target.fillName.prefix(1).uppercased() + target.fillName.dropFirst()
                 feedback = (.correct, "\(name) filled.")
             } else {
-                let left = target.outlines.indices.filter { !session.filled.contains("\(target.id)#\($0)") }.count
+                let left = target.fillable.filter { !session.filled.contains("\(target.id)#\($0)") }.count
                 feedback = (.correct, "Good. \(left) more to fill.")
             }
         } else {

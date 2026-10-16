@@ -141,6 +141,9 @@ struct Structure: Identifiable {
     }
 
     var outline: Polyline { outlines[0] }
+    /// The outlines that can be colored in: closed shapes only, not lines such as the
+    /// twig a chrysalis hangs from.
+    var fillable: [Int] { outlines.indices.filter { outlines[$0].closed } }
     var fillName: String { colorName ?? name }
 
     /// A part smaller than this (diagram units) is zoomed into automatically.
@@ -280,7 +283,7 @@ struct Lesson: Identifiable {
     /// The topmost visible structure (and which of its outlines) under a point in diagram space.
     func hit(at point: CGPoint, among visible: Set<String>) -> (structure: Structure, outline: Int)? {
         for s in structures.reversed() where visible.contains(s.id) {
-            if let i = s.outlines.lastIndex(where: { $0.path.contains(point) }) {
+            if let i = s.outlines.indices.last(where: { s.outlines[$0].closed && s.outlines[$0].path.contains(point) }) {
                 return (s, i)
             }
         }

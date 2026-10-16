@@ -222,6 +222,27 @@ struct LabelGraderTests {
 }
 
 struct ContentTests {
+    /// Color steps ask learners to tap every piece, so only closed shapes may count: the
+    /// butterfly chrysalis's twig and stem once made it ask for 3 taps when 1 was possible.
+    @Test func colorStepsOnlyCountShapesYouCanTapInside() {
+        for lesson in Catalog.lessons {
+            for step in lesson.steps {
+                guard case .color(let ids) = step.kind else { continue }
+                for id in ids {
+                    let s = lesson.structure(id)
+                    #expect(!s.fillable.isEmpty, "\(lesson.id): \(id) has nothing to fill")
+                    for i in s.fillable {
+                        let box = s.outlines[i].bounds
+                        let inside = CGPoint(x: box.midX, y: box.midY)
+                        #expect(lesson.hit(at: inside, among: [id])?.outline == i, "\(lesson.id): \(id)#\(i) can't be tapped at its center")
+                    }
+                }
+            }
+        }
+        let butterfly = Catalog.lesson(id: "g3-butterfly-life-cycle")!
+        #expect(butterfly.structure("chrysalis").fillable.count == 1)
+    }
+
     @Test func everyLessonReferencesRealStructures() {
         for lesson in Catalog.lessons {
             let ids = Set(lesson.structures.map(\.id))
