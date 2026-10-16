@@ -19,6 +19,8 @@ struct DiagramView: View {
     var templateOpacity: Double = 0.8
     var guides: [Polyline] = []
     var offGuide: [CGPoint] = []
+    /// Parts of the guide not yet traced, marked so the learner can find and finish them.
+    var untraced: [CGPoint] = []
     var markers: [DiagramMarker] = []
     /// False draws on a transparent background, for overlays.
     var paper = true
@@ -54,6 +56,11 @@ struct DiagramView: View {
                 let r = 7 / s
                 ctx.stroke(Path(ellipseIn: CGRect(x: p.x - r, y: p.y - r, width: 2 * r, height: 2 * r)),
                            with: .color(Theme.coral), lineWidth: 2 / s)
+            }
+
+            for p in untraced {
+                let r = 4 / s
+                ctx.fill(Path(ellipseIn: CGRect(x: p.x - r, y: p.y - r, width: 2 * r, height: 2 * r)), with: .color(Theme.cyan))
             }
 
             for m in markers {

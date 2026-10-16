@@ -83,7 +83,7 @@ struct StrokeScorerTests {
         let r = StrokeScorer.score(strokes: [half], guides: [circle], tolerance: 20)
         #expect(r.precision > 0.99)
         #expect(abs(r.coverage - 0.5) < 0.08)
-        #expect(r.coverage < StrokeScorer.tracePass)
+        #expect(!StrokeScorer.isComplete(r))
     }
 
     @Test func offsetDrawingIsFlaggedOffGuide() {
@@ -91,6 +91,38 @@ struct StrokeScorerTests {
         let r = StrokeScorer.score(strokes: [shifted], guides: [circle], tolerance: 20)
         #expect(r.precision < 0.6)
         #expect(!r.offGuidePoints.isEmpty)
+    }
+
+    @Test func fullTraceIsComplete() {
+        let r = StrokeScorer.score(strokes: [circle.resampled(spacing: 5)], guides: [circle], tolerance: 20)
+        #expect(StrokeScorer.isComplete(r))
+    }
+
+    @Test func smallGapKeepsStepOpen() {
+        // Trace the circle but leave about 50 units untraced: the drawing would look broken.
+        let partial = (0...92).map { circle.point(at: CGFloat($0) / 100) }
+        let r = StrokeScorer.score(strokes: [partial], guides: [circle], tolerance: 20)
+        #expect(r.coverage > 0.9)
+        #expect(!StrokeScorer.isComplete(r))
+        #expect(!r.untraced.isEmpty)
+    }
+
+    @Test func skippingOneOfManyPartsKeepsStepOpen() {
+        // Eight short lines, like the thylakoids: drawing seven is still not finished.
+        let lines = (0..<8).map { i in Shapes.line(CGPoint(x: 100, y: 100 + CGFloat(i) * 60), CGPoint(x: 160, y: 100 + CGFloat(i) * 60)) }
+        let drawn = lines.dropLast().map { $0.resampled(spacing: 4) }
+        let r = StrokeScorer.score(strokes: drawn, guides: lines, tolerance: 12)
+        #expect(r.coverage > 0.8)
+        #expect(!StrokeScorer.isComplete(r))
+        #expect(r.guideCoverage.last == 0)
+    }
+
+    @Test func oneLineBetweenTwoCloseGuidesTracesOnlyOne() {
+        let top = Shapes.line(CGPoint(x: 100, y: 100), CGPoint(x: 300, y: 100))
+        let bottom = Shapes.line(CGPoint(x: 100, y: 118), CGPoint(x: 300, y: 118))
+        let middle = [Shapes.line(CGPoint(x: 100, y: 109), CGPoint(x: 300, y: 109)).resampled(spacing: 4)]
+        let r = StrokeScorer.score(strokes: middle, guides: [top, bottom], tolerance: 12)
+        #expect(!StrokeScorer.isComplete(r))
     }
 
     @Test func pencilToleranceIsTighterThanFinger() {

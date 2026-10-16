@@ -70,10 +70,6 @@ struct TraceProgressBar: View {
                     Rectangle().fill(Theme.coral).frame(width: geo.size.width * bad)
                 }
                 .clipShape(Capsule())
-                // Pass mark, so progress reads without relying on color.
-                Rectangle().fill(Theme.ink.opacity(0.5))
-                    .frame(width: 2)
-                    .offset(x: geo.size.width * StrokeScorer.tracePass)
             }
         }
         .frame(height: 12)
@@ -141,7 +137,8 @@ struct TraceStepView: View {
                             lesson: session.lesson, revealed: session.revealed, filled: session.filled,
                             templateOpacity: session.layers.isEmpty ? 0.8 : 0.25,
                             guides: passed ? [] : guides,
-                            offGuide: result?.offGuidePoints ?? []
+                            offGuide: result?.offGuidePoints ?? [],
+                            untraced: passed ? [] : result?.untraced ?? []
                         )
                         InkLayers(session: session, viewport: viewport)
                         if !passed, let first = guides.first {
@@ -227,7 +224,7 @@ struct TraceStepView: View {
             tolerance: StrokeScorer.tolerance(isPencil: lastWasPencil, scale: scale)
         )
         result = r
-        guard !advancing, r.coverage >= StrokeScorer.tracePass, r.precision >= StrokeScorer.restartBelow else { return }
+        guard !advancing, StrokeScorer.isComplete(r) else { return }
         segmentScores.append(r.score)
         if segment + 1 < segments.count {
             advancing = true
@@ -271,7 +268,7 @@ struct TraceStepView: View {
 
     private func message(for r: TraceResult) -> String {
         let name = session.step.title
-        if !passed, segments.count > 1, r.coverage >= StrokeScorer.tracePass {
+        if !passed, segments.count > 1, StrokeScorer.isComplete(r) {
             return "Good. On to the next one."
         }
         if passed {
@@ -279,10 +276,16 @@ struct TraceStepView: View {
                 ? "\(name) done. Very steady line!"
                 : "\(name) done. The rings show where your line left the guide."
         }
-        let left = Int(((1 - r.coverage) * 100).rounded())
-        return r.precision < 0.75
-            ? "Keep going: \(left)% left to trace. Rings mark where your line left the guide; you can erase those parts."
-            : "Keep going: \(left)% of the guide is still untraced."
+        if r.precision < 0.75 {
+            return "Keep going. Rings mark where your line left the guide; you can erase those parts."
+        }
+        let skipped = r.guideCoverage.filter { $0 < 0.5 }.count
+        if skipped > 0, guides.count > 1 {
+            return skipped == 1 ? "Keep going: one part hasn't been traced yet." : "Keep going: \(skipped) parts haven't been traced yet."
+        }
+        return r.coverage >= 0.85
+            ? "Almost there. Trace over the blue marks to close the gaps."
+            : "Keep going: follow the dashed line all the way."
     }
 
     private func playDemo(after delay: Double) {

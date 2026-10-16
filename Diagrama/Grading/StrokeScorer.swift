@@ -9,6 +9,12 @@ struct TraceResult: Equatable {
     var coverage: Double
     /// Ink points that strayed off the guide, in diagram space.
     var offGuidePoints: [CGPoint]
+    /// Coverage of each guide on its own, so no single part can be skipped.
+    var guideCoverage: [Double] = []
+    /// The longest untraced stretch of any guide, in diagram units.
+    var longestGap: CGFloat = 0
+    /// Points along the guides that still need tracing, in diagram space.
+    var untraced: [CGPoint] = []
 
     var score: Double { (precision + coverage) / 2 }
 
@@ -16,13 +22,18 @@ struct TraceResult: Equatable {
 }
 
 enum StrokeScorer {
-    /// Coverage needed to complete a guided trace.
-    static let tracePass = 0.8
+    /// Every guide must be at least this fully traced to complete a step, as in ArtWorkout,
+    /// where a drawing isn't finished until every line is drawn.
+    static let guidePass = 0.96
+    /// The longest untraced stretch allowed, in diagram units: about the width of a pen line.
+    static let maxGap: CGFloat = 16
     /// Below this precision, more ink is off the guide than on it: suggest restarting the step.
     static let restartBelow = 0.5
     /// Recall drawings are rougher, so they are aligned first and judged more loosely.
     static let recallCoveragePass = 0.6
     static let recallPrecisionPass = 0.5
+
+    private static let sampleSpacing: CGFloat = 8
 
     /// Tolerance in diagram units. Fingers and capacitive styluses get a wider band than
     /// pens (PRD §05), measured in on-screen points so it feels the same on every device.
@@ -31,23 +42,69 @@ enum StrokeScorer {
         return max(points / max(scale, 0.01), 12)
     }
 
+    /// A trace is complete only when every guide is fully drawn, with no real gaps, and
+    /// most of the ink is on the guide.
+    static func isComplete(_ r: TraceResult) -> Bool {
+        !r.guideCoverage.isEmpty
+            && r.guideCoverage.allSatisfy { $0 >= guidePass }
+            && r.longestGap <= maxGap
+            && r.precision >= restartBelow
+    }
+
     static func score(strokes: [[CGPoint]], guides: [Polyline], tolerance: CGFloat) -> TraceResult {
         let ink = strokes.flatMap { $0 }
         guard !ink.isEmpty, !guides.isEmpty else { return .empty }
 
+        // Each ink point counts only toward the guide it is closest to, so one line drawn
+        // between two close guides can't trace both.
         var off: [CGPoint] = []
-        for p in ink where guides.map({ $0.distance(from: p) }).min()! > tolerance {
-            off.append(p)
+        var inkByGuide = Array(repeating: [CGPoint](), count: guides.count)
+        for p in ink {
+            let distances = guides.map { $0.distance(from: p) }
+            let nearest = distances.indices.min { distances[$0] < distances[$1] }!
+            if distances[nearest] > tolerance {
+                off.append(p)
+            } else {
+                inkByGuide[nearest].append(p)
+            }
         }
 
-        let samples = guides.flatMap { $0.resampled(spacing: 10) }
-        let covered = samples.filter { s in ink.contains { $0.distance(to: s) <= tolerance } }.count
+        var perGuide: [Double] = []
+        var untraced: [CGPoint] = []
+        var longestGap: CGFloat = 0
+        var totalSamples = 0, totalCovered = 0
+        for (g, guide) in guides.enumerated() {
+            let samples = guide.resampled(spacing: sampleSpacing)
+            let covered = samples.map { s in inkByGuide[g].contains { $0.distance(to: s) <= tolerance } }
+            let count = covered.filter { $0 }.count
+            perGuide.append(samples.isEmpty ? 1 : Double(count) / Double(samples.count))
+            untraced += zip(samples, covered).filter { !$0.1 }.map(\.0)
+            longestGap = max(longestGap, CGFloat(longestRun(of: false, in: covered, wraps: guide.closed)) * guide.length / CGFloat(max(samples.count, 1)))
+            totalSamples += samples.count
+            totalCovered += count
+        }
 
         return TraceResult(
             precision: Double(ink.count - off.count) / Double(ink.count),
-            coverage: samples.isEmpty ? 0 : Double(covered) / Double(samples.count),
-            offGuidePoints: off
+            coverage: totalSamples == 0 ? 0 : Double(totalCovered) / Double(totalSamples),
+            offGuidePoints: off,
+            guideCoverage: perGuide,
+            longestGap: longestGap,
+            untraced: untraced
         )
+    }
+
+    /// Longest run of `value` in `flags`, treating closed shapes as a loop.
+    private static func longestRun(of value: Bool, in flags: [Bool], wraps: Bool) -> Int {
+        guard !flags.isEmpty else { return 0 }
+        if flags.allSatisfy({ $0 == value }) { return flags.count }
+        let seq = wraps ? flags + flags : flags
+        var best = 0, run = 0
+        for f in seq {
+            run = f == value ? run + 1 : 0
+            best = max(best, run)
+        }
+        return min(best, flags.count)
     }
 
     /// Scores a from-memory drawing. Position and size are up to the learner, so the
