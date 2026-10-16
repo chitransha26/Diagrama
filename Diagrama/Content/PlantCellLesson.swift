@@ -37,8 +37,8 @@ enum PlantCellLesson {
     static let lesson = Lesson(
         id: "plant-cell",
         title: "Plant cell",
-        level: "Middle & high school · NGSS MS-LS1-2",
-        subject: .cellBiology,
+        level: "Middle school",
+        subject: .life,
         minutes: 10,
         keywords: ["cell", "organelle", "plasma membrane", "cell wall", "vacuole", "chloroplast", "thylakoid", "nucleus", "nucleolus", "cytoplasm", "elodea"],
         colorMode: .lightMicroscope,
@@ -123,6 +123,8 @@ enum PlantCellLesson {
             ))),
             LessonStep(title: "From memory", instruction: "No guides this time. Draw the cell wall and the nucleus in the right place. Any size is fine.",
                        kind: .recall(structures: ["wall", "nucleus"])),
-        ]
+        ],
+        grade: "7",
+        standard: "MS-LS1-2"
     )
 }

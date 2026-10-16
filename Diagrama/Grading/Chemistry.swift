@@ -1,7 +1,7 @@
 import Foundation
 
-enum Element: String {
-    case H, C, N, O
+enum Element: String, Decodable {
+    case H, C, N, O, F, P, S, Cl
 
     var name: String {
         switch self {
@@ -9,6 +9,10 @@ enum Element: String {
         case .C: "carbon"
         case .N: "nitrogen"
         case .O: "oxygen"
+        case .F: "fluorine"
+        case .P: "phosphorus"
+        case .S: "sulfur"
+        case .Cl: "chlorine"
         }
     }
 
@@ -16,8 +20,9 @@ enum Element: String {
         switch self {
         case .H: 1
         case .C: 4
-        case .N: 5
-        case .O: 6
+        case .N, .P: 5
+        case .O, .S: 6
+        case .F, .Cl: 7
         }
     }
 

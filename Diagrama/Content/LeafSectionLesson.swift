@@ -48,8 +48,8 @@ enum LeafSectionLesson {
     static let lesson = Lesson(
         id: "leaf-section",
         title: "Leaf cross-section",
-        level: "High school & AP Biology",
-        subject: .botany,
+        level: "Middle school",
+        subject: .life,
         minutes: 14,
         keywords: ["leaf", "transverse section", "mesophyll", "palisade", "spongy", "stoma", "stomata", "guard cell", "xylem", "phloem", "vein", "photosynthesis"],
         colorMode: .lightMicroscope,
@@ -151,6 +151,8 @@ enum LeafSectionLesson {
             ))),
             LessonStep(title: "From memory", instruction: "No guides this time. Draw the palisade layer and the vein below it. Any size is fine.",
                        kind: .recall(structures: ["palisade", "vein"])),
-        ]
+        ],
+        grade: "7",
+        standard: "MS-LS1-6"
     )
 }

@@ -48,7 +48,7 @@ enum WaterLesson {
     static let lesson = Lesson(
         id: "water-lewis",
         title: "Water: Lewis structure",
-        level: "High school & AP Chemistry",
+        level: "High school chemistry",
         subject: .chemistry,
         minutes: 6,
         keywords: ["water", "H2O", "lewis", "lewis dot", "electron dot", "lone pair", "covalent bond", "octet", "valence"],
@@ -95,12 +95,17 @@ enum WaterLesson {
                        kind: .drawLewis(LewisStep(target: water, positions: [
                            CGPoint(x: 470, y: 560), CGPoint(x: 720, y: 380), CGPoint(x: 250, y: 400),
                        ]))),
-        ]
+        ],
+        grade: "10-11",
+        standard: "HS-PS1-2"
     )
 }
 
 enum Catalog {
-    static let lessons: [Lesson] = [PlantCellLesson.lesson, LeafSectionLesson.lesson, WaterLesson.lesson]
+    static let loaded = LessonFile.bundled()
+
+    static let lessons: [Lesson] = ([PlantCellLesson.lesson, LeafSectionLesson.lesson, WaterLesson.lesson] + loaded.lessons)
+        .sorted { ($0.band.sortOrder, $0.grade, $0.title) < ($1.band.sortOrder, $1.grade, $1.title) }
 
     static func lesson(id: String) -> Lesson? { lessons.first { $0.id == id } }
 }

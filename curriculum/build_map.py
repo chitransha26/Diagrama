@@ -277,7 +277,14 @@ D = [
     ("9", "Earth & Space", "Seismic waves and the shadow zone", "HS-ESS2-1", "trace"),
 ]
 
-LIVE = {"Plant cell", "Leaf cross-section", "Water: Lewis structure"}
+import glob
+import json
+
+# A diagram is live once a lesson with the same title ships (Swift lessons, or files in Content/Lessons).
+LIVE = {"Plant cell", "Leaf cross-section", "Water: Lewis structure"} | {
+    json.load(open(f))["title"]
+    for f in glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "Diagrama", "Content", "Lessons", "lesson-*.json"))
+}
 
 BAND = {"K": "K-2", "1": "K-2", "2": "K-2", "3": "3-5", "4": "3-5", "5": "3-5",
         "6": "Middle school", "7": "Middle school", "8": "Middle school"}
@@ -293,7 +300,8 @@ for i, (grade, subject, diagram, standard, interaction) in enumerate(D, 1):
     rows.append({
         "id": f"D{i:03d}", "grade": grade, "band": band(grade), "subject": subject,
         "diagram": diagram, "standard": standard, "interaction": interaction,
-        "status": "live" if diagram in LIVE else "planned",
+        # K-2 is deferred until read-aloud audio exists: young children can't read the notes.
+        "status": "live" if diagram in LIVE else ("deferred" if band(grade) == "K-2" else "planned"),
         "mapping": "proposed - needs teacher review",
     })
 
@@ -306,8 +314,7 @@ with open(os.path.join(here, "coverage.csv"), "w", newline="") as f:
     w.writerows(rows)
 
 order = ["K-2", "3-5", "Middle school", "High school"]
-print(f"{len(rows)} diagrams ({sum(r['status'] == 'live' for r in rows)} live, "
-      f"{sum(r['status'] == 'planned' for r in rows)} planned)")
+print(f"{len(rows)} diagrams: " + ", ".join(f"{v} {k}" for k, v in Counter(r["status"] for r in rows).items()))
 for b in order:
     c = Counter(r["subject"] for r in rows if r["band"] == b)
     print(f"  {b:14} {sum(c.values()):3}  " + ", ".join(f"{k} {v}" for k, v in sorted(c.items())))

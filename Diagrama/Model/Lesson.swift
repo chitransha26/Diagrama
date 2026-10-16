@@ -1,26 +1,52 @@
 import SwiftUI
 
-enum Subject: String, CaseIterable, Identifiable {
-    case cellBiology = "Cell biology"
-    case botany = "Botany"
+enum Subject: String, CaseIterable, Identifiable, Decodable {
+    case life = "Life science"
+    case zoology = "Zoology"
     case chemistry = "Chemistry"
+    case physics = "Physics"
+    case earthSpace = "Earth & space"
 
     var id: String { rawValue }
 
     var symbol: String {
         switch self {
-        case .cellBiology: "circle.hexagongrid"
-        case .botany: "leaf"
+        case .life: "leaf"
+        case .zoology: "pawprint"
         case .chemistry: "atom"
+        case .physics: "bolt"
+        case .earthSpace: "globe.americas"
         }
     }
 
     /// UI accent for the subject. Never used to color specimens.
     var tint: Color {
         switch self {
-        case .cellBiology: Theme.cyan
-        case .botany: Theme.lime
-        case .chemistry: Theme.coral
+        case .life: Theme.lime
+        case .zoology: Theme.coral
+        case .chemistry: Theme.cyan
+        case .physics: Theme.indigo
+        case .earthSpace: Theme.cyan
+        }
+    }
+}
+
+/// School grade bands, following NGSS.
+enum GradeBand: String, CaseIterable, Identifiable {
+    case elementary = "Grades 3–5"
+    case middle = "Middle school"
+    case high = "High school"
+
+    var id: String { rawValue }
+
+    var sortOrder: Int { GradeBand.allCases.firstIndex(of: self)! }
+
+    /// "3"–"5" are elementary, "6"–"8" middle school, anything else (e.g. "9-10", "AP Bio") high school.
+    init(grade: String) {
+        switch Int(grade) {
+        case .some(...5): self = .elementary
+        case .some(6...8): self = .middle
+        default: self = .high
         }
     }
 }
@@ -31,11 +57,14 @@ enum ColorMode {
     case lightMicroscope
     /// Plain ink, for representations with no real-world color (e.g. Lewis structures).
     case inkOnly
+    /// Simplified real-world colors of whole organisms and objects, as seen by eye.
+    case illustration
 
     var title: String {
         switch self {
         case .lightMicroscope: "Microscope colors"
         case .inkOnly: "Ink only"
+        case .illustration: "Real colors"
         }
     }
 
@@ -43,8 +72,10 @@ enum ColorMode {
         switch self {
         case .lightMicroscope:
             "These are the colors you'd see in a fresh, unstained sample under a light microscope. Most parts are nearly clear; the green comes from chloroplasts."
+        case .illustration:
+            "Colors are simplified versions of how these things look in real life. The legend explains each one."
         case .inkOnly:
-            "Lewis structures are drawn in plain ink. Atoms have no real color, so nothing is colored in this lesson."
+            "This diagram is drawn in plain ink. What it shows has no real color, so nothing is colored in this lesson."
         }
     }
 }
@@ -109,6 +140,12 @@ struct Lesson: Identifiable {
     let legend: [LegendEntry]
     let structures: [Structure]
     let steps: [LessonStep]
+    /// School grade, e.g. "4", "7" or "10-11".
+    var grade = "7"
+    /// The standard this lesson supports, e.g. "MS-LS1-2" (NGSS) or "AP Biology".
+    var standard = ""
+
+    var band: GradeBand { GradeBand(grade: grade) }
 
     func structure(_ id: String) -> Structure {
         guard let s = structures.first(where: { $0.id == id }) else {
@@ -130,7 +167,7 @@ struct Lesson: Identifiable {
     func matches(_ query: String) -> Bool {
         let q = query.trimmingCharacters(in: .whitespaces).lowercased()
         guard !q.isEmpty else { return true }
-        let haystack = [title, level, subject.rawValue] + keywords + structures.map(\.name)
+        let haystack = [title, level, subject.rawValue, standard] + keywords + structures.map(\.name)
         return haystack.contains { $0.lowercased().contains(q) }
     }
 }

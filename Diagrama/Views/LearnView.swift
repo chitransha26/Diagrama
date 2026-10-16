@@ -5,17 +5,24 @@ struct LearnView: View {
     @State private var query = ""
     @State private var active: Lesson?
     @State private var requested: String?
+    @AppStorage("gradeBand") private var bandRaw = GradeBand.middle.rawValue
 
-    private var results: [Lesson] { Catalog.lessons.filter { $0.matches(query) } }
+    private var band: GradeBand { GradeBand(rawValue: bandRaw) ?? .middle }
+
+    /// Search looks across every grade; browsing shows one grade band at a time.
+    private var results: [Lesson] {
+        query.isEmpty ? Catalog.lessons.filter { $0.band == band } : Catalog.lessons.filter { $0.matches(query) }
+    }
 
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 26) {
                     if query.isEmpty {
-                        Text("Draw it. Label it. Explain it.")
-                            .font(.title3.weight(.semibold))
-                            .foregroundStyle(.secondary)
+                        Picker("Grade", selection: $bandRaw) {
+                            ForEach(GradeBand.allCases) { Text($0.rawValue).tag($0.rawValue) }
+                        }
+                        .pickerStyle(.segmented)
                     }
 
                     ForEach(Subject.allCases) { subject in
@@ -97,7 +104,8 @@ private struct LessonCard: View {
 
             VStack(alignment: .leading, spacing: 4) {
                 Text(lesson.title).font(.headline)
-                Text(lesson.level).font(.caption).foregroundStyle(.secondary)
+                Text(lesson.grade.first?.isNumber == true ? "Grade \(lesson.grade) · \(lesson.standard)" : lesson.standard)
+                    .font(.caption).foregroundStyle(.secondary)
                 HStack(spacing: 10) {
                     Label("\(lesson.minutes) min", systemImage: "clock")
                     Label(status.title, systemImage: status.symbol)

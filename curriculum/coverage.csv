@@ -1,42 +1,42 @@
 id,grade,band,subject,diagram,standard,interaction,status,mapping
-D001,K,K-2,Life,"Parts of a plant: root, stem, leaf, flower",K-LS1-1,trace,planned,proposed - needs teacher review
-D002,K,K-2,Life,Parts of a tree,K-LS1-1,trace,planned,proposed - needs teacher review
-D003,K,K-2,Life,A seed sprouting,K-LS1-1,process,planned,proposed - needs teacher review
-D004,K,K-2,Life,A plant growing toward light,K-LS1-1,compare,planned,proposed - needs teacher review
-D005,K,K-2,Earth & Space,A bird building a nest,K-ESS2-2,trace,planned,proposed - needs teacher review
-D006,K,K-2,Earth & Space,A beaver dam changing a stream,K-ESS2-2,trace,planned,proposed - needs teacher review
-D007,K,K-2,Earth & Space,"Weather symbols: sun, cloud, rain, snow",K-ESS2-1,trace,planned,proposed - needs teacher review
-D008,K,K-2,Physical,Sunlight warming the ground,K-PS3-1,compare,planned,proposed - needs teacher review
-D009,K,K-2,Physical,A shade structure blocking the sun,K-PS3-2,trace,planned,proposed - needs teacher review
-D010,K,K-2,Physical,Pushes and pulls on a wagon,K-PS2-1,trace,planned,proposed - needs teacher review
-D011,1,K-2,Life,Turtle shell: built for protection,1-LS1-1,trace,planned,proposed - needs teacher review
-D012,1,K-2,Life,Cactus: spines and a thick stem,1-LS1-1,trace,planned,proposed - needs teacher review
-D013,1,K-2,Life,Bird beaks and the food they eat,1-LS1-1,compare,planned,proposed - needs teacher review
-D014,1,K-2,Life,Burr and hook-and-loop fastener (biomimicry),1-LS1-1,compare,planned,proposed - needs teacher review
-D015,1,K-2,Life,A bird feeding its chicks,1-LS1-2,trace,planned,proposed - needs teacher review
-D016,1,K-2,Life,Parent and young plant: alike and different,1-LS3-1,compare,planned,proposed - needs teacher review
-D017,1,K-2,Life,Dog and puppies: inherited features,1-LS3-1,compare,planned,proposed - needs teacher review
-D018,1,K-2,Physical,A vibrating drum makes sound,1-PS4-1,trace,planned,proposed - needs teacher review
-D019,1,K-2,Physical,Light from a flashlight lets us see,1-PS4-2,process,planned,proposed - needs teacher review
-D020,1,K-2,Physical,"Transparent, translucent and opaque",1-PS4-3,compare,planned,proposed - needs teacher review
-D021,1,K-2,Physical,A string-and-cup telephone,1-PS4-4,trace,planned,proposed - needs teacher review
-D022,1,K-2,Earth & Space,The sun's path across the sky,1-ESS1-1,process,planned,proposed - needs teacher review
-D023,1,K-2,Earth & Space,Shapes of the moon over a month,1-ESS1-1,process,planned,proposed - needs teacher review
-D024,1,K-2,Earth & Space,Daylight in winter vs summer,1-ESS1-2,compare,planned,proposed - needs teacher review
-D025,2,K-2,Life,What plants need: light and water test,2-LS2-1,compare,planned,proposed - needs teacher review
-D026,2,K-2,Life,A bee pollinating a flower,2-LS2-2,trace,planned,proposed - needs teacher review
-D027,2,K-2,Life,"Seed dispersal: wind, water, animals",2-LS2-2,compare,planned,proposed - needs teacher review
-D028,2,K-2,Life,Pond habitat,2-LS4-1,trace,planned,proposed - needs teacher review
-D029,2,K-2,Life,Desert habitat,2-LS4-1,trace,planned,proposed - needs teacher review
-D030,2,K-2,Life,Rainforest layers,2-LS4-1,trace,planned,proposed - needs teacher review
-D031,2,K-2,Physical,"Water as ice, liquid and vapor",2-PS1-1,compare,planned,proposed - needs teacher review
-D032,2,K-2,Physical,Building something from small pieces,2-PS1-3,trace,planned,proposed - needs teacher review
-D033,2,K-2,Physical,Melting and freezing: reversible changes,2-PS1-4,process,planned,proposed - needs teacher review
-D034,2,K-2,Earth & Space,Fast and slow land changes: volcano vs canyon,2-ESS1-1,compare,planned,proposed - needs teacher review
-D035,2,K-2,Earth & Space,A simple map of land and water,2-ESS2-2,trace,planned,proposed - needs teacher review
-D036,2,K-2,Earth & Space,"Where water is found: glacier, river, ocean",2-ESS2-3,trace,planned,proposed - needs teacher review
-D037,2,K-2,Earth & Space,A windbreak slowing erosion,2-ESS2-1,trace,planned,proposed - needs teacher review
-D038,3,3-5,Life,Butterfly life cycle,3-LS1-1,process,planned,proposed - needs teacher review
+D001,K,K-2,Life,"Parts of a plant: root, stem, leaf, flower",K-LS1-1,trace,deferred,proposed - needs teacher review
+D002,K,K-2,Life,Parts of a tree,K-LS1-1,trace,deferred,proposed - needs teacher review
+D003,K,K-2,Life,A seed sprouting,K-LS1-1,process,deferred,proposed - needs teacher review
+D004,K,K-2,Life,A plant growing toward light,K-LS1-1,compare,deferred,proposed - needs teacher review
+D005,K,K-2,Earth & Space,A bird building a nest,K-ESS2-2,trace,deferred,proposed - needs teacher review
+D006,K,K-2,Earth & Space,A beaver dam changing a stream,K-ESS2-2,trace,deferred,proposed - needs teacher review
+D007,K,K-2,Earth & Space,"Weather symbols: sun, cloud, rain, snow",K-ESS2-1,trace,deferred,proposed - needs teacher review
+D008,K,K-2,Physical,Sunlight warming the ground,K-PS3-1,compare,deferred,proposed - needs teacher review
+D009,K,K-2,Physical,A shade structure blocking the sun,K-PS3-2,trace,deferred,proposed - needs teacher review
+D010,K,K-2,Physical,Pushes and pulls on a wagon,K-PS2-1,trace,deferred,proposed - needs teacher review
+D011,1,K-2,Life,Turtle shell: built for protection,1-LS1-1,trace,deferred,proposed - needs teacher review
+D012,1,K-2,Life,Cactus: spines and a thick stem,1-LS1-1,trace,deferred,proposed - needs teacher review
+D013,1,K-2,Life,Bird beaks and the food they eat,1-LS1-1,compare,deferred,proposed - needs teacher review
+D014,1,K-2,Life,Burr and hook-and-loop fastener (biomimicry),1-LS1-1,compare,deferred,proposed - needs teacher review
+D015,1,K-2,Life,A bird feeding its chicks,1-LS1-2,trace,deferred,proposed - needs teacher review
+D016,1,K-2,Life,Parent and young plant: alike and different,1-LS3-1,compare,deferred,proposed - needs teacher review
+D017,1,K-2,Life,Dog and puppies: inherited features,1-LS3-1,compare,deferred,proposed - needs teacher review
+D018,1,K-2,Physical,A vibrating drum makes sound,1-PS4-1,trace,deferred,proposed - needs teacher review
+D019,1,K-2,Physical,Light from a flashlight lets us see,1-PS4-2,process,deferred,proposed - needs teacher review
+D020,1,K-2,Physical,"Transparent, translucent and opaque",1-PS4-3,compare,deferred,proposed - needs teacher review
+D021,1,K-2,Physical,A string-and-cup telephone,1-PS4-4,trace,deferred,proposed - needs teacher review
+D022,1,K-2,Earth & Space,The sun's path across the sky,1-ESS1-1,process,deferred,proposed - needs teacher review
+D023,1,K-2,Earth & Space,Shapes of the moon over a month,1-ESS1-1,process,deferred,proposed - needs teacher review
+D024,1,K-2,Earth & Space,Daylight in winter vs summer,1-ESS1-2,compare,deferred,proposed - needs teacher review
+D025,2,K-2,Life,What plants need: light and water test,2-LS2-1,compare,deferred,proposed - needs teacher review
+D026,2,K-2,Life,A bee pollinating a flower,2-LS2-2,trace,deferred,proposed - needs teacher review
+D027,2,K-2,Life,"Seed dispersal: wind, water, animals",2-LS2-2,compare,deferred,proposed - needs teacher review
+D028,2,K-2,Life,Pond habitat,2-LS4-1,trace,deferred,proposed - needs teacher review
+D029,2,K-2,Life,Desert habitat,2-LS4-1,trace,deferred,proposed - needs teacher review
+D030,2,K-2,Life,Rainforest layers,2-LS4-1,trace,deferred,proposed - needs teacher review
+D031,2,K-2,Physical,"Water as ice, liquid and vapor",2-PS1-1,compare,deferred,proposed - needs teacher review
+D032,2,K-2,Physical,Building something from small pieces,2-PS1-3,trace,deferred,proposed - needs teacher review
+D033,2,K-2,Physical,Melting and freezing: reversible changes,2-PS1-4,process,deferred,proposed - needs teacher review
+D034,2,K-2,Earth & Space,Fast and slow land changes: volcano vs canyon,2-ESS1-1,compare,deferred,proposed - needs teacher review
+D035,2,K-2,Earth & Space,A simple map of land and water,2-ESS2-2,trace,deferred,proposed - needs teacher review
+D036,2,K-2,Earth & Space,"Where water is found: glacier, river, ocean",2-ESS2-3,trace,deferred,proposed - needs teacher review
+D037,2,K-2,Earth & Space,A windbreak slowing erosion,2-ESS2-1,trace,deferred,proposed - needs teacher review
+D038,3,3-5,Life,Butterfly life cycle,3-LS1-1,process,live,proposed - needs teacher review
 D039,3,3-5,Life,Frog life cycle,3-LS1-1,process,planned,proposed - needs teacher review
 D040,3,3-5,Life,Flowering plant life cycle,3-LS1-1,process,planned,proposed - needs teacher review
 D041,3,3-5,Life,Chicken life cycle,3-LS1-1,process,planned,proposed - needs teacher review

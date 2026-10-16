@@ -377,3 +377,39 @@ struct IdentifyTests {
         #expect(spongy.details.contains { $0.path.contains(cell) })
     }
 }
+
+struct LessonFileTests {
+    @Test func everyLessonFileLoads() {
+        #expect(Catalog.loaded.problems.isEmpty, "\(Catalog.loaded.problems.joined(separator: "\n"))")
+    }
+
+    @Test func lessonIDsAreUnique() {
+        let ids = Catalog.lessons.map(\.id)
+        #expect(ids.count == Set(ids).count)
+    }
+
+    @Test func everyLessonHasAStandardAndGrade() {
+        for l in Catalog.lessons {
+            #expect(!l.standard.isEmpty, "\(l.id) has no standard")
+            #expect(!l.grade.isEmpty, "\(l.id) has no grade")
+        }
+    }
+
+    @Test func geometryStaysOnTheCanvas() {
+        let canvas = CGRect(x: 0, y: 0, width: 1000, height: 1000)
+        for l in Catalog.lessons {
+            for s in l.structures {
+                for p in s.outlines + s.details {
+                    #expect(canvas.contains(p.bounds), "\(l.id): \(s.id) goes off the canvas")
+                }
+            }
+        }
+    }
+
+    @Test func svgPathsParse() throws {
+        let lines = try SVGPath.polylines("M 10 10 L 90 10 L 90 90 Z m 0 20 h 40 v 40 c 10 10 20 10 30 0 A 20 20 0 0 1 200 200")
+        #expect(lines.count == 2)
+        #expect(lines[0].closed && !lines[1].closed)
+        #expect(abs(lines[1].points.last!.x - 200) < 0.5 && abs(lines[1].points.last!.y - 200) < 0.5)
+    }
+}
