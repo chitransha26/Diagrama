@@ -279,17 +279,17 @@
    "question": "As the trees got darker, what happened to the moths over many years?",
    "options": [
     {
-     "text": "Dark moths became more common, because more of them survived to have young",
+     "text": "Dark moths became more common because more of them lived long enough to lay eggs",
      "correct": true,
-     "feedback": "Right. Dark moths survived better, so more young were dark. When the air was cleaned up, pale moths became common again."
+     "feedback": "Right. Birds had a hard time seeing dark moths on dark bark, so more of them lived to lay eggs. Their young were dark too."
     },
     {
      "text": "Each light moth turned dark",
-     "feedback": "A moth can't change its color. More dark moths survived and passed their color on."
+     "feedback": "A moth can't change its color. More dark moths lived, and their young were dark too."
     },
     {
      "text": "All the moths died",
-     "feedback": "The moths that matched the bark survived and kept the species going."
+     "feedback": "Many moths lived. The dark ones were hidden on the dark bark."
     },
     {
      "text": "Nothing changed",

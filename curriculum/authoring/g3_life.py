@@ -131,10 +131,10 @@ moths = {
         {"type": "choice", "title": "Explain", "instruction": "Think about many generations.", "showsDiagram": True,
          "question": "As the trees got darker, what happened to the moths over many years?",
          "options": [
-             {"text": "Dark moths became more common, because more of them survived to have young", "correct": True,
-              "feedback": "Right. Dark moths survived better, so more young were dark. When the air was cleaned up, pale moths became common again."},
-             {"text": "Each light moth turned dark", "feedback": "A moth can't change its color. More dark moths survived and passed their color on."},
-             {"text": "All the moths died", "feedback": "The moths that matched the bark survived and kept the species going."},
+             {"text": "Dark moths became more common because more of them lived long enough to lay eggs", "correct": True,
+              "feedback": "Right. Birds had a hard time seeing dark moths on dark bark, so more of them lived to lay eggs. Their young were dark too."},
+             {"text": "Each light moth turned dark", "feedback": "A moth can't change its color. More dark moths lived, and their young were dark too."},
+             {"text": "All the moths died", "feedback": "Many moths lived. The dark ones were hidden on the dark bark."},
              {"text": "Nothing changed", "feedback": "Scientists recorded a big change: dark moths went from rare to common."}]},
     ],
 }
@@ -195,7 +195,7 @@ beetles = {
         {"type": "choice", "title": "Explain", "instruction": "Compare the two rows.", "showsDiagram": True,
          "question": "Why are most beetles green many generations later?",
          "options": [
-             {"text": "Green beetles were hidden from birds, so more survived to have young", "correct": True,
+             {"text": "Green beetles were hidden from birds, so more of them lived long enough to lay eggs", "correct": True,
               "feedback": "Yes. Being green gave them an advantage on green leaves, and they passed the trait on."},
              {"text": "Brown beetles painted themselves green", "feedback": "Beetles can't change their color. More green ones survived and reproduced."},
              {"text": "Birds only eat green beetles", "feedback": "It's the opposite: birds catch the beetles they can see, the brown ones."},

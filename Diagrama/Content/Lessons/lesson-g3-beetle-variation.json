@@ -874,7 +874,7 @@
    "question": "Why are most beetles green many generations later?",
    "options": [
     {
-     "text": "Green beetles were hidden from birds, so more survived to have young",
+     "text": "Green beetles were hidden from birds, so more of them lived long enough to lay eggs",
      "correct": true,
      "feedback": "Yes. Being green gave them an advantage on green leaves, and they passed the trait on."
     },
