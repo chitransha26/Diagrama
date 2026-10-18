@@ -247,6 +247,9 @@ struct TraceStepView: View {
             tolerance: StrokeScorer.tolerance(isPencil: lastWasPencil, scale: scale * viewport.zoom)
         )
         result = r
+        #if DEBUG
+        recordForDebugging(r, tolerance: StrokeScorer.tolerance(isPencil: lastWasPencil, scale: scale * viewport.zoom), ink: pts)
+        #endif
         guard !advancing, StrokeScorer.isComplete(r) else { return }
         segmentScores.append(r.score)
         segmentSmoothness.append(StrokeScorer.smoothness(strokes: drawing.strokes.flatMap(\.visibleScreenSegments)))
@@ -273,6 +276,27 @@ struct TraceStepView: View {
             }
         }
     }
+
+    #if DEBUG
+    /// Saves what the grader just saw to Documents/trace-debug.json, so a step that won't
+    /// finish can be inspected on a running simulator without restarting it. Debug builds only.
+    private func recordForDebugging(_ r: TraceResult, tolerance: CGFloat, ink: [[CGPoint]]) {
+        func pts(_ p: [CGPoint]) -> [[Double]] { p.map { [Double($0.x), Double($0.y)] } }
+        let record: [String: Any] = [
+            "lesson": session.lesson.id, "step": session.index, "title": session.step.title,
+            "segment": segment, "segments": segments.count, "zoom": viewport.zoom,
+            "origin": [viewport.origin.x, viewport.origin.y], "canvasSide": canvasSide,
+            "canvasLayout": [InkCanvas.Canvas.lastLayout.width, InkCanvas.Canvas.lastLayout.zoom],
+            "pencil": lastWasPencil, "tolerance": tolerance, "strokesTotal": drawing.strokes.count,
+            "segmentStart": segmentStart, "complete": StrokeScorer.isComplete(r),
+            "coverage": r.guideCoverage, "longestGap": r.longestGap, "precision": r.precision,
+            "untraced": pts(r.untraced), "guides": guides.map { pts($0.points) }, "ink": ink.map(pts),
+        ]
+        guard let data = try? JSONSerialization.data(withJSONObject: record, options: [.prettyPrinted]),
+              let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
+        try? data.write(to: dir.appending(path: "trace-debug.json"))
+    }
+    #endif
 
     private func undo() {
         guard drawing.strokes.count > segmentStart else { return }

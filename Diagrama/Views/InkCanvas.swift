@@ -27,9 +27,17 @@ struct InkCanvas: UIViewRepresentable {
         var fixedZoom = false
         private var applied: (CGFloat, CGPoint, CGSize)?
 
+        #if DEBUG
+        /// The last laid-out canvas width and zoom, for the trace recorder.
+        nonisolated(unsafe) static var lastLayout: (width: CGFloat, zoom: CGFloat) = (0, 1)
+        #endif
+
         override func layoutSubviews() {
             super.layoutSubviews()
             applyTarget()
+            #if DEBUG
+            Self.lastLayout = (bounds.width, zoomScale)
+            #endif
         }
 
         func applyTarget() {
