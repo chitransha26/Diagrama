@@ -10,14 +10,28 @@ struct ColorStepView: View {
     @State private var feedback: (kind: FeedbackRow.Kind, text: String)?
     @State private var missedCurrent = false
 
-    private var current: Structure? {
-        structureIDs.map { session.lesson.structure($0) }.first { !isFilled($0) }
+    /// The color being filled now: every listed part with the same color and name counts
+    /// as one task (the green beetles in both rows), so any of them can be tapped.
+    private var group: [Structure] {
+        let all = structureIDs.map { session.lesson.structure($0) }
+        guard let first = all.first(where: { !isFilled($0) }) else { return [] }
+        return all.filter { $0.fillName == first.fillName && $0.fill == first.fill }
+    }
+    private var current: Structure? { group.first }
+
+    private func pieces(_ structures: [Structure]) -> [String] {
+        structures.flatMap { s in s.fillable.map { "\(s.id)#\($0)" } }
+    }
+
+    /// Faint tints on the pieces still to fill, for parts that opt in (see `colorHint`).
+    private var hinted: Set<String> {
+        Set(pieces(group.filter(\.colorHint)).filter { !session.filled.contains($0) })
     }
 
     var body: some View {
         VStack(spacing: 10) {
             SquareStage { side in
-                LearnerDiagram(session: session)
+                LearnerDiagram(session: session, hinted: hinted)
                     .contentShape(Rectangle())
                     .onTapGesture(coordinateSpace: .local) { location in
                         fill(at: location, side: side)
@@ -48,8 +62,8 @@ struct ColorStepView: View {
                     .overlay(Circle().stroke(Theme.ink.opacity(0.35)))
                     .frame(width: 26, height: 26)
                 Text("Fill the \(s.fillName)").font(.headline)
-                if s.fillable.count > 1 {
-                    Text("· tap all \(s.fillable.count)").font(.subheadline).foregroundStyle(.secondary)
+                if pieces(group).count > 1 {
+                    Text("· tap all \(pieces(group).count)").font(.subheadline).foregroundStyle(.secondary)
                 }
             } else {
                 Image(systemName: "checkmark.circle.fill").font(.title3).foregroundStyle(Theme.lime)
@@ -72,19 +86,23 @@ struct ColorStepView: View {
         }
         let key = "\(hit.structure.id)#\(hit.outline)"
 
-        if hit.structure.id == target.id {
+        let members = group
+        if members.contains(where: { $0.id == hit.structure.id }) {
             guard !session.filled.contains(key) else {
                 feedback = (.info, "That one's done. Find the next \(target.fillName).")
                 return
             }
             withAnimation(.easeOut(duration: 0.25)) { _ = session.filled.insert(key) }
-            if isFilled(target) {
-                session.recordScience(correct: !missedCurrent, topic: "Find the \(target.fillName)")
+            if members.allSatisfy(isFilled) {
+                // A tinted hint shows the answer, so it isn't a science check.
+                if !members.contains(where: \.colorHint) {
+                    session.recordScience(correct: !missedCurrent, topic: "Find the \(target.fillName)")
+                }
                 missedCurrent = false
                 let name = target.fillName.prefix(1).uppercased() + target.fillName.dropFirst()
                 feedback = (.correct, "\(name) filled.")
             } else {
-                let left = target.fillable.filter { !session.filled.contains("\(target.id)#\($0)") }.count
+                let left = pieces(members).filter { !session.filled.contains($0) }.count
                 feedback = (.correct, "Good. \(left) more to fill.")
             }
         } else {

@@ -22,14 +22,14 @@
  "colorMode": "illustration",
  "printed": [
   {
-   "text": "Long ago",
+   "text": "Beetles long ago",
    "at": [
     500,
     170
    ]
   },
   {
-   "text": "Many generations later",
+   "text": "Their descendants, many generations later",
    "at": [
     500,
     590
@@ -51,91 +51,33 @@
  "structures": [
   {
    "id": "greenOld",
+   "colorHint": true,
    "name": "green beetles",
    "colorName": "green beetles",
    "outlines": [
     {
-     "ellipse": [
-      170,
-      310,
-      30,
-      44
-     ]
+     "path": "M 180.45 268.76 A 15 15 0 1 0 159.55 268.76 A 30 44 0 1 0 180.45 268.76 Z"
     },
     {
-     "circle": [
-      170,
-      258,
-      15
-     ]
-    },
-    {
-     "ellipse": [
-      500,
-      310,
-      30,
-      44
-     ]
-    },
-    {
-     "circle": [
-      500,
-      258,
-      15
-     ]
+     "path": "M 510.45 268.76 A 15 15 0 1 0 489.55 268.76 A 30 44 0 1 0 510.45 268.76 Z"
     }
    ],
    "fill": "#5E9E3E"
   },
   {
    "id": "brownOld",
+   "colorHint": true,
    "name": "brown beetles",
    "colorName": "brown beetles",
    "outlines": [
     {
-     "ellipse": [
-      335,
-      310,
-      30,
-      44
-     ]
+     "path": "M 345.45 268.76 A 15 15 0 1 0 324.55 268.76 A 30 44 0 1 0 345.45 268.76 Z"
     },
     {
-     "circle": [
-      335,
-      258,
-      15
-     ]
+     "path": "M 675.45 268.76 A 15 15 0 1 0 654.55 268.76 A 30 44 0 1 0 675.45 268.76 Z"
     },
     {
-     "ellipse": [
-      665,
-      310,
-      30,
-      44
-     ]
-    },
-    {
-     "circle": [
-      665,
-      258,
-      15
-     ]
-    },
-    {
-     "ellipse": [
-      830,
-      310,
-      30,
-      44
-     ]
-    },
-    {
-     "circle": [
-      830,
-      258,
-      15
-     ]
+     "path": "M 840.45 268.76 A 15 15 0 1 0 819.55 268.76 A 30 44 0 1 0 840.45 268.76 Z"
     }
    ],
    "fill": "#7A5230",
@@ -191,7 +133,7 @@
     {
      "line": [
       170,
-      270,
+      268.76,
       170,
       352
      ]
@@ -247,7 +189,7 @@
     {
      "line": [
       335,
-      270,
+      268.76,
       335,
       352
      ]
@@ -303,7 +245,7 @@
     {
      "line": [
       500,
-      270,
+      268.76,
       500,
       352
      ]
@@ -359,7 +301,7 @@
     {
      "line": [
       665,
-      270,
+      268.76,
       665,
       352
      ]
@@ -415,7 +357,7 @@
     {
      "line": [
       830,
-      270,
+      268.76,
       830,
       352
      ]
@@ -424,91 +366,33 @@
   },
   {
    "id": "greenNew",
+   "colorHint": true,
    "name": "green beetles",
    "colorName": "green beetles",
    "outlines": [
     {
-     "ellipse": [
-      170,
-      730,
-      30,
-      44
-     ]
+     "path": "M 180.45 688.76 A 15 15 0 1 0 159.55 688.76 A 30 44 0 1 0 180.45 688.76 Z"
     },
     {
-     "circle": [
-      170,
-      678,
-      15
-     ]
+     "path": "M 345.45 688.76 A 15 15 0 1 0 324.55 688.76 A 30 44 0 1 0 345.45 688.76 Z"
     },
     {
-     "ellipse": [
-      335,
-      730,
-      30,
-      44
-     ]
+     "path": "M 510.45 688.76 A 15 15 0 1 0 489.55 688.76 A 30 44 0 1 0 510.45 688.76 Z"
     },
     {
-     "circle": [
-      335,
-      678,
-      15
-     ]
-    },
-    {
-     "ellipse": [
-      500,
-      730,
-      30,
-      44
-     ]
-    },
-    {
-     "circle": [
-      500,
-      678,
-      15
-     ]
-    },
-    {
-     "ellipse": [
-      665,
-      730,
-      30,
-      44
-     ]
-    },
-    {
-     "circle": [
-      665,
-      678,
-      15
-     ]
+     "path": "M 675.45 688.76 A 15 15 0 1 0 654.55 688.76 A 30 44 0 1 0 675.45 688.76 Z"
     }
    ],
    "fill": "#5E9E3E"
   },
   {
    "id": "brownNew",
+   "colorHint": true,
    "name": "brown beetle",
    "colorName": "brown beetle",
    "outlines": [
     {
-     "ellipse": [
-      830,
-      730,
-      30,
-      44
-     ]
-    },
-    {
-     "circle": [
-      830,
-      678,
-      15
-     ]
+     "path": "M 840.45 688.76 A 15 15 0 1 0 819.55 688.76 A 30 44 0 1 0 840.45 688.76 Z"
     }
    ],
    "fill": "#7A5230",
@@ -564,7 +448,7 @@
     {
      "line": [
       170,
-      690,
+      688.76,
       170,
       772
      ]
@@ -620,7 +504,7 @@
     {
      "line": [
       335,
-      690,
+      688.76,
       335,
       772
      ]
@@ -676,7 +560,7 @@
     {
      "line": [
       500,
-      690,
+      688.76,
       500,
       772
      ]
@@ -732,7 +616,7 @@
     {
      "line": [
       665,
-      690,
+      688.76,
       665,
       772
      ]
@@ -788,7 +672,7 @@
     {
      "line": [
       830,
-      690,
+      688.76,
       830,
       772
      ]
@@ -832,7 +716,7 @@
    "structure": "greenNew",
    "instruction": "In the bottom row, trace the four green beetles.",
    "note": {
-    "text": "Birds eat the beetles they can see. Green beetles were harder to spot on leaves, so more survived and had young."
+    "text": "Descendants are young, their young, and so on. Birds eat beetles they can see, so green ones, hidden on leaves, lived to lay more eggs."
    }
   },
   {

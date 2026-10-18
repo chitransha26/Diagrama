@@ -11,7 +11,11 @@ the app, so a lesson can't break them; the rest need checking by hand when autho
 2. **Find-it steps** for important parts that can't be drawn (the cytoplasm, a leaf's air
    spaces): tap the part in your own drawing; wrong taps are explained.
 3. **Color stage.** The app picks the color and names the part ("Fill the chloroplasts");
-   the learner finds and taps every piece of it. Colors are scientifically accurate.
+   the learner finds and taps every piece of it. Colors are scientifically accurate. Parts
+   sharing a color and name are one task, one tap fills one piece (a beetle, not its head
+   and body separately), and only closed shapes count. When the shape alone can't show
+   which pieces get a color (identical beetles, some green, some brown), a faint tint
+   marks them; that task then isn't scored as a science check.
 4. **Questions:** labeling, quizzes and ordering, with every wrong answer explained.
 5. **Copy it:** the finished diagram (real colors) above, a blank space below to recreate it.
    **(enforced)**

@@ -241,6 +241,10 @@ struct ContentTests {
         }
         let butterfly = Catalog.lesson(id: "g3-butterfly-life-cycle")!
         #expect(butterfly.structure("chrysalis").fillable.count == 1)
+        // One tap per beetle: head and body are one outline.
+        let beetles = Catalog.lesson(id: "g3-beetle-variation")!
+        #expect(beetles.structure("greenOld").fillable.count == 2)
+        #expect(beetles.structure("greenNew").fillable.count == 4)
     }
 
     @Test func everyLessonReferencesRealStructures() {

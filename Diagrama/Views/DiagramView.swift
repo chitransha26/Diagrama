@@ -15,6 +15,8 @@ struct DiagramView: View {
     var revealed: Set<String>
     /// Filled outlines as "id#index". Nil fills every revealed part that has a color.
     var filled: Set<String>? = nil
+    /// Outlines ("id#index") to tint faintly in their color, showing which pieces to fill.
+    var hinted: Set<String> = []
     /// How strongly to draw the template lines. Faint when the learner's ink sits on top.
     var templateOpacity: Double = 0.8
     var guides: [Polyline] = []
@@ -37,8 +39,13 @@ struct DiagramView: View {
             // Fills first, then every line on top, so a fill can never hide a line drawn earlier.
             for st in visible {
                 guard let color = st.fill else { continue }
-                for (i, o) in st.outlines.enumerated() where o.closed && (filled?.contains("\(st.id)#\(i)") ?? true) {
-                    ctx.fill(o.path, with: .color(color))
+                for (i, o) in st.outlines.enumerated() where o.closed {
+                    let key = "\(st.id)#\(i)"
+                    if filled?.contains(key) ?? true {
+                        ctx.fill(o.path, with: .color(color))
+                    } else if hinted.contains(key) {
+                        ctx.fill(o.path, with: .color(color.opacity(0.25)))
+                    }
                 }
             }
             for st in visible {
@@ -185,11 +192,12 @@ struct InkLayers: View {
 struct LearnerDiagram: View {
     let session: LessonSession
     var markers: [DiagramMarker] = []
+    var hinted: Set<String> = []
 
     var body: some View {
         ZStack {
             DiagramView(lesson: session.lesson, revealed: session.revealed, filled: session.filled,
-                        templateOpacity: session.layers.isEmpty ? 0.8 : 0.25)
+                        hinted: hinted, templateOpacity: session.layers.isEmpty ? 0.8 : 0.25)
             InkLayers(session: session)
             if !markers.isEmpty {
                 // Markers go above the learner's ink so they're never hidden.

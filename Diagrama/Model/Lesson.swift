@@ -124,6 +124,10 @@ struct Structure: Identifiable {
     /// With `focusEach`, outlines drawn together in one zoomed view (e.g. the three strokes
     /// of each letter H). Defaults to one outline per view.
     var groups: [[Int]]? = nil
+    /// In the color step, show which pieces to fill with a faint tint. Only for parts whose
+    /// color can't be told from their shape (identical beetles, some green and some brown);
+    /// anatomy parts stay a real find-it task.
+    var colorHint = false
 
     /// The guides for a trace step, split into the pieces drawn one zoomed view at a time.
     func segments(_ part: TracePart) -> [(guides: [Polyline], focus: CGRect?)] {

@@ -140,15 +140,20 @@ moths = {
 }
 
 # ---------------------------------------------------------------- Beetle variation
+NECK_X, NECK_Y = 10.45, -31.24   # where the head circle meets the body ellipse
+
+
 def beetle(x, y):
-    return [{"ellipse": [x, y + 10, 30, 44]}, {"circle": [x, y - 42, 15]}]
+    """One outline for head and body together, so one tap fills one beetle."""
+    r, l, ny = x + NECK_X, x - NECK_X, y + NECK_Y
+    return [{"path": f"M {r} {ny} A 15 15 0 1 0 {l} {ny} A 30 44 0 1 0 {r} {ny} Z"}]
 
 
 def beetle_legs(x, y):
     legs = []
     for dy in (-10, 12, 34):
         legs += [{"line": [x - 30, y + dy, x - 52, y + dy - 10]}, {"line": [x + 30, y + dy, x + 52, y + dy - 10]}]
-    return legs + [{"line": [x, y - 30, x, y + 52]}]
+    return legs + [{"line": [x, y + NECK_Y, x, y + 52]}]
 
 
 gen1 = [(170, 300), (335, 300), (500, 300), (665, 300), (830, 300)]
@@ -159,20 +164,20 @@ beetles = {
     "sources": [{"title": "NGSS 3-LS4-2: Explain how variations among individuals of a species give advantages in surviving and reproducing"}],
     "keywords": ["variation", "traits", "beetle", "survival", "advantage", "generations", "camouflage"],
     "colorMode": "illustration",
-    "printed": [{"text": "Long ago", "at": [500, 170]}, {"text": "Many generations later", "at": [500, 590]}],
+    "printed": [{"text": "Beetles long ago", "at": [500, 170]}, {"text": "Their descendants, many generations later", "at": [500, 590]}],
     "legend": [
         {"name": "Green beetle", "color": "#5E9E3E", "meaning": "Matches green leaves"},
         {"name": "Brown beetle", "color": "#7A5230", "meaning": "Stands out on green leaves"},
     ],
     "structures": [
-        {"id": "greenOld", "name": "green beetles", "colorName": "green beetles",
+        {"id": "greenOld", "colorHint": True, "name": "green beetles", "colorName": "green beetles",
          "outlines": beetle(*gen1[0]) + beetle(*gen1[2]), "fill": "#5E9E3E"},
-        {"id": "brownOld", "name": "brown beetles", "colorName": "brown beetles",
+        {"id": "brownOld", "colorHint": True, "name": "brown beetles", "colorName": "brown beetles",
          "outlines": beetle(*gen1[1]) + beetle(*gen1[3]) + beetle(*gen1[4]), "fill": "#7A5230",
          "details": sum((beetle_legs(*p) for p in gen1), [])},
-        {"id": "greenNew", "name": "green beetles", "colorName": "green beetles",
+        {"id": "greenNew", "colorHint": True, "name": "green beetles", "colorName": "green beetles",
          "outlines": sum((beetle(*p) for p in gen2[:4]), []), "fill": "#5E9E3E"},
-        {"id": "brownNew", "name": "brown beetle", "colorName": "brown beetle",
+        {"id": "brownNew", "colorHint": True, "name": "brown beetle", "colorName": "brown beetle",
          "outlines": beetle(*gen2[4]), "fill": "#7A5230", "details": sum((beetle_legs(*p) for p in gen2), [])},
     ],
     "steps": [
@@ -184,7 +189,7 @@ beetles = {
         {"type": "trace", "title": "Legs", "structure": "brownOld", "part": "details", "instruction": "Draw the legs and wing line on every top-row beetle.",
          "note": {"text": "Like all insects, each beetle has six legs. Its hard front wings meet in a line down its back."}},
         {"type": "trace", "title": "Green beetles", "structure": "greenNew", "instruction": "In the bottom row, trace the four green beetles.",
-         "note": {"text": "Birds eat the beetles they can see. Green beetles were harder to spot on leaves, so more survived and had young."}},
+         "note": {"text": "Descendants are young, their young, and so on. Birds eat beetles they can see, so green ones, hidden on leaves, lived to lay more eggs."}},
         {"type": "trace", "title": "Brown beetle", "structure": "brownNew", "instruction": "Trace the last beetle in the bottom row.",
          "note": {"text": "Young beetles inherit their parents' color. Over many generations, green became the common color.",
                   "remember": "Traits that help survival get passed on more."}},

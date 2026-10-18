@@ -51,6 +51,7 @@ struct LessonFile: Decodable {
         var focus: [CGFloat]?
         var focusEach: Bool?
         var groups: [[Int]]?
+        var colorHint: Bool?
     }
 
     /// One of: {"circle": [cx, cy, r]}, {"ellipse": [cx, cy, rx, ry]},
@@ -166,7 +167,7 @@ extension LessonFile {
                 fill: try s.fill.map(Self.color), details: (s.details ?? []).flatMap(\.polylines),
                 colorName: s.colorName, pen: Self.pen(s.pen),
                 focus: s.focus.flatMap { $0.count == 4 ? CGRect(x: $0[0], y: $0[1], width: $0[2], height: $0[3]) : nil },
-                focusEach: s.focusEach ?? false, groups: s.groups
+                focusEach: s.focusEach ?? false, groups: s.groups, colorHint: s.colorHint ?? false
             )
         }
         return Lesson(
