@@ -343,7 +343,7 @@ struct RecallStepView: View {
     @State private var lastWasPencil = false
     @State private var erasing = false
     @State private var side: CGFloat = 0
-    @State private var result: TraceResult?
+    @State private var result: RecallVerdict?
     @State private var passed = false
     @State private var peeked = false
     @State private var tries = 0
@@ -389,16 +389,14 @@ struct RecallStepView: View {
             }
 
             VStack(alignment: .leading, spacing: 6) {
-                if let r = result {
+                if let v = result {
                     if passed {
                         FeedbackRow(kind: .correct, text: copying
                                     ? "Nice copy! Your drawing matches the picture."
                                     : peeked ? "That matches. Next time, try it without peeking."
                                     : "It matches the real layout. Drawn from memory!")
                     } else {
-                        FeedbackRow(kind: .wrong, text: copying
-                                    ? "Not quite: only \(Int((r.coverage * 100).rounded()))% matches. Compare your shapes with the picture and try again."
-                                    : "Not quite: only \(Int((r.coverage * 100).rounded()))% matches. Check the shapes and where they sit, then try again.")
+                        FeedbackRow(kind: .wrong, text: problem(v))
                     }
                 } else {
                     FeedbackRow(kind: .info, text: session.step.instruction)
@@ -434,15 +432,33 @@ struct RecallStepView: View {
     private func check() {
         guard side > 0 else { return }
         let scale = side / DiagramSpace.size
-        let r = StrokeScorer.scoreRecall(
-            strokes: drawing.strokes.flatMap { $0.diagramSegments(scale: scale) }, guides: guides,
+        let v = StrokeScorer.judgeRecall(
+            strokes: drawing.strokes.flatMap { $0.diagramSegments(scale: scale) },
+            parts: structureIDs.map { (session.lesson.structure($0).name, session.lesson.structure($0).outlines) },
             tolerance: StrokeScorer.tolerance(isPencil: lastWasPencil, scale: scale)
         )
         tries += 1
-        result = r
-        if StrokeScorer.recallPassed(r) {
+        result = v
+        if v.passed {
             withAnimation { passed = true; erasing = false }
         }
+    }
+}
+
+extension RecallStepView {
+    /// What to fix, most important first: a missing part, then stray lines, then shapes.
+    fileprivate func problem(_ v: RecallVerdict) -> String {
+        if let first = v.missing.first {
+            let names = v.missing.count == 1 ? "the \(first)" : ListFormatter.localizedString(byJoining: v.missing.map { "the \($0)" })
+            return "Not quite: \(names) \(v.missing.count == 1 && !first.hasSuffix("s") ? "is" : "are") missing or too far off. \(copying ? "Look at the picture and add them." : "Think about what goes where, then try again.")"
+        }
+        if v.strayLines > 0 {
+            return "Not quite: \(v.strayLines == 1 ? "one line isn't" : "some lines aren't") part of the picture. Erase \(v.strayLines == 1 ? "it" : "them") and check again."
+        }
+        let share = Int((v.result.coverage * 100).rounded())
+        return copying
+            ? "Not quite: only \(share)% matches. Compare your shapes with the picture and try again."
+            : "Not quite: only \(share)% matches. Check the shapes and where they sit, then try again."
     }
 }
 

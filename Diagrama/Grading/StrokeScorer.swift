@@ -31,7 +31,7 @@ enum StrokeScorer {
     static let restartBelow = 0.5
     /// Recall drawings are rougher, so they are aligned first and judged more loosely.
     static let recallCoveragePass = 0.6
-    static let recallPrecisionPass = 0.5
+    static let recallPrecisionPass = 0.75
 
     private static let sampleSpacing: CGFloat = 8
     /// Shapes this small (diagram units) are dots: a quick dab draws them, as on paper.
@@ -152,16 +152,53 @@ enum StrokeScorer {
     /// Scores a from-memory drawing. Position and size are up to the learner, so the
     /// drawing's bounding box is first mapped onto the reference before comparing.
     static func scoreRecall(strokes: [[CGPoint]], guides: [Polyline], tolerance: CGFloat) -> TraceResult {
+        guard let aligned = align(strokes, to: guides) else { return .empty }
+        return score(strokes: aligned, guides: guides, tolerance: tolerance * recallLeeway)
+    }
+
+    /// Copy and memory drawings get this much more leeway than tracing: parts are placed by eye.
+    static let recallLeeway: CGFloat = 1.5
+    /// Every part must be at least this well matched, so no part (say, the arrows) can be skipped.
+    static let recallPartPass = 0.5
+    /// Parts smaller than this (diagram units), like a hen's comb, are details: they count
+    /// toward the overall match but aren't required one by one.
+    static let recallDetailSize: CGFloat = 50
+    /// A stroke at least this long (diagram units) that mostly runs nowhere near the picture is
+    /// a stray line.
+    static let strayLength: CGFloat = 60
+
+    /// Judges a copy or from-memory drawing part by part: every part drawn, no stray lines.
+    static func judgeRecall(strokes: [[CGPoint]], parts: [(name: String, guides: [Polyline])], tolerance: CGFloat) -> RecallVerdict {
+        let guides = parts.flatMap(\.guides)
+        guard let aligned = align(strokes, to: guides) else { return RecallVerdict(result: .empty, missing: parts.map(\.name), strayLines: 0) }
+        let reach = tolerance * recallLeeway
+        let result = score(strokes: aligned, guides: guides, tolerance: reach)
+        var missing: [String] = []
+        var i = 0
+        for part in parts {
+            let share = result.guideCoverage[i..<(i + part.guides.count)]
+            let size = part.guides.map(\.bounds).reduce(CGRect.null) { $0.union($1) }
+            if max(size.width, size.height) >= recallDetailSize, share.reduce(0, +) / Double(max(share.count, 1)) < recallPartPass { missing.append(part.name) }
+            i += part.guides.count
+        }
+        let stray = aligned.filter { stroke in
+            guard stroke.count > 1, Polyline(points: stroke, closed: false).length >= strayLength else { return false }
+            // Far from every part, not just placed a little off by eye.
+            let off = stroke.filter { p in !guides.contains { $0.distance(from: p) <= reach * 2 } }.count
+            return Double(off) / Double(stroke.count) > 0.6
+        }.count
+        return RecallVerdict(result: result, missing: missing, strayLines: stray)
+    }
+
+    private static func align(_ strokes: [[CGPoint]], to guides: [Polyline]) -> [[CGPoint]]? {
         let ink = strokes.flatMap { $0 }
         let ref = CGRect.enclosing(guides.flatMap(\.points))
         let drawn = CGRect.enclosing(ink)
-        guard ink.count > 1, drawn.width > 1, drawn.height > 1 else { return .empty }
-
+        guard ink.count > 1, drawn.width > 1, drawn.height > 1 else { return nil }
         let sx = ref.width / drawn.width, sy = ref.height / drawn.height
-        let aligned = strokes.map { stroke in
+        return strokes.map { stroke in
             stroke.map { CGPoint(x: ref.midX + ($0.x - drawn.midX) * sx, y: ref.midY + ($0.y - drawn.midY) * sy) }
         }
-        return score(strokes: aligned, guides: guides, tolerance: tolerance * 2)
     }
 
     /// How steady the line is, 0...1, from how far each point wobbles off the line through
@@ -181,4 +218,15 @@ enum StrokeScorer {
     static func recallPassed(_ r: TraceResult) -> Bool {
         r.coverage >= recallCoveragePass && r.precision >= recallPrecisionPass
     }
+}
+
+/// How a copy or from-memory drawing went, part by part.
+struct RecallVerdict {
+    var result: TraceResult
+    /// Parts drawn too little to count (or not at all).
+    var missing: [String]
+    /// Long strokes that don't match anything in the picture.
+    var strayLines: Int
+
+    var passed: Bool { missing.isEmpty && strayLines == 0 && StrokeScorer.recallPassed(result) }
 }

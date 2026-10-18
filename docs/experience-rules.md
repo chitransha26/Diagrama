@@ -53,8 +53,11 @@ the app, so a lesson can't break them; the rest need checking by hand when autho
 - **Every part must be big enough to trace** on a small iPhone: closed shapes 24 pt,
   strokes 14 pt, after zoom. **(enforced)**
 - **Copy and memory drawings** are judged on overall shapes and layout, at any size and
-  position, not on tiny details. Two-finger pinch zooms; one finger draws. After three
-  tries the learner can move on.
+  position, not on tiny details. But **every part must be there** (half or more of each
+  part matched; parts under 50 units, like a comb, are details) and **no stray lines**: a
+  long line nowhere near the picture fails the check, and the feedback names what to fix.
+  **(enforced)** Two-finger pinch zooms; one finger draws. After three tries the learner
+  can move on.
 
 ## Science and content
 - **Colors mean something real.** Each lesson declares Microscope colors (a fresh,
