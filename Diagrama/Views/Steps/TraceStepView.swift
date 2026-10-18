@@ -459,6 +459,7 @@ struct RecallStepView: View {
         let v = StrokeScorer.judgeRecall(
             strokes: drawing.strokes.flatMap { $0.diagramSegments(scale: scale) },
             parts: structureIDs.map { (session.lesson.structure($0).name, session.lesson.structure($0).outlines) },
+            details: structureIDs.flatMap { session.lesson.structure($0).details },
             tolerance: StrokeScorer.tolerance(isPencil: lastWasPencil, scale: scale)
         )
         tries += 1
@@ -478,6 +479,9 @@ extension RecallStepView {
         }
         if v.strayLines > 0 {
             return "Not quite: \(v.strayLines == 1 ? "one line isn't" : "some lines aren't") part of the picture. Erase \(v.strayLines == 1 ? "it" : "them") and check again."
+        }
+        if v.result.precision < StrokeScorer.recallPrecisionPass {
+            return "Not quite: some of your lines don't match the picture. Compare them with \(copying ? "the picture" : "what you remember"), erase the extra ones and check again."
         }
         let share = Int((v.result.coverage * 100).rounded())
         return copying

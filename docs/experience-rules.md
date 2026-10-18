@@ -56,11 +56,13 @@ the app, so a lesson can't break them; the rest need checking by hand when autho
   fills its own dot. **(enforced)**
 - **Every part must be big enough to trace** on a small iPhone: closed shapes 24 pt,
   strokes 14 pt, after zoom. **(enforced)**
-- **Copy and memory drawings** are judged on overall shapes and layout, at any size and
-  position, not on tiny details. But **every part must be there** (half or more of each
-  part matched; parts under 50 units, like a comb, are details) and **no stray lines**: a
-  long line nowhere near the picture fails the check, and the feedback names what to fix.
-  **(enforced)** Two-finger pinch zooms; one finger draws. After three tries the learner
+- **Copy and memory drawings** are judged on shapes, not exact placement: the drawing is
+  scaled to the picture, then each stroke may shift (up to 90 units) and stretch
+  (0.75 to 1.3x, no rotation) to its best fit, since learners place and size pieces by
+  eye. Inner details (legs, veins) count as part of the picture. But **every part must be
+  there** (half or more of each part matched; parts under 50 units, like a comb, are
+  details) and **no stray lines**: a long line that still fits nothing well fails the
+  check, and the feedback names what to fix. **(enforced)** Two-finger pinch zooms; one finger draws. After three tries the learner
   can move on.
 
 ## Science and content

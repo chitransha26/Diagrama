@@ -166,13 +166,29 @@ enum StrokeScorer {
     /// A stroke at least this long (diagram units) that mostly runs nowhere near the picture is
     /// a stray line.
     static let strayLength: CGFloat = 60
+    /// A long stroke whose average distance from the picture, after fitting, is more than this
+    /// share of the leeway is a stray line.
+    static let strayFit: CGFloat = 0.33
 
     /// Judges a copy or from-memory drawing part by part: every part drawn, no stray lines.
-    static func judgeRecall(strokes: [[CGPoint]], parts: [(name: String, guides: [Polyline])], tolerance: CGFloat) -> RecallVerdict {
+    /// `details` (legs, veins, wing lines) belong to the picture, so ink on them is fine and
+    /// they set its size, but they aren't required one by one.
+    static func judgeRecall(strokes: [[CGPoint]], parts: [(name: String, guides: [Polyline])],
+                            details: [Polyline] = [], tolerance: CGFloat) -> RecallVerdict {
         let guides = parts.flatMap(\.guides)
-        guard let aligned = align(strokes, to: guides) else { return RecallVerdict(result: .empty, missing: parts.map(\.name), strayLines: 0) }
+        let picture = guides + details
+        guard let aligned = align(strokes, to: picture) else { return RecallVerdict(result: .empty, missing: parts.map(\.name), strayLines: 0) }
         let reach = tolerance * recallLeeway
-        let result = score(strokes: aligned, guides: guides, tolerance: reach)
+        // Learners place and size each piece by eye, so each stroke may shift and stretch a
+        // little to its best fit. It can't rotate, so a line that matches nothing stays off.
+        let field = DistanceField(picture)
+        let fitted = aligned.map { fit($0, to: field, reach: reach) }
+        var result = score(strokes: fitted, guides: guides, tolerance: reach)
+        // Ink on inner details counts as on the picture too.
+        let ink = fitted.flatMap { $0 }
+        let off = ink.filter { field.distance($0) > reach }
+        result.offGuidePoints = off
+        result.precision = Double(ink.count - off.count) / Double(max(ink.count, 1))
         var missing: [String] = []
         var i = 0
         for part in parts {
@@ -181,13 +197,49 @@ enum StrokeScorer {
             if max(size.width, size.height) >= recallDetailSize, share.reduce(0, +) / Double(max(share.count, 1)) < recallPartPass { missing.append(part.name) }
             i += part.guides.count
         }
-        let stray = aligned.filter { stroke in
+        let stray = fitted.filter { stroke in
             guard stroke.count > 1, Polyline(points: stroke, closed: false).length >= strayLength else { return false }
-            // Far from every part, not just placed a little off by eye.
-            let off = stroke.filter { p in !guides.contains { $0.distance(from: p) <= reach * 2 } }.count
-            return Double(off) / Double(stroke.count) > 0.6
+            // Even at its best fit it runs loosely beside things rather than along them.
+            // (Measured: real copied strokes average under 13 units off; scribbles 19 to 35.)
+            let mean = stroke.reduce(CGFloat(0)) { $0 + field.distance($1) } / CGFloat(stroke.count)
+            return mean > reach * strayFit
         }.count
         return RecallVerdict(result: result, missing: missing, strayLines: stray)
+    }
+
+    /// How far a stroke may move (diagram units) and stretch while fitting.
+    static let fitShift: CGFloat = 90
+    static let fitScales: [CGFloat] = [0.75, 0.9, 1, 1.1, 1.3]
+
+    /// Moves and stretches one stroke (no rotation) to where it best matches the picture.
+    private static func fit(_ stroke: [CGPoint], to field: DistanceField, reach: CGFloat) -> [CGPoint] {
+        guard stroke.count > 1 else { return stroke }
+        let step = max(1, stroke.count / 24)
+        let sample = stride(from: 0, to: stroke.count, by: step).map { stroke[$0] }
+        let c = CGPoint(x: stroke.map(\.x).reduce(0, +) / CGFloat(stroke.count),
+                        y: stroke.map(\.y).reduce(0, +) / CGFloat(stroke.count))
+        func moved(_ p: CGPoint, _ sx: CGFloat, _ sy: CGFloat, _ dx: CGFloat, _ dy: CGFloat) -> CGPoint {
+            CGPoint(x: c.x + (p.x - c.x) * sx + dx, y: c.y + (p.y - c.y) * sy + dy)
+        }
+        func cost(_ sx: CGFloat, _ sy: CGFloat, _ dx: CGFloat, _ dy: CGFloat) -> CGFloat {
+            let total = sample.reduce(CGFloat(0)) { $0 + min(field.distance(moved($1, sx, sy, dx, dy)), reach * 3) }
+            // A slight preference for leaving the stroke as drawn, when fits are equal.
+            return total / CGFloat(sample.count) + (abs(dx) + abs(dy)) * 0.01 + (abs(sx - 1) + abs(sy - 1)) * 0.5
+        }
+        var best = (sx: CGFloat(1), sy: CGFloat(1), dx: CGFloat(0), dy: CGFloat(0), cost: cost(1, 1, 0, 0))
+        let shifts = stride(from: -fitShift, through: fitShift, by: 30)
+        for sx in fitScales { for sy in fitScales { for dx in shifts { for dy in shifts {
+            let k = cost(sx, sy, dx, dy)
+            if k < best.cost { best = (sx, sy, dx, dy, k) }
+        } } } }
+        let coarse = best
+        for ddx in stride(from: CGFloat(-15), through: 15, by: 5) {
+            for ddy in stride(from: CGFloat(-15), through: 15, by: 5) {
+                let k = cost(coarse.sx, coarse.sy, coarse.dx + ddx, coarse.dy + ddy)
+                if k < best.cost { best = (coarse.sx, coarse.sy, coarse.dx + ddx, coarse.dy + ddy, k) }
+            }
+        }
+        return stroke.map { moved($0, best.sx, best.sy, best.dx, best.dy) }
     }
 
     private static func align(_ strokes: [[CGPoint]], to guides: [Polyline]) -> [[CGPoint]]? {
@@ -217,6 +269,61 @@ enum StrokeScorer {
 
     static func recallPassed(_ r: TraceResult) -> Bool {
         r.coverage >= recallCoveragePass && r.precision >= recallPrecisionPass
+    }
+}
+
+/// Distance from any point to the nearest line of a picture, precomputed on a grid so that
+/// fitting many strokes stays fast.
+struct DistanceField {
+    private let cell: CGFloat = 4
+    private let n = 300   // covers -100...1100, a margin around the 1000-unit diagram
+    private let origin: CGFloat = -100
+    private var values: [Float]
+
+    init(_ lines: [Polyline]) {
+        let n = self.n, cell = self.cell, origin = self.origin
+        var v = [Float](repeating: .greatestFiniteMagnitude, count: n * n)
+        for line in lines {
+            for p in line.resampled(spacing: cell / 2) {
+                let i = Int(((p.x - origin) / cell).rounded()), j = Int(((p.y - origin) / cell).rounded())
+                if i >= 0, i < n, j >= 0, j < n { v[j * n + i] = 0 }
+            }
+        }
+        // Two-pass chamfer distance transform.
+        let a = Float(cell), d = Float(cell * 1.4142)
+        for j in 0..<n {
+            for i in 0..<n {
+                var x = v[j * n + i]
+                if i > 0 { x = min(x, v[j * n + i - 1] + a) }
+                if j > 0 {
+                    x = min(x, v[(j - 1) * n + i] + a)
+                    if i > 0 { x = min(x, v[(j - 1) * n + i - 1] + d) }
+                    if i < n - 1 { x = min(x, v[(j - 1) * n + i + 1] + d) }
+                }
+                v[j * n + i] = x
+            }
+        }
+        for j in stride(from: n - 1, through: 0, by: -1) {
+            for i in stride(from: n - 1, through: 0, by: -1) {
+                var x = v[j * n + i]
+                if i < n - 1 { x = min(x, v[j * n + i + 1] + a) }
+                if j < n - 1 {
+                    x = min(x, v[(j + 1) * n + i] + a)
+                    if i < n - 1 { x = min(x, v[(j + 1) * n + i + 1] + d) }
+                    if i > 0 { x = min(x, v[(j + 1) * n + i - 1] + d) }
+                }
+                v[j * n + i] = x
+            }
+        }
+        values = v
+    }
+
+    func distance(_ p: CGPoint) -> CGFloat {
+        let fi = (p.x - origin) / cell, fj = (p.y - origin) / cell
+        let i = min(max(Int(fi.rounded()), 0), n - 1), j = min(max(Int(fj.rounded()), 0), n - 1)
+        // Outside the grid, add how far outside the point is.
+        let outside = hypot(max(0, abs(fi - CGFloat(i)) - 0.5), max(0, abs(fj - CGFloat(j)) - 0.5)) * cell
+        return CGFloat(values[j * n + i]) + outside
     }
 }
 

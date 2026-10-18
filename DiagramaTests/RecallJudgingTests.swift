@@ -1,4 +1,5 @@
 import CoreGraphics
+import Foundation
 import Testing
 @testable import Diagrama
 
@@ -54,5 +55,36 @@ struct RecallJudgingTests {
         let v = judge(clean + [scribble])
         #expect(!v.passed)
         #expect(v.strayLines == 1)
+    }
+
+    /// Legs and wing lines are part of the picture: drawing them must not count against you.
+    @Test func innerDetailsCountAsPartOfThePicture() {
+        let beetles = Catalog.lesson(id: "g3-beetle-variation")!
+        let parts = beetles.structures.map { ($0.name, $0.outlines) }
+        let details = beetles.structures.flatMap(\.details)
+        let ink = (parts.flatMap(\.1) + details).map { $0.resampled(spacing: 3) }
+        let v = StrokeScorer.judgeRecall(strokes: ink, parts: parts, details: details, tolerance: tolerance)
+        #expect(v.passed, "precision \(v.result.precision), missing \(v.missing), stray \(v.strayLines)")
+    }
+
+    /// Like a real copy: the rows drawn close together and each beetle drawn taller, by eye.
+    /// Placement and size are the learner's; the shapes are right, so it passes.
+    @Test func aCopyWithItsOwnSpacingPasses() {
+        let beetles = Catalog.lesson(id: "g3-beetle-variation")!
+        let parts = beetles.structures.map { ($0.name, $0.outlines) }
+        let details = beetles.structures.flatMap(\.details)
+        let ink = (parts.flatMap(\.1) + details).map { line -> [CGPoint] in
+            line.resampled(spacing: 3).map { p in
+                let bottomRow = p.y > 500
+                // Each beetle 25% taller around its own middle; the bottom row moved up 250.
+                let mid: CGFloat = bottomRow ? 720 : 300
+                return CGPoint(x: p.x, y: mid + (p.y - mid) * 1.25 - (bottomRow ? 250 : 0))
+            }
+        }
+        let start = Date()
+        let v = StrokeScorer.judgeRecall(strokes: ink, parts: parts, details: details, tolerance: tolerance)
+        #expect(v.passed, "precision \(v.result.precision), missing \(v.missing), stray \(v.strayLines)")
+        // Runs when the learner taps Check, so it must feel instant.
+        #expect(Date().timeIntervalSince(start) < 1, "took \(Date().timeIntervalSince(start)) s")
     }
 }
