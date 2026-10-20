@@ -28,6 +28,7 @@ struct GalleryView: View {
                 }
             }
             .navigationTitle("Gallery")
+            .analyticsScreen("Gallery", ["drawings": store.attempts.count])
             .navigationDestination(for: UUID.self) { id in
                 if let attempt = store.attempts.first(where: { $0.id == id }) {
                     GalleryDetail(attempt: attempt, image: store.image(for: attempt))
@@ -68,6 +69,8 @@ private struct GalleryDetail: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
+                Color.clear.frame(height: 0)
+                    .analyticsScreen("Gallery drawing", ["lesson_id": attempt.lessonID])
                 if let image {
                     Image(uiImage: image)
                         .resizable().scaledToFit()

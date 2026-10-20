@@ -33,6 +33,8 @@ struct LearnView: View {
                                     .font(.headline)
                                 ForEach(lessons) { lesson in
                                     Button {
+                                        Analytics.track("lesson opened", Analytics.lessonProperties(lesson)
+                                            .merging(["from": query.isEmpty ? "browse" : "search"]) { $1 })
                                         active = lesson
                                     } label: {
                                         LessonCard(lesson: lesson, status: store.status(for: lesson.id))
@@ -51,6 +53,8 @@ struct LearnView: View {
             }
             .navigationTitle("Diagrama")
             .searchable(text: $query, prompt: "Search, e.g. plasma membrane")
+            .analyticsScreen("Learn", ["grade_band": band.rawValue])
+            .onChange(of: bandRaw) { _, new in Analytics.track("grade band selected", ["grade_band": new]) }
             #if DEBUG
             .onAppear {
                 // `-openLesson <id>` opens a lesson straight away, for testing. Debug builds only.
@@ -71,12 +75,15 @@ struct LearnView: View {
     private var missingContent: some View {
         VStack(spacing: 12) {
             Image(systemName: "magnifyingglass").font(.largeTitle).foregroundStyle(.secondary)
+                .onAppear { Analytics.track("search found nothing", ["query_length": query.count]) }
             Text("No lesson for “\(query)” yet").font(.headline)
             if requested == query || store.requests.contains(where: { $0.caseInsensitiveCompare(query) == .orderedSame }) {
                 FeedbackRow(kind: .correct, text: "Requested. We'll use requests to decide which diagrams to add next.")
             } else {
                 Button {
                     store.request(query)
+                    // What was asked for stays on the device: learners type it, so it isn't sent.
+                    Analytics.track("diagram requested")
                     requested = query
                 } label: {
                     Label("Request this diagram", systemImage: "plus.bubble")

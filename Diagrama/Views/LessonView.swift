@@ -49,11 +49,20 @@ struct LessonView: View {
             LegendSheet(lesson: session.lesson)
                 .presentationDetents([.medium, .large])
         }
+        .onAppear {
+            Analytics.enterLesson(session.lesson)
+            Analytics.enterStep(session.index, of: session.lesson)
+            Analytics.screen("Lesson")
+            Analytics.track("lesson started", ["steps": session.lesson.steps.count])
+        }
+        .onChange(of: session.index) { _, new in Analytics.enterStep(new, of: session.lesson) }
+        .onDisappear { Analytics.leaveLesson() }
     }
 
     private var header: some View {
         HStack(spacing: 14) {
             Button {
+                Analytics.track("lesson closed", ["finished": session.finished, "progress": session.finished ? 1 : session.progress])
                 dismiss()
             } label: {
                 Image(systemName: "xmark").font(.headline)
@@ -65,6 +74,7 @@ struct LessonView: View {
                 .accessibilityLabel("Lesson progress")
 
             Button {
+                Analytics.track("color legend opened")
                 showLegend = true
             } label: {
                 Label(session.lesson.colorMode.title, systemImage: "paintpalette")

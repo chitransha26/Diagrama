@@ -4,6 +4,10 @@ import SwiftUI
 struct DiagramaApp: App {
     @State private var store = ProgressStore()
 
+    init() {
+        Analytics.setup()
+    }
+
     var body: some Scene {
         WindowGroup {
             TabView {

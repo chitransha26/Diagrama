@@ -13,6 +13,7 @@ struct ResultsView: View {
         ScrollView {
             VStack(spacing: 20) {
                 Image(systemName: "sparkles")
+                    .analyticsScreen("Results")
                     .font(.system(size: 54))
                     .foregroundStyle(Theme.cyan, Theme.lime)
                     .scaleEffect(celebrate ? 1 : 0.4)

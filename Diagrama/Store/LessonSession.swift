@@ -77,12 +77,17 @@ final class LessonSession {
 
     func recordTrace(_ record: TraceRecord) {
         traces.append(record)
+        Analytics.track("drawing step completed", [
+            "match": Int((record.match * 1000).rounded()), "smoothness": Int((record.smoothness * 300).rounded()),
+            "first_try": record.firstTry,
+        ])
     }
 
     /// Records a scientific check. Only the first try counts toward the score.
     func recordScience(correct: Bool, topic: String) {
         scienceTotal += 1
         if correct { scienceFirstTry += 1 } else { review.append(topic) }
+        Analytics.track("science check answered", ["correct_first_try": correct, "topic": topic])
     }
 
     #if DEBUG
@@ -96,11 +101,20 @@ final class LessonSession {
     #endif
 
     func advance() {
+        Analytics.track("step completed")
         if index + 1 < lesson.steps.count {
             index += 1
         } else {
             finishedAt = .now
             finished = true
+            var scores: [String: Any] = [
+                "duration_seconds": Int(duration.rounded()), "drew_from_memory": recallPassed,
+                "science_correct": scienceFirstTry, "science_total": scienceTotal,
+            ]
+            if let match { scores["match"] = match }
+            if let smoothness { scores["smoothness"] = smoothness }
+            if let firstTry { scores["first_try"] = firstTry }
+            Analytics.track("lesson completed", scores)
         }
     }
 

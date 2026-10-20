@@ -27,6 +27,7 @@
 		CA14456C0820614B8C23E7E9 /* Diagrama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diagrama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE15899F0DBB4593B4D82075 /* DiagramaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiagramaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5040FADA0EA1996262E577E7 /* DiagramaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiagramaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D0023BF01219C7042C8C5B /* App.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -47,11 +48,35 @@
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
+/* Begin PBXBuildFile section */
+		0B9802DC16146E05D802AF77 /* PostHog in Frameworks */ = {isa = PBXBuildFile; productRef = FEE25D4BA8C53B02E63FFB01 /* PostHog */; };
+/* End PBXBuildFile section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3CE13E662C96B787CE7A2AA3 /* XCRemoteSwiftPackageReference "posthog-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PostHog/posthog-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.92.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FEE25D4BA8C53B02E63FFB01 /* PostHog */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CE13E662C96B787CE7A2AA3 /* XCRemoteSwiftPackageReference "posthog-ios" */;
+			productName = PostHog;
+		};
+/* End XCSwiftPackageProductDependency section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		A9948045647E677B82CC85DE = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9802DC16146E05D802AF77 /* PostHog in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +103,17 @@
 				60D86AF7F62818E455EC2D46 /* Diagrama */,
 				864BB2D2707E9DFAC4111545 /* DiagramaTests */,
 				A3564A1125F76F72D651CCCB /* DiagramaUITests */,
+				3D008233D6E995616173716D /* Config */,
 				D71BD8A0B6A6AA54EDBA6454 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		3D008233D6E995616173716D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				50D0023BF01219C7042C8C5B /* App.xcconfig */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		D71BD8A0B6A6AA54EDBA6454 /* Products */ = {
@@ -112,6 +146,7 @@
 			);
 			name = Diagrama;
 			packageProductDependencies = (
+				FEE25D4BA8C53B02E63FFB01 /* PostHog */,
 			);
 			productName = Diagrama;
 			productReference = CA14456C0820614B8C23E7E9;
@@ -195,6 +230,9 @@
 			);
 			mainGroup = 186495F7DA296BF880DF3A22;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3CE13E662C96B787CE7A2AA3 /* XCRemoteSwiftPackageReference "posthog-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D71BD8A0B6A6AA54EDBA6454 /* Products */;
 			projectDirPath = "";
@@ -316,6 +354,7 @@
 		};
 		E01F1F30D1035F4E2BD8BFAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50D0023BF01219C7042C8C5B /* App.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +362,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Config/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Diagrama;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -344,6 +384,7 @@
 		};
 		756CE6F2626B1510802145D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50D0023BF01219C7042C8C5B /* App.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -351,6 +392,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Config/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Diagrama;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

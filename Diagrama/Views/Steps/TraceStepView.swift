@@ -25,6 +25,7 @@ struct DrawingToolbar: View {
 
             Button {
                 erasing.toggle()
+                if erasing { Analytics.track("drawing tool used", ["tool": "eraser"]) }
             } label: {
                 Image(systemName: erasing ? "eraser.fill" : "eraser")
                     .frame(width: 36, height: 30)
@@ -33,7 +34,10 @@ struct DrawingToolbar: View {
             .tint(erasing ? Theme.indigo : .secondary)
             .accessibilityLabel(erasing ? "Eraser on" : "Eraser")
 
-            Button(action: onUndo) {
+            Button {
+                Analytics.track("drawing tool used", ["tool": "undo"])
+                onUndo()
+            } label: {
                 Image(systemName: "arrow.uturn.backward").frame(width: 36, height: 30)
             }
             .buttonStyle(.bordered)
@@ -42,7 +46,10 @@ struct DrawingToolbar: View {
             .accessibilityLabel("Undo")
 
             Menu {
-                Button("Restart step", systemImage: "arrow.counterclockwise", action: onRestart)
+                Button("Restart step", systemImage: "arrow.counterclockwise") {
+                    Analytics.track("drawing tool used", ["tool": "restart_step"])
+                    onRestart()
+                }
             } label: {
                 Image(systemName: "ellipsis").frame(width: 36, height: 30)
             }
@@ -432,6 +439,7 @@ struct RecallStepView: View {
             HStack(spacing: 12) {
                 if tries > 0 && !passed && !peeked && !copying {
                     Button {
+                        Analytics.track("peeked at picture")
                         peeked = true
                     } label: {
                         Label("Peek", systemImage: "eye")
@@ -464,6 +472,11 @@ struct RecallStepView: View {
         )
         tries += 1
         result = v
+        Analytics.track("drawing checked", [
+            "mode": copying ? "copy" : "from_memory", "passed": v.passed, "attempt": tries, "peeked": peeked,
+            "missing_parts": v.missing.count, "stray_lines": v.strayLines,
+            "coverage": (v.result.coverage * 100).rounded(), "precision": (v.result.precision * 100).rounded(),
+        ])
         if v.passed {
             withAnimation { passed = true; erasing = false }
         }

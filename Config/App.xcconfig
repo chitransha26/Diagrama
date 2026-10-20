@@ -1,0 +1,7 @@
+// Settings for the Diagrama app target. Real keys live in Secrets.xcconfig, which git ignores;
+// copy Secrets.example.xcconfig to create it. Without it, the app builds with analytics off.
+
+POSTHOG_PROJECT_TOKEN =
+POSTHOG_HOST =
+
+#include? "Secrets.xcconfig"
