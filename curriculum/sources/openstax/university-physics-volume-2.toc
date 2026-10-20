@@ -1,0 +1,112 @@
+University Physics Volume 2
+Ch 1 Temperature and Heat
+  1.1 Temperature and Thermal Equilibrium
+  1.2 Thermometers and Temperature Scales
+  1.3 Thermal Expansion
+  1.4 Heat Transfer, Specific Heat, and Calorimetry
+  1.5 Phase Changes
+  1.6 Mechanisms of Heat Transfer
+Ch 2 The Kinetic Theory of Gases
+  2.1 Molecular Model of an Ideal Gas
+  2.2 Pressure, Temperature, and RMS Speed
+  2.3 Heat Capacity and Equipartition of Energy
+  2.4 Distribution of Molecular Speeds
+Ch 3 The First Law of Thermodynamics
+  3.1 Thermodynamic Systems
+  3.2 Work, Heat, and Internal Energy
+  3.3 First Law of Thermodynamics
+  3.4 Thermodynamic Processes
+  3.5 Heat Capacities of an Ideal Gas
+  3.6 Adiabatic Processes for an Ideal Gas
+Ch 4 The Second Law of Thermodynamics
+  4.1 Reversible and Irreversible Processes
+  4.2 Heat Engines
+  4.3 Refrigerators and Heat Pumps
+  4.4 Statements of the Second Law of Thermodynamics
+  4.5 The Carnot Cycle
+  4.6 Entropy
+  4.7 Entropy on a Microscopic Scale
+Ch 5 Electric Charges and Fields
+  5.1 Electric Charge
+  5.2 Conductors, Insulators, and Charging by Induction
+  5.3 Coulomb's Law
+  5.4 Electric Field
+  5.5 Calculating Electric Fields of Charge Distributions
+  5.6 Electric Field Lines
+  5.7 Electric Dipoles
+Ch 6 Gauss's Law
+  6.1 Electric Flux
+  6.2 Explaining Gauss’s Law
+  6.3 Applying Gauss’s Law
+  6.4 Conductors in Electrostatic Equilibrium
+Ch 7 Electric Potential
+  7.1 Electric Potential Energy
+  7.2 Electric Potential and Potential Difference
+  7.3 Calculations of Electric Potential
+  7.4 Determining Field from Potential
+  7.5 Equipotential Surfaces and Conductors
+  7.6 Applications of Electrostatics
+Ch 8 Capacitance
+  8.1 Capacitors and Capacitance
+  8.2 Capacitors in Series and in Parallel
+  8.3 Energy Stored in a Capacitor
+  8.4 Capacitor with a Dielectric
+  8.5 Molecular Model of a Dielectric
+Ch 9 Current and Resistance
+  9.1 Electrical Current
+  9.2 Model of Conduction in Metals
+  9.3 Resistivity and Resistance
+  9.4 Ohm's Law
+  9.5 Electrical Energy and Power
+  9.6 Superconductors
+Ch 10 Direct-Current Circuits
+  10.1 Electromotive Force
+  10.2 Resistors in Series and Parallel
+  10.3 Kirchhoff's Rules
+  10.4 Electrical Measuring Instruments
+  10.5 RC Circuits
+  10.6 Household Wiring and Electrical Safety
+Ch 11 Magnetic Forces and Fields
+  11.1 Magnetism and Its Historical Discoveries
+  11.2 Magnetic Fields and Lines
+  11.3 Motion of a Charged Particle in a Magnetic Field
+  11.4 Magnetic Force on a Current-Carrying Conductor
+  11.5 Force and Torque on a Current Loop
+  11.6 The Hall Effect
+  11.7 Applications of Magnetic Forces and Fields
+Ch 12 Sources of Magnetic Fields
+  12.1 The Biot-Savart Law
+  12.2 Magnetic Field Due to a Thin Straight Wire
+  12.3 Magnetic Force between Two Parallel Currents
+  12.4 Magnetic Field of a Current Loop
+  12.5 Ampère’s Law
+  12.6 Solenoids and Toroids
+  12.7 Magnetism in Matter
+Ch 13 Electromagnetic Induction
+  13.1 Faraday’s Law
+  13.2 Lenz's Law
+  13.3 Motional Emf
+  13.4 Induced Electric Fields
+  13.5 Eddy Currents
+  13.6 Electric Generators and Back Emf
+  13.7 Applications of Electromagnetic Induction
+Ch 14 Inductance
+  14.1 Mutual Inductance
+  14.2 Self-Inductance and Inductors
+  14.3 Energy in a Magnetic Field
+  14.4 RL Circuits
+  14.5 Oscillations in an LC Circuit
+  14.6 RLC Series Circuits
+Ch 15 Alternating-Current Circuits
+  15.1 AC Sources
+  15.2 Simple AC Circuits
+  15.3 RLC Series Circuits with AC
+  15.4 Power in an AC Circuit
+  15.5 Resonance in an AC Circuit
+  15.6 Transformers
+Ch 16 Electromagnetic Waves
+  16.1 Maxwell’s Equations and Electromagnetic Waves
+  16.2 Plane Electromagnetic Waves
+  16.3 Energy Carried by Electromagnetic Waves
+  16.4 Momentum and Radiation Pressure
+  16.5 The Electromagnetic Spectrum

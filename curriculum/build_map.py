@@ -1,6 +1,7 @@
 """Builds the curriculum map (coverage ledger, PRD §03) as coverage.csv and summary counts.
 
-Each diagram is mapped to the NGSS performance expectation it supports (or an AP course).
+Each diagram is mapped to the NGSS performance expectation it supports (or an AP course); undergraduate
+diagrams to an OpenStax textbook section and, where it applies, an MCAT content category.
 Mappings are proposed and need teacher review before a lesson is advertised as covering a
 standard. Run: python3 curriculum/build_map.py
 """
@@ -279,6 +280,174 @@ D = [
     ("9", "Earth & Space", "Seismic waves and the shadow zone", "HS-ESS2-1", "trace"),
 ]
 
+# ---- Undergraduate ----
+# Mapped to a section of an OpenStax textbook (free, peer-reviewed, CC BY, so their art can be
+# adapted with credit) and, where it applies, an MCAT content category (AAMC outline). Both are
+# checked below against the saved tables of contents in curriculum/sources.
+# (subject, diagram, book, section, MCAT category or None, interaction)
+UG = [
+    # Cell and molecular biology
+    ("Life", "Prokaryotic cell structure", "Biology 2e", "4.2", "2B", "trace"),
+    ("Life", "Eukaryotic animal cell, organelle by organelle", "Biology 2e", "4.3", "2A", "trace"),
+    ("Life", "The endomembrane system: ER to Golgi to membrane", "Biology 2e", "4.4", "2A", "process"),
+    ("Life", "The cytoskeleton: three kinds of fibers", "Biology 2e", "4.5", "2A", "compare"),
+    ("Life", "Cell junctions: tight, gap and desmosome", "Biology 2e", "4.6", "2A", "compare"),
+    ("Life", "Fluid mosaic model of the plasma membrane", "Biology 2e", "5.1", "2A", "trace"),
+    ("Life", "Passive transport: diffusion, channels and carriers", "Biology 2e", "5.2", "2A", "compare"),
+    ("Life", "The sodium-potassium pump cycle", "Biology 2e", "5.3", "2A", "process"),
+    ("Life", "Endocytosis and exocytosis", "Biology 2e", "5.4", "2A", "process"),
+    ("Life", "Cell signaling: a G-protein-coupled receptor", "Biology 2e", "9.2", "3A", "process"),
+    ("Life", "Cell signaling: a receptor tyrosine kinase cascade", "Biology 2e", "9.2", "3A", "process"),
+    ("Life", "Cell cycle checkpoints and cyclins", "Biology 2e", "10.3", "2C", "process"),
+    ("Life", "Meiosis I and II with crossing over", "Biology 2e", "11.1", "1C", "process"),
+    ("Life", "Gene linkage and recombination frequency", "Biology 2e", "13.1", "1C", "compare"),
+    ("Life", "Nondisjunction in meiosis", "Biology 2e", "13.2", "1C", "process"),
+    ("Life", "DNA structure: antiparallel strands and base pairing", "Biology 2e", "14.2", "1B", "build"),
+    ("Life", "The DNA replication fork", "Biology 2e", "14.3", "1B", "trace"),
+    ("Life", "Eukaryotic transcription", "Biology 2e", "15.3", "1B", "process"),
+    ("Life", "mRNA processing: cap, tail and splicing", "Biology 2e", "15.4", "1B", "process"),
+    ("Life", "Translation at the ribosome", "Biology 2e", "15.5", "1B", "process"),
+    ("Life", "The lac operon", "Biology 2e", "16.2", "1B", "compare"),
+    ("Life", "Chromatin and epigenetic regulation", "Biology 2e", "16.3", "1B", "compare"),
+    ("Life", "The PCR cycle", "Biology 2e", "17.1", "1B", "process"),
+    ("Life", "Gel electrophoresis", "Biology 2e", "17.1", "5C", "trace"),
+    ("Life", "Stabilizing, directional and disruptive selection", "Biology 2e", "19.3", "1C", "graph"),
+    ("Life", "Reading a phylogenetic tree", "Biology 2e", "20.2", None, "compare"),
+    ("Life", "Viral replication: lytic and lysogenic cycles", "Biology 2e", "21.2", "2B", "process"),
+    ("Life", "Stem cross-section: xylem and phloem", "Biology 2e", "30.2", None, "trace"),
+    ("Life", "Root cross-section: endodermis and Casparian strip", "Biology 2e", "30.3", None, "trace"),
+    ("Life", "Double fertilization in flowering plants", "Biology 2e", "32.2", None, "process"),
+    ("Life", "Human eye anatomy", "Biology 2e", "36.5", "6A", "trace"),
+    ("Life", "Human ear anatomy", "Biology 2e", "36.4", "6A", "trace"),
+    # Biochemistry and metabolism
+    ("Biochemistry", "ATP structure and hydrolysis", "Biology 2e", "6.4", "1D", "build"),
+    ("Biochemistry", "Enzyme energy diagram: with and without a catalyst", "Biology 2e", "6.5", "1A", "graph"),
+    ("Biochemistry", "Competitive and noncompetitive inhibition", "Biology 2e", "6.5", "1A", "compare"),
+    ("Biochemistry", "Glycolysis overview", "Biology 2e", "7.2", "1D", "process"),
+    ("Biochemistry", "The citric acid cycle", "Biology 2e", "7.3", "1D", "process"),
+    ("Biochemistry", "Electron transport chain and ATP synthase", "Biology 2e", "7.4", "1D", "trace"),
+    ("Biochemistry", "Fermentation: lactic acid and alcohol", "Biology 2e", "7.5", "1D", "compare"),
+    ("Biochemistry", "Light-dependent reactions: the Z-scheme", "Biology 2e", "8.2", None, "process"),
+    ("Biochemistry", "The Calvin cycle", "Biology 2e", "8.3", None, "process"),
+    ("Biochemistry", "Amino acid charge at different pH", "Organic Chemistry", "26.2", "1A", "build"),
+    ("Biochemistry", "Four levels of protein structure", "Organic Chemistry", "26.9", "1A", "compare"),
+    ("Biochemistry", "Nucleotides and the phosphodiester bond", "Organic Chemistry", "28.1", "1B", "build"),
+    ("Biochemistry", "Beta-oxidation of fatty acids", "Organic Chemistry", "29.3", "1D", "process"),
+    ("Biochemistry", "Gluconeogenesis and glycolysis compared", "Organic Chemistry", "29.8", "1D", "compare"),
+    # Anatomy and physiology
+    ("Anatomy & Physiology", "Layers of the skin", "Anatomy and Physiology 2e", "5.1", "3B", "trace"),
+    ("Anatomy & Physiology", "Long bone and the osteon", "Anatomy and Physiology 2e", "6.3", "3B", "trace"),
+    ("Anatomy & Physiology", "A synovial joint", "Anatomy and Physiology 2e", "9.4", "3B", "trace"),
+    ("Anatomy & Physiology", "The neuromuscular junction", "Anatomy and Physiology 2e", "10.2", "3B", "trace"),
+    ("Anatomy & Physiology", "The sarcomere and sliding filaments", "Anatomy and Physiology 2e", "10.3", "3B", "compare"),
+    ("Anatomy & Physiology", "The action potential", "Anatomy and Physiology 2e", "12.4", "3A", "graph"),
+    ("Anatomy & Physiology", "Synaptic transmission", "Anatomy and Physiology 2e", "12.5", "3A", "process"),
+    ("Anatomy & Physiology", "Regions of the brain", "Anatomy and Physiology 2e", "13.2", "3A", "trace"),
+    ("Anatomy & Physiology", "The spinal reflex arc", "Anatomy and Physiology 2e", "14.3", "3A", "process"),
+    ("Anatomy & Physiology", "The hypothalamus-pituitary axis", "Anatomy and Physiology 2e", "17.3", "3A", "process"),
+    ("Anatomy & Physiology", "Blood glucose regulation by insulin and glucagon", "Anatomy and Physiology 2e", "17.9", "3A", "process"),
+    ("Anatomy & Physiology", "Formed elements of the blood", "Anatomy and Physiology 2e", "18.2", "3B", "compare"),
+    ("Anatomy & Physiology", "ABO blood types", "Anatomy and Physiology 2e", "18.6", "3B", "compare"),
+    ("Anatomy & Physiology", "Heart chambers, valves and great vessels", "Anatomy and Physiology 2e", "19.1", "3B", "trace"),
+    ("Anatomy & Physiology", "The cardiac conduction system", "Anatomy and Physiology 2e", "19.2", "3B", "trace"),
+    ("Anatomy & Physiology", "The cardiac cycle: pressures and volumes", "Anatomy and Physiology 2e", "19.3", "3B", "graph"),
+    ("Anatomy & Physiology", "Capillary exchange", "Anatomy and Physiology 2e", "20.3", "4B", "process"),
+    ("Anatomy & Physiology", "The lymphatic system", "Anatomy and Physiology 2e", "21.1", "3B", "trace"),
+    ("Anatomy & Physiology", "Antibody structure", "Anatomy and Physiology 2e", "21.4", "3B", "trace"),
+    ("Anatomy & Physiology", "The respiratory tree and the alveolus", "Anatomy and Physiology 2e", "22.1", "3B", "trace"),
+    ("Anatomy & Physiology", "The oxygen-hemoglobin dissociation curve", "Anatomy and Physiology 2e", "22.5", "4B", "graph"),
+    ("Anatomy & Physiology", "The digestive tract", "Anatomy and Physiology 2e", "23.1", "3B", "trace"),
+    ("Anatomy & Physiology", "A villus of the small intestine", "Anatomy and Physiology 2e", "23.5", "3B", "trace"),
+    ("Anatomy & Physiology", "The nephron and its blood supply", "Anatomy and Physiology 2e", "25.4", "3B", "trace"),
+    ("Anatomy & Physiology", "Reabsorption along the nephron", "Anatomy and Physiology 2e", "25.6", "3B", "process"),
+    ("Anatomy & Physiology", "Spermatogenesis in the seminiferous tubule", "Anatomy and Physiology 2e", "27.1", "2C", "trace"),
+    ("Anatomy & Physiology", "The ovarian and uterine cycles", "Anatomy and Physiology 2e", "27.2", "3B", "graph"),
+    ("Anatomy & Physiology", "Fertilization to blastocyst", "Anatomy and Physiology 2e", "28.2", "2C", "process"),
+    # Microbiology
+    ("Microbiology", "Parts of a light microscope", "Microbiology", "2.3", None, "trace"),
+    ("Microbiology", "The Gram stain, step by step", "Microbiology", "2.4", "2B", "process"),
+    ("Microbiology", "Gram-positive and gram-negative cell walls", "Microbiology", "3.3", "2B", "compare"),
+    ("Microbiology", "Enveloped and naked viruses", "Microbiology", "6.1", "2B", "compare"),
+    ("Microbiology", "The bacterial growth curve", "Microbiology", "9.1", "2B", "graph"),
+    ("Microbiology", "Conjugation, transformation and transduction", "Microbiology", "11.6", "2B", "compare"),
+    ("Microbiology", "Phagocytosis", "Microbiology", "17.4", "3B", "process"),
+    ("Microbiology", "Inflammation", "Microbiology", "17.5", "3B", "process"),
+    ("Microbiology", "Humoral and cell-mediated immunity", "Microbiology", "18.1", "3B", "compare"),
+    # General chemistry
+    ("Chemistry", "The Bohr model and emission lines", "Chemistry 2e", "6.2", "4E", "process"),
+    ("Chemistry", "Shapes of s, p and d orbitals", "Chemistry 2e", "6.3", "4E", "trace"),
+    ("Chemistry", "Orbital diagrams and electron configuration", "Chemistry 2e", "6.4", "4E", "build"),
+    ("Chemistry", "Periodic trends", "Chemistry 2e", "6.5", "4E", "graph"),
+    ("Chemistry", "Formal charge and resonance: carbonate", "Chemistry 2e", "7.4", "5B", "build"),
+    ("Chemistry", "VSEPR molecular geometries", "Chemistry 2e", "7.6", "5B", "compare"),
+    ("Chemistry", "Hybrid orbitals: sp3, sp2 and sp", "Chemistry 2e", "8.2", "5B", "compare"),
+    ("Chemistry", "Molecular orbital diagram of O2", "Chemistry 2e", "8.4", "5B", "build"),
+    ("Chemistry", "Intermolecular forces", "Chemistry 2e", "10.1", "5B", "compare"),
+    ("Chemistry", "Phase diagram of carbon dioxide", "Chemistry 2e", "10.4", "5E", "graph"),
+    ("Chemistry", "Cubic unit cells", "Chemistry 2e", "10.6", None, "trace"),
+    ("Chemistry", "A two-step mechanism's energy profile", "Chemistry 2e", "12.6", "5E", "graph"),
+    ("Chemistry", "Le Chatelier's principle", "Chemistry 2e", "13.3", "5E", "compare"),
+    ("Chemistry", "How a buffer resists pH change", "Chemistry 2e", "14.6", "5A", "process"),
+    ("Chemistry", "Weak acid titration curve and the buffer region", "Chemistry 2e", "14.7", "5A", "graph"),
+    ("Chemistry", "Free energy and spontaneity", "Chemistry 2e", "16.4", "5E", "graph"),
+    ("Chemistry", "An electrolytic cell", "Chemistry 2e", "17.7", "4C", "trace"),
+    # Organic chemistry
+    ("Organic Chemistry", "Skeletal (line-angle) structures", "Organic Chemistry", "1.12", "5D", "build"),
+    ("Organic Chemistry", "Newman projections of butane", "Organic Chemistry", "3.7", "5D", "build"),
+    ("Organic Chemistry", "The cyclohexane chair", "Organic Chemistry", "4.5", "5D", "build"),
+    ("Organic Chemistry", "Assigning R and S", "Organic Chemistry", "5.5", "5D", "build"),
+    ("Organic Chemistry", "Enantiomers and diastereomers", "Organic Chemistry", "5.6", "5D", "compare"),
+    ("Organic Chemistry", "Curved arrows: HBr adding to ethylene", "Organic Chemistry", "6.5", "5D", "build"),
+    ("Organic Chemistry", "Transition states and intermediates", "Organic Chemistry", "6.9", "5E", "graph"),
+    ("Organic Chemistry", "Carbocation stability and Markovnikov's rule", "Organic Chemistry", "7.9", "5D", "compare"),
+    ("Organic Chemistry", "The SN2 reaction", "Organic Chemistry", "11.2", "5D", "build"),
+    ("Organic Chemistry", "The SN1 reaction", "Organic Chemistry", "11.4", "5D", "build"),
+    ("Organic Chemistry", "The E2 reaction", "Organic Chemistry", "11.8", "5D", "build"),
+    ("Organic Chemistry", "Reading an IR spectrum", "Organic Chemistry", "12.7", "4D", "graph"),
+    ("Organic Chemistry", "Spin-spin splitting in 1H NMR", "Organic Chemistry", "13.6", "4D", "graph"),
+    ("Organic Chemistry", "Benzene: resonance and aromaticity", "Organic Chemistry", "15.2", None, "build"),
+    # Physics
+    ("Physics", "Free-body diagrams with tension and friction", "University Physics Volume 1", "5.7", "4A", "build"),
+    ("Physics", "Buoyancy and Archimedes' principle", "University Physics Volume 1", "14.4", "4B", "compare"),
+    ("Physics", "Bernoulli's equation in a narrowing pipe", "University Physics Volume 1", "14.6", "4B", "trace"),
+    ("Physics", "Energy in simple harmonic motion", "University Physics Volume 1", "15.2", "4A", "graph"),
+    ("Physics", "Standing waves in open and closed pipes", "University Physics Volume 1", "17.4", "4D", "compare"),
+    ("Physics", "Thermodynamic processes on a PV diagram", "University Physics Volume 2", "3.4", "5E", "graph"),
+    ("Physics", "The electric dipole field", "University Physics Volume 2", "5.7", "4C", "trace"),
+    ("Physics", "Kirchhoff's rules in a two-loop circuit", "University Physics Volume 2", "10.3", "4C", "build"),
+    ("Physics", "Charging an RC circuit", "University Physics Volume 2", "10.5", "4C", "graph"),
+    ("Physics", "A charged particle in a magnetic field", "University Physics Volume 2", "11.3", "4C", "trace"),
+    ("Physics", "The electromagnetic spectrum: wavelength, frequency and energy", "University Physics Volume 2", "16.5", "4D", "compare"),
+    ("Physics", "The eye: correcting near- and farsightedness", "University Physics Volume 3", "2.5", "4D", "build"),
+    ("Physics", "The compound microscope", "University Physics Volume 3", "2.8", "4D", "build"),
+    ("Physics", "Young's double-slit interference", "University Physics Volume 3", "3.1", "4D", "compare"),
+    ("Physics", "Nuclear binding energy per nucleon", "University Physics Volume 3", "10.2", "4E", "graph"),
+    ("Physics", "Radioactive decay and half-life", "University Physics Volume 3", "10.3", "4E", "graph"),
+]
+
+SOURCES = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sources")
+
+
+def _sections(book):
+    """Section number -> title, from the table of contents saved from openstax.org."""
+    path = os.path.join(SOURCES, "openstax", book.lower().replace(" ", "-") + ".toc")
+    out = {}
+    for line in open(path, encoding="utf-8"):
+        line = line.strip()
+        if line[:1].isdigit():
+            num, _, title = line.partition(" ")
+            out[num] = title
+    return out
+
+
+_mcat = {line.split(".")[0] for line in open(os.path.join(SOURCES, "mcat-content-categories.txt"), encoding="utf-8") if line.strip()}
+for subject, diagram, book, section, mcat, interaction in UG:
+    title = _sections(book).get(section)
+    assert title, f"{diagram}: {book} has no section {section}"
+    assert mcat is None or mcat in _mcat, f"{diagram}: no MCAT content category {mcat}"
+    standard = f"OpenStax {book} §{section} {title}" + (f"; MCAT {mcat}" if mcat else "")
+    D.append(("UG", subject, diagram, standard, interaction))
+
 import glob
 import json
 
@@ -289,7 +458,7 @@ LIVE = {"Plant cell", "Leaf cross-section", "Water: Lewis structure"} | {
 }
 
 BAND = {"K": "K-2", "1": "K-2", "2": "K-2", "3": "3-5", "4": "3-5", "5": "3-5",
-        "6": "Middle school", "7": "Middle school", "8": "Middle school"}
+        "6": "Middle school", "7": "Middle school", "8": "Middle school", "UG": "Undergraduate"}
 
 
 def band(grade):
@@ -304,7 +473,7 @@ for i, (grade, subject, diagram, standard, interaction) in enumerate(D, 1):
         "diagram": diagram, "standard": standard, "interaction": interaction,
         # K-2 is deferred until read-aloud audio exists: young children can't read the notes.
         "status": "live" if diagram in LIVE else ("deferred" if band(grade) == "K-2" else "planned"),
-        "mapping": "proposed - needs teacher review",
+        "mapping": "proposed - needs instructor review" if grade == "UG" else "proposed - needs teacher review",
     })
 
 titles = [r["diagram"] for r in rows]
@@ -315,7 +484,7 @@ with open(os.path.join(here, "coverage.csv"), "w", newline="") as f:
     w.writeheader()
     w.writerows(rows)
 
-order = ["K-2", "3-5", "Middle school", "High school"]
+order = ["K-2", "3-5", "Middle school", "High school", "Undergraduate"]
 print(f"{len(rows)} diagrams: " + ", ".join(f"{v} {k}" for k, v in Counter(r["status"] for r in rows).items()))
 for b in order:
     c = Counter(r["subject"] for r in rows if r["band"] == b)

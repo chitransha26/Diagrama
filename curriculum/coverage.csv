@@ -251,3 +251,133 @@ D249,9,High school,Earth & Space,Groundwater and the water table,HS-ESS2-5,trace
 D250,9,High school,Earth & Space,Ocean conveyor belt circulation,HS-ESS2-6,trace,planned,proposed - needs teacher review
 D251,9,High school,Earth & Space,Ice-albedo climate feedback,HS-ESS3-6,process,planned,proposed - needs teacher review
 D252,9,High school,Earth & Space,Seismic waves and the shadow zone,HS-ESS2-1,trace,planned,proposed - needs teacher review
+D253,UG,Undergraduate,Life,Prokaryotic cell structure,OpenStax Biology 2e §4.2 Prokaryotic Cells; MCAT 2B,trace,planned,proposed - needs instructor review
+D254,UG,Undergraduate,Life,"Eukaryotic animal cell, organelle by organelle",OpenStax Biology 2e §4.3 Eukaryotic Cells; MCAT 2A,trace,planned,proposed - needs instructor review
+D255,UG,Undergraduate,Life,The endomembrane system: ER to Golgi to membrane,OpenStax Biology 2e §4.4 The Endomembrane System and Proteins; MCAT 2A,process,planned,proposed - needs instructor review
+D256,UG,Undergraduate,Life,The cytoskeleton: three kinds of fibers,OpenStax Biology 2e §4.5 The Cytoskeleton; MCAT 2A,compare,planned,proposed - needs instructor review
+D257,UG,Undergraduate,Life,"Cell junctions: tight, gap and desmosome",OpenStax Biology 2e §4.6 Connections between Cells and Cellular Activities; MCAT 2A,compare,planned,proposed - needs instructor review
+D258,UG,Undergraduate,Life,Fluid mosaic model of the plasma membrane,OpenStax Biology 2e §5.1 Components and Structure; MCAT 2A,trace,planned,proposed - needs instructor review
+D259,UG,Undergraduate,Life,"Passive transport: diffusion, channels and carriers",OpenStax Biology 2e §5.2 Passive Transport; MCAT 2A,compare,planned,proposed - needs instructor review
+D260,UG,Undergraduate,Life,The sodium-potassium pump cycle,OpenStax Biology 2e §5.3 Active Transport; MCAT 2A,process,planned,proposed - needs instructor review
+D261,UG,Undergraduate,Life,Endocytosis and exocytosis,OpenStax Biology 2e §5.4 Bulk Transport; MCAT 2A,process,planned,proposed - needs instructor review
+D262,UG,Undergraduate,Life,Cell signaling: a G-protein-coupled receptor,OpenStax Biology 2e §9.2 Propagation of the Signal; MCAT 3A,process,planned,proposed - needs instructor review
+D263,UG,Undergraduate,Life,Cell signaling: a receptor tyrosine kinase cascade,OpenStax Biology 2e §9.2 Propagation of the Signal; MCAT 3A,process,planned,proposed - needs instructor review
+D264,UG,Undergraduate,Life,Cell cycle checkpoints and cyclins,OpenStax Biology 2e §10.3 Control of the Cell Cycle; MCAT 2C,process,planned,proposed - needs instructor review
+D265,UG,Undergraduate,Life,Meiosis I and II with crossing over,OpenStax Biology 2e §11.1 The Process of Meiosis; MCAT 1C,process,planned,proposed - needs instructor review
+D266,UG,Undergraduate,Life,Gene linkage and recombination frequency,OpenStax Biology 2e §13.1 Chromosomal Theory and Genetic Linkage; MCAT 1C,compare,planned,proposed - needs instructor review
+D267,UG,Undergraduate,Life,Nondisjunction in meiosis,OpenStax Biology 2e §13.2 Chromosomal Basis of Inherited Disorders; MCAT 1C,process,planned,proposed - needs instructor review
+D268,UG,Undergraduate,Life,DNA structure: antiparallel strands and base pairing,OpenStax Biology 2e §14.2 DNA Structure and Sequencing; MCAT 1B,build,planned,proposed - needs instructor review
+D269,UG,Undergraduate,Life,The DNA replication fork,OpenStax Biology 2e §14.3 Basics of DNA Replication; MCAT 1B,trace,planned,proposed - needs instructor review
+D270,UG,Undergraduate,Life,Eukaryotic transcription,OpenStax Biology 2e §15.3 Eukaryotic Transcription; MCAT 1B,process,planned,proposed - needs instructor review
+D271,UG,Undergraduate,Life,"mRNA processing: cap, tail and splicing",OpenStax Biology 2e §15.4 RNA Processing in Eukaryotes; MCAT 1B,process,planned,proposed - needs instructor review
+D272,UG,Undergraduate,Life,Translation at the ribosome,OpenStax Biology 2e §15.5 Ribosomes and Protein Synthesis; MCAT 1B,process,planned,proposed - needs instructor review
+D273,UG,Undergraduate,Life,The lac operon,OpenStax Biology 2e §16.2 Prokaryotic Gene Regulation; MCAT 1B,compare,planned,proposed - needs instructor review
+D274,UG,Undergraduate,Life,Chromatin and epigenetic regulation,OpenStax Biology 2e §16.3 Eukaryotic Epigenetic Gene Regulation; MCAT 1B,compare,planned,proposed - needs instructor review
+D275,UG,Undergraduate,Life,The PCR cycle,OpenStax Biology 2e §17.1 Biotechnology; MCAT 1B,process,planned,proposed - needs instructor review
+D276,UG,Undergraduate,Life,Gel electrophoresis,OpenStax Biology 2e §17.1 Biotechnology; MCAT 5C,trace,planned,proposed - needs instructor review
+D277,UG,Undergraduate,Life,"Stabilizing, directional and disruptive selection",OpenStax Biology 2e §19.3 Adaptive Evolution; MCAT 1C,graph,planned,proposed - needs instructor review
+D278,UG,Undergraduate,Life,Reading a phylogenetic tree,OpenStax Biology 2e §20.2 Determining Evolutionary Relationships,compare,planned,proposed - needs instructor review
+D279,UG,Undergraduate,Life,Viral replication: lytic and lysogenic cycles,OpenStax Biology 2e §21.2 Virus Infections and Hosts; MCAT 2B,process,planned,proposed - needs instructor review
+D280,UG,Undergraduate,Life,Stem cross-section: xylem and phloem,OpenStax Biology 2e §30.2 Stems,trace,planned,proposed - needs instructor review
+D281,UG,Undergraduate,Life,Root cross-section: endodermis and Casparian strip,OpenStax Biology 2e §30.3 Roots,trace,planned,proposed - needs instructor review
+D282,UG,Undergraduate,Life,Double fertilization in flowering plants,OpenStax Biology 2e §32.2 Pollination and Fertilization,process,planned,proposed - needs instructor review
+D283,UG,Undergraduate,Life,Human eye anatomy,OpenStax Biology 2e §36.5 Vision; MCAT 6A,trace,planned,proposed - needs instructor review
+D284,UG,Undergraduate,Life,Human ear anatomy,OpenStax Biology 2e §36.4 Hearing and Vestibular Sensation; MCAT 6A,trace,planned,proposed - needs instructor review
+D285,UG,Undergraduate,Biochemistry,ATP structure and hydrolysis,OpenStax Biology 2e §6.4 ATP: Adenosine Triphosphate; MCAT 1D,build,planned,proposed - needs instructor review
+D286,UG,Undergraduate,Biochemistry,Enzyme energy diagram: with and without a catalyst,OpenStax Biology 2e §6.5 Enzymes; MCAT 1A,graph,planned,proposed - needs instructor review
+D287,UG,Undergraduate,Biochemistry,Competitive and noncompetitive inhibition,OpenStax Biology 2e §6.5 Enzymes; MCAT 1A,compare,planned,proposed - needs instructor review
+D288,UG,Undergraduate,Biochemistry,Glycolysis overview,OpenStax Biology 2e §7.2 Glycolysis; MCAT 1D,process,planned,proposed - needs instructor review
+D289,UG,Undergraduate,Biochemistry,The citric acid cycle,OpenStax Biology 2e §7.3 Oxidation of Pyruvate and the Citric Acid Cycle; MCAT 1D,process,planned,proposed - needs instructor review
+D290,UG,Undergraduate,Biochemistry,Electron transport chain and ATP synthase,OpenStax Biology 2e §7.4 Oxidative Phosphorylation; MCAT 1D,trace,planned,proposed - needs instructor review
+D291,UG,Undergraduate,Biochemistry,Fermentation: lactic acid and alcohol,OpenStax Biology 2e §7.5 Metabolism without Oxygen; MCAT 1D,compare,planned,proposed - needs instructor review
+D292,UG,Undergraduate,Biochemistry,Light-dependent reactions: the Z-scheme,OpenStax Biology 2e §8.2 The Light-Dependent Reactions of Photosynthesis,process,planned,proposed - needs instructor review
+D293,UG,Undergraduate,Biochemistry,The Calvin cycle,OpenStax Biology 2e §8.3 Using Light Energy to Make Organic Molecules,process,planned,proposed - needs instructor review
+D294,UG,Undergraduate,Biochemistry,Amino acid charge at different pH,OpenStax Organic Chemistry §26.2 Amino Acids and the Henderson–Hasselbalch Equation: Isoelectric Points; MCAT 1A,build,planned,proposed - needs instructor review
+D295,UG,Undergraduate,Biochemistry,Four levels of protein structure,OpenStax Organic Chemistry §26.9 Protein Structure; MCAT 1A,compare,planned,proposed - needs instructor review
+D296,UG,Undergraduate,Biochemistry,Nucleotides and the phosphodiester bond,OpenStax Organic Chemistry §28.1 Nucleotides and Nucleic Acids; MCAT 1B,build,planned,proposed - needs instructor review
+D297,UG,Undergraduate,Biochemistry,Beta-oxidation of fatty acids,OpenStax Organic Chemistry §29.3 Catabolism of Triacylglycerols: β -Oxidation; MCAT 1D,process,planned,proposed - needs instructor review
+D298,UG,Undergraduate,Biochemistry,Gluconeogenesis and glycolysis compared,OpenStax Organic Chemistry §29.8 Carbohydrate Biosynthesis: Gluconeogenesis; MCAT 1D,compare,planned,proposed - needs instructor review
+D299,UG,Undergraduate,Anatomy & Physiology,Layers of the skin,OpenStax Anatomy and Physiology 2e §5.1 Layers of the Skin; MCAT 3B,trace,planned,proposed - needs instructor review
+D300,UG,Undergraduate,Anatomy & Physiology,Long bone and the osteon,OpenStax Anatomy and Physiology 2e §6.3 Bone Structure; MCAT 3B,trace,planned,proposed - needs instructor review
+D301,UG,Undergraduate,Anatomy & Physiology,A synovial joint,OpenStax Anatomy and Physiology 2e §9.4 Synovial Joints; MCAT 3B,trace,planned,proposed - needs instructor review
+D302,UG,Undergraduate,Anatomy & Physiology,The neuromuscular junction,OpenStax Anatomy and Physiology 2e §10.2 Skeletal Muscle; MCAT 3B,trace,planned,proposed - needs instructor review
+D303,UG,Undergraduate,Anatomy & Physiology,The sarcomere and sliding filaments,OpenStax Anatomy and Physiology 2e §10.3 Muscle Fiber Contraction and Relaxation; MCAT 3B,compare,planned,proposed - needs instructor review
+D304,UG,Undergraduate,Anatomy & Physiology,The action potential,OpenStax Anatomy and Physiology 2e §12.4 The Action Potential; MCAT 3A,graph,planned,proposed - needs instructor review
+D305,UG,Undergraduate,Anatomy & Physiology,Synaptic transmission,OpenStax Anatomy and Physiology 2e §12.5 Communication Between Neurons; MCAT 3A,process,planned,proposed - needs instructor review
+D306,UG,Undergraduate,Anatomy & Physiology,Regions of the brain,OpenStax Anatomy and Physiology 2e §13.2 The Central Nervous System; MCAT 3A,trace,planned,proposed - needs instructor review
+D307,UG,Undergraduate,Anatomy & Physiology,The spinal reflex arc,OpenStax Anatomy and Physiology 2e §14.3 Motor Responses; MCAT 3A,process,planned,proposed - needs instructor review
+D308,UG,Undergraduate,Anatomy & Physiology,The hypothalamus-pituitary axis,OpenStax Anatomy and Physiology 2e §17.3 The Pituitary Gland and Hypothalamus; MCAT 3A,process,planned,proposed - needs instructor review
+D309,UG,Undergraduate,Anatomy & Physiology,Blood glucose regulation by insulin and glucagon,OpenStax Anatomy and Physiology 2e §17.9 The Endocrine Pancreas; MCAT 3A,process,planned,proposed - needs instructor review
+D310,UG,Undergraduate,Anatomy & Physiology,Formed elements of the blood,OpenStax Anatomy and Physiology 2e §18.2 Production of the Formed Elements; MCAT 3B,compare,planned,proposed - needs instructor review
+D311,UG,Undergraduate,Anatomy & Physiology,ABO blood types,OpenStax Anatomy and Physiology 2e §18.6 Blood Typing; MCAT 3B,compare,planned,proposed - needs instructor review
+D312,UG,Undergraduate,Anatomy & Physiology,"Heart chambers, valves and great vessels",OpenStax Anatomy and Physiology 2e §19.1 Heart Anatomy; MCAT 3B,trace,planned,proposed - needs instructor review
+D313,UG,Undergraduate,Anatomy & Physiology,The cardiac conduction system,OpenStax Anatomy and Physiology 2e §19.2 Cardiac Muscle and Electrical Activity; MCAT 3B,trace,planned,proposed - needs instructor review
+D314,UG,Undergraduate,Anatomy & Physiology,The cardiac cycle: pressures and volumes,OpenStax Anatomy and Physiology 2e §19.3 Cardiac Cycle; MCAT 3B,graph,planned,proposed - needs instructor review
+D315,UG,Undergraduate,Anatomy & Physiology,Capillary exchange,OpenStax Anatomy and Physiology 2e §20.3 Capillary Exchange; MCAT 4B,process,planned,proposed - needs instructor review
+D316,UG,Undergraduate,Anatomy & Physiology,The lymphatic system,OpenStax Anatomy and Physiology 2e §21.1 Anatomy of the Lymphatic and Immune Systems; MCAT 3B,trace,planned,proposed - needs instructor review
+D317,UG,Undergraduate,Anatomy & Physiology,Antibody structure,OpenStax Anatomy and Physiology 2e §21.4 The Adaptive Immune Response: B-lymphocytes and Antibodies; MCAT 3B,trace,planned,proposed - needs instructor review
+D318,UG,Undergraduate,Anatomy & Physiology,The respiratory tree and the alveolus,OpenStax Anatomy and Physiology 2e §22.1 Organs and Structures of the Respiratory System; MCAT 3B,trace,planned,proposed - needs instructor review
+D319,UG,Undergraduate,Anatomy & Physiology,The oxygen-hemoglobin dissociation curve,OpenStax Anatomy and Physiology 2e §22.5 Transport of Gases; MCAT 4B,graph,planned,proposed - needs instructor review
+D320,UG,Undergraduate,Anatomy & Physiology,The digestive tract,OpenStax Anatomy and Physiology 2e §23.1 Overview of the Digestive System; MCAT 3B,trace,planned,proposed - needs instructor review
+D321,UG,Undergraduate,Anatomy & Physiology,A villus of the small intestine,OpenStax Anatomy and Physiology 2e §23.5 The Small and Large Intestines; MCAT 3B,trace,planned,proposed - needs instructor review
+D322,UG,Undergraduate,Anatomy & Physiology,The nephron and its blood supply,OpenStax Anatomy and Physiology 2e §25.4 Microscopic Anatomy of the Kidney; MCAT 3B,trace,planned,proposed - needs instructor review
+D323,UG,Undergraduate,Anatomy & Physiology,Reabsorption along the nephron,OpenStax Anatomy and Physiology 2e §25.6 Tubular Reabsorption; MCAT 3B,process,planned,proposed - needs instructor review
+D324,UG,Undergraduate,Anatomy & Physiology,Spermatogenesis in the seminiferous tubule,OpenStax Anatomy and Physiology 2e §27.1 Anatomy and Physiology of the Testicular Reproductive System; MCAT 2C,trace,planned,proposed - needs instructor review
+D325,UG,Undergraduate,Anatomy & Physiology,The ovarian and uterine cycles,OpenStax Anatomy and Physiology 2e §27.2 Anatomy and Physiology of the Ovarian Reproductive System; MCAT 3B,graph,planned,proposed - needs instructor review
+D326,UG,Undergraduate,Anatomy & Physiology,Fertilization to blastocyst,OpenStax Anatomy and Physiology 2e §28.2 Embryonic Development; MCAT 2C,process,planned,proposed - needs instructor review
+D327,UG,Undergraduate,Microbiology,Parts of a light microscope,OpenStax Microbiology §2.3 Instruments of Microscopy,trace,planned,proposed - needs instructor review
+D328,UG,Undergraduate,Microbiology,"The Gram stain, step by step",OpenStax Microbiology §2.4 Staining Microscopic Specimens; MCAT 2B,process,planned,proposed - needs instructor review
+D329,UG,Undergraduate,Microbiology,Gram-positive and gram-negative cell walls,OpenStax Microbiology §3.3 Unique Characteristics of Prokaryotic Cells; MCAT 2B,compare,planned,proposed - needs instructor review
+D330,UG,Undergraduate,Microbiology,Enveloped and naked viruses,OpenStax Microbiology §6.1 Viruses; MCAT 2B,compare,planned,proposed - needs instructor review
+D331,UG,Undergraduate,Microbiology,The bacterial growth curve,OpenStax Microbiology §9.1 How Microbes Grow; MCAT 2B,graph,planned,proposed - needs instructor review
+D332,UG,Undergraduate,Microbiology,"Conjugation, transformation and transduction",OpenStax Microbiology §11.6 How Asexual Prokaryotes Achieve Genetic Diversity; MCAT 2B,compare,planned,proposed - needs instructor review
+D333,UG,Undergraduate,Microbiology,Phagocytosis,OpenStax Microbiology §17.4 Pathogen Recognition and Phagocytosis; MCAT 3B,process,planned,proposed - needs instructor review
+D334,UG,Undergraduate,Microbiology,Inflammation,OpenStax Microbiology §17.5 Inflammation and Fever; MCAT 3B,process,planned,proposed - needs instructor review
+D335,UG,Undergraduate,Microbiology,Humoral and cell-mediated immunity,OpenStax Microbiology §18.1 Overview of Specific Adaptive Immunity; MCAT 3B,compare,planned,proposed - needs instructor review
+D336,UG,Undergraduate,Chemistry,The Bohr model and emission lines,OpenStax Chemistry 2e §6.2 The Bohr Model; MCAT 4E,process,planned,proposed - needs instructor review
+D337,UG,Undergraduate,Chemistry,"Shapes of s, p and d orbitals",OpenStax Chemistry 2e §6.3 Development of Quantum Theory; MCAT 4E,trace,planned,proposed - needs instructor review
+D338,UG,Undergraduate,Chemistry,Orbital diagrams and electron configuration,OpenStax Chemistry 2e §6.4 Electronic Structure of Atoms (Electron Configurations); MCAT 4E,build,planned,proposed - needs instructor review
+D339,UG,Undergraduate,Chemistry,Periodic trends,OpenStax Chemistry 2e §6.5 Periodic Variations in Element Properties; MCAT 4E,graph,planned,proposed - needs instructor review
+D340,UG,Undergraduate,Chemistry,Formal charge and resonance: carbonate,OpenStax Chemistry 2e §7.4 Formal Charges and Resonance; MCAT 5B,build,planned,proposed - needs instructor review
+D341,UG,Undergraduate,Chemistry,VSEPR molecular geometries,OpenStax Chemistry 2e §7.6 Molecular Structure and Polarity; MCAT 5B,compare,planned,proposed - needs instructor review
+D342,UG,Undergraduate,Chemistry,"Hybrid orbitals: sp3, sp2 and sp",OpenStax Chemistry 2e §8.2 Hybrid Atomic Orbitals; MCAT 5B,compare,planned,proposed - needs instructor review
+D343,UG,Undergraduate,Chemistry,Molecular orbital diagram of O2,OpenStax Chemistry 2e §8.4 Molecular Orbital Theory; MCAT 5B,build,planned,proposed - needs instructor review
+D344,UG,Undergraduate,Chemistry,Intermolecular forces,OpenStax Chemistry 2e §10.1 Intermolecular Forces; MCAT 5B,compare,planned,proposed - needs instructor review
+D345,UG,Undergraduate,Chemistry,Phase diagram of carbon dioxide,OpenStax Chemistry 2e §10.4 Phase Diagrams; MCAT 5E,graph,planned,proposed - needs instructor review
+D346,UG,Undergraduate,Chemistry,Cubic unit cells,OpenStax Chemistry 2e §10.6 Lattice Structures in Crystalline Solids,trace,planned,proposed - needs instructor review
+D347,UG,Undergraduate,Chemistry,A two-step mechanism's energy profile,OpenStax Chemistry 2e §12.6 Reaction Mechanisms; MCAT 5E,graph,planned,proposed - needs instructor review
+D348,UG,Undergraduate,Chemistry,Le Chatelier's principle,OpenStax Chemistry 2e §13.3 Shifting Equilibria: Le Châtelier’s Principle; MCAT 5E,compare,planned,proposed - needs instructor review
+D349,UG,Undergraduate,Chemistry,How a buffer resists pH change,OpenStax Chemistry 2e §14.6 Buffers; MCAT 5A,process,planned,proposed - needs instructor review
+D350,UG,Undergraduate,Chemistry,Weak acid titration curve and the buffer region,OpenStax Chemistry 2e §14.7 Acid-Base Titrations; MCAT 5A,graph,planned,proposed - needs instructor review
+D351,UG,Undergraduate,Chemistry,Free energy and spontaneity,OpenStax Chemistry 2e §16.4 Free Energy; MCAT 5E,graph,planned,proposed - needs instructor review
+D352,UG,Undergraduate,Chemistry,An electrolytic cell,OpenStax Chemistry 2e §17.7 Electrolysis; MCAT 4C,trace,planned,proposed - needs instructor review
+D353,UG,Undergraduate,Organic Chemistry,Skeletal (line-angle) structures,OpenStax Organic Chemistry §1.12 Drawing Chemical Structures; MCAT 5D,build,planned,proposed - needs instructor review
+D354,UG,Undergraduate,Organic Chemistry,Newman projections of butane,OpenStax Organic Chemistry §3.7 Conformations of Other Alkanes; MCAT 5D,build,planned,proposed - needs instructor review
+D355,UG,Undergraduate,Organic Chemistry,The cyclohexane chair,OpenStax Organic Chemistry §4.5 Conformations of Cyclohexane; MCAT 5D,build,planned,proposed - needs instructor review
+D356,UG,Undergraduate,Organic Chemistry,Assigning R and S,OpenStax Organic Chemistry §5.5 Sequence Rules for Specifying Configuration; MCAT 5D,build,planned,proposed - needs instructor review
+D357,UG,Undergraduate,Organic Chemistry,Enantiomers and diastereomers,OpenStax Organic Chemistry §5.6 Diastereomers; MCAT 5D,compare,planned,proposed - needs instructor review
+D358,UG,Undergraduate,Organic Chemistry,Curved arrows: HBr adding to ethylene,OpenStax Organic Chemistry §6.5 Using Curved Arrows in Polar Reaction Mechanisms; MCAT 5D,build,planned,proposed - needs instructor review
+D359,UG,Undergraduate,Organic Chemistry,Transition states and intermediates,OpenStax Organic Chemistry §6.9 Describing a Reaction: Energy Diagrams and Transition States; MCAT 5E,graph,planned,proposed - needs instructor review
+D360,UG,Undergraduate,Organic Chemistry,Carbocation stability and Markovnikov's rule,OpenStax Organic Chemistry §7.9 Carbocation Structure and Stability; MCAT 5D,compare,planned,proposed - needs instructor review
+D361,UG,Undergraduate,Organic Chemistry,The SN2 reaction,OpenStax Organic Chemistry §11.2 The S N 2 Reaction; MCAT 5D,build,planned,proposed - needs instructor review
+D362,UG,Undergraduate,Organic Chemistry,The SN1 reaction,OpenStax Organic Chemistry §11.4 The S N 1 Reaction; MCAT 5D,build,planned,proposed - needs instructor review
+D363,UG,Undergraduate,Organic Chemistry,The E2 reaction,OpenStax Organic Chemistry §11.8 The E2 Reaction and the Deuterium Isotope Effect; MCAT 5D,build,planned,proposed - needs instructor review
+D364,UG,Undergraduate,Organic Chemistry,Reading an IR spectrum,OpenStax Organic Chemistry §12.7 Interpreting Infrared Spectra; MCAT 4D,graph,planned,proposed - needs instructor review
+D365,UG,Undergraduate,Organic Chemistry,Spin-spin splitting in 1H NMR,OpenStax Organic Chemistry §13.6 Spin–Spin Splitting in 1 H NMR Spectra; MCAT 4D,graph,planned,proposed - needs instructor review
+D366,UG,Undergraduate,Organic Chemistry,Benzene: resonance and aromaticity,OpenStax Organic Chemistry §15.2 Structure and Stability of Benzene,build,planned,proposed - needs instructor review
+D367,UG,Undergraduate,Physics,Free-body diagrams with tension and friction,OpenStax University Physics Volume 1 §5.7 Drawing Free-Body Diagrams; MCAT 4A,build,planned,proposed - needs instructor review
+D368,UG,Undergraduate,Physics,Buoyancy and Archimedes' principle,OpenStax University Physics Volume 1 §14.4 Archimedes’ Principle and Buoyancy; MCAT 4B,compare,planned,proposed - needs instructor review
+D369,UG,Undergraduate,Physics,Bernoulli's equation in a narrowing pipe,OpenStax University Physics Volume 1 §14.6 Bernoulli’s Equation; MCAT 4B,trace,planned,proposed - needs instructor review
+D370,UG,Undergraduate,Physics,Energy in simple harmonic motion,OpenStax University Physics Volume 1 §15.2 Energy in Simple Harmonic Motion; MCAT 4A,graph,planned,proposed - needs instructor review
+D371,UG,Undergraduate,Physics,Standing waves in open and closed pipes,OpenStax University Physics Volume 1 §17.4 Normal Modes of a Standing Sound Wave; MCAT 4D,compare,planned,proposed - needs instructor review
+D372,UG,Undergraduate,Physics,Thermodynamic processes on a PV diagram,OpenStax University Physics Volume 2 §3.4 Thermodynamic Processes; MCAT 5E,graph,planned,proposed - needs instructor review
+D373,UG,Undergraduate,Physics,The electric dipole field,OpenStax University Physics Volume 2 §5.7 Electric Dipoles; MCAT 4C,trace,planned,proposed - needs instructor review
+D374,UG,Undergraduate,Physics,Kirchhoff's rules in a two-loop circuit,OpenStax University Physics Volume 2 §10.3 Kirchhoff's Rules; MCAT 4C,build,planned,proposed - needs instructor review
+D375,UG,Undergraduate,Physics,Charging an RC circuit,OpenStax University Physics Volume 2 §10.5 RC Circuits; MCAT 4C,graph,planned,proposed - needs instructor review
+D376,UG,Undergraduate,Physics,A charged particle in a magnetic field,OpenStax University Physics Volume 2 §11.3 Motion of a Charged Particle in a Magnetic Field; MCAT 4C,trace,planned,proposed - needs instructor review
+D377,UG,Undergraduate,Physics,"The electromagnetic spectrum: wavelength, frequency and energy",OpenStax University Physics Volume 2 §16.5 The Electromagnetic Spectrum; MCAT 4D,compare,planned,proposed - needs instructor review
+D378,UG,Undergraduate,Physics,The eye: correcting near- and farsightedness,OpenStax University Physics Volume 3 §2.5 The Eye; MCAT 4D,build,planned,proposed - needs instructor review
+D379,UG,Undergraduate,Physics,The compound microscope,OpenStax University Physics Volume 3 §2.8 Microscopes and Telescopes; MCAT 4D,build,planned,proposed - needs instructor review
+D380,UG,Undergraduate,Physics,Young's double-slit interference,OpenStax University Physics Volume 3 §3.1 Young's Double-Slit Interference; MCAT 4D,compare,planned,proposed - needs instructor review
+D381,UG,Undergraduate,Physics,Nuclear binding energy per nucleon,OpenStax University Physics Volume 3 §10.2 Nuclear Binding Energy; MCAT 4E,graph,planned,proposed - needs instructor review
+D382,UG,Undergraduate,Physics,Radioactive decay and half-life,OpenStax University Physics Volume 3 §10.3 Radioactive Decay; MCAT 4E,graph,planned,proposed - needs instructor review

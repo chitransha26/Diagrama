@@ -1,0 +1,338 @@
+Organic Chemistry
+Ch 1 Structure and Bonding
+  1.1 Atomic Structure: The Nucleus
+  1.2 Atomic Structure: Orbitals
+  1.3 Atomic Structure: Electron Configurations
+  1.4 Development of Chemical Bonding Theory
+  1.5 Describing Chemical Bonds: Valence Bond Theory
+  1.6 sp 3 Hybrid Orbitals and the Structure of Methane
+  1.7 sp 3 Hybrid Orbitals and the Structure of Ethane
+  1.8 sp 2 Hybrid Orbitals and the Structure of Ethylene
+  1.9 sp Hybrid Orbitals and the Structure of Acetylene
+  1.10 Hybridization of Nitrogen, Oxygen, Phosphorus, and Sulfur
+  1.11 Describing Chemical Bonds: Molecular Orbital Theory
+  1.12 Drawing Chemical Structures
+Ch 2 Polar Covalent Bonds; Acids and Bases
+  2.1 Polar Covalent Bonds and Electronegativity
+  2.2 Polar Covalent Bonds and Dipole Moments
+  2.3 Formal Charges
+  2.4 Resonance
+  2.5 Rules for Resonance Forms
+  2.6 Drawing Resonance Forms
+  2.7 Acids and Bases: The Brønsted–Lowry Definition
+  2.8 Acid and Base Strength
+  2.9 Predicting Acid–Base Reactions from p K a Values
+  2.10 Organic Acids and Organic Bases
+  2.11 Acids and Bases: The Lewis Definition
+  2.12 Noncovalent Interactions between Molecules
+Ch 3 Organic Compounds: Alkanes and Their Stereochemistry
+  3.1 Functional Groups
+  3.2 Alkanes and Alkane Isomers
+  3.3 Alkyl Groups
+  3.4 Naming Alkanes
+  3.5 Properties of Alkanes
+  3.6 Conformations of Ethane
+  3.7 Conformations of Other Alkanes
+Ch 4 Organic Compounds: Cycloalkanes and Their Stereochemistry
+  4.1 Naming Cycloalkanes
+  4.2 Cis–Trans Isomerism in Cycloalkanes
+  4.3 Stability of Cycloalkanes: Ring Strain
+  4.4 Conformations of Cycloalkanes
+  4.5 Conformations of Cyclohexane
+  4.6 Axial and Equatorial Bonds in Cyclohexane
+  4.7 Conformations of Monosubstituted Cyclohexanes
+  4.8 Conformations of Disubstituted Cyclohexanes
+  4.9 Conformations of Polycyclic Molecules
+Ch 5 Stereochemistry at Tetrahedral Centers
+  5.1 Enantiomers and the Tetrahedral Carbon
+  5.2 The Reason for Handedness in Molecules: Chirality
+  5.3 Optical Activity
+  5.4 Pasteur’s Discovery of Enantiomers
+  5.5 Sequence Rules for Specifying Configuration
+  5.6 Diastereomers
+  5.7 Meso Compounds
+  5.8 Racemic Mixtures and the Resolution of Enantiomers
+  5.9 A Review of Isomerism
+  5.10 Chirality at Nitrogen, Phosphorus, and Sulfur
+  5.11 Prochirality
+  5.12 Chirality in Nature and Chiral Environments
+Ch 6 An Overview of Organic Reactions
+  6.1 Kinds of Organic Reactions
+  6.2 How Organic Reactions Occur: Mechanisms
+  6.3 Polar Reactions
+  6.4 An Example of a Polar Reaction: Addition of HBr to Ethylene
+  6.5 Using Curved Arrows in Polar Reaction Mechanisms
+  6.6 Radical Reactions
+  6.7 Describing a Reaction: Equilibria, Rates, and Energy Changes
+  6.8 Describing a Reaction: Bond Dissociation Energies
+  6.9 Describing a Reaction: Energy Diagrams and Transition States
+  6.10 Describing a Reaction: Intermediates
+  6.11 A Comparison Between Biological Reactions and Laboratory Reactions
+Ch 7 Alkenes: Structure and Reactivity
+  7.1 Industrial Preparation and Use of Alkenes
+  7.2 Calculating the Degree of Unsaturation
+  7.3 Naming Alkenes
+  7.4 Cis–Trans Isomerism in Alkenes
+  7.5 Alkene Stereochemistry and the E , Z Designation
+  7.6 Stability of Alkenes
+  7.7 Electrophilic Addition Reactions of Alkenes
+  7.8 Orientation of Electrophilic Additions: Markovnikov’s Rule
+  7.9 Carbocation Structure and Stability
+  7.10 The Hammond Postulate
+  7.11 Evidence for the Mechanism of Electrophilic Additions: Carbocation Rearrangements
+Ch 8 Alkenes: Reactions and Synthesis
+  8.1 Preparing Alkenes: A Preview of Elimination Reactions
+  8.2 Halogenation of Alkenes: Addition of X 2
+  8.3 Halohydrins from Alkenes: Addition of HO-X
+  8.4 Hydration of Alkenes: Addition of H 2 O by Oxymercuration
+  8.5 Hydration of Alkenes: Addition of H 2 O by Hydroboration
+  8.6 Reduction of Alkenes: Hydrogenation
+  8.7 Oxidation of Alkenes: Epoxidation and Hydroxylation
+  8.8 Oxidation of Alkenes: Cleavage to Carbonyl Compounds
+  8.9 Addition of Carbenes to Alkenes: Cyclopropane Synthesis
+  8.10 Radical Additions to Alkenes: Chain-Growth Polymers
+  8.11 Biological Additions of Radicals to Alkenes
+  8.12 Reaction Stereochemistry: Addition of H 2 O to an Achiral Alkene
+  8.13 Reaction Stereochemistry: Addition of H 2 O to a Chiral Alkene
+Ch 9 Alkynes: An Introduction to Organic Synthesis
+  9.1 Naming Alkynes
+  9.2 Preparation of Alkynes: Elimination Reactions of Dihalides
+  9.3 Reactions of Alkynes: Addition of HX and X 2
+  9.4 Hydration of Alkynes
+  9.5 Reduction of Alkynes
+  9.6 Oxidative Cleavage of Alkynes
+  9.7 Alkyne Acidity: Formation of Acetylide Anions
+  9.8 Alkylation of Acetylide Anions
+  9.9 An Introduction to Organic Synthesis
+Ch 10 Organohalides
+  10.1 Names and Structures of Alkyl Halides
+  10.2 Preparing Alkyl Halides from Alkanes: Radical Halogenation
+  10.3 Preparing Alkyl Halides from Alkenes: Allylic Bromination
+  10.4 Stability of the Allyl Radical: Resonance Revisited
+  10.5 Preparing Alkyl Halides from Alcohols
+  10.6 Reactions of Alkyl Halides: Grignard Reagents
+  10.7 Organometallic Coupling Reactions
+  10.8 Oxidation and Reduction in Organic Chemistry
+Ch 11 Reactions of Alkyl Halides: Nucleophilic Substitutions and Eliminations
+  11.1 The Discovery of Nucleophilic Substitution Reactions
+  11.2 The S N 2 Reaction
+  11.3 Characteristics of the S N 2 Reaction
+  11.4 The S N 1 Reaction
+  11.5 Characteristics of the S N 1 Reaction
+  11.6 Biological Substitution Reactions
+  11.7 Elimination Reactions: Zaitsev’s Rule
+  11.8 The E2 Reaction and the Deuterium Isotope Effect
+  11.9 The E2 Reaction and Cyclohexane Conformation
+  11.10 The E1 and E1cB Reactions
+  11.11 Biological Elimination Reactions
+  11.12 A Summary of Reactivity: S N 1, S N 2, E1, E1cB, and E2
+Ch 12 Structure Determination: Mass Spectrometry and Infrared Spectroscopy
+  12.1 Mass Spectrometry of Small Molecules: Magnetic-Sector Instruments
+  12.2 Interpreting Mass Spectra
+  12.3 Mass Spectrometry of Some Common Functional Groups
+  12.4 Mass Spectrometry in Biological Chemistry: Time-of-Flight (TOF) Instruments
+  12.5 Spectroscopy and the Electromagnetic Spectrum
+  12.6 Infrared Spectroscopy
+  12.7 Interpreting Infrared Spectra
+  12.8 Infrared Spectra of Some Common Functional Groups
+Ch 13 Structure Determination: Nuclear Magnetic Resonance Spectroscopy
+  13.1 Nuclear Magnetic Resonance Spectroscopy
+  13.2 The Nature of NMR Absorptions
+  13.3 Chemical Shifts
+  13.4 Chemical Shifts in 1 H NMR Spectroscopy
+  13.5 Integration of 1 H NMR Absorptions: Proton Counting
+  13.6 Spin–Spin Splitting in 1 H NMR Spectra
+  13.7 1 H NMR Spectroscopy and Proton Equivalence
+  13.8 More Complex Spin–Spin Splitting Patterns
+  13.9 Uses of 1 H NMR Spectroscopy
+  13.10 13 C NMR Spectroscopy: Signal Averaging and FT–NMR
+  13.11 Characteristics of 13 C NMR Spectroscopy
+  13.12 DEPT 13 C NMR Spectroscopy
+  13.13 Uses of 13 C NMR Spectroscopy
+Ch 14 Conjugated Compounds and Ultraviolet Spectroscopy
+  14.1 Stability of Conjugated Dienes: Molecular Orbital Theory
+  14.2 Electrophilic Additions to Conjugated Dienes: Allylic Carbocations
+  14.3 Kinetic versus Thermodynamic Control of Reactions
+  14.4 The Diels–Alder Cycloaddition Reaction
+  14.5 Characteristics of the Diels–Alder Reaction
+  14.6 Diene Polymers: Natural and Synthetic Rubbers
+  14.7 Ultraviolet Spectroscopy
+  14.8 Interpreting Ultraviolet Spectra: The Effect of Conjugation
+  14.9 Conjugation, Color, and the Chemistry of Vision
+Ch 15 Benzene and Aromaticity
+  15.1 Naming Aromatic Compounds
+  15.2 Structure and Stability of Benzene
+  15.3 Aromaticity and the Hückel 4 n + 2 Rule
+  15.4 Aromatic Ions
+  15.5 Aromatic Heterocycles: Pyridine and Pyrrole
+  15.6 Polycyclic Aromatic Compounds
+  15.7 Spectroscopy of Aromatic Compounds
+Ch 16 Chemistry of Benzene: Electrophilic Aromatic Substitution
+  16.1 Electrophilic Aromatic Substitution Reactions: Bromination
+  16.2 Other Aromatic Substitutions
+  16.3 Alkylation and Acylation of Aromatic Rings: The Friedel–Crafts Reaction
+  16.4 Substituent Effects in Electrophilic Substitutions
+  16.5 Trisubstituted Benzenes: Additivity of Effects
+  16.6 Nucleophilic Aromatic Substitution
+  16.7 Benzyne
+  16.8 Oxidation of Aromatic Compounds
+  16.9 Reduction of Aromatic Compounds
+  16.10 Synthesis of Polysubstituted Benzenes
+Ch 17 Alcohols and Phenols
+  17.1 Naming Alcohols and Phenols
+  17.2 Properties of Alcohols and Phenols
+  17.3 Preparation of Alcohols: A Review
+  17.4 Alcohols from Carbonyl Compounds: Reduction
+  17.5 Alcohols from Carbonyl Compounds: Grignard Reaction
+  17.6 Reactions of Alcohols
+  17.7 Oxidation of Alcohols
+  17.8 Protection of Alcohols
+  17.9 Phenols and Their Uses
+  17.10 Reactions of Phenols
+  17.11 Spectroscopy of Alcohols and Phenols
+Ch 18 Ethers and Epoxides; Thiols and Sulfides
+  18.1 Names and Properties of Ethers
+  18.2 Preparing Ethers
+  18.3 Reactions of Ethers: Acidic Cleavage
+  18.4 Cyclic Ethers: Epoxides
+  18.5 Reactions of Epoxides: Ring-Opening
+  18.6 Crown Ethers
+  18.7 Thiols and Sulfides
+  18.8 Spectroscopy of Ethers
+Ch 19 Aldehydes and Ketones: Nucleophilic Addition Reactions
+  19.1 Naming Aldehydes and Ketones
+  19.2 Preparing Aldehydes and Ketones
+  19.3 Oxidation of Aldehydes and Ketones
+  19.4 Nucleophilic Addition Reactions of Aldehydes and Ketones
+  19.5 Nucleophilic Addition of H 2 O: Hydration
+  19.6 Nucleophilic Addition of HCN: Cyanohydrin Formation
+  19.7 Nucleophilic Addition of Hydride and Grignard Reagents: Alcohol Formation
+  19.8 Nucleophilic Addition of Amines: Imine and Enamine Formation
+  19.9 Nucleophilic Addition of Hydrazine: The Wolff–Kishner Reaction
+  19.10 Nucleophilic Addition of Alcohols: Acetal Formation
+  19.11 Nucleophilic Addition of Phosphorus Ylides: The Wittig Reaction
+  19.12 Biological Reductions
+  19.13 Conjugate Nucleophilic Addition to α , β ‑Unsaturated Aldehydes and Ketones
+  19.14 Spectroscopy of Aldehydes and Ketones
+Ch 20 Carboxylic Acids and Nitriles
+  20.1 Naming Carboxylic Acids and Nitriles
+  20.2 Structure and Properties of Carboxylic Acids
+  20.3 Biological Acids and the Henderson–Hasselbalch Equation
+  20.4 Substituent Effects on Acidity
+  20.5 Preparing Carboxylic Acids
+  20.6 Reactions of Carboxylic Acids: An Overview
+  20.7 Chemistry of Nitriles
+  20.8 Spectroscopy of Carboxylic Acids and Nitriles
+Ch 21 Carboxylic Acid Derivatives: Nucleophilic Acyl Substitution Reactions
+  21.1 Naming Carboxylic Acid Derivatives
+  21.2 Nucleophilic Acyl Substitution Reactions
+  21.3 Reactions of Carboxylic Acids
+  21.4 Chemistry of Acid Halides
+  21.5 Chemistry of Acid Anhydrides
+  21.6 Chemistry of Esters
+  21.7 Chemistry of Amides
+  21.8 Chemistry of Thioesters and Acyl Phosphates: Biological Carboxylic Acid Derivatives
+  21.9 Polyamides and Polyesters: Step-Growth Polymers
+  21.10 Spectroscopy of Carboxylic Acid Derivatives
+Ch 22 Carbonyl Alpha-Substitution Reactions
+  22.1 Keto–Enol Tautomerism
+  22.2 Reactivity of Enols: α -Substitution Reactions
+  22.3 Alpha Halogenation of Aldehydes and Ketones
+  22.4 Alpha Bromination of Carboxylic Acids
+  22.5 Acidity of Alpha Hydrogen Atoms: Enolate Ion Formation
+  22.6 Reactivity of Enolate Ions
+  22.7 Alkylation of Enolate Ions
+Ch 23 Carbonyl Condensation Reactions
+  23.1 Carbonyl Condensations: The Aldol Reaction
+  23.2 Carbonyl Condensations versus Alpha Substitutions
+  23.3 Dehydration of Aldol Products: Synthesis of Enones
+  23.4 Using Aldol Reactions in Synthesis
+  23.5 Mixed Aldol Reactions
+  23.6 Intramolecular Aldol Reactions
+  23.7 The Claisen Condensation Reaction
+  23.8 Mixed Claisen Condensations
+  23.9 Intramolecular Claisen Condensations: The Dieckmann Cyclization
+  23.10 Conjugate Carbonyl Additions: The Michael Reaction
+  23.11 Carbonyl Condensations with Enamines: The Stork Enamine Reaction
+  23.12 The Robinson Annulation Reaction
+  23.13 Some Biological Carbonyl Condensation Reactions
+Ch 24 Amines and Heterocycles
+  24.1 Naming Amines
+  24.2 Structure and Properties of Amines
+  24.3 Basicity of Amines
+  24.4 Basicity of Arylamines
+  24.5 Biological Amines and the Henderson–Hasselbalch Equation
+  24.6 Synthesis of Amines
+  24.7 Reactions of Amines
+  24.8 Reactions of Arylamines
+  24.9 Heterocyclic Amines
+  24.10 Spectroscopy of Amines
+Ch 25 Biomolecules: Carbohydrates
+  25.1 Classification of Carbohydrates
+  25.2 Representing Carbohydrate Stereochemistry: Fischer Projections
+  25.3 D , L Sugars
+  25.4 Configurations of the Aldoses
+  25.5 Cyclic Structures of Monosaccharides: Anomers
+  25.6 Reactions of Monosaccharides
+  25.7 The Eight Essential Monosaccharides
+  25.8 Disaccharides
+  25.9 Polysaccharides and Their Synthesis
+  25.10 Some Other Important Carbohydrates
+Ch 26 Biomolecules: Amino Acids, Peptides, and Proteins
+  26.1 Structures of Amino Acids
+  26.2 Amino Acids and the Henderson–Hasselbalch Equation: Isoelectric Points
+  26.3 Synthesis of Amino Acids
+  26.4 Peptides and Proteins
+  26.5 Amino Acid Analysis of Peptides
+  26.6 Peptide Sequencing: The Edman Degradation
+  26.7 Peptide Synthesis
+  26.8 Automated Peptide Synthesis: The Merrifield Solid-Phase Method
+  26.9 Protein Structure
+  26.10 Enzymes and Coenzymes
+  26.11 How Do Enzymes Work? Citrate Synthase
+Ch 27 Biomolecules: Lipids
+  27.1 Waxes, Fats, and Oils
+  27.2 Soap
+  27.3 Phospholipids
+  27.4 Prostaglandins and Other Eicosanoids
+  27.5 Terpenoids
+  27.6 Steroids
+  27.7 Biosynthesis of Steroids
+Ch 28 Biomolecules: Nucleic Acids
+  28.1 Nucleotides and Nucleic Acids
+  28.2 Base Pairing in DNA
+  28.3 Replication of DNA
+  28.4 Transcription of DNA
+  28.5 Translation of RNA: Protein Biosynthesis
+  28.6 DNA Sequencing
+  28.7 DNA Synthesis
+  28.8 The Polymerase Chain Reaction
+Ch 29 The Organic Chemistry of Metabolic Pathways
+  29.1 An Overview of Metabolism and Biochemical Energy
+  29.2 Catabolism of Triacylglycerols: The Fate of Glycerol
+  29.3 Catabolism of Triacylglycerols: β -Oxidation
+  29.4 Biosynthesis of Fatty Acids
+  29.5 Catabolism of Carbohydrates: Glycolysis
+  29.6 Conversion of Pyruvate to Acetyl CoA
+  29.7 The Citric Acid Cycle
+  29.8 Carbohydrate Biosynthesis: Gluconeogenesis
+  29.9 Catabolism of Proteins: Deamination
+  29.10 Some Conclusions about Biological Chemistry
+Ch 30 Orbitals and Organic Chemistry: Pericyclic Reactions
+  30.1 Molecular Orbitals of Conjugated Pi Systems
+  30.2 Electrocyclic Reactions
+  30.3 Stereochemistry of Thermal Electrocyclic Reactions
+  30.4 Photochemical Electrocyclic Reactions
+  30.5 Cycloaddition Reactions
+  30.6 Stereochemistry of Cycloadditions
+  30.7 Sigmatropic Rearrangements
+  30.8 Some Examples of Sigmatropic Rearrangements
+  30.9 A Summary of Rules for Pericyclic Reactions
+Ch 31 Synthetic Polymers
+  31.1 Chain-Growth Polymers
+  31.2 Stereochemistry of Polymerization: Ziegler–Natta Catalysts
+  31.3 Copolymers
+  31.4 Step-Growth Polymers
+  31.5 Olefin Metathesis Polymerization
+  31.6 Intramolecular Olefin Metathesis
+  31.7 Polymer Structure and Physical Properties

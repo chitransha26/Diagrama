@@ -1,0 +1,31 @@
+1A. Structure and function of proteins and their constituent amino acids.
+1B. Transmission of genetic information from the gene to the protein.
+1C. Transmission of heritable information from generation to generation and the processes that
+1D. Principles of bioenergetics and fuel molecule metabolism.
+2A. Assemblies of molecules, cells, and groups of cells within single cellular and multicellular organisms.
+2B. The structure, growth, physiology, and genetics of prokaryotes and viruses.
+2C. Processes of cell division, differentiation, and specialization.
+3A. Structure and functions of the nervous and endocrine systems and ways these systems coordinate
+3B. Structure and integrative functions of the main organ systems.
+4A. Translational motion, forces, work, energy, and equilibrium in living systems.
+4B. Importance of fluids for the circulation of blood, gas movement, and gas exchange.
+4C. Electrochemistry and electrical circuits and their elements.
+4D. How light and sound interact with matter.
+4E. Atoms, nuclear decay, electronic structure, and atomic chemical behavior.
+5A. Unique nature of water and its solutions.
+5B. Nature of molecules and intermolecular interactions.
+5C. Separation and purification methods.
+5D. Structure, function, and reactivity of biologically relevant molecules.
+5E. Principles of chemical thermodynamics and kinetics.
+6A. Sensing the environment
+6B. Making sense of the environment
+6C. Responding to the world
+7A. Individual influences on behavior
+7B. Social processes that influence human behavior
+7C. Attitude and behavior change
+8A. Self-identity
+8B. Social thinking
+8C. Social interactions
+9A. Understanding social structure
+9B. Demographic characteristics and processes
+10A. Social inequality

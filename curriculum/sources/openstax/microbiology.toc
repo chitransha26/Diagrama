@@ -1,0 +1,154 @@
+Microbiology
+Ch 1 An Invisible World
+  1.1 What Our Ancestors Knew
+  1.2 A Systematic Approach
+  1.3 Types of Microorganisms
+Ch 2 How We See the Invisible World
+  2.1 The Properties of Light
+  2.2 Peering Into the Invisible World
+  2.3 Instruments of Microscopy
+  2.4 Staining Microscopic Specimens
+Ch 3 The Cell
+  3.1 Spontaneous Generation
+  3.2 Foundations of Modern Cell Theory
+  3.3 Unique Characteristics of Prokaryotic Cells
+  3.4 Unique Characteristics of Eukaryotic Cells
+Ch 4 Prokaryotic Diversity
+  4.1 Prokaryote Habitats, Relationships, and Microbiomes
+  4.2 Proteobacteria
+  4.3 Nonproteobacteria Gram-Negative Bacteria and Phototrophic Bacteria
+  4.4 Gram-Positive Bacteria
+  4.5 Deeply Branching Bacteria
+  4.6 Archaea
+Ch 5 The Eukaryotes of Microbiology
+  5.1 Unicellular Eukaryotic Parasites
+  5.2 Parasitic Helminths
+  5.3 Fungi
+  5.4 Algae
+  5.5 Lichens
+Ch 6 Acellular Pathogens
+  6.1 Viruses
+  6.2 The Viral Life Cycle
+  6.3 Isolation, Culture, and Identification of Viruses
+  6.4 Viroids, Virusoids, and Prions
+Ch 7 Microbial Biochemistry
+  7.1 Organic Molecules
+  7.2 Carbohydrates
+  7.3 Lipids
+  7.4 Proteins
+  7.5 Using Biochemistry to Identify Microorganisms
+Ch 8 Microbial Metabolism
+  8.1 Energy, Matter, and Enzymes
+  8.2 Catabolism of Carbohydrates
+  8.3 Cellular Respiration
+  8.4 Fermentation
+  8.5 Catabolism of Lipids and Proteins
+  8.6 Photosynthesis
+  8.7 Biogeochemical Cycles
+Ch 9 Microbial Growth
+  9.1 How Microbes Grow
+  9.2 Oxygen Requirements for Microbial Growth
+  9.3 The Effects of pH on Microbial Growth
+  9.4 Temperature and Microbial Growth
+  9.5 Other Environmental Conditions that Affect Growth
+  9.6 Media Used for Bacterial Growth
+Ch 10 Biochemistry of the Genome
+  10.1 Using Microbiology to Discover the Secrets of Life
+  10.2 Structure and Function of DNA
+  10.3 Structure and Function of RNA
+  10.4 Structure and Function of Cellular Genomes
+Ch 11 Mechanisms of Microbial Genetics
+  11.1 The Functions of Genetic Material
+  11.2 DNA Replication
+  11.3 RNA Transcription
+  11.4 Protein Synthesis (Translation)
+  11.5 Mutations
+  11.6 How Asexual Prokaryotes Achieve Genetic Diversity
+  11.7 Gene Regulation: Operon Theory
+Ch 12 Modern Applications of Microbial Genetics
+  12.1 Microbes and the Tools of Genetic Engineering
+  12.2 Visualizing and Characterizing DNA, RNA, and Protein
+  12.3 Whole Genome Methods and Pharmaceutical Applications of Genetic Engineering
+  12.4 Gene Therapy
+Ch 13 Control of Microbial Growth
+  13.1 Controlling Microbial Growth
+  13.2 Using Physical Methods to Control Microorganisms
+  13.3 Using Chemicals to Control Microorganisms
+  13.4 Testing the Effectiveness of Antiseptics and Disinfectants
+Ch 14 Antimicrobial Drugs
+  14.1 History of Chemotherapy and Antimicrobial Discovery
+  14.2 Fundamentals of Antimicrobial Chemotherapy
+  14.3 Mechanisms of Antibacterial Drugs
+  14.4 Mechanisms of Other Antimicrobial Drugs
+  14.5 Drug Resistance
+  14.6 Testing the Effectiveness of Antimicrobials
+  14.7 Current Strategies for Antimicrobial Discovery
+Ch 15 Microbial Mechanisms of Pathogenicity
+  15.1 Characteristics of Infectious Disease
+  15.2 How Pathogens Cause Disease
+  15.3 Virulence Factors of Bacterial and Viral Pathogens
+  15.4 Virulence Factors of Eukaryotic Pathogens
+Ch 16 Disease and Epidemiology
+  16.1 The Language of Epidemiologists
+  16.2 Tracking Infectious Diseases
+  16.3 Modes of Disease Transmission
+  16.4 Global Public Health
+Ch 17 Innate Nonspecific Host Defenses
+  17.1 Physical Defenses
+  17.2 Chemical Defenses
+  17.3 Cellular Defenses
+  17.4 Pathogen Recognition and Phagocytosis
+  17.5 Inflammation and Fever
+Ch 18 Adaptive Specific Host Defenses
+  18.1 Overview of Specific Adaptive Immunity
+  18.2 Major Histocompatibility Complexes and Antigen-Presenting Cells
+  18.3 T Lymphocytes and Cellular Immunity
+  18.4 B Lymphocytes and Humoral Immunity
+  18.5 Vaccines
+Ch 19 Diseases of the Immune System
+  19.1 Hypersensitivities
+  19.2 Autoimmune Disorders
+  19.3 Organ Transplantation and Rejection
+  19.4 Immunodeficiency
+  19.5 Cancer Immunobiology and Immunotherapy
+Ch 20 Laboratory Analysis of the Immune Response
+  20.1 Polyclonal and Monoclonal Antibody Production
+  20.2 Detecting Antigen-Antibody Complexes
+  20.3 Agglutination Assays
+  20.4 EIAs and ELISAs
+  20.5 Fluorescent Antibody Techniques
+Ch 21 Skin and Eye Infections
+  21.1 Anatomy and Normal Microbiota of the Skin and Eyes
+  21.2 Bacterial Infections of the Skin and Eyes
+  21.3 Viral Infections of the Skin and Eyes
+  21.4 Mycoses of the Skin
+  21.5 Protozoan and Helminthic Infections of the Skin and Eyes
+Ch 22 Respiratory System Infections
+  22.1 Anatomy and Normal Microbiota of the Respiratory Tract
+  22.2 Bacterial Infections of the Respiratory Tract
+  22.3 Viral Infections of the Respiratory Tract
+  22.4 Respiratory Mycoses
+Ch 23 Urogenital System Infections
+  23.1 Anatomy and Normal Microbiota of the Urogenital Tract
+  23.2 Bacterial Infections of the Urinary System
+  23.3 Bacterial Infections of the Reproductive System
+  23.4 Viral Infections of the Reproductive System
+  23.5 Fungal Infections of the Reproductive System
+  23.6 Protozoan Infections of the Urogenital System
+Ch 24 Digestive System Infections
+  24.1 Anatomy and Normal Microbiota of the Digestive System
+  24.2 Microbial Diseases of the Mouth and Oral Cavity
+  24.3 Bacterial Infections of the Gastrointestinal Tract
+  24.4 Viral Infections of the Gastrointestinal Tract
+  24.5 Protozoan Infections of the Gastrointestinal Tract
+  24.6 Helminthic Infections of the Gastrointestinal Tract
+Ch 25 Circulatory and Lymphatic System Infections
+  25.1 Anatomy of the Circulatory and Lymphatic Systems
+  25.2 Bacterial Infections of the Circulatory and Lymphatic Systems
+  25.3 Viral Infections of the Circulatory and Lymphatic Systems
+  25.4 Parasitic Infections of the Circulatory and Lymphatic Systems
+Ch 26 Nervous System Infections
+  26.1 Anatomy of the Nervous System
+  26.2 Bacterial Diseases of the Nervous System
+  26.3 Acellular Diseases of the Nervous System
+  26.4 Fungal and Parasitic Diseases of the Nervous System

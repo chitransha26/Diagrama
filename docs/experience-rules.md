@@ -83,9 +83,13 @@ the app, so a lesson can't break them; the rest need checking by hand when autho
 - Teacher or scientist review is a later, pre-launch step (PRD §09).
 
 ## Curriculum
-- NGSS for grades 3–12, plus AP Biology and AP Chemistry; mapped in `curriculum/coverage.csv`.
-- Browse by grade band: Grades 3–5, Middle school, High school. K–2 is deferred until
-  read-aloud audio exists.
+- The audience runs from grade 3 through undergraduate.
+- NGSS for grades 3–12, plus AP Biology and AP Chemistry. Undergraduate diagrams follow the
+  OpenStax intro textbooks (each cites a book section) and, where it applies, an MCAT
+  content category. All mapped in `curriculum/coverage.csv`; citations are checked against
+  `curriculum/sources`. **(enforced)**
+- Browse by grade band: Grades 3–5, Middle school, High school, and Undergraduate once its
+  first lesson ships. K–2 is deferred until read-aloud audio exists.
 
 ## How changes ship
 - Built and checked on a spare simulator; installed on the product owner's simulator only
