@@ -1,0 +1,419 @@
+{
+ "id": "g4-flower-parts",
+ "title": "Parts of a flower",
+ "grade": "4",
+ "subject": "Life science",
+ "standard": "4-LS1-1",
+ "minutes": 9,
+ "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS 4-LS1-1: Construct an argument that plants and animals have internal and external structures that function to support survival, growth, behavior, and reproduction"
+  },
+  {
+   "title": "OpenStax Biology 2e, 26.3 Angiosperms",
+   "url": "https://openstax.org/books/biology-2e/pages/26-3-angiosperms"
+  },
+  {
+   "title": "OpenStax Biology 2e, 32.2 Pollination and Fertilization",
+   "url": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization"
+  },
+  {
+   "title": "OpenStax Biology 2e, 30.2 Stems",
+   "url": "https://openstax.org/books/biology-2e/pages/30-2-stems"
+  },
+  {
+   "title": "USDA Forest Service: Flower parts (Desert Gardeners)",
+   "url": "https://fs.usda.gov/wildflowers/kids/teacher/documents/k5_DesertGardeners_flowerParts.pdf"
+  }
+ ],
+ "keywords": [
+  "flower",
+  "petal",
+  "sepal",
+  "stamen",
+  "anther",
+  "filament",
+  "pistil",
+  "stigma",
+  "style",
+  "ovary",
+  "ovule",
+  "pollen",
+  "pollination",
+  "seed",
+  "fruit",
+  "plant structures",
+  "reproduction"
+ ],
+ "legend": [
+  {
+   "name": "Stem and leaf",
+   "color": "#4F8A3B",
+   "meaning": "Green: they make food from sunlight"
+  },
+  {
+   "name": "Sepals",
+   "color": "#6FA845",
+   "meaning": "Usually green, like small leaves"
+  },
+  {
+   "name": "Petals",
+   "color": "#E58FB0",
+   "meaning": "Shown pink; petal colors vary by kind of flower"
+  },
+  {
+   "name": "Anthers",
+   "color": "#E7C340",
+   "meaning": "Shown yellow, the color of much pollen"
+  }
+ ],
+ "structures": [
+  {
+   "id": "stem",
+   "name": "stem and leaf",
+   "colorName": "stem and leaf",
+   "fill": "#4F8A3B",
+   "outlines": [
+    {
+     "line": [
+      500,
+      955,
+      500,
+      716
+     ]
+    },
+    {
+     "path": "M 496 860 C 450 820 380 815 330 835 C 380 870 450 880 496 872 Z"
+    },
+    {
+     "path": "M 504.0 860 C 550.0 820 620.0 815 670.0 835 C 620.0 870 550.0 880 504.0 872 Z"
+    }
+   ]
+  },
+  {
+   "id": "sepals",
+   "name": "sepals",
+   "colorName": "sepals",
+   "fill": "#6FA845",
+   "outlines": [
+    {
+     "path": "M 470 714 C 440 726 392 726 356 702 C 396 692 440 696 470 702 Z"
+    },
+    {
+     "path": "M 530.0 714 C 560.0 726 608.0 726 644.0 702 C 604.0 692 560.0 696 530.0 702 Z"
+    }
+   ]
+  },
+  {
+   "id": "petals",
+   "name": "petals",
+   "colorName": "petals",
+   "fill": "#E58FB0",
+   "outlines": [
+    {
+     "path": "M 456 704 C 350 700 210 610 196 424 C 312 428 430 540 462 680 Z"
+    },
+    {
+     "path": "M 544.0 704 C 650.0 700 790.0 610 804.0 424 C 688.0 428 570.0 540 538.0 680 Z"
+    }
+   ]
+  },
+  {
+   "id": "stamens",
+   "name": "stamens",
+   "colorName": "anthers",
+   "fill": "#E7C340",
+   "outlines": [
+    {
+     "line": [
+      452,
+      700,
+      370,
+      540
+     ]
+    },
+    {
+     "line": [
+      548,
+      700,
+      630,
+      540
+     ]
+    },
+    {
+     "line": [
+      474,
+      704,
+      420,
+      500
+     ]
+    },
+    {
+     "line": [
+      526,
+      704,
+      580,
+      500
+     ]
+    },
+    {
+     "ellipse": [
+      366,
+      520,
+      13,
+      20
+     ]
+    },
+    {
+     "ellipse": [
+      634,
+      520,
+      13,
+      20
+     ]
+    },
+    {
+     "ellipse": [
+      418,
+      480,
+      13,
+      20
+     ]
+    },
+    {
+     "ellipse": [
+      582,
+      480,
+      13,
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pistil",
+   "name": "pistil",
+   "outlines": [
+    {
+     "ellipse": [
+      500,
+      630,
+      26,
+      40
+     ]
+    },
+    {
+     "line": [
+      500,
+      590,
+      500,
+      440
+     ]
+    },
+    {
+     "ellipse": [
+      500,
+      426,
+      28,
+      14
+     ]
+    }
+   ],
+   "details": [
+    {
+     "circle": [
+      500,
+      612,
+      7
+     ]
+    },
+    {
+     "circle": [
+      500,
+      630,
+      7
+     ]
+    },
+    {
+     "circle": [
+      500,
+      648,
+      7
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Stem and leaves",
+   "structure": "stem",
+   "instruction": "Trace the stem and its two leaves.",
+   "note": {
+    "text": "The stem holds the flower up. Inside, tubes carry water up from the roots. The leaves make food for the plant from sunlight.",
+    "remember": "Stem = support and transport."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sepals",
+   "structure": "sepals",
+   "instruction": "Trace the two small green sepals under the flower.",
+   "note": {
+    "text": "Sepals look like small leaves. Before the flower opened, they wrapped around the bud to protect it.",
+    "remember": "Sepals protect the bud."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Petals",
+   "structure": "petals",
+   "instruction": "Trace the two petals.",
+   "note": {
+    "text": "Colorful petals attract animals like bees. As they visit, they carry pollen from flower to flower.",
+    "remember": "Petals attract pollinators."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Stamens",
+   "structure": "stamens",
+   "instruction": "Trace the four stamens: each thin stalk and its anther on top.",
+   "note": {
+    "text": "Stamens make pollen. Each is a thin stalk, the filament, holding up an anther, where the pollen grows.",
+    "remember": "Anthers make pollen."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Pistil",
+   "structure": "pistil",
+   "instruction": "Trace the pistil in the middle: the ovary, the style and the stigma on top.",
+   "note": {
+    "text": "The pistil's sticky top, the stigma, traps pollen. The style is the stalk that leads down to the ovary.",
+    "remember": "Stigma, style, ovary: the pistil."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ovules",
+   "structure": "pistil",
+   "part": "details",
+   "instruction": "Dab the three ovules inside the ovary.",
+   "note": {
+    "text": "After pollination, each ovule can become a seed, and the ovary around them grows into the fruit.",
+    "remember": "Ovules become seeds; the ovary becomes the fruit."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "stem",
+    "sepals",
+    "petals",
+    "stamens"
+   ],
+   "instruction": "Color the flower. The pistil stays white so you can see the ovules."
+  },
+  {
+   "type": "label",
+   "title": "Label the parts",
+   "instruction": "Pick the right name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      330,
+      500
+     ],
+     "answer": "Petal",
+     "role": "Attracts pollinators with its color."
+    },
+    {
+     "n": 2,
+     "at": [
+      366,
+      520
+     ],
+     "answer": "Anther",
+     "role": "Makes pollen.",
+     "mistakes": {
+      "Stigma": "The stigma is on top of the pistil in the middle. This is on a stamen: it's an anther."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      500,
+      426
+     ],
+     "answer": "Stigma",
+     "role": "Sticky top that traps pollen.",
+     "mistakes": {
+      "Anther": "Anthers are on the stamens around the edge. The sticky top in the middle is the stigma."
+     }
+    },
+    {
+     "n": 4,
+     "at": [
+      500,
+      662
+     ],
+     "answer": "Ovary",
+     "role": "Holds the ovules; becomes the fruit."
+    },
+    {
+     "n": 5,
+     "at": [
+      410,
+      710
+     ],
+     "answer": "Sepal",
+     "role": "Protected the bud."
+    }
+   ],
+   "vocabulary": [
+    "Petal",
+    "Sepal",
+    "Anther",
+    "Stigma",
+    "Ovary",
+    "Root",
+    "Seed"
+   ],
+   "commonMistakes": {
+    "Root": "Roots are under the ground, holding the plant and taking in water.",
+    "Seed": "Seeds come later: the ovules inside the ovary become seeds after pollination."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Use what you've drawn.",
+   "showsDiagram": true,
+   "question": "How do a flower's parts help the plant make new plants?",
+   "options": [
+    {
+     "text": "Petals attract pollinators, which carry pollen to the stigma so seeds can form",
+     "correct": true,
+     "feedback": "Yes. Pollen from an anther must reach a stigma. Then ovules become seeds that grow into new plants."
+    },
+    {
+     "text": "The stem makes the seeds",
+     "feedback": "The stem holds the flower up and carries water. Seeds form inside the ovary."
+    },
+    {
+     "text": "Sepals turn into fruit",
+     "feedback": "Sepals protect the bud. It's the ovary that grows into the fruit."
+    },
+    {
+     "text": "Petals soak up water for the seeds",
+     "feedback": "Roots take in water. Petals help by attracting pollinators."
+    }
+   ]
+  }
+ ]
+}

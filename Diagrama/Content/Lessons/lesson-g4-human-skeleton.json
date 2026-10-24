@@ -1,0 +1,434 @@
+{
+ "id": "g4-human-skeleton",
+ "title": "The human skeleton: major bones",
+ "grade": "4",
+ "subject": "Life science",
+ "standard": "4-LS1-1",
+ "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS 4-LS1-1: Construct an argument that plants and animals have internal and external structures that function to support survival, growth, behavior, and reproduction"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 6.1 The Functions of the Skeletal System",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/6-1-the-functions-of-the-skeletal-system"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 6.2 Bone Classification (206 bones)",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/6-2-bone-classification"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 7.4 The Thoracic Cage",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 1.6 Anatomical Terminology (skull and spine protect the brain and spinal cord)",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-6-anatomical-terminology"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 8.4 Bones of the Lower Limb",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+  }
+ ],
+ "keywords": [
+  "skeleton",
+  "bones",
+  "skull",
+  "spine",
+  "backbone",
+  "vertebrae",
+  "ribs",
+  "rib cage",
+  "pelvis",
+  "hip",
+  "femur",
+  "thigh bone",
+  "kneecap",
+  "support",
+  "protection",
+  "internal structures"
+ ],
+ "structures": [
+  {
+   "id": "skull",
+   "name": "skull",
+   "pen": "bold",
+   "outlines": [
+    {
+     "ellipse": [
+      500,
+      136,
+      54,
+      64
+     ]
+    }
+   ]
+  },
+  {
+   "id": "spine",
+   "name": "spine",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      500,
+      214,
+      500,
+      556
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ribs",
+   "name": "ribs",
+   "outlines": [
+    {
+     "path": "M 490 262 C 432 256 398 292 404 330"
+    },
+    {
+     "path": "M 490 302 C 432 296 398 332 404 370"
+    },
+    {
+     "path": "M 490 342 C 432 336 398 372 404 410"
+    },
+    {
+     "path": "M 490 382 C 432 376 398 412 404 450"
+    },
+    {
+     "path": "M 510.0 262 C 568.0 256 602.0 292 596.0 330"
+    },
+    {
+     "path": "M 510.0 302 C 568.0 296 602.0 332 596.0 370"
+    },
+    {
+     "path": "M 510.0 342 C 568.0 336 602.0 372 596.0 410"
+    },
+    {
+     "path": "M 510.0 382 C 568.0 376 602.0 412 596.0 450"
+    }
+   ]
+  },
+  {
+   "id": "arms",
+   "name": "collarbones and arm bones",
+   "outlines": [
+    {
+     "line": [
+      494,
+      226,
+      386,
+      240
+     ]
+    },
+    {
+     "line": [
+      506,
+      226,
+      614,
+      240
+     ]
+    },
+    {
+     "line": [
+      376,
+      254,
+      350,
+      420
+     ]
+    },
+    {
+     "line": [
+      346,
+      442,
+      326,
+      592
+     ]
+    },
+    {
+     "line": [
+      624,
+      254,
+      650,
+      420
+     ]
+    },
+    {
+     "line": [
+      654,
+      442,
+      674,
+      592
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pelvis",
+   "name": "pelvis",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 432 566 C 432 616 466 640 500 640 C 534 640 568 616 568 566 C 540 590 460 590 432 566 Z"
+    }
+   ]
+  },
+  {
+   "id": "legs",
+   "name": "leg bones",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      466,
+      652,
+      452,
+      804
+     ]
+    },
+    {
+     "line": [
+      534,
+      652,
+      548,
+      804
+     ]
+    },
+    {
+     "line": [
+      452,
+      836,
+      448,
+      968
+     ]
+    },
+    {
+     "line": [
+      548,
+      836,
+      552,
+      968
+     ]
+    }
+   ],
+   "details": [
+    {
+     "circle": [
+      452,
+      820,
+      9
+     ]
+    },
+    {
+     "circle": [
+      548,
+      820,
+      9
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Skull",
+   "structure": "skull",
+   "instruction": "Trace the skull.",
+   "note": {
+    "text": "Your skull is a hard case of bone that protects your brain.",
+    "remember": "Skull protects the brain."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Spine",
+   "structure": "spine",
+   "instruction": "Trace the spine down the middle.",
+   "note": {
+    "text": "Your spine, or backbone, is a stack of small bones. It holds your body up and protects the spinal cord inside it.",
+    "remember": "Spine: support and protection."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ribs",
+   "structure": "ribs",
+   "instruction": "Trace the four ribs on each side.",
+   "note": {
+    "text": "Your ribs form a cage around your chest. It protects your heart and lungs. Most people have 12 pairs; we've drawn 4.",
+    "remember": "Rib cage protects heart and lungs."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Arm bones",
+   "structure": "arms",
+   "instruction": "Draw the two collarbones, then the upper and lower bones of each arm.",
+   "note": {
+    "text": "Your arms hang from your collarbones at the shoulders. Muscles pull on the arm bones to move them, so you can lift, throw and write."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Pelvis",
+   "structure": "pelvis",
+   "instruction": "Trace the pelvis, or hip bones.",
+   "note": {
+    "text": "The pelvis connects your legs to your body. It's built to be steady, so it can support your weight when you stand and walk."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Leg bones",
+   "structure": "legs",
+   "instruction": "Draw both legs: the thigh bones, then the shin bones.",
+   "note": {
+    "text": "The thigh bone, or femur, is the longest and strongest bone in your body. It's about a quarter of your height.",
+    "remember": "Femur: longest bone."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Kneecaps",
+   "structure": "legs",
+   "part": "details",
+   "instruction": "Dab both kneecaps.",
+   "note": {
+    "text": "Each kneecap sits in front of the knee joint, where the thigh bone meets the shin bone."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Label the bones",
+   "instruction": "Pick the right name for each numbered bone.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      500,
+      136
+     ],
+     "answer": "Skull",
+     "role": "Protects the brain."
+    },
+    {
+     "n": 2,
+     "at": [
+      420,
+      320
+     ],
+     "answer": "Ribs",
+     "role": "Protect the heart and lungs."
+    },
+    {
+     "n": 3,
+     "at": [
+      500,
+      470
+     ],
+     "answer": "Spine",
+     "synonyms": [
+      "Backbone"
+     ],
+     "role": "Supports the body; protects the spinal cord."
+    },
+    {
+     "n": 4,
+     "at": [
+      500,
+      600
+     ],
+     "answer": "Pelvis",
+     "synonyms": [
+      "Hip bones"
+     ],
+     "role": "Connects the legs to the body."
+    },
+    {
+     "n": 5,
+     "at": [
+      459,
+      728
+     ],
+     "answer": "Femur",
+     "synonyms": [
+      "Thigh bone"
+     ],
+     "role": "The longest, strongest bone.",
+     "mistakes": {
+      "Shin bone": "The shin bone is below the knee. Above it is the femur, the thigh bone."
+     }
+    }
+   ],
+   "vocabulary": [
+    "Skull",
+    "Ribs",
+    "Spine",
+    "Pelvis",
+    "Femur",
+    "Shin bone",
+    "Heart"
+   ],
+   "commonMistakes": {
+    "Heart": "The heart isn't a bone: it's a muscle, protected by the ribs."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Use what you've drawn.",
+   "showsDiagram": true,
+   "question": "Which bones protect the organs you need to breathe?",
+   "options": [
+    {
+     "text": "The ribs",
+     "correct": true,
+     "feedback": "Yes. The rib cage surrounds the lungs, and the heart beside them."
+    },
+    {
+     "text": "The skull",
+     "feedback": "The skull protects the brain. The ribs protect the lungs."
+    },
+    {
+     "text": "The femur",
+     "feedback": "The femur is the thigh bone: it holds you up. The ribs protect the lungs."
+    },
+    {
+     "text": "The pelvis",
+     "feedback": "The pelvis connects your legs. The rib cage protects your lungs."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Fun fact",
+   "instruction": "One more about bones.",
+   "showsDiagram": false,
+   "question": "A baby is born with about 300 bones, but an adult has 206. What happens to the rest?",
+   "options": [
+    {
+     "text": "Some of them fuse, growing together into one bone",
+     "correct": true,
+     "feedback": "Right. As babies grow, some bones join together. That's how 270 to 300 bones become 206."
+    },
+    {
+     "text": "They fall out like baby teeth",
+     "feedback": "Bones don't fall out. Some of them grow together, or fuse."
+    },
+    {
+     "text": "They turn into muscles",
+     "feedback": "Bones stay bone. Some of them join together as you grow."
+    },
+    {
+     "text": "Babies don't really have more bones",
+     "feedback": "They do: about 270 to 300. Some fuse together over time."
+    }
+   ]
+  }
+ ]
+}

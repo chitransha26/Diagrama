@@ -1,0 +1,361 @@
+{
+ "id": "g4-bird-anatomy",
+ "title": "Bird external anatomy",
+ "grade": "4",
+ "subject": "Zoology",
+ "standard": "4-LS1-1",
+ "minutes": 9,
+ "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS 4-LS1-1: Construct an argument that plants and animals have internal and external structures that function to support survival, growth, behavior, and reproduction"
+  },
+  {
+   "title": "OpenStax Biology 2e, 29.5 Birds",
+   "url": "https://openstax.org/books/biology-2e/pages/29-5-birds"
+  },
+  {
+   "title": "OpenStax Biology 2e, 18.1 Understanding Evolution (beak shape and food)",
+   "url": "https://openstax.org/books/biology-2e/pages/18-1-understanding-evolution"
+  },
+  {
+   "title": "Cornell Lab of Ornithology, All About Birds: Northern Cardinal identification",
+   "url": "https://www.allaboutbirds.org/guide/Northern_Cardinal/id"
+  }
+ ],
+ "keywords": [
+  "bird",
+  "cardinal",
+  "beak",
+  "bill",
+  "feathers",
+  "wing",
+  "tail",
+  "crest",
+  "feet",
+  "hollow bones",
+  "flight",
+  "external structures"
+ ],
+ "legend": [
+  {
+   "name": "Feathers",
+   "color": "#C8202E",
+   "meaning": "A male northern cardinal is brilliant red all over"
+  },
+  {
+   "name": "Not shown",
+   "color": null,
+   "meaning": "His reddish bill and the black mask around it"
+  }
+ ],
+ "structures": [
+  {
+   "id": "body",
+   "name": "head and body",
+   "colorName": "body feathers",
+   "fill": "#C8202E",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 702 362 C 694 322 652 304 622 324 L 588 282 L 588 338 C 520 356 444 378 384 410 C 312 446 268 466 236 482 C 290 512 386 550 476 560 C 586 568 664 520 692 452 C 702 424 706 396 702 362 Z"
+    }
+   ]
+  },
+  {
+   "id": "beak",
+   "name": "beak",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      704,
+      366,
+      766,
+      392,
+      704,
+      414
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wing",
+   "name": "wing",
+   "colorName": "wing",
+   "fill": "#B01B28",
+   "outlines": [
+    {
+     "path": "M 606 424 C 540 404 430 424 342 472 C 440 498 540 494 606 458 Z"
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      580,
+      436,
+      430,
+      452
+     ]
+    },
+    {
+     "line": [
+      570,
+      468,
+      420,
+      482
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tail",
+   "name": "tail",
+   "colorName": "tail",
+   "fill": "#B01B28",
+   "outlines": [
+    {
+     "polygon": [
+      262,
+      470,
+      96,
+      436,
+      100,
+      508,
+      262,
+      500
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eye",
+   "name": "eye",
+   "outlines": [
+    {
+     "circle": [
+      664,
+      366,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": "legs",
+   "name": "legs and feet",
+   "outlines": [
+    {
+     "line": [
+      482,
+      560,
+      472,
+      652
+     ]
+    },
+    {
+     "line": [
+      532,
+      556,
+      542,
+      652
+     ]
+    },
+    {
+     "line": [
+      440,
+      668,
+      472,
+      652,
+      500,
+      670
+     ]
+    },
+    {
+     "line": [
+      512,
+      668,
+      542,
+      652,
+      572,
+      666
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Head and body",
+   "structure": "body",
+   "instruction": "Trace the cardinal's head and body, with its pointed crest.",
+   "note": {
+    "text": "Feathers cover a bird's body. Soft down feathers underneath trap heat, keeping the bird warm even in winter.",
+    "remember": "Feathers keep birds warm."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Beak",
+   "structure": "beak",
+   "instruction": "Draw the short, thick beak.",
+   "note": {
+    "text": "Birds have no teeth. A cardinal's short, very thick beak is strong enough to crack open seeds.",
+    "remember": "Beak shape matches food."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Wing",
+   "structure": "wing",
+   "instruction": "Trace the wing folded against the body.",
+   "note": {
+    "text": "Wings lift a bird into the air. Many birds also have hollow bones, which make them lighter for flying.",
+    "remember": "Wings plus light bones = flight."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Wing feathers",
+   "structure": "wing",
+   "part": "details",
+   "instruction": "Draw two long flight feathers on the wing.",
+   "note": {
+    "text": "Long, stiff flight feathers on the wing push against the air, giving the bird lift and thrust."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Tail",
+   "structure": "tail",
+   "instruction": "Trace the long tail.",
+   "note": {
+    "text": "The tail helps a bird steer and slow down, a bit like a rudder and brakes together."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Eye",
+   "structure": "eye",
+   "instruction": "Dab the eye.",
+   "note": {
+    "text": "Birds rely on sharp eyesight to find food and spot danger."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Legs and feet",
+   "structure": "legs",
+   "instruction": "Draw both legs and their toes.",
+   "note": {
+    "text": "Toes that grip let a cardinal perch on thin branches, even while it sleeps.",
+    "remember": "Feet for perching."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "body",
+    "wing",
+    "tail"
+   ],
+   "instruction": "Color the male cardinal's red feathers."
+  },
+  {
+   "type": "label",
+   "title": "Label the parts",
+   "instruction": "Pick the right name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      740,
+      390
+     ],
+     "answer": "Beak",
+     "synonyms": [
+      "Bill"
+     ],
+     "role": "Cracks open seeds."
+    },
+    {
+     "n": 2,
+     "at": [
+      600,
+      300
+     ],
+     "answer": "Crest",
+     "role": "The pointed feathers on its head."
+    },
+    {
+     "n": 3,
+     "at": [
+      480,
+      448
+     ],
+     "answer": "Wing",
+     "role": "For flying."
+    },
+    {
+     "n": 4,
+     "at": [
+      170,
+      472
+     ],
+     "answer": "Tail",
+     "role": "For steering and slowing down."
+    },
+    {
+     "n": 5,
+     "at": [
+      500,
+      666
+     ],
+     "answer": "Feet",
+     "role": "For gripping branches."
+    }
+   ],
+   "vocabulary": [
+    "Beak",
+    "Crest",
+    "Wing",
+    "Tail",
+    "Feet",
+    "Fin",
+    "Teeth"
+   ],
+   "commonMistakes": {
+    "Fin": "Fins belong to fish. Birds have wings and a tail.",
+    "Teeth": "Birds have no teeth: they use their beaks."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Think about the beak.",
+   "showsDiagram": true,
+   "question": "Why does a cardinal have a short, very thick beak?",
+   "options": [
+    {
+     "text": "To crack open hard seeds",
+     "correct": true,
+     "feedback": "Yes. Cardinals split sunflower seeds with their beaks, then use their tongues to take the seed out of the shell."
+    },
+    {
+     "text": "To catch fish",
+     "feedback": "Fish-catching birds often have long, sharp beaks. A thick beak is built for cracking seeds."
+    },
+    {
+     "text": "To sip nectar from flowers",
+     "feedback": "Nectar-sippers like hummingbirds have long, thin beaks."
+    },
+    {
+     "text": "To help it fly",
+     "feedback": "Wings and feathers help it fly. The beak is for eating."
+    }
+   ]
+  }
+ ]
+}

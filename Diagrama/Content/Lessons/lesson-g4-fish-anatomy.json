@@ -1,0 +1,291 @@
+{
+ "id": "g4-fish-anatomy",
+ "title": "Fish external anatomy",
+ "grade": "4",
+ "subject": "Zoology",
+ "standard": "4-LS1-1",
+ "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS 4-LS1-1: Construct an argument that plants and animals have internal and external structures that function to support survival, growth, behavior, and reproduction"
+  },
+  {
+   "title": "OpenStax Biology 2e, 29.2 Fishes",
+   "url": "https://openstax.org/books/biology-2e/pages/29-2-fishes"
+  },
+  {
+   "title": "OpenStax Biology 2e, 39.1 Systems of Gas Exchange",
+   "url": "https://openstax.org/books/biology-2e/pages/39-1-systems-of-gas-exchange"
+  },
+  {
+   "title": "NYSDEC I FISH NY: Fish anatomy vocabulary (Lemon Fish handout)",
+   "url": "https://extapps.dec.ny.gov/docs/administration_pdf/ifnygofishlp.pdf"
+  }
+ ],
+ "keywords": [
+  "fish",
+  "fins",
+  "dorsal fin",
+  "caudal fin",
+  "tail",
+  "pectoral fin",
+  "pelvic fin",
+  "anal fin",
+  "gills",
+  "operculum",
+  "lateral line",
+  "scales",
+  "external structures"
+ ],
+ "structures": [
+  {
+   "id": "body",
+   "name": "body",
+   "outlines": [
+    {
+     "path": "M 840 480 C 780 372 580 352 420 392 C 320 418 250 452 214 480 C 250 508 320 542 420 568 C 580 608 780 588 840 480 Z"
+    }
+   ],
+   "details": [
+    {
+     "path": "M 690 470 C 580 456 420 462 240 480"
+    }
+   ]
+  },
+  {
+   "id": "tail",
+   "name": "tail fin",
+   "outlines": [
+    {
+     "polygon": [
+      222,
+      480,
+      104,
+      380,
+      140,
+      480,
+      104,
+      580
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fins",
+   "name": "fins",
+   "outlines": [
+    {
+     "path": "M 440 386 C 470 312 580 290 650 372 Z"
+    },
+    {
+     "path": "M 660 506 C 620 530 580 556 556 572 C 606 566 646 544 672 516 Z"
+    },
+    {
+     "path": "M 528 590 C 510 624 482 642 460 648 C 488 622 504 604 508 586 Z"
+    },
+    {
+     "path": "M 336 556 C 318 596 290 614 266 620 C 288 590 302 568 306 548 Z"
+    }
+   ]
+  },
+  {
+   "id": "gills",
+   "name": "gill cover",
+   "outlines": [
+    {
+     "path": "M 706 404 C 662 446 662 520 706 562"
+    }
+   ]
+  },
+  {
+   "id": "head",
+   "name": "eye, nostril and mouth",
+   "outlines": [
+    {
+     "circle": [
+      770,
+      452,
+      11
+     ]
+    },
+    {
+     "circle": [
+      806,
+      444,
+      5
+     ]
+    },
+    {
+     "line": [
+      840,
+      480,
+      806,
+      494
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Body",
+   "structure": "body",
+   "instruction": "Trace the fish's body.",
+   "note": {
+    "text": "A fish's smooth, pointed shape slips through water easily. Scales cover it like armor, and slime on top helps keep out germs.",
+    "remember": "Streamlined body, protective scales."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Tail fin",
+   "structure": "tail",
+   "instruction": "Trace the tail fin.",
+   "note": {
+    "text": "The tail fin, or caudal fin, sweeps from side to side and pushes the fish forward.",
+    "remember": "Tail fin = forward."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Fins",
+   "structure": "fins",
+   "instruction": "Trace the four other fins: one on the back, one on the side, two underneath.",
+   "note": {
+    "text": "The back (dorsal) fin keeps the fish upright. The side (pectoral) and belly (pelvic and anal) fins help it balance and steer.",
+    "remember": "Fins balance and steer."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Gill cover",
+   "structure": "gills",
+   "instruction": "Trace the curved edge of the gill cover.",
+   "note": {
+    "text": "Under this bony flap, the operculum, are the gills. As water flows over them, they take in oxygen from the water.",
+    "remember": "Gills get oxygen from water."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Lateral line",
+   "structure": "body",
+   "part": "details",
+   "instruction": "Draw the lateral line along the side.",
+   "note": {
+    "text": "The lateral line is a row of tiny pores along each side. It lets the fish feel movement and vibration in the water around it.",
+    "remember": "Lateral line = feeling the water."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Head",
+   "structure": "head",
+   "instruction": "Dab the eye and nostril, then draw the mouth.",
+   "note": {
+    "text": "Fish smell with their nostrils, called nares, which help them find food. They don't use them to breathe.",
+    "remember": "Nares smell; gills breathe."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Label the parts",
+   "instruction": "Pick the right name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      140,
+      480
+     ],
+     "answer": "Tail fin",
+     "synonyms": [
+      "Caudal fin"
+     ],
+     "role": "Pushes the fish forward."
+    },
+    {
+     "n": 2,
+     "at": [
+      550,
+      350
+     ],
+     "answer": "Dorsal fin",
+     "role": "Keeps the fish upright."
+    },
+    {
+     "n": 3,
+     "at": [
+      706,
+      483
+     ],
+     "answer": "Gill cover",
+     "synonyms": [
+      "Operculum"
+     ],
+     "role": "Protects the gills.",
+     "mistakes": {
+      "Gills": "The gills are hidden underneath. This bony flap is the gill cover."
+     }
+    },
+    {
+     "n": 4,
+     "at": [
+      460,
+      466
+     ],
+     "answer": "Lateral line",
+     "role": "Senses movement in the water."
+    },
+    {
+     "n": 5,
+     "at": [
+      612,
+      548
+     ],
+     "answer": "Pectoral fin",
+     "role": "Helps balance and steer."
+    }
+   ],
+   "vocabulary": [
+    "Tail fin",
+    "Dorsal fin",
+    "Gill cover",
+    "Gills",
+    "Lateral line",
+    "Pectoral fin",
+    "Lung"
+   ],
+   "commonMistakes": {
+    "Lung": "Most fish have no lungs. They get oxygen with gills."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Use what you've drawn.",
+   "showsDiagram": true,
+   "question": "A fish lives where the water is murky and dark. Which part best helps it notice a predator coming?",
+   "options": [
+    {
+     "text": "The lateral line",
+     "correct": true,
+     "feedback": "Yes. Even when it can't see, it can feel the water move as a predator swims close, and dart away."
+    },
+    {
+     "text": "The tail fin",
+     "feedback": "The tail fin helps it escape fast, but noticing the predator is the lateral line's job."
+    },
+    {
+     "text": "The gill cover",
+     "feedback": "The gill cover protects the gills. It doesn't sense anything."
+    },
+    {
+     "text": "The scales",
+     "feedback": "Scales protect the body. The lateral line senses movement in the water."
+    }
+   ]
+  }
+ ]
+}

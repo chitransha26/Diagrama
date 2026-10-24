@@ -1,0 +1,365 @@
+{
+ "id": "g4-human-heart",
+ "title": "The human heart (simple)",
+ "grade": "4",
+ "subject": "Life science",
+ "standard": "4-LS1-1",
+ "minutes": 9,
+ "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS 4-LS1-1: Construct an argument that plants and animals have internal and external structures that function to support survival, growth, behavior, and reproduction"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 19.1 Heart Anatomy",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 5.1 Layers of the Skin (oxygen-poor blood is dark red)",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/5-1-layers-of-the-skin"
+  }
+ ],
+ "keywords": [
+  "heart",
+  "atrium",
+  "ventricle",
+  "chambers",
+  "valve",
+  "blood",
+  "circulation",
+  "lungs",
+  "oxygen",
+  "muscle",
+  "pump",
+  "internal structures"
+ ],
+ "printed": [
+  {
+   "text": "From body",
+   "at": [
+    250,
+    196
+   ]
+  },
+  {
+   "text": "To lungs",
+   "at": [
+    500,
+    160
+   ]
+  },
+  {
+   "text": "From lungs",
+   "at": [
+    760,
+    196
+   ]
+  },
+  {
+   "text": "To body",
+   "at": [
+    856,
+    600
+   ]
+  }
+ ],
+ "legend": [
+  {
+   "name": "Heart muscle",
+   "color": "#B5483F",
+   "meaning": "The muscle wall that squeezes"
+  },
+  {
+   "name": "Right side",
+   "color": "#7A1F2B",
+   "meaning": "Dark red: blood low in oxygen. Diagrams often show it blue, but blood is never blue."
+  },
+  {
+   "name": "Left side",
+   "color": "#D2342C",
+   "meaning": "Bright red: blood full of oxygen"
+  }
+ ],
+ "structures": [
+  {
+   "id": "wall",
+   "name": "heart muscle",
+   "colorName": "heart muscle",
+   "fill": "#B5483F",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 330 340 C 330 272 420 252 500 272 C 600 250 706 290 706 384 C 706 520 626 642 566 756 C 546 790 518 792 498 770 C 398 668 314 520 330 340 Z"
+    }
+   ]
+  },
+  {
+   "id": "right",
+   "name": "right atrium and ventricle",
+   "colorName": "right side",
+   "fill": "#7A1F2B",
+   "outlines": [
+    {
+     "ellipse": [
+      420,
+      372,
+      58,
+      52
+     ]
+    },
+    {
+     "path": "M 382 462 C 404 444 466 444 488 462 L 494 690 C 448 636 392 566 382 462 Z"
+    }
+   ]
+  },
+  {
+   "id": "left",
+   "name": "left atrium and ventricle",
+   "colorName": "left side",
+   "fill": "#D2342C",
+   "outlines": [
+    {
+     "ellipse": [
+      590,
+      364,
+      62,
+      48
+     ]
+    },
+    {
+     "path": "M 522 462 C 562 438 646 442 656 472 C 656 560 608 648 532 712 Z"
+    }
+   ]
+  },
+  {
+   "id": "arrows",
+   "name": "arrows",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      270,
+      222,
+      384,
+      318
+     ]
+    },
+    {
+     "line": [
+      374.3,
+      293.9,
+      384,
+      318,
+      358.6,
+      312.5
+     ]
+    },
+    {
+     "line": [
+      505,
+      430,
+      505,
+      196
+     ]
+    },
+    {
+     "line": [
+      492.8,
+      219.0,
+      505,
+      196,
+      517.2,
+      219.0
+     ]
+    },
+    {
+     "line": [
+      740,
+      222,
+      632,
+      306
+     ]
+    },
+    {
+     "line": [
+      657.6,
+      301.5,
+      632,
+      306,
+      642.6,
+      282.3
+     ]
+    },
+    {
+     "line": [
+      660,
+      560,
+      800,
+      540
+     ]
+    },
+    {
+     "line": [
+      775.5,
+      531.2,
+      800,
+      540,
+      779.0,
+      555.3
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Heart muscle",
+   "structure": "wall",
+   "instruction": "Trace the outside of the heart.",
+   "note": {
+    "text": "Your heart is a muscle about the size of your fist. It squeezes about once a second to pump blood all around your body.",
+    "remember": "The heart is a pump."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Right side",
+   "structure": "right",
+   "instruction": "Trace the two chambers on the left of the picture.",
+   "note": {
+    "text": "These are the heart's right side: it faces you, so its right is on your left. Blood from the body comes in here, then is pumped to the lungs.",
+    "remember": "Right side: body to lungs."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Left side",
+   "structure": "left",
+   "instruction": "Trace the two chambers on the right of the picture.",
+   "note": {
+    "text": "Blood full of oxygen comes back from the lungs into the left side. Its strong lower chamber pumps it out to the whole body.",
+    "remember": "Left side: lungs to body."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Blood flow",
+   "structure": "arrows",
+   "instruction": "Draw the four arrows showing where blood comes in and goes out.",
+   "note": {
+    "text": "Valves between the chambers act like one-way doors: they stop blood flowing backward, so it always moves the same way.",
+    "remember": "Valves keep blood moving one way."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "wall",
+    "right",
+    "left"
+   ],
+   "instruction": "Color the heart. Blood low in oxygen is dark red; blood full of oxygen is bright red."
+  },
+  {
+   "type": "label",
+   "title": "Name the chambers",
+   "instruction": "Pick the right name for each numbered chamber.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      420,
+      372
+     ],
+     "answer": "Right atrium",
+     "role": "Receives blood from the body.",
+     "mistakes": {
+      "Left atrium": "The heart faces you, so its right side is on your left. This is the right atrium."
+     }
+    },
+    {
+     "n": 2,
+     "at": [
+      440,
+      560
+     ],
+     "answer": "Right ventricle",
+     "role": "Pumps blood to the lungs."
+    },
+    {
+     "n": 3,
+     "at": [
+      590,
+      364
+     ],
+     "answer": "Left atrium",
+     "role": "Receives blood from the lungs.",
+     "mistakes": {
+      "Right atrium": "The heart faces you, so its left side is on your right. This is the left atrium."
+     }
+    },
+    {
+     "n": 4,
+     "at": [
+      590,
+      540
+     ],
+     "answer": "Left ventricle",
+     "role": "Pumps blood to the body."
+    }
+   ],
+   "vocabulary": [
+    "Right atrium",
+    "Right ventricle",
+    "Left atrium",
+    "Left ventricle",
+    "Lung"
+   ],
+   "commonMistakes": {
+    "Lung": "The lungs are beside the heart, not inside it. These are the heart's four chambers."
+   },
+   "hint": "Top chambers are atria; bottom chambers are ventricles."
+  },
+  {
+   "type": "order",
+   "title": "Blood's path",
+   "items": [
+    "Body",
+    "Right side of the heart",
+    "Lungs",
+    "Left side of the heart"
+   ],
+   "instruction": "Tap the places in order, starting from the body.",
+   "why": "Blood from the body goes into the right side, which pumps it to the lungs for oxygen. It returns to the left side, which pumps it to the body.",
+   "hint": "Where does blood get its oxygen?"
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Think about what the heart does.",
+   "showsDiagram": true,
+   "question": "Why does the heart send blood to the lungs before the rest of the body?",
+   "options": [
+    {
+     "text": "So the blood can pick up oxygen the body needs",
+     "correct": true,
+     "feedback": "Yes. In the lungs, blood picks up oxygen and drops off carbon dioxide. Then the left side pumps it to the body."
+    },
+    {
+     "text": "To clean the lungs",
+     "feedback": "Blood visits the lungs to pick up oxygen, not to clean them."
+    },
+    {
+     "text": "To cool the blood down",
+     "feedback": "The trip to the lungs is about oxygen: the body's cells need it to live."
+    },
+    {
+     "text": "Because the lungs pump the blood",
+     "feedback": "The heart does the pumping. The lungs are where oxygen gets into the blood."
+    }
+   ]
+  }
+ ]
+}
