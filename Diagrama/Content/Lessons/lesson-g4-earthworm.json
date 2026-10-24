@@ -1,0 +1,346 @@
+{
+ "id": "g4-earthworm",
+ "title": "Earthworm external anatomy",
+ "grade": "4",
+ "subject": "Zoology",
+ "standard": "4-LS1-1",
+ "minutes": 7,
+ "sources": [
+  {
+   "title": "NGSS 4-LS1-1: Construct an argument that plants and animals have internal and external structures that function to support survival, growth, behavior, and reproduction"
+  },
+  {
+   "title": "OpenStax Biology 2e, 28.4 Superphylum Lophotrochozoa: Mollusks and Annelids",
+   "url": "https://openstax.org/books/biology-2e/pages/28-4-superphylum-lophotrochozoa-mollusks-and-annelids"
+  },
+  {
+   "title": "OpenStax Biology 2e, 39.1 Systems of Gas Exchange",
+   "url": "https://openstax.org/books/biology-2e/pages/39-1-systems-of-gas-exchange"
+  },
+  {
+   "title": "Science Learning Hub (University of Waikato): Physical adaptations for life underground",
+   "url": "https://www.sciencelearn.org.nz/videos/3-physical-adaptations-for-life-underground"
+  }
+ ],
+ "keywords": [
+  "earthworm",
+  "worm",
+  "segments",
+  "setae",
+  "bristles",
+  "clitellum",
+  "annelid",
+  "skin breathing",
+  "soil",
+  "burrowing",
+  "external structures"
+ ],
+ "structures": [
+  {
+   "id": "body",
+   "name": "body",
+   "outlines": [
+    {
+     "path": "M 150 500 C 150 458 204 452 244 454 L 780 454 C 834 456 866 480 866 500 C 866 520 834 544 780 546 L 244 546 C 204 548 150 542 150 500 Z"
+    }
+   ]
+  },
+  {
+   "id": "segments",
+   "name": "segments",
+   "outlines": [
+    {
+     "line": [
+      220,
+      466,
+      220,
+      534
+     ]
+    },
+    {
+     "line": [
+      248,
+      466,
+      248,
+      534
+     ]
+    },
+    {
+     "line": [
+      276,
+      466,
+      276,
+      534
+     ]
+    },
+    {
+     "line": [
+      408,
+      466,
+      408,
+      534
+     ]
+    },
+    {
+     "line": [
+      436,
+      466,
+      436,
+      534
+     ]
+    },
+    {
+     "line": [
+      464,
+      466,
+      464,
+      534
+     ]
+    },
+    {
+     "line": [
+      492,
+      466,
+      492,
+      534
+     ]
+    },
+    {
+     "line": [
+      520,
+      466,
+      520,
+      534
+     ]
+    },
+    {
+     "line": [
+      548,
+      466,
+      548,
+      534
+     ]
+    },
+    {
+     "line": [
+      576,
+      466,
+      576,
+      534
+     ]
+    },
+    {
+     "line": [
+      604,
+      466,
+      604,
+      534
+     ]
+    },
+    {
+     "line": [
+      632,
+      466,
+      632,
+      534
+     ]
+    },
+    {
+     "line": [
+      660,
+      466,
+      660,
+      534
+     ]
+    },
+    {
+     "line": [
+      688,
+      466,
+      688,
+      534
+     ]
+    },
+    {
+     "line": [
+      716,
+      466,
+      716,
+      534
+     ]
+    },
+    {
+     "line": [
+      744,
+      466,
+      744,
+      534
+     ]
+    },
+    {
+     "line": [
+      772,
+      466,
+      772,
+      534
+     ]
+    },
+    {
+     "line": [
+      800,
+      466,
+      800,
+      534
+     ]
+    },
+    {
+     "line": [
+      828,
+      466,
+      828,
+      534
+     ]
+    }
+   ]
+  },
+  {
+   "id": "clitellum",
+   "name": "clitellum",
+   "pen": "bold",
+   "outlines": [
+    {
+     "rect": [
+      304,
+      440,
+      84,
+      120,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mouth",
+   "name": "mouth",
+   "outlines": [
+    {
+     "circle": [
+      164,
+      500,
+      8
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Body",
+   "structure": "body",
+   "instruction": "Trace the earthworm's long body.",
+   "note": {
+    "text": "A long, thin, slippery body lets an earthworm push through soil, digging tunnels as it goes.",
+    "remember": "Shaped for burrowing."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Segments",
+   "structure": "segments",
+   "instruction": "Draw the rings that divide the body into segments.",
+   "note": {
+    "text": "The body is made of many ring-shaped segments. Each has tiny bristles, called setae, that grip the soil as the worm moves.",
+    "remember": "Segments with gripping bristles."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Clitellum",
+   "structure": "clitellum",
+   "instruction": "Trace the wide band near the front end.",
+   "note": {
+    "text": "This thick band is the clitellum. It makes a cocoon where the worm's eggs are kept, so it helps earthworms reproduce.",
+    "remember": "Clitellum: makes the egg cocoon."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Mouth",
+   "structure": "mouth",
+   "instruction": "Dab the mouth at the front end.",
+   "note": {
+    "text": "Earthworms eat soil as they burrow, digesting the tiny bits of dead plants and living things in it."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Label the parts",
+   "instruction": "Pick the right name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      345,
+      500
+     ],
+     "answer": "Clitellum",
+     "role": "Makes the egg cocoon."
+    },
+    {
+     "n": 2,
+     "at": [
+      164,
+      500
+     ],
+     "answer": "Mouth",
+     "role": "Takes in soil and food."
+    },
+    {
+     "n": 3,
+     "at": [
+      600,
+      500
+     ],
+     "answer": "Segment",
+     "role": "One of many rings, each with gripping bristles."
+    }
+   ],
+   "vocabulary": [
+    "Clitellum",
+    "Mouth",
+    "Segment",
+    "Tail"
+   ],
+   "commonMistakes": {
+    "Tail": "The tail end is at the far right. This part is near the front."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Think about how an earthworm breathes.",
+   "showsDiagram": true,
+   "question": "Earthworms have no lungs. Why do they need to stay damp?",
+   "options": [
+    {
+     "text": "They breathe through their skin, which only works when it's moist",
+     "correct": true,
+     "feedback": "Yes. Oxygen passes in through their moist skin. If an earthworm dries out, it can't breathe."
+    },
+    {
+     "text": "So they can swim",
+     "feedback": "Earthworms don't swim. Damp skin lets them take in oxygen."
+    },
+    {
+     "text": "Water is their only food",
+     "feedback": "They eat bits of dead plants in soil. Moist skin is for breathing."
+    },
+    {
+     "text": "To keep their bristles soft",
+     "feedback": "The bristles grip the soil. Moist skin is what lets them breathe."
+    }
+   ]
+  }
+ ]
+}

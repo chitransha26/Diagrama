@@ -1,0 +1,287 @@
+{
+ "id": "g4-human-eye",
+ "title": "The human eye (simple)",
+ "grade": "4",
+ "subject": "Life science",
+ "standard": "4-LS1-2",
+ "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS 4-LS1-2: Use a model to describe that animals receive different types of information through their senses, process the information in their brain, and respond to the information in different ways"
+  },
+  {
+   "title": "OpenStax Biology 2e, 36.5 Vision",
+   "url": "https://openstax.org/books/biology-2e/pages/36-5-vision"
+  }
+ ],
+ "keywords": [
+  "eye",
+  "vision",
+  "sight",
+  "cornea",
+  "iris",
+  "pupil",
+  "lens",
+  "retina",
+  "optic nerve",
+  "brain",
+  "senses",
+  "light",
+  "information processing"
+ ],
+ "printed": [
+  {
+   "text": "Light",
+   "at": [
+    130,
+    470
+   ]
+  }
+ ],
+ "structures": [
+  {
+   "id": "eyeball",
+   "name": "eyeball",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      420,
+      500,
+      150
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cornea",
+   "name": "cornea",
+   "outlines": [
+    {
+     "path": "M 286 436 C 238 466 238 534 286 564"
+    }
+   ]
+  },
+  {
+   "id": "iris",
+   "name": "iris",
+   "outlines": [
+    {
+     "line": [
+      292,
+      430,
+      292,
+      474
+     ]
+    },
+    {
+     "line": [
+      292,
+      526,
+      292,
+      570
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lens",
+   "name": "lens",
+   "outlines": [
+    {
+     "ellipse": [
+      322,
+      500,
+      18,
+      42
+     ]
+    }
+   ]
+  },
+  {
+   "id": "retina",
+   "name": "retina",
+   "outlines": [
+    {
+     "path": "M 470 372 C 580 420 580 580 470 628"
+    }
+   ]
+  },
+  {
+   "id": "nerve",
+   "name": "optic nerve",
+   "outlines": [
+    {
+     "line": [
+      566,
+      476,
+      712,
+      430
+     ]
+    },
+    {
+     "line": [
+      566,
+      524,
+      716,
+      476
+     ]
+    }
+   ]
+  },
+  {
+   "id": "brain",
+   "name": "brain",
+   "outlines": [
+    {
+     "path": "M 712 404 C 700 326 780 286 850 304 C 930 292 982 360 962 430 C 982 500 902 544 842 524 C 782 546 708 506 712 404 Z"
+    }
+   ]
+  },
+  {
+   "id": "light",
+   "name": "light",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      60,
+      500,
+      232,
+      500
+     ]
+    },
+    {
+     "line": [
+      209.0,
+      487.8,
+      232,
+      500,
+      209.0,
+      512.2
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Eyeball",
+   "structure": "eyeball",
+   "instruction": "Trace the round eyeball.",
+   "note": {
+    "text": "Your eyes take in information about the world as light, so you can see what's around you."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Cornea",
+   "structure": "cornea",
+   "instruction": "Trace the clear bulge at the front.",
+   "note": {
+    "text": "The cornea is the clear front of the eye. It protects the eye and starts bending light so you can see clearly.",
+    "remember": "Cornea: clear, protective front."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Iris",
+   "structure": "iris",
+   "instruction": "Draw the iris, leaving the gap of the pupil between.",
+   "note": {
+    "text": "The iris is the colored ring of your eye. It makes the pupil, the hole in the middle, smaller in bright light and bigger in dim light.",
+    "remember": "Iris controls how much light enters."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Lens",
+   "structure": "lens",
+   "instruction": "Trace the lens behind the iris.",
+   "note": {
+    "text": "The lens focuses light onto the back of the eye. It changes shape to focus on things near and far.",
+    "remember": "Lens focuses."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Retina",
+   "structure": "retina",
+   "instruction": "Trace the retina lining the back of the eye.",
+   "note": {
+    "text": "The retina turns light into signals, a bit like a camera's sensor.",
+    "remember": "Retina: light into signals."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Optic nerve",
+   "structure": "nerve",
+   "instruction": "Draw the optic nerve running to the brain.",
+   "note": {
+    "text": "The optic nerve carries the signals from the retina to your brain."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Brain",
+   "structure": "brain",
+   "instruction": "Trace the brain.",
+   "note": {
+    "text": "Your brain makes sense of the signals: it works out what you're seeing, then decides how you respond.",
+    "remember": "Senses gather; the brain decides."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Light",
+   "structure": "light",
+   "instruction": "Draw the arrow of light coming into the eye.",
+   "note": {
+    "text": "You see an object when light from it enters your eye."
+   }
+  },
+  {
+   "type": "order",
+   "title": "From light to brain",
+   "items": [
+    "Cornea",
+    "Pupil",
+    "Lens",
+    "Retina",
+    "Optic nerve",
+    "Brain"
+   ],
+   "instruction": "Tap the parts in the order light and its signals reach them.",
+   "why": "Light passes the cornea, goes through the pupil, is focused by the lens onto the retina, and the optic nerve carries the signals to the brain.",
+   "hint": "What's at the very front of the eye?"
+  },
+  {
+   "type": "choice",
+   "title": "Respond",
+   "instruction": "Senses, brain, response.",
+   "showsDiagram": true,
+   "question": "You walk from a dark room into bright sunshine. What does your eye do?",
+   "options": [
+    {
+     "text": "The iris makes the pupil smaller to let in less light",
+     "correct": true,
+     "feedback": "Yes. In bright light the iris shrinks the pupil, letting less light in. It happens without you even thinking about it."
+    },
+    {
+     "text": "The pupil gets bigger",
+     "feedback": "Pupils get bigger in dim light, to let more light in. In bright light they shrink."
+    },
+    {
+     "text": "The lens falls back",
+     "feedback": "The lens stays put. The iris changes the size of the pupil."
+    },
+    {
+     "text": "Nothing changes",
+     "feedback": "Your eye responds: the iris makes the pupil smaller in bright light."
+    }
+   ]
+  }
+ ]
+}

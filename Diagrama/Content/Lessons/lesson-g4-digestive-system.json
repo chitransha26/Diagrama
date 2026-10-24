@@ -1,0 +1,250 @@
+{
+ "id": "g4-digestive-system",
+ "title": "The digestive system (simple)",
+ "grade": "4",
+ "subject": "Life science",
+ "standard": "4-LS1-1",
+ "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS 4-LS1-1: Construct an argument that plants and animals have internal and external structures that function to support survival, growth, behavior, and reproduction"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 23.1 Overview of the Digestive System",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-1-overview-of-the-digestive-system"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 23.2 Digestive System Processes and Regulation",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-2-digestive-system-processes-and-regulation"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 23.3 The Mouth, Pharynx, and Esophagus",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-3-the-mouth-pharynx-and-esophagus"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 17.10 Organs with Secondary Endocrine Functions (stomach acid)",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-10-organs-with-secondary-endocrine-functions"
+  }
+ ],
+ "keywords": [
+  "digestion",
+  "digestive system",
+  "mouth",
+  "teeth",
+  "saliva",
+  "esophagus",
+  "stomach",
+  "small intestine",
+  "large intestine",
+  "nutrients",
+  "absorption",
+  "internal structures"
+ ],
+ "structures": [
+  {
+   "id": "mouth",
+   "name": "mouth",
+   "outlines": [
+    {
+     "ellipse": [
+      500,
+      104,
+      44,
+      22
+     ]
+    }
+   ]
+  },
+  {
+   "id": "esophagus",
+   "name": "esophagus",
+   "outlines": [
+    {
+     "line": [
+      500,
+      132,
+      500,
+      362
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stomach",
+   "name": "stomach",
+   "outlines": [
+    {
+     "path": "M 506 366 C 562 346 644 376 644 448 C 644 520 584 560 524 546 C 498 540 494 508 520 498 C 562 488 584 470 574 438 C 564 408 524 398 506 398 Z"
+    }
+   ]
+  },
+  {
+   "id": "small",
+   "name": "small intestine",
+   "outlines": [
+    {
+     "path": "M 520 556 C 470 600 380 594 400 640 C 420 690 600 662 600 712 C 600 762 400 742 410 792 C 416 822 380 836 356 846"
+    }
+   ]
+  },
+  {
+   "id": "large",
+   "name": "large intestine",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 340 860 C 326 846 324 826 324 800 L 324 612 C 324 594 338 584 360 584 L 640 584 C 662 584 676 594 676 612 L 676 830 C 676 858 646 870 614 874 C 602 884 600 904 600 934"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Mouth",
+   "structure": "mouth",
+   "instruction": "Trace the mouth.",
+   "note": {
+    "text": "Digestion starts here. Teeth break food into small pieces, and saliva wets it and starts breaking it down.",
+    "remember": "Chewing makes food smaller."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Esophagus",
+   "structure": "esophagus",
+   "instruction": "Trace the tube down from the mouth.",
+   "note": {
+    "text": "The esophagus is a muscular tube. When you swallow, its muscles squeeze food down to your stomach.",
+    "remember": "Esophagus: mouth to stomach."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Stomach",
+   "structure": "stomach",
+   "instruction": "Trace the J-shaped stomach.",
+   "note": {
+    "text": "The stomach's strong muscles churn food, and it makes acid that helps break the food down into a thick liquid.",
+    "remember": "Stomach: churn and acid."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Small intestine",
+   "structure": "small",
+   "instruction": "Trace the long, winding small intestine.",
+   "note": {
+    "text": "Most of the food's nutrients pass from the small intestine into your blood, which carries them all over your body.",
+    "remember": "Small intestine absorbs nutrients."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Large intestine",
+   "structure": "large",
+   "instruction": "Trace the large intestine around the outside.",
+   "note": {
+    "text": "The large intestine soaks up most of the water that's left, then moves the leftover waste out of the body.",
+    "remember": "Large intestine absorbs water."
+   }
+  },
+  {
+   "type": "order",
+   "title": "Food's path",
+   "items": [
+    "Mouth",
+    "Esophagus",
+    "Stomach",
+    "Small intestine",
+    "Large intestine"
+   ],
+   "instruction": "Tap the parts in the order food passes through them.",
+   "why": "Food is chewed in the mouth, swallowed down the esophagus, churned in the stomach, absorbed in the small intestine, and dried out in the large intestine.",
+   "hint": "Where does swallowed food go first?"
+  },
+  {
+   "type": "label",
+   "title": "Label the parts",
+   "instruction": "Pick the right name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      500,
+      250
+     ],
+     "answer": "Esophagus",
+     "role": "Squeezes food down to the stomach."
+    },
+    {
+     "n": 2,
+     "at": [
+      610,
+      450
+     ],
+     "answer": "Stomach",
+     "role": "Churns food with acid."
+    },
+    {
+     "n": 3,
+     "at": [
+      500,
+      700
+     ],
+     "answer": "Small intestine",
+     "role": "Absorbs nutrients.",
+     "mistakes": {
+      "Large intestine": "The large intestine goes around the outside. This winding tube in the middle is the small intestine."
+     }
+    },
+    {
+     "n": 4,
+     "at": [
+      330,
+      720
+     ],
+     "answer": "Large intestine",
+     "role": "Absorbs water."
+    }
+   ],
+   "vocabulary": [
+    "Esophagus",
+    "Stomach",
+    "Small intestine",
+    "Large intestine",
+    "Windpipe",
+    "Lung"
+   ],
+   "commonMistakes": {
+    "Windpipe": "The windpipe carries air to the lungs. Food goes down the esophagus."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Use what you've drawn.",
+   "showsDiagram": true,
+   "question": "How do the nutrients in your lunch get to the muscles in your legs?",
+   "options": [
+    {
+     "text": "They pass from the small intestine into the blood, which carries them there",
+     "correct": true,
+     "feedback": "Yes. Digestion breaks food down small enough to pass into the blood, and the heart pumps it around the body."
+    },
+    {
+     "text": "The stomach squeezes them down to the legs",
+     "feedback": "The stomach churns food. Nutrients reach the legs through the blood."
+    },
+    {
+     "text": "They travel through the large intestine to the legs",
+     "feedback": "The large intestine absorbs water. Most nutrients enter the blood from the small intestine."
+    },
+    {
+     "text": "They stay in the stomach",
+     "feedback": "Food moves on from the stomach. Its nutrients enter the blood in the small intestine."
+    }
+   ]
+  }
+ ]
+}

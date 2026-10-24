@@ -1,0 +1,305 @@
+{
+ "id": "g4-human-ear",
+ "title": "The human ear (simple)",
+ "grade": "4",
+ "subject": "Life science",
+ "standard": "4-LS1-2",
+ "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS 4-LS1-2: Use a model to describe that animals receive different types of information through their senses, process the information in their brain, and respond to the information in different ways"
+  },
+  {
+   "title": "OpenStax Biology 2e, 36.4 Hearing and Vestibular Sensation",
+   "url": "https://openstax.org/books/biology-2e/pages/36-4-hearing-and-vestibular-sensation"
+  },
+  {
+   "title": "OpenStax Biology 2e, 38.1 Types of Skeletal Systems (the smallest bones)",
+   "url": "https://openstax.org/books/biology-2e/pages/38-1-types-of-skeletal-systems"
+  }
+ ],
+ "keywords": [
+  "ear",
+  "hearing",
+  "sound",
+  "outer ear",
+  "ear canal",
+  "eardrum",
+  "ossicles",
+  "hammer",
+  "anvil",
+  "stirrup",
+  "cochlea",
+  "auditory nerve",
+  "brain",
+  "senses",
+  "information processing"
+ ],
+ "printed": [
+  {
+   "text": "Sound",
+   "at": [
+    84,
+    372
+   ]
+  }
+ ],
+ "structures": [
+  {
+   "id": "outer",
+   "name": "outer ear",
+   "outlines": [
+    {
+     "path": "M 232 300 C 142 320 118 450 158 540 C 188 610 250 640 260 600 C 270 560 240 522 260 482 C 280 432 300 360 232 300 Z"
+    }
+   ]
+  },
+  {
+   "id": "canal",
+   "name": "ear canal",
+   "outlines": [
+    {
+     "line": [
+      264,
+      472,
+      420,
+      462
+     ]
+    },
+    {
+     "line": [
+      262,
+      524,
+      420,
+      522
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eardrum",
+   "name": "eardrum",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      428,
+      448,
+      432,
+      534
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ossicles",
+   "name": "ear bones",
+   "outlines": [
+    {
+     "ellipse": [
+      460,
+      468,
+      12,
+      26
+     ]
+    },
+    {
+     "circle": [
+      494,
+      456,
+      14
+     ]
+    },
+    {
+     "polygon": [
+      512,
+      474,
+      546,
+      482,
+      546,
+      502,
+      512,
+      506
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cochlea",
+   "name": "cochlea",
+   "outlines": [
+    {
+     "path": "M 554 492 C 554 430 642 420 652 480 C 662 540 592 562 576 512 C 566 476 616 470 616 500"
+    }
+   ]
+  },
+  {
+   "id": "nerve",
+   "name": "hearing nerve",
+   "outlines": [
+    {
+     "line": [
+      660,
+      470,
+      724,
+      446
+     ]
+    }
+   ]
+  },
+  {
+   "id": "brain",
+   "name": "brain",
+   "outlines": [
+    {
+     "path": "M 712 404 C 700 326 780 286 850 304 C 930 292 982 360 962 430 C 982 500 902 544 842 524 C 782 546 708 506 712 404 Z"
+    }
+   ]
+  },
+  {
+   "id": "sound",
+   "name": "sound",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      40,
+      450,
+      160,
+      470
+     ]
+    },
+    {
+     "line": [
+      139.4,
+      454.2,
+      160,
+      470,
+      135.3,
+      478.3
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Outer ear",
+   "structure": "outer",
+   "instruction": "Trace the outer ear.",
+   "note": {
+    "text": "Your ears take in information about the world as sound. The outer ear's shape helps collect sound and funnel it in.",
+    "remember": "Outer ear collects sound."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ear canal",
+   "structure": "canal",
+   "instruction": "Draw both sides of the ear canal.",
+   "note": {
+    "text": "Sound travels down the ear canal, a short tunnel into your head."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Eardrum",
+   "structure": "eardrum",
+   "instruction": "Trace the eardrum at the end of the canal.",
+   "note": {
+    "text": "The eardrum is a thin sheet stretched across the canal. Sound makes it vibrate, like the skin of a drum.",
+    "remember": "Sound makes the eardrum vibrate."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ear bones",
+   "structure": "ossicles",
+   "instruction": "Trace the three tiny ear bones.",
+   "note": {
+    "text": "The hammer, anvil and stirrup pass the eardrum's vibrations inward. They're the smallest bones in your body.",
+    "remember": "Hammer, anvil, stirrup."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Cochlea",
+   "structure": "cochlea",
+   "instruction": "Trace the snail-shaped cochlea.",
+   "note": {
+    "text": "The cochlea is filled with fluid. It turns the vibrations into signals your nerves can carry.",
+    "remember": "Cochlea: vibrations into signals."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Hearing nerve",
+   "structure": "nerve",
+   "instruction": "Draw the nerve to the brain.",
+   "note": {
+    "text": "A nerve carries the signals from the cochlea to your brain."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Brain",
+   "structure": "brain",
+   "instruction": "Trace the brain.",
+   "note": {
+    "text": "Your brain works out what the sound is, like a voice or a bell, and decides how you'll respond.",
+    "remember": "Senses gather; the brain decides."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sound",
+   "structure": "sound",
+   "instruction": "Draw the arrow of sound coming in.",
+   "note": {
+    "text": "Sound is made by vibrations that travel through the air to your ear."
+   }
+  },
+  {
+   "type": "order",
+   "title": "From sound to brain",
+   "items": [
+    "Outer ear",
+    "Ear canal",
+    "Eardrum",
+    "Ear bones",
+    "Cochlea",
+    "Brain"
+   ],
+   "instruction": "Tap the parts in the order sound and its signals reach them.",
+   "why": "The outer ear collects sound, it travels down the canal, shakes the eardrum and ear bones, the cochlea turns it into signals, and a nerve carries them to the brain.",
+   "hint": "Which part catches the sound first?"
+  },
+  {
+   "type": "choice",
+   "title": "Respond",
+   "instruction": "Senses, brain, response.",
+   "showsDiagram": true,
+   "question": "A friend calls your name from behind you, and you turn around. What happened?",
+   "options": [
+    {
+     "text": "Your ears took in the sound, your brain recognized your name, and it told your body to turn",
+     "correct": true,
+     "feedback": "Yes. Senses gather information, the brain makes sense of it, and then you respond."
+    },
+    {
+     "text": "Your ears turned your head",
+     "feedback": "Ears only gather sound. Your brain decides to turn, and your muscles do it."
+    },
+    {
+     "text": "Your eyes heard the sound",
+     "feedback": "Eyes sense light. Sound is sensed by your ears, then your brain decides."
+    },
+    {
+     "text": "The sound pushed your head around",
+     "feedback": "Sound is too gentle for that. Your brain recognized your name and chose to turn."
+    }
+   ]
+  }
+ ]
+}

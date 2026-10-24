@@ -1,0 +1,355 @@
+{
+ "id": "g4-human-lungs",
+ "title": "The human lungs",
+ "grade": "4",
+ "subject": "Life science",
+ "standard": "4-LS1-1",
+ "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS 4-LS1-1: Construct an argument that plants and animals have internal and external structures that function to support survival, growth, behavior, and reproduction"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 22.1 Organs and Structures of the Respiratory System",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 22.2 The Lungs",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 22.3 The Process of Breathing",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-3-the-process-of-breathing"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 20.2 Blood Flow, Blood Pressure, and Resistance (the diaphragm moves down)",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-2-blood-flow-blood-pressure-and-resistance"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 20.5 Circulatory Pathways (gas exchange in the alveoli)",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways"
+  }
+ ],
+ "keywords": [
+  "lungs",
+  "breathing",
+  "trachea",
+  "windpipe",
+  "bronchi",
+  "alveoli",
+  "diaphragm",
+  "oxygen",
+  "carbon dioxide",
+  "respiratory system",
+  "lobes",
+  "internal structures"
+ ],
+ "structures": [
+  {
+   "id": "trachea",
+   "name": "windpipe",
+   "outlines": [
+    {
+     "rect": [
+      482,
+      112,
+      36,
+      230,
+      18
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bronchi",
+   "name": "bronchi",
+   "outlines": [
+    {
+     "line": [
+      490,
+      350,
+      396,
+      430,
+      382,
+      566
+     ]
+    },
+    {
+     "line": [
+      510,
+      350,
+      604,
+      430,
+      618,
+      566
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rightLung",
+   "name": "right lung",
+   "outlines": [
+    {
+     "path": "M 466 384 C 426 364 330 382 290 470 C 250 560 252 676 272 728 C 342 718 420 700 462 690 C 482 600 480 470 466 384 Z"
+    }
+   ],
+   "details": [
+    {
+     "path": "M 292 516 C 362 516 420 534 462 552"
+    },
+    {
+     "path": "M 272 640 C 340 604 418 594 462 602"
+    }
+   ]
+  },
+  {
+   "id": "leftLung",
+   "name": "left lung",
+   "outlines": [
+    {
+     "path": "M 534 384 C 574 364 670 382 710 470 C 750 560 748 676 728 728 C 660 718 604 706 566 698 C 596 642 604 602 566 566 C 548 528 538 474 534 384 Z"
+    }
+   ],
+   "details": [
+    {
+     "path": "M 728 610 C 680 580 640 572 600 574"
+    }
+   ]
+  },
+  {
+   "id": "alveoli",
+   "name": "air sacs",
+   "outlines": [
+    {
+     "circle": [
+      356,
+      598,
+      11
+     ]
+    },
+    {
+     "circle": [
+      380,
+      590,
+      11
+     ]
+    },
+    {
+     "circle": [
+      368,
+      618,
+      11
+     ]
+    },
+    {
+     "circle": [
+      392,
+      612,
+      11
+     ]
+    },
+    {
+     "circle": [
+      346,
+      622,
+      11
+     ]
+    }
+   ]
+  },
+  {
+   "id": "diaphragm",
+   "name": "diaphragm",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 226 768 C 330 690 670 690 774 768"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Windpipe",
+   "structure": "trachea",
+   "instruction": "Trace the windpipe.",
+   "note": {
+    "text": "Air you breathe in through your nose or mouth goes down the windpipe, or trachea. Stiff rings keep it open.",
+    "remember": "Trachea = windpipe."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Bronchi",
+   "structure": "bronchi",
+   "instruction": "Draw the two tubes branching to each lung.",
+   "note": {
+    "text": "The windpipe splits into two bronchi, one for each lung. Inside, they branch again and again into tiny tubes."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Right lung",
+   "structure": "rightLung",
+   "instruction": "Trace the lung on the left of the picture.",
+   "note": {
+    "text": "This is your right lung: the body faces you, so its right is on your left. It's the bigger lung.",
+    "remember": "Two lungs, one on each side of the heart."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Left lung",
+   "structure": "leftLung",
+   "instruction": "Trace the other lung, with its dip in the middle.",
+   "note": {
+    "text": "The left lung is smaller. It has a dip, the cardiac notch, that makes room for your heart.",
+    "remember": "The left lung makes room for the heart."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Lobes",
+   "structure": "rightLung",
+   "part": "details",
+   "instruction": "Draw the two lines that split the right lung into lobes.",
+   "note": {
+    "text": "The right lung has three lobes, or sections. The left lung has two."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Lobe",
+   "structure": "leftLung",
+   "part": "details",
+   "instruction": "Draw the line that splits the left lung into two lobes.",
+   "note": {
+    "text": "The lobes are separated by deep grooves called fissures."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Air sacs",
+   "structure": "alveoli",
+   "instruction": "Dab the tiny air sacs at the end of the airway.",
+   "note": {
+    "text": "The tiniest tubes end in air sacs called alveoli. Here oxygen passes into your blood, and carbon dioxide passes out to be breathed away.",
+    "remember": "Alveoli: where oxygen enters the blood."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Diaphragm",
+   "structure": "diaphragm",
+   "instruction": "Trace the dome-shaped muscle under the lungs.",
+   "note": {
+    "text": "The diaphragm is a muscle. When it squeezes, it moves down, making room in your chest, and air rushes into your lungs.",
+    "remember": "Diaphragm down = breathe in."
+   }
+  },
+  {
+   "type": "order",
+   "title": "Air's path",
+   "items": [
+    "Nose or mouth",
+    "Windpipe",
+    "Bronchi",
+    "Air sacs"
+   ],
+   "instruction": "Tap the parts in the order air reaches them.",
+   "why": "Air goes in through the nose or mouth, down the windpipe, into the bronchi, and on to the tiny air sacs.",
+   "hint": "Which tube does air go down first?"
+  },
+  {
+   "type": "label",
+   "title": "Label the parts",
+   "instruction": "Pick the right name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      500,
+      226
+     ],
+     "answer": "Windpipe",
+     "synonyms": [
+      "Trachea"
+     ],
+     "role": "Carries air down to the lungs."
+    },
+    {
+     "n": 2,
+     "at": [
+      396,
+      430
+     ],
+     "answer": "Bronchus",
+     "role": "Carries air into one lung."
+    },
+    {
+     "n": 3,
+     "at": [
+      370,
+      606
+     ],
+     "answer": "Air sacs",
+     "synonyms": [
+      "Alveoli"
+     ],
+     "role": "Where oxygen enters the blood."
+    },
+    {
+     "n": 4,
+     "at": [
+      500,
+      708
+     ],
+     "answer": "Diaphragm",
+     "role": "Muscle that moves to pull air in.",
+     "mistakes": {
+      "Stomach": "The stomach is below the diaphragm. This dome-shaped muscle is the diaphragm."
+     }
+    }
+   ],
+   "vocabulary": [
+    "Windpipe",
+    "Bronchus",
+    "Air sacs",
+    "Diaphragm",
+    "Stomach",
+    "Heart"
+   ],
+   "commonMistakes": {
+    "Heart": "The heart sits between the lungs, in the dip of the left lung. It isn't drawn here."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Use what you've drawn.",
+   "showsDiagram": true,
+   "question": "Why do your lungs need so many tiny air sacs?",
+   "options": [
+    {
+     "text": "So lots of oxygen can pass into the blood at once",
+     "correct": true,
+     "feedback": "Yes. Every air sac is a place where oxygen moves into the blood and carbon dioxide moves out, so more sacs means more oxygen."
+    },
+    {
+     "text": "To store food",
+     "feedback": "Lungs don't store food. The air sacs are where oxygen gets into the blood."
+    },
+    {
+     "text": "To make the lungs heavier",
+     "feedback": "The air sacs are about passing oxygen into the blood, not weight."
+    },
+    {
+     "text": "To pump blood",
+     "feedback": "The heart pumps blood. The air sacs are where oxygen enters it."
+    }
+   ]
+  }
+ ]
+}
