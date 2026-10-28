@@ -1,0 +1,413 @@
+{
+ "id": "g4-wave-parts",
+ "title": "Parts of a wave: crest, trough, wavelength",
+ "grade": "4",
+ "subject": "Physics",
+ "standard": "4-PS4-1",
+ "minutes": 7,
+ "sources": [
+  {
+   "title": "NGSS 4-PS4-1: Develop a model of waves to describe patterns in terms of amplitude and wavelength and that waves can cause objects to move"
+  },
+  {
+   "title": "OpenStax University Physics Volume 1, 16.1 Traveling Waves",
+   "url": "https://openstax.org/books/university-physics-volume-1/pages/16-1-traveling-waves"
+  }
+ ],
+ "keywords": [
+  "wave",
+  "crest",
+  "trough",
+  "wavelength",
+  "amplitude",
+  "water waves",
+  "motion",
+  "pattern"
+ ],
+ "structures": [
+  {
+   "id": "rest",
+   "name": "calm water line",
+   "outlines": [
+    {
+     "line": [
+      80,
+      520,
+      920,
+      520
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wave",
+   "name": "wave",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      80,
+      520.0,
+      90,
+      501.2,
+      100,
+      482.9,
+      110,
+      465.5,
+      120,
+      449.5,
+      130,
+      435.1,
+      140,
+      422.9,
+      150,
+      413.1,
+      160,
+      405.9,
+      170,
+      401.5,
+      180,
+      400.0,
+      190,
+      401.5,
+      200,
+      405.9,
+      210,
+      413.1,
+      220,
+      422.9,
+      230,
+      435.1,
+      240,
+      449.5,
+      250,
+      465.5,
+      260,
+      482.9,
+      270,
+      501.2,
+      280,
+      520.0,
+      290,
+      538.8,
+      300,
+      557.1,
+      310,
+      574.5,
+      320,
+      590.5,
+      330,
+      604.9,
+      340,
+      617.1,
+      350,
+      626.9,
+      360,
+      634.1,
+      370,
+      638.5,
+      380,
+      640.0,
+      390,
+      638.5,
+      400,
+      634.1,
+      410,
+      626.9,
+      420,
+      617.1,
+      430,
+      604.9,
+      440,
+      590.5,
+      450,
+      574.5,
+      460,
+      557.1,
+      470,
+      538.8,
+      480,
+      520.0,
+      490,
+      501.2,
+      500,
+      482.9,
+      510,
+      465.5,
+      520,
+      449.5,
+      530,
+      435.1,
+      540,
+      422.9,
+      550,
+      413.1,
+      560,
+      405.9,
+      570,
+      401.5,
+      580,
+      400.0,
+      590,
+      401.5,
+      600,
+      405.9,
+      610,
+      413.1,
+      620,
+      422.9,
+      630,
+      435.1,
+      640,
+      449.5,
+      650,
+      465.5,
+      660,
+      482.9,
+      670,
+      501.2,
+      680,
+      520.0,
+      690,
+      538.8,
+      700,
+      557.1,
+      710,
+      574.5,
+      720,
+      590.5,
+      730,
+      604.9,
+      740,
+      617.1,
+      750,
+      626.9,
+      760,
+      634.1,
+      770,
+      638.5,
+      780,
+      640.0,
+      790,
+      638.5,
+      800,
+      634.1,
+      810,
+      626.9,
+      820,
+      617.1,
+      830,
+      604.9,
+      840,
+      590.5,
+      850,
+      574.5,
+      860,
+      557.1,
+      870,
+      538.8,
+      880,
+      520.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wavelength",
+   "name": "wavelength",
+   "outlines": [
+    {
+     "line": [
+      180,
+      330,
+      580,
+      330
+     ]
+    },
+    {
+     "line": [
+      180,
+      310,
+      180,
+      350
+     ]
+    },
+    {
+     "line": [
+      580,
+      310,
+      580,
+      350
+     ]
+    }
+   ]
+  },
+  {
+   "id": "amplitude",
+   "name": "amplitude",
+   "outlines": [
+    {
+     "line": [
+      580,
+      520,
+      580,
+      408
+     ]
+    },
+    {
+     "line": [
+      567.8,
+      431.0,
+      580,
+      408,
+      592.2,
+      431.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ball",
+   "name": "floating ball",
+   "outlines": [
+    {
+     "circle": [
+      780,
+      608,
+      30
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Calm water",
+   "structure": "rest",
+   "instruction": "Trace the straight line where calm water would be.",
+   "note": {
+    "text": "This line shows where the water would sit if there were no waves. We measure the wave from here."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Wave",
+   "structure": "wave",
+   "instruction": "Trace the wave, up and down along the water.",
+   "note": {
+    "text": "The highest points are crests; the lowest points are troughs. A wave repeats this pattern again and again.",
+    "remember": "Crest = top, trough = bottom."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Wavelength",
+   "structure": "wavelength",
+   "instruction": "Draw the line from one crest to the next.",
+   "note": {
+    "text": "The wavelength is the distance from one crest to the next crest. Short waves have crests close together.",
+    "remember": "Wavelength: crest to crest."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Amplitude",
+   "structure": "amplitude",
+   "instruction": "Draw the arrow from the calm line up to a crest.",
+   "note": {
+    "text": "The amplitude is how high the wave rises above the calm line. Bigger waves have a bigger amplitude.",
+    "remember": "Amplitude: how tall."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Floating ball",
+   "structure": "ball",
+   "instruction": "Trace the ball floating in a trough.",
+   "note": {
+    "text": "As waves pass, a floating ball bobs up and down. Waves can make objects move!",
+    "remember": "Waves can move things."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Label the wave",
+   "instruction": "Pick the right name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      180,
+      400
+     ],
+     "answer": "Crest",
+     "role": "The highest point."
+    },
+    {
+     "n": 2,
+     "at": [
+      380,
+      640
+     ],
+     "answer": "Trough",
+     "role": "The lowest point.",
+     "mistakes": {
+      "Crest": "Crests are the tops. This low point is a trough."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      380,
+      330
+     ],
+     "answer": "Wavelength",
+     "role": "Crest to crest."
+    },
+    {
+     "n": 4,
+     "at": [
+      580,
+      470
+     ],
+     "answer": "Amplitude",
+     "role": "How high the wave rises."
+    }
+   ],
+   "vocabulary": [
+    "Crest",
+    "Trough",
+    "Wavelength",
+    "Amplitude",
+    "Shore"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Predict",
+   "instruction": "Think about the ball.",
+   "showsDiagram": true,
+   "question": "A storm makes waves with a much bigger amplitude. What happens to the floating ball?",
+   "options": [
+    {
+     "text": "It bobs up and down much farther",
+     "correct": true,
+     "feedback": "Yes. Taller waves lift it higher and drop it lower: the ball's motion follows the wave's amplitude."
+    },
+    {
+     "text": "It stops moving",
+     "feedback": "Bigger waves move it more, not less."
+    },
+    {
+     "text": "It moves up and down the same amount",
+     "feedback": "The amplitude changed, so the ball's bobbing changes too: it moves farther."
+    },
+    {
+     "text": "It sinks",
+     "feedback": "A ball still floats. Bigger waves just make it bob farther up and down."
+    }
+   ]
+  }
+ ]
+}

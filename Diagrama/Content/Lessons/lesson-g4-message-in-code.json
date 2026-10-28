@@ -1,0 +1,309 @@
+{
+ "id": "g4-message-in-code",
+ "title": "Sending a message in code",
+ "grade": "4",
+ "subject": "Physics",
+ "standard": "4-PS4-3",
+ "minutes": 7,
+ "sources": [
+  {
+   "title": "NGSS 4-PS4-3: Generate and compare multiple solutions that use patterns to transfer information"
+  },
+  {
+   "title": "ITU-R M.1677-1: International Morse code",
+   "url": "https://www.itu.int/dms_pubrec/itu-r/rec/m/R-REC-M.1677-1-200910-I!!PDF-E.pdf"
+  }
+ ],
+ "keywords": [
+  "code",
+  "Morse code",
+  "pattern",
+  "information",
+  "message",
+  "flashlight",
+  "signal",
+  "dots",
+  "dashes",
+  "communication",
+  "engineering design"
+ ],
+ "structures": [
+  {
+   "id": "torch",
+   "name": "flashlight",
+   "pen": "bold",
+   "outlines": [
+    {
+     "rect": [
+      120,
+      440,
+      180,
+      80,
+      14
+     ]
+    }
+   ]
+  },
+  {
+   "id": "head",
+   "name": "flashlight head",
+   "outlines": [
+    {
+     "polygon": [
+      310,
+      430,
+      370,
+      400,
+      370,
+      560,
+      310,
+      530
+     ]
+    }
+   ]
+  },
+  {
+   "id": "beam",
+   "name": "flash of light",
+   "outlines": [
+    {
+     "line": [
+      392,
+      440,
+      572,
+      384
+     ]
+    },
+    {
+     "line": [
+      392,
+      480,
+      572,
+      480
+     ]
+    },
+    {
+     "line": [
+      392,
+      520,
+      572,
+      576
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tape",
+   "name": "message strip",
+   "outlines": [
+    {
+     "rect": [
+      100,
+      700,
+      800,
+      120,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": "letterO",
+   "name": "letter O",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      150,
+      760,
+      210,
+      760
+     ]
+    },
+    {
+     "line": [
+      240,
+      760,
+      300,
+      760
+     ]
+    },
+    {
+     "line": [
+      330,
+      760,
+      390,
+      760
+     ]
+    }
+   ]
+  },
+  {
+   "id": "letterK",
+   "name": "letter K",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      470,
+      760,
+      530,
+      760
+     ]
+    },
+    {
+     "circle": [
+      560,
+      760,
+      9
+     ]
+    },
+    {
+     "line": [
+      590,
+      760,
+      650,
+      760
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Flashlight",
+   "structure": "torch",
+   "instruction": "Trace the flashlight's handle.",
+   "note": {
+    "text": "You can send a message without words by using a pattern: flashing a light on and off."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Flashlight head",
+   "structure": "head",
+   "instruction": "Trace the flashlight's head.",
+   "note": {
+    "text": "A short flash is a dot. A long flash, three times as long, is a dash. That's Morse code.",
+    "remember": "Dash = three dots long."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Flash",
+   "structure": "beam",
+   "instruction": "Draw the three lines of the flash.",
+   "note": {
+    "text": "Light travels fast and far, so a friend across a field can read your flashes, even at night."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Message strip",
+   "structure": "tape",
+   "instruction": "Trace the strip where we'll write the message.",
+   "note": {
+    "text": "Writing the pattern down lets you check it, send it again, or decode it later."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Letter O",
+   "structure": "letterO",
+   "instruction": "Draw three dashes: that's the letter O.",
+   "note": {
+    "text": "In Morse code, O is dash, dash, dash. Every letter has its own pattern of dots and dashes.",
+    "remember": "O = − − −"
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Letter K",
+   "structure": "letterK",
+   "instruction": "Draw dash, dot, dash: the letter K. Dab the dot.",
+   "note": {
+    "text": "K is dash, dot, dash. A longer gap between letters, as long as three dots, shows where one letter ends.",
+    "remember": "Gaps separate letters."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Decode",
+   "instruction": "Read your message.",
+   "showsDiagram": true,
+   "question": "O is − − − and K is − · −. What does your strip say?",
+   "options": [
+    {
+     "text": "OK",
+     "correct": true,
+     "feedback": "Yes! Patterns of short and long signals can carry any message, letter by letter."
+    },
+    {
+     "text": "KO",
+     "feedback": "Read left to right: first − − − (O), then − · − (K)."
+    },
+    {
+     "text": "OO",
+     "feedback": "The second letter has a dot in the middle: − · − is K."
+    },
+    {
+     "text": "SOS",
+     "feedback": "There are only two letters here, made of dashes and one dot: O and K."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Compare solutions",
+   "instruction": "Think like an engineer.",
+   "showsDiagram": false,
+   "question": "You need to send a message to a friend across a big, dark field at night. Which way works best?",
+   "options": [
+    {
+     "text": "Flash a flashlight in code",
+     "correct": true,
+     "feedback": "Yes. Light can be seen from far away in the dark, and the code carries the message."
+    },
+    {
+     "text": "Whisper the message",
+     "feedback": "A whisper won't carry across a big field. A flashing light can be seen from far away."
+    },
+    {
+     "text": "Wave a note in the air",
+     "feedback": "Your friend couldn't read it in the dark. Flashes of light show up at night."
+    },
+    {
+     "text": "Tap a pattern on the ground",
+     "feedback": "Taps won't carry across a whole field. Light flashes travel much farther."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Patterns",
+   "instruction": "Why do the gaps matter?",
+   "showsDiagram": true,
+   "question": "Why does Morse code leave a longer gap between letters?",
+   "options": [
+    {
+     "text": "So you can tell where one letter ends and the next begins",
+     "correct": true,
+     "feedback": "Right. Without the gaps, − − − − · − would be hard to split into O and K. The pattern needs to be clear."
+    },
+    {
+     "text": "To give the flashlight a rest",
+     "feedback": "The gaps are part of the pattern: they mark where each letter ends."
+    },
+    {
+     "text": "Gaps don't matter",
+     "feedback": "They do: without them you couldn't tell where one letter stops and the next starts."
+    },
+    {
+     "text": "To make the message longer",
+     "feedback": "The gap isn't padding: it shows where one letter ends."
+    }
+   ]
+  }
+ ]
+}

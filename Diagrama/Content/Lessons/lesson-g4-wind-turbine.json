@@ -1,0 +1,281 @@
+{
+ "id": "g4-wind-turbine",
+ "title": "A wind turbine making electricity",
+ "grade": "4",
+ "subject": "Physics",
+ "standard": "4-PS3-4",
+ "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS 4-PS3-4: Apply scientific ideas to design, test, and refine a device that converts energy from one form to another"
+  },
+  {
+   "title": "U.S. Department of Energy: Explore a Wind Turbine (text version)",
+   "url": "https://www.energy.gov/eere/wind/how-wind-turbine-works-text-version"
+  }
+ ],
+ "keywords": [
+  "wind turbine",
+  "wind",
+  "energy",
+  "electricity",
+  "generator",
+  "blades",
+  "rotor",
+  "tower",
+  "renewable",
+  "energy conversion",
+  "engineering design"
+ ],
+ "printed": [
+  {
+   "text": "Wind",
+   "at": [
+    120,
+    250
+   ]
+  }
+ ],
+ "structures": [
+  {
+   "id": "tower",
+   "name": "tower",
+   "pen": "bold",
+   "outlines": [
+    {
+     "polygon": [
+      478,
+      900,
+      522,
+      900,
+      510,
+      372,
+      490,
+      372
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nacelle",
+   "name": "nacelle",
+   "outlines": [
+    {
+     "rect": [
+      480,
+      318,
+      120,
+      48,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rotor",
+   "name": "blades and hub",
+   "outlines": [
+    {
+     "circle": [
+      462,
+      342,
+      22
+     ]
+    },
+    {
+     "path": "M 462.0 316.0 C 492.0 282.0 498.0 192.0 462.0 106.0 C 448.0 192.0 450.0 282.0 462.0 316.0 Z"
+    },
+    {
+     "path": "M 484.5 355.0 C 499.0 398.0 573.9 448.2 666.4 460.0 C 598.9 404.9 520.0 361.6 484.5 355.0 Z"
+    },
+    {
+     "path": "M 439.5 355.0 C 395.0 346.0 314.1 385.8 257.6 460.0 C 339.1 429.1 416.0 382.4 439.5 355.0 Z"
+    }
+   ]
+  },
+  {
+   "id": "wind",
+   "name": "wind",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      60,
+      300,
+      220,
+      300
+     ]
+    },
+    {
+     "line": [
+      197.0,
+      287.8,
+      220,
+      300,
+      197.0,
+      312.2
+     ]
+    },
+    {
+     "line": [
+      60,
+      420,
+      220,
+      420
+     ]
+    },
+    {
+     "line": [
+      197.0,
+      407.8,
+      220,
+      420,
+      197.0,
+      432.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cable",
+   "name": "power line",
+   "outlines": [
+    {
+     "line": [
+      524,
+      880,
+      640,
+      880,
+      640,
+      790,
+      756,
+      790
+     ]
+    }
+   ]
+  },
+  {
+   "id": "house",
+   "name": "house",
+   "outlines": [
+    {
+     "rect": [
+      762,
+      700,
+      140,
+      120,
+      4
+     ]
+    },
+    {
+     "line": [
+      740,
+      704,
+      832,
+      618,
+      924,
+      704
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Tower",
+   "structure": "tower",
+   "instruction": "Trace the tall tower.",
+   "note": {
+    "text": "The tower lifts the turbine high up, where the wind blows faster. Faster wind means more electricity.",
+    "remember": "Taller tower, faster wind."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Nacelle",
+   "structure": "nacelle",
+   "instruction": "Trace the box at the top of the tower.",
+   "note": {
+    "text": "This box, the nacelle, holds the generator: the machine that turns spinning motion into electricity.",
+    "remember": "Generator: motion into electricity."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Blades",
+   "structure": "rotor",
+   "instruction": "Trace the hub and all three blades.",
+   "note": {
+    "text": "Wind pushes on the blades, which are shaped like airplane wings. They spin the hub, which turns a shaft in the nacelle.",
+    "remember": "Wind spins the blades."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Wind",
+   "structure": "wind",
+   "instruction": "Draw the two arrows of wind blowing in.",
+   "note": {
+    "text": "Moving air has energy. The turbine changes the wind's energy of motion into electrical energy."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Power line",
+   "structure": "cable",
+   "instruction": "Draw the power line from the tower to the house.",
+   "note": {
+    "text": "Wires carry the electricity from the turbine to where people use it."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "House",
+   "structure": "house",
+   "instruction": "Trace the house and its roof.",
+   "note": {
+    "text": "In the house, the electricity can change form again: into light from lamps or sound from a radio."
+   }
+  },
+  {
+   "type": "order",
+   "title": "Energy's path",
+   "items": [
+    "Wind blows",
+    "Blades spin",
+    "Generator makes electricity",
+    "Lights glow in the house"
+   ],
+   "instruction": "Tap the steps in order.",
+   "why": "The wind's motion spins the blades, the generator turns that spinning into electricity, and wires carry it to the house.",
+   "hint": "What makes the blades move?"
+  },
+  {
+   "type": "choice",
+   "title": "Improve the design",
+   "instruction": "Think like an engineer.",
+   "showsDiagram": true,
+   "question": "Engineers want this turbine to make more electricity. Which change would help?",
+   "options": [
+    {
+     "text": "Build a taller tower to reach faster wind",
+     "correct": true,
+     "feedback": "Yes. Wind usually blows faster higher up, and faster wind spins the blades harder, making more electricity."
+    },
+    {
+     "text": "Paint the blades a brighter color",
+     "feedback": "Color doesn't change how hard the wind pushes. A taller tower reaches faster wind."
+    },
+    {
+     "text": "Move the turbine indoors",
+     "feedback": "Indoors there's no wind to spin it. It needs to be up in fast-moving air."
+    },
+    {
+     "text": "Take off one blade",
+     "feedback": "The blades catch the wind. A taller tower, reaching faster wind, would help more."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,331 @@
+{
+ "id": "g4-simple-circuit",
+ "title": "A simple circuit: battery, wire, bulb",
+ "grade": "4",
+ "subject": "Physics",
+ "standard": "4-PS3-2",
+ "minutes": 7,
+ "sources": [
+  {
+   "title": "NGSS 4-PS3-2: Make observations to provide evidence that energy can be transferred from place to place by sound, light, heat, and electric currents"
+  },
+  {
+   "title": "OpenStax University Physics Volume 2, 10.1 Electromotive Force (a battery needs a complete circuit)",
+   "url": "https://openstax.org/books/university-physics-volume-2/pages/10-1-electromotive-force"
+  }
+ ],
+ "keywords": [
+  "circuit",
+  "battery",
+  "wire",
+  "bulb",
+  "switch",
+  "electricity",
+  "electric current",
+  "energy transfer",
+  "closed circuit",
+  "open circuit"
+ ],
+ "structures": [
+  {
+   "id": "battery",
+   "name": "battery",
+   "pen": "bold",
+   "outlines": [
+    {
+     "rect": [
+      180,
+      420,
+      90,
+      160,
+      8
+     ]
+    },
+    {
+     "rect": [
+      210,
+      400,
+      30,
+      16,
+      3
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wires",
+   "name": "wires",
+   "outlines": [
+    {
+     "line": [
+      225,
+      398,
+      225,
+      250,
+      860,
+      250,
+      860,
+      495,
+      804,
+      495
+     ]
+    },
+    {
+     "line": [
+      775,
+      518,
+      775,
+      750,
+      556,
+      750
+     ]
+    },
+    {
+     "line": [
+      444,
+      750,
+      225,
+      750,
+      225,
+      584
+     ]
+    }
+   ]
+  },
+  {
+   "id": "switch",
+   "name": "switch",
+   "outlines": [
+    {
+     "line": [
+      450,
+      750,
+      546,
+      742
+     ]
+    }
+   ],
+   "details": [
+    {
+     "circle": [
+      446,
+      750,
+      8
+     ]
+    },
+    {
+     "circle": [
+      554,
+      750,
+      8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bulb",
+   "name": "bulb",
+   "outlines": [
+    {
+     "circle": [
+      775,
+      410,
+      60
+     ]
+    },
+    {
+     "rect": [
+      750,
+      476,
+      50,
+      38,
+      4
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      745,
+      432,
+      760,
+      400,
+      775,
+      432,
+      790,
+      400,
+      805,
+      432
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Battery",
+   "structure": "battery",
+   "instruction": "Trace the battery and its bump on top.",
+   "note": {
+    "text": "A battery stores energy. When it's connected in a complete loop, it pushes an electric current around.",
+    "remember": "Battery = stored energy."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Wires",
+   "structure": "wires",
+   "instruction": "Trace the wires that run from the battery to the bulb and back.",
+   "note": {
+    "text": "Metal wires carry the electric current. Energy travels along them from the battery to the bulb.",
+    "remember": "Wires carry the current."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Switch",
+   "structure": "switch",
+   "instruction": "Draw the switch closing the gap in the wire.",
+   "note": {
+    "text": "A switch opens or closes the loop. Closed, current can flow all the way round. Open, the loop is broken and it stops.",
+    "remember": "Closed switch = complete circuit."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Contacts",
+   "structure": "switch",
+   "part": "details",
+   "instruction": "Dab the two metal contacts of the switch.",
+   "note": {
+    "text": "The switch's metal bar touches both contacts to join the wire."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Bulb",
+   "structure": "bulb",
+   "instruction": "Trace the glass bulb and its metal base.",
+   "note": {
+    "text": "Current flows in through the base and out again, so the bulb is part of the loop too."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Filament",
+   "structure": "bulb",
+   "part": "details",
+   "instruction": "Draw the zigzag wire inside the bulb.",
+   "note": {
+    "text": "As the current flows through the bulb, energy from the battery comes out as light. Energy has moved from place to place.",
+    "remember": "Electric current carries energy."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Label the parts",
+   "instruction": "Pick the right name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      225,
+      500
+     ],
+     "answer": "Battery",
+     "role": "Stores energy and pushes current."
+    },
+    {
+     "n": 2,
+     "at": [
+      540,
+      250
+     ],
+     "answer": "Wire",
+     "role": "Carries the current."
+    },
+    {
+     "n": 3,
+     "at": [
+      500,
+      746
+     ],
+     "answer": "Switch",
+     "role": "Opens or closes the loop."
+    },
+    {
+     "n": 4,
+     "at": [
+      775,
+      410
+     ],
+     "answer": "Bulb",
+     "role": "Gives off light."
+    }
+   ],
+   "vocabulary": [
+    "Battery",
+    "Wire",
+    "Switch",
+    "Bulb",
+    "Magnet"
+   ],
+   "commonMistakes": {
+    "Magnet": "There's no magnet in this circuit. It's a battery, wires, a switch and a bulb."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Predict",
+   "instruction": "Think about the loop.",
+   "showsDiagram": true,
+   "question": "What happens to the bulb if you open the switch?",
+   "options": [
+    {
+     "text": "It goes out, because the loop is broken",
+     "correct": true,
+     "feedback": "Yes. Current only flows around a complete loop. Open the switch and no energy reaches the bulb."
+    },
+    {
+     "text": "It gets brighter",
+     "feedback": "Opening the switch breaks the loop, so current stops and the bulb goes out."
+    },
+    {
+     "text": "It stays the same",
+     "feedback": "The bulb needs a complete loop. With the switch open, it goes out."
+    },
+    {
+     "text": "The battery fills back up",
+     "feedback": "Opening the switch just stops the current. The bulb goes out."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Energy",
+   "instruction": "Where does the energy go?",
+   "showsDiagram": true,
+   "question": "In this circuit, how does energy get from the battery to the bulb?",
+   "options": [
+    {
+     "text": "An electric current carries it through the wires",
+     "correct": true,
+     "feedback": "Right. Electric currents are one way energy moves from place to place. Sound, light and heat are others."
+    },
+    {
+     "text": "It jumps through the air",
+     "feedback": "The energy travels through the wires, carried by the electric current."
+    },
+    {
+     "text": "The switch makes the energy",
+     "feedback": "The switch only opens or closes the loop. The battery supplies the energy."
+    },
+    {
+     "text": "Light carries it from the battery",
+     "feedback": "Light comes out of the bulb. Getting there, the energy travels as an electric current."
+    }
+   ]
+  }
+ ]
+}

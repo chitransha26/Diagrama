@@ -1,0 +1,306 @@
+{
+ "id": "g4-light-into-eye",
+ "title": "Light reflecting into the eye",
+ "grade": "4",
+ "subject": "Physics",
+ "standard": "4-PS4-2",
+ "minutes": 7,
+ "sources": [
+  {
+   "title": "NGSS 4-PS4-2: Develop a model to describe that light reflecting from objects and entering the eye allows objects to be seen"
+  },
+  {
+   "title": "OpenStax University Physics Volume 3, 1.2 The Law of Reflection",
+   "url": "https://openstax.org/books/university-physics-volume-3/pages/1-2-the-law-of-reflection"
+  },
+  {
+   "title": "OpenStax Biology 2e, 36.5 Vision",
+   "url": "https://openstax.org/books/biology-2e/pages/36-5-vision"
+  }
+ ],
+ "keywords": [
+  "light",
+  "reflection",
+  "seeing",
+  "eye",
+  "sun",
+  "light source",
+  "reflect",
+  "vision",
+  "model"
+ ],
+ "structures": [
+  {
+   "id": "sun",
+   "name": "sun",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      150,
+      180,
+      66
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      234.0,
+      180.0,
+      268.0,
+      180.0
+     ]
+    },
+    {
+     "line": [
+      209.4,
+      239.4,
+      233.4,
+      263.4
+     ]
+    },
+    {
+     "line": [
+      150.0,
+      264.0,
+      150.0,
+      298.0
+     ]
+    },
+    {
+     "line": [
+      90.6,
+      239.4,
+      66.6,
+      263.4
+     ]
+    },
+    {
+     "line": [
+      66.0,
+      180.0,
+      32.0,
+      180.0
+     ]
+    },
+    {
+     "line": [
+      90.6,
+      120.6,
+      66.6,
+      96.6
+     ]
+    },
+    {
+     "line": [
+      150.0,
+      96.0,
+      150.0,
+      62.0
+     ]
+    },
+    {
+     "line": [
+      209.4,
+      120.6,
+      233.4,
+      96.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "apple",
+   "name": "apple",
+   "outlines": [
+    {
+     "path": "M 520 586 C 470 556 410 590 418 652 C 426 720 480 760 520 736 C 560 760 614 720 622 652 C 630 590 570 556 520 586 Z"
+    },
+    {
+     "line": [
+      520,
+      586,
+      532,
+      540
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eye",
+   "name": "eye",
+   "outlines": [
+    {
+     "path": "M 786 420 C 828 376 892 376 934 420 C 892 464 828 464 786 420 Z"
+    },
+    {
+     "circle": [
+      860,
+      420,
+      22
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rays",
+   "name": "light",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      206,
+      236,
+      470,
+      566
+     ]
+    },
+    {
+     "line": [
+      465.2,
+      540.4,
+      470,
+      566,
+      446.1,
+      555.7
+     ]
+    },
+    {
+     "line": [
+      590,
+      600,
+      780,
+      446
+     ]
+    },
+    {
+     "line": [
+      754.5,
+      451.0,
+      780,
+      446,
+      769.9,
+      469.9
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Sun",
+   "structure": "sun",
+   "instruction": "Trace the sun.",
+   "note": {
+    "text": "The sun gives off its own light. Things that give off light, like the sun or a lamp, are light sources.",
+    "remember": "Light sources make light."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sunbeams",
+   "structure": "sun",
+   "part": "details",
+   "instruction": "Draw the sun's rays.",
+   "note": {
+    "text": "Light spreads out from the sun in every direction."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Apple",
+   "structure": "apple",
+   "instruction": "Trace the apple and its stem.",
+   "note": {
+    "text": "An apple makes no light of its own. We can only see it when light shines on it.",
+    "remember": "Most things don't make their own light."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Eye",
+   "structure": "eye",
+   "instruction": "Trace the eye and its colored iris.",
+   "note": {
+    "text": "Your eye takes in light. Inside, it turns the light into signals for your brain."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Light's path",
+   "structure": "rays",
+   "instruction": "Draw the light from the sun to the apple, then from the apple to the eye.",
+   "note": {
+    "text": "Light bounces, or reflects, off the apple. Some of it enters your eye, and that's how you see the apple.",
+    "remember": "We see light that reflects into our eyes."
+   }
+  },
+  {
+   "type": "order",
+   "title": "How you see",
+   "items": [
+    "Sun gives off light",
+    "Light hits the apple",
+    "Light reflects off the apple",
+    "Light enters your eye"
+   ],
+   "instruction": "Tap the steps in order.",
+   "why": "Light from a source hits the apple, reflects off it, and travels into your eye.",
+   "hint": "Where does the light come from?"
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Use your model.",
+   "showsDiagram": true,
+   "question": "In a room with no light at all, can you see the apple?",
+   "options": [
+    {
+     "text": "No, because no light can reflect off it into your eyes",
+     "correct": true,
+     "feedback": "Right. Seeing needs light to bounce off the apple and enter your eyes. With no light, there's nothing to see."
+    },
+    {
+     "text": "Yes, if you look hard enough",
+     "feedback": "Looking harder doesn't help: you can only see light that enters your eyes."
+    },
+    {
+     "text": "Yes, apples glow a little",
+     "feedback": "Apples don't make their own light. They can only be seen by light reflecting off them."
+    },
+    {
+     "text": "Only if it's a red apple",
+     "feedback": "Color doesn't matter. Without light to reflect, you can't see any apple."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "One more about reflection.",
+   "showsDiagram": false,
+   "question": "Why can everyone in a classroom see the same poster, wherever they sit?",
+   "options": [
+    {
+     "text": "Its rough surface reflects light in every direction",
+     "correct": true,
+     "feedback": "Yes. Rough surfaces like paper scatter light every way, so some reaches every eye in the room."
+    },
+    {
+     "text": "The poster makes its own light",
+     "feedback": "Posters don't make light. They reflect light in every direction."
+    },
+    {
+     "text": "Light only reflects straight back",
+     "feedback": "That's how a mirror reflects. Rough paper scatters light in every direction."
+    },
+    {
+     "text": "The poster is very big",
+     "feedback": "Size isn't the reason. Its rough surface reflects light every way, into every eye."
+    }
+   ]
+  }
+ ]
+}
