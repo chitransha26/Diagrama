@@ -1,0 +1,686 @@
+{
+ "id": "g5-ocean-food-chain",
+ "title": "Ocean food chain",
+ "grade": "5",
+ "subject": "Life science",
+ "standard": "5-LS2-1",
+ "minutes": 7,
+ "sources": [
+  {
+   "title": "NGSS 5-LS2-1: Develop a model to describe the movement of matter among plants, animals, decomposers, and the environment"
+  },
+  {
+   "title": "NOAA Ocean Today: Animals of the Ice: Antarctic Krill",
+   "url": "https://oceantoday.noaa.gov/animalsoftheice_krill/"
+  },
+  {
+   "title": "OpenStax Biology 2e, 44.4 Aquatic Biomes (phytoplankton are the base of the food web)",
+   "url": "https://openstax.org/books/biology-2e/pages/44-4-aquatic-biomes"
+  },
+  {
+   "title": "OpenStax Biology 2e, 46.1 Ecology of Ecosystems",
+   "url": "https://openstax.org/books/biology-2e/pages/46-1-ecology-of-ecosystems"
+  }
+ ],
+ "keywords": [
+  "food chain",
+  "ocean",
+  "phytoplankton",
+  "krill",
+  "whale",
+  "producer",
+  "consumer",
+  "Antarctica",
+  "energy",
+  "plankton"
+ ],
+ "structures": [
+  {
+   "id": "sun",
+   "name": "sun",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      130,
+      130,
+      60
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      208.0,
+      130.0,
+      240.0,
+      130.0
+     ]
+    },
+    {
+     "line": [
+      185.2,
+      185.2,
+      207.8,
+      207.8
+     ]
+    },
+    {
+     "line": [
+      130.0,
+      208.0,
+      130.0,
+      240.0
+     ]
+    },
+    {
+     "line": [
+      74.8,
+      185.2,
+      52.2,
+      207.8
+     ]
+    },
+    {
+     "line": [
+      52.0,
+      130.0,
+      20.0,
+      130.0
+     ]
+    },
+    {
+     "line": [
+      74.8,
+      74.8,
+      52.2,
+      52.2
+     ]
+    },
+    {
+     "line": [
+      130.0,
+      52.0,
+      130.0,
+      20.0
+     ]
+    },
+    {
+     "line": [
+      185.2,
+      74.8,
+      207.8,
+      52.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "surface",
+   "name": "ocean surface",
+   "outlines": [
+    {
+     "line": [
+      40,
+      300.0,
+      50,
+      305.0,
+      60,
+      308.7,
+      70,
+      310.0,
+      80,
+      308.7,
+      90,
+      305.0,
+      100,
+      300.0,
+      110,
+      295.0,
+      120,
+      291.3,
+      130,
+      290.0,
+      140,
+      291.3,
+      150,
+      295.0,
+      160,
+      300.0,
+      170,
+      305.0,
+      180,
+      308.7,
+      190,
+      310.0,
+      200,
+      308.7,
+      210,
+      305.0,
+      220,
+      300.0,
+      230,
+      295.0,
+      240,
+      291.3,
+      250,
+      290.0,
+      260,
+      291.3,
+      270,
+      295.0,
+      280,
+      300.0,
+      290,
+      305.0,
+      300,
+      308.7,
+      310,
+      310.0,
+      320,
+      308.7,
+      330,
+      305.0,
+      340,
+      300.0,
+      350,
+      295.0,
+      360,
+      291.3,
+      370,
+      290.0,
+      380,
+      291.3,
+      390,
+      295.0,
+      400,
+      300.0,
+      410,
+      305.0,
+      420,
+      308.7,
+      430,
+      310.0,
+      440,
+      308.7,
+      450,
+      305.0,
+      460,
+      300.0,
+      470,
+      295.0,
+      480,
+      291.3,
+      490,
+      290.0,
+      500,
+      291.3,
+      510,
+      295.0,
+      520,
+      300.0,
+      530,
+      305.0,
+      540,
+      308.7,
+      550,
+      310.0,
+      560,
+      308.7,
+      570,
+      305.0,
+      580,
+      300.0,
+      590,
+      295.0,
+      600,
+      291.3,
+      610,
+      290.0,
+      620,
+      291.3,
+      630,
+      295.0,
+      640,
+      300.0,
+      650,
+      305.0,
+      660,
+      308.7,
+      670,
+      310.0,
+      680,
+      308.7,
+      690,
+      305.0,
+      700,
+      300.0,
+      710,
+      295.0,
+      720,
+      291.3,
+      730,
+      290.0,
+      740,
+      291.3,
+      750,
+      295.0,
+      760,
+      300.0,
+      770,
+      305.0,
+      780,
+      308.7,
+      790,
+      310.0,
+      800,
+      308.7,
+      810,
+      305.0,
+      820,
+      300.0,
+      830,
+      295.0,
+      840,
+      291.3,
+      850,
+      290.0,
+      860,
+      291.3,
+      870,
+      295.0,
+      880,
+      300.0,
+      890,
+      305.0,
+      900,
+      308.7,
+      910,
+      310.0,
+      920,
+      308.7,
+      930,
+      305.0,
+      940,
+      300.0,
+      950,
+      295.0,
+      960,
+      291.3
+     ]
+    }
+   ]
+  },
+  {
+   "id": "phyto",
+   "name": "phytoplankton",
+   "outlines": [
+    {
+     "circle": [
+      110,
+      390,
+      12
+     ]
+    },
+    {
+     "circle": [
+      160,
+      410,
+      12
+     ]
+    },
+    {
+     "circle": [
+      110,
+      440,
+      12
+     ]
+    },
+    {
+     "circle": [
+      160,
+      462,
+      12
+     ]
+    },
+    {
+     "circle": [
+      210,
+      384,
+      12
+     ]
+    }
+   ]
+  },
+  {
+   "id": "krill",
+   "name": "krill",
+   "outlines": [
+    {
+     "path": "M 360 500 C 376 458 470 452 500 486 C 478 516 400 526 360 500 Z"
+    },
+    {
+     "line": [
+      490,
+      486,
+      560,
+      440
+     ]
+    },
+    {
+     "line": [
+      490,
+      490,
+      566,
+      470
+     ]
+    },
+    {
+     "line": [
+      362,
+      500,
+      334,
+      488
+     ]
+    },
+    {
+     "line": [
+      362,
+      502,
+      338,
+      520
+     ]
+    }
+   ],
+   "details": [
+    {
+     "circle": [
+      476,
+      486,
+      5
+     ]
+    },
+    {
+     "line": [
+      400,
+      512,
+      394,
+      538
+     ]
+    },
+    {
+     "line": [
+      424,
+      509,
+      418,
+      535
+     ]
+    },
+    {
+     "line": [
+      448,
+      506,
+      442,
+      532
+     ]
+    }
+   ]
+  },
+  {
+   "id": "whale",
+   "name": "whale",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 610 600 C 620 560 720 540 820 560 C 870 570 910 588 940 598 C 910 612 870 626 820 640 C 730 664 640 650 610 600 Z"
+    },
+    {
+     "path": "M 940 598 C 960 588 980 586 996 590 C 980 604 960 606 940 598 Z"
+    },
+    {
+     "path": "M 720 652 C 730 700 760 740 800 760 C 790 720 770 680 760 650"
+    }
+   ],
+   "details": [
+    {
+     "circle": [
+      664,
+      596,
+      6
+     ]
+    },
+    {
+     "line": [
+      614,
+      610,
+      700,
+      622
+     ]
+    },
+    {
+     "line": [
+      640,
+      632,
+      712,
+      642
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chain",
+   "name": "energy and matter",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      160,
+      220,
+      150,
+      360
+     ]
+    },
+    {
+     "line": [
+      163.8,
+      338.0,
+      150,
+      360,
+      139.5,
+      336.2
+     ]
+    },
+    {
+     "line": [
+      230,
+      430,
+      330,
+      490
+     ]
+    },
+    {
+     "line": [
+      316.6,
+      467.7,
+      330,
+      490,
+      304.0,
+      488.7
+     ]
+    },
+    {
+     "line": [
+      512,
+      510,
+      606,
+      580
+     ]
+    },
+    {
+     "line": [
+      594.9,
+      556.5,
+      606,
+      580,
+      580.3,
+      576.1
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Sun",
+   "structure": "sun",
+   "instruction": "Trace the sun.",
+   "note": {
+    "text": "Sunlight shines into the top layer of the ocean. Ocean food chains start there."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sun's rays",
+   "structure": "sun",
+   "part": "details",
+   "instruction": "Draw the sun's rays.",
+   "note": {
+    "text": "Sunlight only reaches the top layer of the ocean, so that's where phytoplankton live."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ocean surface",
+   "structure": "surface",
+   "instruction": "Trace the wavy ocean surface.",
+   "note": {
+    "text": "This is the cold Southern Ocean, around Antarctica."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Phytoplankton",
+   "structure": "phyto",
+   "instruction": "Trace the five phytoplankton near the surface.",
+   "note": {
+    "text": "Phytoplankton are tiny living things that make food from sunlight, like plants do. Shown much bigger than real.",
+    "remember": "Phytoplankton = the ocean's producers."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Krill",
+   "structure": "krill",
+   "instruction": "Trace the krill's body, its tail fan and two long feelers.",
+   "note": {
+    "text": "Krill are small shrimp-like animals. They eat phytoplankton and algae that grow under sea ice."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Krill eye and legs",
+   "structure": "krill",
+   "part": "details",
+   "instruction": "Draw the krill's eye and its three legs.",
+   "note": {
+    "text": "Krill swarm in huge numbers, so many animals can feed on them."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Whale",
+   "structure": "whale",
+   "instruction": "Trace the whale's body, tail flukes and long flipper.",
+   "note": {
+    "text": "Whales, seals, fish and penguins all depend on eating krill. Here, a whale is the next link.",
+    "remember": "Many animals depend on krill."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Whale face",
+   "structure": "whale",
+   "part": "details",
+   "instruction": "Draw the whale's eye, mouth and throat grooves.",
+   "note": {
+    "text": "A whale is a consumer: it can't make its own food."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "The chain",
+   "structure": "chain",
+   "instruction": "Draw the arrows: sun to phytoplankton, to krill, to whale.",
+   "note": {
+    "text": "Arrows point from the food to the eater. Matter and energy move along the chain this way.",
+    "remember": "Arrow: from food to eater."
+   }
+  },
+  {
+   "type": "order",
+   "title": "Build the chain",
+   "items": [
+    "Sun",
+    "Phytoplankton",
+    "Krill",
+    "Whale"
+   ],
+   "instruction": "Tap them in order, starting where the energy begins.",
+   "why": "Phytoplankton capture the sun's energy, krill eat phytoplankton, and whales eat krill.",
+   "hint": "Which living thing makes its own food?"
+  },
+  {
+   "type": "choice",
+   "title": "Predict",
+   "instruction": "Change the chain.",
+   "showsDiagram": true,
+   "question": "Melting sea ice means less algae for krill to eat, so there are fewer krill. What happens to the whales?",
+   "options": [
+    {
+     "text": "They have less food, so it's harder for them to survive",
+     "correct": true,
+     "feedback": "Yes. Whales depend on krill. A change at the bottom of a food chain affects everything above it."
+    },
+    {
+     "text": "Nothing: whales eat phytoplankton",
+     "feedback": "In this chain, whales eat krill. Fewer krill means less food for whales."
+    },
+    {
+     "text": "They have more food",
+     "feedback": "Fewer krill means less food for whales, not more."
+    },
+    {
+     "text": "The whales make their own food",
+     "feedback": "Whales are consumers: they can't make food. They depend on krill."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Producers",
+   "instruction": "Find the producer.",
+   "showsDiagram": true,
+   "question": "Which living thing in this chain is the producer?",
+   "options": [
+    {
+     "text": "Phytoplankton",
+     "correct": true,
+     "feedback": "Right. Phytoplankton make food from sunlight, so they're the producers."
+    },
+    {
+     "text": "Krill",
+     "feedback": "Krill eat phytoplankton, so they're consumers. The phytoplankton make the food."
+    },
+    {
+     "text": "Whale",
+     "feedback": "Whales eat krill, so they're consumers. The producers are the phytoplankton."
+    },
+    {
+     "text": "The sun",
+     "feedback": "The sun gives the energy, but it isn't alive. The producers are the phytoplankton."
+    }
+   ]
+  }
+ ]
+}

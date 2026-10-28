@@ -1,0 +1,489 @@
+{
+ "id": "g5-plant-in-out",
+ "title": "What a plant takes in and gives out",
+ "grade": "5",
+ "subject": "Life science",
+ "standard": "5-LS1-1",
+ "minutes": 7,
+ "sources": [
+  {
+   "title": "NGSS 5-LS1-1: Support an argument that plants get the materials they need for growth chiefly from air and water"
+  },
+  {
+   "title": "OpenStax Biology 2e, 30.2 Stems (stomata take up carbon dioxide and release oxygen and water vapor)",
+   "url": "https://openstax.org/books/biology-2e/pages/30-2-stems"
+  },
+  {
+   "title": "OpenStax Biology 2e, 25.1 Early Plant Life (roots take up water and minerals)",
+   "url": "https://openstax.org/books/biology-2e/pages/25-1-early-plant-life"
+  },
+  {
+   "title": "OpenStax Biology 2e, 31.3 Nutritional Adaptations of Plants",
+   "url": "https://openstax.org/books/biology-2e/pages/31-3-nutritional-adaptations-of-plants"
+  }
+ ],
+ "keywords": [
+  "plant",
+  "photosynthesis",
+  "carbon dioxide",
+  "oxygen",
+  "water",
+  "sunlight",
+  "air",
+  "roots",
+  "leaves",
+  "growth",
+  "matter",
+  "food"
+ ],
+ "structures": [
+  {
+   "id": "sun",
+   "name": "sun",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      130,
+      130,
+      60
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      208.0,
+      130.0,
+      240.0,
+      130.0
+     ]
+    },
+    {
+     "line": [
+      185.2,
+      185.2,
+      207.8,
+      207.8
+     ]
+    },
+    {
+     "line": [
+      130.0,
+      208.0,
+      130.0,
+      240.0
+     ]
+    },
+    {
+     "line": [
+      74.8,
+      185.2,
+      52.2,
+      207.8
+     ]
+    },
+    {
+     "line": [
+      52.0,
+      130.0,
+      20.0,
+      130.0
+     ]
+    },
+    {
+     "line": [
+      74.8,
+      74.8,
+      52.2,
+      52.2
+     ]
+    },
+    {
+     "line": [
+      130.0,
+      52.0,
+      130.0,
+      20.0
+     ]
+    },
+    {
+     "line": [
+      185.2,
+      74.8,
+      207.8,
+      52.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ground",
+   "name": "ground",
+   "outlines": [
+    {
+     "line": [
+      40,
+      640,
+      960,
+      640
+     ]
+    }
+   ]
+  },
+  {
+   "id": "plant",
+   "name": "stem and leaves",
+   "outlines": [
+    {
+     "line": [
+      500,
+      640,
+      500,
+      320
+     ]
+    },
+    {
+     "path": "M 500 520 C 460 470 400 460 350 476 C 390 520 450 540 500 520 Z"
+    },
+    {
+     "path": "M 500.0 440 C 540.0 390 600.0 380 650.0 396 C 610.0 440 550.0 460 500.0 440 Z"
+    }
+   ]
+  },
+  {
+   "id": "roots",
+   "name": "roots",
+   "outlines": [
+    {
+     "line": [
+      500,
+      640,
+      440,
+      740,
+      400,
+      780
+     ]
+    },
+    {
+     "line": [
+      500,
+      640,
+      560,
+      740,
+      610,
+      790
+     ]
+    },
+    {
+     "line": [
+      500,
+      650,
+      500,
+      790
+     ]
+    }
+   ]
+  },
+  {
+   "id": "light",
+   "name": "sunlight",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      190,
+      200,
+      360,
+      440
+     ]
+    },
+    {
+     "line": [
+      356.7,
+      414.2,
+      360,
+      440,
+      336.8,
+      428.3
+     ]
+    }
+   ]
+  },
+  {
+   "id": "co2",
+   "name": "carbon dioxide",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      80,
+      580,
+      330,
+      510
+     ]
+    },
+    {
+     "line": [
+      304.6,
+      504.4,
+      330,
+      510,
+      311.2,
+      527.9
+     ]
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "name": "oxygen",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      670,
+      400,
+      900,
+      330
+     ]
+    },
+    {
+     "line": [
+      874.5,
+      325.0,
+      900,
+      330,
+      881.6,
+      348.4
+     ]
+    }
+   ]
+  },
+  {
+   "id": "water",
+   "name": "water",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      200,
+      800,
+      380,
+      790
+     ]
+    },
+    {
+     "line": [
+      356.4,
+      779.1,
+      380,
+      790,
+      357.8,
+      803.5
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Sun",
+   "structure": "sun",
+   "instruction": "Trace the sun.",
+   "note": {
+    "text": "Plants need sunlight. Light gives them the energy to make their own food."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sun's rays",
+   "structure": "sun",
+   "part": "details",
+   "instruction": "Draw the sun's rays.",
+   "note": {
+    "text": "Light spreads out from the sun in every direction, and some reaches the plant's leaves."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ground",
+   "structure": "ground",
+   "instruction": "Draw the ground line.",
+   "note": {
+    "text": "Above the ground, leaves meet the air and light. Below, roots meet the soil and water."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Stem and leaves",
+   "structure": "plant",
+   "instruction": "Trace the stem and the two leaves.",
+   "note": {
+    "text": "Leaves have tiny openings that let air in and out. That's where the plant takes in carbon dioxide.",
+    "remember": "Leaves trade gases with the air."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Roots",
+   "structure": "roots",
+   "instruction": "Trace the three roots.",
+   "note": {
+    "text": "Roots take up water, plus small amounts of minerals, from the soil. They also anchor the plant."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sunlight",
+   "structure": "light",
+   "instruction": "Draw the arrow of sunlight reaching the leaf.",
+   "note": {
+    "text": "Sunlight brings energy, not matter. It powers the leaf's food-making.",
+    "remember": "Light = energy."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Carbon dioxide in",
+   "structure": "co2",
+   "instruction": "Draw the arrow of carbon dioxide going into the leaf.",
+   "note": {
+    "text": "Carbon dioxide is a gas in the air. The plant builds it, with water, into sugar: food and new plant material.",
+    "remember": "In from the air: carbon dioxide."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Water in",
+   "structure": "water",
+   "instruction": "Draw the arrow of water going into the roots.",
+   "note": {
+    "text": "Water travels from the roots up the stem to the leaves.",
+    "remember": "In from the soil: water."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Oxygen out",
+   "structure": "o2",
+   "instruction": "Draw the arrow of oxygen leaving the leaf.",
+   "note": {
+    "text": "As it makes food, the plant gives off oxygen into the air. Water vapor escapes from the leaves too.",
+    "remember": "Out to the air: oxygen."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Label the arrows",
+   "instruction": "Pick the right name for each numbered arrow.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      275,
+      320
+     ],
+     "answer": "Sunlight",
+     "role": "Energy for making food."
+    },
+    {
+     "n": 2,
+     "at": [
+      205,
+      545
+     ],
+     "answer": "Carbon dioxide",
+     "role": "Gas taken in from the air.",
+     "mistakes": {
+      "Oxygen": "This arrow points into the leaf. The plant takes in carbon dioxide and gives out oxygen."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      785,
+      365
+     ],
+     "answer": "Oxygen",
+     "role": "Gas given out to the air.",
+     "mistakes": {
+      "Carbon dioxide": "This arrow points out of the leaf. The plant gives off oxygen."
+     }
+    },
+    {
+     "n": 4,
+     "at": [
+      290,
+      795
+     ],
+     "answer": "Water",
+     "role": "Taken in by the roots."
+    }
+   ],
+   "vocabulary": [
+    "Sunlight",
+    "Carbon dioxide",
+    "Oxygen",
+    "Water",
+    "Soil"
+   ],
+   "commonMistakes": {
+    "Soil": "Soil gives a plant small amounts of minerals, but these arrows show light, gases and water."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Argue",
+   "instruction": "Where does a plant's material come from?",
+   "showsDiagram": true,
+   "question": "A tiny seed grows into a huge tree. Where did most of the tree's new material come from?",
+   "options": [
+    {
+     "text": "Air and water",
+     "correct": true,
+     "feedback": "Yes. The tree builds itself mostly from carbon dioxide in the air and water, using the sun's energy."
+    },
+    {
+     "text": "The soil",
+     "feedback": "Surprisingly, no. Soil gives only small amounts of minerals. Most of the tree is built from air and water."
+    },
+    {
+     "text": "Sunlight",
+     "feedback": "Sunlight gives the energy, but it isn't matter. The material comes from air and water."
+    },
+    {
+     "text": "The seed",
+     "feedback": "The seed was tiny. Almost all the tree's material came later, from air and water."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Give and take",
+   "instruction": "Think about the air.",
+   "showsDiagram": true,
+   "question": "Which gas does the plant take in, and which does it give out?",
+   "options": [
+    {
+     "text": "Takes in carbon dioxide, gives out oxygen",
+     "correct": true,
+     "feedback": "Right. Leaves take in carbon dioxide to make food and give off oxygen."
+    },
+    {
+     "text": "Takes in oxygen, gives out carbon dioxide",
+     "feedback": "That's the other way round. To make food, leaves take in carbon dioxide and give off oxygen."
+    },
+    {
+     "text": "Takes in water, gives out sunlight",
+     "feedback": "Sunlight comes from the sun. The gases are carbon dioxide in and oxygen out."
+    },
+    {
+     "text": "It doesn't use gases",
+     "feedback": "Plants do: they take in carbon dioxide and give off oxygen through their leaves."
+    }
+   ]
+  }
+ ]
+}

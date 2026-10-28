@@ -1,0 +1,544 @@
+{
+ "id": "g5-water-cycle",
+ "title": "The water cycle",
+ "grade": "5",
+ "subject": "Earth & space",
+ "standard": "5-ESS2-1",
+ "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS 5-ESS2-1: Develop a model using an example to describe ways the geosphere, biosphere, hydrosphere, and/or atmosphere interact"
+  },
+  {
+   "title": "OpenStax Biology 2e, 46.3 Biogeochemical Cycles (the water cycle)",
+   "url": "https://openstax.org/books/biology-2e/pages/46-3-biogeochemical-cycles"
+  }
+ ],
+ "keywords": [
+  "water cycle",
+  "evaporation",
+  "condensation",
+  "precipitation",
+  "runoff",
+  "cloud",
+  "rain",
+  "ocean",
+  "water vapor",
+  "hydrosphere",
+  "atmosphere"
+ ],
+ "structures": [
+  {
+   "id": "sun",
+   "name": "sun",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      130,
+      130,
+      60
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      208.0,
+      130.0,
+      240.0,
+      130.0
+     ]
+    },
+    {
+     "line": [
+      185.2,
+      185.2,
+      207.8,
+      207.8
+     ]
+    },
+    {
+     "line": [
+      130.0,
+      208.0,
+      130.0,
+      240.0
+     ]
+    },
+    {
+     "line": [
+      74.8,
+      185.2,
+      52.2,
+      207.8
+     ]
+    },
+    {
+     "line": [
+      52.0,
+      130.0,
+      20.0,
+      130.0
+     ]
+    },
+    {
+     "line": [
+      74.8,
+      74.8,
+      52.2,
+      52.2
+     ]
+    },
+    {
+     "line": [
+      130.0,
+      52.0,
+      130.0,
+      20.0
+     ]
+    },
+    {
+     "line": [
+      185.2,
+      74.8,
+      207.8,
+      52.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sea",
+   "name": "ocean",
+   "outlines": [
+    {
+     "line": [
+      40,
+      760.0,
+      50,
+      764.7,
+      60,
+      767.6,
+      70,
+      767.6,
+      80,
+      764.7,
+      90,
+      760.0,
+      100,
+      755.3,
+      110,
+      752.4,
+      120,
+      752.4,
+      130,
+      755.3,
+      140,
+      760.0,
+      150,
+      764.7,
+      160,
+      767.6,
+      170,
+      767.6,
+      180,
+      764.7,
+      190,
+      760.0,
+      200,
+      755.3,
+      210,
+      752.4,
+      220,
+      752.4,
+      230,
+      755.3,
+      240,
+      760.0,
+      250,
+      764.7,
+      260,
+      767.6,
+      270,
+      767.6,
+      280,
+      764.7,
+      290,
+      760.0,
+      300,
+      755.3,
+      310,
+      752.4,
+      320,
+      752.4,
+      330,
+      755.3,
+      340,
+      760.0,
+      350,
+      764.7,
+      360,
+      767.6,
+      370,
+      767.6,
+      380,
+      764.7,
+      390,
+      760.0,
+      400,
+      755.3,
+      410,
+      752.4,
+      420,
+      752.4,
+      430,
+      755.3,
+      440,
+      760.0,
+      450,
+      764.7,
+      460,
+      767.6,
+      470,
+      767.6,
+      480,
+      764.7,
+      490,
+      760.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mountain",
+   "name": "mountain",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      480,
+      780,
+      720,
+      420,
+      960,
+      780
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cloud",
+   "name": "cloud",
+   "outlines": [
+    {
+     "path": "M 600 260 C 580 220 620 190 660 205 C 680 160 760 160 780 200 C 820 185 860 215 845 250 C 860 280 820 295 790 285 L 630 285 C 600 290 585 275 600 260 Z"
+    }
+   ]
+  },
+  {
+   "id": "evaporation",
+   "name": "evaporation",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      220,
+      720,
+      220,
+      540
+     ]
+    },
+    {
+     "line": [
+      207.8,
+      563.0,
+      220,
+      540,
+      232.2,
+      563.0
+     ]
+    },
+    {
+     "line": [
+      330,
+      720,
+      330,
+      540
+     ]
+    },
+    {
+     "line": [
+      317.8,
+      563.0,
+      330,
+      540,
+      342.2,
+      563.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "condensation",
+   "name": "condensation",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      330,
+      480,
+      570,
+      280
+     ]
+    },
+    {
+     "line": [
+      544.5,
+      285.3,
+      570,
+      280,
+      560.2,
+      304.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rain",
+   "name": "precipitation",
+   "outlines": [
+    {
+     "line": [
+      660,
+      310,
+      645,
+      360
+     ]
+    },
+    {
+     "line": [
+      720,
+      310,
+      705,
+      360
+     ]
+    },
+    {
+     "line": [
+      780,
+      310,
+      765,
+      360
+     ]
+    }
+   ]
+  },
+  {
+   "id": "runoff",
+   "name": "runoff",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      602,
+      543,
+      494,
+      708
+     ]
+    },
+    {
+     "line": [
+      516.8,
+      695.5,
+      494,
+      708,
+      496.4,
+      682.1
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Sun",
+   "structure": "sun",
+   "instruction": "Trace the sun.",
+   "note": {
+    "text": "The sun's energy drives the whole water cycle by warming the ocean and other water.",
+    "remember": "The sun powers the water cycle."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sun's rays",
+   "structure": "sun",
+   "part": "details",
+   "instruction": "Draw the sun's rays.",
+   "note": {
+    "text": "Sunlight warms the ocean's surface water."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ocean",
+   "structure": "sea",
+   "instruction": "Trace the ocean's wavy surface.",
+   "note": {
+    "text": "Most of Earth's water is in the ocean."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Mountain",
+   "structure": "mountain",
+   "instruction": "Trace the mountain.",
+   "note": {
+    "text": "Land is part of the cycle too. Water falls on it and flows back to the sea."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Evaporation",
+   "structure": "evaporation",
+   "instruction": "Draw the two arrows rising from the ocean.",
+   "note": {
+    "text": "Warmed by the sun, liquid water evaporates: it turns into water vapor, an invisible gas, and rises into the air.",
+    "remember": "Evaporation: liquid to gas."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Cloud",
+   "structure": "cloud",
+   "instruction": "Trace the cloud.",
+   "note": {
+    "text": "High up, water vapor cools and condenses into tiny droplets or ice crystals. Together they make a cloud.",
+    "remember": "Condensation: gas to liquid."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Condensation",
+   "structure": "condensation",
+   "instruction": "Draw the arrow from the rising vapor to the cloud.",
+   "note": {
+    "text": "Water vapor moves through the air: the hydrosphere and atmosphere working together."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Precipitation",
+   "structure": "rain",
+   "instruction": "Draw the three lines of rain.",
+   "note": {
+    "text": "When the drops grow heavy, they fall as precipitation: rain or snow.",
+    "remember": "Precipitation: rain or snow."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Runoff",
+   "structure": "runoff",
+   "instruction": "Draw the arrow of water flowing down the mountain to the ocean.",
+   "note": {
+    "text": "Some rain soaks into the ground. Some runs off in streams and rivers, back to the ocean, and the cycle repeats.",
+    "remember": "Runoff flows back to the sea."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Label the cycle",
+   "instruction": "Pick the right name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      275,
+      630
+     ],
+     "answer": "Evaporation",
+     "role": "Liquid water turns to vapor."
+    },
+    {
+     "n": 2,
+     "at": [
+      720,
+      230
+     ],
+     "answer": "Condensation",
+     "role": "Vapor turns to droplets in a cloud.",
+     "mistakes": {
+      "Evaporation": "Evaporation happens at the ocean. Up here, vapor turns back into droplets: condensation."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      712,
+      340
+     ],
+     "answer": "Precipitation",
+     "role": "Rain or snow falls."
+    },
+    {
+     "n": 4,
+     "at": [
+      548,
+      626
+     ],
+     "answer": "Runoff",
+     "role": "Water flows back to the ocean."
+    }
+   ],
+   "vocabulary": [
+    "Evaporation",
+    "Condensation",
+    "Precipitation",
+    "Runoff",
+    "Erosion"
+   ]
+  },
+  {
+   "type": "order",
+   "title": "Around the cycle",
+   "items": [
+    "Evaporation",
+    "Condensation",
+    "Precipitation",
+    "Runoff"
+   ],
+   "instruction": "Start at the ocean. Tap the steps in order.",
+   "why": "Water evaporates, condenses into clouds, falls as precipitation, and runs off back to the ocean.",
+   "hint": "What does the sun do to the ocean water first?"
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Think about where the water goes.",
+   "showsDiagram": true,
+   "question": "A puddle disappears on a sunny day. Where did the water go?",
+   "options": [
+    {
+     "text": "It evaporated into the air as water vapor",
+     "correct": true,
+     "feedback": "Yes. The sun warmed it, and it became an invisible gas in the air. Later it may condense into a cloud."
+    },
+    {
+     "text": "It was destroyed by the sun",
+     "feedback": "Water isn't destroyed. It evaporated into the air as water vapor."
+    },
+    {
+     "text": "It turned into a cloud right away",
+     "feedback": "First it evaporated into invisible vapor. Clouds form later, when vapor cools high up."
+    },
+    {
+     "text": "It all soaked into the ground",
+     "feedback": "Some might, but on a sunny day much of it evaporates into the air."
+    }
+   ]
+  }
+ ]
+}

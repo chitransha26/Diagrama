@@ -1,0 +1,533 @@
+{
+ "id": "g5-forest-food-web",
+ "title": "Forest food web",
+ "grade": "5",
+ "subject": "Life science",
+ "standard": "5-LS2-1",
+ "minutes": 9,
+ "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS 5-LS2-1: Develop a model to describe the movement of matter among plants, animals, decomposers, and the environment"
+  },
+  {
+   "title": "OpenStax Biology 2e, 46.1 Ecology of Ecosystems",
+   "url": "https://openstax.org/books/biology-2e/pages/46-1-ecology-of-ecosystems"
+  },
+  {
+   "title": "National Wildlife: Want to Nurture Wildlife? Plant a Native Oak.",
+   "url": "https://www.nwf.org/Magazines/National-Wildlife/2024/Fall/Gardening/Planting-Oak-Trees"
+  },
+  {
+   "title": "National Wildlife: Why Birds Need Native Trees (chickadees feed caterpillars to their young)",
+   "url": "https://www.nwf.org/Magazines/National-Wildlife/2015/FebMarch/Animals/Chickadees-And-Native-Trees"
+  },
+  {
+   "title": "National Wildlife: When Nature Goes Nuts (mice and acorns)",
+   "url": "https://www.nwf.org/Magazines/National-Wildlife/1999/When-Nature-Goes-Nuts"
+  },
+  {
+   "title": "National Wildlife: Bunny Boom and Bust (cottontails eat leaves and berries)",
+   "url": "https://www.nwf.org/Magazines/National-Wildlife/2002/Bunny-Boom-and-Bust"
+  },
+  {
+   "title": "National Wildlife Federation: Red Fox",
+   "url": "https://www.nwf.org/Educational-Resources/Wildlife-Guide/Mammals/Red-Fox"
+  },
+  {
+   "title": "National Wildlife Federation: Great Horned Owl",
+   "url": "https://www.nwf.org/Educational-Resources/Wildlife-Guide/Birds/Great-Horned-Owl"
+  }
+ ],
+ "keywords": [
+  "food web",
+  "food chain",
+  "producer",
+  "consumer",
+  "predator",
+  "prey",
+  "forest",
+  "oak",
+  "owl",
+  "fox",
+  "energy",
+  "matter",
+  "ecosystem"
+ ],
+ "printed": [
+  {
+   "text": "Owl",
+   "at": [
+    350,
+    122
+   ],
+   "size": 32
+  },
+  {
+   "text": "Fox",
+   "at": [
+    750,
+    122
+   ],
+   "size": 32
+  },
+  {
+   "text": "Chickadee",
+   "at": [
+    150,
+    332
+   ],
+   "size": 32
+  },
+  {
+   "text": "Caterpillar",
+   "at": [
+    150,
+    562
+   ],
+   "size": 32
+  },
+  {
+   "text": "Mouse",
+   "at": [
+    470,
+    562
+   ],
+   "size": 32
+  },
+  {
+   "text": "Rabbit",
+   "at": [
+    800,
+    562
+   ],
+   "size": 32
+  },
+  {
+   "text": "Oak tree",
+   "at": [
+    300,
+    822
+   ],
+   "size": 32
+  },
+  {
+   "text": "Berry bush",
+   "at": [
+    700,
+    822
+   ],
+   "size": 32
+  }
+ ],
+ "legend": [
+  {
+   "name": "Producers",
+   "color": "#6FA845",
+   "meaning": "Make their own food from sunlight"
+  },
+  {
+   "name": "Eat producers",
+   "color": "#E7C340",
+   "meaning": "Consumers that eat plants in this web"
+  },
+  {
+   "name": "Eat consumers",
+   "color": "#E0864A",
+   "meaning": "Consumers that eat other animals in this web"
+  }
+ ],
+ "structures": [
+  {
+   "id": "producers",
+   "name": "producers",
+   "colorName": "producers",
+   "fill": "#6FA845",
+   "pen": "bold",
+   "outlines": [
+    {
+     "rect": [
+      190.0,
+      780.0,
+      220,
+      80,
+      16
+     ]
+    },
+    {
+     "rect": [
+      590.0,
+      780.0,
+      220,
+      80,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "grazers",
+   "name": "animals that eat producers",
+   "colorName": "eat producers",
+   "fill": "#E7C340",
+   "outlines": [
+    {
+     "rect": [
+      40.0,
+      520.0,
+      220,
+      80,
+      16
+     ]
+    },
+    {
+     "rect": [
+      360.0,
+      520.0,
+      220,
+      80,
+      16
+     ]
+    },
+    {
+     "rect": [
+      690.0,
+      520.0,
+      220,
+      80,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "predators",
+   "name": "animals that eat consumers",
+   "colorName": "eat consumers",
+   "fill": "#E0864A",
+   "outlines": [
+    {
+     "rect": [
+      40.0,
+      290.0,
+      220,
+      80,
+      16
+     ]
+    },
+    {
+     "rect": [
+      240.0,
+      80.0,
+      220,
+      80,
+      16
+     ]
+    },
+    {
+     "rect": [
+      640.0,
+      80.0,
+      220,
+      80,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "plantArrows",
+   "name": "arrows from plants",
+   "outlines": [
+    {
+     "line": [
+      270,
+      778,
+      170,
+      606
+     ]
+    },
+    {
+     "line": [
+      171.0,
+      632.0,
+      170,
+      606,
+      192.1,
+      619.7
+     ]
+    },
+    {
+     "line": [
+      330,
+      778,
+      440,
+      606
+     ]
+    },
+    {
+     "line": [
+      417.3,
+      618.8,
+      440,
+      606,
+      437.9,
+      631.9
+     ]
+    },
+    {
+     "line": [
+      730,
+      778,
+      790,
+      606
+     ]
+    },
+    {
+     "line": [
+      770.9,
+      623.7,
+      790,
+      606,
+      794.0,
+      631.7
+     ]
+    }
+   ]
+  },
+  {
+   "id": "animalArrows",
+   "name": "arrows from animals",
+   "outlines": [
+    {
+     "line": [
+      150,
+      518,
+      150,
+      376
+     ]
+    },
+    {
+     "line": [
+      137.8,
+      399.0,
+      150,
+      376,
+      162.2,
+      399.0
+     ]
+    },
+    {
+     "line": [
+      190,
+      288,
+      320,
+      166
+     ]
+    },
+    {
+     "line": [
+      294.9,
+      172.8,
+      320,
+      166,
+      311.6,
+      190.6
+     ]
+    },
+    {
+     "line": [
+      440,
+      518,
+      370,
+      166
+     ]
+    },
+    {
+     "line": [
+      362.5,
+      190.9,
+      370,
+      166,
+      386.4,
+      186.1
+     ]
+    },
+    {
+     "line": [
+      510,
+      518,
+      720,
+      166
+     ]
+    },
+    {
+     "line": [
+      697.8,
+      179.5,
+      720,
+      166,
+      718.7,
+      192.0
+     ]
+    },
+    {
+     "line": [
+      800,
+      518,
+      770,
+      166
+     ]
+    },
+    {
+     "line": [
+      759.8,
+      189.9,
+      770,
+      166,
+      784.1,
+      187.8
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Producers",
+   "structure": "producers",
+   "instruction": "Trace the boxes around the oak tree and the berry bush.",
+   "note": {
+    "text": "Producers make their own food from sunlight, air and water. Every food web starts with them.",
+    "remember": "Producers make their own food."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Plant eaters",
+   "structure": "grazers",
+   "instruction": "Trace the boxes around the caterpillar, mouse and rabbit.",
+   "note": {
+    "text": "Many caterpillars feed on oaks, mice eat acorns, and rabbits eat leaves and berries. They're consumers."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Predators",
+   "structure": "predators",
+   "instruction": "Trace the boxes around the chickadee, owl and fox.",
+   "note": {
+    "text": "These consumers eat other animals. Chickadees feed caterpillars to their chicks. Owls and foxes hunt mice and rabbits."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Arrows from plants",
+   "structure": "plantArrows",
+   "instruction": "Draw the three arrows from the plants up to the animals that eat them.",
+   "note": {
+    "text": "Each arrow points from the food to the eater. It shows which way matter and energy move.",
+    "remember": "Arrow: from food to eater."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Arrows from animals",
+   "structure": "animalArrows",
+   "instruction": "Draw the five arrows to the chickadee, owl and fox.",
+   "note": {
+    "text": "The mouse has two arrows leaving it: owls and foxes both eat mice. Linked food chains like this make a food web.",
+    "remember": "Many linked chains = a food web."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "producers",
+    "grazers",
+    "predators"
+   ],
+   "instruction": "Color each group: producers, animals that eat producers, and animals that eat other animals."
+  },
+  {
+   "type": "choice",
+   "title": "Read the web",
+   "instruction": "Follow the arrows.",
+   "showsDiagram": true,
+   "question": "In this web, which animals eat the mouse?",
+   "options": [
+    {
+     "text": "The owl and the fox",
+     "correct": true,
+     "feedback": "Yes. Two arrows leave the mouse: one to the owl, one to the fox."
+    },
+    {
+     "text": "The oak tree",
+     "feedback": "The arrow goes from the oak to the mouse: the mouse eats acorns, not the other way round."
+    },
+    {
+     "text": "The chickadee",
+     "feedback": "No arrow joins the mouse to the chickadee. Follow the mouse's arrows: owl and fox."
+    },
+    {
+     "text": "The rabbit",
+     "feedback": "Rabbits eat plants. The mouse's arrows go to the owl and the fox."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Predict",
+   "instruction": "Change the web.",
+   "showsDiagram": true,
+   "question": "A disease kills most of the owls. What would probably happen to the mice, at first?",
+   "options": [
+    {
+     "text": "There would be more mice, because fewer are eaten",
+     "correct": true,
+     "feedback": "Right. With fewer owls hunting them, more mice survive. A change to one living thing ripples through the web."
+    },
+    {
+     "text": "There would be fewer mice",
+     "feedback": "Owls eat mice. Fewer owls means fewer mice get eaten, so mice would increase."
+    },
+    {
+     "text": "Nothing would change",
+     "feedback": "Everything in a web is linked. Fewer owls means more mice survive."
+    },
+    {
+     "text": "The mice would start eating owls",
+     "feedback": "Mice eat acorns in this web. With fewer owls hunting them, more mice survive."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Energy",
+   "instruction": "Trace it back.",
+   "showsDiagram": true,
+   "question": "The fox gets energy by eating a rabbit. Where did that energy first come from?",
+   "options": [
+    {
+     "text": "The sun, through the berry bush",
+     "correct": true,
+     "feedback": "Yes. The bush stored the sun's energy, the rabbit ate its leaves and berries, and the fox ate the rabbit."
+    },
+    {
+     "text": "The owl",
+     "feedback": "No arrow joins the owl and the fox. Follow the fox's arrows back: rabbit, bush, sun."
+    },
+    {
+     "text": "The oak tree",
+     "feedback": "No arrow joins the oak and the rabbit. The rabbit ate the berry bush, which got its energy from the sun."
+    },
+    {
+     "text": "The fox itself",
+     "feedback": "Animals get energy from food. Follow it back: rabbit, bush, sun."
+    }
+   ]
+  }
+ ]
+}

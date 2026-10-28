@@ -1,0 +1,427 @@
+{
+ "id": "g5-decomposers",
+ "title": "Decomposers return nutrients to soil",
+ "grade": "5",
+ "subject": "Life science",
+ "standard": "5-LS2-1",
+ "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS 5-LS2-1: Develop a model to describe the movement of matter among plants, animals, decomposers, and the environment"
+  },
+  {
+   "title": "OpenStax Biology 2e, 24.3 Ecology of Fungi (fungi as decomposers and recyclers)",
+   "url": "https://openstax.org/books/biology-2e/pages/24-3-ecology-of-fungi"
+  },
+  {
+   "title": "OpenStax Biology 2e, 22.3 Prokaryotic Metabolism (bacteria and fungi are decomposers)",
+   "url": "https://openstax.org/books/biology-2e/pages/22-3-prokaryotic-metabolism"
+  },
+  {
+   "title": "OpenStax Biology 2e, 44.3 Terrestrial Biomes (decaying leaf litter returns nutrients to the soil)",
+   "url": "https://openstax.org/books/biology-2e/pages/44-3-terrestrial-biomes"
+  }
+ ],
+ "keywords": [
+  "decomposers",
+  "decomposition",
+  "fungi",
+  "mushrooms",
+  "bacteria",
+  "nutrients",
+  "soil",
+  "recycling",
+  "dead leaves",
+  "log",
+  "matter cycle"
+ ],
+ "structures": [
+  {
+   "id": "ground",
+   "name": "ground",
+   "outlines": [
+    {
+     "line": [
+      40,
+      600,
+      960,
+      600
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tree",
+   "name": "tree",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      200,
+      600,
+      212,
+      343
+     ]
+    },
+    {
+     "line": [
+      260,
+      600,
+      248,
+      343
+     ]
+    },
+    {
+     "circle": [
+      230,
+      225,
+      120
+     ]
+    }
+   ]
+  },
+  {
+   "id": "roots",
+   "name": "roots",
+   "outlines": [
+    {
+     "line": [
+      215,
+      600,
+      170,
+      700,
+      130,
+      740
+     ]
+    },
+    {
+     "line": [
+      245,
+      600,
+      290,
+      700,
+      340,
+      750
+     ]
+    },
+    {
+     "line": [
+      230,
+      610,
+      232,
+      730
+     ]
+    }
+   ]
+  },
+  {
+   "id": "leaves",
+   "name": "fallen leaves",
+   "outlines": [
+    {
+     "ellipse": [
+      380,
+      586,
+      32,
+      11
+     ]
+    },
+    {
+     "ellipse": [
+      454,
+      588,
+      32,
+      11
+     ]
+    }
+   ]
+  },
+  {
+   "id": "log",
+   "name": "fallen log",
+   "outlines": [
+    {
+     "rect": [
+      560,
+      520,
+      320,
+      76,
+      38
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fungi",
+   "name": "mushrooms",
+   "outlines": [
+    {
+     "line": [
+      640,
+      520,
+      640,
+      482
+     ]
+    },
+    {
+     "path": "M 600 482 C 610 440 670 440 680 482 Z"
+    },
+    {
+     "line": [
+      760,
+      520,
+      760,
+      472
+     ]
+    },
+    {
+     "path": "M 724 472 C 732 436 788 436 796 472 Z"
+    }
+   ]
+  },
+  {
+   "id": "bacteria",
+   "name": "bacteria",
+   "outlines": [
+    {
+     "circle": [
+      700,
+      750,
+      7
+     ]
+    },
+    {
+     "circle": [
+      680,
+      680,
+      7
+     ]
+    },
+    {
+     "circle": [
+      750,
+      645,
+      7
+     ]
+    },
+    {
+     "circle": [
+      820,
+      700,
+      7
+     ]
+    },
+    {
+     "circle": [
+      880,
+      655,
+      7
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cycle",
+   "name": "nutrient cycle",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      330,
+      310,
+      380,
+      560
+     ]
+    },
+    {
+     "line": [
+      387.5,
+      535.1,
+      380,
+      560,
+      363.5,
+      539.9
+     ]
+    },
+    {
+     "line": [
+      640,
+      620,
+      520,
+      770
+     ]
+    },
+    {
+     "line": [
+      543.9,
+      759.7,
+      520,
+      770,
+      524.8,
+      744.4
+     ]
+    },
+    {
+     "line": [
+      480,
+      800,
+      356,
+      762
+     ]
+    },
+    {
+     "line": [
+      374.4,
+      780.4,
+      356,
+      762,
+      381.5,
+      757.1
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Ground",
+   "structure": "ground",
+   "instruction": "Draw the ground line.",
+   "note": {
+    "text": "On the forest floor, dead leaves, logs and animals pile up. Something has to break them down."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Tree",
+   "structure": "tree",
+   "instruction": "Trace the tree's trunk and crown.",
+   "note": {
+    "text": "A tree builds its leaves and wood using air, water, and nutrients from the soil."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Roots",
+   "structure": "roots",
+   "instruction": "Trace the three roots.",
+   "note": {
+    "text": "Roots take up water and nutrients from the soil."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Fallen leaves",
+   "structure": "leaves",
+   "instruction": "Trace the two fallen leaves.",
+   "note": {
+    "text": "Each fall, many trees drop their leaves. The leaves still hold nutrients the tree used."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Fallen log",
+   "structure": "log",
+   "instruction": "Trace the fallen log.",
+   "note": {
+    "text": "Dead wood is matter too. Over years, it slowly rots away."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Mushrooms",
+   "structure": "fungi",
+   "instruction": "Trace the two mushrooms on the log.",
+   "note": {
+    "text": "Mushrooms are fungi. Fungi break down dead plants and animals, freeing nutrients that other living things need.",
+    "remember": "Fungi are decomposers."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Bacteria",
+   "structure": "bacteria",
+   "instruction": "Trace the five bacteria in the soil.",
+   "note": {
+    "text": "Bacteria are far too small to see; these are drawn huge. Along with fungi, they break down dead matter.",
+    "remember": "Bacteria are decomposers too."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "The cycle",
+   "structure": "cycle",
+   "instruction": "Draw the arrows: leaves fall, nutrients go into the soil, roots take them up.",
+   "note": {
+    "text": "As dead leaves and wood decay, their nutrients return to the soil, where roots can take them up again.",
+    "remember": "Decomposers recycle nutrients."
+   }
+  },
+  {
+   "type": "order",
+   "title": "Recycling",
+   "items": [
+    "Leaves fall to the ground",
+    "Fungi and bacteria break them down",
+    "Nutrients go back into the soil",
+    "Roots take up the nutrients"
+   ],
+   "instruction": "Tap the steps in order.",
+   "why": "Decomposers break down dead matter, returning its nutrients to the soil for plants to use again.",
+   "hint": "What happens first, in the fall?"
+  },
+  {
+   "type": "choice",
+   "title": "Predict",
+   "instruction": "Imagine a forest with no decomposers.",
+   "showsDiagram": true,
+   "question": "What would happen in a forest with no fungi or bacteria?",
+   "options": [
+    {
+     "text": "Dead leaves and logs would pile up, and the soil would run short of nutrients",
+     "correct": true,
+     "feedback": "Yes. Without decomposers, nutrients stay locked in dead matter instead of returning to the soil for plants."
+    },
+    {
+     "text": "Trees would grow faster",
+     "feedback": "Trees need the nutrients decomposers return to the soil. Without them, the soil runs short."
+    },
+    {
+     "text": "Nothing would change",
+     "feedback": "Decomposers recycle nutrients. Without them, dead matter piles up and soil runs short."
+    },
+    {
+     "text": "Leaves would turn back into trees",
+     "feedback": "Dead leaves can't do that. Decomposers break them down so their nutrients reach new plants."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Classify",
+   "instruction": "Which one is a decomposer?",
+   "showsDiagram": false,
+   "question": "Which of these is a decomposer?",
+   "options": [
+    {
+     "text": "A mushroom growing on a dead log",
+     "correct": true,
+     "feedback": "Right. Mushrooms are fungi, which break down dead matter and return nutrients to the soil."
+    },
+    {
+     "text": "An oak tree",
+     "feedback": "An oak is a producer: it makes its own food from sunlight."
+    },
+    {
+     "text": "A rabbit eating leaves",
+     "feedback": "A rabbit eats living plants, so it's a consumer, not a decomposer."
+    },
+    {
+     "text": "An owl",
+     "feedback": "An owl hunts animals, so it's a consumer. Decomposers break down dead matter."
+    }
+   ]
+  }
+ ]
+}
