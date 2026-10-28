@@ -1,0 +1,250 @@
+{
+ "id": "g4-ring-of-fire",
+ "title": "Map of volcanoes and earthquakes: Ring of Fire",
+ "grade": "4",
+ "subject": "Earth & space",
+ "standard": "4-ESS2-2",
+ "minutes": 7,
+ "sources": [
+  {
+   "title": "NGSS 4-ESS2-2: Analyze and interpret data from maps to describe patterns of Earth's features"
+  },
+  {
+   "title": "National Geographic Education: Ring of Fire",
+   "url": "https://education.nationalgeographic.org/resource/ring-fire/"
+  }
+ ],
+ "keywords": [
+  "Ring of Fire",
+  "volcanoes",
+  "earthquakes",
+  "map",
+  "pattern",
+  "Pacific Ocean",
+  "plates",
+  "tectonic plates",
+  "plate boundaries"
+ ],
+ "printed": [
+  {
+   "text": "Asia",
+   "at": [
+    190,
+    270
+   ]
+  },
+  {
+   "text": "Australia",
+   "at": [
+    276,
+    700
+   ],
+   "size": 34
+  },
+  {
+   "text": "North America",
+   "at": [
+    812,
+    250
+   ],
+   "size": 32
+  },
+  {
+   "text": "South America",
+   "at": [
+    832,
+    624
+   ],
+   "size": 26
+  }
+ ],
+ "structures": [
+  {
+   "id": "land",
+   "name": "continents",
+   "outlines": [
+    {
+     "path": "M 60 120 C 200 90 330 130 360 220 C 378 300 332 380 300 430 C 250 470 150 450 60 420 Z"
+    },
+    {
+     "path": "M 200 640 C 260 600 352 612 372 680 C 384 748 320 790 240 770 C 180 752 170 692 200 640 Z"
+    },
+    {
+     "path": "M 660 110 C 770 90 920 120 940 200 C 950 300 880 380 800 420 C 760 440 716 420 700 380 C 676 320 650 220 660 110 Z"
+    },
+    {
+     "path": "M 790 500 C 860 480 930 530 922 620 C 912 720 842 830 800 890 C 762 820 744 700 734 620 C 726 560 752 510 790 500 Z"
+    }
+   ]
+  },
+  {
+   "id": "ring",
+   "name": "Ring of Fire",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 412 724 C 420 560 404 440 396 340 C 388 230 444 168 520 160 C 580 154 612 200 616 280 C 620 360 652 450 690 540 C 714 620 714 740 730 852"
+    }
+   ]
+  },
+  {
+   "id": "volcanoes",
+   "name": "volcanoes",
+   "outlines": [
+    {
+     "polygon": [
+      394,
+      634,
+      412,
+      602,
+      430,
+      634
+     ]
+    },
+    {
+     "polygon": [
+      380,
+      434,
+      398,
+      402,
+      416,
+      434
+     ]
+    },
+    {
+     "polygon": [
+      432,
+      200,
+      450,
+      168,
+      468,
+      200
+     ]
+    },
+    {
+     "polygon": [
+      582,
+      230,
+      600,
+      198,
+      618,
+      230
+     ]
+    },
+    {
+     "polygon": [
+      618,
+      434,
+      636,
+      402,
+      654,
+      434
+     ]
+    },
+    {
+     "polygon": [
+      686,
+      654,
+      704,
+      622,
+      722,
+      654
+     ]
+    },
+    {
+     "polygon": [
+      700,
+      804,
+      718,
+      772,
+      736,
+      804
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Continents",
+   "structure": "land",
+   "instruction": "Trace the four continents around the big ocean.",
+   "note": {
+    "text": "This simplified map shows the lands around the Pacific Ocean: Asia and Australia on one side, the Americas on the other."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ring of Fire",
+   "structure": "ring",
+   "instruction": "Trace the curved line around the edge of the ocean.",
+   "note": {
+    "text": "This horseshoe-shaped path is the Ring of Fire. About 90 percent of Earth's earthquakes happen along it.",
+    "remember": "Ring of Fire: around the Pacific."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Volcanoes",
+   "structure": "volcanoes",
+   "instruction": "Trace the seven volcanoes along the ring.",
+   "note": {
+    "text": "About three out of every four of Earth's volcanoes, more than 450, are on the Ring of Fire.",
+    "remember": "Most volcanoes are on the ring."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Find the pattern",
+   "instruction": "Read the map.",
+   "showsDiagram": true,
+   "question": "What pattern does the map show about where volcanoes are?",
+   "options": [
+    {
+     "text": "Many are in a ring around the edge of the Pacific Ocean",
+     "correct": true,
+     "feedback": "Yes. Volcanoes and earthquakes aren't scattered randomly: they line up around the Pacific."
+    },
+    {
+     "text": "They're spread evenly everywhere",
+     "feedback": "Look again: they cluster in a line around the ocean's edge."
+    },
+    {
+     "text": "They're all in the middle of the ocean",
+     "feedback": "On this map they follow the edges of the ocean, near the coasts."
+    },
+    {
+     "text": "There's no pattern",
+     "feedback": "There is one: they follow a ring around the Pacific."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Why there?",
+   "instruction": "Think about Earth's crust.",
+   "showsDiagram": true,
+   "question": "Earth's surface is broken into giant pieces called plates. Why are so many volcanoes and earthquakes on the Ring of Fire?",
+   "options": [
+    {
+     "text": "The ring follows the edges where plates meet",
+     "correct": true,
+     "feedback": "Right. The Ring of Fire traces the boundaries between several plates, where the ground is most active."
+    },
+    {
+     "text": "The ocean water heats the rocks",
+     "feedback": "The cause is underground: the ring follows the edges of Earth's plates."
+    },
+    {
+     "text": "More people live there",
+     "feedback": "People don't cause volcanoes. The ring follows plate edges."
+    },
+    {
+     "text": "It's the hottest part of Earth",
+     "feedback": "It's not about air temperature. The ring follows where plates meet."
+    }
+   ]
+  }
+ ]
+}

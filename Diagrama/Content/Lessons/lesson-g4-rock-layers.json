@@ -1,0 +1,299 @@
+{
+ "id": "g4-rock-layers",
+ "title": "Rock layers with fossils",
+ "grade": "4",
+ "subject": "Earth & space",
+ "standard": "4-ESS1-1",
+ "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS 4-ESS1-1: Identify evidence from patterns in rock formations and fossils in rock layers to support an explanation for changes in a landscape over time"
+  },
+  {
+   "title": "Geological Society of London: Burial and Compaction (oldest layers at the bottom)",
+   "url": "https://www.geolsoc.org.uk/ks3/gsl/education/resources/rockcycle/page3464.html"
+  },
+  {
+   "title": "National Park Service, Grand Teton: Fossils (marine fossils show an ancient sea floor)",
+   "url": "https://www.nps.gov/grte/learn/nature/fossils.htm"
+  },
+  {
+   "title": "National Park Service, Grand Canyon: Fossils",
+   "url": "https://www.nps.gov/grca/learn/nature/fossils.htm"
+  }
+ ],
+ "keywords": [
+  "rock layers",
+  "sedimentary rock",
+  "fossils",
+  "superposition",
+  "oldest layer",
+  "landscape change",
+  "ancient sea",
+  "cliff",
+  "evidence"
+ ],
+ "structures": [
+  {
+   "id": "cliff",
+   "name": "rock layers",
+   "pen": "bold",
+   "outlines": [
+    {
+     "rect": [
+      150,
+      200,
+      700,
+      640,
+      8
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      150,
+      362,
+      420,
+      352,
+      850,
+      366
+     ]
+    },
+    {
+     "line": [
+      150,
+      520,
+      500,
+      528,
+      850,
+      514
+     ]
+    },
+    {
+     "line": [
+      150,
+      680,
+      380,
+      672,
+      850,
+      686
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shells",
+   "name": "shell fossils",
+   "outlines": [
+    {
+     "path": "M 268 770 C 268 728 332 728 332 770 C 312 782 288 782 268 770 Z"
+    },
+    {
+     "path": "M 528 790 C 528 748 592 748 592 790 C 572 802 548 802 528 790 Z"
+    },
+    {
+     "path": "M 688 760 C 688 718 752 718 752 760 C 732 772 708 772 688 760 Z"
+    }
+   ]
+  },
+  {
+   "id": "fish",
+   "name": "fish fossil",
+   "outlines": [
+    {
+     "path": "M 600 600 C 640 572 712 572 744 600 C 712 628 640 628 600 600 Z"
+    },
+    {
+     "polygon": [
+      600,
+      600,
+      560,
+      572,
+      572,
+      600,
+      560,
+      628
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      624,
+      600,
+      728,
+      600
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fern",
+   "name": "fern fossil",
+   "outlines": [
+    {
+     "line": [
+      480,
+      344,
+      560,
+      216
+     ]
+    },
+    {
+     "line": [
+      496,
+      318,
+      446,
+      296
+     ]
+    },
+    {
+     "line": [
+      508,
+      300,
+      560,
+      300
+     ]
+    },
+    {
+     "line": [
+      520,
+      280,
+      476,
+      252
+     ]
+    },
+    {
+     "line": [
+      534,
+      258,
+      584,
+      252
+     ]
+    },
+    {
+     "line": [
+      546,
+      238,
+      512,
+      214
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Cliff",
+   "structure": "cliff",
+   "instruction": "Trace the side of the cliff.",
+   "note": {
+    "text": "A cliff or canyon wall shows rock layers, one on top of another, like a stack of pancakes."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Layers",
+   "structure": "cliff",
+   "part": "details",
+   "instruction": "Draw the lines between the four layers.",
+   "note": {
+    "text": "Layers form as mud and sand settle in flat sheets, one on top of the last. So the bottom layer is the oldest; the top is the youngest.",
+    "remember": "Oldest at the bottom."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Shells",
+   "structure": "shells",
+   "instruction": "Trace the three shell fossils in the bottom layer.",
+   "note": {
+    "text": "These are fossils of sea animals. Finding them tells us this place was once the floor of a sea.",
+    "remember": "Sea fossils: there was once a sea."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Fish",
+   "structure": "fish",
+   "instruction": "Trace the fish fossil and its tail in the second layer.",
+   "note": {
+    "text": "A fish fossil means water was still here when this layer formed, after the bottom layer."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Backbone",
+   "structure": "fish",
+   "part": "details",
+   "instruction": "Draw the fish's backbone.",
+   "note": {
+    "text": "Hard parts like bones and shells are what usually turn into fossils."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Fern",
+   "structure": "fern",
+   "instruction": "Draw the fern fossil in the top layer: its stem and leaves.",
+   "note": {
+    "text": "Ferns grow on land. A land plant in the top layer shows that, much later, the sea was gone and land took its place.",
+    "remember": "Fossils show how a place changed."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Read the layers",
+   "instruction": "Use what you've drawn.",
+   "showsDiagram": true,
+   "question": "Which layer formed first?",
+   "options": [
+    {
+     "text": "The bottom layer",
+     "correct": true,
+     "feedback": "Yes. Each layer settled on top of the one before, so the bottom layer is the oldest."
+    },
+    {
+     "text": "The top layer",
+     "feedback": "The top layer settled last, so it's the youngest. The bottom one is oldest."
+    },
+    {
+     "text": "They all formed at once",
+     "feedback": "Layers form one at a time, each on top of the last."
+    },
+    {
+     "text": "The layer with the fern",
+     "feedback": "The fern is in the top layer, the youngest. The bottom layer formed first."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Explain the change",
+   "instruction": "Think about the fossils.",
+   "showsDiagram": true,
+   "question": "What do the fossils tell us about how this place changed over time?",
+   "options": [
+    {
+     "text": "It was once covered by water, and later became land",
+     "correct": true,
+     "feedback": "Right. Sea fossils at the bottom, a fish above, then a land fern on top: the water went away over a very long time."
+    },
+    {
+     "text": "It was always dry land",
+     "feedback": "Shell and fish fossils show there was once water here."
+    },
+    {
+     "text": "It started as land and became a sea",
+     "feedback": "Read from the bottom up: sea fossils come first (oldest), the land fern last."
+    },
+    {
+     "text": "Fossils can't tell us anything",
+     "feedback": "Fossils are evidence: they show what lived here, and so what the place was like."
+    }
+   ]
+  }
+ ]
+}

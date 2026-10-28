@@ -1,0 +1,348 @@
+{
+ "id": "g4-ice-wedging",
+ "title": "Weathering by ice wedging",
+ "grade": "4",
+ "subject": "Earth & space",
+ "standard": "4-ESS2-1",
+ "minutes": 7,
+ "sources": [
+  {
+   "title": "NGSS 4-ESS2-1: Make observations and/or measurements to provide evidence of the effects of weathering or the rate of erosion by water, ice, wind, or vegetation"
+  },
+  {
+   "title": "Physical Geology, H5P Edition (Earle and Panchuk, BCcampus), 8.1 Physical Weathering",
+   "url": "https://opentextbc.ca/physicalgeologyh5p/chapter/mechanical-weathering/"
+  }
+ ],
+ "keywords": [
+  "weathering",
+  "ice wedging",
+  "frost wedging",
+  "freeze",
+  "thaw",
+  "crack",
+  "rock",
+  "ice",
+  "water",
+  "erosion"
+ ],
+ "printed": [
+  {
+   "text": "1",
+   "at": [
+    110,
+    300
+   ]
+  },
+  {
+   "text": "2",
+   "at": [
+    490,
+    300
+   ]
+  },
+  {
+   "text": "3",
+   "at": [
+    820,
+    300
+   ]
+  }
+ ],
+ "structures": [
+  {
+   "id": "rock1",
+   "name": "rock with a crack",
+   "outlines": [
+    {
+     "polygon": [
+      70,
+      720,
+      70,
+      470,
+      170,
+      424,
+      280,
+      474,
+      280,
+      720
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      172,
+      428,
+      180,
+      520,
+      170,
+      600
+     ]
+    }
+   ]
+  },
+  {
+   "id": "drops",
+   "name": "water drops",
+   "outlines": [
+    {
+     "circle": [
+      170,
+      376,
+      9
+     ]
+    },
+    {
+     "circle": [
+      196,
+      352,
+      9
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rock2",
+   "name": "rock with a wider crack",
+   "outlines": [
+    {
+     "polygon": [
+      380,
+      720,
+      380,
+      470,
+      486,
+      424,
+      600,
+      474,
+      600,
+      720
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      466,
+      432,
+      490,
+      620,
+      516,
+      436
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ice",
+   "name": "ice",
+   "outlines": [
+    {
+     "polygon": [
+      476,
+      446,
+      506,
+      448,
+      491,
+      580
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pieces",
+   "name": "broken rock",
+   "outlines": [
+    {
+     "polygon": [
+      700,
+      720,
+      700,
+      474,
+      790,
+      432,
+      800,
+      560,
+      772,
+      720
+     ]
+    },
+    {
+     "polygon": [
+      836,
+      720,
+      848,
+      560,
+      862,
+      434,
+      940,
+      474,
+      940,
+      720
+     ]
+    }
+   ]
+  },
+  {
+   "id": "arrows",
+   "name": "arrows",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      298,
+      600,
+      362,
+      600
+     ]
+    },
+    {
+     "line": [
+      339.0,
+      587.8,
+      362,
+      600,
+      339.0,
+      612.2
+     ]
+    },
+    {
+     "line": [
+      618,
+      600,
+      682,
+      600
+     ]
+    },
+    {
+     "line": [
+      659.0,
+      587.8,
+      682,
+      600,
+      659.0,
+      612.2
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Rock",
+   "structure": "rock1",
+   "instruction": "Trace the first rock.",
+   "note": {
+    "text": "Even hard rock has tiny cracks in it."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Crack",
+   "structure": "rock1",
+   "part": "details",
+   "instruction": "Draw the thin crack in the rock.",
+   "note": {
+    "text": "Rain and melting snow can seep into a crack."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Water",
+   "structure": "drops",
+   "instruction": "Dab the two drops of water falling into the crack.",
+   "note": {
+    "text": "Step 1: water trickles into the crack and fills it."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Second rock",
+   "structure": "rock2",
+   "instruction": "Trace the rock in picture 2.",
+   "note": {
+    "text": "Step 2 shows the same rock on a freezing night."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Wider crack",
+   "structure": "rock2",
+   "part": "details",
+   "instruction": "Draw the crack, now wider.",
+   "note": {
+    "text": "When water freezes into ice, it expands: it takes up more space. The ice pushes the crack wider.",
+    "remember": "Freezing water expands."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ice",
+   "structure": "ice",
+   "instruction": "Trace the wedge of ice inside the crack.",
+   "note": {
+    "text": "Then the ice melts, more water seeps deeper in, and it freezes again. Each freeze and thaw pushes the crack a little wider."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Broken rock",
+   "structure": "pieces",
+   "instruction": "Trace the two pieces in picture 3.",
+   "note": {
+    "text": "Step 3: after many freezes and thaws, the rock splits apart. Breaking rock down like this is called weathering.",
+    "remember": "Ice wedging breaks rock."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Arrows",
+   "structure": "arrows",
+   "instruction": "Draw the arrows from one picture to the next.",
+   "note": {
+    "text": "This happens slowly, over many cold nights and warm days."
+   }
+  },
+  {
+   "type": "order",
+   "title": "Steps",
+   "items": [
+    "Water seeps into a crack",
+    "The water freezes and expands",
+    "The crack gets wider",
+    "The rock breaks apart"
+   ],
+   "instruction": "Tap the steps of ice wedging in order.",
+   "why": "Water fills the crack, freezes and expands, widening it; after many freezes and thaws, the rock breaks.",
+   "hint": "What has to get into the crack first?"
+  },
+  {
+   "type": "choice",
+   "title": "Where?",
+   "instruction": "Think about the weather.",
+   "showsDiagram": false,
+   "question": "Where does ice wedging break rocks fastest?",
+   "options": [
+    {
+     "text": "A place that often freezes at night and thaws in the day",
+     "correct": true,
+     "feedback": "Yes. Each freeze widens the cracks a little, so many freeze-thaw swings break rock fastest."
+    },
+    {
+     "text": "A hot desert",
+     "feedback": "It rarely freezes there, and there's little water to seep into cracks."
+    },
+    {
+     "text": "A place that's frozen all year",
+     "feedback": "If it never thaws, the ice doesn't melt and refreeze, so cracks don't keep growing."
+    },
+    {
+     "text": "A warm beach",
+     "feedback": "Ice wedging needs freezing. A warm place rarely freezes."
+    }
+   ]
+  }
+ ]
+}

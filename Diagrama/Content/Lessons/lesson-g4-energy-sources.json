@@ -1,0 +1,418 @@
+{
+ "id": "g4-energy-sources",
+ "title": "Renewable and nonrenewable energy sources",
+ "grade": "4",
+ "subject": "Earth & space",
+ "standard": "4-ESS3-1",
+ "minutes": 7,
+ "sources": [
+  {
+   "title": "NGSS 4-ESS3-1: Obtain and combine information to describe that energy and fuels are derived from natural resources and their uses affect the environment"
+  },
+  {
+   "title": "U.S. Energy Information Administration, Energy Kids: Energy sources",
+   "url": "https://www.eia.gov/kids/energy-sources/"
+  },
+  {
+   "title": "U.S. Energy Information Administration, Energy Kids: Nonrenewable energy sources",
+   "url": "https://www.eia.gov/kids/energy-sources/nonrenewable.php"
+  }
+ ],
+ "keywords": [
+  "energy",
+  "renewable",
+  "nonrenewable",
+  "solar",
+  "wind",
+  "hydropower",
+  "coal",
+  "oil",
+  "petroleum",
+  "natural gas",
+  "fossil fuels",
+  "natural resources"
+ ],
+ "printed": [
+  {
+   "text": "Renewable",
+   "at": [
+    275,
+    110
+   ]
+  },
+  {
+   "text": "Nonrenewable",
+   "at": [
+    725,
+    110
+   ]
+  }
+ ],
+ "structures": [
+  {
+   "id": "divider",
+   "name": "dividing line",
+   "outlines": [
+    {
+     "line": [
+      500,
+      150,
+      500,
+      900
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun",
+   "name": "sun",
+   "outlines": [
+    {
+     "circle": [
+      275,
+      250,
+      48
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      337.0,
+      250.0,
+      365.0,
+      250.0
+     ]
+    },
+    {
+     "line": [
+      318.8,
+      293.8,
+      338.6,
+      313.6
+     ]
+    },
+    {
+     "line": [
+      275.0,
+      312.0,
+      275.0,
+      340.0
+     ]
+    },
+    {
+     "line": [
+      231.2,
+      293.8,
+      211.4,
+      313.6
+     ]
+    },
+    {
+     "line": [
+      213.0,
+      250.0,
+      185.0,
+      250.0
+     ]
+    },
+    {
+     "line": [
+      231.2,
+      206.2,
+      211.4,
+      186.4
+     ]
+    },
+    {
+     "line": [
+      275.0,
+      188.0,
+      275.0,
+      160.0
+     ]
+    },
+    {
+     "line": [
+      318.8,
+      206.2,
+      338.6,
+      186.4
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wind",
+   "name": "wind turbine",
+   "outlines": [
+    {
+     "line": [
+      275,
+      660,
+      275,
+      514
+     ]
+    },
+    {
+     "circle": [
+      275,
+      500,
+      12
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      275,
+      500,
+      275.0,
+      414.0
+     ]
+    },
+    {
+     "line": [
+      275,
+      500,
+      349.5,
+      543.0
+     ]
+    },
+    {
+     "line": [
+      275,
+      500,
+      200.5,
+      543.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "water",
+   "name": "moving water",
+   "outlines": [
+    {
+     "path": "M 160 760 C 200 730 240 790 280 760 C 320 730 360 790 400 760"
+    },
+    {
+     "path": "M 160 820 C 200 790 240 850 280 820 C 320 790 360 850 400 820"
+    }
+   ]
+  },
+  {
+   "id": "coal",
+   "name": "coal",
+   "outlines": [
+    {
+     "polygon": [
+      664,
+      284,
+      686,
+      214,
+      740,
+      196,
+      790,
+      222,
+      798,
+      280,
+      740,
+      304
+     ]
+    }
+   ]
+  },
+  {
+   "id": "oil",
+   "name": "oil barrel",
+   "outlines": [
+    {
+     "rect": [
+      680,
+      430,
+      90,
+      130,
+      8
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      680,
+      474,
+      770,
+      474
+     ]
+    },
+    {
+     "line": [
+      680,
+      516,
+      770,
+      516
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gas",
+   "name": "natural gas flame",
+   "outlines": [
+    {
+     "path": "M 725 700 C 760 750 782 790 762 832 C 744 862 706 862 688 832 C 668 790 690 750 725 700 Z"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Two kinds",
+   "structure": "divider",
+   "instruction": "Draw the line splitting the page in two.",
+   "note": {
+    "text": "All our energy comes from natural resources. Some are renewable, and some are nonrenewable."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sun",
+   "structure": "sun",
+   "instruction": "Trace the sun.",
+   "note": {
+    "text": "Solar energy comes from sunlight. It's renewable: it's replaced naturally, so it won't run out.",
+    "remember": "Renewable = replaced naturally."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sunbeams",
+   "structure": "sun",
+   "part": "details",
+   "instruction": "Draw the sun's rays.",
+   "note": {
+    "text": "Solar panels change sunlight into electricity."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Wind turbine",
+   "structure": "wind",
+   "instruction": "Trace the turbine's pole and hub.",
+   "note": {
+    "text": "Wind is renewable too. Wind turbines turn moving air into electricity."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Blades",
+   "structure": "wind",
+   "part": "details",
+   "instruction": "Draw the three blades.",
+   "note": {
+    "text": "The wind keeps blowing, so this energy source is replaced naturally."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Moving water",
+   "structure": "water",
+   "instruction": "Draw the two waves of moving water.",
+   "note": {
+    "text": "Hydropower uses moving water to make electricity. It's renewable too: most renewable energy is used to make electricity."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Coal",
+   "structure": "coal",
+   "instruction": "Trace the lump of coal.",
+   "note": {
+    "text": "Coal is a fossil fuel. It took thousands of years to form from buried plants and animals. It's nonrenewable.",
+    "remember": "Fossil fuels: coal, oil, natural gas."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Oil",
+   "structure": "oil",
+   "instruction": "Trace the oil barrel.",
+   "note": {
+    "text": "Oil is a fossil fuel too. We can only use what's already in the ground, so one day it could run out."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Barrel bands",
+   "structure": "oil",
+   "part": "details",
+   "instruction": "Draw the two bands around the barrel.",
+   "note": {
+    "text": "Crude oil is also called petroleum."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Natural gas",
+   "structure": "gas",
+   "instruction": "Trace the flame of natural gas.",
+   "note": {
+    "text": "Natural gas is the third fossil fuel. Like coal and oil, it can't be made again quickly."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Use what you've drawn.",
+   "showsDiagram": true,
+   "question": "Why are coal, oil and natural gas called nonrenewable?",
+   "options": [
+    {
+     "text": "They took a very long time to form, so we can't make more quickly",
+     "correct": true,
+     "feedback": "Yes. They formed from buried plants and animals long ago. There's only so much in the ground."
+    },
+    {
+     "text": "They're too heavy to move",
+     "feedback": "Weight isn't it. They can't be made again in a short time."
+    },
+    {
+     "text": "They don't make any energy",
+     "feedback": "They make lots of energy, but they can't be replaced quickly."
+    },
+    {
+     "text": "Only adults can use them",
+     "feedback": "It's about supply: they can't be made again quickly."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Sort it",
+   "instruction": "One more.",
+   "showsDiagram": false,
+   "question": "Which of these is a renewable energy source?",
+   "options": [
+    {
+     "text": "Wind",
+     "correct": true,
+     "feedback": "Right. The wind is replaced naturally, so it won't run out."
+    },
+    {
+     "text": "Coal",
+     "feedback": "Coal is a fossil fuel: nonrenewable."
+    },
+    {
+     "text": "Natural gas",
+     "feedback": "Natural gas is a fossil fuel: nonrenewable."
+    },
+    {
+     "text": "Uranium",
+     "feedback": "Uranium, used in nuclear power, is mined and is nonrenewable."
+    }
+   ]
+  }
+ ]
+}

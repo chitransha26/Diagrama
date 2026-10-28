@@ -1,0 +1,376 @@
+{
+ "id": "g4-earthquake-building",
+ "title": "An earthquake-resistant building",
+ "grade": "4",
+ "subject": "Earth & space",
+ "standard": "4-ESS3-2",
+ "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS 4-ESS3-2: Generate and compare multiple solutions to reduce the impacts of natural Earth processes on humans"
+  },
+  {
+   "title": "FEMA P-749, Earthquake-Resistant Design Concepts (2022): 8.1.2 Braced Frame Systems, 10.5 Seismic Isolation Systems",
+   "url": "https://www.wbdg.org/FFC/DHS/fema_p749_2022.pdf"
+  },
+  {
+   "title": "Physical Geology, H5P Edition (Earle and Panchuk, BCcampus), 12.5 Forecasting Earthquakes and Minimizing Impacts",
+   "url": "https://opentextbc.ca/physicalgeologyh5p/chapter/forecasting-earthquakes-and-minimizing-impacts/"
+  }
+ ],
+ "keywords": [
+  "earthquake",
+  "building",
+  "engineering",
+  "base isolation",
+  "bearings",
+  "braces",
+  "cross bracing",
+  "natural hazards",
+  "design",
+  "safety"
+ ],
+ "printed": [
+  {
+   "text": "Ground shakes",
+   "at": [
+    500,
+    930
+   ]
+  }
+ ],
+ "structures": [
+  {
+   "id": "ground",
+   "name": "ground",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      60,
+      812,
+      940,
+      812
+     ]
+    }
+   ]
+  },
+  {
+   "id": "building",
+   "name": "building",
+   "pen": "bold",
+   "outlines": [
+    {
+     "rect": [
+      330,
+      300,
+      340,
+      440,
+      4
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      330,
+      410,
+      670,
+      410
+     ]
+    },
+    {
+     "line": [
+      330,
+      520,
+      670,
+      520
+     ]
+    },
+    {
+     "line": [
+      330,
+      630,
+      670,
+      630
+     ]
+    }
+   ]
+  },
+  {
+   "id": "braces",
+   "name": "cross braces",
+   "outlines": [
+    {
+     "line": [
+      338,
+      308,
+      662,
+      402
+     ]
+    },
+    {
+     "line": [
+      662,
+      308,
+      338,
+      402
+     ]
+    },
+    {
+     "line": [
+      338,
+      418,
+      662,
+      512
+     ]
+    },
+    {
+     "line": [
+      662,
+      418,
+      338,
+      512
+     ]
+    },
+    {
+     "line": [
+      338,
+      528,
+      662,
+      622
+     ]
+    },
+    {
+     "line": [
+      662,
+      528,
+      338,
+      622
+     ]
+    },
+    {
+     "line": [
+      338,
+      638,
+      662,
+      732
+     ]
+    },
+    {
+     "line": [
+      662,
+      638,
+      338,
+      732
+     ]
+    }
+   ]
+  },
+  {
+   "id": "isolators",
+   "name": "isolators",
+   "outlines": [
+    {
+     "rect": [
+      350,
+      756,
+      64,
+      40,
+      8
+     ]
+    },
+    {
+     "rect": [
+      468,
+      756,
+      64,
+      40,
+      8
+     ]
+    },
+    {
+     "rect": [
+      586,
+      756,
+      64,
+      40,
+      8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shake",
+   "name": "shaking",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      470,
+      870,
+      130,
+      870
+     ]
+    },
+    {
+     "line": [
+      153.0,
+      882.2,
+      130,
+      870,
+      153.0,
+      857.8
+     ]
+    },
+    {
+     "line": [
+      530,
+      870,
+      870,
+      870
+     ]
+    },
+    {
+     "line": [
+      847.0,
+      857.8,
+      870,
+      870,
+      847.0,
+      882.2
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Ground",
+   "structure": "ground",
+   "instruction": "Trace the ground line.",
+   "note": {
+    "text": "In an earthquake, the ground shakes. Buildings that aren't built to handle the shaking can be badly damaged."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Building",
+   "structure": "building",
+   "instruction": "Trace the outside of the building.",
+   "note": {
+    "text": "Engineers can't stop earthquakes, but they can design buildings that keep people safer when one strikes."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Floors",
+   "structure": "building",
+   "part": "details",
+   "instruction": "Draw the three floors inside.",
+   "note": {
+    "text": "Each floor is held up by the frame of the building."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Cross braces",
+   "structure": "braces",
+   "instruction": "Draw an X of braces on every floor.",
+   "note": {
+    "text": "Diagonal steel braces make an X on each floor. They stiffen the frame so it resists being pushed sideways.",
+    "remember": "Braces resist sideways shaking."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Isolators",
+   "structure": "isolators",
+   "instruction": "Trace the three isolators between the building and the ground.",
+   "note": {
+    "text": "Isolators are thick pads of rubber and steel layers under the building. The ground can move under them, so less shaking reaches the building.",
+    "remember": "Isolators soak up shaking."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Shaking",
+   "structure": "shake",
+   "instruction": "Draw the arrows showing the ground shaking both ways.",
+   "note": {
+    "text": "Strong building rules, called codes, help make sure new buildings are built to be earthquake-safe."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Label the parts",
+   "instruction": "Pick the right name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      500,
+      355
+     ],
+     "answer": "Cross brace",
+     "role": "Stiffens the frame against sideways shaking."
+    },
+    {
+     "n": 2,
+     "at": [
+      500,
+      776
+     ],
+     "answer": "Isolator",
+     "role": "Rubber-and-steel pad that soaks up shaking."
+    },
+    {
+     "n": 3,
+     "at": [
+      700,
+      812
+     ],
+     "answer": "Ground",
+     "role": "Shakes in an earthquake."
+    }
+   ],
+   "vocabulary": [
+    "Cross brace",
+    "Isolator",
+    "Ground",
+    "Roof",
+    "Window"
+   ],
+   "commonMistakes": {
+    "Roof": "The roof is at the very top. This part is between the building and the ground: an isolator."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Compare solutions",
+   "instruction": "Think like an engineer.",
+   "showsDiagram": true,
+   "question": "Which plan would best protect people in this building during an earthquake?",
+   "options": [
+    {
+     "text": "Add braces and isolators, as drawn",
+     "correct": true,
+     "feedback": "Yes. Braces make the frame stronger, and isolators reduce how much shaking reaches it. Together they help most."
+    },
+    {
+     "text": "Paint the building a bright color",
+     "feedback": "Color doesn't change how the building handles shaking."
+    },
+    {
+     "text": "Add more floors on top",
+     "feedback": "A taller building isn't safer by itself. Braces and isolators are what help."
+    },
+    {
+     "text": "Remove the braces to make it lighter",
+     "feedback": "The braces stop the frame bending sideways. Taking them out makes it weaker."
+    }
+   ]
+  }
+ ]
+}
