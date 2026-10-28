@@ -1,0 +1,301 @@
+{
+ "id": "g5-conservation-of-mass",
+ "title": "Ice melting on a scale: mass stays the same",
+ "grade": "5",
+ "subject": "Chemistry",
+ "standard": "5-PS1-2",
+ "minutes": 7,
+ "sources": [
+  {
+   "title": "NGSS 5-PS1-2: Measure and graph quantities to provide evidence that regardless of the type of change that occurs when heating, cooling, or mixing substances, the total weight of matter is conserved"
+  },
+  {
+   "title": "OpenStax Chemistry 2e, 1.2 Phases and Classification of Matter",
+   "url": "https://openstax.org/books/chemistry-2e/pages/1-2-phases-and-classification-of-matter"
+  }
+ ],
+ "keywords": [
+  "conservation of mass",
+  "conservation of matter",
+  "mass",
+  "weight",
+  "scale",
+  "melting",
+  "ice",
+  "water",
+  "evaporation",
+  "physical change"
+ ],
+ "printed": [
+  {
+   "text": "Before",
+   "at": [
+    250,
+    290
+   ]
+  },
+  {
+   "text": "After",
+   "at": [
+    750,
+    290
+   ]
+  },
+  {
+   "text": "100 g",
+   "at": [
+    250,
+    682
+   ],
+   "size": 40
+  },
+  {
+   "text": "? g",
+   "at": [
+    750,
+    682
+   ],
+   "size": 40
+  }
+ ],
+ "structures": [
+  {
+   "id": "scales",
+   "name": "scales",
+   "pen": "bold",
+   "outlines": [
+    {
+     "rect": [
+      90,
+      620,
+      320,
+      120,
+      12
+     ]
+    },
+    {
+     "rect": [
+      160,
+      645,
+      180,
+      70,
+      8
+     ]
+    },
+    {
+     "rect": [
+      590,
+      620,
+      320,
+      120,
+      12
+     ]
+    },
+    {
+     "rect": [
+      660,
+      645,
+      180,
+      70,
+      8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "jars",
+   "name": "jars and lids",
+   "outlines": [
+    {
+     "line": [
+      150,
+      376,
+      150,
+      612,
+      350,
+      612,
+      350,
+      376
+     ]
+    },
+    {
+     "rect": [
+      140,
+      350,
+      220,
+      26,
+      6
+     ]
+    },
+    {
+     "line": [
+      650,
+      376,
+      650,
+      612,
+      850,
+      612,
+      850,
+      376
+     ]
+    },
+    {
+     "rect": [
+      640,
+      350,
+      220,
+      26,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ice",
+   "name": "ice cube",
+   "outlines": [
+    {
+     "rect": [
+      210,
+      528,
+      80,
+      80,
+      8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "water",
+   "name": "melted water",
+   "outlines": [
+    {
+     "line": [
+      652,
+      560,
+      848,
+      560
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Scales",
+   "structure": "scales",
+   "instruction": "Trace both scales and their screens.",
+   "note": {
+    "text": "A scale measures how much matter something has. We'll weigh the same jar before and after a change."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Jars",
+   "structure": "jars",
+   "instruction": "Trace both jars and their lids.",
+   "note": {
+    "text": "The lids seal the jars, so nothing can get in or out.",
+    "remember": "Sealed: nothing in, nothing out."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ice cube",
+   "structure": "ice",
+   "instruction": "Trace the ice cube in the first jar.",
+   "note": {
+    "text": "Before: a solid ice cube in a sealed jar. The scale reads 100 grams."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Water",
+   "structure": "water",
+   "instruction": "Draw the top of the water in the second jar.",
+   "note": {
+    "text": "After: the ice has melted into liquid water. Its particles moved apart, but none disappeared.",
+    "remember": "Melting changes the state, not the amount."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Predict",
+   "instruction": "Read the scales.",
+   "showsDiagram": true,
+   "question": "The ice melted in the sealed jar. What will the After scale read?",
+   "options": [
+    {
+     "text": "100 g, the same as before",
+     "correct": true,
+     "feedback": "Yes. When matter changes from solid to liquid, the total amount of matter stays the same."
+    },
+    {
+     "text": "Less than 100 g, because water is lighter than ice",
+     "feedback": "The same particles are still in the jar, so the mass is still 100 g."
+    },
+    {
+     "text": "More than 100 g, because water takes up the jar",
+     "feedback": "No new matter got in: the jar is sealed. It still reads 100 g."
+    },
+    {
+     "text": "0 g, because the ice is gone",
+     "feedback": "The ice didn't vanish. It turned into water, which still weighs 100 g."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Now open the jar.",
+   "showsDiagram": false,
+   "question": "You take the lid off and leave the jar for a week. Now it weighs less. What happened?",
+   "options": [
+    {
+     "text": "Some water evaporated: it left as a gas into the air",
+     "correct": true,
+     "feedback": "Right. The water particles weren't destroyed. They escaped into the air as a gas, so the jar holds less."
+    },
+    {
+     "text": "Some water was destroyed",
+     "feedback": "Matter isn't destroyed. The water evaporated and went into the air as a gas."
+    },
+    {
+     "text": "The scale broke",
+     "feedback": "The scale is fine. With the lid off, some water evaporated into the air."
+    },
+    {
+     "text": "The jar got lighter",
+     "feedback": "The jar is the same. Some water left it as a gas, so there's less matter inside."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Fair test",
+   "instruction": "Think like a scientist.",
+   "showsDiagram": true,
+   "question": "Why did we keep the lid on while the ice melted?",
+   "options": [
+    {
+     "text": "So no matter could get in or out of the jar",
+     "correct": true,
+     "feedback": "Yes. Sealing the jar means any change on the scale would show matter appearing or disappearing. None did."
+    },
+    {
+     "text": "To keep the ice cold",
+     "feedback": "The lid is there so nothing escapes or gets in, so we can compare fairly."
+    },
+    {
+     "text": "To make the ice melt faster",
+     "feedback": "The lid makes the test fair: no matter can escape or get in."
+    },
+    {
+     "text": "Lids make things heavier",
+     "feedback": "Both jars have a lid, so that's the same. The lid stops matter escaping."
+    }
+   ]
+  }
+ ]
+}

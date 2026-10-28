@@ -1,0 +1,367 @@
+{
+ "id": "g5-salt-dissolving",
+ "title": "Salt dissolving in water",
+ "grade": "5",
+ "subject": "Chemistry",
+ "standard": "5-PS1-4",
+ "minutes": 7,
+ "sources": [
+  {
+   "title": "NGSS 5-PS1-4: Conduct an investigation to determine whether the mixing of two or more substances results in new substances"
+  },
+  {
+   "title": "OpenStax Chemistry 2e, 11.1 The Dissolution Process",
+   "url": "https://openstax.org/books/chemistry-2e/pages/11-1-the-dissolution-process"
+  },
+  {
+   "title": "OpenStax Chemistry 2e, 18.6 Occurrence, Preparation, and Properties of Carbonates (baking soda and acids)",
+   "url": "https://openstax.org/books/chemistry-2e/pages/18-6-occurrence-preparation-and-properties-of-carbonates"
+  }
+ ],
+ "keywords": [
+  "dissolving",
+  "dissolve",
+  "salt",
+  "water",
+  "solution",
+  "mixture",
+  "mixing",
+  "particles",
+  "new substance",
+  "stirring"
+ ],
+ "printed": [
+  {
+   "text": "Just added",
+   "at": [
+    250,
+    300
+   ],
+   "size": 40
+  },
+  {
+   "text": "Stirred",
+   "at": [
+    750,
+    300
+   ],
+   "size": 40
+  }
+ ],
+ "structures": [
+  {
+   "id": "glasses",
+   "name": "glasses",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      100,
+      380,
+      110,
+      760,
+      390,
+      760,
+      400,
+      380
+     ]
+    },
+    {
+     "line": [
+      600,
+      380,
+      610,
+      760,
+      890,
+      760,
+      900,
+      380
+     ]
+    }
+   ]
+  },
+  {
+   "id": "water",
+   "name": "water",
+   "outlines": [
+    {
+     "line": [
+      103,
+      460,
+      397,
+      460
+     ]
+    },
+    {
+     "line": [
+      603,
+      460,
+      897,
+      460
+     ]
+    }
+   ]
+  },
+  {
+   "id": "crystals",
+   "name": "salt crystals",
+   "outlines": [
+    {
+     "rect": [
+      170,
+      728,
+      16,
+      16,
+      2
+     ]
+    },
+    {
+     "rect": [
+      206,
+      728,
+      16,
+      16,
+      2
+     ]
+    },
+    {
+     "rect": [
+      238,
+      728,
+      16,
+      16,
+      2
+     ]
+    },
+    {
+     "rect": [
+      272,
+      728,
+      16,
+      16,
+      2
+     ]
+    },
+    {
+     "rect": [
+      314,
+      728,
+      16,
+      16,
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "spoon",
+   "name": "spoon",
+   "outlines": [
+    {
+     "line": [
+      880,
+      330,
+      756,
+      680
+     ]
+    },
+    {
+     "ellipse": [
+      748,
+      702,
+      14,
+      24
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dissolved",
+   "name": "dissolved salt",
+   "outlines": [
+    {
+     "circle": [
+      640,
+      500,
+      6
+     ]
+    },
+    {
+     "circle": [
+      720,
+      530,
+      6
+     ]
+    },
+    {
+     "circle": [
+      800,
+      490,
+      6
+     ]
+    },
+    {
+     "circle": [
+      870,
+      560,
+      6
+     ]
+    },
+    {
+     "circle": [
+      660,
+      610,
+      6
+     ]
+    },
+    {
+     "circle": [
+      720,
+      640,
+      6
+     ]
+    },
+    {
+     "circle": [
+      850,
+      690,
+      6
+     ]
+    },
+    {
+     "circle": [
+      700,
+      710,
+      6
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Glasses",
+   "structure": "glasses",
+   "instruction": "Trace the two glasses.",
+   "note": {
+    "text": "Two glasses of water, each with the same spoonful of salt. Only the second one gets stirred."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Water",
+   "structure": "water",
+   "instruction": "Draw the top of the water in each glass.",
+   "note": {
+    "text": "Water is the liquid the salt will mix into."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Salt crystals",
+   "structure": "crystals",
+   "instruction": "Trace the salt crystals at the bottom of the first glass.",
+   "note": {
+    "text": "Just added, the salt sits at the bottom as tiny solid crystals you can see."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Spoon",
+   "structure": "spoon",
+   "instruction": "Trace the spoon stirring the second glass.",
+   "note": {
+    "text": "Stirring helps the water break the crystals apart faster."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Dissolved salt",
+   "structure": "dissolved",
+   "instruction": "Dab the salt particles spread through the water.",
+   "note": {
+    "text": "The salt has dissolved: it split into particles too small to see, spread evenly through the water. They won't settle out.",
+    "remember": "Dissolved = spread out, too small to see."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Look at the stirred glass.",
+   "showsDiagram": true,
+   "question": "The salt in the stirred glass seems to disappear. Where did it go?",
+   "options": [
+    {
+     "text": "It broke into particles too small to see, spread through the water",
+     "correct": true,
+     "feedback": "Yes. The salt is still there. Its particles are mixed among the water's particles, too small to see."
+    },
+    {
+     "text": "It was destroyed",
+     "feedback": "Matter isn't destroyed. The salt split into tiny particles spread through the water."
+    },
+    {
+     "text": "It floated away into the air",
+     "feedback": "Salt doesn't escape into the air. It's spread through the water in tiny particles."
+    },
+    {
+     "text": "It turned into water",
+     "feedback": "It's still salt. Its particles are just mixed in among the water."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "New substance?",
+   "instruction": "Compare two kinds of mixing.",
+   "showsDiagram": false,
+   "question": "Mixing baking soda with vinegar makes bubbles of a new gas. Does mixing salt into water make a new substance?",
+   "options": [
+    {
+     "text": "No, it's still salt and water, just mixed together",
+     "correct": true,
+     "feedback": "Right. Dissolving makes a mixture. Baking soda and an acid like vinegar react to make carbon dioxide gas, a new substance."
+    },
+    {
+     "text": "Yes, because the salt vanished",
+     "feedback": "The salt only spread out into tiny particles. It's still salt mixed with water."
+    },
+    {
+     "text": "Yes, because it makes bubbles",
+     "feedback": "Salt in water doesn't fizz. That's baking soda and vinegar, which do make a new gas."
+    },
+    {
+     "text": "Every mixture makes a new substance",
+     "feedback": "Some mixing does, like baking soda and vinegar. Salt and water just mix."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Find the evidence",
+   "instruction": "Think about mass.",
+   "showsDiagram": false,
+   "question": "You weigh salt and water, then mix them. How much will the salty water weigh?",
+   "options": [
+    {
+     "text": "The same as the salt and water together before",
+     "correct": true,
+     "feedback": "Yes. When substances mix, the total amount of matter stays the same. That's evidence the salt is still there."
+    },
+    {
+     "text": "Just as much as the water",
+     "feedback": "The salt is still there, so it still counts. The total stays the same."
+    },
+    {
+     "text": "Less, because the salt disappeared",
+     "feedback": "The salt only looks gone. The salty water weighs as much as both did before."
+    },
+    {
+     "text": "More, because mixing adds matter",
+     "feedback": "Mixing doesn't add matter. The total stays exactly the same."
+    }
+   ]
+  }
+ ]
+}

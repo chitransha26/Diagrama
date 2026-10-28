@@ -1,0 +1,305 @@
+{
+ "id": "g5-gravity-down",
+ "title": "Gravity pulls toward Earth's center",
+ "grade": "5",
+ "subject": "Physics",
+ "standard": "5-PS2-1",
+ "minutes": 7,
+ "sources": [
+  {
+   "title": "NGSS 5-PS2-1: Support an argument that the gravitational force exerted by Earth on objects is directed down"
+  },
+  {
+   "title": "OpenStax University Physics Volume 1, 13.2 Gravitation Near Earth's Surface",
+   "url": "https://openstax.org/books/university-physics-volume-1/pages/13-2-gravitation-near-earths-surface"
+  }
+ ],
+ "keywords": [
+  "gravity",
+  "gravitational force",
+  "force",
+  "down",
+  "Earth",
+  "center",
+  "falling",
+  "weight",
+  "planet"
+ ],
+ "structures": [
+  {
+   "id": "earth",
+   "name": "Earth",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      500,
+      520,
+      300
+     ]
+    }
+   ]
+  },
+  {
+   "id": "center",
+   "name": "Earth's center",
+   "outlines": [
+    {
+     "circle": [
+      500,
+      520,
+      12
+     ]
+    }
+   ]
+  },
+  {
+   "id": "balls",
+   "name": "balls",
+   "outlines": [
+    {
+     "circle": [
+      500.0,
+      170.0,
+      24
+     ]
+    },
+    {
+     "circle": [
+      150.0,
+      520.0,
+      24
+     ]
+    },
+    {
+     "circle": [
+      803.1,
+      695.0,
+      24
+     ]
+    },
+    {
+     "circle": [
+      252.5,
+      767.5,
+      24
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pulls",
+   "name": "pull of gravity",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      500.0,
+      250.0,
+      500.0,
+      390.0
+     ]
+    },
+    {
+     "line": [
+      512.2,
+      367.0,
+      500.0,
+      390.0,
+      487.8,
+      367.0
+     ]
+    },
+    {
+     "line": [
+      230.0,
+      520.0,
+      370.0,
+      520.0
+     ]
+    },
+    {
+     "line": [
+      347.0,
+      507.8,
+      370.0,
+      520.0,
+      347.0,
+      532.2
+     ]
+    },
+    {
+     "line": [
+      733.8,
+      655.0,
+      612.6,
+      585.0
+     ]
+    },
+    {
+     "line": [
+      626.4,
+      607.1,
+      612.6,
+      585.0,
+      638.6,
+      585.9
+     ]
+    },
+    {
+     "line": [
+      309.1,
+      710.9,
+      408.1,
+      611.9
+     ]
+    },
+    {
+     "line": [
+      383.2,
+      619.5,
+      408.1,
+      611.9,
+      400.5,
+      636.8
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Earth",
+   "structure": "earth",
+   "instruction": "Trace the round Earth.",
+   "note": {
+    "text": "Earth is a giant ball. Its gravity pulls on everything: you, a dropped ball, the ocean, even the air.",
+    "remember": "Gravity pulls on everything."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Center",
+   "structure": "center",
+   "instruction": "Trace the dot at Earth's center.",
+   "note": {
+    "text": "A round planet pulls as if all its mass were at its center."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Balls",
+   "structure": "balls",
+   "instruction": "Trace the four balls dropped in different places.",
+   "note": {
+    "text": "Each ball is dropped by someone standing on a different part of Earth."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Gravity's pull",
+   "structure": "pulls",
+   "instruction": "Draw the four arrows pointing toward Earth's center.",
+   "note": {
+    "text": "Every ball falls toward Earth's center. That direction is what we call down, wherever we stand.",
+    "remember": "Down = toward Earth's center."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Label the model",
+   "instruction": "Pick the right name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      500,
+      532
+     ],
+     "answer": "Earth's center",
+     "role": "Where gravity points."
+    },
+    {
+     "n": 2,
+     "at": [
+      500.0,
+      320.0
+     ],
+     "answer": "Gravity",
+     "role": "The pull on the ball."
+    },
+    {
+     "n": 3,
+     "at": [
+      150.0,
+      520.0
+     ],
+     "answer": "Ball",
+     "role": "Falls toward the center."
+    }
+   ],
+   "vocabulary": [
+    "Earth's center",
+    "Gravity",
+    "Ball",
+    "North Pole"
+   ],
+   "commonMistakes": {
+    "North Pole": "Gravity doesn't point toward the North Pole. It pulls toward Earth's center from everywhere."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Argue",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "A child on the other side of the world drops a ball. Which way does it fall?",
+   "options": [
+    {
+     "text": "Toward Earth's center, which is down for them",
+     "correct": true,
+     "feedback": "Yes. Gravity always pulls toward Earth's center, so down points at the center from every place on Earth."
+    },
+    {
+     "text": "Up into space",
+     "feedback": "Gravity pulls toward Earth's center from everywhere, so it falls down toward the ground."
+    },
+    {
+     "text": "Toward the North Pole",
+     "feedback": "Gravity pulls toward Earth's center, not toward any pole."
+    },
+    {
+     "text": "Sideways",
+     "feedback": "Look at the arrows: each points to the center. That's down for whoever drops the ball."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "One more about down.",
+   "showsDiagram": true,
+   "question": "Why don't people at the bottom of the globe fall off Earth?",
+   "options": [
+    {
+     "text": "Gravity pulls them toward Earth's center too",
+     "correct": true,
+     "feedback": "Right. There's no real bottom of Earth. Gravity pulls everyone toward the center, so their feet stay on the ground."
+    },
+    {
+     "text": "They hold on tight",
+     "feedback": "No holding needed: gravity pulls them toward Earth's center, just like us."
+    },
+    {
+     "text": "Gravity only works at the top",
+     "feedback": "Gravity works all around Earth, always toward its center."
+    },
+    {
+     "text": "They wear heavy shoes",
+     "feedback": "Shoes don't matter. Gravity pulls everyone toward Earth's center."
+    }
+   ]
+  }
+ ]
+}

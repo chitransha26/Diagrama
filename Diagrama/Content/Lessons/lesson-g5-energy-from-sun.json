@@ -1,0 +1,382 @@
+{
+ "id": "g5-energy-from-sun",
+ "title": "Energy flow: sun to plant to animal",
+ "grade": "5",
+ "subject": "Life science",
+ "standard": "5-PS3-1",
+ "minutes": 7,
+ "sources": [
+  {
+   "title": "NGSS 5-PS3-1: Use models to describe that energy in animals' food (used for body repair, growth, motion, and to maintain body warmth) was once energy from the sun"
+  },
+  {
+   "title": "OpenStax Biology 2e, 8.1 Overview of Photosynthesis",
+   "url": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis"
+  },
+  {
+   "title": "OpenStax Biology 2e, 46.1 Ecology of Ecosystems",
+   "url": "https://openstax.org/books/biology-2e/pages/46-1-ecology-of-ecosystems"
+  }
+ ],
+ "keywords": [
+  "energy",
+  "sun",
+  "sunlight",
+  "plant",
+  "food",
+  "animal",
+  "rabbit",
+  "photosynthesis",
+  "energy flow",
+  "food chain",
+  "producer",
+  "consumer"
+ ],
+ "structures": [
+  {
+   "id": "sun",
+   "name": "sun",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      150,
+      180,
+      68
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      236.0,
+      180.0,
+      270.0,
+      180.0
+     ]
+    },
+    {
+     "line": [
+      210.8,
+      240.8,
+      234.9,
+      264.9
+     ]
+    },
+    {
+     "line": [
+      150.0,
+      266.0,
+      150.0,
+      300.0
+     ]
+    },
+    {
+     "line": [
+      89.2,
+      240.8,
+      65.1,
+      264.9
+     ]
+    },
+    {
+     "line": [
+      64.0,
+      180.0,
+      30.0,
+      180.0
+     ]
+    },
+    {
+     "line": [
+      89.2,
+      119.2,
+      65.1,
+      95.1
+     ]
+    },
+    {
+     "line": [
+      150.0,
+      94.0,
+      150.0,
+      60.0
+     ]
+    },
+    {
+     "line": [
+      210.8,
+      119.2,
+      234.9,
+      95.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ground",
+   "name": "ground",
+   "outlines": [
+    {
+     "line": [
+      60,
+      800,
+      940,
+      800
+     ]
+    }
+   ]
+  },
+  {
+   "id": "plant",
+   "name": "plant",
+   "outlines": [
+    {
+     "line": [
+      420,
+      800,
+      420,
+      600
+     ]
+    },
+    {
+     "path": "M 420 712 C 384 668 336 664 300 684 C 330 724 384 732 420 712 Z"
+    },
+    {
+     "path": "M 420 652 C 452 610 504 598 540 612 C 514 650 462 668 420 652 Z"
+    }
+   ]
+  },
+  {
+   "id": "rabbit",
+   "name": "rabbit",
+   "outlines": [
+    {
+     "ellipse": [
+      770,
+      722,
+      110,
+      66
+     ]
+    },
+    {
+     "circle": [
+      650,
+      650,
+      46
+     ]
+    },
+    {
+     "ellipse": [
+      630,
+      568,
+      13,
+      40
+     ]
+    },
+    {
+     "ellipse": [
+      670,
+      568,
+      13,
+      40
+     ]
+    },
+    {
+     "circle": [
+      884,
+      706,
+      16
+     ]
+    }
+   ],
+   "details": [
+    {
+     "circle": [
+      636,
+      642,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "flow",
+   "name": "energy flow",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      226,
+      250,
+      380,
+      560
+     ]
+    },
+    {
+     "line": [
+      380.7,
+      534.0,
+      380,
+      560,
+      358.9,
+      544.9
+     ]
+    },
+    {
+     "line": [
+      470,
+      720,
+      590,
+      700
+     ]
+    },
+    {
+     "line": [
+      565.3,
+      691.7,
+      590,
+      700,
+      569.4,
+      715.8
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Sun",
+   "structure": "sun",
+   "instruction": "Trace the sun.",
+   "note": {
+    "text": "Almost all the energy for life on Earth starts in the sun.",
+    "remember": "Life's energy starts with the sun."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sunlight",
+   "structure": "sun",
+   "part": "details",
+   "instruction": "Draw the sun's rays.",
+   "note": {
+    "text": "Sunlight carries energy from the sun to Earth."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ground",
+   "structure": "ground",
+   "instruction": "Draw the ground.",
+   "note": {
+    "text": "The plant's roots grow down into the soil, where it gets water. The energy, though, comes from above."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Plant",
+   "structure": "plant",
+   "instruction": "Trace the plant's stem and two leaves.",
+   "note": {
+    "text": "Leaves capture the sun's light energy and store it in the sugar they make. The plant makes its own food.",
+    "remember": "Plants store sunlight in food."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Rabbit",
+   "structure": "rabbit",
+   "instruction": "Trace the rabbit's body, head, ears and tail.",
+   "note": {
+    "text": "A rabbit can't make its own food. It gets energy by eating plants."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Eye",
+   "structure": "rabbit",
+   "part": "details",
+   "instruction": "Dab the rabbit's eye.",
+   "note": {
+    "text": "Eating plants makes the rabbit a consumer. Plants, which make their own food, are producers."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Energy flow",
+   "structure": "flow",
+   "instruction": "Draw the arrows: sun to plant, then plant to rabbit.",
+   "note": {
+    "text": "Arrows show which way energy moves. The energy in the rabbit's food was once energy from the sun.",
+    "remember": "Arrows point the way energy goes."
+   }
+  },
+  {
+   "type": "order",
+   "title": "Energy's path",
+   "items": [
+    "Sunlight reaches the leaf",
+    "The plant stores energy in food",
+    "The rabbit eats the plant",
+    "The rabbit uses the energy to hop"
+   ],
+   "instruction": "Tap the steps in order.",
+   "why": "The sun's energy is stored in the plant's food. When the rabbit eats the plant, that energy moves into the rabbit.",
+   "hint": "Where does the energy come from first?"
+  },
+  {
+   "type": "choice",
+   "title": "Trace it back",
+   "instruction": "Follow the arrows backward.",
+   "showsDiagram": true,
+   "question": "The rabbit uses energy to run, grow and stay warm. Where did that energy first come from?",
+   "options": [
+    {
+     "text": "The sun",
+     "correct": true,
+     "feedback": "Yes. The plant stored the sun's energy in its food, and the rabbit got it by eating the plant."
+    },
+    {
+     "text": "The ground",
+     "feedback": "Soil gives plants water and nutrients, but the energy came from sunlight."
+    },
+    {
+     "text": "The rabbit made it",
+     "feedback": "Animals can't make energy. The rabbit got it from the plant, and the plant from the sun."
+    },
+    {
+     "text": "The rain",
+     "feedback": "Plants need water, but the energy in their food came from the sun."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Extend",
+   "instruction": "Add a fox to the model.",
+   "showsDiagram": false,
+   "question": "A fox eats the rabbit. Where did the fox's energy first come from?",
+   "options": [
+    {
+     "text": "The sun, passed on through the plant and the rabbit",
+     "correct": true,
+     "feedback": "Right. Even a meat-eater's energy started as sunlight, passed along from plant to rabbit to fox."
+    },
+    {
+     "text": "Only the rabbit",
+     "feedback": "The rabbit passed it on, but the rabbit got it from the plant, and the plant from the sun."
+    },
+    {
+     "text": "The fox's own body",
+     "feedback": "The fox gets energy from food. Follow it back: rabbit, plant, sun."
+    },
+    {
+     "text": "Nowhere: foxes don't need energy",
+     "feedback": "Every animal needs energy, and a fox's comes, in the end, from the sun."
+    }
+   ]
+  }
+ ]
+}

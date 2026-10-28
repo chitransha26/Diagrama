@@ -1,0 +1,469 @@
+{
+ "id": "g5-states-of-matter",
+ "title": "Particles in a solid, liquid and gas",
+ "grade": "5",
+ "subject": "Chemistry",
+ "standard": "5-PS1-1",
+ "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS 5-PS1-1: Develop a model to describe that matter is made of particles too small to be seen"
+  },
+  {
+   "title": "OpenStax Chemistry 2e, 1.2 Phases and Classification of Matter",
+   "url": "https://openstax.org/books/chemistry-2e/pages/1-2-phases-and-classification-of-matter"
+  },
+  {
+   "title": "OpenStax Chemistry 2e, 10.1 Intermolecular Forces",
+   "url": "https://openstax.org/books/chemistry-2e/pages/10-1-intermolecular-forces"
+  }
+ ],
+ "keywords": [
+  "matter",
+  "particles",
+  "solid",
+  "liquid",
+  "gas",
+  "states of matter",
+  "model",
+  "air",
+  "shape",
+  "volume"
+ ],
+ "structures": [
+  {
+   "id": "solid",
+   "name": "solid",
+   "outlines": [
+    {
+     "rect": [
+      60,
+      400,
+      250,
+      300,
+      8
+     ]
+    }
+   ],
+   "details": [
+    {
+     "circle": [
+      131,
+      676,
+      16
+     ]
+    },
+    {
+     "circle": [
+      167,
+      676,
+      16
+     ]
+    },
+    {
+     "circle": [
+      203,
+      676,
+      16
+     ]
+    },
+    {
+     "circle": [
+      239,
+      676,
+      16
+     ]
+    },
+    {
+     "circle": [
+      131,
+      640,
+      16
+     ]
+    },
+    {
+     "circle": [
+      167,
+      640,
+      16
+     ]
+    },
+    {
+     "circle": [
+      203,
+      640,
+      16
+     ]
+    },
+    {
+     "circle": [
+      239,
+      640,
+      16
+     ]
+    },
+    {
+     "circle": [
+      131,
+      604,
+      16
+     ]
+    },
+    {
+     "circle": [
+      167,
+      604,
+      16
+     ]
+    },
+    {
+     "circle": [
+      203,
+      604,
+      16
+     ]
+    },
+    {
+     "circle": [
+      239,
+      604,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "liquidBox",
+   "name": "liquid's container",
+   "outlines": [
+    {
+     "rect": [
+      375,
+      400,
+      250,
+      300,
+      8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "liquid",
+   "name": "liquid",
+   "outlines": [
+    {
+     "line": [
+      375,
+      560,
+      625,
+      560
+     ]
+    }
+   ],
+   "details": [
+    {
+     "circle": [
+      410,
+      676,
+      16
+     ]
+    },
+    {
+     "circle": [
+      446,
+      670,
+      16
+     ]
+    },
+    {
+     "circle": [
+      488,
+      678,
+      16
+     ]
+    },
+    {
+     "circle": [
+      530,
+      672,
+      16
+     ]
+    },
+    {
+     "circle": [
+      574,
+      676,
+      16
+     ]
+    },
+    {
+     "circle": [
+      428,
+      636,
+      16
+     ]
+    },
+    {
+     "circle": [
+      470,
+      640,
+      16
+     ]
+    },
+    {
+     "circle": [
+      514,
+      634,
+      16
+     ]
+    },
+    {
+     "circle": [
+      556,
+      640,
+      16
+     ]
+    },
+    {
+     "circle": [
+      598,
+      632,
+      16
+     ]
+    },
+    {
+     "circle": [
+      452,
+      598,
+      16
+     ]
+    },
+    {
+     "circle": [
+      540,
+      600,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gas",
+   "name": "gas",
+   "outlines": [
+    {
+     "rect": [
+      690,
+      400,
+      250,
+      300,
+      8
+     ]
+    }
+   ],
+   "details": [
+    {
+     "circle": [
+      740,
+      450,
+      16
+     ]
+    },
+    {
+     "circle": [
+      880,
+      480,
+      16
+     ]
+    },
+    {
+     "circle": [
+      800,
+      560,
+      16
+     ]
+    },
+    {
+     "circle": [
+      720,
+      660,
+      16
+     ]
+    },
+    {
+     "circle": [
+      900,
+      650,
+      16
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "First box",
+   "structure": "solid",
+   "instruction": "Trace the first box.",
+   "note": {
+    "text": "All matter is made of particles far too small to see. Each dot in this model stands for one particle."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Solid",
+   "structure": "solid",
+   "part": "details",
+   "instruction": "Dab the particles, packed in neat rows.",
+   "note": {
+    "text": "In a solid, particles are packed tightly in a regular pattern. They only jiggle in place, so a solid keeps its shape.",
+    "remember": "Solid: tight rows, own shape."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Second box",
+   "structure": "liquidBox",
+   "instruction": "Trace the second box.",
+   "note": {
+    "text": "Next, the same kind of model for a liquid, like water in a cup."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Surface",
+   "structure": "liquid",
+   "instruction": "Draw the flat top of the liquid.",
+   "note": {
+    "text": "A liquid flows and takes the shape of its container, with a flat top."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Liquid",
+   "structure": "liquid",
+   "part": "details",
+   "instruction": "Dab the particles, close but jumbled.",
+   "note": {
+    "text": "In a liquid, particles are close together but not in rows. They slide past each other, so a liquid can flow.",
+    "remember": "Liquid: close, jumbled, flows."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Third box",
+   "structure": "gas",
+   "instruction": "Trace the third box.",
+   "note": {
+    "text": "Last, a gas, like the air in a closed box."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Gas",
+   "structure": "gas",
+   "part": "details",
+   "instruction": "Dab the particles, spread far apart.",
+   "note": {
+    "text": "In a gas, particles are far apart and zoom around. A gas spreads out to fill its whole container.",
+    "remember": "Gas: far apart, fills its container."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Label the states",
+   "instruction": "Pick the right name for each numbered box.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      185,
+      450
+     ],
+     "answer": "Solid",
+     "role": "Particles packed in rows."
+    },
+    {
+     "n": 2,
+     "at": [
+      500,
+      450
+     ],
+     "answer": "Liquid",
+     "role": "Particles close but jumbled.",
+     "mistakes": {
+      "Solid": "These particles aren't in neat rows, and they have a flat top like water. It's a liquid."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      815,
+      610
+     ],
+     "answer": "Gas",
+     "role": "Particles far apart."
+    }
+   ],
+   "vocabulary": [
+    "Solid",
+    "Liquid",
+    "Gas",
+    "Rock"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Use your model.",
+   "showsDiagram": true,
+   "question": "Why does a gas fill its whole container, but a solid keeps its shape?",
+   "options": [
+    {
+     "text": "Gas particles are far apart and move freely; solid particles are packed in place",
+     "correct": true,
+     "feedback": "Yes. Solid particles only jiggle in place. Gas particles zoom around and spread out to fill the space."
+    },
+    {
+     "text": "Gas particles are bigger",
+     "feedback": "The particles aren't bigger. They're just much farther apart and free to move."
+    },
+    {
+     "text": "Solids have no particles",
+     "feedback": "Solids are made of particles too, packed tightly in a regular pattern."
+    },
+    {
+     "text": "Gas is lighter than air",
+     "feedback": "The difference is how the particles are arranged: far apart in a gas, packed in a solid."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Invisible matter",
+   "instruction": "Think about air.",
+   "showsDiagram": false,
+   "question": "You can't see air. How can you tell air is made of matter?",
+   "options": [
+    {
+     "text": "Blowing air into a balloon makes it get bigger",
+     "correct": true,
+     "feedback": "Right. The air particles take up space and push the balloon out, even though each one is too small to see."
+    },
+    {
+     "text": "You can't: air is empty space",
+     "feedback": "Air is matter. A balloon fills up because air particles take up space."
+    },
+    {
+     "text": "Air has a color",
+     "feedback": "Air has no color. But it takes up space, which is why a balloon inflates."
+    },
+    {
+     "text": "Air stays in one shape",
+     "feedback": "Air is a gas, so it spreads out. It still takes up space, which inflates a balloon."
+    }
+   ]
+  }
+ ]
+}
