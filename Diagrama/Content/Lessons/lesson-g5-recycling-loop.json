@@ -1,0 +1,331 @@
+{
+ "id": "g5-recycling-loop",
+ "title": "A community recycling loop",
+ "grade": "5",
+ "subject": "Earth & space",
+ "standard": "5-ESS3-1",
+ "minutes": 7,
+ "sources": [
+  {
+   "title": "NGSS 5-ESS3-1: Obtain and combine information about ways individual communities use science ideas to protect the Earth's resources and environment"
+  },
+  {
+   "title": "U.S. EPA: Recycling Basics and Benefits",
+   "url": "https://www.epa.gov/recycle/recycling-basics-and-benefits"
+  }
+ ],
+ "keywords": [
+  "recycling",
+  "reduce",
+  "reuse",
+  "natural resources",
+  "community",
+  "landfill",
+  "environment",
+  "waste",
+  "conservation"
+ ],
+ "structures": [
+  {
+   "id": "bin",
+   "name": "recycling bin",
+   "pen": "bold",
+   "outlines": [
+    {
+     "rect": [
+      170,
+      180,
+      160,
+      180,
+      10
+     ]
+    },
+    {
+     "line": [
+      160,
+      164,
+      340,
+      164
+     ]
+    }
+   ]
+  },
+  {
+   "id": "truck",
+   "name": "collection truck",
+   "outlines": [
+    {
+     "rect": [
+      640,
+      180,
+      150,
+      110,
+      8
+     ]
+    },
+    {
+     "line": [
+      790,
+      215,
+      840,
+      215,
+      860,
+      250,
+      860,
+      290,
+      790,
+      290
+     ]
+    },
+    {
+     "circle": [
+      680,
+      300,
+      18
+     ]
+    },
+    {
+     "circle": [
+      830,
+      300,
+      18
+     ]
+    }
+   ]
+  },
+  {
+   "id": "plant",
+   "name": "recycling plant",
+   "outlines": [
+    {
+     "polygon": [
+      630,
+      840,
+      630,
+      700,
+      690,
+      660,
+      690,
+      700,
+      750,
+      660,
+      750,
+      700,
+      800,
+      660,
+      800,
+      600,
+      840,
+      600,
+      840,
+      840
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bottle",
+   "name": "new product",
+   "outlines": [
+    {
+     "path": "M 230 640 L 270 640 L 270 680 C 300 700 310 720 310 750 L 310 850 L 190 850 L 190 750 C 190 720 200 700 230 680 Z"
+    }
+   ]
+  },
+  {
+   "id": "loop",
+   "name": "recycling loop",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      360,
+      250,
+      610,
+      250
+     ]
+    },
+    {
+     "line": [
+      587.0,
+      237.8,
+      610,
+      250,
+      587.0,
+      262.2
+     ]
+    },
+    {
+     "line": [
+      750,
+      340,
+      750,
+      630
+     ]
+    },
+    {
+     "line": [
+      762.2,
+      607.0,
+      750,
+      630,
+      737.8,
+      607.0
+     ]
+    },
+    {
+     "line": [
+      610,
+      760,
+      336,
+      760
+     ]
+    },
+    {
+     "line": [
+      359.0,
+      772.2,
+      336,
+      760,
+      359.0,
+      747.8
+     ]
+    },
+    {
+     "line": [
+      250,
+      620,
+      250,
+      390
+     ]
+    },
+    {
+     "line": [
+      237.8,
+      413.0,
+      250,
+      390,
+      262.2,
+      413.0
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Recycling bin",
+   "structure": "bin",
+   "instruction": "Trace the recycling bin and its lid.",
+   "note": {
+    "text": "The loop starts at home or school: cans, bottles and paper go into the recycling bin, not the trash."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Truck",
+   "structure": "truck",
+   "instruction": "Trace the collection truck and its wheels.",
+   "note": {
+    "text": "Trucks collect the recycling. At a facility, it's sorted and cleaned.",
+    "remember": "Step 1: collect and sort."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Recycling plant",
+   "structure": "plant",
+   "instruction": "Trace the recycling plant.",
+   "note": {
+    "text": "The sorted materials are made into new products at a recycling plant.",
+    "remember": "Step 2: make new products."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "New product",
+   "structure": "bottle",
+   "instruction": "Trace the new bottle.",
+   "note": {
+    "text": "People buy products made from recycled material. That closes the loop.",
+    "remember": "Step 3: buy recycled."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "The loop",
+   "structure": "loop",
+   "instruction": "Draw the four arrows around the loop.",
+   "note": {
+    "text": "Materials go round and round instead of ending up in a landfill."
+   }
+  },
+  {
+   "type": "order",
+   "title": "Around the loop",
+   "items": [
+    "Put the bottle in the recycling bin",
+    "A truck collects it",
+    "It's sorted and cleaned",
+    "A plant makes a new product",
+    "Someone buys the recycled product"
+   ],
+   "instruction": "Tap the steps in order.",
+   "why": "Recycling is a loop: collect and sort, make new products, then buy them, so the materials get used again.",
+   "hint": "Where does the bottle go first?"
+  },
+  {
+   "type": "choice",
+   "title": "Why recycle?",
+   "instruction": "Think about Earth's resources.",
+   "showsDiagram": true,
+   "question": "How does a community recycling program help protect Earth?",
+   "options": [
+    {
+     "text": "It saves natural resources and keeps waste out of landfills",
+     "correct": true,
+     "feedback": "Yes. Reusing materials means less digging, cutting and drilling for new ones, and less waste to bury or burn."
+    },
+    {
+     "text": "It makes more trash",
+     "feedback": "Recycling turns used things into new products, so there's less trash."
+    },
+    {
+     "text": "It uses up more trees and metal",
+     "feedback": "It's the opposite: recycled material replaces new trees and metal."
+    },
+    {
+     "text": "It doesn't help at all",
+     "feedback": "It does: it conserves resources and energy, and keeps waste out of landfills."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Even better",
+   "instruction": "Think beyond recycling.",
+   "showsDiagram": false,
+   "question": "Which is even better for Earth than recycling a plastic bottle?",
+   "options": [
+    {
+     "text": "Using a refillable bottle so there's less waste to begin with",
+     "correct": true,
+     "feedback": "Right. Reducing and reusing come first. Things should be recycled when they can't be reduced or reused."
+    },
+    {
+     "text": "Throwing it in the trash",
+     "feedback": "Trash goes to a landfill. Reusing a bottle is better, and recycling is better than trash."
+    },
+    {
+     "text": "Buying two bottles",
+     "feedback": "That makes more waste. Reusing a refillable bottle makes less."
+    },
+    {
+     "text": "Burying it in the yard",
+     "feedback": "That's still waste. Reusing a bottle means less waste to begin with."
+    }
+   ]
+  }
+ ]
+}

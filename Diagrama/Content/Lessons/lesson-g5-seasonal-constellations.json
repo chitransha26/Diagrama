@@ -1,0 +1,471 @@
+{
+ "id": "g5-seasonal-constellations",
+ "title": "Seasonal constellations",
+ "grade": "5",
+ "subject": "Earth & space",
+ "standard": "5-ESS1-2",
+ "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS 5-ESS1-2: Represent data in graphical displays to reveal patterns of daily changes in length and direction of shadows, day and night, and the seasonal appearance of some stars in the night sky"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 2.1 The Sky Above",
+   "url": "https://openstax.org/books/astronomy-2e/pages/2-1-the-sky-above"
+  },
+  {
+   "title": "NASA Night Sky Network: Spy the Scorpion (Scorpius in summer evenings)",
+   "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/july2025-night-sky-notes/"
+  }
+ ],
+ "keywords": [
+  "constellations",
+  "stars",
+  "Orion",
+  "Scorpius",
+  "seasons",
+  "night sky",
+  "Earth's orbit",
+  "revolution",
+  "year",
+  "pattern"
+ ],
+ "printed": [
+  {
+   "text": "Winter",
+   "at": [
+    636,
+    540
+   ],
+   "size": 30
+  },
+  {
+   "text": "Summer",
+   "at": [
+    366,
+    540
+   ],
+   "size": 30
+  },
+  {
+   "text": "Not to scale",
+   "at": [
+    500,
+    880
+   ],
+   "size": 28
+  }
+ ],
+ "structures": [
+  {
+   "id": "sun",
+   "name": "sun",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      500,
+      500,
+      46
+     ]
+    }
+   ]
+  },
+  {
+   "id": "orbit",
+   "name": "Earth's orbit",
+   "outlines": [
+    {
+     "circle": [
+      500,
+      500,
+      220
+     ]
+    }
+   ]
+  },
+  {
+   "id": "earths",
+   "name": "Earth",
+   "outlines": [
+    {
+     "circle": [
+      720,
+      500,
+      24
+     ]
+    },
+    {
+     "circle": [
+      280,
+      500,
+      24
+     ]
+    }
+   ]
+  },
+  {
+   "id": "views",
+   "name": "night-side view",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      750,
+      500,
+      816,
+      500
+     ]
+    },
+    {
+     "line": [
+      798.3,
+      490.6,
+      816,
+      500,
+      798.3,
+      509.4
+     ]
+    },
+    {
+     "line": [
+      250,
+      500,
+      184,
+      500
+     ]
+    },
+    {
+     "line": [
+      201.7,
+      509.4,
+      184,
+      500,
+      201.7,
+      490.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "orion",
+   "name": "Orion",
+   "outlines": [
+    {
+     "circle": [
+      850,
+      400,
+      8
+     ]
+    },
+    {
+     "circle": [
+      940,
+      410,
+      8
+     ]
+    },
+    {
+     "circle": [
+      875,
+      500,
+      8
+     ]
+    },
+    {
+     "circle": [
+      895,
+      495,
+      8
+     ]
+    },
+    {
+     "circle": [
+      915,
+      490,
+      8
+     ]
+    },
+    {
+     "circle": [
+      860,
+      600,
+      8
+     ]
+    },
+    {
+     "circle": [
+      945,
+      590,
+      8
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      850,
+      400,
+      940,
+      410
+     ]
+    },
+    {
+     "line": [
+      850,
+      400,
+      875,
+      500
+     ]
+    },
+    {
+     "line": [
+      940,
+      410,
+      915,
+      490
+     ]
+    },
+    {
+     "line": [
+      875,
+      500,
+      915,
+      490
+     ]
+    },
+    {
+     "line": [
+      875,
+      500,
+      860,
+      600
+     ]
+    },
+    {
+     "line": [
+      915,
+      490,
+      945,
+      590
+     ]
+    }
+   ]
+  },
+  {
+   "id": "scorpius",
+   "name": "Scorpius",
+   "outlines": [
+    {
+     "circle": [
+      160,
+      380,
+      8
+     ]
+    },
+    {
+     "circle": [
+      140,
+      420,
+      8
+     ]
+    },
+    {
+     "circle": [
+      125,
+      465,
+      8
+     ]
+    },
+    {
+     "circle": [
+      112,
+      515,
+      8
+     ]
+    },
+    {
+     "circle": [
+      104,
+      565,
+      8
+     ]
+    },
+    {
+     "circle": [
+      115,
+      610,
+      8
+     ]
+    },
+    {
+     "circle": [
+      145,
+      632,
+      8
+     ]
+    },
+    {
+     "circle": [
+      168,
+      612,
+      8
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      160,
+      380,
+      140,
+      420,
+      125,
+      465,
+      112,
+      515,
+      104,
+      565,
+      115,
+      610,
+      145,
+      632,
+      168,
+      612
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Sun",
+   "structure": "sun",
+   "instruction": "Trace the sun in the middle.",
+   "note": {
+    "text": "This is a view from far above, looking down on the sun and Earth's path around it."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Orbit",
+   "structure": "orbit",
+   "instruction": "Trace Earth's path around the sun.",
+   "note": {
+    "text": "Earth travels once around the sun every year.",
+    "remember": "One trip around the sun = one year."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Earth",
+   "structure": "earths",
+   "instruction": "Trace Earth in winter and in summer.",
+   "note": {
+    "text": "Here is Earth at two times of year, half a year apart, as seen from the Northern Hemisphere."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Looking out at night",
+   "structure": "views",
+   "instruction": "Draw the arrows pointing out from Earth's night sides.",
+   "note": {
+    "text": "At night we face away from the sun, so we see the stars on the far side of Earth from the sun."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Orion",
+   "structure": "orion",
+   "instruction": "Trace the seven stars of Orion.",
+   "note": {
+    "text": "Orion, the hunter, is a winter constellation. In winter, our night side faces toward it.",
+    "remember": "Orion: winter."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Join Orion",
+   "structure": "orion",
+   "part": "details",
+   "instruction": "Connect Orion's stars.",
+   "note": {
+    "text": "A constellation is a pattern of stars. The three in a row make Orion's belt."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Scorpius",
+   "structure": "scorpius",
+   "instruction": "Trace the stars of Scorpius.",
+   "note": {
+    "text": "Scorpius, the scorpion, shows up on summer evenings, when our night side faces the other way.",
+    "remember": "Scorpius: summer."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Join Scorpius",
+   "structure": "scorpius",
+   "part": "details",
+   "instruction": "Connect the stars of the scorpion's curved body.",
+   "note": {
+    "text": "Its bright red star, Antares, is called the heart of the scorpion."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "Why can't we see Orion on summer nights?",
+   "options": [
+    {
+     "text": "In summer, Orion is on the sun's side of Earth, so it's up in the daytime",
+     "correct": true,
+     "feedback": "Yes. The stars are still there, but the bright sunlight hides them. We'd need to see stars in the daytime."
+    },
+    {
+     "text": "Orion moves away in summer",
+     "feedback": "The stars stay put. Earth moves around the sun, changing which way our night side faces."
+    },
+    {
+     "text": "Orion stops shining in summer",
+     "feedback": "Stars shine all the time. In summer, Orion is in the daytime sky, hidden by sunlight."
+    },
+    {
+     "text": "Clouds cover Orion every summer",
+     "feedback": "It's not clouds. As Earth orbits, Orion ends up on the sun's side of the sky."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Pattern",
+   "instruction": "Think about next year.",
+   "showsDiagram": true,
+   "question": "When will Orion be back in the evening sky?",
+   "options": [
+    {
+     "text": "Next winter, when Earth returns to the same part of its orbit",
+     "correct": true,
+     "feedback": "Right. Earth's trip around the sun repeats every year, so the same constellations return each season."
+    },
+    {
+     "text": "Never again",
+     "feedback": "It comes back every winter. Earth's yearly orbit makes the pattern repeat."
+    },
+    {
+     "text": "Tomorrow night",
+     "feedback": "In summer, Orion stays hidden by daylight. It returns in the winter."
+    },
+    {
+     "text": "Only in 100 years",
+     "feedback": "It's a yearly pattern: Orion returns every winter."
+    }
+   ]
+  }
+ ]
+}

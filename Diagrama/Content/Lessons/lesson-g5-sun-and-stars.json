@@ -1,0 +1,406 @@
+{
+ "id": "g5-sun-and-stars",
+ "title": "The sun compared with other stars",
+ "grade": "5",
+ "subject": "Earth & space",
+ "standard": "5-ESS1-1",
+ "minutes": 7,
+ "sources": [
+  {
+   "title": "NGSS 5-ESS1-1: Support an argument that differences in the apparent brightness of the sun compared to other stars is due to their relative distances from the Earth"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 1.6 A Tour of the Universe",
+   "url": "https://openstax.org/books/astronomy-2e/pages/1-6-a-tour-of-the-universe"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 15 Thinking Ahead (the Sun is a rather ordinary star)",
+   "url": "https://openstax.org/books/astronomy-2e/pages/15-thinking-ahead"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 17.1 The Brightness of Stars",
+   "url": "https://openstax.org/books/astronomy-2e/pages/17-1-the-brightness-of-stars"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 19.2 Surveying the Stars",
+   "url": "https://openstax.org/books/astronomy-2e/pages/19-2-surveying-the-stars"
+  }
+ ],
+ "keywords": [
+  "sun",
+  "star",
+  "stars",
+  "brightness",
+  "apparent brightness",
+  "distance",
+  "light-year",
+  "space",
+  "Earth"
+ ],
+ "printed": [
+  {
+   "text": "Not to scale",
+   "at": [
+    500,
+    860
+   ],
+   "size": 30
+  }
+ ],
+ "structures": [
+  {
+   "id": "earth",
+   "name": "Earth",
+   "outlines": [
+    {
+     "circle": [
+      100,
+      420,
+      30
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun",
+   "name": "sun",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      330,
+      420,
+      64
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      410.0,
+      420.0,
+      438.0,
+      420.0
+     ]
+    },
+    {
+     "line": [
+      386.6,
+      476.6,
+      406.4,
+      496.4
+     ]
+    },
+    {
+     "line": [
+      330.0,
+      500.0,
+      330.0,
+      528.0
+     ]
+    },
+    {
+     "line": [
+      273.4,
+      476.6,
+      253.6,
+      496.4
+     ]
+    },
+    {
+     "line": [
+      250.0,
+      420.0,
+      222.0,
+      420.0
+     ]
+    },
+    {
+     "line": [
+      273.4,
+      363.4,
+      253.6,
+      343.6
+     ]
+    },
+    {
+     "line": [
+      330.0,
+      340.0,
+      330.0,
+      312.0
+     ]
+    },
+    {
+     "line": [
+      386.6,
+      363.4,
+      406.4,
+      343.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "star",
+   "name": "another star",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      860,
+      420,
+      64
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      940.0,
+      420.0,
+      968.0,
+      420.0
+     ]
+    },
+    {
+     "line": [
+      916.6,
+      476.6,
+      936.4,
+      496.4
+     ]
+    },
+    {
+     "line": [
+      860.0,
+      500.0,
+      860.0,
+      528.0
+     ]
+    },
+    {
+     "line": [
+      803.4,
+      476.6,
+      783.6,
+      496.4
+     ]
+    },
+    {
+     "line": [
+      780.0,
+      420.0,
+      752.0,
+      420.0
+     ]
+    },
+    {
+     "line": [
+      803.4,
+      363.4,
+      783.6,
+      343.6
+     ]
+    },
+    {
+     "line": [
+      860.0,
+      340.0,
+      860.0,
+      312.0
+     ]
+    },
+    {
+     "line": [
+      916.6,
+      363.4,
+      936.4,
+      343.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "near",
+   "name": "distance to the sun",
+   "outlines": [
+    {
+     "line": [
+      100,
+      580,
+      330,
+      580
+     ]
+    },
+    {
+     "line": [
+      100,
+      560,
+      100,
+      600
+     ]
+    },
+    {
+     "line": [
+      330,
+      560,
+      330,
+      600
+     ]
+    }
+   ]
+  },
+  {
+   "id": "far",
+   "name": "distance to the star",
+   "outlines": [
+    {
+     "line": [
+      100,
+      720,
+      860,
+      720
+     ]
+    },
+    {
+     "line": [
+      100,
+      700,
+      100,
+      740
+     ]
+    },
+    {
+     "line": [
+      860,
+      700,
+      860,
+      740
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Earth",
+   "structure": "earth",
+   "instruction": "Trace Earth.",
+   "note": {
+    "text": "We look out from Earth at the sun by day and the stars by night."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "The sun",
+   "structure": "sun",
+   "instruction": "Trace the sun.",
+   "note": {
+    "text": "The sun is a star, one of hundreds of billions in our galaxy.",
+    "remember": "The sun is a star."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sunlight",
+   "structure": "sun",
+   "part": "details",
+   "instruction": "Draw the sun's rays.",
+   "note": {
+    "text": "Its light reaches us in about 8 minutes."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Another star",
+   "structure": "star",
+   "instruction": "Trace the other star, drawn the same size as the sun.",
+   "note": {
+    "text": "The sun is a rather ordinary star: not unusually big or small, hot or cool. Many stars are much like it."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Starlight",
+   "structure": "star",
+   "part": "details",
+   "instruction": "Draw the star's rays.",
+   "note": {
+    "text": "Light from even the nearest other star takes over 4 years to reach us."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Near",
+   "structure": "near",
+   "instruction": "Draw the short line from Earth to the sun.",
+   "note": {
+    "text": "The sun is close to us, compared with every other star."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Far",
+   "structure": "far",
+   "instruction": "Draw the long line from Earth to the other star.",
+   "note": {
+    "text": "In real life, this line would be far too long to fit: the nearest other star is about 270,000 times farther than the sun.",
+    "remember": "Other stars are very far away."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Argue",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "Why does the sun look so much bigger and brighter than other stars?",
+   "options": [
+    {
+     "text": "It's much closer to Earth",
+     "correct": true,
+     "feedback": "Yes. Other stars look faint only because they're so very far away."
+    },
+    {
+     "text": "It's the biggest star in the universe",
+     "feedback": "The sun is an ordinary star. Many stars are bigger and brighter: they're just farther away."
+    },
+    {
+     "text": "Other stars give off no light",
+     "feedback": "Stars all give off light. They look faint because they're so far away."
+    },
+    {
+     "text": "Other stars are tiny dots",
+     "feedback": "They only look tiny. Many are as big as the sun or bigger, but far away."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Test the idea",
+   "instruction": "Try it with flashlights.",
+   "showsDiagram": false,
+   "question": "Two identical flashlights shine at you. One is near, one is across a field. What do you see?",
+   "options": [
+    {
+     "text": "The far one looks dimmer",
+     "correct": true,
+     "feedback": "Right. How bright a light looks depends on how far away it is, as well as how much light it gives off."
+    },
+    {
+     "text": "They look the same",
+     "feedback": "They give off the same light, but the far one looks dimmer: distance matters."
+    },
+    {
+     "text": "The far one looks brighter",
+     "feedback": "Farther lights look dimmer, not brighter."
+    },
+    {
+     "text": "You can't see the far one at all",
+     "feedback": "You can see it, just more dimly. That's what happens with distant stars."
+    }
+   ]
+  }
+ ]
+}

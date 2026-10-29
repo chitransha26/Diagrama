@@ -1,0 +1,398 @@
+{
+ "id": "g5-earth-spheres",
+ "title": "Earth's four spheres",
+ "grade": "5",
+ "subject": "Earth & space",
+ "standard": "5-ESS2-1",
+ "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS 5-ESS2-1: Develop a model using an example to describe ways the geosphere, biosphere, hydrosphere, and/or atmosphere interact"
+  },
+  {
+   "title": "OpenStax Biology 2e, 31.2 The Soil (plant roots break up rock)",
+   "url": "https://openstax.org/books/biology-2e/pages/31-2-the-soil"
+  },
+  {
+   "title": "OpenStax Biology 2e, 46.3 Biogeochemical Cycles (the water cycle)",
+   "url": "https://openstax.org/books/biology-2e/pages/46-3-biogeochemical-cycles"
+  }
+ ],
+ "keywords": [
+  "geosphere",
+  "hydrosphere",
+  "atmosphere",
+  "biosphere",
+  "Earth systems",
+  "spheres",
+  "land",
+  "water",
+  "air",
+  "living things",
+  "interactions"
+ ],
+ "structures": [
+  {
+   "id": "geo",
+   "name": "mountain and land",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      40,
+      700,
+      70,
+      700,
+      250,
+      380,
+      430,
+      700,
+      560,
+      700
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hydro",
+   "name": "ocean",
+   "outlines": [
+    {
+     "line": [
+      560,
+      700.0,
+      570,
+      704.7,
+      580,
+      707.6,
+      590,
+      707.6,
+      600,
+      704.7,
+      610,
+      700.0,
+      620,
+      695.3,
+      630,
+      692.4,
+      640,
+      692.4,
+      650,
+      695.3,
+      660,
+      700.0,
+      670,
+      704.7,
+      680,
+      707.6,
+      690,
+      707.6,
+      700,
+      704.7,
+      710,
+      700.0,
+      720,
+      695.3,
+      730,
+      692.4,
+      740,
+      692.4,
+      750,
+      695.3,
+      760,
+      700.0,
+      770,
+      704.7,
+      780,
+      707.6,
+      790,
+      707.6,
+      800,
+      704.7,
+      810,
+      700.0,
+      820,
+      695.3,
+      830,
+      692.4,
+      840,
+      692.4,
+      850,
+      695.3,
+      860,
+      700.0,
+      870,
+      704.7,
+      880,
+      707.6,
+      890,
+      707.6,
+      900,
+      704.7,
+      910,
+      700.0,
+      920,
+      695.3,
+      930,
+      692.4,
+      940,
+      692.4,
+      950,
+      695.3,
+      960,
+      700.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "atmo",
+   "name": "cloud",
+   "outlines": [
+    {
+     "path": "M 270.0 200.0 C 250.0 160.0 290.0 130.0 330.0 145.0 C 350.0 100.0 430.0 100.0 450.0 140.0 C 490.0 125.0 530.0 155.0 515.0 190.0 C 530.0 220.0 490.0 235.0 460.0 225.0 L 300.0 225.0 C 270.0 230.0 255.0 215.0 270.0 200.0 Z"
+    }
+   ]
+  },
+  {
+   "id": "tree",
+   "name": "tree",
+   "outlines": [
+    {
+     "line": [
+      490,
+      700,
+      494,
+      600
+     ]
+    },
+    {
+     "line": [
+      510,
+      700,
+      506,
+      600
+     ]
+    },
+    {
+     "circle": [
+      500,
+      550,
+      52
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fish",
+   "name": "fish",
+   "outlines": [
+    {
+     "ellipse": [
+      760,
+      820,
+      44,
+      20
+     ]
+    },
+    {
+     "line": [
+      804,
+      820,
+      836,
+      800,
+      836,
+      840,
+      804,
+      820
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bird",
+   "name": "bird",
+   "outlines": [
+    {
+     "line": [
+      640,
+      330,
+      672,
+      310,
+      700,
+      330,
+      728,
+      310,
+      760,
+      330
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Land",
+   "structure": "geo",
+   "instruction": "Trace the mountain and the land.",
+   "note": {
+    "text": "The geosphere is Earth's rock, soil and sand, from mountains to the deep rock below.",
+    "remember": "Geosphere = rock and soil."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ocean",
+   "structure": "hydro",
+   "instruction": "Trace the wavy ocean.",
+   "note": {
+    "text": "The hydrosphere is all of Earth's water and ice: oceans, rivers, lakes, glaciers, and water underground.",
+    "remember": "Hydrosphere = water and ice."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Cloud",
+   "structure": "atmo",
+   "instruction": "Trace the cloud in the sky.",
+   "note": {
+    "text": "The atmosphere is the layer of air around Earth. Clouds, wind and weather happen in it.",
+    "remember": "Atmosphere = air."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Tree",
+   "structure": "tree",
+   "instruction": "Trace the tree.",
+   "note": {
+    "text": "The biosphere is every living thing on Earth, including plants, animals and people.",
+    "remember": "Biosphere = living things."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Fish",
+   "structure": "fish",
+   "instruction": "Trace the fish in the ocean.",
+   "note": {
+    "text": "Living things are found in every other sphere: on land, in the water, and flying through the air."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Bird",
+   "structure": "bird",
+   "instruction": "Draw the bird flying.",
+   "note": {
+    "text": "A bird breathes air, drinks water and nests in a tree: the spheres are linked."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Name the spheres",
+   "instruction": "Pick the sphere each numbered part belongs to.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      250,
+      560
+     ],
+     "answer": "Geosphere",
+     "role": "Rock and soil."
+    },
+    {
+     "n": 2,
+     "at": [
+      860,
+      700
+     ],
+     "answer": "Hydrosphere",
+     "role": "Water and ice."
+    },
+    {
+     "n": 3,
+     "at": [
+      390,
+      180
+     ],
+     "answer": "Atmosphere",
+     "role": "Air.",
+     "mistakes": {
+      "Hydrosphere": "Clouds are made of water droplets, but they float in the air. The sky is the atmosphere."
+     }
+    },
+    {
+     "n": 4,
+     "at": [
+      500,
+      550
+     ],
+     "answer": "Biosphere",
+     "role": "Living things."
+    }
+   ],
+   "vocabulary": [
+    "Geosphere",
+    "Hydrosphere",
+    "Atmosphere",
+    "Biosphere",
+    "Solar system"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Interactions",
+   "instruction": "Two spheres at work.",
+   "showsDiagram": true,
+   "question": "A tree's roots grow into cracks in a rock and slowly break it apart. Which two spheres are interacting?",
+   "options": [
+    {
+     "text": "Biosphere and geosphere",
+     "correct": true,
+     "feedback": "Yes. The roots are part of a living thing (biosphere) breaking up rock (geosphere)."
+    },
+    {
+     "text": "Atmosphere and hydrosphere",
+     "feedback": "No air or water is involved here: it's living roots and rock."
+    },
+    {
+     "text": "Hydrosphere and geosphere",
+     "feedback": "The rock is geosphere, but roots belong to a living thing: the biosphere."
+    },
+    {
+     "text": "Only the biosphere",
+     "feedback": "The roots are biosphere, but the rock they break is geosphere."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Interactions",
+   "instruction": "One more pair.",
+   "showsDiagram": true,
+   "question": "The sun warms the ocean, water evaporates, and it forms a cloud. Which two spheres are interacting?",
+   "options": [
+    {
+     "text": "Hydrosphere and atmosphere",
+     "correct": true,
+     "feedback": "Right. Water (hydrosphere) moves into the air (atmosphere) as vapor, then forms clouds."
+    },
+    {
+     "text": "Geosphere and biosphere",
+     "feedback": "No rock or living things here. Water is moving into the air."
+    },
+    {
+     "text": "Biosphere and atmosphere",
+     "feedback": "The ocean water is hydrosphere, not a living thing."
+    },
+    {
+     "text": "Geosphere and hydrosphere",
+     "feedback": "The cloud is up in the air, so the atmosphere is involved."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,352 @@
+{
+ "id": "g5-day-and-night",
+ "title": "Earth's rotation: day and night",
+ "grade": "5",
+ "subject": "Earth & space",
+ "standard": "5-ESS1-2",
+ "minutes": 7,
+ "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS 5-ESS1-2: Represent data in graphical displays to reveal patterns of daily changes in length and direction of shadows, day and night, and the seasonal appearance of some stars in the night sky"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 2.1 The Sky Above",
+   "url": "https://openstax.org/books/astronomy-2e/pages/2-1-the-sky-above"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 6.2 Telescopes Today (Earth rotates from west to east)",
+   "url": "https://openstax.org/books/astronomy-2e/pages/6-2-telescopes-today"
+  }
+ ],
+ "keywords": [
+  "day",
+  "night",
+  "rotation",
+  "Earth",
+  "spin",
+  "axis",
+  "sun",
+  "24 hours",
+  "sunrise",
+  "sunset"
+ ],
+ "legend": [
+  {
+   "name": "Day side",
+   "color": "#F4D35E",
+   "meaning": "Facing the sun"
+  },
+  {
+   "name": "Night side",
+   "color": "#2C3E73",
+   "meaning": "Facing away from the sun"
+  }
+ ],
+ "structures": [
+  {
+   "id": "sun",
+   "name": "sun",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      116,
+      500,
+      64
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      196.0,
+      500.0,
+      220.0,
+      500.0
+     ]
+    },
+    {
+     "line": [
+      172.6,
+      556.6,
+      189.5,
+      573.5
+     ]
+    },
+    {
+     "line": [
+      116.0,
+      580.0,
+      116.0,
+      604.0
+     ]
+    },
+    {
+     "line": [
+      59.4,
+      556.6,
+      42.5,
+      573.5
+     ]
+    },
+    {
+     "line": [
+      36.0,
+      500.0,
+      12.0,
+      500.0
+     ]
+    },
+    {
+     "line": [
+      59.4,
+      443.4,
+      42.5,
+      426.5
+     ]
+    },
+    {
+     "line": [
+      116.0,
+      420.0,
+      116.0,
+      396.0
+     ]
+    },
+    {
+     "line": [
+      172.6,
+      443.4,
+      189.5,
+      426.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "light",
+   "name": "sunlight",
+   "outlines": [
+    {
+     "line": [
+      240,
+      380,
+      364,
+      380
+     ]
+    },
+    {
+     "line": [
+      341.0,
+      367.8,
+      364,
+      380,
+      341.0,
+      392.2
+     ]
+    },
+    {
+     "line": [
+      240,
+      500,
+      364,
+      500
+     ]
+    },
+    {
+     "line": [
+      341.0,
+      487.8,
+      364,
+      500,
+      341.0,
+      512.2
+     ]
+    },
+    {
+     "line": [
+      240,
+      620,
+      364,
+      620
+     ]
+    },
+    {
+     "line": [
+      341.0,
+      607.8,
+      364,
+      620,
+      341.0,
+      632.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "day",
+   "name": "day side",
+   "colorName": "day side",
+   "fill": "#F4D35E",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 620 270 A 230 230 0 0 0 620 730 Z"
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "name": "night side",
+   "colorName": "night side",
+   "fill": "#2C3E73",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 620 270 A 230 230 0 0 1 620 730 Z"
+    }
+   ]
+  },
+  {
+   "id": "spin",
+   "name": "rotation arrow",
+   "outlines": [
+    {
+     "path": "M 459.4 270.6 A 280 280 0 0 1 780.6 270.6"
+    },
+    {
+     "line": [
+      768.8,
+      247.5,
+      780.6,
+      270.6,
+      754.8,
+      267.5
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Sun",
+   "structure": "sun",
+   "instruction": "Trace the sun.",
+   "note": {
+    "text": "The sun lights up Earth, but only one half at a time."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sun's rays",
+   "structure": "sun",
+   "part": "details",
+   "instruction": "Draw the sun's rays.",
+   "note": {
+    "text": "The sun gives off light in every direction. A tiny part of it reaches Earth."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sunlight",
+   "structure": "light",
+   "instruction": "Draw the three arrows of sunlight.",
+   "note": {
+    "text": "Sunlight travels across space and lands on the half of Earth facing the sun."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Day side",
+   "structure": "day",
+   "instruction": "Trace the half of Earth facing the sun, and the line down the middle.",
+   "note": {
+    "text": "On the side facing the sun, it's daytime.",
+    "remember": "Facing the sun = day."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Night side",
+   "structure": "night",
+   "instruction": "Trace the other half of Earth, and the middle line again.",
+   "note": {
+    "text": "On the side facing away from the sun, it's night.",
+    "remember": "Facing away = night."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Rotation",
+   "structure": "spin",
+   "instruction": "Draw the arrow showing Earth spinning.",
+   "note": {
+    "text": "Earth turns on its axis every 24 hours, from west to east. That's why the sun seems to rise and set.",
+    "remember": "One turn = one day."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "day",
+    "night"
+   ],
+   "instruction": "Color the day side and the night side."
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "What causes day and night?",
+   "options": [
+    {
+     "text": "Earth spinning, so each place turns toward the sun and then away",
+     "correct": true,
+     "feedback": "Yes. As Earth rotates, your side of Earth turns into sunlight (day) and then out of it (night)."
+    },
+    {
+     "text": "The sun moving around Earth every day",
+     "feedback": "It looks that way, but it's Earth that turns. The sun only seems to move."
+    },
+    {
+     "text": "The sun switching off at night",
+     "feedback": "The sun always shines. At night, your side of Earth faces away from it."
+    },
+    {
+     "text": "Clouds blocking the sun",
+     "feedback": "Clouds don't cause night. Your side of Earth turns away from the sun."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Predict",
+   "instruction": "Think about the whole Earth.",
+   "showsDiagram": true,
+   "question": "It's noon where you live. Is it noon everywhere on Earth?",
+   "options": [
+    {
+     "text": "No: on the far side of Earth, it's night",
+     "correct": true,
+     "feedback": "Right. Only the half facing the sun has daytime. On the other half, it's night."
+    },
+    {
+     "text": "Yes, all of Earth has the same time",
+     "feedback": "Look at the model: half of Earth faces away from the sun, so it's night there."
+    },
+    {
+     "text": "Yes, because there's only one sun",
+     "feedback": "There's one sun, but it lights only the half of Earth facing it."
+    },
+    {
+     "text": "It's day everywhere in summer",
+     "feedback": "Even in summer, the side facing away from the sun has night."
+    }
+   ]
+  }
+ ]
+}

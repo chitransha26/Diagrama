@@ -17,6 +17,7 @@ BOOKS = {  # slug: book id@version, as served by the archive on 20 October 2026
     "university-physics-volume-1": "d50f6e32-0fda-46ef-a362-9bd36ca7c97d@d0ed34a",
     "university-physics-volume-2": "7a0f9770-1c44-4acd-9920-1cd9a99f2a1e@d0ed34a",
     "university-physics-volume-3": "af275420-6050-4707-995c-57b9cc13c358@d0ed34a",
+    "astronomy-2e": "4c29f9e5-a53d-42c0-bdb5-091990527d79@dff6acf",  # added 29 October 2026
 }
 CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".cache", "openstax")
 

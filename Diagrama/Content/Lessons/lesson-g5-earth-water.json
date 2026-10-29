@@ -1,0 +1,364 @@
+{
+ "id": "g5-earth-water",
+ "title": "Where Earth's water is",
+ "grade": "5",
+ "subject": "Earth & space",
+ "standard": "5-ESS2-2",
+ "minutes": 7,
+ "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS 5-ESS2-2: Describe and graph the amounts of salt water and fresh water in various reservoirs to provide evidence about the distribution of water on Earth"
+  },
+  {
+   "title": "OpenStax Biology 2e, 46.3 Biogeochemical Cycles (where Earth's water is stored)",
+   "url": "https://openstax.org/books/biology-2e/pages/46-3-biogeochemical-cycles"
+  }
+ ],
+ "keywords": [
+  "water",
+  "salt water",
+  "fresh water",
+  "ocean",
+  "ice",
+  "glaciers",
+  "groundwater",
+  "lakes",
+  "rivers",
+  "bar graph",
+  "hydrosphere",
+  "reservoirs"
+ ],
+ "printed": [
+  {
+   "text": "All water",
+   "at": [
+    280,
+    150
+   ],
+   "size": 36
+  },
+  {
+   "text": "Fresh water",
+   "at": [
+    760,
+    150
+   ],
+   "size": 36
+  },
+  {
+   "text": "Salt",
+   "at": [
+    190,
+    800
+   ],
+   "size": 30
+  },
+  {
+   "text": "Fresh",
+   "at": [
+    350,
+    800
+   ],
+   "size": 30
+  },
+  {
+   "text": "Ice and",
+   "at": [
+    670,
+    796
+   ],
+   "size": 26
+  },
+  {
+   "text": "underground",
+   "at": [
+    670,
+    826
+   ],
+   "size": 26
+  },
+  {
+   "text": "Lakes and",
+   "at": [
+    830,
+    796
+   ],
+   "size": 26
+  },
+  {
+   "text": "rivers",
+   "at": [
+    830,
+    826
+   ],
+   "size": 26
+  },
+  {
+   "text": "97.5%",
+   "at": [
+    190,
+    240
+   ],
+   "size": 30
+  },
+  {
+   "text": "2.5%",
+   "at": [
+    350,
+    714
+   ],
+   "size": 30
+  },
+  {
+   "text": "99%",
+   "at": [
+    670,
+    240
+   ],
+   "size": 30
+  },
+  {
+   "text": "under 1%",
+   "at": [
+    830,
+    714
+   ],
+   "size": 30
+  }
+ ],
+ "legend": [
+  {
+   "name": "Salt water",
+   "color": "#2F6DB5",
+   "meaning": "The ocean and salty seas"
+  },
+  {
+   "name": "Fresh water",
+   "color": "#7FC3E8",
+   "meaning": "Water that isn't salty"
+  },
+  {
+   "name": "Ice and underground",
+   "color": "#C9E4F2",
+   "meaning": "Fresh water frozen or deep in the ground"
+  }
+ ],
+ "structures": [
+  {
+   "id": "axesA",
+   "name": "left graph's axes",
+   "outlines": [
+    {
+     "line": [
+      100,
+      200,
+      100,
+      760,
+      460,
+      760
+     ]
+    }
+   ]
+  },
+  {
+   "id": "salt",
+   "name": "salt water bar",
+   "colorName": "salt water",
+   "fill": "#2F6DB5",
+   "outlines": [
+    {
+     "rect": [
+      130,
+      272.5,
+      120,
+      487.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fresh",
+   "name": "fresh water bar",
+   "colorName": "fresh water",
+   "fill": "#7FC3E8",
+   "outlines": [
+    {
+     "rect": [
+      290,
+      747.5,
+      120,
+      12.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "axesB",
+   "name": "right graph's axes",
+   "outlines": [
+    {
+     "line": [
+      580,
+      200,
+      580,
+      760,
+      940,
+      760
+     ]
+    }
+   ]
+  },
+  {
+   "id": "locked",
+   "name": "ice and underground bar",
+   "colorName": "ice and underground",
+   "fill": "#C9E4F2",
+   "outlines": [
+    {
+     "rect": [
+      610,
+      265,
+      120,
+      495
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lakes",
+   "name": "lakes and rivers bar",
+   "outlines": [
+    {
+     "rect": [
+      770,
+      754,
+      120,
+      6
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "First graph",
+   "structure": "axesA",
+   "instruction": "Trace the axes of the first graph.",
+   "note": {
+    "text": "This bar graph splits all of Earth's water into salt water and fresh water."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Salt water",
+   "structure": "salt",
+   "instruction": "Trace the tall salt water bar.",
+   "note": {
+    "text": "97.5% of Earth's water is salt water, mostly in the ocean. We can't drink it.",
+    "remember": "Almost all water is salty."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Fresh water",
+   "structure": "fresh",
+   "instruction": "Trace the tiny fresh water bar.",
+   "note": {
+    "text": "Only 2.5% is fresh water. That's about 1 cup out of every 40.",
+    "remember": "Fresh water: 2.5%."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Second graph",
+   "structure": "axesB",
+   "instruction": "Trace the axes of the second graph.",
+   "note": {
+    "text": "This graph zooms in on just the fresh water. Where is it?"
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ice and underground",
+   "structure": "locked",
+   "instruction": "Trace the tall bar.",
+   "note": {
+    "text": "About 99% of fresh water is frozen in ice or stored underground, where it's hard to reach."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Lakes and rivers",
+   "structure": "lakes",
+   "instruction": "Trace the thin bar for lakes and rivers.",
+   "note": {
+    "text": "Less than 1% of fresh water is easy to reach in lakes and rivers. Many living things depend on it.",
+    "remember": "Easy-to-reach fresh water is rare."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "salt",
+    "fresh",
+    "locked"
+   ],
+   "instruction": "Color the bars. The lakes and rivers bar is too thin to fill."
+  },
+  {
+   "type": "choice",
+   "title": "Read the graph",
+   "instruction": "Use the first graph.",
+   "showsDiagram": true,
+   "question": "Where is most of Earth's water?",
+   "options": [
+    {
+     "text": "In the ocean, as salt water",
+     "correct": true,
+     "feedback": "Yes. 97.5% of all Earth's water is salt water."
+    },
+    {
+     "text": "In lakes and rivers",
+     "feedback": "Lakes and rivers hold less than 1% of the fresh water, a tiny part of the total."
+    },
+    {
+     "text": "In clouds",
+     "feedback": "Clouds hold very little. Almost all water, 97.5%, is salt water in the ocean."
+    },
+    {
+     "text": "Frozen in ice",
+     "feedback": "Ice holds most fresh water, but fresh water is only 2.5% of all water."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Use the evidence",
+   "instruction": "Think about both graphs.",
+   "showsDiagram": true,
+   "question": "Why is it important not to waste fresh water?",
+   "options": [
+    {
+     "text": "Only a tiny part of Earth's water is fresh and easy to reach",
+     "correct": true,
+     "feedback": "Right. Fresh water is 2.5% of the total, and less than 1% of that is in lakes and rivers."
+    },
+    {
+     "text": "Fresh water is most of Earth's water",
+     "feedback": "Look at the first graph: fresh water is only 2.5%."
+    },
+    {
+     "text": "Salt water is easy to drink",
+     "feedback": "We can't drink salt water, which is why fresh water is so precious."
+    },
+    {
+     "text": "All fresh water is in rivers",
+     "feedback": "Most fresh water is locked in ice or underground. Less than 1% is in lakes and rivers."
+    }
+   ]
+  }
+ ]
+}

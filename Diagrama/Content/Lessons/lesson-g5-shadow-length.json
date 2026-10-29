@@ -1,0 +1,370 @@
+{
+ "id": "g5-shadow-length",
+ "title": "Shadow length through the day",
+ "grade": "5",
+ "subject": "Earth & space",
+ "standard": "5-ESS1-2",
+ "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS 5-ESS1-2: Represent data in graphical displays to reveal patterns of daily changes in length and direction of shadows, day and night, and the seasonal appearance of some stars in the night sky"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 2.1 The Sky Above",
+   "url": "https://openstax.org/books/astronomy-2e/pages/2-1-the-sky-above"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 4.3 Keeping Time",
+   "url": "https://openstax.org/books/astronomy-2e/pages/4-3-keeping-time"
+  },
+  {
+   "title": "OpenStax University Physics Volume 3, 1.1 The Propagation of Light (light travels in straight lines)",
+   "url": "https://openstax.org/books/university-physics-volume-3/pages/1-1-the-propagation-of-light"
+  }
+ ],
+ "keywords": [
+  "shadow",
+  "shadows",
+  "sun",
+  "noon",
+  "morning",
+  "afternoon",
+  "light",
+  "east",
+  "west",
+  "daily pattern",
+  "Earth's rotation"
+ ],
+ "printed": [
+  {
+   "text": "Morning",
+   "at": [
+    170,
+    220
+   ],
+   "size": 34
+  },
+  {
+   "text": "Noon",
+   "at": [
+    500,
+    220
+   ],
+   "size": 34
+  },
+  {
+   "text": "Afternoon",
+   "at": [
+    830,
+    220
+   ],
+   "size": 34
+  },
+  {
+   "text": "East",
+   "at": [
+    80,
+    860
+   ],
+   "size": 30
+  },
+  {
+   "text": "West",
+   "at": [
+    920,
+    860
+   ],
+   "size": 30
+  }
+ ],
+ "structures": [
+  {
+   "id": "ground",
+   "name": "ground",
+   "outlines": [
+    {
+     "line": [
+      40,
+      780,
+      960,
+      780
+     ]
+    }
+   ]
+  },
+  {
+   "id": "poles",
+   "name": "poles",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      130,
+      780,
+      130,
+      620
+     ]
+    },
+    {
+     "line": [
+      500,
+      780,
+      500,
+      620
+     ]
+    },
+    {
+     "line": [
+      870,
+      780,
+      870,
+      620
+     ]
+    }
+   ]
+  },
+  {
+   "id": "suns",
+   "name": "sun",
+   "outlines": [
+    {
+     "circle": [
+      50,
+      560,
+      28
+     ]
+    },
+    {
+     "circle": [
+      470,
+      320,
+      28
+     ]
+    },
+    {
+     "circle": [
+      950,
+      560,
+      28
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rays",
+   "name": "sunlight",
+   "outlines": [
+    {
+     "line": [
+      82.0,
+      584.0,
+      343.3,
+      778
+     ]
+    },
+    {
+     "line": [
+      333.9,
+      758.1,
+      343.3,
+      778,
+      321.5,
+      774.7
+     ]
+    },
+    {
+     "line": [
+      474.0,
+      359.8,
+      516.0,
+      778
+     ]
+    },
+    {
+     "line": [
+      524.3,
+      757.6,
+      516.0,
+      778,
+      503.8,
+      759.7
+     ]
+    },
+    {
+     "line": [
+      918.0,
+      584.0,
+      656.7,
+      778
+     ]
+    },
+    {
+     "line": [
+      678.5,
+      774.7,
+      656.7,
+      778,
+      666.1,
+      758.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shadows",
+   "name": "shadows",
+   "pen": "bold",
+   "outlines": [
+    {
+     "polygon": [
+      130,
+      786,
+      343.3,
+      786,
+      343.3,
+      798,
+      130,
+      798
+     ]
+    },
+    {
+     "polygon": [
+      500,
+      786,
+      516.0,
+      786,
+      516.0,
+      798,
+      500,
+      798
+     ]
+    },
+    {
+     "polygon": [
+      656.7,
+      786,
+      870,
+      786,
+      870,
+      798,
+      656.7,
+      798
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Ground",
+   "structure": "ground",
+   "instruction": "Draw the ground.",
+   "note": {
+    "text": "The same pole, seen three times on one sunny day. East is on the left, west on the right."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Poles",
+   "structure": "poles",
+   "instruction": "Trace the pole in each scene.",
+   "note": {
+    "text": "The pole never moves or changes. Only the sun's place in the sky changes."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sun",
+   "structure": "suns",
+   "instruction": "Trace the sun in each scene.",
+   "note": {
+    "text": "As Earth turns, the sun seems to rise in the east, climb highest at noon, and sink in the west.",
+    "remember": "Highest sun at noon."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sunlight",
+   "structure": "rays",
+   "instruction": "Draw each ray of light just past the top of the pole.",
+   "note": {
+    "text": "Light travels in straight lines. The pole blocks some of it, leaving a shadow behind."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Shadows",
+   "structure": "shadows",
+   "instruction": "Trace the three shadows on the ground.",
+   "note": {
+    "text": "A low sun makes a long shadow; a high sun makes a short one. Shadows point away from the sun.",
+    "remember": "Low sun, long shadow."
+   }
+  },
+  {
+   "type": "order",
+   "title": "Shadow pattern",
+   "items": [
+    "Long shadow pointing west",
+    "Short shadow at noon",
+    "Long shadow pointing east"
+   ],
+   "instruction": "Tap the shadows in order, from morning to evening.",
+   "why": "In the morning the sun is low in the east, so shadows are long and point west. At noon they're shortest. By evening they're long again, pointing east.",
+   "hint": "Where is the sun when the day begins?"
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "Why is the shadow shortest at noon?",
+   "options": [
+    {
+     "text": "The sun is highest in the sky at noon",
+     "correct": true,
+     "feedback": "Yes. When the light comes from high overhead, the pole blocks only a little ground behind it."
+    },
+    {
+     "text": "The pole shrinks at noon",
+     "feedback": "The pole stays the same. The sun is higher, so the shadow is shorter."
+    },
+    {
+     "text": "The sun is closest to Earth at noon",
+     "feedback": "The sun's distance barely changes in a day. It's higher in the sky, so shadows are short."
+    },
+    {
+     "text": "There's less light at noon",
+     "feedback": "There's plenty of light. The sun is just high overhead, so the shadow is short."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Predict",
+   "instruction": "Think about the direction.",
+   "showsDiagram": true,
+   "question": "In the afternoon the sun is in the west. Which way does the pole's shadow point?",
+   "options": [
+    {
+     "text": "East, away from the sun",
+     "correct": true,
+     "feedback": "Right. A shadow always points away from the light, so a western sun casts shadows to the east."
+    },
+    {
+     "text": "West, toward the sun",
+     "feedback": "Shadows point away from the light. With the sun in the west, they point east."
+    },
+    {
+     "text": "Straight up",
+     "feedback": "Shadows fall along the ground, away from the sun: east in the afternoon."
+    },
+    {
+     "text": "There's no shadow in the afternoon",
+     "feedback": "There is: a long one pointing east, away from the low western sun."
+    }
+   ]
+  }
+ ]
+}
