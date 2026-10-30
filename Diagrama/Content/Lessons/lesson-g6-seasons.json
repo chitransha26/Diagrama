@@ -1,0 +1,353 @@
+{
+ "id": "g6-seasons",
+ "title": "Why we have seasons",
+ "grade": "6",
+ "subject": "Earth & space",
+ "standard": "MS-ESS1-1",
+ "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS MS-ESS1-1: Develop and use a model of the Earth-sun-moon system to describe the cyclic patterns of lunar phases, eclipses of the sun and moon, and seasons"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 4.2 The Seasons",
+   "url": "https://openstax.org/books/astronomy-2e/pages/4-2-the-seasons"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 2.1 The Sky Above (23.5° tilt)",
+   "url": "https://openstax.org/books/astronomy-2e/pages/2-1-the-sky-above"
+  }
+ ],
+ "keywords": [
+  "seasons",
+  "tilt",
+  "axis",
+  "23.5 degrees",
+  "summer",
+  "winter",
+  "solstice",
+  "equinox",
+  "hemisphere",
+  "direct sunlight",
+  "orbit",
+  "Earth-sun-moon system"
+ ],
+ "printed": [
+  {
+   "text": "N",
+   "at": [
+    829.0,
+    382.6
+   ],
+   "size": 34
+  },
+  {
+   "text": "N",
+   "at": [
+    69.0,
+    382.6
+   ],
+   "size": 34
+  },
+  {
+   "text": "Not to scale",
+   "at": [
+    500,
+    900
+   ],
+   "size": 28
+  }
+ ],
+ "structures": [
+  {
+   "id": "sun",
+   "name": "sun",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      500,
+      500,
+      70
+     ]
+    }
+   ]
+  },
+  {
+   "id": "orbit",
+   "name": "Earth's orbit",
+   "outlines": [
+    {
+     "path": "M 824.0 442.5 A 380 110 0 0 0 176.0 442.5"
+    },
+    {
+     "path": "M 176.0 557.5 A 380 110 0 0 0 824.0 557.5"
+    }
+   ]
+  },
+  {
+   "id": "june",
+   "name": "Earth in June",
+   "outlines": [
+    {
+     "circle": [
+      880,
+      500,
+      64
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      919.9,
+      591.7,
+      840.1,
+      408.3
+     ]
+    },
+    {
+     "line": [
+      821.3,
+      525.5,
+      938.7,
+      474.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dec",
+   "name": "Earth in December",
+   "outlines": [
+    {
+     "circle": [
+      120,
+      500,
+      64
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      159.9,
+      591.7,
+      80.1,
+      408.3
+     ]
+    },
+    {
+     "line": [
+      61.3,
+      525.5,
+      178.7,
+      474.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "light",
+   "name": "sunlight",
+   "outlines": [
+    {
+     "line": [
+      590,
+      500,
+      796,
+      500
+     ]
+    },
+    {
+     "line": [
+      773.0,
+      487.8,
+      796,
+      500,
+      773.0,
+      512.2
+     ]
+    },
+    {
+     "line": [
+      410,
+      500,
+      204,
+      500
+     ]
+    },
+    {
+     "line": [
+      227.0,
+      512.2,
+      204,
+      500,
+      227.0,
+      487.8
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Sun",
+   "structure": "sun",
+   "instruction": "Trace the sun.",
+   "note": {
+    "text": "Seasons are changes in how much heat we get from the sun through the year."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Orbit",
+   "structure": "orbit",
+   "instruction": "Trace Earth's orbit, seen at a slant from the side.",
+   "note": {
+    "text": "Earth's distance from the sun changes by only about 3%. That's too little to cause the seasons.",
+    "remember": "Distance doesn't cause seasons."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Earth in June",
+   "structure": "june",
+   "instruction": "Trace Earth on the right of the sun.",
+   "note": {
+    "text": "This is Earth in June. Six months later it's on the far side of its orbit."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Axis and equator",
+   "structure": "june",
+   "part": "details",
+   "instruction": "Draw the tilted axis through the poles, then the equator.",
+   "note": {
+    "text": "Earth's axis is tilted about 23.5°. In June, the north end leans toward the sun.",
+    "remember": "The tilt causes the seasons."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Earth in December",
+   "structure": "dec",
+   "instruction": "Trace Earth on the left of the sun.",
+   "note": {
+    "text": "This is Earth in December, halfway around its orbit."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Same tilt",
+   "structure": "dec",
+   "part": "details",
+   "instruction": "Draw the axis and equator, tilted the same way as before.",
+   "note": {
+    "text": "The axis keeps pointing the same direction in space all year. Now the north end leans away from the sun."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sunlight",
+   "structure": "light",
+   "instruction": "Draw the two arrows of sunlight.",
+   "note": {
+    "text": "The half leaning toward the sun gets more direct light and longer days, so it heats up more.",
+    "remember": "Direct light + long days = summer."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Which season?",
+   "instruction": "Pick the season in the Northern Hemisphere for each Earth.",
+   "showsDiagram": true,
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      880,
+      500
+     ],
+     "answer": "Summer",
+     "role": "North end leans toward the sun.",
+     "mistakes": {
+      "Winter": "The north end leans toward the sun here, so the north gets direct light and long days: summer."
+     }
+    },
+    {
+     "n": 2,
+     "at": [
+      120,
+      500
+     ],
+     "answer": "Winter",
+     "role": "North end leans away from the sun.",
+     "mistakes": {
+      "Summer": "Here the north leans away, so its sunlight is spread out and days are short: winter."
+     }
+    }
+   ],
+   "vocabulary": [
+    "Summer",
+    "Winter",
+    "Spring",
+    "Autumn"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "What causes Earth's seasons?",
+   "options": [
+    {
+     "text": "The tilt of Earth's axis as Earth orbits the sun",
+     "correct": true,
+     "feedback": "Yes. Through the year, each hemisphere takes turns leaning toward the sun, getting more direct light."
+    },
+    {
+     "text": "Earth getting closer to the sun in summer",
+     "feedback": "Earth is actually closest to the sun in January, during northern winter."
+    },
+    {
+     "text": "The sun getting hotter in summer",
+     "feedback": "The sun's output barely changes. The tilt changes how directly its light hits us."
+    },
+    {
+     "text": "Earth's spin speeding up",
+     "feedback": "Earth's spin gives day and night, not seasons. The tilt causes the seasons."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Other hemisphere",
+   "instruction": "Think about the Southern Hemisphere.",
+   "showsDiagram": true,
+   "question": "It's June. What season is it in Australia, in the Southern Hemisphere?",
+   "options": [
+    {
+     "text": "Winter",
+     "correct": true,
+     "feedback": "Right. In June the south end leans away from the sun, so the seasons are opposite."
+    },
+    {
+     "text": "Summer, like in the north",
+     "feedback": "If distance caused the seasons, both halves would match. They're opposite, because of the tilt."
+    },
+    {
+     "text": "Spring",
+     "feedback": "Spring and autumn come when Earth leans neither toward nor away, in March and September."
+    },
+    {
+     "text": "There are no seasons there",
+     "feedback": "The Southern Hemisphere has seasons too, just opposite to the north's."
+    }
+   ]
+  }
+ ]
+}

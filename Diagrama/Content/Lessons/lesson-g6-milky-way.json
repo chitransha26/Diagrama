@@ -1,0 +1,611 @@
+{
+ "id": "g6-milky-way",
+ "title": "The Milky Way and our sun",
+ "grade": "6",
+ "subject": "Earth & space",
+ "standard": "MS-ESS1-2",
+ "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS MS-ESS1-2: Develop and use a model to describe the role of gravity in the motions within galaxies and the solar system"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 25.1 The Architecture of the Galaxy",
+   "url": "https://openstax.org/books/astronomy-2e/pages/25-1-the-architecture-of-the-galaxy"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 25.2 Spiral Structure",
+   "url": "https://openstax.org/books/astronomy-2e/pages/25-2-spiral-structure"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 25.3 The Mass of the Galaxy",
+   "url": "https://openstax.org/books/astronomy-2e/pages/25-3-the-mass-of-the-galaxy"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 24.6 Evidence for Black Holes",
+   "url": "https://openstax.org/books/astronomy-2e/pages/24-6-evidence-for-black-holes"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 1.6 A Tour of the Universe",
+   "url": "https://openstax.org/books/astronomy-2e/pages/1-6-a-tour-of-the-universe"
+  }
+ ],
+ "keywords": [
+  "Milky Way",
+  "galaxy",
+  "spiral arms",
+  "bulge",
+  "disk",
+  "sun",
+  "stars",
+  "gravity",
+  "orbit",
+  "light-year",
+  "black hole",
+  "galactic year"
+ ],
+ "printed": [
+  {
+   "text": "Seen from above",
+   "at": [
+    160,
+    60
+   ],
+   "size": 30
+  },
+  {
+   "text": "Seen edge-on",
+   "at": [
+    160,
+    790
+   ],
+   "size": 30
+  },
+  {
+   "text": "100,000 light-years",
+   "at": [
+    500,
+    965
+   ],
+   "size": 30
+  }
+ ],
+ "structures": [
+  {
+   "id": "bulge",
+   "name": "central bulge",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      500,
+      400,
+      64
+     ]
+    }
+   ]
+  },
+  {
+   "id": "arms",
+   "name": "spiral arms",
+   "outlines": [
+    {
+     "line": [
+      580.0,
+      400.0,
+      581.5,
+      405.7,
+      582.6,
+      411.6,
+      583.3,
+      417.8,
+      583.6,
+      424.0,
+      583.5,
+      430.5,
+      582.9,
+      437.0,
+      581.8,
+      443.6,
+      580.2,
+      450.3,
+      578.1,
+      456.9,
+      575.5,
+      463.6,
+      572.4,
+      470.2,
+      568.7,
+      476.6,
+      564.5,
+      483.0,
+      559.8,
+      489.1,
+      554.5,
+      495.1,
+      548.8,
+      500.8,
+      542.5,
+      506.1,
+      535.7,
+      511.2,
+      528.4,
+      515.8,
+      520.7,
+      520.0,
+      512.5,
+      523.7,
+      503.9,
+      526.9,
+      494.9,
+      529.6,
+      485.6,
+      531.6,
+      475.9,
+      533.1,
+      465.9,
+      533.8,
+      455.7,
+      533.9,
+      445.3,
+      533.3,
+      434.8,
+      531.8,
+      424.2,
+      529.7,
+      413.5,
+      526.7,
+      402.8,
+      522.9,
+      392.2,
+      518.2,
+      381.8,
+      512.7,
+      371.5,
+      506.4,
+      361.5,
+      499.2,
+      351.8,
+      491.2,
+      342.5,
+      482.3,
+      333.7,
+      472.6,
+      325.4,
+      462.1,
+      317.7,
+      450.8,
+      310.7,
+      438.7,
+      304.3,
+      425.9,
+      298.8,
+      412.4,
+      294.2,
+      398.3,
+      290.5,
+      383.5,
+      287.7,
+      368.3,
+      286.0,
+      352.5,
+      285.4,
+      336.3,
+      285.9,
+      319.8,
+      287.6,
+      303.0,
+      290.6,
+      286.0,
+      294.8,
+      268.9,
+      300.3,
+      251.8,
+      307.2,
+      234.8,
+      315.4,
+      217.9,
+      324.9,
+      201.3,
+      335.8,
+      185.1,
+      348.1,
+      169.4,
+      361.7,
+      154.2
+     ]
+    },
+    {
+     "line": [
+      420.0,
+      400.0,
+      418.5,
+      394.3,
+      417.4,
+      388.4,
+      416.7,
+      382.2,
+      416.4,
+      376.0,
+      416.5,
+      369.5,
+      417.1,
+      363.0,
+      418.2,
+      356.4,
+      419.8,
+      349.7,
+      421.9,
+      343.1,
+      424.5,
+      336.4,
+      427.6,
+      329.8,
+      431.3,
+      323.4,
+      435.5,
+      317.0,
+      440.2,
+      310.9,
+      445.5,
+      304.9,
+      451.2,
+      299.2,
+      457.5,
+      293.9,
+      464.3,
+      288.8,
+      471.6,
+      284.2,
+      479.3,
+      280.0,
+      487.5,
+      276.3,
+      496.1,
+      273.1,
+      505.1,
+      270.4,
+      514.4,
+      268.4,
+      524.1,
+      266.9,
+      534.1,
+      266.2,
+      544.3,
+      266.1,
+      554.7,
+      266.7,
+      565.2,
+      268.2,
+      575.8,
+      270.3,
+      586.5,
+      273.3,
+      597.2,
+      277.1,
+      607.8,
+      281.8,
+      618.2,
+      287.3,
+      628.5,
+      293.6,
+      638.5,
+      300.8,
+      648.2,
+      308.8,
+      657.5,
+      317.7,
+      666.3,
+      327.4,
+      674.6,
+      337.9,
+      682.3,
+      349.2,
+      689.3,
+      361.3,
+      695.7,
+      374.1,
+      701.2,
+      387.6,
+      705.8,
+      401.7,
+      709.5,
+      416.5,
+      712.3,
+      431.7,
+      714.0,
+      447.5,
+      714.6,
+      463.7,
+      714.1,
+      480.2,
+      712.4,
+      497.0,
+      709.4,
+      514.0,
+      705.2,
+      531.1,
+      699.7,
+      548.2,
+      692.8,
+      565.2,
+      684.6,
+      582.1,
+      675.1,
+      598.7,
+      664.2,
+      614.9,
+      651.9,
+      630.6,
+      638.3,
+      645.8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hole",
+   "name": "central black hole",
+   "outlines": [
+    {
+     "circle": [
+      500,
+      400,
+      8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun",
+   "name": "the sun",
+   "outlines": [
+    {
+     "circle": [
+      403.8,
+      257.4,
+      11
+     ]
+    }
+   ]
+  },
+  {
+   "id": "path",
+   "name": "the sun's orbit",
+   "pen": "fine",
+   "outlines": [
+    {
+     "path": "M 387.2 270.2 A 172 172 0 1 0 421.9 246.7"
+    },
+    {
+     "line": [
+      443.9,
+      247.1,
+      421.9,
+      246.7,
+      434.5,
+      228.7
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gravity",
+   "name": "pull of gravity",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      416.1,
+      275.6,
+      453.0,
+      330.4
+     ]
+    },
+    {
+     "line": [
+      450.9,
+      310.5,
+      453.0,
+      330.4,
+      435.3,
+      321.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "edge",
+   "name": "edge-on view",
+   "outlines": [
+    {
+     "ellipse": [
+      500,
+      860,
+      330,
+      22
+     ]
+    }
+   ],
+   "details": [
+    {
+     "ellipse": [
+      500,
+      860,
+      64,
+      44
+     ]
+    }
+   ]
+  },
+  {
+   "id": "width",
+   "name": "width",
+   "outlines": [
+    {
+     "line": [
+      170,
+      925,
+      830,
+      925
+     ]
+    },
+    {
+     "line": [
+      170,
+      902,
+      170,
+      948
+     ]
+    },
+    {
+     "line": [
+      830,
+      902,
+      830,
+      948
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Bulge",
+   "structure": "bulge",
+   "instruction": "Trace the bright bulge in the middle.",
+   "note": {
+    "text": "The Milky Way is our galaxy: hundreds of billions of stars, plus gas and dust. Stars crowd together in its central bulge."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Spiral arms",
+   "structure": "arms",
+   "instruction": "Trace the two big spiral arms.",
+   "note": {
+    "text": "Seen from above, the disk has spiral arms where gas and dust collect and new stars form."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Black hole",
+   "structure": "hole",
+   "instruction": "Dab a dot for the black hole at the center.",
+   "note": {
+    "text": "At the very center is a black hole with about 4 million times the mass of the sun.",
+    "remember": "A giant black hole sits at the center."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "The sun",
+   "structure": "sun",
+   "instruction": "Dab a dot for the sun.",
+   "note": {
+    "text": "Our sun sits about 26,000 light-years from the center, in a small arm between two big ones.",
+    "remember": "We're about halfway out."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "The sun's orbit",
+   "structure": "path",
+   "instruction": "Trace the sun's path around the center, with its arrow.",
+   "note": {
+    "text": "The sun, carrying the whole solar system with it, orbits the center once every 225 million years."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Gravity",
+   "structure": "gravity",
+   "instruction": "Draw the arrow from the sun toward the center.",
+   "note": {
+    "text": "Gravity from all the mass inside the sun's orbit pulls it toward the center, bending its path into an orbit.",
+    "remember": "Gravity holds the galaxy together."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Edge-on",
+   "structure": "edge",
+   "instruction": "Trace the galaxy as it looks from the side.",
+   "note": {
+    "text": "From the side, the disk is very thin, like a CD: about 2,000 light-years thick."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Bulge from the side",
+   "structure": "edge",
+   "part": "details",
+   "instruction": "Trace the bulge bulging out of the disk.",
+   "note": {
+    "text": "The bulge is thicker than the disk around it."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Width",
+   "structure": "width",
+   "instruction": "Draw the line across the whole disk.",
+   "note": {
+    "text": "The disk is about 100,000 light-years across. Light would take 100,000 years to cross it."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Gravity's role",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "What keeps the sun and other stars orbiting the center instead of flying off into space?",
+   "options": [
+    {
+     "text": "Gravity from the galaxy's mass, pulling toward the center",
+     "correct": true,
+     "feedback": "Yes. The same force that holds planets around the sun holds stars in orbit around the galaxy's center."
+    },
+    {
+     "text": "The spiral arms push them",
+     "feedback": "The arms don't push stars. Gravity pulling toward the center keeps them in orbit."
+    },
+    {
+     "text": "Nothing: stars don't move",
+     "feedback": "Stars do move. The sun orbits the center every 225 million years."
+    },
+    {
+     "text": "Wind from the black hole",
+     "feedback": "The black hole is only a small part of the mass. Gravity from all the mass inside the orbit holds stars in."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Scale",
+   "instruction": "Compare the two systems.",
+   "showsDiagram": false,
+   "question": "How is the Milky Way like the solar system?",
+   "options": [
+    {
+     "text": "In both, gravity pulls objects toward the center and keeps them in orbit",
+     "correct": true,
+     "feedback": "Right. Planets orbit the sun and stars orbit the galaxy's center, both held by gravity."
+    },
+    {
+     "text": "Both are the same size",
+     "feedback": "The galaxy is unimaginably bigger: hundreds of billions of stars, each maybe with planets."
+    },
+    {
+     "text": "Both have one star",
+     "feedback": "The solar system has one star; the galaxy has hundreds of billions."
+    },
+    {
+     "text": "Both have a black hole at the center",
+     "feedback": "The solar system has the sun at its center. Gravity is what they share."
+    }
+   ]
+  }
+ ]
+}

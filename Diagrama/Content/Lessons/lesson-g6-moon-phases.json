@@ -1,0 +1,515 @@
+{
+ "id": "g6-moon-phases",
+ "title": "Phases of the moon",
+ "grade": "6",
+ "subject": "Earth & space",
+ "standard": "MS-ESS1-1",
+ "minutes": 10,
+ "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS MS-ESS1-1: Develop and use a model of the Earth-sun-moon system to describe the cyclic patterns of lunar phases, eclipses of the sun and moon, and seasons"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 4.5 Phases and Motions of the Moon",
+   "url": "https://openstax.org/books/astronomy-2e/pages/4-5-phases-and-motions-of-the-moon"
+  }
+ ],
+ "keywords": [
+  "moon",
+  "phases",
+  "lunar phases",
+  "new moon",
+  "full moon",
+  "crescent",
+  "gibbous",
+  "first quarter",
+  "third quarter",
+  "waxing",
+  "waning",
+  "orbit",
+  "Earth-sun-moon system"
+ ],
+ "printed": [
+  {
+   "text": "Sunlight",
+   "at": [
+    930,
+    90
+   ],
+   "size": 30
+  },
+  {
+   "text": "Not to scale",
+   "at": [
+    140,
+    940
+   ],
+   "size": 28
+  }
+ ],
+ "legend": [
+  {
+   "name": "Sunlit half",
+   "color": "#EDE6D3",
+   "meaning": "The half of the moon facing the sun"
+  },
+  {
+   "name": "Dark half",
+   "color": "#3B3F4A",
+   "meaning": "The half facing away from the sun"
+  },
+  {
+   "name": "Earth",
+   "color": "#3B7DD8",
+   "meaning": "Our planet, seen from far above the North Pole"
+  }
+ ],
+ "structures": [
+  {
+   "id": "light",
+   "name": "sunlight",
+   "outlines": [
+    {
+     "line": [
+      990,
+      150,
+      900,
+      150
+     ]
+    },
+    {
+     "line": [
+      923.0,
+      162.2,
+      900,
+      150,
+      923.0,
+      137.8
+     ]
+    },
+    {
+     "line": [
+      990,
+      500,
+      900,
+      500
+     ]
+    },
+    {
+     "line": [
+      923.0,
+      512.2,
+      900,
+      500,
+      923.0,
+      487.8
+     ]
+    },
+    {
+     "line": [
+      990,
+      850,
+      900,
+      850
+     ]
+    },
+    {
+     "line": [
+      923.0,
+      862.2,
+      900,
+      850,
+      923.0,
+      837.8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "earth",
+   "name": "Earth",
+   "colorName": "Earth",
+   "fill": "#3B7DD8",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      500,
+      500,
+      60
+     ]
+    }
+   ]
+  },
+  {
+   "id": "orbit",
+   "name": "moon's orbit",
+   "outlines": [
+    {
+     "path": "M 742.7 676.3 A 300 300 0 0 0 796.3 546.9"
+    },
+    {
+     "line": [
+      783.1,
+      564.5,
+      796.3,
+      546.9,
+      803.5,
+      567.7
+     ]
+    },
+    {
+     "path": "M 546.9 796.3 A 300 300 0 0 0 676.3 742.7"
+    },
+    {
+     "line": [
+      654.5,
+      745.8,
+      676.3,
+      742.7,
+      666.7,
+      762.5
+     ]
+    },
+    {
+     "path": "M 323.7 742.7 A 300 300 0 0 0 453.1 796.3"
+    },
+    {
+     "line": [
+      435.5,
+      783.1,
+      453.1,
+      796.3,
+      432.3,
+      803.5
+     ]
+    },
+    {
+     "path": "M 203.7 546.9 A 300 300 0 0 0 257.3 676.3"
+    },
+    {
+     "line": [
+      254.2,
+      654.5,
+      257.3,
+      676.3,
+      237.5,
+      666.7
+     ]
+    },
+    {
+     "path": "M 257.3 323.7 A 300 300 0 0 0 203.7 453.1"
+    },
+    {
+     "line": [
+      216.9,
+      435.5,
+      203.7,
+      453.1,
+      196.5,
+      432.3
+     ]
+    },
+    {
+     "path": "M 453.1 203.7 A 300 300 0 0 0 323.7 257.3"
+    },
+    {
+     "line": [
+      345.5,
+      254.2,
+      323.7,
+      257.3,
+      333.3,
+      237.5
+     ]
+    },
+    {
+     "path": "M 676.3 257.3 A 300 300 0 0 0 546.9 203.7"
+    },
+    {
+     "line": [
+      564.5,
+      216.9,
+      546.9,
+      203.7,
+      567.7,
+      196.5
+     ]
+    },
+    {
+     "path": "M 796.3 453.1 A 300 300 0 0 0 742.7 323.7"
+    },
+    {
+     "line": [
+      745.8,
+      345.5,
+      742.7,
+      323.7,
+      762.5,
+      333.3
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lit",
+   "name": "sunlit halves",
+   "colorName": "sunlit halves",
+   "fill": "#EDE6D3",
+   "outlines": [
+    {
+     "path": "M 800.0 466.0 A 34 34 0 0 1 800.0 534.0 Z"
+    },
+    {
+     "path": "M 712.1 253.9 A 34 34 0 0 1 712.1 321.9 Z"
+    },
+    {
+     "path": "M 500.0 166.0 A 34 34 0 0 1 500.0 234.0 Z"
+    },
+    {
+     "path": "M 287.9 253.9 A 34 34 0 0 1 287.9 321.9 Z"
+    },
+    {
+     "path": "M 200.0 466.0 A 34 34 0 0 1 200.0 534.0 Z"
+    },
+    {
+     "path": "M 287.9 678.1 A 34 34 0 0 1 287.9 746.1 Z"
+    },
+    {
+     "path": "M 500.0 766.0 A 34 34 0 0 1 500.0 834.0 Z"
+    },
+    {
+     "path": "M 712.1 678.1 A 34 34 0 0 1 712.1 746.1 Z"
+    }
+   ]
+  },
+  {
+   "id": "dark",
+   "name": "dark halves",
+   "colorName": "dark halves",
+   "fill": "#3B3F4A",
+   "outlines": [
+    {
+     "path": "M 800.0 466.0 A 34 34 0 0 0 800.0 534.0 Z"
+    },
+    {
+     "path": "M 712.1 253.9 A 34 34 0 0 0 712.1 321.9 Z"
+    },
+    {
+     "path": "M 500.0 166.0 A 34 34 0 0 0 500.0 234.0 Z"
+    },
+    {
+     "path": "M 287.9 253.9 A 34 34 0 0 0 287.9 321.9 Z"
+    },
+    {
+     "path": "M 200.0 466.0 A 34 34 0 0 0 200.0 534.0 Z"
+    },
+    {
+     "path": "M 287.9 678.1 A 34 34 0 0 0 287.9 746.1 Z"
+    },
+    {
+     "path": "M 500.0 766.0 A 34 34 0 0 0 500.0 834.0 Z"
+    },
+    {
+     "path": "M 712.1 678.1 A 34 34 0 0 0 712.1 746.1 Z"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Sunlight",
+   "structure": "light",
+   "instruction": "Draw the three arrows of sunlight coming from the right.",
+   "note": {
+    "text": "The sun is far off to the right. Its light comes from about the same direction all month.",
+    "remember": "Sunlight comes from one side."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Earth",
+   "structure": "earth",
+   "instruction": "Trace Earth in the middle.",
+   "note": {
+    "text": "We're looking down from far above Earth's North Pole."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Moon's orbit",
+   "structure": "orbit",
+   "instruction": "Trace the moon's path around Earth, with its arrows.",
+   "note": {
+    "text": "The moon orbits Earth counterclockwise, seen from above. Its phases repeat about every 29.5 days.",
+    "remember": "One cycle of phases: about 29.5 days."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sunlit halves",
+   "structure": "lit",
+   "instruction": "Trace the half of each moon that faces the sun.",
+   "note": {
+    "text": "The moon makes no light of its own. It shines by reflected sunlight, and the sun always lights half of it.",
+    "remember": "Half the moon is always lit."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Dark halves",
+   "structure": "dark",
+   "instruction": "Trace the half of each moon facing away from the sun.",
+   "note": {
+    "text": "The phase we see depends on how much of the sunlit half faces Earth."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "lit",
+    "dark",
+    "earth"
+   ],
+   "instruction": "Color the sunlit halves, the dark halves and Earth."
+  },
+  {
+   "type": "label",
+   "title": "Name the phases",
+   "instruction": "Imagine standing on Earth facing each moon. Which phase do you see?",
+   "showsDiagram": true,
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      800.0,
+      500.0
+     ],
+     "answer": "New moon",
+     "role": "Between Earth and the sun.",
+     "mistakes": {
+      "Full moon": "Its lit half faces the sun, away from us. We see the dark side, so it's a new moon."
+     }
+    },
+    {
+     "n": 2,
+     "at": [
+      500.0,
+      200.0
+     ],
+     "answer": "First quarter",
+     "role": "A quarter of the way around.",
+     "mistakes": {
+      "Third quarter": "This is the first quarter: the moon is one quarter of the way around after new moon."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      200.0,
+      500.0
+     ],
+     "answer": "Full moon",
+     "role": "Opposite the sun.",
+     "mistakes": {
+      "New moon": "Here the lit half faces Earth too, so we see the whole bright face: a full moon."
+     }
+    },
+    {
+     "n": 4,
+     "at": [
+      500.0,
+      800.0
+     ],
+     "answer": "Third quarter",
+     "role": "Three quarters of the way around.",
+     "mistakes": {
+      "First quarter": "This is three quarters of the way around after new moon: the third quarter."
+     }
+    }
+   ],
+   "vocabulary": [
+    "New moon",
+    "Waxing crescent",
+    "First quarter",
+    "Waxing gibbous",
+    "Full moon",
+    "Waning gibbous",
+    "Third quarter",
+    "Waning crescent"
+   ]
+  },
+  {
+   "type": "order",
+   "title": "The cycle",
+   "items": [
+    "New moon",
+    "Waxing crescent",
+    "First quarter",
+    "Waxing gibbous",
+    "Full moon",
+    "Waning gibbous",
+    "Third quarter",
+    "Waning crescent"
+   ],
+   "instruction": "Tap the phases in order, starting from new moon.",
+   "why": "After new moon, we see more of the sunlit half each night (waxing) until full moon, then less (waning).",
+   "hint": "Waxing means growing. It comes before full moon."
+  },
+  {
+   "type": "choice",
+   "title": "What causes phases?",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "What causes the phases of the moon?",
+   "options": [
+    {
+     "text": "We see different amounts of the moon's sunlit half as it orbits Earth",
+     "correct": true,
+     "feedback": "Yes. The sun always lights half the moon. Where the moon is in its orbit decides how much of that half we see."
+    },
+    {
+     "text": "Earth's shadow covers part of the moon",
+     "feedback": "A common idea, but no. Earth's shadow only reaches the moon in a lunar eclipse."
+    },
+    {
+     "text": "Clouds cover part of the moon",
+     "feedback": "Clouds are in our air, not on the moon. Phases come from the moon's position in its orbit."
+    },
+    {
+     "text": "The moon makes less light some nights",
+     "feedback": "The moon makes no light at all. It reflects sunlight, and half of it is always lit."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Predict",
+   "instruction": "Think about where the full moon is.",
+   "showsDiagram": true,
+   "question": "A full moon is opposite the sun in the sky. When does it rise?",
+   "options": [
+    {
+     "text": "At sunset",
+     "correct": true,
+     "feedback": "Right. Opposite the sun, it rises as the sun sets and stays up all night, setting at sunrise."
+    },
+    {
+     "text": "At sunrise",
+     "feedback": "That's the new moon, which sits in the same direction as the sun."
+    },
+    {
+     "text": "At noon",
+     "feedback": "The first quarter moon rises around noon. The full moon rises at sunset."
+    },
+    {
+     "text": "At midnight",
+     "feedback": "The third quarter moon rises around midnight. The full moon rises at sunset."
+    }
+   ]
+  }
+ ]
+}

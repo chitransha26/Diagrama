@@ -1,0 +1,385 @@
+{
+ "id": "g6-eclipses",
+ "title": "Solar and lunar eclipses",
+ "grade": "6",
+ "subject": "Earth & space",
+ "standard": "MS-ESS1-1",
+ "minutes": 10,
+ "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS MS-ESS1-1: Develop and use a model of the Earth-sun-moon system to describe the cyclic patterns of lunar phases, eclipses of the sun and moon, and seasons"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 4.7 Eclipses of the Sun and Moon",
+   "url": "https://openstax.org/books/astronomy-2e/pages/4-7-eclipses-of-the-sun-and-moon"
+  }
+ ],
+ "keywords": [
+  "eclipse",
+  "solar eclipse",
+  "lunar eclipse",
+  "shadow",
+  "umbra",
+  "new moon",
+  "full moon",
+  "sun",
+  "moon",
+  "Earth",
+  "Earth-sun-moon system"
+ ],
+ "printed": [
+  {
+   "text": "Solar eclipse",
+   "at": [
+    500,
+    80
+   ],
+   "size": 36
+  },
+  {
+   "text": "Lunar eclipse",
+   "at": [
+    500,
+    530
+   ],
+   "size": 36
+  },
+  {
+   "text": "Not to scale",
+   "at": [
+    500,
+    940
+   ],
+   "size": 28
+  }
+ ],
+ "legend": [
+  {
+   "name": "Sun",
+   "color": "#F4C430",
+   "meaning": "The light source"
+  },
+  {
+   "name": "Earth",
+   "color": "#3B7DD8",
+   "meaning": "Our planet"
+  },
+  {
+   "name": "New moon",
+   "color": "#55595F",
+   "meaning": "Its dark side faces Earth"
+  },
+  {
+   "name": "Eclipsed moon",
+   "color": "#B5562E",
+   "meaning": "A full moon in Earth's shadow glows dull coppery red"
+  }
+ ],
+ "structures": [
+  {
+   "id": "sun1",
+   "name": "sun",
+   "colorName": "sun",
+   "fill": "#F4C430",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      110,
+      250,
+      80
+     ]
+    }
+   ]
+  },
+  {
+   "id": "moon1",
+   "name": "moon",
+   "colorName": "new moon",
+   "fill": "#55595F",
+   "outlines": [
+    {
+     "circle": [
+      480,
+      250,
+      32
+     ]
+    }
+   ]
+  },
+  {
+   "id": "earth1",
+   "name": "Earth",
+   "colorName": "Earth",
+   "fill": "#3B7DD8",
+   "outlines": [
+    {
+     "circle": [
+      800,
+      250,
+      70
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shadow1",
+   "name": "moon's shadow",
+   "outlines": [
+    {
+     "line": [
+      480,
+      218,
+      730,
+      250
+     ]
+    },
+    {
+     "line": [
+      480,
+      282,
+      730,
+      250
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun2",
+   "name": "sun",
+   "colorName": "sun",
+   "fill": "#F4C430",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      110,
+      700,
+      80
+     ]
+    }
+   ]
+  },
+  {
+   "id": "earth2",
+   "name": "Earth",
+   "colorName": "Earth",
+   "fill": "#3B7DD8",
+   "outlines": [
+    {
+     "circle": [
+      480,
+      700,
+      70
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shadow2",
+   "name": "Earth's shadow",
+   "outlines": [
+    {
+     "line": [
+      480,
+      630,
+      920,
+      641.9
+     ]
+    },
+    {
+     "line": [
+      480,
+      770,
+      920,
+      758.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "moon2",
+   "name": "moon",
+   "colorName": "eclipsed moon",
+   "fill": "#B5562E",
+   "outlines": [
+    {
+     "circle": [
+      760,
+      700,
+      28
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Sun",
+   "structure": "sun1",
+   "instruction": "Trace the sun in the top picture.",
+   "note": {
+    "text": "Any solid object in sunlight casts a shadow into space behind it. An eclipse happens when that shadow falls on another body."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Moon",
+   "structure": "moon1",
+   "instruction": "Trace the moon between the sun and Earth.",
+   "note": {
+    "text": "The moon is between the sun and Earth, so it's at new moon phase.",
+    "remember": "Solar eclipse: new moon."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Earth",
+   "structure": "earth1",
+   "instruction": "Trace Earth.",
+   "note": {
+    "text": "The sun is about 400 times wider than the moon, but also about 400 times farther away, so they look the same size."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Moon's shadow",
+   "structure": "shadow1",
+   "instruction": "Draw the moon's dark shadow narrowing to a point on Earth.",
+   "note": {
+    "text": "Where this darkest shadow, the umbra, touches Earth, the moon hides the sun: a total solar eclipse.",
+    "remember": "Umbra = darkest shadow."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sun",
+   "structure": "sun2",
+   "instruction": "Trace the sun in the bottom picture.",
+   "note": {
+    "text": "Now the order changes: sun, then Earth, then moon."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Earth",
+   "structure": "earth2",
+   "instruction": "Trace Earth between the sun and the moon.",
+   "note": {
+    "text": "Earth is bigger than the moon, so its shadow is much bigger and longer."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Earth's shadow",
+   "structure": "shadow2",
+   "instruction": "Draw the two edges of Earth's shadow.",
+   "note": {
+    "text": "Earth's shadow stretches far out into space, away from the sun."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Moon",
+   "structure": "moon2",
+   "instruction": "Trace the moon inside Earth's shadow.",
+   "note": {
+    "text": "The moon is opposite the sun, at full moon, and passes into Earth's shadow: a lunar eclipse.",
+    "remember": "Lunar eclipse: full moon."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "sun1",
+    "moon1",
+    "earth1",
+    "sun2",
+    "earth2",
+    "moon2"
+   ],
+   "instruction": "Color both pictures."
+  },
+  {
+   "type": "choice",
+   "title": "Lunar eclipse color",
+   "instruction": "Think about the bottom picture.",
+   "showsDiagram": true,
+   "question": "Why does the moon glow dull red, not go fully black, in a total lunar eclipse?",
+   "options": [
+    {
+     "text": "Sunlight bends through Earth's atmosphere into the shadow",
+     "correct": true,
+     "feedback": "Yes. A little sunlight passes through our air and is bent into Earth's shadow, lighting the moon a coppery red."
+    },
+    {
+     "text": "The moon makes its own red light",
+     "feedback": "The moon makes no light. The red is sunlight bent through Earth's atmosphere."
+    },
+    {
+     "text": "Mars lights it up",
+     "feedback": "Mars is far too faint. The glow is sunlight bent through Earth's atmosphere."
+    },
+    {
+     "text": "The moon gets hot",
+     "feedback": "It's not heat. Sunlight passing through our atmosphere bends into the shadow."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Not every month",
+   "instruction": "The moon passes new and full every month.",
+   "showsDiagram": false,
+   "question": "Why don't we get a solar and a lunar eclipse every month?",
+   "options": [
+    {
+     "text": "The moon's orbit is tilted about 5°, so it usually passes above or below the shadows",
+     "correct": true,
+     "feedback": "Right. Eclipses happen only when the sun, Earth and moon line up exactly, during eclipse seasons twice a year."
+    },
+    {
+     "text": "The moon stops moving some months",
+     "feedback": "The moon always orbits. Its tilted orbit usually carries it above or below the line."
+    },
+    {
+     "text": "The sun is too far away",
+     "feedback": "Distance stays about the same. The tilt of the moon's orbit is what matters."
+    },
+    {
+     "text": "Eclipses only happen in summer",
+     "feedback": "Eclipses can happen at any time of year, whenever the sun, Earth and moon line up."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Who sees it?",
+   "instruction": "Compare the two shadows.",
+   "showsDiagram": true,
+   "question": "Why do far more people see a total lunar eclipse than a total solar eclipse?",
+   "options": [
+    {
+     "text": "A lunar eclipse is visible from Earth's whole night side; the moon's umbra covers only a thin path",
+     "correct": true,
+     "feedback": "Yes. Anyone who can see the full moon sees it darken, but only people in the umbra's narrow path see the sun fully hidden."
+    },
+    {
+     "text": "Lunar eclipses happen in the daytime",
+     "feedback": "Lunar eclipses happen at night, at full moon, for everyone on the night side."
+    },
+    {
+     "text": "The sun is bigger than Earth",
+     "feedback": "True, but the reason is shadow size: the moon's umbra only touches a small patch of Earth."
+    },
+    {
+     "text": "Solar eclipses are too dim to see",
+     "feedback": "They're dramatic, but visible only in the narrow path where the umbra lands."
+    }
+   ]
+  }
+ ]
+}

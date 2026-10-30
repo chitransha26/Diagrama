@@ -1,0 +1,404 @@
+{
+ "id": "g6-solar-system",
+ "title": "The solar system",
+ "grade": "6",
+ "subject": "Earth & space",
+ "standard": "MS-ESS1-2",
+ "minutes": 10,
+ "sources": [
+  {
+   "title": "NGSS MS-ESS1-2: Develop and use a model to describe the role of gravity in the motions within galaxies and the solar system"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 7.1 Overview of Our Planetary System",
+   "url": "https://openstax.org/books/astronomy-2e/pages/7-1-overview-of-our-planetary-system"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 3.3 Newton's Universal Law of Gravitation",
+   "url": "https://openstax.org/books/astronomy-2e/pages/3-3-newtons-universal-law-of-gravitation"
+  },
+  {
+   "title": "OpenStax Astronomy 2e, 1.6 A Tour of the Universe",
+   "url": "https://openstax.org/books/astronomy-2e/pages/1-6-a-tour-of-the-universe"
+  }
+ ],
+ "keywords": [
+  "solar system",
+  "planets",
+  "sun",
+  "orbit",
+  "gravity",
+  "Mercury",
+  "Venus",
+  "Earth",
+  "Mars",
+  "Jupiter",
+  "Saturn",
+  "Uranus",
+  "Neptune",
+  "terrestrial planets",
+  "giant planets"
+ ],
+ "printed": [
+  {
+   "text": "Not to scale",
+   "at": [
+    140,
+    960
+   ],
+   "size": 28
+  }
+ ],
+ "structures": [
+  {
+   "id": "sun",
+   "name": "sun",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      500,
+      500,
+      50
+     ]
+    }
+   ]
+  },
+  {
+   "id": "innerOrbits",
+   "name": "inner planets' orbits",
+   "pen": "fine",
+   "outlines": [
+    {
+     "path": "M 523.8 413.2 A 90 90 0 1 0 563.2 436.0"
+    },
+    {
+     "path": "M 410.7 580.2 A 120 120 0 1 0 385.9 537.2"
+    },
+    {
+     "path": "M 647.9 475.1 A 150 150 0 1 0 647.9 524.9"
+    },
+    {
+     "path": "M 364.4 374.1 A 185 185 0 1 0 399.6 344.6"
+    }
+   ]
+  },
+  {
+   "id": "inner",
+   "name": "inner planets",
+   "outlines": [
+    {
+     "circle": [
+      545.0,
+      422.1,
+      13
+     ]
+    },
+    {
+     "circle": [
+      396.1,
+      560.0,
+      15
+     ]
+    },
+    {
+     "circle": [
+      650.0,
+      500.0,
+      15
+     ]
+    },
+    {
+     "circle": [
+      381.1,
+      358.3,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "id": "outerOrbits",
+   "name": "outer planets' orbits",
+   "pen": "fine",
+   "outlines": [
+    {
+     "path": "M 235.4 446.1 A 270 270 0 1 0 262.7 371.2"
+    },
+    {
+     "path": "M 697.7 770.5 A 335 335 0 1 0 635.4 806.4"
+    },
+    {
+     "path": "M 607.5 119.9 A 395 395 0 1 0 662.0 139.7"
+    },
+    {
+     "path": "M 233.5 862.6 A 450 450 0 1 0 189.1 825.4"
+    }
+   ]
+  },
+  {
+   "id": "outer",
+   "name": "giant planets",
+   "outlines": [
+    {
+     "circle": [
+      246.3,
+      407.7,
+      30
+     ]
+    },
+    {
+     "circle": [
+      667.5,
+      790.1,
+      26
+     ]
+    },
+    {
+     "circle": [
+      635.1,
+      128.8,
+      19
+     ]
+    },
+    {
+     "circle": [
+      210.7,
+      844.7,
+      19
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gravity",
+   "name": "pull of gravity",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      628.0,
+      500,
+      562,
+      500
+     ]
+    },
+    {
+     "line": [
+      579.7,
+      509.4,
+      562,
+      500,
+      579.7,
+      490.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "motion",
+   "name": "direction of motion",
+   "outlines": [
+    {
+     "line": [
+      650.0,
+      478,
+      650.0,
+      418
+     ]
+    },
+    {
+     "line": [
+      640.6,
+      435.7,
+      650.0,
+      418,
+      659.4,
+      435.7
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Sun",
+   "structure": "sun",
+   "instruction": "Trace the sun in the middle.",
+   "note": {
+    "text": "The sun holds 99.8% of all the mass in the solar system.",
+    "remember": "The sun has almost all the mass."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Inner orbits",
+   "structure": "innerOrbits",
+   "instruction": "Trace the four inner orbits.",
+   "note": {
+    "text": "All eight planets travel the same way around the sun, in nearly circular orbits in about the same flat plane."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Inner planets",
+   "structure": "inner",
+   "instruction": "Trace the four small planets on those orbits.",
+   "note": {
+    "text": "Mercury, Venus, Earth and Mars are the terrestrial planets: small, rocky worlds with solid surfaces.",
+    "remember": "Inner planets: small and rocky."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Outer orbits",
+   "structure": "outerOrbits",
+   "instruction": "Trace the four outer orbits.",
+   "note": {
+    "text": "In reality, the outer orbits are far more spread out than any drawing can show."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Giant planets",
+   "structure": "outer",
+   "instruction": "Trace the four big planets.",
+   "note": {
+    "text": "Jupiter, Saturn, Uranus and Neptune are giant planets of gas, liquid and ice, with no solid surface.",
+    "remember": "Outer planets: giants."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Gravity",
+   "structure": "gravity",
+   "instruction": "Draw the arrow from Earth toward the sun.",
+   "note": {
+    "text": "The sun's gravity pulls on every planet, always toward the sun.",
+    "remember": "Gravity pulls toward the sun."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Motion",
+   "structure": "motion",
+   "instruction": "Draw the arrow showing which way Earth is moving.",
+   "note": {
+    "text": "Earth moves sideways. Gravity keeps bending its path from a straight line into an orbit."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Name the planets",
+   "instruction": "Pick the name of each numbered planet, counting out from the sun.",
+   "showsDiagram": true,
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      650.0,
+      500.0
+     ],
+     "answer": "Earth",
+     "role": "Third from the sun.",
+     "mistakes": {
+      "Venus": "Venus is second from the sun. Count the orbits: this is the third, Earth."
+     }
+    },
+    {
+     "n": 2,
+     "at": [
+      381.1,
+      358.3
+     ],
+     "answer": "Mars",
+     "role": "Fourth from the sun."
+    },
+    {
+     "n": 3,
+     "at": [
+      246.3,
+      407.7
+     ],
+     "answer": "Jupiter",
+     "role": "The largest planet.",
+     "mistakes": {
+      "Saturn": "Saturn is sixth. This is the fifth planet, the first giant: Jupiter."
+     }
+    },
+    {
+     "n": 4,
+     "at": [
+      210.7,
+      844.7
+     ],
+     "answer": "Neptune",
+     "role": "The farthest planet."
+    }
+   ],
+   "vocabulary": [
+    "Mercury",
+    "Venus",
+    "Earth",
+    "Mars",
+    "Jupiter",
+    "Saturn",
+    "Uranus",
+    "Neptune"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Gravity's role",
+   "instruction": "Use the arrows.",
+   "showsDiagram": true,
+   "question": "If the sun's gravity suddenly switched off, what would Earth do?",
+   "options": [
+    {
+     "text": "Fly off in a straight line, in the direction it was moving",
+     "correct": true,
+     "feedback": "Yes. Without a pull toward the sun to bend its path, Earth would keep going straight."
+    },
+    {
+     "text": "Fall into the sun",
+     "feedback": "Falling inward needs a pull toward the sun: that's gravity. Without it, Earth goes straight."
+    },
+    {
+     "text": "Stop moving",
+     "feedback": "Nothing would slow it down in space. It would keep moving in a straight line."
+    },
+    {
+     "text": "Keep orbiting just the same",
+     "feedback": "Gravity is what bends Earth's path into a circle. Without it, there's no orbit."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Holding together",
+   "instruction": "Think about the whole system.",
+   "showsDiagram": false,
+   "question": "What holds the solar system together?",
+   "options": [
+    {
+     "text": "Gravity, mostly from the massive sun",
+     "correct": true,
+     "feedback": "Right. Every object pulls on every other, and the sun, with 99.8% of the mass, pulls hardest."
+    },
+    {
+     "text": "Magnetism",
+     "feedback": "Magnets don't hold planets in orbit. Gravity does."
+    },
+    {
+     "text": "Air between the planets",
+     "feedback": "Space between the planets is nearly empty. Gravity holds the system together."
+    },
+    {
+     "text": "Nothing: the planets just drift",
+     "feedback": "Without gravity, the planets would fly off in straight lines."
+    }
+   ]
+  }
+ ]
+}
