@@ -1,0 +1,418 @@
+{
+ "id": "g6-greenhouse",
+ "title": "The greenhouse effect",
+ "grade": "6",
+ "subject": "Earth & space",
+ "standard": "MS-ESS3-5",
+ "minutes": 10,
+ "sources": [
+  {
+   "title": "NGSS MS-ESS3-5: Ask questions to clarify evidence of the factors that have caused the rise in global temperatures over the past century"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 19.1 What Makes the Climate Change?",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/19-1-what-makes-the-climate-change/"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 19.2 Anthropogenic Climate Change",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/19-2-anthropogenic-climate-change/"
+  }
+ ],
+ "keywords": [
+  "greenhouse effect",
+  "greenhouse gases",
+  "carbon dioxide",
+  "CO2",
+  "methane",
+  "infrared",
+  "climate change",
+  "global warming",
+  "fossil fuels",
+  "temperature",
+  "atmosphere"
+ ],
+ "printed": [
+  {
+   "text": "Space",
+   "at": [
+    860,
+    380
+   ],
+   "size": 30
+  },
+  {
+   "text": "Not to scale",
+   "at": [
+    140,
+    960
+   ],
+   "size": 26
+  }
+ ],
+ "structures": [
+  {
+   "id": "ground",
+   "name": "Earth's surface",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 40 872.3 A 1500 1500 0 0 1 960 872.3"
+    }
+   ]
+  },
+  {
+   "id": "atmo",
+   "name": "top of the atmosphere",
+   "pen": "fine",
+   "outlines": [
+    {
+     "path": "M 40 611.5 A 1750 1750 0 0 1 960 611.5"
+    }
+   ]
+  },
+  {
+   "id": "sun",
+   "name": "sun",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      120,
+      120,
+      60
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sunlight",
+   "name": "sunlight",
+   "outlines": [
+    {
+     "line": [
+      180,
+      180,
+      415,
+      785
+     ]
+    },
+    {
+     "line": [
+      419.2,
+      749.3,
+      415,
+      785,
+      387.7,
+      761.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "heat",
+   "name": "heat from the ground",
+   "outlines": [
+    {
+     "line": [
+      520,
+      785,
+      600,
+      600
+     ]
+    },
+    {
+     "line": [
+      579.7,
+      616.2,
+      600,
+      600,
+      602.1,
+      625.9
+     ]
+    }
+   ]
+  },
+  {
+   "id": "out",
+   "name": "heat escaping",
+   "outlines": [
+    {
+     "line": [
+      620,
+      575,
+      700,
+      330
+     ]
+    },
+    {
+     "line": [
+      681.3,
+      348.0,
+      700,
+      330,
+      704.5,
+      355.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "back",
+   "name": "heat sent back",
+   "outlines": [
+    {
+     "line": [
+      660,
+      600,
+      660,
+      790
+     ]
+    },
+    {
+     "line": [
+      672.2,
+      767.0,
+      660,
+      790,
+      647.8,
+      767.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gas",
+   "name": "carbon dioxide",
+   "outlines": [
+    {
+     "circle": [
+      200,
+      700,
+      15
+     ]
+    },
+    {
+     "circle": [
+      230,
+      700,
+      15
+     ]
+    },
+    {
+     "circle": [
+      260,
+      700,
+      15
+     ]
+    },
+    {
+     "circle": [
+      840,
+      700,
+      15
+     ]
+    },
+    {
+     "circle": [
+      870,
+      700,
+      15
+     ]
+    },
+    {
+     "circle": [
+      900,
+      700,
+      15
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chimney",
+   "name": "smokestack",
+   "outlines": [
+    {
+     "polygon": [
+      790,
+      845,
+      790,
+      760,
+      830,
+      760,
+      830,
+      842
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      810,
+      750,
+      810,
+      660
+     ]
+    },
+    {
+     "line": [
+      800.6,
+      677.7,
+      810,
+      660,
+      819.4,
+      677.7
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Ground",
+   "structure": "ground",
+   "instruction": "Trace Earth's curved surface.",
+   "note": {
+    "text": "Sunlight warms Earth. The air above controls how much of that heat escapes back to space."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Atmosphere",
+   "structure": "atmo",
+   "instruction": "Trace the top of the atmosphere.",
+   "note": {
+    "text": "The atmosphere is mostly nitrogen and oxygen, which don't trap heat."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sun",
+   "structure": "sun",
+   "instruction": "Trace the sun.",
+   "note": {
+    "text": "Energy reaches Earth from the sun as light."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sunlight",
+   "structure": "sunlight",
+   "instruction": "Draw sunlight passing through the air to the ground.",
+   "note": {
+    "text": "Sunlight passes through the air and warms the ground.",
+    "remember": "Sunlight in, heats the ground."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Heat rising",
+   "structure": "heat",
+   "instruction": "Draw the arrow of heat leaving the ground.",
+   "note": {
+    "text": "The warm ground gives off invisible infrared radiation: heat energy."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Escaping",
+   "structure": "out",
+   "instruction": "Draw the arrow of heat escaping to space.",
+   "note": {
+    "text": "Some of that heat escapes out to space."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sent back",
+   "structure": "back",
+   "instruction": "Draw the arrow of heat sent back down.",
+   "note": {
+    "text": "Greenhouse gases absorb some heat and send it out in all directions, some back down. This warms the surface.",
+    "remember": "Greenhouse gases trap heat."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Greenhouse gas",
+   "structure": "gas",
+   "instruction": "Trace the two carbon dioxide molecules.",
+   "note": {
+    "text": "Gases with three or more atoms, like carbon dioxide (CO2), methane and water vapor, are greenhouse gases."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Smokestack",
+   "structure": "chimney",
+   "instruction": "Trace the smokestack.",
+   "note": {
+    "text": "Burning coal, oil and gas releases carbon that was stored underground for millions of years, as CO2."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Emissions",
+   "structure": "chimney",
+   "part": "details",
+   "instruction": "Draw the arrow of CO2 rising.",
+   "note": {
+    "text": "Earth is now about 1 °C warmer than before industry, and two-thirds of that warming came after 1975.",
+    "remember": "More CO2, more trapped heat."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "How does adding more carbon dioxide to the air raise Earth's temperature?",
+   "options": [
+    {
+     "text": "More of the ground's heat is absorbed and sent back down instead of escaping",
+     "correct": true,
+     "feedback": "Yes. More greenhouse gas means less heat escapes to space, so the surface warms."
+    },
+    {
+     "text": "Carbon dioxide makes the sun shine brighter",
+     "feedback": "CO2 doesn't change the sun. It traps heat leaving the ground."
+    },
+    {
+     "text": "Carbon dioxide is hot smoke",
+     "feedback": "The gas itself isn't the heat source. It traps heat that would escape."
+    },
+    {
+     "text": "It blocks all sunlight",
+     "feedback": "Sunlight still gets through. CO2 traps the heat the ground gives off."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Ask a good question",
+   "instruction": "Scientists test every possible cause.",
+   "showsDiagram": false,
+   "question": "Someone says the warming of the past century was caused by the sun. Which question would best test that?",
+   "options": [
+    {
+     "text": "Has the sun's energy output actually increased over the past century?",
+     "correct": true,
+     "feedback": "Right. A good question asks for evidence. Scientists compare the sun's measured output with the temperature record."
+    },
+    {
+     "text": "Is the sun hot?",
+     "feedback": "Everyone agrees the sun is hot. The question is whether its output changed."
+    },
+    {
+     "text": "Do people like sunny days?",
+     "feedback": "That's opinion, not evidence about the cause of warming."
+    },
+    {
+     "text": "Is the sun far away?",
+     "feedback": "Its distance barely changes. Ask whether its energy output has gone up."
+    }
+   ]
+  }
+ ]
+}

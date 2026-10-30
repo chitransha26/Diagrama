@@ -1,0 +1,481 @@
+{
+ "id": "g6-wind-belts",
+ "title": "Global wind belts",
+ "grade": "6",
+ "subject": "Earth & space",
+ "standard": "MS-ESS2-6",
+ "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS MS-ESS2-6: Develop and use a model to describe how unequal heating and rotation of the Earth cause patterns of atmospheric and oceanic circulation that determine regional climates"
+  },
+  {
+   "title": "NOAA JetStream: Global Atmospheric Circulations",
+   "url": "https://www.noaa.gov/jetstream/global/global-atmospheric-circulations"
+  },
+  {
+   "title": "NOAA National Ocean Service: Surface Ocean Currents (trade winds and westerlies)",
+   "url": "https://oceanservice.noaa.gov/education/tutorial_currents/04currents2.html"
+  }
+ ],
+ "keywords": [
+  "wind belts",
+  "trade winds",
+  "westerlies",
+  "polar easterlies",
+  "Coriolis effect",
+  "global circulation",
+  "equator",
+  "latitude",
+  "climate",
+  "deserts",
+  "high pressure",
+  "low pressure"
+ ],
+ "printed": [
+  {
+   "text": "0°",
+   "at": [
+    935,
+    500
+   ],
+   "size": 26
+  },
+  {
+   "text": "30°N",
+   "at": [
+    930,
+    310.0
+   ],
+   "size": 26
+  },
+  {
+   "text": "60°N",
+   "at": [
+    800,
+    150.9
+   ],
+   "size": 26
+  },
+  {
+   "text": "30°S",
+   "at": [
+    930,
+    690.0
+   ],
+   "size": 26
+  },
+  {
+   "text": "60°S",
+   "at": [
+    800,
+    849.1
+   ],
+   "size": 26
+  }
+ ],
+ "structures": [
+  {
+   "id": "globe",
+   "name": "Earth",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      500,
+      500,
+      380
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      120.0,
+      500.0,
+      880.0,
+      500.0
+     ]
+    },
+    {
+     "line": [
+      170.9,
+      310.0,
+      829.1,
+      310.0
+     ]
+    },
+    {
+     "line": [
+      170.9,
+      690.0,
+      829.1,
+      690.0
+     ]
+    },
+    {
+     "line": [
+      310.0,
+      170.9,
+      690.0,
+      170.9
+     ]
+    },
+    {
+     "line": [
+      310.0,
+      829.1,
+      690.0,
+      829.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "trades",
+   "name": "trade winds",
+   "outlines": [
+    {
+     "line": [
+      440,
+      375,
+      320,
+      435
+     ]
+    },
+    {
+     "line": [
+      340.0,
+      435.5,
+      320,
+      435,
+      331.6,
+      418.7
+     ]
+    },
+    {
+     "line": [
+      700,
+      375,
+      580,
+      435
+     ]
+    },
+    {
+     "line": [
+      600.0,
+      435.5,
+      580,
+      435,
+      591.6,
+      418.7
+     ]
+    },
+    {
+     "line": [
+      440,
+      625,
+      320,
+      565
+     ]
+    },
+    {
+     "line": [
+      331.6,
+      581.3,
+      320,
+      565,
+      340.0,
+      564.5
+     ]
+    },
+    {
+     "line": [
+      700,
+      625,
+      580,
+      565
+     ]
+    },
+    {
+     "line": [
+      591.6,
+      581.3,
+      580,
+      565,
+      600.0,
+      564.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "westerlies",
+   "name": "westerlies",
+   "outlines": [
+    {
+     "line": [
+      320,
+      260,
+      440,
+      220
+     ]
+    },
+    {
+     "line": [
+      420.3,
+      216.7,
+      440,
+      220,
+      426.2,
+      234.5
+     ]
+    },
+    {
+     "line": [
+      560,
+      260,
+      680,
+      220
+     ]
+    },
+    {
+     "line": [
+      660.3,
+      216.7,
+      680,
+      220,
+      666.2,
+      234.5
+     ]
+    },
+    {
+     "line": [
+      320,
+      740,
+      440,
+      780
+     ]
+    },
+    {
+     "line": [
+      426.2,
+      765.5,
+      440,
+      780,
+      420.3,
+      783.3
+     ]
+    },
+    {
+     "line": [
+      560,
+      740,
+      680,
+      780
+     ]
+    },
+    {
+     "line": [
+      666.2,
+      765.5,
+      680,
+      780,
+      660.3,
+      783.3
+     ]
+    }
+   ]
+  },
+  {
+   "id": "polar",
+   "name": "polar easterlies",
+   "outlines": [
+    {
+     "line": [
+      536,
+      147,
+      464,
+      157
+     ]
+    },
+    {
+     "line": [
+      479.0,
+      162.5,
+      464,
+      157,
+      477.0,
+      147.6
+     ]
+    },
+    {
+     "line": [
+      536,
+      853,
+      464,
+      843
+     ]
+    },
+    {
+     "line": [
+      477.0,
+      852.4,
+      464,
+      843,
+      479.0,
+      837.5
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Earth",
+   "structure": "globe",
+   "instruction": "Trace Earth.",
+   "note": {
+    "text": "The sun heats Earth unevenly: most strongly near the equator, least at the poles."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Latitude lines",
+   "structure": "globe",
+   "part": "details",
+   "instruction": "Draw the equator and the lines at 30° and 60°.",
+   "note": {
+    "text": "Hot air rises at the equator, sinks near 30°, and rises again near 60°. This makes three loops of air in each half of Earth."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Trade winds",
+   "structure": "trades",
+   "instruction": "Draw the four arrows between the equator and 30°.",
+   "note": {
+    "text": "Air sinking near 30° flows back toward the equator. Earth's spin bends it, so these trade winds blow from the east.",
+    "remember": "Trade winds: 0° to 30°, from the east."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Westerlies",
+   "structure": "westerlies",
+   "instruction": "Draw the four arrows between 30° and 60°.",
+   "note": {
+    "text": "Between about 35° and 60°, the westerlies blow from west to east. Air rising near 60° brings rainy, stormy weather.",
+    "remember": "Westerlies: 30° to 60°, from the west."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Polar easterlies",
+   "structure": "polar",
+   "instruction": "Draw the arrows near the poles.",
+   "note": {
+    "text": "Cold air sinks at the poles and spreads out as the polar easterlies, blowing from the east."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Name the winds",
+   "instruction": "Pick the name of each numbered wind belt.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      380,
+      405
+     ],
+     "answer": "Trade winds",
+     "role": "Between the equator and 30°.",
+     "mistakes": {
+      "Westerlies": "These blow from the east, toward the equator. They're the trade winds."
+     }
+    },
+    {
+     "n": 2,
+     "at": [
+      380,
+      240
+     ],
+     "answer": "Westerlies",
+     "role": "Between 30° and 60°.",
+     "mistakes": {
+      "Trade winds": "These blow from the west, between 30° and 60°: the westerlies."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      500,
+      150
+     ],
+     "answer": "Polar easterlies",
+     "role": "Near the poles."
+    }
+   ],
+   "vocabulary": [
+    "Trade winds",
+    "Westerlies",
+    "Polar easterlies",
+    "Jet stream"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Climate",
+   "instruction": "Air sinks near 30°.",
+   "showsDiagram": true,
+   "question": "Many of the world's deserts lie near 30° north and south. Why?",
+   "options": [
+    {
+     "text": "Sinking air there makes high pressure, which brings dry, clear weather",
+     "correct": true,
+     "feedback": "Yes. Sinking air forms a belt of high pressure, and high pressure usually means fair, dry weather."
+    },
+    {
+     "text": "It's the hottest place on Earth",
+     "feedback": "The equator gets the most direct sunlight. Deserts near 30° come from sinking, dry air."
+    },
+    {
+     "text": "No wind reaches 30°",
+     "feedback": "Winds blow there. The dryness comes from air sinking and forming high pressure."
+    },
+    {
+     "text": "The ocean is too far away",
+     "feedback": "Some of these deserts are on coasts. The cause is sinking air and high pressure."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Causes",
+   "instruction": "Think about the whole pattern.",
+   "showsDiagram": true,
+   "question": "Which two things cause the pattern of wind belts?",
+   "options": [
+    {
+     "text": "Uneven heating by the sun, and Earth's rotation",
+     "correct": true,
+     "feedback": "Right. Uneven heating sets air moving between the equator and poles; Earth's spin bends it into east and west winds."
+    },
+    {
+     "text": "The moon's gravity and the tides",
+     "feedback": "Tides don't make the wind belts. The sun's uneven heating and Earth's spin do."
+    },
+    {
+     "text": "Mountains and forests",
+     "feedback": "Land shapes local winds, but the global belts come from uneven heating and Earth's spin."
+    },
+    {
+     "text": "Only Earth's rotation",
+     "feedback": "Rotation bends the winds, but uneven heating by the sun is what sets the air moving."
+    }
+   ]
+  }
+ ]
+}

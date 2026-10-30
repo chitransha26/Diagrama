@@ -1,0 +1,386 @@
+{
+ "id": "g6-aquifer",
+ "title": "An aquifer cross-section",
+ "grade": "6",
+ "subject": "Earth & space",
+ "standard": "MS-ESS3-1",
+ "minutes": 10,
+ "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS MS-ESS3-1: Construct a scientific explanation based on evidence for how the uneven distributions of Earth's mineral, energy, and groundwater resources are the result of past and current geoscience processes"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 14.1 Groundwater and Aquifers",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/14-1-groundwater-and-aquifers/"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 14.2 Groundwater Flow",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/14-2-groundwater-flow/"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 14.3 Groundwater Extraction",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/14-3-groundwater-extraction/"
+  }
+ ],
+ "keywords": [
+  "aquifer",
+  "groundwater",
+  "water table",
+  "well",
+  "porosity",
+  "permeability",
+  "clay",
+  "sand",
+  "gravel",
+  "recharge",
+  "cone of depression",
+  "natural resources"
+ ],
+ "legend": [
+  {
+   "name": "Water-filled sand",
+   "color": "#7FB3D9",
+   "meaning": "Sand and gravel with every pore full of water"
+  },
+  {
+   "name": "Clay",
+   "color": "#9C7B6B",
+   "meaning": "Tight layer that water barely passes through"
+  }
+ ],
+ "structures": [
+  {
+   "id": "surface",
+   "name": "ground surface",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      40,
+      300,
+      300,
+      282,
+      560,
+      300
+     ]
+    },
+    {
+     "line": [
+      640,
+      298,
+      960,
+      290
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rain",
+   "name": "rain soaking in",
+   "outlines": [
+    {
+     "line": [
+      200,
+      100,
+      200,
+      250
+     ]
+    },
+    {
+     "line": [
+      212.2,
+      227.0,
+      200,
+      250,
+      187.8,
+      227.0
+     ]
+    },
+    {
+     "line": [
+      330,
+      100,
+      330,
+      240
+     ]
+    },
+    {
+     "line": [
+      342.2,
+      217.0,
+      330,
+      240,
+      317.8,
+      217.0
+     ]
+    },
+    {
+     "line": [
+      265,
+      330,
+      265,
+      440
+     ]
+    },
+    {
+     "line": [
+      277.2,
+      417.0,
+      265,
+      440,
+      252.8,
+      417.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wet",
+   "name": "saturated zone",
+   "colorName": "water-filled sand",
+   "fill": "#7FB3D9",
+   "outlines": [
+    {
+     "polygon": [
+      40,
+      470,
+      500,
+      475,
+      590,
+      560,
+      590,
+      700,
+      40,
+      700
+     ]
+    },
+    {
+     "polygon": [
+      610,
+      560,
+      700,
+      475,
+      960,
+      470,
+      960,
+      700,
+      610,
+      700
+     ]
+    }
+   ]
+  },
+  {
+   "id": "clay",
+   "name": "clay layer",
+   "colorName": "clay",
+   "fill": "#9C7B6B",
+   "outlines": [
+    {
+     "rect": [
+      40,
+      700,
+      920,
+      110
+     ]
+    }
+   ]
+  },
+  {
+   "id": "well",
+   "name": "well",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      590,
+      300,
+      590,
+      680
+     ]
+    },
+    {
+     "line": [
+      610,
+      300,
+      610,
+      680
+     ]
+    },
+    {
+     "rect": [
+      565,
+      240,
+      70,
+      46
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Ground",
+   "structure": "surface",
+   "instruction": "Trace the ground surface on both sides of the well.",
+   "note": {
+    "text": "Below the ground, rock and sediment have tiny open spaces called pores. Groundwater is stored in them."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Rain",
+   "structure": "rain",
+   "instruction": "Draw the rain falling and the arrow soaking into the ground.",
+   "note": {
+    "text": "Rain and snowmelt soak into the ground and trickle down. This refills, or recharges, the groundwater.",
+    "remember": "Recharge: water soaking in."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Saturated zone",
+   "structure": "wet",
+   "instruction": "Trace the zone where every pore is full of water, on both sides.",
+   "note": {
+    "text": "Its top is the water table. Sand and gravel make a good aquifer: their pores are big and connected, so water flows through.",
+    "remember": "Aquifer: rock that holds and passes water."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Clay",
+   "structure": "clay",
+   "instruction": "Trace the clay layer below.",
+   "note": {
+    "text": "Clay's pores are tiny and poorly connected, so water barely moves through it. It holds the groundwater above it."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Well",
+   "structure": "well",
+   "instruction": "Trace the well and its pump.",
+   "note": {
+    "text": "Pumping lowers the water around the well, making a dip in the water table: a cone of depression.",
+    "remember": "Pumping draws the water table down."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "wet",
+    "clay"
+   ],
+   "instruction": "Color the water-filled sand and the clay."
+  },
+  {
+   "type": "label",
+   "title": "Name the parts",
+   "instruction": "Pick the name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      250,
+      470
+     ],
+     "answer": "Water table",
+     "role": "Top of the saturated zone."
+    },
+    {
+     "n": 2,
+     "at": [
+      300,
+      600
+     ],
+     "answer": "Aquifer",
+     "role": "Water-filled sand and gravel.",
+     "mistakes": {
+      "Clay layer": "This layer is sand and gravel that holds and passes water: the aquifer."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      300,
+      755
+     ],
+     "answer": "Clay layer",
+     "role": "Water barely passes through."
+    },
+    {
+     "n": 4,
+     "at": [
+      600,
+      545
+     ],
+     "answer": "Cone of depression",
+     "role": "Dip made by pumping."
+    }
+   ],
+   "vocabulary": [
+    "Water table",
+    "Aquifer",
+    "Clay layer",
+    "Cone of depression",
+    "Bedrock"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Too much pumping",
+   "instruction": "Think about the well.",
+   "showsDiagram": true,
+   "question": "A town pumps water out faster than rain can recharge the aquifer. What happens over the years?",
+   "options": [
+    {
+     "text": "The water table drops, and shallow wells can go dry",
+     "correct": true,
+     "feedback": "Yes. When the cone of depression spreads and deepens, nearby wells may end above the water and go dry."
+    },
+    {
+     "text": "The aquifer fills up more",
+     "feedback": "Taking out more than comes in lowers the water, not raises it."
+    },
+    {
+     "text": "Nothing: groundwater never runs out",
+     "feedback": "Groundwater is limited. It refills slowly, so heavy pumping can use it up."
+    },
+    {
+     "text": "The clay turns into sand",
+     "feedback": "The rock doesn't change. The water table drops."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Uneven resources",
+   "instruction": "Compare places.",
+   "showsDiagram": true,
+   "question": "Why do some places have lots of groundwater and others very little?",
+   "options": [
+    {
+     "text": "It depends on the rock and sediment underground, which past geologic processes laid down",
+     "correct": true,
+     "feedback": "Right. Sand and gravel left by old rivers and glaciers hold lots of water; solid granite holds little."
+    },
+    {
+     "text": "Groundwater is spread evenly everywhere",
+     "feedback": "It isn't. Porous sand and gravel hold far more than solid rock."
+    },
+    {
+     "text": "People put it there",
+     "feedback": "Groundwater collects naturally in porous rock and sediment."
+    },
+    {
+     "text": "Only deserts have groundwater",
+     "feedback": "Groundwater is found almost everywhere, but how much depends on the rock."
+    }
+   ]
+  }
+ ]
+}

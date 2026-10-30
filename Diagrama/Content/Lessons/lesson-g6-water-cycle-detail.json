@@ -1,0 +1,559 @@
+{
+ "id": "g6-water-cycle-detail",
+ "title": "The water cycle in detail",
+ "grade": "6",
+ "subject": "Earth & space",
+ "standard": "MS-ESS2-4",
+ "minutes": 11,
+ "sources": [
+  {
+   "title": "NGSS MS-ESS2-4: Develop a model to describe the cycling of water through Earth's systems driven by energy from the sun and the force of gravity"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 13.1 The Hydrological Cycle",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/13-1-the-hydrological-cycle/"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 14.2 Groundwater Flow",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/14-2-groundwater-flow/"
+  }
+ ],
+ "keywords": [
+  "water cycle",
+  "hydrologic cycle",
+  "evaporation",
+  "transpiration",
+  "condensation",
+  "precipitation",
+  "runoff",
+  "infiltration",
+  "groundwater",
+  "states of water",
+  "sun",
+  "gravity"
+ ],
+ "structures": [
+  {
+   "id": "sun",
+   "name": "sun",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      890,
+      110,
+      50
+     ]
+    }
+   ]
+  },
+  {
+   "id": "land",
+   "name": "land and mountain",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      40,
+      780,
+      110,
+      780,
+      260,
+      380,
+      410,
+      780,
+      640,
+      780
+     ]
+    },
+    {
+     "line": [
+      640,
+      780,
+      700,
+      880,
+      960,
+      900
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ocean",
+   "name": "ocean",
+   "outlines": [
+    {
+     "line": [
+      650,
+      760.0,
+      660,
+      764.9,
+      670,
+      767.0,
+      680,
+      764.9,
+      690,
+      760.0,
+      700,
+      755.1,
+      710,
+      753.0,
+      720,
+      755.1,
+      730,
+      760.0,
+      740,
+      764.9,
+      750,
+      767.0,
+      760,
+      764.9,
+      770,
+      760.0,
+      780,
+      755.1,
+      790,
+      753.0,
+      800,
+      755.1,
+      810,
+      760.0,
+      820,
+      764.9,
+      830,
+      767.0,
+      840,
+      764.9,
+      850,
+      760.0,
+      860,
+      755.1,
+      870,
+      753.0,
+      880,
+      755.1,
+      890,
+      760.0,
+      900,
+      764.9,
+      910,
+      767.0,
+      920,
+      764.9,
+      930,
+      760.0,
+      940,
+      755.1,
+      950,
+      753.0,
+      960,
+      755.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "snow",
+   "name": "snow cap",
+   "outlines": [
+    {
+     "polygon": [
+      215,
+      500,
+      260,
+      380,
+      305,
+      500,
+      283,
+      484,
+      260,
+      506,
+      237,
+      484
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tree",
+   "name": "tree",
+   "outlines": [
+    {
+     "line": [
+      512,
+      780,
+      514,
+      692
+     ]
+    },
+    {
+     "line": [
+      528,
+      780,
+      526,
+      692
+     ]
+    },
+    {
+     "circle": [
+      520,
+      650,
+      42
+     ]
+    }
+   ]
+  },
+  {
+   "id": "evap",
+   "name": "evaporation",
+   "outlines": [
+    {
+     "line": [
+      820,
+      730,
+      700,
+      270
+     ]
+    },
+    {
+     "line": [
+      694.0,
+      295.3,
+      700,
+      270,
+      717.6,
+      289.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "transp",
+   "name": "transpiration",
+   "outlines": [
+    {
+     "line": [
+      535,
+      600,
+      560,
+      255
+     ]
+    },
+    {
+     "line": [
+      546.2,
+      277.0,
+      560,
+      255,
+      570.5,
+      278.8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cloud",
+   "name": "cloud",
+   "outlines": [
+    {
+     "path": "M 430.0 200.0 C 410.0 160.0 450.0 130.0 490.0 145.0 C 510.0 100.0 590.0 100.0 610.0 140.0 C 650.0 125.0 690.0 155.0 675.0 190.0 C 690.0 220.0 650.0 235.0 620.0 225.0 L 460.0 225.0 C 430.0 230.0 415.0 215.0 430.0 200.0 Z"
+    }
+   ]
+  },
+  {
+   "id": "precip",
+   "name": "precipitation",
+   "outlines": [
+    {
+     "line": [
+      440,
+      245,
+      330,
+      400
+     ]
+    },
+    {
+     "line": [
+      353.2,
+      388.3,
+      330,
+      400,
+      333.3,
+      374.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "runoff",
+   "name": "runoff",
+   "outlines": [
+    {
+     "line": [
+      363,
+      555,
+      433,
+      741,
+      628,
+      758
+     ]
+    },
+    {
+     "line": [
+      609.6,
+      746.0,
+      628,
+      758,
+      607.8,
+      766.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ground",
+   "name": "groundwater flow",
+   "pen": "fine",
+   "outlines": [
+    {
+     "line": [
+      200,
+      840,
+      640,
+      890
+     ]
+    },
+    {
+     "line": [
+      618.6,
+      875.3,
+      640,
+      890,
+      615.8,
+      899.5
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Sun",
+   "structure": "sun",
+   "instruction": "Trace the sun.",
+   "note": {
+    "text": "Energy from the sun drives the water cycle up into the sky.",
+    "remember": "The sun lifts water up."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Land",
+   "structure": "land",
+   "instruction": "Trace the land, the mountain and the sea floor.",
+   "note": {
+    "text": "Gravity pulls water back down: as rain and snow, then downhill over and under the land.",
+    "remember": "Gravity brings water down."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ocean",
+   "structure": "ocean",
+   "instruction": "Trace the ocean's surface.",
+   "note": {
+    "text": "The ocean holds 97% of Earth's water."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Snow",
+   "structure": "snow",
+   "instruction": "Trace the snow on the mountain top.",
+   "note": {
+    "text": "Some water is stored as snow and ice. When it melts in spring, solid water becomes liquid and flows downhill."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Tree",
+   "structure": "tree",
+   "instruction": "Trace the tree.",
+   "note": {
+    "text": "Plants pull water up from the soil through their roots."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Evaporation",
+   "structure": "evap",
+   "instruction": "Draw the arrow rising from the ocean.",
+   "note": {
+    "text": "Sunlight warms the ocean, and liquid water evaporates into invisible water vapor, a gas.",
+    "remember": "Evaporation: liquid to gas."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Transpiration",
+   "structure": "transp",
+   "instruction": "Draw the arrow rising from the tree.",
+   "note": {
+    "text": "Plants give off water vapor from their leaves. This is called transpiration."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Cloud",
+   "structure": "cloud",
+   "instruction": "Trace the cloud.",
+   "note": {
+    "text": "Winds carry the vapor up, where it cools and condenses into tiny droplets or ice crystals: a cloud.",
+    "remember": "Condensation: gas to liquid."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Precipitation",
+   "structure": "precip",
+   "instruction": "Draw the arrow from the cloud down to the mountain.",
+   "note": {
+    "text": "When the droplets or crystals grow heavy, gravity pulls them down as rain or snow."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Runoff",
+   "structure": "runoff",
+   "instruction": "Draw the arrow down the mountain and across to the ocean.",
+   "note": {
+    "text": "Water flows downhill in streams and rivers, back to the ocean."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Groundwater",
+   "structure": "ground",
+   "instruction": "Draw the arrow through the ground to the ocean.",
+   "note": {
+    "text": "Some water soaks into the ground and moves slowly through rock and soil. Some of it reaches the ocean."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Name the processes",
+   "instruction": "Pick the name of each numbered process.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      760,
+      500
+     ],
+     "answer": "Evaporation",
+     "role": "Water rises from the ocean as vapor."
+    },
+    {
+     "n": 2,
+     "at": [
+      548,
+      430
+     ],
+     "answer": "Transpiration",
+     "role": "Plants give off water vapor.",
+     "mistakes": {
+      "Evaporation": "This vapor comes from a plant's leaves, which is called transpiration."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      380,
+      110
+     ],
+     "answer": "Condensation",
+     "role": "Vapor cools into droplets."
+    },
+    {
+     "n": 4,
+     "at": [
+      385,
+      322
+     ],
+     "answer": "Precipitation",
+     "role": "Rain or snow falls."
+    },
+    {
+     "n": 5,
+     "at": [
+      500,
+      750
+     ],
+     "answer": "Runoff",
+     "role": "Water flows over the land."
+    }
+   ],
+   "vocabulary": [
+    "Evaporation",
+    "Transpiration",
+    "Condensation",
+    "Precipitation",
+    "Runoff",
+    "Melting"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "What drives it?",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "Which force brings water back down from the clouds and over the land to the sea?",
+   "options": [
+    {
+     "text": "Gravity",
+     "correct": true,
+     "feedback": "Yes. The sun's energy lifts water up; gravity pulls it back down and downhill."
+    },
+    {
+     "text": "Sunlight",
+     "feedback": "Sunlight drives evaporation, lifting water up. Gravity pulls it back down."
+    },
+    {
+     "text": "Wind alone",
+     "feedback": "Wind moves clouds sideways, but gravity makes rain fall and rivers flow downhill."
+    },
+    {
+     "text": "Magnetism",
+     "feedback": "Magnetism doesn't move water. Gravity does."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Changes of state",
+   "instruction": "Follow one water molecule.",
+   "showsDiagram": true,
+   "question": "Ocean water evaporates, forms a cloud, and falls as snow on the mountain. What states was it in, in order?",
+   "options": [
+    {
+     "text": "Liquid, gas, liquid droplets or ice, then solid snow",
+     "correct": true,
+     "feedback": "Right. It evaporated into a gas, condensed into droplets or crystals, and fell as solid snow."
+    },
+    {
+     "text": "Solid, liquid, gas",
+     "feedback": "Ocean water starts as a liquid. It becomes a gas when it evaporates."
+    },
+    {
+     "text": "It stayed liquid the whole time",
+     "feedback": "Evaporation turns it into a gas, and snow is a solid."
+    },
+    {
+     "text": "Gas, solid, gas",
+     "feedback": "Ocean water is liquid first, then gas, then droplets or ice, then snow."
+    }
+   ]
+  }
+ ]
+}

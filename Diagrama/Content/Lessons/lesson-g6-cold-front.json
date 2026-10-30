@@ -1,0 +1,306 @@
+{
+ "id": "g6-cold-front",
+ "title": "A cold front",
+ "grade": "6",
+ "subject": "Earth & space",
+ "standard": "MS-ESS2-5",
+ "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS MS-ESS2-5: Collect data to provide evidence for how the motions and complex interactions of air masses result in changes in weather conditions"
+  },
+  {
+   "title": "NOAA JetStream: Air Masses (fronts)",
+   "url": "https://www.noaa.gov/jetstream/synoptic/air-masses"
+  },
+  {
+   "title": "NOAA JetStream: How to read Surface Weather Maps",
+   "url": "https://www.noaa.gov/jetstream/wxmaps"
+  }
+ ],
+ "keywords": [
+  "cold front",
+  "air mass",
+  "weather",
+  "front",
+  "thunderstorm",
+  "temperature",
+  "density",
+  "warm air",
+  "cold air",
+  "weather map"
+ ],
+ "printed": [
+  {
+   "text": "Ground",
+   "at": [
+    860,
+    840
+   ],
+   "size": 26
+  }
+ ],
+ "structures": [
+  {
+   "id": "ground",
+   "name": "ground",
+   "outlines": [
+    {
+     "line": [
+      60,
+      800,
+      940,
+      800
+     ]
+    }
+   ]
+  },
+  {
+   "id": "boundary",
+   "name": "front",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 560 800 C 470 780 380 600 300 350"
+    }
+   ]
+  },
+  {
+   "id": "cold",
+   "name": "cold air moving in",
+   "outlines": [
+    {
+     "line": [
+      110,
+      700,
+      380,
+      700
+     ]
+    },
+    {
+     "line": [
+      357.0,
+      687.8,
+      380,
+      700,
+      357.0,
+      712.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "warm",
+   "name": "warm air rising",
+   "outlines": [
+    {
+     "line": [
+      760,
+      760,
+      560,
+      400
+     ]
+    },
+    {
+     "line": [
+      560.5,
+      426.0,
+      560,
+      400,
+      581.8,
+      414.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cloud",
+   "name": "thunderstorm cloud",
+   "outlines": [
+    {
+     "path": "M 440 330 C 405 325 405 270 445 262 C 430 235 445 210 470 205 L 380 140 L 400 112 L 700 112 L 720 140 L 595 205 C 625 212 640 240 628 262 C 668 270 668 325 628 330 Z"
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      470,
+      355,
+      458,
+      400
+     ]
+    },
+    {
+     "line": [
+      520,
+      355,
+      508,
+      400
+     ]
+    },
+    {
+     "line": [
+      570,
+      355,
+      558,
+      400
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Ground",
+   "structure": "ground",
+   "instruction": "Trace the ground.",
+   "note": {
+    "text": "This is a slice through the air, seen from the side. An air mass is a huge body of air with the same temperature and humidity."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "The front",
+   "structure": "boundary",
+   "instruction": "Trace the steep curved boundary.",
+   "note": {
+    "text": "A front is where two air masses meet. At a cold front, cold air is pushing in and replacing warm air.",
+    "remember": "Cold front: cold air replaces warm."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Cold air",
+   "structure": "cold",
+   "instruction": "Draw the arrow of cold air moving in from the left.",
+   "note": {
+    "text": "Cold air is denser than warm air, so it stays low and wedges under the warm air like a snowplow."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Warm air",
+   "structure": "warm",
+   "instruction": "Draw the arrow of warm air forced up over the front.",
+   "note": {
+    "text": "The steep cold front forces the warm air up quickly. Rising air cools, and its water vapor condenses.",
+    "remember": "Rising warm air makes clouds."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Storm cloud",
+   "structure": "cloud",
+   "instruction": "Trace the tall storm cloud.",
+   "note": {
+    "text": "The fast-rising air builds tall clouds along a narrow band: showers and thunderstorms."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Rain",
+   "structure": "cloud",
+   "part": "details",
+   "instruction": "Draw the rain falling.",
+   "note": {
+    "text": "On weather maps, a cold front is drawn as a blue line with triangles pointing the way it's moving."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Name the parts",
+   "instruction": "Pick the name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      200,
+      620
+     ],
+     "answer": "Cold air mass",
+     "role": "Dense air pushing in.",
+     "mistakes": {
+      "Warm air mass": "This air is behind the front, wedging in low: it's the cold air mass."
+     }
+    },
+    {
+     "n": 2,
+     "at": [
+      820,
+      560
+     ],
+     "answer": "Warm air mass",
+     "role": "Air being pushed up."
+    },
+    {
+     "n": 3,
+     "at": [
+      455,
+      700
+     ],
+     "answer": "Cold front",
+     "role": "Where the air masses meet."
+    }
+   ],
+   "vocabulary": [
+    "Cold air mass",
+    "Warm air mass",
+    "Cold front",
+    "Warm front"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Read the data",
+   "instruction": "A weather station records this.",
+   "showsDiagram": false,
+   "question": "At 3 pm it's 75 °F with south winds. A line of storms passes. At 9 pm it's 45 °F, skies are clear, and winds blow from the northwest. What happened?",
+   "options": [
+    {
+     "text": "A cold front passed, and a cold air mass replaced the warm one",
+     "correct": true,
+     "feedback": "Yes. Storms, then falling temperatures, clearing skies and a wind shift are signs of a cold front passing."
+    },
+    {
+     "text": "A warm front passed",
+     "feedback": "A warm front brings warmer air. Here the temperature dropped 30 degrees."
+    },
+    {
+     "text": "Nothing changed but the time of day",
+     "feedback": "Evening cools things a little, but a 30-degree drop with a wind shift means a new air mass arrived."
+    },
+    {
+     "text": "The air masses stopped moving",
+     "feedback": "A stationary front wouldn't bring such a quick, big change."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Why storms?",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "Why do cold fronts often bring thunderstorms?",
+   "options": [
+    {
+     "text": "Dense cold air forces warm, moist air up quickly, and it cools to form tall clouds",
+     "correct": true,
+     "feedback": "Right. The steep front lifts the warm air fast, so tall storm clouds build in a narrow band."
+    },
+    {
+     "text": "Cold air holds more rain",
+     "feedback": "The storms come from warm, moist air being forced up, not from the cold air itself."
+    },
+    {
+     "text": "Warm air sinks under the cold air",
+     "feedback": "It's the reverse: warm air is less dense and gets pushed up."
+    },
+    {
+     "text": "The ground gets hotter",
+     "feedback": "The key is air masses colliding: cold air lifting warm air."
+    }
+   ]
+  }
+ ]
+}

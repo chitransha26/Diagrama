@@ -1,0 +1,348 @@
+{
+ "id": "g6-volcano",
+ "title": "Inside a volcano",
+ "grade": "6",
+ "subject": "Earth & space",
+ "standard": "MS-ESS3-2",
+ "minutes": 10,
+ "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS MS-ESS3-2: Analyze and interpret data on natural hazards to forecast future catastrophic events and inform the development of technologies to mitigate their effects"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 4.3 Types of Volcanoes",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/4-3-types-of-volcanoes/"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 4.5 Monitoring Volcanoes and Predicting Eruptions",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/4-5-monitoring-volcanoes-and-predicting-eruptions/"
+  }
+ ],
+ "keywords": [
+  "volcano",
+  "magma chamber",
+  "vent",
+  "crater",
+  "ash",
+  "eruption",
+  "earthquakes",
+  "monitoring",
+  "prediction",
+  "natural hazards",
+  "Mount St. Helens",
+  "composite volcano"
+ ],
+ "printed": [
+  {
+   "text": "Not to scale",
+   "at": [
+    140,
+    960
+   ],
+   "size": 26
+  }
+ ],
+ "legend": [
+  {
+   "name": "Magma",
+   "color": "#E8622C",
+   "meaning": "Molten rock, glowing hot"
+  },
+  {
+   "name": "Ash cloud",
+   "color": "#9A9A9A",
+   "meaning": "Gas and tiny bits of shattered rock"
+  }
+ ],
+ "structures": [
+  {
+   "id": "cone",
+   "name": "volcano",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      60,
+      800,
+      420,
+      300,
+      455,
+      335,
+      545,
+      335,
+      580,
+      300,
+      940,
+      800
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chamber",
+   "name": "magma chamber",
+   "colorName": "magma",
+   "fill": "#E8622C",
+   "outlines": [
+    {
+     "ellipse": [
+      500,
+      890,
+      150,
+      56
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vent",
+   "name": "vent",
+   "outlines": [
+    {
+     "line": [
+      482,
+      836,
+      482,
+      345
+     ]
+    },
+    {
+     "line": [
+      518,
+      836,
+      518,
+      345
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ash",
+   "name": "ash cloud",
+   "colorName": "ash cloud",
+   "fill": "#9A9A9A",
+   "outlines": [
+    {
+     "path": "M 400 255 C 340 250 330 190 380 175 C 360 120 420 80 470 105 C 500 55 580 60 600 110 C 650 90 700 140 670 185 C 710 210 690 260 640 255 Z"
+    }
+   ]
+  },
+  {
+   "id": "quakes",
+   "name": "small earthquakes",
+   "outlines": [
+    {
+     "line": [
+      300,
+      880,
+      315,
+      860,
+      330,
+      900,
+      345,
+      860,
+      360,
+      880
+     ]
+    },
+    {
+     "line": [
+      640,
+      880,
+      655,
+      860,
+      670,
+      900,
+      685,
+      860,
+      700,
+      880
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bulge",
+   "name": "bulge",
+   "pen": "fine",
+   "outlines": [
+    {
+     "path": "M 666 420 C 760 440 820 540 810 620"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Volcano",
+   "structure": "cone",
+   "instruction": "Trace the volcano and its crater.",
+   "note": {
+    "text": "Steep volcanoes like Mount St. Helens are built of layers of lava and ash. Most stand near subduction zones."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Magma chamber",
+   "structure": "chamber",
+   "instruction": "Trace the magma chamber deep below.",
+   "note": {
+    "text": "Magma collects in a chamber kilometres underground. Under Mount St. Helens it's about 6 to 14 km down.",
+    "remember": "Magma chamber: the store of melted rock."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Vent",
+   "structure": "vent",
+   "instruction": "Trace the vent rising to the crater.",
+   "note": {
+    "text": "Magma rises through the vent and erupts from the crater at the top."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ash cloud",
+   "structure": "ash",
+   "instruction": "Trace the ash cloud.",
+   "note": {
+    "text": "Gas-rich magma can erupt explosively, blasting ash high into the sky."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Warning: earthquakes",
+   "structure": "quakes",
+   "instruction": "Draw the two zigzags for small earthquakes.",
+   "note": {
+    "text": "Hundreds of small earthquakes show magma moving underground. Seismometers detect them.",
+    "remember": "Swarms of small quakes are a warning."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Warning: bulge",
+   "structure": "bulge",
+   "instruction": "Draw the bulge swelling out of the volcano's side.",
+   "note": {
+    "text": "A volcano swells as magma pushes up. Tiltmeters and GPS measure it. Rising gas is another warning sign."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "chamber",
+    "ash"
+   ],
+   "instruction": "Color the magma and the ash cloud."
+  },
+  {
+   "type": "label",
+   "title": "Name the parts",
+   "instruction": "Pick the name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      500,
+      890
+     ],
+     "answer": "Magma chamber",
+     "role": "Store of magma."
+    },
+    {
+     "n": 2,
+     "at": [
+      500,
+      600
+     ],
+     "answer": "Vent",
+     "role": "Path up to the surface.",
+     "mistakes": {
+      "Crater": "The crater is the bowl at the top. This pipe leading up to it is the vent."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      500,
+      320
+     ],
+     "answer": "Crater",
+     "role": "Opening at the top."
+    },
+    {
+     "n": 4,
+     "at": [
+      520,
+      170
+     ],
+     "answer": "Ash cloud",
+     "role": "Blasted into the sky."
+    }
+   ],
+   "vocabulary": [
+    "Magma chamber",
+    "Vent",
+    "Crater",
+    "Ash cloud",
+    "Lava"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Forecast",
+   "instruction": "You monitor a volcano.",
+   "showsDiagram": true,
+   "question": "Which set of readings would most strongly suggest an eruption is coming?",
+   "options": [
+    {
+     "text": "Many small earthquakes, the side swelling, and more gas",
+     "correct": true,
+     "feedback": "Yes. Together they show magma rising and pressure building, so scientists can warn people to leave."
+    },
+    {
+     "text": "A sunny, calm day",
+     "feedback": "Weather doesn't tell us about magma. Scientists watch quakes, swelling and gas."
+    },
+    {
+     "text": "No change at all for years",
+     "feedback": "No change suggests the magma isn't moving. Changes are the warning signs."
+    },
+    {
+     "text": "Snow on the summit",
+     "feedback": "Snow is weather. The warning signs are quakes, swelling and gas."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Hazards compared",
+   "instruction": "Compare two hazards.",
+   "showsDiagram": false,
+   "question": "Why can scientists often forecast volcanic eruptions but not earthquakes on a fault?",
+   "options": [
+    {
+     "text": "Eruptions usually give warning signs first; most big earthquakes strike suddenly",
+     "correct": true,
+     "feedback": "Right. Rising magma causes quakes, swelling and gas before an eruption. Fault earthquakes rarely give such warnings."
+    },
+    {
+     "text": "Volcanoes never erupt without warning",
+     "feedback": "Not never, but usually there are signs. Fault earthquakes rarely give any."
+    },
+    {
+     "text": "Earthquakes don't cause damage",
+     "feedback": "Earthquakes can be very destructive. They're just much harder to predict."
+    },
+    {
+     "text": "Scientists don't study earthquakes",
+     "feedback": "They do, closely. But most earthquakes still strike with no notice."
+    }
+   ]
+  }
+ ]
+}
