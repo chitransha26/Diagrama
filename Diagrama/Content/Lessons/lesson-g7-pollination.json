@@ -1,0 +1,372 @@
+{
+ "id": "g7-pollination",
+ "title": "Pollination and the pollen tube",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS1-4",
+ "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS MS-LS1-4: Use argument based on empirical evidence and scientific reasoning to support an explanation for how characteristic animal behaviors and specialized plant structures affect the probability of successful reproduction of animals and plants respectively"
+  },
+  {
+   "title": "OpenStax Biology 2e, 32.2 Pollination and Fertilization",
+   "url": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization"
+  },
+  {
+   "title": "OpenStax Biology 2e, 26.3 Angiosperms",
+   "url": "https://openstax.org/books/biology-2e/pages/26-3-angiosperms"
+  },
+  {
+   "title": "OpenStax Biology 2e, 26.4 The Role of Seed Plants",
+   "url": "https://openstax.org/books/biology-2e/pages/26-4-the-role-of-seed-plants"
+  },
+  {
+   "title": "OpenStax Biology 2e, 26.1 Evolution of Seed Plants",
+   "url": "https://openstax.org/books/biology-2e/pages/26-1-evolution-of-seed-plants"
+  }
+ ],
+ "keywords": [
+  "pollination",
+  "pollen",
+  "pollen tube",
+  "anther",
+  "stamen",
+  "stigma",
+  "style",
+  "ovary",
+  "ovule",
+  "carpel",
+  "pistil",
+  "fertilization",
+  "seed",
+  "fruit",
+  "bee",
+  "pollinator",
+  "nectar"
+ ],
+ "printed": [
+  {
+   "text": "Carried by a bee or the wind",
+   "at": [
+    250,
+    60
+   ],
+   "size": 24
+  }
+ ],
+ "structures": [
+  {
+   "id": "stamen",
+   "name": "stamen",
+   "outlines": [
+    {
+     "ellipse": [
+      250,
+      300,
+      34,
+      56
+     ]
+    },
+    {
+     "line": [
+      250,
+      360,
+      260,
+      840
+     ]
+    }
+   ]
+  },
+  {
+   "id": "carpel",
+   "name": "carpel",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 476 180 C 440 160 450 112 500 110 C 550 112 560 160 524 180 L 524 470 C 640 500 660 700 560 760 C 520 780 480 780 440 760 C 340 700 360 500 476 470 Z"
+    }
+   ]
+  },
+  {
+   "id": "ovules",
+   "name": "ovules",
+   "outlines": [
+    {
+     "ellipse": [
+      430,
+      670,
+      22,
+      30
+     ]
+    },
+    {
+     "ellipse": [
+      500,
+      700,
+      22,
+      30
+     ]
+    },
+    {
+     "ellipse": [
+      570,
+      670,
+      22,
+      30
+     ]
+    }
+   ]
+  },
+  {
+   "id": "carry",
+   "name": "pollen carried to the stigma",
+   "pen": "fine",
+   "outlines": [
+    {
+     "path": "M 260 230 C 280 110 380 70 450 100"
+    },
+    {
+     "line": [
+      435.0,
+      81.3,
+      450,
+      100,
+      426.1,
+      102.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tube",
+   "name": "pollen tube",
+   "pen": "fine",
+   "outlines": [
+    {
+     "path": "M 500 140 L 500 470 C 500 560 500 610 500 662"
+    }
+   ],
+   "details": [
+    {
+     "circle": [
+      500,
+      132,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": "petal",
+   "name": "petal",
+   "outlines": [
+    {
+     "path": "M 560 792 C 700 770 860 640 900 430 C 790 450 690 560 615 760 Z"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Stamen",
+   "structure": "stamen",
+   "instruction": "Trace the stamen: the anther on its stalk.",
+   "note": {
+    "text": "The anther at the top of the stamen makes pollen. Pollen grains carry the plant's sperm.",
+    "remember": "Anther: makes pollen."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Carpel",
+   "structure": "carpel",
+   "instruction": "Trace the carpel: stigma, style and ovary.",
+   "note": {
+    "text": "The sticky stigma on top traps pollen. A stalk, the style, leads down to the ovary at the bottom."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ovules",
+   "structure": "ovules",
+   "instruction": "Trace the three ovules inside the ovary.",
+   "note": {
+    "text": "Each ovule holds an egg cell. Each ovule can become a seed.",
+    "remember": "Ovule becomes a seed."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Pollination",
+   "structure": "carry",
+   "instruction": "Draw pollen moving from the anther to the stigma.",
+   "note": {
+    "text": "Pollination is pollen landing on a stigma. Insects, birds, wind or water carry it, often from another flower."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Pollen tube",
+   "structure": "tube",
+   "instruction": "Draw the pollen tube growing down the style.",
+   "note": {
+    "text": "The pollen grain grows a tube down through the style to an ovule. The sperm travel down inside it.",
+    "remember": "Pollen tube: carries sperm to the egg."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Pollen grain",
+   "structure": "tube",
+   "part": "details",
+   "instruction": "Dab the pollen grain on the stigma.",
+   "note": {
+    "text": "When a sperm joins the egg in the ovule, that's fertilization. The ovule then grows into a seed."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Petal",
+   "structure": "petal",
+   "instruction": "Trace one petal.",
+   "note": {
+    "text": "Bright petals, scent and sweet nectar draw in animals. As they feed, pollen dusts their bodies."
+   }
+  },
+  {
+   "type": "order",
+   "title": "From pollen to seed",
+   "instruction": "Tap the steps in order.",
+   "items": [
+    "Anther makes pollen",
+    "Pollen lands on the stigma",
+    "Pollen tube grows down the style",
+    "Sperm joins the egg",
+    "Ovule becomes a seed"
+   ],
+   "why": "Pollen is carried to the stigma, grows a tube to the ovule, and fertilization turns the ovule into a seed.",
+   "hint": "Pollination comes before fertilization."
+  },
+  {
+   "type": "label",
+   "title": "Name the parts",
+   "instruction": "Pick the name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      250,
+      300
+     ],
+     "answer": "Anther",
+     "role": "Makes pollen."
+    },
+    {
+     "n": 2,
+     "at": [
+      500,
+      145
+     ],
+     "answer": "Stigma",
+     "role": "Sticky tip that traps pollen.",
+     "mistakes": {
+      "Anther": "The anther makes pollen. The sticky tip that catches it is the stigma."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      500,
+      330
+     ],
+     "answer": "Style",
+     "role": "The pollen tube grows down it."
+    },
+    {
+     "n": 4,
+     "at": [
+      610,
+      600
+     ],
+     "answer": "Ovary",
+     "role": "Becomes the fruit."
+    },
+    {
+     "n": 5,
+     "at": [
+      430,
+      670
+     ],
+     "answer": "Ovule",
+     "role": "Becomes a seed.",
+     "mistakes": {
+      "Ovary": "The ovary is the whole chamber. Each small oval inside it is an ovule."
+     }
+    }
+   ],
+   "vocabulary": [
+    "Anther",
+    "Stigma",
+    "Style",
+    "Ovary",
+    "Ovule",
+    "Petal",
+    "Sepal"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Argue",
+   "instruction": "Think about reproduction.",
+   "showsDiagram": true,
+   "question": "How do bright petals and sweet nectar help a plant reproduce?",
+   "options": [
+    {
+     "text": "They attract animals that carry pollen between flowers, so more ovules get fertilized",
+     "correct": true,
+     "feedback": "Yes. More pollinator visits mean more pollen reaches stigmas, so the plant is likelier to make seeds."
+    },
+    {
+     "text": "They make food for the seeds",
+     "feedback": "Petals don't feed seeds. They attract the animals that carry pollen."
+    },
+    {
+     "text": "They scare away animals",
+     "feedback": "They do the opposite: they attract the pollinators the plant needs."
+    },
+    {
+     "text": "They make pollen",
+     "feedback": "The anthers make pollen. Petals attract animals that carry it."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Fruit",
+   "instruction": "After fertilization.",
+   "showsDiagram": true,
+   "question": "After the ovules become seeds, what does the ovary around them become?",
+   "options": [
+    {
+     "text": "The fruit",
+     "correct": true,
+     "feedback": "Right. The ovary wall thickens into a fruit that protects the seeds and helps spread them."
+    },
+    {
+     "text": "A new flower",
+     "feedback": "The ovary becomes the fruit. New flowers grow from new buds."
+    },
+    {
+     "text": "Pollen",
+     "feedback": "Pollen comes from anthers. The ovary becomes the fruit."
+    },
+    {
+     "text": "A root",
+     "feedback": "Roots grow from a seed's embryo after it sprouts. The ovary becomes the fruit."
+    }
+   ]
+  }
+ ]
+}

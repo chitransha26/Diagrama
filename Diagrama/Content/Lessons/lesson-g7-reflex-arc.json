@@ -1,0 +1,358 @@
+{
+ "id": "g7-reflex-arc",
+ "title": "A reflex arc",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS1-8",
+ "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS MS-LS1-8: Gather and synthesize information that sensory receptors respond to stimuli by sending messages to the brain for immediate behavior or storage as memories"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 14.3 Motor Responses",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-3-motor-responses"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 14.1 Sensory Perception",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 12.1 Basic Structure and Function of the Nervous System",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-1-basic-structure-and-function-of-the-nervous-system"
+  }
+ ],
+ "keywords": [
+  "reflex",
+  "reflex arc",
+  "withdrawal reflex",
+  "sensory neuron",
+  "motor neuron",
+  "interneuron",
+  "spinal cord",
+  "receptor",
+  "stimulus",
+  "response",
+  "hot stove",
+  "nervous system"
+ ],
+ "printed": [
+  {
+   "text": "To the brain",
+   "at": [
+    880,
+    80
+   ],
+   "size": 26
+  },
+  {
+   "text": "Spinal cord",
+   "at": [
+    750,
+    550
+   ],
+   "size": 26
+  },
+  {
+   "text": "Hot!",
+   "at": [
+    250,
+    480
+   ],
+   "size": 28
+  },
+  {
+   "text": "Arm muscle",
+   "at": [
+    425,
+    640
+   ],
+   "size": 24
+  }
+ ],
+ "structures": [
+  {
+   "id": "hand",
+   "name": "hand",
+   "outlines": [
+    {
+     "path": "M 120 350 C 170 310 260 300 330 310 L 330 270 C 260 260 200 250 140 270 C 100 290 90 330 120 350 Z"
+    }
+   ]
+  },
+  {
+   "id": "flame",
+   "name": "flame",
+   "outlines": [
+    {
+     "path": "M 160 540 C 110 510 120 450 160 390 C 170 440 190 450 200 420 C 230 470 220 520 160 540 Z"
+    }
+   ]
+  },
+  {
+   "id": "cord",
+   "name": "spinal cord",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      750,
+      365,
+      140
+     ]
+    }
+   ],
+   "details": [
+    {
+     "path": "M 750 285 C 700 250 660 270 680 320 C 690 350 720 360 735 375 C 715 400 690 420 700 450 C 720 470 745 440 750 420 C 755 440 780 470 800 450 C 810 420 785 400 765 375 C 780 360 810 350 820 320 C 840 270 800 250 750 285 Z"
+    }
+   ]
+  },
+  {
+   "id": "sensory",
+   "name": "sensory neuron",
+   "outlines": [
+    {
+     "path": "M 330 290 C 450 280 580 250 696 300"
+    },
+    {
+     "line": [
+      681.0,
+      281.3,
+      696,
+      300,
+      672.1,
+      302.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "inter",
+   "name": "interneuron",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      702,
+      316,
+      728,
+      432
+     ]
+    }
+   ]
+  },
+  {
+   "id": "motor",
+   "name": "motor neuron",
+   "outlines": [
+    {
+     "path": "M 730 446 C 690 560 600 575 512 565"
+    },
+    {
+     "line": [
+      531.8,
+      578.6,
+      512,
+      565,
+      534.3,
+      556.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "muscle",
+   "name": "muscle",
+   "pen": "bold",
+   "outlines": [
+    {
+     "ellipse": [
+      425,
+      565,
+      80,
+      38
+     ]
+    }
+   ]
+  },
+  {
+   "id": "up",
+   "name": "signal to the brain",
+   "pen": "fine",
+   "outlines": [
+    {
+     "line": [
+      800,
+      240,
+      860,
+      120
+     ]
+    },
+    {
+     "line": [
+      842.1,
+      132.8,
+      860,
+      120,
+      860.6,
+      142.0
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Hand",
+   "structure": "hand",
+   "instruction": "Trace the hand.",
+   "note": {
+    "text": "Your skin has sensory receptors. Some respond to heat or pain."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Stimulus",
+   "structure": "flame",
+   "instruction": "Trace the flame under the hand.",
+   "note": {
+    "text": "A stimulus is a change a receptor can detect, like the heat of a hot stove.",
+    "remember": "Stimulus: what you sense."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Spinal cord",
+   "structure": "cord",
+   "instruction": "Trace the spinal cord, cut across.",
+   "note": {
+    "text": "This is a slice across the spinal cord. Signals from the body enter it through nerves."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Gray matter",
+   "structure": "cord",
+   "part": "details",
+   "instruction": "Draw the butterfly shape inside.",
+   "note": {
+    "text": "The butterfly-shaped gray matter is where neurons connect to each other."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sensory neuron",
+   "structure": "sensory",
+   "instruction": "Draw the signal from the hand to the spinal cord.",
+   "note": {
+    "text": "Receptors start a signal. A sensory neuron carries it from the skin to the spinal cord.",
+    "remember": "Sensory neuron: body to spinal cord."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Interneuron",
+   "structure": "inter",
+   "instruction": "Draw the short neuron inside the spinal cord.",
+   "note": {
+    "text": "In the spinal cord, the signal passes to another neuron, which connects straight to a motor neuron."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Motor neuron",
+   "structure": "motor",
+   "instruction": "Draw the signal back out to the arm muscle.",
+   "note": {
+    "text": "A motor neuron carries the command out to a muscle.",
+    "remember": "Motor neuron: spinal cord to muscle."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Response",
+   "structure": "muscle",
+   "instruction": "Trace the arm muscle.",
+   "note": {
+    "text": "The biceps contracts and pulls your hand away. This fast, automatic response is a reflex."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Message to the brain",
+   "structure": "up",
+   "instruction": "Draw the arrow going up to the brain.",
+   "note": {
+    "text": "Signals also travel up to the brain. You feel the pain, and you can remember not to touch the stove again."
+   }
+  },
+  {
+   "type": "order",
+   "title": "The reflex arc",
+   "instruction": "Tap the steps in order.",
+   "items": [
+    "Receptor senses heat",
+    "Sensory neuron",
+    "Spinal cord",
+    "Motor neuron",
+    "Muscle pulls the hand away"
+   ],
+   "why": "The signal goes in on a sensory neuron, connects in the spinal cord and comes back out on a motor neuron.",
+   "hint": "It starts in the skin and ends at a muscle."
+  },
+  {
+   "type": "choice",
+   "title": "Why so fast?",
+   "instruction": "Follow the arrows.",
+   "showsDiagram": true,
+   "question": "Why can you pull your hand away before you even feel the pain?",
+   "options": [
+    {
+     "text": "The signal turns around in the spinal cord, without waiting for the brain",
+     "correct": true,
+     "feedback": "Yes. The short path is fast, so less damage is done. The brain gets the message a moment later."
+    },
+    {
+     "text": "Muscles can sense heat",
+     "feedback": "Muscles don't sense heat. Receptors in the skin do, and nerves carry the signal."
+    },
+    {
+     "text": "The brain decides very fast",
+     "feedback": "The brain isn't in the loop. The signal connects in the spinal cord."
+    },
+    {
+     "text": "The hand moves by itself",
+     "feedback": "Something has to signal the muscle: a motor neuron from the spinal cord."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Memory",
+   "instruction": "Think about the arrow up to the brain.",
+   "showsDiagram": true,
+   "question": "What does the signal that reaches the brain let you do?",
+   "options": [
+    {
+     "text": "Feel the pain and remember to avoid the stove next time",
+     "correct": true,
+     "feedback": "Right. Messages to the brain can lead to action now or be stored as memories."
+    },
+    {
+     "text": "Pull your hand away",
+     "feedback": "The spinal cord already did that. The brain lets you feel it and remember."
+    },
+    {
+     "text": "Nothing: the brain ignores it",
+     "feedback": "The brain does get the message. That's how you feel the pain."
+    },
+    {
+     "text": "Cool down the stove",
+     "feedback": "Your body can't change the stove. The brain lets you learn to avoid it."
+    }
+   ]
+  }
+ ]
+}

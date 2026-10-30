@@ -1,0 +1,495 @@
+{
+ "id": "g7-nervous-system",
+ "title": "The nervous system",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS1-3",
+ "minutes": 10,
+ "sources": [
+  {
+   "title": "NGSS MS-LS1-3: Use argument supported by evidence for how the body is a system of interacting subsystems composed of groups of cells"
+  },
+  {
+   "title": "NGSS MS-LS1-8: Gather and synthesize information that sensory receptors respond to stimuli by sending messages to the brain for immediate behavior or storage as memories"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 12.1 Basic Structure and Function of the Nervous System",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-1-basic-structure-and-function-of-the-nervous-system"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 13.4 The Peripheral Nervous System",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-4-the-peripheral-nervous-system"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 10.2 Skeletal Muscle (axons bundle together to form nerves)",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/10-2-skeletal-muscle"
+  }
+ ],
+ "keywords": [
+  "nervous system",
+  "brain",
+  "spinal cord",
+  "nerves",
+  "neuron",
+  "nerve cell",
+  "central nervous system",
+  "peripheral nervous system",
+  "CNS",
+  "PNS",
+  "axon",
+  "dendrites",
+  "signals"
+ ],
+ "printed": [
+  {
+   "text": "A neuron, enlarged",
+   "at": [
+    770,
+    70
+   ],
+   "size": 26
+  }
+ ],
+ "structures": [
+  {
+   "id": "brain",
+   "name": "brain",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 190 170 C 180 100 250 62 310 76 C 380 60 440 110 430 170 C 440 230 380 262 320 250 C 260 266 196 236 190 170 Z"
+    }
+   ],
+   "details": [
+    {
+     "path": "M 250 120 C 280 150 260 190 300 210"
+    },
+    {
+     "path": "M 350 110 C 330 150 380 170 360 215"
+    }
+   ]
+  },
+  {
+   "id": "cord",
+   "name": "spinal cord",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      296,
+      258,
+      296,
+      600
+     ]
+    },
+    {
+     "line": [
+      330,
+      256,
+      330,
+      600
+     ]
+    }
+   ]
+  },
+  {
+   "id": "arms",
+   "name": "nerves to the arms",
+   "outlines": [
+    {
+     "line": [
+      296,
+      320,
+      200,
+      400,
+      120,
+      560
+     ]
+    },
+    {
+     "line": [
+      200,
+      400,
+      190,
+      560
+     ]
+    },
+    {
+     "line": [
+      330,
+      320,
+      426,
+      400,
+      506,
+      560
+     ]
+    },
+    {
+     "line": [
+      426,
+      400,
+      436,
+      560
+     ]
+    }
+   ]
+  },
+  {
+   "id": "legs",
+   "name": "nerves to the legs",
+   "outlines": [
+    {
+     "line": [
+      300,
+      600,
+      240,
+      760,
+      220,
+      940
+     ]
+    },
+    {
+     "line": [
+      240,
+      760,
+      170,
+      900
+     ]
+    },
+    {
+     "line": [
+      326,
+      600,
+      386,
+      760,
+      406,
+      940
+     ]
+    },
+    {
+     "line": [
+      386,
+      760,
+      456,
+      900
+     ]
+    }
+   ]
+  },
+  {
+   "id": "body",
+   "name": "cell body",
+   "outlines": [
+    {
+     "circle": [
+      770,
+      250,
+      48
+     ]
+    }
+   ],
+   "details": [
+    {
+     "circle": [
+      770,
+      250,
+      14
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dendrites",
+   "name": "dendrites",
+   "pen": "fine",
+   "outlines": [
+    {
+     "line": [
+      740,
+      214,
+      690,
+      150
+     ]
+    },
+    {
+     "line": [
+      770,
+      202,
+      770,
+      120
+     ]
+    },
+    {
+     "line": [
+      800,
+      214,
+      850,
+      150
+     ]
+    },
+    {
+     "line": [
+      724,
+      262,
+      650,
+      280
+     ]
+    },
+    {
+     "line": [
+      816,
+      262,
+      890,
+      280
+     ]
+    }
+   ]
+  },
+  {
+   "id": "axon",
+   "name": "axon",
+   "outlines": [
+    {
+     "line": [
+      770,
+      298,
+      770,
+      800
+     ]
+    },
+    {
+     "line": [
+      770,
+      800,
+      710,
+      880
+     ]
+    },
+    {
+     "line": [
+      770,
+      800,
+      770,
+      890
+     ]
+    },
+    {
+     "line": [
+      770,
+      800,
+      830,
+      880
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Brain",
+   "structure": "brain",
+   "instruction": "Trace the brain.",
+   "note": {
+    "text": "The brain takes in signals from the senses, decides what to do and sends out commands. It's inside the skull."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Folds",
+   "structure": "brain",
+   "part": "details",
+   "instruction": "Draw two folds on the brain.",
+   "note": {
+    "text": "The brain's wrinkly folds pack lots of nerve tissue into a small space."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Spinal cord",
+   "structure": "cord",
+   "instruction": "Trace the spinal cord down from the brain.",
+   "note": {
+    "text": "The spinal cord runs down inside the backbone. With the brain it forms the central nervous system.",
+    "remember": "Central nervous system: brain + spinal cord."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Arm nerves",
+   "structure": "arms",
+   "instruction": "Trace the nerves branching out to the arms.",
+   "note": {
+    "text": "Nerves are cables made of bundles of long nerve-cell fibers. They carry signals to and from the spinal cord."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Leg nerves",
+   "structure": "legs",
+   "instruction": "Trace the nerves to the legs.",
+   "note": {
+    "text": "All the nerves outside the brain and spinal cord make up the peripheral nervous system.",
+    "remember": "Peripheral nervous system: all the nerves."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Neuron",
+   "structure": "body",
+   "instruction": "Trace the neuron's cell body, at the right.",
+   "note": {
+    "text": "Neurons are the nerve cells that carry signals. The cell body holds the nucleus."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Nucleus",
+   "structure": "body",
+   "part": "details",
+   "instruction": "Draw its nucleus.",
+   "note": {
+    "text": "Like other body cells, a neuron has a nucleus."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Dendrites",
+   "structure": "dendrites",
+   "instruction": "Draw the short branches around the cell body.",
+   "note": {
+    "text": "Dendrites receive signals from other cells and carry them toward the cell body.",
+    "remember": "Dendrites: signals in."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Axon",
+   "structure": "axon",
+   "instruction": "Draw the long axon and its branching ends.",
+   "note": {
+    "text": "The axon carries the signal away from the cell body. Some axons run from the spinal cord all the way to a foot.",
+    "remember": "Axon: signals out."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Name the parts",
+   "instruction": "Pick the name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      310,
+      160
+     ],
+     "answer": "Brain",
+     "role": "Processes signals and sends commands."
+    },
+    {
+     "n": 2,
+     "at": [
+      313,
+      450
+     ],
+     "answer": "Spinal cord",
+     "role": "Carries signals between brain and body.",
+     "mistakes": {
+      "Nerve": "Nerves branch out to the body. This thick cord inside the backbone is the spinal cord."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      160,
+      480
+     ],
+     "answer": "Nerve",
+     "role": "Cable of nerve fibers."
+    },
+    {
+     "n": 4,
+     "at": [
+      770,
+      250
+     ],
+     "answer": "Cell body",
+     "role": "Holds the nucleus."
+    },
+    {
+     "n": 5,
+     "at": [
+      770,
+      560
+     ],
+     "answer": "Axon",
+     "role": "Carries the signal away.",
+     "mistakes": {
+      "Dendrite": "Dendrites are the short branches that bring signals in. This long fiber is the axon."
+     }
+    }
+   ],
+   "vocabulary": [
+    "Brain",
+    "Spinal cord",
+    "Nerve",
+    "Cell body",
+    "Axon",
+    "Dendrite",
+    "Muscle"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Two parts",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "Which parts make up the central nervous system?",
+   "options": [
+    {
+     "text": "The brain and the spinal cord",
+     "correct": true,
+     "feedback": "Yes. The nerves that branch out to the rest of the body are the peripheral nervous system."
+    },
+    {
+     "text": "The brain only",
+     "feedback": "The spinal cord is part of it too. Together they're the central nervous system."
+    },
+    {
+     "text": "All the nerves",
+     "feedback": "The nerves branching out to the body are the peripheral nervous system."
+    },
+    {
+     "text": "The heart and the brain",
+     "feedback": "The heart is part of the circulatory system. The CNS is the brain and spinal cord."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Argue",
+   "instruction": "Follow the signal.",
+   "showsDiagram": true,
+   "question": "A person's spinal cord is injured in the middle of the back. Why might they be unable to move their legs?",
+   "options": [
+    {
+     "text": "Commands from the brain can't travel down the cord to the leg nerves",
+     "correct": true,
+     "feedback": "Right. The leg muscles are fine, but the signals that tell them to contract can't get past the injury."
+    },
+    {
+     "text": "The leg muscles disappear",
+     "feedback": "The muscles are still there. They don't get the brain's signals."
+    },
+    {
+     "text": "The brain stops working",
+     "feedback": "The brain still works. Its signals can't pass the injured part of the cord."
+    },
+    {
+     "text": "The leg bones break",
+     "feedback": "The bones are fine. The signal path from the brain is cut."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,433 @@
+{
+ "id": "g7-urinary-system",
+ "title": "The urinary system and kidney",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS1-3",
+ "minutes": 10,
+ "sources": [
+  {
+   "title": "NGSS MS-LS1-3: Use argument supported by evidence for how the body is a system of interacting subsystems composed of groups of cells"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 25.2 Gross Anatomy of Urine Transport",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 25.3 Gross Anatomy of the Kidney",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 25.5 Physiology of Urine Formation",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-5-physiology-of-urine-formation"
+  }
+ ],
+ "keywords": [
+  "urinary system",
+  "kidney",
+  "ureter",
+  "bladder",
+  "urethra",
+  "urine",
+  "nephron",
+  "renal artery",
+  "renal vein",
+  "filter",
+  "waste",
+  "cortex",
+  "medulla",
+  "renal pelvis",
+  "excretion"
+ ],
+ "printed": [
+  {
+   "text": "Kidney, enlarged",
+   "at": [
+    770,
+    150
+   ],
+   "size": 26
+  }
+ ],
+ "structures": [
+  {
+   "id": "kidneys",
+   "name": "kidneys",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 110.0 160 C 36.9 160 36.9 360 110.0 360 C 183.1 360 137.0 300.0 137.0 260 C 137.0 220.0 183.1 160 110.0 160 Z"
+    },
+    {
+     "path": "M 330 160 C 403.1 160 403.1 360 330 360 C 256.9 360 303 300.0 303 260 C 303 220.0 256.9 160 330 160 Z"
+    }
+   ]
+  },
+  {
+   "id": "ureters",
+   "name": "ureters",
+   "outlines": [
+    {
+     "line": [
+      143,
+      270,
+      190,
+      622
+     ]
+    },
+    {
+     "line": [
+      297,
+      270,
+      250,
+      622
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bladder",
+   "name": "bladder",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 160 640 C 160 610 280 610 280 640 C 300 720 270 770 220 770 C 170 770 140 720 160 640 Z"
+    }
+   ]
+  },
+  {
+   "id": "urethra",
+   "name": "urethra",
+   "outlines": [
+    {
+     "line": [
+      220,
+      770,
+      220,
+      860
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kidney",
+   "name": "kidney",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 770 200 C 1009.4 200 1009.4 800 770 800 C 530.6 800 650 620.0 650 500 C 650 380.0 530.6 200 770 200 Z"
+    }
+   ]
+  },
+  {
+   "id": "medulla",
+   "name": "medulla",
+   "outlines": [
+    {
+     "polygon": [
+      800,
+      265,
+      880,
+      320,
+      790,
+      430
+     ]
+    },
+    {
+     "polygon": [
+      905,
+      405,
+      905,
+      475,
+      805,
+      482
+     ]
+    },
+    {
+     "polygon": [
+      905,
+      525,
+      905,
+      595,
+      805,
+      518
+     ]
+    },
+    {
+     "polygon": [
+      880,
+      680,
+      800,
+      735,
+      790,
+      570
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pelvis",
+   "name": "renal pelvis and ureter",
+   "outlines": [
+    {
+     "path": "M 765 420 C 750 460 730 485 700 490 L 700 530 C 730 535 750 560 765 590 C 785 550 785 460 765 420 Z"
+    },
+    {
+     "path": "M 700 512 C 640 512 575 520 555 580 L 555 900"
+    }
+   ]
+  },
+  {
+   "id": "vessels",
+   "name": "renal artery and vein",
+   "pen": "fine",
+   "outlines": [
+    {
+     "line": [
+      420,
+      470,
+      632,
+      470
+     ]
+    },
+    {
+     "line": [
+      612.6,
+      459.7,
+      632,
+      470,
+      612.6,
+      480.3
+     ]
+    },
+    {
+     "line": [
+      632,
+      410,
+      420,
+      410
+     ]
+    },
+    {
+     "line": [
+      439.4,
+      420.3,
+      420,
+      410,
+      439.4,
+      399.7
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Kidneys",
+   "structure": "kidneys",
+   "instruction": "Trace the two bean-shaped kidneys.",
+   "note": {
+    "text": "Your two kidneys sit against the back wall of your belly, just under the ribs. They clean your blood.",
+    "remember": "Kidneys: filter the blood."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ureters",
+   "structure": "ureters",
+   "instruction": "Trace the tubes from the kidneys down to the bladder.",
+   "note": {
+    "text": "Each kidney sends urine down a tube called a ureter. Muscle in its wall squeezes the urine along in waves."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Bladder",
+   "structure": "bladder",
+   "instruction": "Trace the bladder.",
+   "note": {
+    "text": "The bladder is a stretchy, muscular bag that collects urine from both ureters and stores it."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Urethra",
+   "structure": "urethra",
+   "instruction": "Draw the tube that carries urine out of the body.",
+   "note": {
+    "text": "When the bladder empties, urine leaves the body through the urethra.",
+    "remember": "Kidney, ureter, bladder, urethra."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Inside a kidney",
+   "structure": "kidney",
+   "instruction": "Trace the enlarged kidney, at the right.",
+   "note": {
+    "text": "The outer layer is the cortex. Each kidney holds over a million tiny filters, called nephrons."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Medulla",
+   "structure": "medulla",
+   "instruction": "Trace the four triangles in the middle layer.",
+   "note": {
+    "text": "The middle layer, the medulla, is made of cone-shaped pyramids. Tiny ducts in them carry urine inward."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Collecting urine",
+   "structure": "pelvis",
+   "instruction": "Trace the funnel and the ureter leaving the kidney.",
+   "note": {
+    "text": "Urine drains into a funnel, the renal pelvis, which narrows to become the ureter."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Blood in and out",
+   "structure": "vessels",
+   "instruction": "Draw the two arrows: blood in, then blood out.",
+   "note": {
+    "text": "The renal artery brings blood in to be cleaned. The renal vein carries the cleaned blood back toward the heart.",
+    "remember": "Artery in, vein out."
+   }
+  },
+  {
+   "type": "order",
+   "title": "Urine's path",
+   "instruction": "Tap the parts in the order urine passes through them.",
+   "items": [
+    "Kidney",
+    "Ureter",
+    "Bladder",
+    "Urethra"
+   ],
+   "why": "Kidneys make urine, ureters carry it down, the bladder stores it, and the urethra carries it out.",
+   "hint": "Start where urine is made."
+  },
+  {
+   "type": "label",
+   "title": "Name the parts",
+   "instruction": "Pick the name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      330,
+      260
+     ],
+     "answer": "Kidney",
+     "role": "Filters the blood."
+    },
+    {
+     "n": 2,
+     "at": [
+      270,
+      450
+     ],
+     "answer": "Ureter",
+     "role": "Carries urine to the bladder.",
+     "mistakes": {
+      "Urethra": "The urethra carries urine out of the body. This tube from the kidney is a ureter."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      220,
+      700
+     ],
+     "answer": "Bladder",
+     "role": "Stores urine."
+    },
+    {
+     "n": 4,
+     "at": [
+      220,
+      830
+     ],
+     "answer": "Urethra",
+     "role": "Carries urine out."
+    },
+    {
+     "n": 5,
+     "at": [
+      860,
+      440
+     ],
+     "answer": "Medulla",
+     "role": "Pyramids of tiny ducts.",
+     "mistakes": {
+      "Cortex": "The cortex is the outer layer. These triangles are in the middle layer, the medulla."
+     }
+    }
+   ],
+   "vocabulary": [
+    "Kidney",
+    "Ureter",
+    "Bladder",
+    "Urethra",
+    "Medulla",
+    "Cortex",
+    "Liver"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Most comes back",
+   "instruction": "Think about the numbers.",
+   "showsDiagram": true,
+   "question": "Each day the kidneys filter about 180 L of fluid from the blood, but make only 1 to 2 L of urine. Where does the rest go?",
+   "options": [
+    {
+     "text": "About 99% is taken back into the blood",
+     "correct": true,
+     "feedback": "Yes. The nephrons keep the water and nutrients the body needs and send only wastes and extra water out."
+    },
+    {
+     "text": "It's stored in the bladder",
+     "feedback": "The bladder holds only urine, which is 1 to 2 L a day. The rest returns to the blood."
+    },
+    {
+     "text": "It's breathed out",
+     "feedback": "The lungs breathe out a little water, but the nephrons return almost all the fluid to the blood."
+    },
+    {
+     "text": "It's lost as sweat",
+     "feedback": "Sweat comes from the skin. The kidneys return almost all the filtered fluid to the blood."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Systems working together",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "Which system brings wastes from the body's cells to the kidneys?",
+   "options": [
+    {
+     "text": "The circulatory system: blood carries the wastes in by the renal artery",
+     "correct": true,
+     "feedback": "Right. Cells dump waste into the blood, and the kidneys clean the blood as it passes through."
+    },
+    {
+     "text": "The digestive system",
+     "feedback": "Digestive waste leaves through the rectum. Cell wastes travel in the blood."
+    },
+    {
+     "text": "The nervous system",
+     "feedback": "Nerves carry signals, not wastes. The blood brings wastes to the kidneys."
+    },
+    {
+     "text": "The respiratory system",
+     "feedback": "The lungs remove carbon dioxide. Other wastes travel in the blood to the kidneys."
+    }
+   ]
+  }
+ ]
+}

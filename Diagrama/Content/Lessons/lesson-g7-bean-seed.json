@@ -1,0 +1,421 @@
+{
+ "id": "g7-bean-seed",
+ "title": "Inside a bean seed",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS1-4",
+ "minutes": 9,
+ "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS MS-LS1-4: Use argument based on empirical evidence and scientific reasoning to support an explanation for how characteristic animal behaviors and specialized plant structures affect the probability of successful reproduction of animals and plants respectively"
+  },
+  {
+   "title": "OpenStax Biology 2e, 32.2 Pollination and Fertilization",
+   "url": "https://openstax.org/books/biology-2e/pages/32-2-pollination-and-fertilization"
+  },
+  {
+   "title": "OpenStax Biology 2e, 26.3 Angiosperms",
+   "url": "https://openstax.org/books/biology-2e/pages/26-3-angiosperms"
+  }
+ ],
+ "keywords": [
+  "seed",
+  "bean",
+  "seed coat",
+  "cotyledon",
+  "embryo",
+  "radicle",
+  "plumule",
+  "hypocotyl",
+  "germination",
+  "seedling",
+  "dicot",
+  "stored food"
+ ],
+ "printed": [
+  {
+   "text": "Opened bean seed",
+   "at": [
+    320,
+    170
+   ],
+   "size": 26
+  },
+  {
+   "text": "Seedling",
+   "at": [
+    800,
+    80
+   ],
+   "size": 26
+  },
+  {
+   "text": "Soil",
+   "at": [
+    960,
+    600
+   ],
+   "size": 22
+  }
+ ],
+ "legend": [
+  {
+   "name": "Stored food",
+   "color": "#E9D9A6",
+   "meaning": "The cotyledon is packed with food"
+  },
+  {
+   "name": "Leaves",
+   "color": "#6BA368",
+   "meaning": "Green, so they can make food from sunlight"
+  }
+ ],
+ "structures": [
+  {
+   "id": "coat",
+   "name": "seed coat",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 570.0 470.0 C 570.0 682.8 70.0 682.8 70.0 470.0 C 70.0 257.2 220.0 370.0 320.0 370.0 C 420.0 370.0 570.0 257.2 570.0 470.0 Z"
+    }
+   ]
+  },
+  {
+   "id": "cotyledon",
+   "name": "cotyledon",
+   "colorName": "stored food",
+   "fill": "#E9D9A6",
+   "outlines": [
+    {
+     "path": "M 540.0 470.0 C 540.0 645.6 100.0 645.6 100.0 470.0 C 100.0 294.4 232.0 388.0 320.0 388.0 C 408.0 388.0 540.0 294.4 540.0 470.0 Z"
+    }
+   ]
+  },
+  {
+   "id": "radicle",
+   "name": "radicle",
+   "outlines": [
+    {
+     "path": "M 400 520 C 370 528 330 545 296 576 C 288 586 300 596 312 588 C 345 566 380 556 410 548 Z"
+    }
+   ]
+  },
+  {
+   "id": "plumule",
+   "name": "plumule",
+   "outlines": [
+    {
+     "path": "M 410 535 C 420 500 455 485 480 492 C 470 515 445 535 410 535 Z"
+    }
+   ]
+  },
+  {
+   "id": "soil",
+   "name": "soil line",
+   "pen": "fine",
+   "outlines": [
+    {
+     "line": [
+      620,
+      560,
+      980,
+      560
+     ]
+    }
+   ]
+  },
+  {
+   "id": "root",
+   "name": "root",
+   "outlines": [
+    {
+     "line": [
+      800,
+      560,
+      800,
+      880
+     ]
+    },
+    {
+     "line": [
+      800,
+      660,
+      730,
+      740
+     ]
+    },
+    {
+     "line": [
+      800,
+      720,
+      870,
+      800
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stem",
+   "name": "stem",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      800,
+      540,
+      800,
+      260
+     ]
+    }
+   ]
+  },
+  {
+   "id": "seed-leaves",
+   "name": "cotyledons",
+   "colorName": "stored food",
+   "fill": "#E9D9A6",
+   "outlines": [
+    {
+     "ellipse": [
+      752,
+      400,
+      44,
+      24
+     ]
+    },
+    {
+     "ellipse": [
+      848,
+      400,
+      44,
+      24
+     ]
+    }
+   ]
+  },
+  {
+   "id": "leaves",
+   "name": "first leaves",
+   "colorName": "leaves",
+   "fill": "#6BA368",
+   "outlines": [
+    {
+     "path": "M 790 250 C 740 240 690 200 680 150 C 735 150 780 190 790 250 Z"
+    },
+    {
+     "path": "M 810.0 250 C 860.0 240 910.0 200 920.0 150 C 865.0 150 820.0 190 810.0 250 Z"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Seed coat",
+   "structure": "coat",
+   "instruction": "Trace the seed coat around the opened bean.",
+   "note": {
+    "text": "A seed is a baby plant packed with food inside a tough coat. The coat protects it until it sprouts.",
+    "remember": "Seed coat: protects."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Cotyledon",
+   "structure": "cotyledon",
+   "instruction": "Trace the big half that fills the seed.",
+   "note": {
+    "text": "A bean splits into two halves, the cotyledons, or seed leaves. They're packed with stored food.",
+    "remember": "Cotyledons: stored food."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Radicle",
+   "structure": "radicle",
+   "instruction": "Trace the tiny root tip of the embryo.",
+   "note": {
+    "text": "The embryo is the baby plant. Its radicle, the embryonic root, grows into the plant's first root."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Plumule",
+   "structure": "plumule",
+   "instruction": "Trace the tiny folded leaves.",
+   "note": {
+    "text": "The plumule holds the first young leaves and the shoot tip.",
+    "remember": "Radicle: root. Plumule: leaves."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Soil",
+   "structure": "soil",
+   "instruction": "Draw the soil line for the seedling.",
+   "note": {
+    "text": "When a seed gets water and warmth, it sprouts. This is germination."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Root",
+   "structure": "root",
+   "instruction": "Trace the root growing down.",
+   "note": {
+    "text": "The radicle comes out first and grows down into a root that takes in water."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Stem",
+   "structure": "stem",
+   "instruction": "Trace the stem growing up.",
+   "note": {
+    "text": "In a bean, the stem below the seed leaves grows and lifts them up out of the soil."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Seed leaves",
+   "structure": "seed-leaves",
+   "instruction": "Trace the two cotyledons on the stem.",
+   "note": {
+    "text": "The seedling lives on the food in the cotyledons until its first leaves can make food."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "First leaves",
+   "structure": "leaves",
+   "instruction": "Trace the first leaves at the top.",
+   "note": {
+    "text": "The plumule grows into the first true leaves, which make food by photosynthesis."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "cotyledon",
+    "seed-leaves",
+    "leaves"
+   ],
+   "instruction": "Color the stored food tan and the leaves green."
+  },
+  {
+   "type": "label",
+   "title": "Name the parts",
+   "instruction": "Pick the name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      320,
+      400
+     ],
+     "answer": "Cotyledon",
+     "synonyms": [
+      "Seed leaf"
+     ],
+     "role": "Stores food.",
+     "mistakes": {
+      "Seed coat": "The seed coat is the thin outer layer. This big food store is a cotyledon."
+     }
+    },
+    {
+     "n": 2,
+     "at": [
+      330,
+      570
+     ],
+     "answer": "Radicle",
+     "role": "Becomes the root."
+    },
+    {
+     "n": 3,
+     "at": [
+      455,
+      510
+     ],
+     "answer": "Plumule",
+     "role": "Becomes the first leaves.",
+     "mistakes": {
+      "Radicle": "The radicle becomes the root. These tiny leaves are the plumule."
+     }
+    },
+    {
+     "n": 4,
+     "at": [
+      800,
+      800
+     ],
+     "answer": "Root",
+     "role": "Grew from the radicle."
+    }
+   ],
+   "vocabulary": [
+    "Seed coat",
+    "Cotyledon",
+    "Radicle",
+    "Plumule",
+    "Root",
+    "Pollen"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Food before leaves",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "A seed sprouts underground in the dark. Where does it get food to grow?",
+   "options": [
+    {
+     "text": "From the food stored in its cotyledons",
+     "correct": true,
+     "feedback": "Yes. The stored food lasts until the first leaves reach light and start photosynthesis."
+    },
+    {
+     "text": "From sunlight through the seed coat",
+     "feedback": "It's dark underground. The seedling uses food stored in the cotyledons."
+    },
+    {
+     "text": "From the soil only",
+     "feedback": "Roots take in water and minerals, but the food comes from the cotyledons."
+    },
+    {
+     "text": "From the flower",
+     "feedback": "The seed has left the parent plant. Its food is packed in the cotyledons."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Argue",
+   "instruction": "Think about reproduction.",
+   "showsDiagram": false,
+   "question": "How does the seed coat help a plant reproduce?",
+   "options": [
+    {
+     "text": "It protects the embryo, so it survives until conditions are right to sprout",
+     "correct": true,
+     "feedback": "Right. A protected seed can wait out cold or drought, so its chance of growing into a plant goes up."
+    },
+    {
+     "text": "It makes the seed's food",
+     "feedback": "The food is stored in the cotyledons. The coat protects the embryo."
+    },
+    {
+     "text": "It grows into the root",
+     "feedback": "The radicle becomes the root. The coat protects the embryo."
+    },
+    {
+     "text": "It attracts bees",
+     "feedback": "Petals attract bees. The seed coat protects the embryo inside."
+    }
+   ]
+  }
+ ]
+}
