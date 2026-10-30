@@ -1,0 +1,405 @@
+{
+ "id": "g7-plant-vs-animal",
+ "title": "Plant vs animal cell",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS1-2",
+ "minutes": 10,
+ "colorMode": "microscope",
+ "sources": [
+  {
+   "title": "NGSS MS-LS1-2: Develop and use a model to describe the function of a cell as a whole and ways the parts of cells contribute to the function"
+  },
+  {
+   "title": "OpenStax Biology 2e, 4.3 Eukaryotic Cells",
+   "url": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells"
+  }
+ ],
+ "keywords": [
+  "plant cell",
+  "animal cell",
+  "compare",
+  "cell wall",
+  "chloroplast",
+  "vacuole",
+  "nucleus",
+  "mitochondria",
+  "cell membrane",
+  "centriole",
+  "lysosome"
+ ],
+ "printed": [
+  {
+   "text": "Plant cell",
+   "at": [
+    260,
+    150
+   ],
+   "size": 32
+  },
+  {
+   "text": "Animal cell",
+   "at": [
+    750,
+    240
+   ],
+   "size": 32
+  }
+ ],
+ "legend": [
+  {
+   "name": "Chloroplasts",
+   "color": "#4D9E38",
+   "meaning": "Green from chlorophyll: the only clearly colored part"
+  },
+  {
+   "name": "Everything else",
+   "color": null,
+   "meaning": "Nearly colorless in a fresh, unstained cell"
+  }
+ ],
+ "structures": [
+  {
+   "id": "wall",
+   "name": "cell wall",
+   "pen": "bold",
+   "outlines": [
+    {
+     "rect": [
+      50,
+      200,
+      420,
+      600,
+      30
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pmem",
+   "name": "plant cell membrane",
+   "pen": "fine",
+   "outlines": [
+    {
+     "rect": [
+      70,
+      220,
+      380,
+      560,
+      18
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vacuole",
+   "name": "central vacuole",
+   "outlines": [
+    {
+     "rect": [
+      200,
+      260,
+      225,
+      420,
+      80
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pnuc",
+   "name": "plant nucleus",
+   "outlines": [
+    {
+     "circle": [
+      130,
+      320,
+      46
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chloro",
+   "name": "chloroplasts",
+   "colorName": "chloroplasts",
+   "fill": "#4D9E38",
+   "outlines": [
+    {
+     "ellipse": [
+      130,
+      520,
+      40,
+      20
+     ]
+    },
+    {
+     "ellipse": [
+      150,
+      720,
+      40,
+      20
+     ]
+    },
+    {
+     "ellipse": [
+      330,
+      745,
+      40,
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pmito",
+   "name": "plant mitochondrion",
+   "outlines": [
+    {
+     "ellipse": [
+      130,
+      620,
+      34,
+      18
+     ]
+    }
+   ]
+  },
+  {
+   "id": "amem",
+   "name": "animal cell membrane",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 750 290 C 870 290 950 380 945 500 C 940 630 860 715 750 712 C 630 710 555 630 555 500 C 555 370 640 290 750 290 Z"
+    }
+   ]
+  },
+  {
+   "id": "anuc",
+   "name": "animal nucleus",
+   "outlines": [
+    {
+     "circle": [
+      740,
+      490,
+      70
+     ]
+    }
+   ]
+  },
+  {
+   "id": "amito",
+   "name": "animal mitochondrion",
+   "outlines": [
+    {
+     "ellipse": [
+      660,
+      640,
+      34,
+      18
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cent",
+   "name": "centrioles",
+   "outlines": [
+    {
+     "rect": [
+      855,
+      405,
+      16,
+      44
+     ]
+    },
+    {
+     "rect": [
+      871,
+      440,
+      44,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lyso",
+   "name": "lysosome",
+   "outlines": [
+    {
+     "circle": [
+      860,
+      610,
+      20
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Cell wall",
+   "structure": "wall",
+   "instruction": "Trace the plant cell's wall.",
+   "note": {
+    "text": "Only the plant cell has a rigid cell wall. It gives the cell its boxy shape.",
+    "remember": "Wall: plants only."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Plant membrane",
+   "structure": "pmem",
+   "instruction": "Trace the membrane just inside the wall.",
+   "note": {
+    "text": "Both cells have a cell membrane controlling what goes in and out."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Central vacuole",
+   "structure": "vacuole",
+   "instruction": "Trace the big central vacuole.",
+   "note": {
+    "text": "Plant cells have one large central vacuole full of water that keeps the cell firm."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Plant nucleus",
+   "structure": "pnuc",
+   "instruction": "Trace the plant cell's nucleus.",
+   "note": {
+    "text": "Both cells have a nucleus holding their DNA."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Chloroplasts",
+   "structure": "chloro",
+   "instruction": "Trace the three chloroplasts.",
+   "note": {
+    "text": "Only plant cells have chloroplasts, which capture light energy to make food.",
+    "remember": "Chloroplasts: plants only."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Plant mitochondrion",
+   "structure": "pmito",
+   "instruction": "Trace the mitochondrion.",
+   "note": {
+    "text": "Plant cells have mitochondria too. They release energy from the food the chloroplasts make."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Animal membrane",
+   "structure": "amem",
+   "instruction": "Trace the animal cell's membrane.",
+   "note": {
+    "text": "With no wall, the animal cell's shape is rounder and more flexible."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Animal nucleus",
+   "structure": "anuc",
+   "instruction": "Trace the animal cell's nucleus.",
+   "note": {
+    "text": "Same job as in the plant cell: it holds the DNA."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Animal mitochondrion",
+   "structure": "amito",
+   "instruction": "Trace the mitochondrion.",
+   "note": {
+    "text": "Both kinds of cell have mitochondria to make ATP."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Centrioles",
+   "structure": "cent",
+   "instruction": "Trace the pair of centrioles.",
+   "note": {
+    "text": "Animal cells have centrioles; most plant cells don't.",
+    "remember": "Centrioles: animals."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Lysosome",
+   "structure": "lyso",
+   "instruction": "Trace the lysosome.",
+   "note": {
+    "text": "Animal cells have lysosomes to digest waste. In plant cells, that happens in the vacuole."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "chloro"
+   ],
+   "instruction": "In fresh, unstained cells, only the chloroplasts have color."
+  },
+  {
+   "type": "choice",
+   "title": "Shared parts",
+   "instruction": "Compare the two cells.",
+   "showsDiagram": true,
+   "question": "Which parts do BOTH plant and animal cells have?",
+   "options": [
+    {
+     "text": "Cell membrane, nucleus and mitochondria",
+     "correct": true,
+     "feedback": "Yes. All plant and animal cells need these to control what enters, hold DNA, and release energy."
+    },
+    {
+     "text": "Cell wall and chloroplasts",
+     "feedback": "Those are only in plant cells."
+    },
+    {
+     "text": "Centrioles and lysosomes",
+     "feedback": "Those are in animal cells; most plant cells don't have them."
+    },
+    {
+     "text": "Chloroplasts and mitochondria",
+     "feedback": "Both have mitochondria, but only plants have chloroplasts."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Why the difference?",
+   "instruction": "Think about how each lives.",
+   "showsDiagram": true,
+   "question": "Why do plant cells need chloroplasts, but animal cells don't?",
+   "options": [
+    {
+     "text": "Plants make their own food from light; animals eat food",
+     "correct": true,
+     "feedback": "Right. Chloroplasts capture light to make sugar. Animals get their food by eating."
+    },
+    {
+     "text": "Animals live in the dark",
+     "feedback": "Many animals live in sunlight. They get food by eating instead of making it."
+    },
+    {
+     "text": "Chloroplasts hold up the plant",
+     "feedback": "The cell wall does that. Chloroplasts make food from light."
+    },
+    {
+     "text": "Animal cells are too small",
+     "feedback": "Size isn't the reason. Animals get food by eating, not from light."
+    }
+   ]
+  }
+ ]
+}

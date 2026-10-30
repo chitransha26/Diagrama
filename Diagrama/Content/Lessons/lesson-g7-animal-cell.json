@@ -1,0 +1,466 @@
+{
+ "id": "g7-animal-cell",
+ "title": "Animal cell",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS1-2",
+ "minutes": 10,
+ "sources": [
+  {
+   "title": "NGSS MS-LS1-2: Develop and use a model to describe the function of a cell as a whole and ways the parts of cells contribute to the function"
+  },
+  {
+   "title": "OpenStax Biology 2e, 4.3 Eukaryotic Cells",
+   "url": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells"
+  },
+  {
+   "title": "OpenStax Biology 2e, 4.2 Prokaryotic Cells",
+   "url": "https://openstax.org/books/biology-2e/pages/4-2-prokaryotic-cells"
+  }
+ ],
+ "keywords": [
+  "cell",
+  "animal cell",
+  "organelle",
+  "cell membrane",
+  "plasma membrane",
+  "nucleus",
+  "nucleolus",
+  "mitochondria",
+  "lysosome",
+  "centriole",
+  "ribosome",
+  "cytoplasm"
+ ],
+ "structures": [
+  {
+   "id": "membrane",
+   "name": "cell membrane",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 500 130 C 700 120 880 260 870 480 C 860 700 720 880 500 870 C 280 860 120 720 130 500 C 140 280 300 140 500 130 Z"
+    }
+   ]
+  },
+  {
+   "id": "nucleus",
+   "name": "nucleus",
+   "outlines": [
+    {
+     "circle": [
+      470,
+      470,
+      120
+     ]
+    }
+   ],
+   "details": [
+    {
+     "circle": [
+      490,
+      450,
+      34
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mito",
+   "name": "mitochondria",
+   "outlines": [
+    {
+     "ellipse": [
+      720,
+      320,
+      70,
+      34
+     ]
+    },
+    {
+     "ellipse": [
+      290,
+      700,
+      70,
+      34
+     ]
+    },
+    {
+     "ellipse": [
+      730,
+      680,
+      70,
+      34
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      670.0,
+      304,
+      686.7,
+      336,
+      703.3,
+      304,
+      720.0,
+      336,
+      736.7,
+      304,
+      753.3,
+      336,
+      770.0,
+      304
+     ]
+    },
+    {
+     "line": [
+      240.0,
+      684,
+      256.7,
+      716,
+      273.3,
+      684,
+      290.0,
+      716,
+      306.7,
+      684,
+      323.3,
+      716,
+      340.0,
+      684
+     ]
+    },
+    {
+     "line": [
+      680.0,
+      664,
+      696.7,
+      696,
+      713.3,
+      664,
+      730.0,
+      696,
+      746.7,
+      664,
+      763.3,
+      696,
+      780.0,
+      664
+     ]
+    }
+   ],
+   "focusEach": true
+  },
+  {
+   "id": "lyso",
+   "name": "lysosomes",
+   "outlines": [
+    {
+     "circle": [
+      270,
+      300,
+      24
+     ]
+    },
+    {
+     "circle": [
+      640,
+      790,
+      24
+     ]
+    }
+   ]
+  },
+  {
+   "id": "centrioles",
+   "name": "centrioles",
+   "outlines": [
+    {
+     "rect": [
+      620,
+      515,
+      22,
+      60
+     ]
+    },
+    {
+     "rect": [
+      642,
+      560,
+      60,
+      22
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ribo",
+   "name": "ribosomes",
+   "outlines": [
+    {
+     "circle": [
+      330,
+      420,
+      7
+     ]
+    },
+    {
+     "circle": [
+      360,
+      610,
+      7
+     ]
+    },
+    {
+     "circle": [
+      600,
+      260,
+      7
+     ]
+    },
+    {
+     "circle": [
+      790,
+      500,
+      7
+     ]
+    },
+    {
+     "circle": [
+      540,
+      700,
+      7
+     ]
+    },
+    {
+     "circle": [
+      240,
+      540,
+      7
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Cell membrane",
+   "structure": "membrane",
+   "instruction": "Trace the cell membrane all the way round.",
+   "note": {
+    "text": "A thin, flexible layer around the cell. It controls what goes in and out. Animal cells have no cell wall.",
+    "remember": "Membrane: the cell's gatekeeper."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Nucleus",
+   "structure": "nucleus",
+   "instruction": "Trace the nucleus.",
+   "note": {
+    "text": "The nucleus holds the cell's DNA: the instructions for building and running the cell.",
+    "remember": "Nucleus: the control center."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Nucleolus",
+   "structure": "nucleus",
+   "part": "details",
+   "instruction": "Draw the nucleolus inside the nucleus.",
+   "note": {
+    "text": "A dense spot in the nucleus that makes the parts of ribosomes."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Mitochondria",
+   "structure": "mito",
+   "instruction": "Trace the three mitochondria.",
+   "note": {
+    "text": "Mitochondria use oxygen and food to make ATP, the cell's energy-carrying molecule. This is cellular respiration.",
+    "remember": "Mitochondria: energy factories."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Folds",
+   "structure": "mito",
+   "part": "details",
+   "instruction": "Draw the folded inner membrane in each one.",
+   "note": {
+    "text": "The inner membrane is folded, giving it lots of surface where ATP is made."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Lysosomes",
+   "structure": "lyso",
+   "instruction": "Trace the two lysosomes.",
+   "note": {
+    "text": "Lysosomes are the cell's garbage disposal. Their enzymes break down food molecules and worn-out parts."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Centrioles",
+   "structure": "centrioles",
+   "instruction": "Trace the pair of centrioles, at right angles.",
+   "note": {
+    "text": "Animal cells have a pair of centrioles near the nucleus. They help organize the cell when it divides."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ribosomes",
+   "structure": "ribo",
+   "instruction": "Dab a dot for each ribosome.",
+   "note": {
+    "text": "Ribosomes are tiny machines that build proteins. Every cell has them, even bacteria.",
+    "remember": "Ribosomes build proteins."
+   }
+  },
+  {
+   "type": "identify",
+   "title": "Cytoplasm",
+   "name": "cytoplasm",
+   "structure": "membrane",
+   "instruction": "Tap the cytoplasm: the jelly-like fluid inside the membrane, around the organelles.",
+   "mistakes": {
+    "nucleus": "That's the nucleus. The cytoplasm surrounds it but doesn't go inside.",
+    "mito": "That's a mitochondrion. It sits in the cytoplasm; tap the space around it.",
+    "lyso": "That's a lysosome. Tap the fluid around it.",
+    "centrioles": "Those are centrioles. Tap the open space around them."
+   },
+   "note": {
+    "text": "A jelly-like fluid filling the cell around the organelles. Many of the cell's chemical reactions happen here."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Label the cell",
+   "instruction": "Pick the right name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      500,
+      130
+     ],
+     "answer": "Cell membrane",
+     "synonyms": [
+      "Plasma membrane"
+     ],
+     "role": "Controls what enters and leaves.",
+     "mistakes": {
+      "Cell wall": "Animal cells have no cell wall. This flexible outer layer is the membrane."
+     }
+    },
+    {
+     "n": 2,
+     "at": [
+      420,
+      520
+     ],
+     "answer": "Nucleus",
+     "role": "Holds the DNA."
+    },
+    {
+     "n": 3,
+     "at": [
+      720,
+      320
+     ],
+     "answer": "Mitochondrion",
+     "role": "Makes ATP from food and oxygen.",
+     "mistakes": {
+      "Chloroplast": "Animal cells have no chloroplasts. This organelle releases energy from food: a mitochondrion."
+     }
+    },
+    {
+     "n": 4,
+     "at": [
+      270,
+      300
+     ],
+     "answer": "Lysosome",
+     "role": "Breaks down waste."
+    },
+    {
+     "n": 5,
+     "at": [
+      631,
+      545
+     ],
+     "answer": "Centriole",
+     "role": "Helps organize cell division."
+    }
+   ],
+   "vocabulary": [
+    "Cell membrane",
+    "Plasma membrane",
+    "Cell wall",
+    "Nucleus",
+    "Mitochondrion",
+    "Chloroplast",
+    "Lysosome",
+    "Centriole",
+    "Ribosome"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Form fits function",
+   "instruction": "Think about energy.",
+   "showsDiagram": true,
+   "question": "Muscle cells are packed with far more mitochondria than most cells. Why?",
+   "options": [
+    {
+     "text": "Muscles need lots of energy, and mitochondria make the ATP that supplies it",
+     "correct": true,
+     "feedback": "Yes. Moving your body takes a lot of energy, so muscle cells have many mitochondria making ATP."
+    },
+    {
+     "text": "Mitochondria store the cell's DNA",
+     "feedback": "The nucleus holds the DNA. Mitochondria make ATP for energy."
+    },
+    {
+     "text": "Mitochondria make muscles bigger",
+     "feedback": "They supply energy. Busy muscle cells need a lot of it."
+    },
+    {
+     "text": "Mitochondria break down waste",
+     "feedback": "That's the lysosomes' job. Mitochondria make ATP."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "The cell as a system",
+   "instruction": "Think about the whole cell.",
+   "showsDiagram": true,
+   "question": "A drug stops a cell's ribosomes working. What will the cell no longer be able to do?",
+   "options": [
+    {
+     "text": "Build new proteins",
+     "correct": true,
+     "feedback": "Right. Ribosomes build proteins, which the cell needs for almost everything. The parts depend on each other."
+    },
+    {
+     "text": "Store DNA",
+     "feedback": "The nucleus stores DNA. Ribosomes build proteins."
+    },
+    {
+     "text": "Break down waste",
+     "feedback": "Lysosomes do that, though their enzymes are proteins made by ribosomes."
+    },
+    {
+     "text": "Control what enters",
+     "feedback": "The membrane does that. Ribosomes build proteins."
+    }
+   ]
+  }
+ ]
+}

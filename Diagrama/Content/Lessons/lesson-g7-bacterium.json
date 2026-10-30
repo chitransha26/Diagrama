@@ -1,0 +1,441 @@
+{
+ "id": "g7-bacterium",
+ "title": "Bacterial cell (prokaryote)",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS1-1",
+ "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS MS-LS1-1: Conduct an investigation to provide evidence that living things are made of cells; either one cell or many different numbers and types of cells"
+  },
+  {
+   "title": "OpenStax Biology 2e, 4.2 Prokaryotic Cells",
+   "url": "https://openstax.org/books/biology-2e/pages/4-2-prokaryotic-cells"
+  }
+ ],
+ "keywords": [
+  "bacteria",
+  "bacterium",
+  "prokaryote",
+  "single-celled",
+  "unicellular",
+  "cell wall",
+  "capsule",
+  "nucleoid",
+  "DNA",
+  "flagellum",
+  "pili",
+  "ribosomes"
+ ],
+ "printed": [
+  {
+   "text": "Not to scale",
+   "at": [
+    140,
+    940
+   ],
+   "size": 26
+  }
+ ],
+ "structures": [
+  {
+   "id": "capsule",
+   "name": "capsule",
+   "pen": "fine",
+   "outlines": [
+    {
+     "rect": [
+      140,
+      330,
+      720,
+      340,
+      170
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wall",
+   "name": "cell wall",
+   "pen": "bold",
+   "outlines": [
+    {
+     "rect": [
+      165,
+      355,
+      670,
+      290,
+      145
+     ]
+    }
+   ]
+  },
+  {
+   "id": "membrane",
+   "name": "cell membrane",
+   "pen": "fine",
+   "outlines": [
+    {
+     "rect": [
+      187,
+      377,
+      626,
+      246,
+      123
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dna",
+   "name": "nucleoid",
+   "outlines": [
+    {
+     "path": "M 420 470 C 460 420 520 540 560 470 C 600 410 650 520 600 545 C 560 565 520 500 470 560 C 420 615 375 520 420 470 Z"
+    }
+   ]
+  },
+  {
+   "id": "ribo",
+   "name": "ribosomes",
+   "outlines": [
+    {
+     "circle": [
+      280,
+      440,
+      7
+     ]
+    },
+    {
+     "circle": [
+      300,
+      560,
+      7
+     ]
+    },
+    {
+     "circle": [
+      330,
+      500,
+      7
+     ]
+    },
+    {
+     "circle": [
+      700,
+      440,
+      7
+     ]
+    },
+    {
+     "circle": [
+      720,
+      560,
+      7
+     ]
+    },
+    {
+     "circle": [
+      680,
+      600,
+      7
+     ]
+    }
+   ]
+  },
+  {
+   "id": "flagellum",
+   "name": "flagellum",
+   "outlines": [
+    {
+     "line": [
+      140,
+      500.0,
+      135,
+      510.2,
+      130,
+      518.1,
+      125,
+      521.8,
+      120,
+      520.6,
+      115,
+      514.6,
+      110,
+      505.3,
+      105,
+      494.7,
+      100,
+      485.4,
+      95,
+      479.4,
+      90,
+      478.2,
+      85,
+      481.9,
+      80,
+      489.8,
+      75,
+      500.0,
+      70,
+      510.2,
+      65,
+      518.1,
+      60,
+      521.8,
+      55,
+      520.6,
+      50,
+      514.6,
+      45,
+      505.3,
+      40,
+      494.7,
+      35,
+      485.4,
+      30,
+      479.4,
+      25,
+      478.2,
+      20,
+      481.9,
+      15,
+      489.8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pili",
+   "name": "pili",
+   "outlines": [
+    {
+     "line": [
+      350,
+      330,
+      340,
+      282
+     ]
+    },
+    {
+     "line": [
+      500,
+      330,
+      500,
+      282
+     ]
+    },
+    {
+     "line": [
+      650,
+      330,
+      660,
+      282
+     ]
+    },
+    {
+     "line": [
+      350,
+      670,
+      340,
+      718
+     ]
+    },
+    {
+     "line": [
+      500,
+      670,
+      500,
+      718
+     ]
+    },
+    {
+     "line": [
+      650,
+      670,
+      660,
+      718
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Capsule",
+   "structure": "capsule",
+   "instruction": "Trace the outer capsule.",
+   "note": {
+    "text": "Many bacteria have a sticky capsule that lets them cling to surfaces."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Cell wall",
+   "structure": "wall",
+   "instruction": "Trace the cell wall.",
+   "note": {
+    "text": "The cell wall protects the cell, holds its shape and stops it drying out."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Cell membrane",
+   "structure": "membrane",
+   "instruction": "Trace the membrane just inside the wall.",
+   "note": {
+    "text": "Every cell has a membrane, cytoplasm, DNA and ribosomes, from bacteria to you.",
+    "remember": "All cells share four parts."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "DNA",
+   "structure": "dna",
+   "instruction": "Trace the tangled loop of DNA in the middle.",
+   "note": {
+    "text": "A bacterium has no nucleus. Its DNA sits loose in the middle, in an area called the nucleoid.",
+    "remember": "Prokaryote: no nucleus."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ribosomes",
+   "structure": "ribo",
+   "instruction": "Dab a dot for each ribosome.",
+   "note": {
+    "text": "Ribosomes build the cell's proteins."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Flagellum",
+   "structure": "flagellum",
+   "instruction": "Draw the wavy flagellum at the end.",
+   "note": {
+    "text": "Some bacteria swim with a whip-like flagellum."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Pili",
+   "structure": "pili",
+   "instruction": "Draw the six short pili.",
+   "note": {
+    "text": "Pili are short hairs. Bacteria use them to pass DNA to each other."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Name the parts",
+   "instruction": "Pick the name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      500,
+      500
+     ],
+     "answer": "Nucleoid",
+     "role": "Where the DNA is.",
+     "mistakes": {
+      "Nucleus": "Bacteria have no nucleus. Their DNA sits loose in the nucleoid."
+     }
+    },
+    {
+     "n": 2,
+     "at": [
+      500,
+      355
+     ],
+     "answer": "Cell wall",
+     "role": "Protects and shapes the cell."
+    },
+    {
+     "n": 3,
+     "at": [
+      80,
+      500
+     ],
+     "answer": "Flagellum",
+     "role": "Used for swimming."
+    },
+    {
+     "n": 4,
+     "at": [
+      500,
+      282
+     ],
+     "answer": "Pilus",
+     "synonyms": [
+      "Pili"
+     ],
+     "role": "Passes DNA to another bacterium."
+    }
+   ],
+   "vocabulary": [
+    "Nucleoid",
+    "Nucleus",
+    "Cell wall",
+    "Flagellum",
+    "Pilus",
+    "Capsule",
+    "Mitochondrion"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Compare",
+   "instruction": "Compare with your own cells.",
+   "showsDiagram": true,
+   "question": "What's the biggest difference between a bacterium and one of your body's cells?",
+   "options": [
+    {
+     "text": "The bacterium has no nucleus or other membrane-bound organelles",
+     "correct": true,
+     "feedback": "Yes. That's what makes it a prokaryote. Your cells keep their DNA in a nucleus."
+    },
+    {
+     "text": "The bacterium has no DNA",
+     "feedback": "All cells have DNA. A bacterium's just isn't inside a nucleus."
+    },
+    {
+     "text": "The bacterium has no ribosomes",
+     "feedback": "All cells have ribosomes. The difference is the missing nucleus."
+    },
+    {
+     "text": "The bacterium is bigger",
+     "feedback": "Bacteria are usually much smaller: 0.1 to 5 micrometres, versus 10 to 100 for our cells."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Alive?",
+   "instruction": "Think about what a cell is.",
+   "showsDiagram": false,
+   "question": "A bacterium is a single cell. Is it a living thing?",
+   "options": [
+    {
+     "text": "Yes: a single cell can be a whole living organism",
+     "correct": true,
+     "feedback": "Right. Some living things are one cell; others, like you, are made of trillions."
+    },
+    {
+     "text": "No: living things need many cells",
+     "feedback": "Bacteria are alive, and each is just one cell."
+    },
+    {
+     "text": "Only when it swims",
+     "feedback": "A bacterium is alive whether it's moving or not."
+    },
+    {
+     "text": "No, it's too small",
+     "feedback": "Size doesn't decide it. A single bacterial cell is a living organism."
+    }
+   ]
+  }
+ ]
+}

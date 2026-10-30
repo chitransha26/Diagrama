@@ -1,0 +1,524 @@
+{
+ "id": "g7-diffusion",
+ "title": "Diffusion across a membrane",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS1-2",
+ "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS MS-LS1-2: Develop and use a model to describe the function of a cell as a whole and ways the parts of cells contribute to the function"
+  },
+  {
+   "title": "OpenStax Biology 2e, 5.2 Passive Transport",
+   "url": "https://openstax.org/books/biology-2e/pages/5-2-passive-transport"
+  },
+  {
+   "title": "OpenStax Biology 2e, 28.1 Phylum Porifera (oxygen by diffusion)",
+   "url": "https://openstax.org/books/biology-2e/pages/28-1-phylum-porifera"
+  }
+ ],
+ "keywords": [
+  "diffusion",
+  "membrane",
+  "concentration",
+  "high concentration",
+  "low concentration",
+  "equilibrium",
+  "passive transport",
+  "molecules",
+  "cell membrane",
+  "oxygen"
+ ],
+ "printed": [
+  {
+   "text": "Before",
+   "at": [
+    500,
+    60
+   ],
+   "size": 30
+  },
+  {
+   "text": "Later",
+   "at": [
+    500,
+    520
+   ],
+   "size": 30
+  }
+ ],
+ "structures": [
+  {
+   "id": "box1",
+   "name": "first box",
+   "outlines": [
+    {
+     "rect": [
+      100,
+      100,
+      800,
+      340
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wall1",
+   "name": "membrane",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      500,
+      112.0,
+      500,
+      156.0
+     ]
+    },
+    {
+     "line": [
+      500,
+      180.0,
+      500,
+      224.0
+     ]
+    },
+    {
+     "line": [
+      500,
+      248.0,
+      500,
+      292.0
+     ]
+    },
+    {
+     "line": [
+      500,
+      316.0,
+      500,
+      360.0
+     ]
+    },
+    {
+     "line": [
+      500,
+      384.0,
+      500,
+      428.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dots1",
+   "name": "molecules",
+   "outlines": [
+    {
+     "circle": [
+      170,
+      160,
+      10
+     ]
+    },
+    {
+     "circle": [
+      240,
+      210,
+      10
+     ]
+    },
+    {
+     "circle": [
+      320,
+      150,
+      10
+     ]
+    },
+    {
+     "circle": [
+      400,
+      200,
+      10
+     ]
+    },
+    {
+     "circle": [
+      180,
+      290,
+      10
+     ]
+    },
+    {
+     "circle": [
+      270,
+      330,
+      10
+     ]
+    },
+    {
+     "circle": [
+      360,
+      280,
+      10
+     ]
+    },
+    {
+     "circle": [
+      430,
+      360,
+      10
+     ]
+    },
+    {
+     "circle": [
+      200,
+      390,
+      10
+     ]
+    },
+    {
+     "circle": [
+      330,
+      400,
+      10
+     ]
+    },
+    {
+     "circle": [
+      640,
+      250,
+      10
+     ]
+    },
+    {
+     "circle": [
+      790,
+      350,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": "net",
+   "name": "net movement",
+   "outlines": [
+    {
+     "line": [
+      560,
+      160,
+      760,
+      160
+     ]
+    },
+    {
+     "line": [
+      740.6,
+      149.7,
+      760,
+      160,
+      740.6,
+      170.3
+     ]
+    }
+   ]
+  },
+  {
+   "id": "box2",
+   "name": "second box",
+   "outlines": [
+    {
+     "rect": [
+      100,
+      560,
+      800,
+      340
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wall2",
+   "name": "membrane",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      500,
+      572.0,
+      500,
+      616.0
+     ]
+    },
+    {
+     "line": [
+      500,
+      640.0,
+      500,
+      684.0
+     ]
+    },
+    {
+     "line": [
+      500,
+      708.0,
+      500,
+      752.0
+     ]
+    },
+    {
+     "line": [
+      500,
+      776.0,
+      500,
+      820.0
+     ]
+    },
+    {
+     "line": [
+      500,
+      844.0,
+      500,
+      888.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dots2",
+   "name": "molecules",
+   "outlines": [
+    {
+     "circle": [
+      180,
+      640,
+      10
+     ]
+    },
+    {
+     "circle": [
+      300,
+      700,
+      10
+     ]
+    },
+    {
+     "circle": [
+      420,
+      620,
+      10
+     ]
+    },
+    {
+     "circle": [
+      220,
+      800,
+      10
+     ]
+    },
+    {
+     "circle": [
+      360,
+      840,
+      10
+     ]
+    },
+    {
+     "circle": [
+      430,
+      760,
+      10
+     ]
+    },
+    {
+     "circle": [
+      580,
+      650,
+      10
+     ]
+    },
+    {
+     "circle": [
+      720,
+      620,
+      10
+     ]
+    },
+    {
+     "circle": [
+      840,
+      700,
+      10
+     ]
+    },
+    {
+     "circle": [
+      620,
+      800,
+      10
+     ]
+    },
+    {
+     "circle": [
+      760,
+      840,
+      10
+     ]
+    },
+    {
+     "circle": [
+      860,
+      800,
+      10
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Before",
+   "structure": "box1",
+   "instruction": "Trace the top box.",
+   "note": {
+    "text": "This is a close-up of a membrane with water on both sides."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Membrane",
+   "structure": "wall1",
+   "instruction": "Trace the membrane down the middle, with its gaps.",
+   "note": {
+    "text": "Some small molecules can pass through a cell membrane on their own."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Molecules",
+   "structure": "dots1",
+   "instruction": "Dab a dot for every molecule.",
+   "note": {
+    "text": "There are many molecules on the left: a high concentration. Few on the right: a low concentration."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Net movement",
+   "structure": "net",
+   "instruction": "Draw the arrow from left to right.",
+   "note": {
+    "text": "Molecules move randomly all the time, but more cross from the crowded side to the emptier side. This is diffusion.",
+    "remember": "Diffusion: high to low concentration."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Later",
+   "structure": "box2",
+   "instruction": "Trace the bottom box.",
+   "note": {
+    "text": "This is the same place a while later."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Membrane",
+   "structure": "wall2",
+   "instruction": "Trace the membrane again.",
+   "note": {
+    "text": "Diffusion needs no energy from the cell. It's a kind of passive transport."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Spread out",
+   "structure": "dots2",
+   "instruction": "Dab a dot for every molecule.",
+   "note": {
+    "text": "Now the concentration is equal on both sides. Molecules still move, but there's no net movement: equilibrium.",
+    "remember": "Equal on both sides = equilibrium."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Which way?",
+   "instruction": "Use the top picture.",
+   "showsDiagram": true,
+   "question": "Which way do the molecules diffuse overall?",
+   "options": [
+    {
+     "text": "From the crowded left side to the emptier right side",
+     "correct": true,
+     "feedback": "Yes. Diffusion goes from high concentration to low until it evens out."
+    },
+    {
+     "text": "From right to left",
+     "feedback": "That's from low to high. Diffusion goes from high to low concentration."
+    },
+    {
+     "text": "They don't move",
+     "feedback": "Molecules are always moving. Overall, more cross from the crowded side."
+    },
+    {
+     "text": "Only when the cell pushes them",
+     "feedback": "Diffusion needs no push from the cell. It happens on its own."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Speed",
+   "instruction": "Think about energy.",
+   "showsDiagram": false,
+   "question": "How would warming the water change diffusion?",
+   "options": [
+    {
+     "text": "It would speed up, because molecules move faster when warmer",
+     "correct": true,
+     "feedback": "Right. Higher temperature gives molecules more energy, so they spread out faster."
+    },
+    {
+     "text": "It would slow down",
+     "feedback": "Warmer molecules move faster, so diffusion speeds up."
+    },
+    {
+     "text": "It would stop",
+     "feedback": "Warmth speeds molecules up. Diffusion goes faster."
+    },
+    {
+     "text": "No change",
+     "feedback": "Temperature matters: warmer molecules move faster, so diffusion speeds up."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "In living things",
+   "instruction": "Apply it.",
+   "showsDiagram": false,
+   "question": "A sponge's cells use up oxygen. How does more oxygen get into them from the seawater?",
+   "options": [
+    {
+     "text": "It diffuses in, from the water where there's more oxygen to the cells where there's less",
+     "correct": true,
+     "feedback": "Yes. Sponges get oxygen by diffusion, and carbon dioxide diffuses out the same way."
+    },
+    {
+     "text": "The cells make their own oxygen",
+     "feedback": "Sponge cells use oxygen; they don't make it. It diffuses in from the water."
+    },
+    {
+     "text": "Oxygen moves from low to high",
+     "feedback": "Diffusion goes from high to low: from the water into the cells."
+    },
+    {
+     "text": "They don't need oxygen",
+     "feedback": "Their mitochondria need oxygen, which diffuses in from the water."
+    }
+   ]
+  }
+ ]
+}

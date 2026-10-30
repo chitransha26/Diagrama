@@ -1,0 +1,401 @@
+{
+ "id": "g7-microscope",
+ "title": "The compound light microscope",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS1-1",
+ "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS MS-LS1-1: Conduct an investigation to provide evidence that living things are made of cells; either one cell or many different numbers and types of cells"
+  },
+  {
+   "title": "OpenStax Microbiology, 2.3 Instruments of Microscopy",
+   "url": "https://openstax.org/books/microbiology/pages/2-3-instruments-of-microscopy"
+  },
+  {
+   "title": "OpenStax Biology 2e, 4.1 Studying Cells",
+   "url": "https://openstax.org/books/biology-2e/pages/4-1-studying-cells"
+  }
+ ],
+ "keywords": [
+  "microscope",
+  "compound microscope",
+  "eyepiece",
+  "ocular lens",
+  "objective lens",
+  "stage",
+  "slide",
+  "focus",
+  "magnification",
+  "light",
+  "cells"
+ ],
+ "structures": [
+  {
+   "id": "base",
+   "name": "base",
+   "pen": "bold",
+   "outlines": [
+    {
+     "rect": [
+      250,
+      840,
+      500,
+      90,
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "id": "arm",
+   "name": "arm",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 560 840 L 560 640 C 560 470 580 330 500 250 L 520 210 C 620 300 610 460 610 640 L 610 840"
+    }
+   ]
+  },
+  {
+   "id": "tube",
+   "name": "body tube",
+   "outlines": [
+    {
+     "rect": [
+      420,
+      140,
+      80,
+      330
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eyepiece",
+   "name": "eyepiece",
+   "outlines": [
+    {
+     "rect": [
+      435,
+      70,
+      50,
+      70
+     ]
+    }
+   ]
+  },
+  {
+   "id": "objectives",
+   "name": "objective lenses",
+   "outlines": [
+    {
+     "polygon": [
+      400,
+      470,
+      520,
+      470,
+      505,
+      505,
+      415,
+      505
+     ]
+    },
+    {
+     "rect": [
+      414,
+      505,
+      24,
+      55
+     ]
+    },
+    {
+     "rect": [
+      448,
+      505,
+      24,
+      72
+     ]
+    },
+    {
+     "rect": [
+      482,
+      505,
+      24,
+      55
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stage",
+   "name": "stage",
+   "outlines": [
+    {
+     "rect": [
+      330,
+      600,
+      320,
+      26
+     ]
+    }
+   ]
+  },
+  {
+   "id": "slide",
+   "name": "slide",
+   "outlines": [
+    {
+     "rect": [
+      390,
+      584,
+      150,
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "id": "light",
+   "name": "light",
+   "outlines": [
+    {
+     "circle": [
+      460,
+      770,
+      34
+     ]
+    }
+   ]
+  },
+  {
+   "id": "knobs",
+   "name": "focus knobs",
+   "outlines": [
+    {
+     "circle": [
+      585,
+      700,
+      36
+     ]
+    },
+    {
+     "circle": [
+      585,
+      790,
+      22
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Base",
+   "structure": "base",
+   "instruction": "Trace the heavy base.",
+   "note": {
+    "text": "Carry a microscope with one hand under the base and the other on the arm."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Arm",
+   "structure": "arm",
+   "instruction": "Trace the curved arm.",
+   "note": {
+    "text": "The arm holds the tube and lenses steady above the stage."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Body tube",
+   "structure": "tube",
+   "instruction": "Trace the body tube.",
+   "note": {
+    "text": "Light travels up the tube from the specimen to your eye."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Eyepiece",
+   "structure": "eyepiece",
+   "instruction": "Trace the eyepiece at the top.",
+   "note": {
+    "text": "You look through the eyepiece. Its lens, the ocular lens, usually magnifies 10 times (10×).",
+    "remember": "Eyepiece: usually 10×."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Objective lenses",
+   "structure": "objectives",
+   "instruction": "Trace the turning nosepiece and its three objective lenses.",
+   "note": {
+    "text": "Objective lenses sit close to the specimen. They usually magnify from 4× to 100×. Turn the nosepiece to switch."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Stage",
+   "structure": "stage",
+   "instruction": "Trace the flat stage.",
+   "note": {
+    "text": "The stage holds the slide. Raising or lowering it brings the image into focus."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Slide",
+   "structure": "slide",
+   "instruction": "Trace the glass slide on the stage.",
+   "note": {
+    "text": "The specimen goes on a slide. It must be thin, so light can pass through it."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Light",
+   "structure": "light",
+   "instruction": "Trace the light below the stage.",
+   "note": {
+    "text": "A bulb below the stage shines light up through the specimen and into the lenses.",
+    "remember": "Light passes up through the specimen."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Focus knobs",
+   "structure": "knobs",
+   "instruction": "Trace the big and small focus knobs.",
+   "note": {
+    "text": "Use the big coarse knob with the low-power lenses, and the small fine knob with high power."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Name the parts",
+   "instruction": "Pick the name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      460,
+      100
+     ],
+     "answer": "Eyepiece",
+     "synonyms": [
+      "Ocular lens"
+     ],
+     "role": "Where you look in."
+    },
+    {
+     "n": 2,
+     "at": [
+      460,
+      540
+     ],
+     "answer": "Objective lens",
+     "role": "Lens just above the specimen.",
+     "mistakes": {
+      "Eyepiece": "The eyepiece is at the top, where you look. This lens near the slide is an objective."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      380,
+      613
+     ],
+     "answer": "Stage",
+     "role": "Holds the slide."
+    },
+    {
+     "n": 4,
+     "at": [
+      460,
+      770
+     ],
+     "answer": "Light",
+     "role": "Shines up through the slide."
+    },
+    {
+     "n": 5,
+     "at": [
+      585,
+      700
+     ],
+     "answer": "Coarse focus knob",
+     "role": "Big focusing moves.",
+     "mistakes": {
+      "Fine focus knob": "The fine focus knob is the smaller one. This big knob is for coarse focusing."
+     }
+    }
+   ],
+   "vocabulary": [
+    "Eyepiece",
+    "Ocular lens",
+    "Objective lens",
+    "Stage",
+    "Light",
+    "Coarse focus knob",
+    "Fine focus knob",
+    "Arm"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Magnification",
+   "instruction": "Multiply the two lenses.",
+   "showsDiagram": true,
+   "question": "The eyepiece magnifies 10× and the objective lens 40×. How much bigger does the specimen look?",
+   "options": [
+    {
+     "text": "400 times",
+     "correct": true,
+     "feedback": "Yes. Total magnification = eyepiece × objective: 10 × 40 = 400."
+    },
+    {
+     "text": "50 times",
+     "feedback": "Don't add them. Multiply: 10 × 40 = 400."
+    },
+    {
+     "text": "40 times",
+     "feedback": "The eyepiece magnifies too. Multiply: 10 × 40 = 400."
+    },
+    {
+     "text": "4 times",
+     "feedback": "Multiply the two lenses: 10 × 40 = 400."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Evidence",
+   "instruction": "Use the microscope as a scientist.",
+   "showsDiagram": false,
+   "question": "You look at a thin slice of onion skin, then a drop of pond water with tiny swimming creatures. What do both show?",
+   "options": [
+    {
+     "text": "Living things are made of cells: some of many cells, some of just one",
+     "correct": true,
+     "feedback": "Right. The onion is built of many box-shaped cells; each tiny pond creature may be a single cell."
+    },
+    {
+     "text": "Only plants are made of cells",
+     "feedback": "The pond creatures are made of cells too. All living things are."
+    },
+    {
+     "text": "Cells are big enough to see without a microscope",
+     "feedback": "Most cells are far too small to see with your eyes alone."
+    },
+    {
+     "text": "Water is made of cells",
+     "feedback": "Water isn't alive. The living things in it are made of cells."
+    }
+   ]
+  }
+ ]
+}

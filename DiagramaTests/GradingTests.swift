@@ -340,7 +340,7 @@ struct ContentTests {
     }
 
     @Test func searchFindsSynonyms() {
-        #expect(Catalog.lessons.filter { $0.matches("plasma membrane") }.map(\.id) == ["plant-cell"])
+        #expect(Catalog.lessons.filter { $0.matches("plasma membrane") }.map(\.id).contains("plant-cell"))
         #expect(Catalog.lessons.filter { $0.matches("H2O") }.map(\.id) == ["water-lewis"])
     }
 }

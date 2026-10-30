@@ -1,0 +1,226 @@
+{
+ "id": "g7-mitochondrion",
+ "title": "Mitochondrion (simple)",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS1-2",
+ "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS MS-LS1-2: Develop and use a model to describe the function of a cell as a whole and ways the parts of cells contribute to the function"
+  },
+  {
+   "title": "OpenStax Biology 2e, 4.3 Eukaryotic Cells",
+   "url": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells"
+  },
+  {
+   "title": "OpenStax Biology 2e, 15.4 RNA Processing in Eukaryotes (mitochondrial DNA)",
+   "url": "https://openstax.org/books/biology-2e/pages/15-4-rna-processing-in-eukaryotes"
+  }
+ ],
+ "keywords": [
+  "mitochondrion",
+  "mitochondria",
+  "ATP",
+  "energy",
+  "cellular respiration",
+  "cristae",
+  "matrix",
+  "inner membrane",
+  "outer membrane",
+  "oxygen",
+  "carbon dioxide"
+ ],
+ "structures": [
+  {
+   "id": "outer",
+   "name": "outer membrane",
+   "pen": "bold",
+   "outlines": [
+    {
+     "ellipse": [
+      500,
+      500,
+      410,
+      230
+     ]
+    }
+   ]
+  },
+  {
+   "id": "inner",
+   "name": "inner membrane",
+   "outlines": [
+    {
+     "ellipse": [
+      500,
+      500,
+      360,
+      182
+     ]
+    }
+   ],
+   "details": [
+    {
+     "path": "M 246 371.0 L 246 539.6 A 14 14 0 0 0 274 539.6 L 274 358.3"
+    },
+    {
+     "path": "M 366 668.9 L 366 496.4 A 14 14 0 0 1 394 496.4 L 394 673.9"
+    },
+    {
+     "path": "M 486 318.1 L 486 493.1 A 14 14 0 0 0 514 493.1 L 514 318.1"
+    },
+    {
+     "path": "M 606 673.9 L 606 496.4 A 14 14 0 0 1 634 496.4 L 634 668.9"
+    },
+    {
+     "path": "M 726 358.3 L 726 539.6 A 14 14 0 0 0 754 539.6 L 754 371.0"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Outer membrane",
+   "structure": "outer",
+   "instruction": "Trace the smooth outer membrane.",
+   "note": {
+    "text": "A mitochondrion has two membranes. The outer one is smooth and wraps the whole organelle."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Inner membrane",
+   "structure": "inner",
+   "instruction": "Trace the inner membrane.",
+   "note": {
+    "text": "The inner membrane is where most ATP, the cell's energy-carrying molecule, is made."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Cristae",
+   "structure": "inner",
+   "part": "details",
+   "instruction": "Draw the five folds poking into the middle.",
+   "note": {
+    "text": "The inner membrane folds into cristae. Folding packs far more membrane into a small space, so more ATP can be made.",
+    "remember": "Folds = more surface = more ATP."
+   }
+  },
+  {
+   "type": "identify",
+   "title": "Matrix",
+   "name": "matrix",
+   "structure": "inner",
+   "instruction": "Tap the matrix: the space inside the inner membrane.",
+   "mistakes": {
+    "outer": "That's the gap between the two membranes. The matrix is inside the inner membrane."
+   },
+   "insideDetailsMistake": "That's inside a fold of the membrane. Tap the open space of the matrix.",
+   "note": {
+    "text": "The matrix is the fluid inside the inner membrane. Mitochondria even have their own DNA."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Name the parts",
+   "instruction": "Pick the name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      500,
+      270
+     ],
+     "answer": "Outer membrane",
+     "role": "Smooth outer covering."
+    },
+    {
+     "n": 2,
+     "at": [
+      260,
+      500
+     ],
+     "answer": "Crista",
+     "synonyms": [
+      "Cristae"
+     ],
+     "role": "A fold of the inner membrane.",
+     "mistakes": {
+      "Outer membrane": "The outer membrane is smooth. These folds belong to the inner membrane: cristae."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      440,
+      600
+     ],
+     "answer": "Matrix",
+     "role": "Fluid inside the inner membrane."
+    }
+   ],
+   "vocabulary": [
+    "Outer membrane",
+    "Inner membrane",
+    "Crista",
+    "Matrix",
+    "Nucleus"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "What it does",
+   "instruction": "Think about the whole cell.",
+   "showsDiagram": true,
+   "question": "What does a mitochondrion do for the cell?",
+   "options": [
+    {
+     "text": "It releases energy from food, using oxygen, to make ATP",
+     "correct": true,
+     "feedback": "Yes. This is cellular respiration. It also gives off carbon dioxide, the CO2 you breathe out."
+    },
+    {
+     "text": "It makes food from sunlight",
+     "feedback": "That's photosynthesis, in chloroplasts. Mitochondria release energy from food."
+    },
+    {
+     "text": "It stores the cell's main DNA",
+     "feedback": "The nucleus does that. Mitochondria make ATP."
+    },
+    {
+     "text": "It builds proteins",
+     "feedback": "Ribosomes build proteins. Mitochondria make ATP."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Inputs and outputs",
+   "instruction": "Follow the gases.",
+   "showsDiagram": false,
+   "question": "Which gas do mitochondria use up, and which do they give off?",
+   "options": [
+    {
+     "text": "Use oxygen, give off carbon dioxide",
+     "correct": true,
+     "feedback": "Right. That's why you breathe in oxygen and breathe out carbon dioxide."
+    },
+    {
+     "text": "Use carbon dioxide, give off oxygen",
+     "feedback": "That's photosynthesis in plants. Respiration is the reverse."
+    },
+    {
+     "text": "Use nitrogen, give off oxygen",
+     "feedback": "Nitrogen isn't used. Mitochondria use oxygen and release carbon dioxide."
+    },
+    {
+     "text": "They don't use any gas",
+     "feedback": "They need oxygen to release energy from food, and release carbon dioxide."
+    }
+   ]
+  }
+ ]
+}
