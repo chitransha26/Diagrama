@@ -1,0 +1,511 @@
+{
+ "id": "g6-plate-boundaries",
+ "title": "Plate boundaries",
+ "grade": "6",
+ "subject": "Earth & space",
+ "standard": "MS-ESS2-3",
+ "minutes": 11,
+ "sources": [
+  {
+   "title": "NGSS MS-ESS2-3: Analyze and interpret data on the distribution of fossils and rocks, continental shapes, and seafloor structures to provide evidence of the past plate motions"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 10.4 Plates, Plate Motions, and Plate Boundary Processes",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/10-4-plate-plate-motions-and-plate-boundary-processes/"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 1.5 Fundamentals of Plate Tectonics",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/1-5-fundamentals-of-plate-tectonics/"
+  }
+ ],
+ "keywords": [
+  "plate tectonics",
+  "plate boundaries",
+  "divergent",
+  "convergent",
+  "transform",
+  "subduction",
+  "trench",
+  "mid-ocean ridge",
+  "volcano",
+  "earthquake",
+  "San Andreas Fault",
+  "Andes"
+ ],
+ "printed": [
+  {
+   "text": "1",
+   "at": [
+    40,
+    60
+   ],
+   "size": 40
+  },
+  {
+   "text": "2",
+   "at": [
+    40,
+    380
+   ],
+   "size": 40
+  },
+  {
+   "text": "3",
+   "at": [
+    40,
+    720
+   ],
+   "size": 40
+  },
+  {
+   "text": "Seen from above",
+   "at": [
+    800,
+    712
+   ],
+   "size": 26
+  },
+  {
+   "text": "Not to scale",
+   "at": [
+    150,
+    620
+   ],
+   "size": 26
+  }
+ ],
+ "structures": [
+  {
+   "id": "apart",
+   "name": "plates pulling apart",
+   "outlines": [
+    {
+     "polygon": [
+      80,
+      200,
+      470,
+      150,
+      470,
+      210,
+      80,
+      260
+     ]
+    },
+    {
+     "polygon": [
+      920,
+      200,
+      530,
+      150,
+      530,
+      210,
+      920,
+      260
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      440,
+      100,
+      300,
+      100
+     ]
+    },
+    {
+     "line": [
+      323.0,
+      112.2,
+      300,
+      100,
+      323.0,
+      87.8
+     ]
+    },
+    {
+     "line": [
+      560,
+      100,
+      700,
+      100
+     ]
+    },
+    {
+     "line": [
+      677.0,
+      87.8,
+      700,
+      100,
+      677.0,
+      112.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rise",
+   "name": "rising magma",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      500,
+      310,
+      500,
+      175
+     ]
+    },
+    {
+     "line": [
+      487.8,
+      198.0,
+      500,
+      175,
+      512.2,
+      198.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ocean",
+   "name": "ocean plate",
+   "outlines": [
+    {
+     "polygon": [
+      60,
+      470,
+      540,
+      470,
+      700,
+      620,
+      660,
+      650,
+      520,
+      520,
+      60,
+      520
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      200,
+      430,
+      400,
+      430
+     ]
+    },
+    {
+     "line": [
+      377.0,
+      417.8,
+      400,
+      430,
+      377.0,
+      442.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "land",
+   "name": "continent",
+   "outlines": [
+    {
+     "polygon": [
+      560,
+      488.8,
+      600,
+      450,
+      690,
+      440,
+      725,
+      375,
+      760,
+      440,
+      960,
+      440,
+      960,
+      560,
+      636.0,
+      560
+     ]
+    }
+   ]
+  },
+  {
+   "id": "melt",
+   "name": "magma to the volcano",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      690,
+      600,
+      722,
+      395
+     ]
+    },
+    {
+     "line": [
+      708.8,
+      412.6,
+      722,
+      395,
+      729.2,
+      415.8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "slide",
+   "name": "plates sliding past",
+   "outlines": [
+    {
+     "rect": [
+      80,
+      740,
+      840,
+      200
+     ]
+    },
+    {
+     "line": [
+      80,
+      840,
+      920,
+      840
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      600,
+      790,
+      400,
+      790
+     ]
+    },
+    {
+     "line": [
+      423.0,
+      802.2,
+      400,
+      790,
+      423.0,
+      777.8
+     ]
+    },
+    {
+     "line": [
+      400,
+      890,
+      600,
+      890
+     ]
+    },
+    {
+     "line": [
+      577.0,
+      877.8,
+      600,
+      890,
+      577.0,
+      902.2
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Two plates",
+   "structure": "apart",
+   "instruction": "Trace the two plates in picture 1.",
+   "note": {
+    "text": "Earth's outer shell is broken into about 20 plates that move a few centimetres a year."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Moving apart",
+   "structure": "apart",
+   "part": "details",
+   "instruction": "Draw the arrows showing the plates moving apart.",
+   "note": {
+    "text": "Here the plates spread apart. This is a divergent boundary.",
+    "remember": "Divergent = apart."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Rising magma",
+   "structure": "rise",
+   "instruction": "Draw the arrow of magma rising between them.",
+   "note": {
+    "text": "Hot rock rises and partly melts, making new ocean crust. Most divergent boundaries are mid-ocean ridges."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ocean plate",
+   "structure": "ocean",
+   "instruction": "Trace the ocean plate in picture 2, bending down under the land.",
+   "note": {
+    "text": "Here plates move together: a convergent boundary. The denser ocean plate sinks under the other. This is subduction.",
+    "remember": "Convergent = together."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Moving in",
+   "structure": "ocean",
+   "part": "details",
+   "instruction": "Draw the arrow showing the ocean plate moving.",
+   "note": {
+    "text": "A deep ocean trench forms where the plate bends down."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Continent",
+   "structure": "land",
+   "instruction": "Trace the continent and its volcano.",
+   "note": {
+    "text": "The sinking plate releases water that helps melt rock, building a chain of volcanic mountains like the Andes."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Magma",
+   "structure": "melt",
+   "instruction": "Draw the arrow of magma rising to the volcano.",
+   "note": {
+    "text": "Convergent boundaries have many of Earth's big earthquakes and volcanoes."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sliding plates",
+   "structure": "slide",
+   "instruction": "Trace picture 3, seen from above, and the boundary line across it.",
+   "note": {
+    "text": "Here plates slide past each other: a transform boundary. No crust is made or destroyed.",
+    "remember": "Transform = sliding past."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sliding past",
+   "structure": "slide",
+   "part": "details",
+   "instruction": "Draw the two arrows pointing opposite ways.",
+   "note": {
+    "text": "The San Andreas Fault in California is a transform boundary. Plates sticking and slipping cause earthquakes."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Name the boundaries",
+   "instruction": "Pick the type of boundary in each picture.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      500,
+      200
+     ],
+     "answer": "Divergent",
+     "role": "Plates move apart.",
+     "mistakes": {
+      "Convergent": "The arrows point away from each other, so the plates move apart: divergent."
+     }
+    },
+    {
+     "n": 2,
+     "at": [
+      560,
+      500
+     ],
+     "answer": "Convergent",
+     "role": "Plates move together.",
+     "mistakes": {
+      "Divergent": "One plate sinks under the other here, so they're moving together: convergent."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      500,
+      840
+     ],
+     "answer": "Transform",
+     "role": "Plates slide past."
+    }
+   ],
+   "vocabulary": [
+    "Divergent",
+    "Convergent",
+    "Transform"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Evidence",
+   "instruction": "Use the pictures.",
+   "showsDiagram": true,
+   "question": "Scientists find a deep trench beside a line of volcanoes. What does this tell them?",
+   "options": [
+    {
+     "text": "Two plates are coming together, and one is sinking under the other",
+     "correct": true,
+     "feedback": "Yes. A trench and a chain of volcanoes are evidence of a convergent boundary, like the one in picture 2."
+    },
+    {
+     "text": "The plates are pulling apart",
+     "feedback": "Spreading plates make a ridge with new crust, not a trench beside volcanoes."
+    },
+    {
+     "text": "The plates are sliding past each other",
+     "feedback": "Transform boundaries don't make trenches or volcanic chains."
+    },
+    {
+     "text": "The plates aren't moving",
+     "feedback": "Trenches and volcanoes form because plates move: here, one sinks under another."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "New crust",
+   "instruction": "Compare the three boundaries.",
+   "showsDiagram": true,
+   "question": "At which boundary is new ocean crust made?",
+   "options": [
+    {
+     "text": "Divergent",
+     "correct": true,
+     "feedback": "Right. Magma rises between the separating plates and cools into new crust."
+    },
+    {
+     "text": "Convergent",
+     "feedback": "At convergent boundaries crust sinks and is destroyed. New crust forms where plates pull apart."
+    },
+    {
+     "text": "Transform",
+     "feedback": "Transform boundaries neither make nor destroy crust."
+    },
+    {
+     "text": "All of them",
+     "feedback": "Only divergent boundaries make new crust."
+    }
+   ]
+  }
+ ]
+}

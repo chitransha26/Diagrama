@@ -1,0 +1,387 @@
+{
+ "id": "g6-pangaea",
+ "title": "Pangaea and continental drift",
+ "grade": "6",
+ "subject": "Earth & space",
+ "standard": "MS-ESS2-3",
+ "minutes": 10,
+ "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS MS-ESS2-3: Analyze and interpret data on the distribution of fossils and rocks, continental shapes, and seafloor structures to provide evidence of the past plate motions"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 10.1 Alfred Wegener: The Father of Plate Tectonics",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/10-1-alfred-wegener-the-father-of-plate-tectonics/"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 10.4 Plates, Plate Motions, and Plate Boundary Processes",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/10-4-plate-plate-motions-and-plate-boundary-processes/"
+  }
+ ],
+ "keywords": [
+  "Pangaea",
+  "Pangea",
+  "continental drift",
+  "Wegener",
+  "fossils",
+  "Mesosaurus",
+  "South America",
+  "Africa",
+  "Atlantic Ocean",
+  "mid-ocean ridge",
+  "plate tectonics",
+  "evidence"
+ ],
+ "printed": [
+  {
+   "text": "Today",
+   "at": [
+    500,
+    960
+   ],
+   "size": 30
+  }
+ ],
+ "legend": [
+  {
+   "name": "Mesosaurus fossils",
+   "color": "#5E9E6E",
+   "meaning": "Where the reptile's fossils are found"
+  }
+ ],
+ "structures": [
+  {
+   "id": "sa",
+   "name": "South America",
+   "pen": "bold",
+   "outlines": [
+    {
+     "polygon": [
+      150,
+      260,
+      270,
+      240,
+      370,
+      290,
+      410,
+      330,
+      480,
+      360,
+      490,
+      450,
+      495,
+      560,
+      510,
+      680,
+      540,
+      800,
+      570,
+      860,
+      560,
+      900,
+      500,
+      905,
+      430,
+      830,
+      340,
+      700,
+      250,
+      560,
+      170,
+      430,
+      125,
+      330
+     ]
+    }
+   ]
+  },
+  {
+   "id": "af",
+   "name": "Africa",
+   "pen": "bold",
+   "outlines": [
+    {
+     "polygon": [
+      560,
+      125,
+      480,
+      185,
+      465,
+      245,
+      520,
+      290,
+      560,
+      330,
+      630,
+      360,
+      640,
+      450,
+      645,
+      560,
+      660,
+      680,
+      690,
+      800,
+      720,
+      860,
+      760,
+      880,
+      800,
+      800,
+      860,
+      660,
+      890,
+      540,
+      935,
+      420,
+      970,
+      340,
+      890,
+      290,
+      870,
+      200,
+      820,
+      130,
+      700,
+      110
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fossils",
+   "name": "Mesosaurus fossils",
+   "colorName": "Mesosaurus fossils",
+   "fill": "#5E9E6E",
+   "outlines": [
+    {
+     "polygon": [
+      483.0,
+      560,
+      373.0,
+      560,
+      385.5,
+      660,
+      495.5,
+      660
+     ]
+    },
+    {
+     "polygon": [
+      657.0,
+      560,
+      767.0,
+      560,
+      779.5,
+      660,
+      669.5,
+      660
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ridge",
+   "name": "Mid-Atlantic Ridge",
+   "pen": "fine",
+   "outlines": [
+    {
+     "line": [
+      485.0,
+      330,
+      555.0,
+      360,
+      565.0,
+      450,
+      570.0,
+      560,
+      585.0,
+      680,
+      615.0,
+      800,
+      645.0,
+      860
+     ]
+    }
+   ]
+  },
+  {
+   "id": "drift",
+   "name": "spreading",
+   "outlines": [
+    {
+     "line": [
+      480,
+      70,
+      340,
+      70
+     ]
+    },
+    {
+     "line": [
+      363.0,
+      82.2,
+      340,
+      70,
+      363.0,
+      57.8
+     ]
+    },
+    {
+     "line": [
+      560,
+      70,
+      700,
+      70
+     ]
+    },
+    {
+     "line": [
+      677.0,
+      57.8,
+      700,
+      70,
+      677.0,
+      82.2
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "South America",
+   "structure": "sa",
+   "instruction": "Trace South America.",
+   "note": {
+    "text": "Look at South America's east coast, with its bulge sticking out into the Atlantic."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Africa",
+   "structure": "af",
+   "instruction": "Trace Africa.",
+   "note": {
+    "text": "Africa's west coast curves in where South America's bulges out, like puzzle pieces.",
+    "remember": "The coasts fit together."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Fossils",
+   "structure": "fossils",
+   "instruction": "Trace the two areas where Mesosaurus fossils are found.",
+   "note": {
+    "text": "Mesosaurus was a small freshwater reptile. Its fossils are found in both South America and Africa, but it couldn't cross an ocean."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ridge",
+   "structure": "ridge",
+   "instruction": "Trace the ridge down the middle of the Atlantic.",
+   "note": {
+    "text": "Down the middle of the ocean runs a ridge where plates pull apart and new sea floor forms.",
+    "remember": "The Atlantic is widening."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Moving apart",
+   "structure": "drift",
+   "instruction": "Draw the arrows showing the continents moving apart.",
+   "note": {
+    "text": "The continents still drift apart, about 2.5 cm a year: roughly as fast as your fingernails grow."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "fossils"
+   ],
+   "instruction": "Color the fossil areas."
+  },
+  {
+   "type": "choice",
+   "title": "Explain the fossils",
+   "instruction": "Use the evidence.",
+   "showsDiagram": true,
+   "question": "How did the same freshwater reptile end up on two continents an ocean apart?",
+   "options": [
+    {
+     "text": "The continents were joined when it lived, and later drifted apart",
+     "correct": true,
+     "feedback": "Yes. Alfred Wegener used fossils like these as evidence for a supercontinent, which he named Pangaea (also spelled Pangea)."
+    },
+    {
+     "text": "It swam across the Atlantic",
+     "feedback": "Mesosaurus lived in fresh water and couldn't cross a whole ocean."
+    },
+    {
+     "text": "Two different animals evolved to look the same",
+     "feedback": "The fossils match, and so do the rocks around them. The simpler answer: the land was joined."
+    },
+    {
+     "text": "People carried the fossils",
+     "feedback": "The fossils are buried in rock millions of years old, long before people."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "More evidence",
+   "instruction": "What else would support drift?",
+   "showsDiagram": false,
+   "question": "Which other finding supports the idea that the continents were once joined?",
+   "options": [
+    {
+     "text": "Matching rock layers on the two coasts",
+     "correct": true,
+     "feedback": "Right. Wegener found rock layers in Brazil matching those in Africa, and mountains in Canada matching ones in Britain."
+    },
+    {
+     "text": "Both continents have rivers",
+     "feedback": "Every continent has rivers, so that's no evidence they were joined."
+    },
+    {
+     "text": "Both have hot weather",
+     "feedback": "Weather changes over time and doesn't show the land was joined."
+    },
+    {
+     "text": "Both have people",
+     "feedback": "People came much later. Matching rocks and fossils are the evidence."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "The missing piece",
+   "instruction": "Wegener's idea had a problem.",
+   "showsDiagram": false,
+   "question": "Why did most geologists reject Wegener's idea at first, around 1912?",
+   "options": [
+    {
+     "text": "He couldn't explain what force could move whole continents",
+     "correct": true,
+     "feedback": "Yes. Decades later, sea-floor spreading and plate tectonics supplied the mechanism, and his idea was accepted."
+    },
+    {
+     "text": "The coasts didn't fit at all",
+     "feedback": "The fit was striking. The real problem was that he had no mechanism for the movement."
+    },
+    {
+     "text": "No fossils had been found",
+     "feedback": "He used fossils as evidence. What he lacked was a force to move the continents."
+    },
+    {
+     "text": "Maps hadn't been made yet",
+     "feedback": "Good maps existed. The missing piece was a force to move continents."
+    }
+   ]
+  }
+ ]
+}

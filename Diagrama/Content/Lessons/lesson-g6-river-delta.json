@@ -1,0 +1,308 @@
+{
+ "id": "g6-river-delta",
+ "title": "Erosion and deposition: a river delta",
+ "grade": "6",
+ "subject": "Earth & space",
+ "standard": "MS-ESS2-2",
+ "minutes": 9,
+ "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS MS-ESS2-2: Construct an explanation based on evidence for how geoscience processes have changed Earth's surface at varying time and spatial scales"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 13.3 Stream Erosion and Deposition",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/13-3-stream-erosion-and-deposition/"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 13.4 Stream Types (deltas)",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/13-4-stream-types/"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 3.1 The Rock Cycle",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/3-1-the-rock-cycle/"
+  }
+ ],
+ "keywords": [
+  "erosion",
+  "deposition",
+  "delta",
+  "river",
+  "sediment",
+  "weathering",
+  "mountains",
+  "ocean",
+  "landforms",
+  "time scales"
+ ],
+ "printed": [
+  {
+   "text": "Seen from above",
+   "at": [
+    840,
+    960
+   ],
+   "size": 28
+  }
+ ],
+ "legend": [
+  {
+   "name": "Mountains",
+   "color": "#8A8F98",
+   "meaning": "Bare rock high up"
+  },
+  {
+   "name": "Delta",
+   "color": "#D9C28A",
+   "meaning": "New land built of river sand and mud"
+  },
+  {
+   "name": "Ocean",
+   "color": "#3B7DD8",
+   "meaning": "Still water where the river slows"
+  }
+ ],
+ "structures": [
+  {
+   "id": "mountains",
+   "name": "mountains",
+   "colorName": "mountains",
+   "fill": "#8A8F98",
+   "outlines": [
+    {
+     "polygon": [
+      120,
+      250,
+      240,
+      90,
+      360,
+      250
+     ]
+    },
+    {
+     "polygon": [
+      380,
+      250,
+      500,
+      70,
+      620,
+      250
+     ]
+    },
+    {
+     "polygon": [
+      640,
+      250,
+      760,
+      110,
+      880,
+      250
+     ]
+    }
+   ]
+  },
+  {
+   "id": "river",
+   "name": "river",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 500 262 C 420 330 600 380 520 450 C 450 510 560 570 500 640"
+    }
+   ]
+  },
+  {
+   "id": "carry",
+   "name": "sediment on the move",
+   "outlines": [
+    {
+     "line": [
+      700,
+      300,
+      700,
+      600
+     ]
+    },
+    {
+     "line": [
+      712.2,
+      577.0,
+      700,
+      600,
+      687.8,
+      577.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ocean",
+   "name": "ocean",
+   "colorName": "ocean",
+   "fill": "#3B7DD8",
+   "outlines": [
+    {
+     "path": "M 40 715 L 330 715 C 360 820 640 820 670 715 L 960 715 L 960 940 L 40 940 Z"
+    }
+   ]
+  },
+  {
+   "id": "delta",
+   "name": "delta",
+   "colorName": "delta",
+   "fill": "#D9C28A",
+   "outlines": [
+    {
+     "path": "M 500 640 L 330 715 C 360 820 640 820 670 715 Z"
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      500,
+      640,
+      411.0,
+      781.1
+     ]
+    },
+    {
+     "line": [
+      500,
+      640,
+      500.0,
+      793.8
+     ]
+    },
+    {
+     "line": [
+      500,
+      640,
+      589.0,
+      781.1
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Mountains",
+   "structure": "mountains",
+   "instruction": "Trace the three mountains.",
+   "note": {
+    "text": "Rock high in the mountains is weathered: broken into pieces by ice, water and plant roots."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "River",
+   "structure": "river",
+   "instruction": "Trace the river winding down from the mountains.",
+   "note": {
+    "text": "Fast-flowing water erodes: it picks up rock pieces and carries them away. Faster water can carry bigger pieces.",
+    "remember": "Erosion = carrying rock away."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Carrying sediment",
+   "structure": "carry",
+   "instruction": "Draw the arrow showing sediment moving downstream.",
+   "note": {
+    "text": "Sand and mud travel with the water, sometimes for hundreds of kilometres."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ocean",
+   "structure": "ocean",
+   "instruction": "Trace the coastline and the ocean.",
+   "note": {
+    "text": "Where the river meets still water, it slows down and can't carry its load any more."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Delta",
+   "structure": "delta",
+   "instruction": "Trace the fan of land where the river meets the ocean.",
+   "note": {
+    "text": "The dropped sediment builds new land: a delta. Dropping sediment is called deposition.",
+    "remember": "Deposition = dropping sediment."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Channels",
+   "structure": "delta",
+   "part": "details",
+   "instruction": "Draw the three channels spreading across the delta.",
+   "note": {
+    "text": "The river splits into channels that spread sediment across the delta, making it grow out into the sea."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "mountains",
+    "ocean",
+    "delta"
+   ],
+   "instruction": "Color the mountains, the ocean and the delta."
+  },
+  {
+   "type": "choice",
+   "title": "Explain",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "Why does the river drop its sediment at the coast?",
+   "options": [
+    {
+     "text": "The water slows down when it enters the still ocean",
+     "correct": true,
+     "feedback": "Yes. Slower water can't hold up as much sediment, so the sand and mud settle out and build the delta."
+    },
+    {
+     "text": "The water speeds up at the coast",
+     "feedback": "It's the opposite: the river slows down, and slow water drops its sediment."
+    },
+    {
+     "text": "Salt dissolves the sediment",
+     "feedback": "Salt doesn't dissolve sand. The river slows down and drops it."
+    },
+    {
+     "text": "The mountains pull it back",
+     "feedback": "The sediment settles because the water slows down when it reaches the ocean."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Time scale",
+   "instruction": "How fast do landforms change?",
+   "showsDiagram": false,
+   "question": "Most of the land on the Fraser River delta in Canada formed in the last 10,000 years. What does this show?",
+   "options": [
+    {
+     "text": "Slow, steady deposition can build a lot of new land over thousands of years",
+     "correct": true,
+     "feedback": "Right. A little sediment each year adds up: whole towns now stand on land the river built."
+    },
+    {
+     "text": "Deltas form in a single day",
+     "feedback": "Deltas grow bit by bit. The Fraser delta took about 10,000 years."
+    },
+    {
+     "text": "Rivers only erode, never build",
+     "feedback": "Rivers do both: they erode upstream and deposit downstream, building deltas."
+    },
+    {
+     "text": "Land never changes",
+     "feedback": "This delta shows land changing a lot, slowly, over thousands of years."
+    }
+   ]
+  }
+ ]
+}

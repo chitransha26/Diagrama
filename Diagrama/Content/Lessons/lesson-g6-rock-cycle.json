@@ -1,0 +1,444 @@
+{
+ "id": "g6-rock-cycle",
+ "title": "The rock cycle",
+ "grade": "6",
+ "subject": "Earth & space",
+ "standard": "MS-ESS2-1",
+ "minutes": 10,
+ "sources": [
+  {
+   "title": "NGSS MS-ESS2-1: Develop a model to describe the cycling of Earth's materials and the flow of energy that drives this process"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 3.1 The Rock Cycle",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/3-1-the-rock-cycle/"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 1.5 Fundamentals of Plate Tectonics",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/1-5-fundamentals-of-plate-tectonics/"
+  }
+ ],
+ "keywords": [
+  "rock cycle",
+  "igneous",
+  "sedimentary",
+  "metamorphic",
+  "magma",
+  "sediment",
+  "weathering",
+  "erosion",
+  "melting",
+  "crystallization",
+  "heat",
+  "pressure",
+  "energy"
+ ],
+ "printed": [
+  {
+   "text": "Cooling",
+   "at": [
+    720,
+    255
+   ],
+   "size": 28
+  },
+  {
+   "text": "Weathering,",
+   "at": [
+    880,
+    590
+   ],
+   "size": 26
+  },
+  {
+   "text": "erosion",
+   "at": [
+    880,
+    620
+   ],
+   "size": 26
+  },
+  {
+   "text": "Burial, cementing",
+   "at": [
+    500,
+    860
+   ],
+   "size": 26
+  },
+  {
+   "text": "Heat and",
+   "at": [
+    118,
+    590
+   ],
+   "size": 26
+  },
+  {
+   "text": "pressure",
+   "at": [
+    118,
+    620
+   ],
+   "size": 26
+  },
+  {
+   "text": "Melting",
+   "at": [
+    280,
+    255
+   ],
+   "size": 28
+  }
+ ],
+ "structures": [
+  {
+   "id": "magma",
+   "name": "magma",
+   "outlines": [
+    {
+     "rect": [
+      410.0,
+      140.0,
+      180,
+      100,
+      18
+     ]
+    }
+   ]
+  },
+  {
+   "id": "igneous",
+   "name": "igneous rock",
+   "outlines": [
+    {
+     "rect": [
+      722.0,
+      370.0,
+      180,
+      100,
+      18
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sediment",
+   "name": "sediment",
+   "outlines": [
+    {
+     "rect": [
+      610.0,
+      730.0,
+      180,
+      100,
+      18
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sedimentary",
+   "name": "sedimentary rock",
+   "outlines": [
+    {
+     "rect": [
+      210.0,
+      730.0,
+      180,
+      100,
+      18
+     ]
+    }
+   ]
+  },
+  {
+   "id": "metamorphic",
+   "name": "metamorphic rock",
+   "outlines": [
+    {
+     "rect": [
+      98.0,
+      370.0,
+      180,
+      100,
+      18
+     ]
+    }
+   ]
+  },
+  {
+   "id": "arrows",
+   "name": "cycle arrows",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      595.0,
+      260.0,
+      717.0,
+      350.0
+     ]
+    },
+    {
+     "line": [
+      707.5,
+      330.2,
+      717.0,
+      350.0,
+      695.2,
+      346.8
+     ]
+    },
+    {
+     "line": [
+      776.9,
+      532.7,
+      735.1,
+      667.3
+     ]
+    },
+    {
+     "line": [
+      750.7,
+      651.8,
+      735.1,
+      667.3,
+      731.0,
+      645.7
+     ]
+    },
+    {
+     "line": [
+      582.0,
+      780.0,
+      418.0,
+      780.0
+     ]
+    },
+    {
+     "line": [
+      437.4,
+      790.3,
+      418.0,
+      780.0,
+      437.4,
+      769.7
+     ]
+    },
+    {
+     "line": [
+      264.9,
+      667.3,
+      223.1,
+      532.7
+     ]
+    },
+    {
+     "line": [
+      219.0,
+      554.3,
+      223.1,
+      532.7,
+      238.7,
+      548.2
+     ]
+    },
+    {
+     "line": [
+      283.0,
+      350.0,
+      405.0,
+      260.0
+     ]
+    },
+    {
+     "line": [
+      383.2,
+      263.2,
+      405.0,
+      260.0,
+      395.5,
+      279.8
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Magma",
+   "structure": "magma",
+   "instruction": "Trace the box at the top.",
+   "note": {
+    "text": "Magma is rock so hot it's completely melted: about 800 to 1300 °C.",
+    "remember": "Magma = melted rock."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Igneous rock",
+   "structure": "igneous",
+   "instruction": "Trace the box on the right.",
+   "note": {
+    "text": "When magma cools and crystallizes, it becomes igneous rock: slowly underground, or fast if it erupts as lava."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sediment",
+   "structure": "sediment",
+   "instruction": "Trace the box at the bottom right.",
+   "note": {
+    "text": "Rock lifted to the surface is weathered into bits, which water, ice and wind carry away and drop as sediment."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sedimentary rock",
+   "structure": "sedimentary",
+   "instruction": "Trace the box at the bottom left.",
+   "note": {
+    "text": "Buried under more sediment, the bits are squeezed and cemented together into sedimentary rock."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Metamorphic rock",
+   "structure": "metamorphic",
+   "instruction": "Trace the box on the left.",
+   "note": {
+    "text": "Rock buried deeper is heated and squeezed until it changes, without melting, into metamorphic rock."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "The cycle",
+   "structure": "arrows",
+   "instruction": "Draw the five arrows around the cycle.",
+   "note": {
+    "text": "If metamorphic rock gets hot enough, it melts back into magma, and the cycle goes on for millions of years.",
+    "remember": "Rock is always being recycled."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Name the stages",
+   "instruction": "Pick the name for each numbered box.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      500,
+      190
+     ],
+     "answer": "Magma",
+     "role": "Melted rock."
+    },
+    {
+     "n": 2,
+     "at": [
+      812,
+      420
+     ],
+     "answer": "Igneous rock",
+     "role": "Formed when magma cools.",
+     "mistakes": {
+      "Metamorphic rock": "Metamorphic rock forms from heat and pressure. Rock made by cooling magma is igneous."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      700,
+      780
+     ],
+     "answer": "Sediment",
+     "role": "Bits of weathered rock."
+    },
+    {
+     "n": 4,
+     "at": [
+      300,
+      780
+     ],
+     "answer": "Sedimentary rock",
+     "role": "Sediment cemented together.",
+     "mistakes": {
+      "Igneous rock": "This rock forms from buried, cemented sediment, so it's sedimentary."
+     }
+    },
+    {
+     "n": 5,
+     "at": [
+      188,
+      420
+     ],
+     "answer": "Metamorphic rock",
+     "role": "Changed by heat and pressure."
+    }
+   ],
+   "vocabulary": [
+    "Magma",
+    "Igneous rock",
+    "Sediment",
+    "Sedimentary rock",
+    "Metamorphic rock",
+    "Lava"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Energy",
+   "instruction": "Think about what powers each part.",
+   "showsDiagram": true,
+   "question": "What two energy sources drive the rock cycle?",
+   "options": [
+    {
+     "text": "Earth's internal heat, and the sun powering water, ice and wind",
+     "correct": true,
+     "feedback": "Yes. Inner heat melts and changes rock deep down; the sun drives the weathering and erosion at the surface."
+    },
+    {
+     "text": "Only the sun",
+     "feedback": "The sun drives weathering and erosion, but melting and metamorphism come from Earth's internal heat."
+    },
+    {
+     "text": "Only Earth's internal heat",
+     "feedback": "Internal heat works deep down. Weathering by water and wind is powered by the sun."
+    },
+    {
+     "text": "The moon's gravity",
+     "feedback": "The two drivers are Earth's internal heat and the sun's energy at the surface."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Shortcuts",
+   "instruction": "Does every rock go all the way around?",
+   "showsDiagram": true,
+   "question": "Sedimentary rock is pushed up into a mountain. What can happen to it next?",
+   "options": [
+    {
+     "text": "It's weathered into new sediment, skipping the rest of the loop",
+     "correct": true,
+     "feedback": "Right. Rocks don't have to make a full loop: any rock at the surface can be weathered into sediment."
+    },
+    {
+     "text": "It must become metamorphic rock first",
+     "feedback": "Not always. Uplifted rock at the surface can be weathered straight back into sediment."
+    },
+    {
+     "text": "Nothing: rocks never change once formed",
+     "feedback": "Rocks change all the time, just very slowly."
+    },
+    {
+     "text": "It turns straight into magma at the surface",
+     "feedback": "Surface rock isn't hot enough to melt. It gets weathered."
+    }
+   ]
+  }
+ ]
+}

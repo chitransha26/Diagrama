@@ -1,0 +1,346 @@
+{
+ "id": "g6-rock-layers",
+ "title": "Reading rock layers and geologic history",
+ "grade": "6",
+ "subject": "Earth & space",
+ "standard": "MS-ESS1-4",
+ "minutes": 10,
+ "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS MS-ESS1-4: Construct a scientific explanation based on evidence from rock strata for how the geologic time scale is used to organize Earth's 4.6-billion-year-old history"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 8.2 Relative Dating Methods",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/8-2-relative-dating-methods/"
+  },
+  {
+   "title": "Earle, Physical Geology 2nd ed. (BCcampus), 3.1 The Rock Cycle",
+   "url": "https://opentextbc.ca/physicalgeology2ed/chapter/3-1-the-rock-cycle/"
+  }
+ ],
+ "keywords": [
+  "rock layers",
+  "strata",
+  "superposition",
+  "cross-cutting",
+  "relative age",
+  "fossils",
+  "dike",
+  "igneous",
+  "sedimentary",
+  "geologic time scale",
+  "history"
+ ],
+ "printed": [
+  {
+   "text": "A",
+   "at": [
+    60,
+    265
+   ],
+   "size": 36
+  },
+  {
+   "text": "B",
+   "at": [
+    60,
+    405
+   ],
+   "size": 36
+  },
+  {
+   "text": "C",
+   "at": [
+    60,
+    555
+   ],
+   "size": 36
+  },
+  {
+   "text": "D",
+   "at": [
+    60,
+    715
+   ],
+   "size": 36
+  }
+ ],
+ "legend": [
+  {
+   "name": "Sandstone",
+   "color": "#D9C28A",
+   "meaning": "Sand grains cemented together"
+  },
+  {
+   "name": "Shale",
+   "color": "#8C8F94",
+   "meaning": "Hardened mud"
+  },
+  {
+   "name": "Limestone",
+   "color": "#D8D4C8",
+   "meaning": "Often made from shells"
+  },
+  {
+   "name": "Dike",
+   "color": "#3E3B3A",
+   "meaning": "Dark igneous rock that cooled from magma"
+  }
+ ],
+ "structures": [
+  {
+   "id": "D",
+   "name": "layer D",
+   "colorName": "sandstone (layer D)",
+   "fill": "#D9C28A",
+   "outlines": [
+    {
+     "rect": [
+      100,
+      630,
+      440,
+      170
+     ]
+    },
+    {
+     "rect": [
+      600,
+      630,
+      300,
+      170
+     ]
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "name": "layer C",
+   "colorName": "limestone (layer C)",
+   "fill": "#D8D4C8",
+   "outlines": [
+    {
+     "rect": [
+      100,
+      480,
+      440,
+      150
+     ]
+    },
+    {
+     "rect": [
+      600,
+      480,
+      300,
+      150
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "name": "layer B",
+   "colorName": "shale (layer B)",
+   "fill": "#8C8F94",
+   "outlines": [
+    {
+     "rect": [
+      100,
+      330,
+      440,
+      150
+     ]
+    },
+    {
+     "rect": [
+      600,
+      330,
+      300,
+      150
+     ]
+    }
+   ]
+  },
+  {
+   "id": "A",
+   "name": "top layer",
+   "colorName": "sandstone (top layer)",
+   "fill": "#D9C28A",
+   "outlines": [
+    {
+     "rect": [
+      100,
+      200,
+      800,
+      130
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dike",
+   "name": "dike",
+   "colorName": "dike",
+   "fill": "#3E3B3A",
+   "pen": "bold",
+   "outlines": [
+    {
+     "rect": [
+      540,
+      330,
+      60,
+      470
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fossils",
+   "name": "shell fossils",
+   "outlines": [
+    {
+     "path": "M 234 568 C 238 536 282 536 286 568 L 260 576 Z"
+    },
+    {
+     "path": "M 734 568 C 738 536 782 536 786 568 L 760 576 Z"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Layer D",
+   "structure": "D",
+   "instruction": "Trace the bottom layer, on both sides of the gap.",
+   "note": {
+    "text": "Sediment settles in flat layers, one on top of another. The bottom layer was laid down first.",
+    "remember": "Bottom layer = oldest."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Layer C",
+   "structure": "C",
+   "instruction": "Trace layer C, on both sides.",
+   "note": {
+    "text": "Layer C settled on top of D, so it's younger. This is the principle of superposition."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Layer B",
+   "structure": "B",
+   "instruction": "Trace layer B, on both sides.",
+   "note": {
+    "text": "Each layer records a time. A change in rock type means the place changed, like a sea becoming a muddy shore."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Dike",
+   "structure": "dike",
+   "instruction": "Trace the dark band cutting up through the layers.",
+   "note": {
+    "text": "A dike is magma that forced its way up through cracks and cooled. It cuts layers B, C and D, so it's younger than them.",
+    "remember": "What cuts across is younger."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Layer A",
+   "structure": "A",
+   "instruction": "Trace the top layer.",
+   "note": {
+    "text": "Layer A lies over the top of the dike without being cut, so it formed after the dike."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Fossils",
+   "structure": "fossils",
+   "instruction": "Trace the two shell fossils in layer C.",
+   "note": {
+    "text": "Fossils are dated by the layer they're in. These shells lived while layer C was forming, before B and A."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "D",
+    "C",
+    "B",
+    "dike",
+    "A"
+   ],
+   "instruction": "Color each rock."
+  },
+  {
+   "type": "order",
+   "title": "Tell the story",
+   "instruction": "Tap the events from oldest to youngest.",
+   "items": [
+    "Layer D is deposited",
+    "Layer C is deposited, with shells",
+    "Layer B is deposited",
+    "Magma cuts through as a dike",
+    "Layer A is deposited on top"
+   ],
+   "why": "Lower layers are older (superposition), and the dike is younger than the layers it cuts (cross-cutting).",
+   "hint": "Start at the bottom."
+  },
+  {
+   "type": "choice",
+   "title": "Evidence",
+   "instruction": "Use the layers.",
+   "showsDiagram": true,
+   "question": "How do we know the dike is older than layer A?",
+   "options": [
+    {
+     "text": "The dike stops at layer A instead of cutting through it",
+     "correct": true,
+     "feedback": "Yes. Layer A was laid on top after the dike cooled. If the dike were younger, it would cut A too."
+    },
+    {
+     "text": "The dike is darker",
+     "feedback": "Color doesn't show age. What matters is which rock cuts across which."
+    },
+    {
+     "text": "The dike is lower down",
+     "feedback": "The dike reaches up through B. What shows it's older than A is that it doesn't cut A."
+    },
+    {
+     "text": "We can't tell",
+     "feedback": "We can: the dike ends under layer A, so A formed after it."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Time scale",
+   "instruction": "Think about Earth's whole history.",
+   "showsDiagram": false,
+   "question": "How do geologists build the geologic time scale of Earth's 4.6-billion-year history?",
+   "options": [
+    {
+     "text": "By matching the order of rock layers and the fossils in them from place to place",
+     "correct": true,
+     "feedback": "Right. Layers and fossils show which events came first, so Earth's history can be put in order and divided into eras."
+    },
+    {
+     "text": "By counting every year since Earth formed",
+     "feedback": "No one could count that. The order of layers and fossils puts events in sequence."
+    },
+    {
+     "text": "From written records",
+     "feedback": "People have written for only a few thousand years. Rocks record far older events."
+    },
+    {
+     "text": "By measuring how tall mountains are",
+     "feedback": "Height doesn't give an order of events. Layers and fossils do."
+    }
+   ]
+  }
+ ]
+}
