@@ -1,0 +1,403 @@
+{
+ "id": "g7-cellular-respiration",
+ "title": "Cellular respiration overview",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS1-7",
+ "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS MS-LS1-7: Develop a model to describe how food is rearranged through chemical reactions forming new molecules that support growth and/or release energy as this matter moves through an organism"
+  },
+  {
+   "title": "OpenStax Biology 2e, 6.1 Energy and Metabolism",
+   "url": "https://openstax.org/books/biology-2e/pages/6-1-energy-and-metabolism"
+  },
+  {
+   "title": "OpenStax Biology 2e, 4.3 Eukaryotic Cells (mitochondria)",
+   "url": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells"
+  }
+ ],
+ "keywords": [
+  "cellular respiration",
+  "mitochondria",
+  "mitochondrion",
+  "glucose",
+  "sugar",
+  "oxygen",
+  "carbon dioxide",
+  "water",
+  "energy",
+  "ATP",
+  "cell",
+  "breathing"
+ ],
+ "printed": [
+  {
+   "text": "A body cell",
+   "at": [
+    500,
+    120
+   ],
+   "size": 26
+  }
+ ],
+ "structures": [
+  {
+   "id": "cell",
+   "name": "cell",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      500,
+      500,
+      330
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mito",
+   "name": "mitochondrion",
+   "pen": "bold",
+   "outlines": [
+    {
+     "ellipse": [
+      500,
+      500,
+      180,
+      100
+     ]
+    }
+   ],
+   "details": [
+    {
+     "path": "M 360 500 C 380 440 400 440 410 500 C 420 560 440 560 450 500 C 460 440 480 440 490 500 C 500 560 520 560 530 500 C 540 440 560 440 570 500 C 580 560 600 560 610 500 C 620 440 640 440 640 500"
+    }
+   ]
+  },
+  {
+   "id": "glucose",
+   "name": "sugar in",
+   "outlines": [
+    {
+     "line": [
+      90,
+      200,
+      330,
+      420
+     ]
+    },
+    {
+     "line": [
+      322.0,
+      397.4,
+      330,
+      420,
+      306.8,
+      414.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "oxygen",
+   "name": "oxygen in",
+   "outlines": [
+    {
+     "line": [
+      40,
+      600,
+      300,
+      560
+     ]
+    },
+    {
+     "line": [
+      277.3,
+      552.1,
+      300,
+      560,
+      280.8,
+      574.4
+     ]
+    }
+   ]
+  },
+  {
+   "id": "co2",
+   "name": "carbon dioxide out",
+   "outlines": [
+    {
+     "line": [
+      690,
+      420,
+      950,
+      300
+     ]
+    },
+    {
+     "line": [
+      926.0,
+      298.6,
+      950,
+      300,
+      935.5,
+      319.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "water",
+   "name": "water out",
+   "outlines": [
+    {
+     "line": [
+      690,
+      590,
+      940,
+      720
+     ]
+    },
+    {
+     "line": [
+      926.4,
+      700.2,
+      940,
+      720,
+      916.0,
+      720.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "energy",
+   "name": "energy",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      500,
+      620,
+      500,
+      960
+     ]
+    },
+    {
+     "line": [
+      516.0,
+      930.0,
+      500,
+      960,
+      484.0,
+      930.0
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Cell",
+   "structure": "cell",
+   "instruction": "Trace the body cell.",
+   "note": {
+    "text": "Every cell needs a steady supply of energy to stay alive and do its job."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Mitochondrion",
+   "structure": "mito",
+   "instruction": "Trace the mitochondrion in the middle.",
+   "note": {
+    "text": "Mitochondria are where most of the cell's energy is released from food.",
+    "remember": "Mitochondria: release energy."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Folds",
+   "structure": "mito",
+   "part": "details",
+   "instruction": "Draw the folded inner membrane.",
+   "note": {
+    "text": "The folds give lots of surface for the reactions."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sugar in",
+   "structure": "glucose",
+   "instruction": "Draw the arrow of sugar coming in.",
+   "note": {
+    "text": "Sugar, called glucose, comes from digested food and is carried to the cell in the blood."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Oxygen in",
+   "structure": "oxygen",
+   "instruction": "Draw the arrow of oxygen coming in.",
+   "note": {
+    "text": "Oxygen comes from the lungs, also carried in the blood."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Carbon dioxide out",
+   "structure": "co2",
+   "instruction": "Draw the arrow of carbon dioxide leaving.",
+   "note": {
+    "text": "The sugar's atoms are rearranged into carbon dioxide and water. The carbon dioxide you breathe out comes from this.",
+    "remember": "Sugar + oxygen → carbon dioxide + water."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Water out",
+   "structure": "water",
+   "instruction": "Draw the arrow of water leaving.",
+   "note": {
+    "text": "Water is made too. No atoms are lost: they're only rearranged into new molecules."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Energy",
+   "structure": "energy",
+   "instruction": "Draw the big arrow of energy released.",
+   "note": {
+    "text": "The energy stored in the sugar is released, mostly as ATP, the cell's energy carrier, and some as heat.",
+    "remember": "Energy out: ATP."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Inputs and outputs",
+   "instruction": "Pick what each numbered arrow carries.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      210,
+      310
+     ],
+     "answer": "Sugar",
+     "synonyms": [
+      "Glucose"
+     ],
+     "role": "Input from food."
+    },
+    {
+     "n": 2,
+     "at": [
+      170,
+      580
+     ],
+     "answer": "Oxygen",
+     "role": "Input from the lungs.",
+     "mistakes": {
+      "Carbon dioxide": "Carbon dioxide leaves the cell. Oxygen comes in."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      820,
+      360
+     ],
+     "answer": "Carbon dioxide",
+     "role": "Breathed out."
+    },
+    {
+     "n": 4,
+     "at": [
+      815,
+      655
+     ],
+     "answer": "Water",
+     "role": "Also made."
+    },
+    {
+     "n": 5,
+     "at": [
+      500,
+      790
+     ],
+     "answer": "Energy",
+     "synonyms": [
+      "ATP"
+     ],
+     "role": "What the cell needs."
+    }
+   ],
+   "vocabulary": [
+    "Sugar",
+    "Glucose",
+    "Oxygen",
+    "Carbon dioxide",
+    "Water",
+    "Energy",
+    "ATP",
+    "Sunlight"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Compare",
+   "instruction": "Think about photosynthesis.",
+   "showsDiagram": true,
+   "question": "How is cellular respiration related to photosynthesis?",
+   "options": [
+    {
+     "text": "It runs the other way: photosynthesis makes sugar and oxygen, respiration uses them",
+     "correct": true,
+     "feedback": "Yes. Photosynthesis stores energy in sugar; respiration releases it. Their inputs and outputs swap."
+    },
+    {
+     "text": "They're the same process",
+     "feedback": "Look at the arrows. Respiration's inputs are photosynthesis's outputs."
+    },
+    {
+     "text": "Only plants do respiration",
+     "feedback": "All living cells do respiration, including plant cells and yours."
+    },
+    {
+     "text": "Respiration makes sugar",
+     "feedback": "It breaks sugar down. Photosynthesis makes sugar."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Exercise",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "When you run, why do you breathe faster?",
+   "options": [
+    {
+     "text": "Muscle cells need more energy, so they use more oxygen and make more carbon dioxide",
+     "correct": true,
+     "feedback": "Right. Faster breathing brings in oxygen and removes carbon dioxide from working muscle cells."
+    },
+    {
+     "text": "To cool the lungs",
+     "feedback": "Breathing faster supplies oxygen for respiration in the muscles."
+    },
+    {
+     "text": "Muscles make oxygen",
+     "feedback": "Muscles use oxygen. Respiration in muscle cells needs more of it."
+    },
+    {
+     "text": "To get more sugar",
+     "feedback": "Sugar comes from food in the blood. Breathing brings in oxygen."
+    }
+   ]
+  }
+ ]
+}

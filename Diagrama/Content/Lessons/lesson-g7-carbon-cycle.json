@@ -1,0 +1,613 @@
+{
+ "id": "g7-carbon-cycle",
+ "title": "The carbon cycle",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS2-3",
+ "minutes": 10,
+ "sources": [
+  {
+   "title": "NGSS MS-LS2-3: Develop a model to describe the cycling of matter and flow of energy among living and nonliving parts of an ecosystem"
+  },
+  {
+   "title": "OpenStax Biology 2e, 46.3 Biogeochemical Cycles",
+   "url": "https://openstax.org/books/biology-2e/pages/46-3-biogeochemical-cycles"
+  },
+  {
+   "title": "OpenStax Biology 2e, 22.3 Prokaryotic Metabolism",
+   "url": "https://openstax.org/books/biology-2e/pages/22-3-prokaryotic-metabolism"
+  },
+  {
+   "title": "OpenStax Biology 2e, 46.1 Ecology of Ecosystems (fossil fuels)",
+   "url": "https://openstax.org/books/biology-2e/pages/46-1-ecology-of-ecosystems"
+  }
+ ],
+ "keywords": [
+  "carbon cycle",
+  "carbon dioxide",
+  "photosynthesis",
+  "respiration",
+  "decomposers",
+  "fossil fuels",
+  "burning",
+  "combustion",
+  "ocean",
+  "matter",
+  "cycling"
+ ],
+ "printed": [
+  {
+   "text": "Carbon dioxide in the air",
+   "at": [
+    500,
+    70
+   ],
+   "size": 30
+  },
+  {
+   "text": "Fossil fuels",
+   "at": [
+    560,
+    940
+   ],
+   "size": 24
+  },
+  {
+   "text": "Ocean",
+   "at": [
+    880,
+    760
+   ],
+   "size": 26
+  }
+ ],
+ "structures": [
+  {
+   "id": "tree",
+   "name": "tree",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      190,
+      390,
+      100
+     ]
+    },
+    {
+     "rect": [
+      170,
+      490,
+      40,
+      150,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rabbit",
+   "name": "rabbit",
+   "outlines": [
+    {
+     "ellipse": [
+      410,
+      605,
+      60,
+      34
+     ]
+    },
+    {
+     "circle": [
+      478,
+      572,
+      24
+     ]
+    },
+    {
+     "line": [
+      470,
+      550,
+      462,
+      500
+     ]
+    },
+    {
+     "line": [
+      488,
+      550,
+      498,
+      502
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mushroom",
+   "name": "decomposers",
+   "outlines": [
+    {
+     "path": "M 540 590 C 545 545 615 545 620 590 Z"
+    },
+    {
+     "rect": [
+      568,
+      592,
+      24,
+      46,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "factory",
+   "name": "power plant",
+   "pen": "bold",
+   "outlines": [
+    {
+     "rect": [
+      650,
+      470,
+      60,
+      170,
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ground",
+   "name": "ground and fossil fuels",
+   "pen": "fine",
+   "outlines": [
+    {
+     "line": [
+      40,
+      640,
+      740,
+      640
+     ]
+    },
+    {
+     "rect": [
+      410,
+      830,
+      300,
+      70,
+      30
+     ]
+    },
+    {
+     "line": [
+      680,
+      830,
+      680,
+      650
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ocean",
+   "name": "ocean",
+   "pen": "fine",
+   "outlines": [
+    {
+     "path": "M 770 660 C 800 640 830 640 860 660 C 890 680 920 680 960 660"
+    }
+   ]
+  },
+  {
+   "id": "photo",
+   "name": "photosynthesis",
+   "outlines": [
+    {
+     "line": [
+      90,
+      140,
+      120,
+      300
+     ]
+    },
+    {
+     "line": [
+      127.2,
+      277.1,
+      120,
+      300,
+      105.0,
+      281.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "resp",
+   "name": "respiration",
+   "outlines": [
+    {
+     "line": [
+      260,
+      300,
+      300,
+      140
+     ]
+    },
+    {
+     "line": [
+      283.9,
+      157.8,
+      300,
+      140,
+      305.8,
+      163.3
+     ]
+    },
+    {
+     "line": [
+      440,
+      520,
+      460,
+      140
+     ]
+    },
+    {
+     "line": [
+      447.6,
+      160.6,
+      460,
+      140,
+      470.1,
+      161.8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eat",
+   "name": "eating",
+   "outlines": [
+    {
+     "line": [
+      290,
+      430,
+      380,
+      545
+     ]
+    },
+    {
+     "line": [
+      375.8,
+      521.4,
+      380,
+      545,
+      358.1,
+      535.3
+     ]
+    }
+   ]
+  },
+  {
+   "id": "decay",
+   "name": "decomposition",
+   "outlines": [
+    {
+     "line": [
+      580,
+      530,
+      590,
+      140
+     ]
+    },
+    {
+     "line": [
+      578.2,
+      160.9,
+      590,
+      140,
+      600.7,
+      161.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "burn",
+   "name": "burning fossil fuels",
+   "outlines": [
+    {
+     "line": [
+      680,
+      450,
+      700,
+      140
+     ]
+    },
+    {
+     "line": [
+      687.4,
+      160.4,
+      700,
+      140,
+      709.9,
+      161.9
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sea",
+   "name": "ocean exchange",
+   "outlines": [
+    {
+     "line": [
+      830,
+      140,
+      830,
+      620
+     ]
+    },
+    {
+     "line": [
+      841.3,
+      598.8,
+      830,
+      620,
+      818.7,
+      598.8
+     ]
+    },
+    {
+     "line": [
+      910,
+      620,
+      910,
+      140
+     ]
+    },
+    {
+     "line": [
+      898.7,
+      161.2,
+      910,
+      140,
+      921.3,
+      161.2
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Tree",
+   "structure": "tree",
+   "instruction": "Trace the tree.",
+   "note": {
+    "text": "Carbon is in every living thing. Plants are where it enters the living world."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Photosynthesis",
+   "structure": "photo",
+   "instruction": "Draw the arrow from the air into the tree.",
+   "note": {
+    "text": "Plants take carbon dioxide from the air and build it into sugar by photosynthesis.",
+    "remember": "Photosynthesis: carbon out of the air."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Rabbit",
+   "structure": "rabbit",
+   "instruction": "Trace the rabbit.",
+   "note": {
+    "text": "Animals get their carbon by eating."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Eating",
+   "structure": "eat",
+   "instruction": "Draw the arrow from the tree to the rabbit.",
+   "note": {
+    "text": "When the rabbit eats plants, carbon in the plant's sugar and other molecules becomes part of the rabbit."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Respiration",
+   "structure": "resp",
+   "instruction": "Draw the two arrows back up to the air.",
+   "note": {
+    "text": "Plants and animals both do respiration, breaking down sugar and releasing carbon dioxide back to the air.",
+    "remember": "Respiration: carbon back into the air."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Decomposers",
+   "structure": "mushroom",
+   "instruction": "Trace the mushroom.",
+   "note": {
+    "text": "Fungi and bacteria are decomposers. They break down dead plants and animals."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Decomposition",
+   "structure": "decay",
+   "instruction": "Draw the arrow from the decomposers to the air.",
+   "note": {
+    "text": "Decomposers release carbon dioxide as they feed, returning the carbon in dead things to the air."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Underground",
+   "structure": "ground",
+   "instruction": "Draw the ground, the fossil fuel layer and the pipe.",
+   "note": {
+    "text": "Coal, oil and gas formed from living things buried long ago. They hold carbon locked away for millions of years."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Power plant",
+   "structure": "factory",
+   "instruction": "Trace the power plant's chimney.",
+   "note": {
+    "text": "People burn fossil fuels in power plants, factories and cars."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Burning",
+   "structure": "burn",
+   "instruction": "Draw the arrow from the chimney to the air.",
+   "note": {
+    "text": "Burning releases that carbon as CO2 faster than plants can take it up, so the CO2 in the air is rising."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ocean",
+   "structure": "ocean",
+   "instruction": "Draw the ocean's surface.",
+   "note": {
+    "text": "The oceans are a huge store of carbon."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Ocean exchange",
+   "structure": "sea",
+   "instruction": "Draw the arrows between the air and the ocean.",
+   "note": {
+    "text": "Carbon dioxide passes back and forth between the air and the ocean's water."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Name the processes",
+   "instruction": "Pick the process for each numbered arrow.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      105,
+      220
+     ],
+     "answer": "Photosynthesis",
+     "role": "Takes CO2 out of the air.",
+     "mistakes": {
+      "Respiration": "Respiration puts CO2 into the air. This arrow takes it out: photosynthesis."
+     }
+    },
+    {
+     "n": 2,
+     "at": [
+      280,
+      220
+     ],
+     "answer": "Respiration",
+     "role": "Puts CO2 back into the air."
+    },
+    {
+     "n": 3,
+     "at": [
+      335,
+      488
+     ],
+     "answer": "Eating",
+     "role": "Passes carbon along a food chain."
+    },
+    {
+     "n": 4,
+     "at": [
+      585,
+      335
+     ],
+     "answer": "Decomposition",
+     "role": "Breaks down dead things."
+    },
+    {
+     "n": 5,
+     "at": [
+      690,
+      295
+     ],
+     "answer": "Burning fossil fuels",
+     "synonyms": [
+      "Combustion"
+     ],
+     "role": "Releases ancient carbon."
+    }
+   ],
+   "vocabulary": [
+    "Photosynthesis",
+    "Respiration",
+    "Eating",
+    "Decomposition",
+    "Burning fossil fuels",
+    "Combustion",
+    "Evaporation"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Matter is conserved",
+   "instruction": "Follow one carbon atom.",
+   "showsDiagram": true,
+   "question": "A carbon atom is in the air. Which path could bring it back to the air?",
+   "options": [
+    {
+     "text": "Tree, then rabbit, then respiration",
+     "correct": true,
+     "feedback": "Yes. The atom is never destroyed: it moves between living and nonliving parts of the ecosystem."
+    },
+    {
+     "text": "It's used up by the tree and gone forever",
+     "feedback": "Atoms aren't used up. The carbon cycles back to the air."
+    },
+    {
+     "text": "Only by burning fossil fuels",
+     "feedback": "That's one way, but respiration and decomposition return carbon all the time."
+    },
+    {
+     "text": "It can't come back",
+     "feedback": "Respiration, decomposition and burning all return carbon to the air."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Predict",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "A large forest is cut down and burned. What happens to the carbon dioxide in the air?",
+   "options": [
+    {
+     "text": "It goes up: burning adds CO2, and fewer trees take it out",
+     "correct": true,
+     "feedback": "Right. Both arrows change: more carbon goes in and less comes out."
+    },
+    {
+     "text": "It goes down",
+     "feedback": "Fewer trees means less photosynthesis, and burning adds CO2. So it rises."
+    },
+    {
+     "text": "Nothing changes",
+     "feedback": "Look at the arrows. Burning adds CO2 and fewer trees take it out."
+    },
+    {
+     "text": "The ocean stops working",
+     "feedback": "The ocean still exchanges CO2. The air's CO2 still rises."
+    }
+   ]
+  }
+ ]
+}

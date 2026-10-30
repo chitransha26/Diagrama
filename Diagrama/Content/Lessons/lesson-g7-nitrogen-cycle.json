@@ -1,0 +1,655 @@
+{
+ "id": "g7-nitrogen-cycle",
+ "title": "The nitrogen cycle",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS2-3",
+ "minutes": 10,
+ "sources": [
+  {
+   "title": "NGSS MS-LS2-3: Develop a model to describe the cycling of matter and flow of energy among living and nonliving parts of an ecosystem"
+  },
+  {
+   "title": "OpenStax Biology 2e, 46.3 Biogeochemical Cycles",
+   "url": "https://openstax.org/books/biology-2e/pages/46-3-biogeochemical-cycles"
+  },
+  {
+   "title": "OpenStax Biology 2e, 22.3 Prokaryotic Metabolism",
+   "url": "https://openstax.org/books/biology-2e/pages/22-3-prokaryotic-metabolism"
+  },
+  {
+   "title": "OpenStax Biology 2e, 22.5 Beneficial Prokaryotes (lightning fixes nitrogen)",
+   "url": "https://openstax.org/books/biology-2e/pages/22-5-beneficial-prokaryotes"
+  }
+ ],
+ "keywords": [
+  "nitrogen cycle",
+  "nitrogen",
+  "nitrogen fixation",
+  "bacteria",
+  "root nodules",
+  "legumes",
+  "nitrates",
+  "lightning",
+  "decomposers",
+  "denitrification",
+  "protein",
+  "matter",
+  "cycling"
+ ],
+ "printed": [
+  {
+   "text": "Nitrogen gas in the air",
+   "at": [
+    600,
+    70
+   ],
+   "size": 30
+  },
+  {
+   "text": "Nitrates in the soil",
+   "at": [
+    440,
+    910
+   ],
+   "size": 24
+  },
+  {
+   "text": "Soil bacteria",
+   "at": [
+    690,
+    900
+   ],
+   "size": 24
+  }
+ ],
+ "structures": [
+  {
+   "id": "plant",
+   "name": "bean plant",
+   "outlines": [
+    {
+     "line": [
+      330,
+      560,
+      330,
+      330
+     ]
+    },
+    {
+     "path": "M 330 330 C 290 320 250 290 240 250 C 285 250 320 280 330 330 Z"
+    },
+    {
+     "path": "M 330.0 330 C 370.0 320 410.0 290 420.0 250 C 375.0 250 340.0 280 330.0 330 Z"
+    }
+   ]
+  },
+  {
+   "id": "roots",
+   "name": "roots and nodules",
+   "outlines": [
+    {
+     "line": [
+      330,
+      575,
+      330,
+      790
+     ]
+    },
+    {
+     "line": [
+      330,
+      650,
+      260,
+      740
+     ]
+    },
+    {
+     "line": [
+      330,
+      700,
+      395,
+      780
+     ]
+    }
+   ],
+   "details": [
+    {
+     "circle": [
+      288,
+      704,
+      12
+     ]
+    },
+    {
+     "circle": [
+      372,
+      752,
+      12
+     ]
+    },
+    {
+     "circle": [
+      330,
+      760,
+      12
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soil",
+   "name": "soil",
+   "pen": "fine",
+   "outlines": [
+    {
+     "line": [
+      40,
+      565,
+      960,
+      565
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bolt",
+   "name": "lightning",
+   "outlines": [
+    {
+     "polygon": [
+      880,
+      110,
+      920,
+      110,
+      895,
+      210,
+      930,
+      210,
+      860,
+      360,
+      880,
+      250,
+      845,
+      250
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rabbit",
+   "name": "rabbit",
+   "outlines": [
+    {
+     "ellipse": [
+      590,
+      515,
+      60,
+      34
+     ]
+    },
+    {
+     "circle": [
+      658,
+      482,
+      24
+     ]
+    },
+    {
+     "line": [
+      650,
+      460,
+      642,
+      410
+     ]
+    },
+    {
+     "line": [
+      668,
+      460,
+      678,
+      412
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bacteria",
+   "name": "soil bacteria",
+   "outlines": [
+    {
+     "rect": [
+      620,
+      780,
+      50,
+      22,
+      11
+     ]
+    },
+    {
+     "rect": [
+      685,
+      800,
+      50,
+      22,
+      11
+     ]
+    },
+    {
+     "rect": [
+      640,
+      830,
+      50,
+      22,
+      11
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fix",
+   "name": "nitrogen fixation",
+   "outlines": [
+    {
+     "line": [
+      150,
+      140,
+      278,
+      690
+     ]
+    },
+    {
+     "line": [
+      284.2,
+      666.8,
+      278,
+      690,
+      262.2,
+      671.9
+     ]
+    }
+   ]
+  },
+  {
+   "id": "strike",
+   "name": "lightning fixing nitrogen",
+   "outlines": [
+    {
+     "line": [
+      880,
+      380,
+      880,
+      550
+     ]
+    },
+    {
+     "line": [
+      891.3,
+      528.8,
+      880,
+      550,
+      868.7,
+      528.8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "uptake",
+   "name": "plants take up nitrates",
+   "outlines": [
+    {
+     "line": [
+      450,
+      870,
+      348,
+      795
+     ]
+    },
+    {
+     "line": [
+      358.4,
+      816.6,
+      348,
+      795,
+      371.7,
+      798.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "eat",
+   "name": "eating",
+   "outlines": [
+    {
+     "line": [
+      370,
+      330,
+      520,
+      480
+     ]
+    },
+    {
+     "line": [
+      513.0,
+      457.0,
+      520,
+      480,
+      497.0,
+      473.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "decay",
+   "name": "decomposition",
+   "outlines": [
+    {
+     "line": [
+      590,
+      560,
+      630,
+      765
+     ]
+    },
+    {
+     "line": [
+      637.0,
+      742.0,
+      630,
+      765,
+      614.9,
+      746.4
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nitrify",
+   "name": "bacteria make nitrates",
+   "outlines": [
+    {
+     "line": [
+      615,
+      835,
+      520,
+      855
+     ]
+    },
+    {
+     "line": [
+      543.1,
+      861.7,
+      520,
+      855,
+      538.4,
+      839.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "denitrify",
+   "name": "back to the air",
+   "outlines": [
+    {
+     "line": [
+      745,
+      790,
+      780,
+      140
+     ]
+    },
+    {
+     "line": [
+      767.6,
+      160.6,
+      780,
+      140,
+      790.1,
+      161.8
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Soil",
+   "structure": "soil",
+   "instruction": "Draw the soil line.",
+   "note": {
+    "text": "About 78% of the air is nitrogen gas. Living things need nitrogen to build proteins and DNA."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Bean plant",
+   "structure": "plant",
+   "instruction": "Trace the bean plant.",
+   "note": {
+    "text": "Plants and animals can't use nitrogen gas straight from the air.",
+    "remember": "Nitrogen gas: not usable directly."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Roots",
+   "structure": "roots",
+   "instruction": "Trace the roots.",
+   "note": {
+    "text": "Bean and pea plants are legumes. Their roots have bumps called nodules."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Nodules",
+   "structure": "roots",
+   "part": "details",
+   "instruction": "Dab the three nodules on the roots.",
+   "note": {
+    "text": "Bacteria living inside the nodules turn nitrogen gas into a form plants can use."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Nitrogen fixation",
+   "structure": "fix",
+   "instruction": "Draw the arrow from the air to the nodules.",
+   "note": {
+    "text": "Changing nitrogen gas into a usable form is nitrogen fixation. Only certain bacteria can do it.",
+    "remember": "Fixation: bacteria make nitrogen usable."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Lightning",
+   "structure": "bolt",
+   "instruction": "Trace the lightning bolt.",
+   "note": {
+    "text": "Lightning's energy can also fix nitrogen."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Into the soil",
+   "structure": "strike",
+   "instruction": "Draw the arrow from the lightning to the soil.",
+   "note": {
+    "text": "Rain carries the fixed nitrogen down into the soil."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Uptake",
+   "structure": "uptake",
+   "instruction": "Draw the arrow from the soil nitrates to the plant's roots.",
+   "note": {
+    "text": "Plant roots take in nitrates from the soil and use the nitrogen to build proteins."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Rabbit",
+   "structure": "rabbit",
+   "instruction": "Trace the rabbit.",
+   "note": {
+    "text": "Animals get nitrogen by eating."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Eating",
+   "structure": "eat",
+   "instruction": "Draw the arrow from the plant to the rabbit.",
+   "note": {
+    "text": "The rabbit uses the nitrogen in plant proteins to build its own proteins."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Bacteria",
+   "structure": "bacteria",
+   "instruction": "Trace the soil bacteria.",
+   "note": {
+    "text": "Decomposers break down wastes and dead things, releasing ammonia into the soil."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Decomposition",
+   "structure": "decay",
+   "instruction": "Draw the arrow from the rabbit down to the bacteria.",
+   "note": {
+    "text": "Wastes and dead bodies return their nitrogen to the soil."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Nitrates",
+   "structure": "nitrify",
+   "instruction": "Draw the arrow from the bacteria to the nitrates.",
+   "note": {
+    "text": "Other bacteria change the ammonia into nitrates, which plants can take up again."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Back to the air",
+   "structure": "denitrify",
+   "instruction": "Draw the arrow from the bacteria up to the air.",
+   "note": {
+    "text": "Some bacteria turn nitrates back into nitrogen gas, completing the cycle."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Name the steps",
+   "instruction": "Pick the process for each numbered arrow.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      214,
+      415
+     ],
+     "answer": "Nitrogen fixation",
+     "role": "Air to a usable form.",
+     "mistakes": {
+      "Decomposition": "Decomposition breaks down dead things. This arrow takes nitrogen from the air: fixation."
+     }
+    },
+    {
+     "n": 2,
+     "at": [
+      399,
+      832
+     ],
+     "answer": "Uptake by roots",
+     "role": "Soil nitrates into the plant."
+    },
+    {
+     "n": 3,
+     "at": [
+      445,
+      405
+     ],
+     "answer": "Eating",
+     "role": "Plant to animal."
+    },
+    {
+     "n": 4,
+     "at": [
+      610,
+      662
+     ],
+     "answer": "Decomposition",
+     "role": "Returns nitrogen to the soil."
+    }
+   ],
+   "vocabulary": [
+    "Nitrogen fixation",
+    "Uptake by roots",
+    "Eating",
+    "Decomposition",
+    "Photosynthesis",
+    "Evaporation"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Why bacteria matter",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "Nitrogen gas is all around plants. Why do they still depend on bacteria?",
+   "options": [
+    {
+     "text": "Plants can't use nitrogen gas; bacteria change it into a form they can",
+     "correct": true,
+     "feedback": "Yes. Without nitrogen-fixing bacteria, very little nitrogen would enter the living world."
+    },
+    {
+     "text": "Bacteria eat the plants",
+     "feedback": "These bacteria help plants. They fix nitrogen into a usable form."
+    },
+    {
+     "text": "Bacteria make oxygen for roots",
+     "feedback": "They fix nitrogen, changing the gas into a form plants can use."
+    },
+    {
+     "text": "They don't depend on bacteria",
+     "feedback": "Plants can't use nitrogen gas themselves. Bacteria make it usable."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Farmers",
+   "instruction": "Apply the model.",
+   "showsDiagram": true,
+   "question": "Farmers often plant beans in a field one year and corn the next. Why does this help the corn?",
+   "options": [
+    {
+     "text": "Bacteria in the bean roots add usable nitrogen to the soil",
+     "correct": true,
+     "feedback": "Right. The nodule bacteria fix nitrogen, enriching the soil for the next crop."
+    },
+    {
+     "text": "Beans add oxygen to the soil",
+     "feedback": "The key is nitrogen: bean root bacteria fix it into the soil."
+    },
+    {
+     "text": "Beans scare away insects",
+     "feedback": "The benefit is nitrogen fixed by bacteria in bean roots."
+    },
+    {
+     "text": "Corn and beans are the same plant",
+     "feedback": "They're different. Beans' root bacteria fix nitrogen for the corn."
+    }
+   ]
+  }
+ ]
+}

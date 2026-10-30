@@ -1,0 +1,435 @@
+{
+ "id": "g7-photosynthesis",
+ "title": "Photosynthesis in a leaf",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS1-6",
+ "minutes": 9,
+ "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS MS-LS1-6: Construct a scientific explanation based on evidence for the role of photosynthesis in the cycling of matter and flow of energy into and out of organisms"
+  },
+  {
+   "title": "OpenStax Biology 2e, 6.1 Energy and Metabolism",
+   "url": "https://openstax.org/books/biology-2e/pages/6-1-energy-and-metabolism"
+  },
+  {
+   "title": "OpenStax Biology 2e, 30.2 Stems (stomata take in carbon dioxide)",
+   "url": "https://openstax.org/books/biology-2e/pages/30-2-stems"
+  },
+  {
+   "title": "OpenStax Biology 2e, 30.4 Leaves (chloroplasts in the mesophyll)",
+   "url": "https://openstax.org/books/biology-2e/pages/30-4-leaves"
+  }
+ ],
+ "keywords": [
+  "photosynthesis",
+  "leaf",
+  "chloroplast",
+  "chlorophyll",
+  "sunlight",
+  "carbon dioxide",
+  "water",
+  "sugar",
+  "glucose",
+  "oxygen",
+  "stomata",
+  "producer",
+  "energy",
+  "matter"
+ ],
+ "legend": [
+  {
+   "name": "Leaf",
+   "color": "#6BA368",
+   "meaning": "Green from chlorophyll, which captures light"
+  }
+ ],
+ "structures": [
+  {
+   "id": "sun",
+   "name": "sun",
+   "outlines": [
+    {
+     "circle": [
+      130,
+      130,
+      70
+     ]
+    }
+   ]
+  },
+  {
+   "id": "light",
+   "name": "sunlight",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      215,
+      215,
+      420,
+      420
+     ]
+    },
+    {
+     "line": [
+      410.1,
+      387.5,
+      420,
+      420,
+      387.5,
+      410.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "leaf",
+   "name": "leaf",
+   "colorName": "leaf",
+   "fill": "#6BA368",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 330 780 C 380 520 600 260 880 200 C 860 470 620 760 330 780 Z"
+    }
+   ],
+   "details": [
+    {
+     "path": "M 360 750 C 500 570 680 380 845 232"
+    }
+   ]
+  },
+  {
+   "id": "stem",
+   "name": "stem",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      330,
+      780,
+      240,
+      930
+     ]
+    }
+   ]
+  },
+  {
+   "id": "water",
+   "name": "water in",
+   "outlines": [
+    {
+     "line": [
+      193,
+      892,
+      274,
+      757
+     ]
+    },
+    {
+     "line": [
+      253.4,
+      769.4,
+      274,
+      757,
+      272.8,
+      781.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "co2",
+   "name": "carbon dioxide in",
+   "outlines": [
+    {
+     "line": [
+      900,
+      760,
+      760,
+      640
+     ]
+    },
+    {
+     "line": [
+      768.8,
+      662.3,
+      760,
+      640,
+      783.4,
+      645.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "name": "oxygen out",
+   "outlines": [
+    {
+     "line": [
+      640,
+      720,
+      760,
+      870
+     ]
+    },
+    {
+     "line": [
+      755.6,
+      846.4,
+      760,
+      870,
+      738.0,
+      860.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sugar",
+   "name": "sugar out",
+   "outlines": [
+    {
+     "line": [
+      377,
+      818,
+      296,
+      953
+     ]
+    },
+    {
+     "line": [
+      316.6,
+      940.6,
+      296,
+      953,
+      297.2,
+      929.0
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Sun",
+   "structure": "sun",
+   "instruction": "Trace the sun.",
+   "note": {
+    "text": "Almost all the energy in living things started as sunlight."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Light",
+   "structure": "light",
+   "instruction": "Draw the arrow of sunlight reaching the leaf.",
+   "note": {
+    "text": "Light is the energy input for photosynthesis.",
+    "remember": "Energy in: light."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Leaf",
+   "structure": "leaf",
+   "instruction": "Trace the leaf.",
+   "note": {
+    "text": "Leaf cells are packed with chloroplasts. Their green chlorophyll captures light energy."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Vein",
+   "structure": "leaf",
+   "part": "details",
+   "instruction": "Draw the main vein down the middle.",
+   "note": {
+    "text": "Veins carry water into the leaf and carry sugar out to the rest of the plant."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Stem",
+   "structure": "stem",
+   "instruction": "Trace the leaf's stalk.",
+   "note": {
+    "text": "The stalk joins the leaf to the plant."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Water in",
+   "structure": "water",
+   "instruction": "Draw the arrow of water coming up from the roots.",
+   "note": {
+    "text": "Roots take in water, which travels up the stem to the leaf."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Carbon dioxide in",
+   "structure": "co2",
+   "instruction": "Draw the arrow of carbon dioxide going into the leaf.",
+   "note": {
+    "text": "Carbon dioxide from the air enters through tiny openings under the leaf, called stomata."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Oxygen out",
+   "structure": "o2",
+   "instruction": "Draw the arrow of oxygen leaving the leaf.",
+   "note": {
+    "text": "Oxygen is given off as a waste product. It leaves through the stomata too.",
+    "remember": "Stomata: gases in and out."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Sugar out",
+   "structure": "sugar",
+   "instruction": "Draw the arrow of sugar going to the rest of the plant.",
+   "note": {
+    "text": "The sugar stores the light's energy. The plant uses it to live and to build new leaves, stems and roots.",
+    "remember": "Light energy is stored in sugar."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "leaf"
+   ],
+   "instruction": "Color the leaf green."
+  },
+  {
+   "type": "label",
+   "title": "Inputs and outputs",
+   "instruction": "Pick what each numbered arrow carries.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      318,
+      318
+     ],
+     "answer": "Light energy",
+     "synonyms": [
+      "Sunlight"
+     ],
+     "role": "Energy input."
+    },
+    {
+     "n": 2,
+     "at": [
+      233,
+      825
+     ],
+     "answer": "Water",
+     "role": "Comes from the roots."
+    },
+    {
+     "n": 3,
+     "at": [
+      830,
+      700
+     ],
+     "answer": "Carbon dioxide",
+     "role": "Comes from the air.",
+     "mistakes": {
+      "Oxygen": "Oxygen leaves the leaf. Carbon dioxide is what goes in."
+     }
+    },
+    {
+     "n": 4,
+     "at": [
+      700,
+      795
+     ],
+     "answer": "Oxygen",
+     "role": "Given off."
+    },
+    {
+     "n": 5,
+     "at": [
+      337,
+      886
+     ],
+     "answer": "Sugar",
+     "synonyms": [
+      "Glucose"
+     ],
+     "role": "Stores the energy."
+    }
+   ],
+   "vocabulary": [
+    "Light energy",
+    "Sunlight",
+    "Water",
+    "Carbon dioxide",
+    "Oxygen",
+    "Sugar",
+    "Glucose",
+    "Soil"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Matter",
+   "instruction": "Follow the atoms.",
+   "showsDiagram": true,
+   "question": "Where does the carbon in the leaf's sugar come from?",
+   "options": [
+    {
+     "text": "Carbon dioxide from the air",
+     "correct": true,
+     "feedback": "Yes. Plants build sugar from carbon dioxide and water, so matter from the air becomes part of the plant."
+    },
+    {
+     "text": "The soil",
+     "feedback": "Roots take in water and minerals. The carbon comes from carbon dioxide in the air."
+    },
+    {
+     "text": "Sunlight",
+     "feedback": "Light gives energy, not matter. The carbon comes from carbon dioxide."
+    },
+    {
+     "text": "Oxygen",
+     "feedback": "Oxygen is given off. The carbon comes in as carbon dioxide."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Energy",
+   "instruction": "Think about food chains.",
+   "showsDiagram": false,
+   "question": "A rabbit eats this leaf. Where did the energy in the rabbit's meal first come from?",
+   "options": [
+    {
+     "text": "The sun: the plant stored light energy in sugar",
+     "correct": true,
+     "feedback": "Right. Photosynthesis brings energy into living things, and it passes along when animals eat plants."
+    },
+    {
+     "text": "The soil",
+     "feedback": "Soil gives minerals and holds water. The energy came from sunlight."
+    },
+    {
+     "text": "The water",
+     "feedback": "Water is an input, but the energy came from light, stored in sugar."
+    },
+    {
+     "text": "The rabbit makes it",
+     "feedback": "Animals can't make food from light. The energy came from the sun through the plant."
+    }
+   ]
+  }
+ ]
+}

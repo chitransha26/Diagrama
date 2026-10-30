@@ -1,0 +1,326 @@
+{
+ "id": "g7-symbiosis",
+ "title": "Symbiosis: clownfish and anemone",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS2-2",
+ "minutes": 9,
+ "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS MS-LS2-2: Construct an explanation that predicts patterns of interactions among organisms across multiple ecosystems"
+  },
+  {
+   "title": "OpenStax Biology 2e, 45.6 Community Ecology (symbiosis and parasitism)",
+   "url": "https://openstax.org/books/biology-2e/pages/45-6-community-ecology"
+  },
+  {
+   "title": "OpenStax Biology 2e, 24.3 Ecology of Fungi (mutualism and commensalism)",
+   "url": "https://openstax.org/books/biology-2e/pages/24-3-ecology-of-fungi"
+  },
+  {
+   "title": "OpenStax Biology 2e, 28.2 Phylum Cnidaria (stinging cells)",
+   "url": "https://openstax.org/books/biology-2e/pages/28-2-phylum-cnidaria"
+  },
+  {
+   "title": "NOAA Fagatele Bay National Marine Sanctuary, Clownfish and Sea Anemone",
+   "url": "https://sanctuaries.noaa.gov/pgallery/pgfagatele/living/living_03_100.html"
+  },
+  {
+   "title": "National Geographic, Beautiful Friendship (clownfish and anemones)",
+   "url": "https://www.nationalgeographic.com/magazine/article/clownfish-anemone-symbiotic-relationship"
+  }
+ ],
+ "keywords": [
+  "symbiosis",
+  "mutualism",
+  "commensalism",
+  "parasitism",
+  "clownfish",
+  "anemonefish",
+  "sea anemone",
+  "stinging cells",
+  "coral reef",
+  "butterflyfish",
+  "interactions"
+ ],
+ "printed": [
+  {
+   "text": "Butterflyfish",
+   "at": [
+    855,
+    75
+   ],
+   "size": 24
+  }
+ ],
+ "legend": [
+  {
+   "name": "Clownfish",
+   "color": "#F08A24",
+   "meaning": "Orange with white stripes"
+  }
+ ],
+ "structures": [
+  {
+   "id": "column",
+   "name": "anemone's body",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 390 880 C 400 760 380 650 370 590 L 630 590 C 620 650 600 760 610 880 Z"
+    }
+   ]
+  },
+  {
+   "id": "tentacles",
+   "name": "tentacles",
+   "outlines": [
+    {
+     "path": "M 385 586 C 375 520 415 470 356 372"
+    },
+    {
+     "path": "M 425 586 C 415 520 455 470 410 382"
+    },
+    {
+     "path": "M 465 586 C 455 520 495 470 463 392"
+    },
+    {
+     "path": "M 505 586 C 495 520 535 470 516 399"
+    },
+    {
+     "path": "M 545 586 C 535 520 575 470 570 389"
+    },
+    {
+     "path": "M 585 586 C 575 520 615 470 623 379"
+    },
+    {
+     "path": "M 625 586 C 615 520 655 470 676 369"
+    }
+   ]
+  },
+  {
+   "id": "clownfish",
+   "name": "clownfish",
+   "colorName": "clownfish",
+   "fill": "#F08A24",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 680 470 C 700 420 800 410 840 460 L 890 425 L 890 515 L 840 480 C 800 530 700 520 680 470 Z"
+    }
+   ],
+   "details": [
+    {
+     "path": "M 730 432 C 715 455 715 485 730 510"
+    },
+    {
+     "path": "M 800 428 C 785 455 785 485 800 508"
+    }
+   ]
+  },
+  {
+   "id": "butterfly",
+   "name": "butterflyfish",
+   "outlines": [
+    {
+     "path": "M 760 170 C 760 100 880 100 900 160 L 950 130 L 950 210 L 900 180 C 880 240 760 240 760 170 Z"
+    }
+   ]
+  },
+  {
+   "id": "chase",
+   "name": "chasing it away",
+   "pen": "fine",
+   "outlines": [
+    {
+     "line": [
+      760,
+      400,
+      800,
+      250
+     ]
+    },
+    {
+     "line": [
+      783.7,
+      267.6,
+      800,
+      250,
+      805.4,
+      273.4
+     ]
+    }
+   ]
+  },
+  {
+   "id": "floor",
+   "name": "reef floor",
+   "pen": "fine",
+   "outlines": [
+    {
+     "line": [
+      100,
+      905,
+      900,
+      905
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Anemone",
+   "structure": "column",
+   "instruction": "Trace the sea anemone's body.",
+   "note": {
+    "text": "A sea anemone is an animal related to jellyfish. It clings to the reef and stays in one place."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Tentacles",
+   "structure": "tentacles",
+   "instruction": "Trace the tentacles.",
+   "note": {
+    "text": "Its tentacles are covered in stinging cells that catch prey and drive off predators.",
+    "remember": "Tentacles sting."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Clownfish",
+   "structure": "clownfish",
+   "instruction": "Trace the clownfish.",
+   "note": {
+    "text": "A slimy mucus coat keeps the anemone from stinging the clownfish, so it can hide among the tentacles."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Stripes",
+   "structure": "clownfish",
+   "part": "details",
+   "instruction": "Draw its two stripes.",
+   "note": {
+    "text": "The anemone's stings protect the clownfish and its eggs from fish that would eat them."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Butterflyfish",
+   "structure": "butterfly",
+   "instruction": "Trace the butterflyfish.",
+   "note": {
+    "text": "Butterflyfish eat anemones."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Defense",
+   "structure": "chase",
+   "instruction": "Draw the arrow of the clownfish chasing it.",
+   "note": {
+    "text": "The clownfish chases off anemone-eating fish. It also cleans algae off its anemone.",
+    "remember": "Both partners benefit."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Reef",
+   "structure": "floor",
+   "instruction": "Draw the reef floor.",
+   "note": {
+    "text": "This partnership is found on coral reefs in warm, shallow seas."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "clownfish"
+   ],
+   "instruction": "Color the clownfish orange, leaving the stripes white."
+  },
+  {
+   "type": "choice",
+   "title": "Kind of symbiosis",
+   "instruction": "Compare the partners.",
+   "showsDiagram": true,
+   "question": "Both the clownfish and the anemone benefit. What kind of symbiosis is this?",
+   "options": [
+    {
+     "text": "Mutualism",
+     "correct": true,
+     "feedback": "Yes. In mutualism, both partners benefit."
+    },
+    {
+     "text": "Commensalism",
+     "feedback": "In commensalism one partner benefits and the other isn't affected. Here both benefit."
+    },
+    {
+     "text": "Parasitism",
+     "feedback": "A parasite harms its host. Neither partner is harmed here."
+    },
+    {
+     "text": "Predation",
+     "feedback": "Neither one eats the other. They help each other."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Parasitism",
+   "instruction": "Compare with another pair.",
+   "showsDiagram": false,
+   "question": "A tick feeds on a deer's blood, weakening the deer. What kind of relationship is that?",
+   "options": [
+    {
+     "text": "Parasitism: the tick benefits and the deer is harmed",
+     "correct": true,
+     "feedback": "Right. A parasite lives on or in a host and takes nutrients from it."
+    },
+    {
+     "text": "Mutualism",
+     "feedback": "The deer doesn't benefit. It's harmed, so this is parasitism."
+    },
+    {
+     "text": "Commensalism",
+     "feedback": "In commensalism the other partner isn't affected. The deer is harmed."
+    },
+    {
+     "text": "Competition",
+     "feedback": "They aren't competing for a resource. The tick feeds on the deer: parasitism."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Predict",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "Divers remove all the clownfish from a reef. What would you predict for the anemones?",
+   "options": [
+    {
+     "text": "More of them get eaten by butterflyfish",
+     "correct": true,
+     "feedback": "Yes. Without clownfish chasing them off, anemone-eating fish can feed more easily."
+    },
+    {
+     "text": "Nothing changes",
+     "feedback": "The clownfish defended the anemones. Losing them leaves the anemones less protected."
+    },
+    {
+     "text": "The anemones swim away",
+     "feedback": "Anemones mostly stay put. They'd be less protected from predators."
+    },
+    {
+     "text": "The anemones grow stripes",
+     "feedback": "Anemones can't do that. Without defenders, more would be eaten."
+    }
+   ]
+  }
+ ]
+}
