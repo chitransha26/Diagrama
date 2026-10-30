@@ -1,0 +1,437 @@
+{
+ "id": "g7-circulatory-system",
+ "title": "The circulatory system",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS1-3",
+ "minutes": 11,
+ "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS MS-LS1-3: Use argument supported by evidence for how the body is a system of interacting subsystems composed of groups of cells"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 19.1 Heart Anatomy",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 20.5 Circulatory Pathways",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 5.1 Layers of the Skin (oxygen-poor blood is dark red)",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/5-1-layers-of-the-skin"
+  }
+ ],
+ "keywords": [
+  "circulatory system",
+  "heart",
+  "arteries",
+  "veins",
+  "capillaries",
+  "pulmonary circuit",
+  "systemic circuit",
+  "oxygen",
+  "carbon dioxide",
+  "blood",
+  "lungs",
+  "double circulation"
+ ],
+ "printed": [
+  {
+   "text": "Lungs",
+   "at": [
+    500,
+    70
+   ],
+   "size": 30
+  },
+  {
+   "text": "Body",
+   "at": [
+    500,
+    960
+   ],
+   "size": 30
+  },
+  {
+   "text": "Heart",
+   "at": [
+    500,
+    380
+   ],
+   "size": 28
+  }
+ ],
+ "legend": [
+  {
+   "name": "Oxygen-poor blood",
+   "color": "#7A1F2B",
+   "meaning": "Dark red. Diagrams often use blue, but blood is never blue."
+  },
+  {
+   "name": "Oxygen-rich blood",
+   "color": "#D2342C",
+   "meaning": "Bright red"
+  },
+  {
+   "name": "Lungs",
+   "color": "#E8A0A0",
+   "meaning": "Pink, spongy tissue"
+  }
+ ],
+ "structures": [
+  {
+   "id": "right",
+   "name": "right atrium and ventricle",
+   "colorName": "oxygen-poor blood",
+   "fill": "#7A1F2B",
+   "outlines": [
+    {
+     "rect": [
+      340,
+      410,
+      140,
+      110,
+      20
+     ]
+    },
+    {
+     "rect": [
+      340,
+      545,
+      140,
+      140,
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "id": "left",
+   "name": "left atrium and ventricle",
+   "colorName": "oxygen-rich blood",
+   "fill": "#D2342C",
+   "outlines": [
+    {
+     "rect": [
+      520,
+      410,
+      140,
+      110,
+      20
+     ]
+    },
+    {
+     "rect": [
+      520,
+      545,
+      140,
+      140,
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lungs",
+   "name": "lung capillaries",
+   "colorName": "lungs",
+   "fill": "#E8A0A0",
+   "outlines": [
+    {
+     "rect": [
+      330,
+      95,
+      340,
+      120,
+      40
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pa",
+   "name": "pulmonary artery",
+   "outlines": [
+    {
+     "line": [
+      340,
+      620,
+      240,
+      620,
+      240,
+      155,
+      326,
+      155
+     ]
+    },
+    {
+     "line": [
+      308.3,
+      145.6,
+      326,
+      155,
+      308.3,
+      164.4
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pv",
+   "name": "pulmonary vein",
+   "outlines": [
+    {
+     "line": [
+      670,
+      155,
+      760,
+      155,
+      760,
+      465,
+      662,
+      465
+     ]
+    },
+    {
+     "line": [
+      679.7,
+      474.4,
+      662,
+      465,
+      679.7,
+      455.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "body",
+   "name": "body capillaries",
+   "outlines": [
+    {
+     "rect": [
+      330,
+      800,
+      340,
+      120,
+      40
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aorta",
+   "name": "aorta",
+   "outlines": [
+    {
+     "line": [
+      660,
+      615,
+      840,
+      615,
+      840,
+      860,
+      672,
+      860
+     ]
+    },
+    {
+     "line": [
+      689.7,
+      869.4,
+      672,
+      860,
+      689.7,
+      850.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vc",
+   "name": "vena cava",
+   "outlines": [
+    {
+     "line": [
+      330,
+      860,
+      160,
+      860,
+      160,
+      465,
+      338,
+      465
+     ]
+    },
+    {
+     "line": [
+      320.3,
+      455.6,
+      338,
+      465,
+      320.3,
+      474.4
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Right side",
+   "structure": "right",
+   "instruction": "Trace the heart's right atrium and right ventricle.",
+   "note": {
+    "text": "The heart is two pumps side by side. The right side pumps blood to the lungs.",
+    "remember": "Right side: to the lungs."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Left side",
+   "structure": "left",
+   "instruction": "Trace the left atrium and left ventricle.",
+   "note": {
+    "text": "The left side pumps blood out to the rest of the body.",
+    "remember": "Left side: to the body."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Lungs",
+   "structure": "lungs",
+   "instruction": "Trace the lungs' tiny blood vessels at the top.",
+   "note": {
+    "text": "In the lungs, blood flows through capillaries, vessels so thin that gases pass through their walls."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "To the lungs",
+   "structure": "pa",
+   "instruction": "Draw the vessel from the right ventricle up to the lungs.",
+   "note": {
+    "text": "The pulmonary artery carries oxygen-poor blood to the lungs, where it drops carbon dioxide and picks up oxygen."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Back from the lungs",
+   "structure": "pv",
+   "instruction": "Draw the vessel from the lungs to the left atrium.",
+   "note": {
+    "text": "Pulmonary veins bring the oxygen-rich blood back to the heart. This loop is the pulmonary circuit.",
+    "remember": "Pulmonary circuit: heart, lungs, heart."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Body",
+   "structure": "body",
+   "instruction": "Trace the body's capillaries at the bottom.",
+   "note": {
+    "text": "In the body's capillaries, oxygen and food pass out to the cells, and waste like carbon dioxide passes in."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Aorta",
+   "structure": "aorta",
+   "instruction": "Draw the aorta from the left ventricle down to the body.",
+   "note": {
+    "text": "Arteries carry blood away from the heart. The aorta, the biggest, carries oxygen-rich blood to the body.",
+    "remember": "Arteries: away from the heart."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Vena cava",
+   "structure": "vc",
+   "instruction": "Draw the vena cava from the body back to the right atrium.",
+   "note": {
+    "text": "Veins carry blood back to the heart. This loop through the body is the systemic circuit.",
+    "remember": "Veins: back to the heart."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "right",
+    "left",
+    "lungs"
+   ],
+   "instruction": "Color the heart's two sides and the lungs. Oxygen-poor blood is dark red; oxygen-rich is bright red."
+  },
+  {
+   "type": "order",
+   "title": "One full trip",
+   "instruction": "Tap the stops in order, starting at the right ventricle.",
+   "items": [
+    "Right ventricle",
+    "Lungs",
+    "Left atrium",
+    "Left ventricle",
+    "Body",
+    "Right atrium"
+   ],
+   "why": "Blood makes two loops: right side to the lungs and back to the left side, then left side to the body and back.",
+   "hint": "Where does blood pick up oxygen?"
+  },
+  {
+   "type": "choice",
+   "title": "Systems working together",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "How do the circulatory and respiratory systems work together?",
+   "options": [
+    {
+     "text": "The lungs take in oxygen, and the blood carries it to every cell",
+     "correct": true,
+     "feedback": "Yes. Neither system could keep cells alive alone: one gets oxygen in, the other delivers it."
+    },
+    {
+     "text": "They don't: each works alone",
+     "feedback": "They depend on each other. Blood must pass through the lungs to pick up oxygen."
+    },
+    {
+     "text": "The heart breathes for the lungs",
+     "feedback": "The heart pumps blood; the lungs exchange gases. Together they supply oxygen."
+    },
+    {
+     "text": "The lungs pump the blood",
+     "feedback": "The heart pumps blood. The lungs are where oxygen enters it."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Strong side",
+   "instruction": "Compare the two pumps.",
+   "showsDiagram": true,
+   "question": "Why does the left ventricle need a thicker, stronger wall than the right?",
+   "options": [
+    {
+     "text": "It pumps blood all around the body, not just next door to the lungs",
+     "correct": true,
+     "feedback": "Right. The systemic circuit is far longer than the trip to the lungs, so it needs much more force."
+    },
+    {
+     "text": "It holds more oxygen",
+     "feedback": "Wall thickness is about pumping force. The left ventricle pushes blood around the whole body."
+    },
+    {
+     "text": "It pumps blood to the lungs",
+     "feedback": "That's the right ventricle's job. The left pumps to the whole body."
+    },
+    {
+     "text": "It doesn't: both are the same",
+     "feedback": "The left ventricle's wall is much thicker, because it pumps to the whole body."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,315 @@
+{
+ "id": "g7-digestive-system",
+ "title": "The digestive system",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS1-3",
+ "minutes": 11,
+ "sources": [
+  {
+   "title": "NGSS MS-LS1-3: Use argument supported by evidence for how the body is a system of interacting subsystems composed of groups of cells"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 23.1 Overview of the Digestive System",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-1-overview-of-the-digestive-system"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 23.2 Digestive System Processes and Regulation",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-2-digestive-system-processes-and-regulation"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 23.5 The Small and Large Intestines",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+  }
+ ],
+ "keywords": [
+  "digestive system",
+  "esophagus",
+  "stomach",
+  "liver",
+  "pancreas",
+  "small intestine",
+  "large intestine",
+  "rectum",
+  "nutrients",
+  "absorption",
+  "digestion",
+  "bile",
+  "enzymes"
+ ],
+ "printed": [
+  {
+   "text": "From the mouth",
+   "at": [
+    660,
+    70
+   ],
+   "size": 26
+  }
+ ],
+ "structures": [
+  {
+   "id": "esophagus",
+   "name": "esophagus",
+   "outlines": [
+    {
+     "line": [
+      500,
+      60,
+      528,
+      302
+     ]
+    },
+    {
+     "line": [
+      536,
+      60,
+      560,
+      300
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stomach",
+   "name": "stomach",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 545 300 C 625 290 715 325 705 410 C 695 500 595 530 535 500 C 508 488 508 458 534 452 C 600 468 652 440 652 402 C 652 356 604 345 560 348 Z"
+    }
+   ]
+  },
+  {
+   "id": "liver",
+   "name": "liver",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 230 330 C 300 290 470 300 495 340 C 478 420 380 452 250 442 C 210 420 205 360 230 330 Z"
+    }
+   ]
+  },
+  {
+   "id": "pancreas",
+   "name": "pancreas",
+   "outlines": [
+    {
+     "path": "M 470 562 C 520 542 640 542 700 562 C 650 592 520 592 470 562 Z"
+    }
+   ]
+  },
+  {
+   "id": "small",
+   "name": "small intestine",
+   "outlines": [
+    {
+     "path": "M 520 492 L 470 655 L 640 655 A 25 25 0 0 1 640 705 L 360 705 A 25 25 0 0 0 360 755 L 640 755 A 25 25 0 0 1 640 805 L 292 805"
+    }
+   ]
+  },
+  {
+   "id": "large",
+   "name": "large intestine",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 280 820 L 280 640 C 280 620 290 610 310 610 L 690 610 C 710 610 720 620 720 640 L 720 845 C 720 872 698 882 668 882 L 560 882 C 535 882 525 900 525 960"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Esophagus",
+   "structure": "esophagus",
+   "instruction": "Trace the esophagus down from the mouth.",
+   "note": {
+    "text": "After you chew and swallow, muscles in the esophagus squeeze food down to the stomach in waves."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Stomach",
+   "structure": "stomach",
+   "instruction": "Trace the J-shaped stomach.",
+   "note": {
+    "text": "The stomach churns food and mixes it with acid and enzymes that start breaking it down.",
+    "remember": "Stomach: churn and break down."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Liver",
+   "structure": "liver",
+   "instruction": "Trace the liver.",
+   "note": {
+    "text": "The liver makes bile, which helps break fats into tiny droplets so they can be digested."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Pancreas",
+   "structure": "pancreas",
+   "instruction": "Trace the pancreas below the stomach.",
+   "note": {
+    "text": "The pancreas makes digestive enzymes and sends them into the small intestine."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Small intestine",
+   "structure": "small",
+   "instruction": "Trace the long, winding small intestine.",
+   "note": {
+    "text": "About 3 m long, the small intestine is where most digestion and almost all absorption of nutrients happen.",
+    "remember": "Small intestine: nutrients into the blood."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Large intestine",
+   "structure": "large",
+   "instruction": "Trace the large intestine around the outside, down to the rectum.",
+   "note": {
+    "text": "The large intestine absorbs most of the leftover water, then the waste leaves through the rectum.",
+    "remember": "Large intestine: absorbs water."
+   }
+  },
+  {
+   "type": "order",
+   "title": "Food's path",
+   "instruction": "Tap the places food passes through, in order.",
+   "items": [
+    "Mouth",
+    "Esophagus",
+    "Stomach",
+    "Small intestine",
+    "Large intestine",
+    "Rectum"
+   ],
+   "why": "Food goes down the esophagus to the stomach, then the small intestine absorbs nutrients and the large intestine absorbs water.",
+   "hint": "The liver and pancreas help, but food doesn't pass through them."
+  },
+  {
+   "type": "label",
+   "title": "Name the organs",
+   "instruction": "Pick the name for each numbered organ.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      640,
+      420
+     ],
+     "answer": "Stomach",
+     "role": "Churns food with acid."
+    },
+    {
+     "n": 2,
+     "at": [
+      350,
+      380
+     ],
+     "answer": "Liver",
+     "role": "Makes bile."
+    },
+    {
+     "n": 3,
+     "at": [
+      585,
+      566
+     ],
+     "answer": "Pancreas",
+     "role": "Makes digestive enzymes.",
+     "mistakes": {
+      "Stomach": "The stomach is the J-shaped bag above. This organ below it is the pancreas."
+     }
+    },
+    {
+     "n": 4,
+     "at": [
+      500,
+      750
+     ],
+     "answer": "Small intestine",
+     "role": "Absorbs nutrients.",
+     "mistakes": {
+      "Large intestine": "The large intestine frames the outside. This long winding tube is the small intestine."
+     }
+    },
+    {
+     "n": 5,
+     "at": [
+      280,
+      720
+     ],
+     "answer": "Large intestine",
+     "role": "Absorbs water."
+    }
+   ],
+   "vocabulary": [
+    "Esophagus",
+    "Stomach",
+    "Liver",
+    "Pancreas",
+    "Small intestine",
+    "Large intestine",
+    "Lung"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Systems working together",
+   "instruction": "Follow the nutrients.",
+   "showsDiagram": true,
+   "question": "Nutrients are absorbed in the small intestine. How do they reach your muscles?",
+   "options": [
+    {
+     "text": "They pass into the blood, and the circulatory system carries them",
+     "correct": true,
+     "feedback": "Yes. The digestive system breaks food down; the circulatory system delivers it to every cell."
+    },
+    {
+     "text": "They travel down the large intestine",
+     "feedback": "That carries waste out. Nutrients enter the blood in the small intestine."
+    },
+    {
+     "text": "Muscles reach into the intestine",
+     "feedback": "Muscles get nutrients from the blood, which picks them up in the small intestine."
+    },
+    {
+     "text": "Through the lungs",
+     "feedback": "The lungs handle gases. Nutrients travel in the blood."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Why so long?",
+   "instruction": "Think about absorption.",
+   "showsDiagram": true,
+   "question": "Why is it useful that the small intestine is so long?",
+   "options": [
+    {
+     "text": "It gives lots of surface for absorbing nutrients",
+     "correct": true,
+     "feedback": "Right. Its great length, plus folds inside, gives a huge surface for nutrients to pass into the blood."
+    },
+    {
+     "text": "It stores food for weeks",
+     "feedback": "Food passes through in hours. The length gives more surface for absorption."
+    },
+    {
+     "text": "It absorbs water only",
+     "feedback": "That's mostly the large intestine. The small intestine absorbs nutrients."
+    },
+    {
+     "text": "It makes bile",
+     "feedback": "The liver makes bile. The length gives more surface for absorbing nutrients."
+    }
+   ]
+  }
+ ]
+}

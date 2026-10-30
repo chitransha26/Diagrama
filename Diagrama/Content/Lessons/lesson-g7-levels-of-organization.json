@@ -1,0 +1,438 @@
+{
+ "id": "g7-levels-of-organization",
+ "title": "Levels of organization: cell to organism",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS1-3",
+ "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS MS-LS1-3: Use argument supported by evidence for how the body is a system of interacting subsystems composed of groups of cells"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 1.2 Structural Organization of the Human Body",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-2-structural-organization-of-the-human-body"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 19.1 Heart Anatomy",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy"
+  }
+ ],
+ "keywords": [
+  "levels of organization",
+  "cell",
+  "tissue",
+  "organ",
+  "organ system",
+  "organism",
+  "heart",
+  "muscle",
+  "circulatory system",
+  "body systems"
+ ],
+ "structures": [
+  {
+   "id": "cell",
+   "name": "heart muscle cell",
+   "outlines": [
+    {
+     "rect": [
+      70,
+      170,
+      160,
+      60,
+      22
+     ]
+    }
+   ],
+   "details": [
+    {
+     "ellipse": [
+      150,
+      200,
+      22,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tissue",
+   "name": "heart muscle tissue",
+   "outlines": [
+    {
+     "rect": [
+      369,
+      133,
+      70,
+      34,
+      14
+     ]
+    },
+    {
+     "rect": [
+      455,
+      133,
+      70,
+      34,
+      14
+     ]
+    },
+    {
+     "rect": [
+      541,
+      133,
+      70,
+      34,
+      14
+     ]
+    },
+    {
+     "rect": [
+      389,
+      183,
+      70,
+      34,
+      14
+     ]
+    },
+    {
+     "rect": [
+      475,
+      183,
+      70,
+      34,
+      14
+     ]
+    },
+    {
+     "rect": [
+      561,
+      183,
+      70,
+      34,
+      14
+     ]
+    },
+    {
+     "rect": [
+      369,
+      233,
+      70,
+      34,
+      14
+     ]
+    },
+    {
+     "rect": [
+      455,
+      233,
+      70,
+      34,
+      14
+     ]
+    },
+    {
+     "rect": [
+      541,
+      233,
+      70,
+      34,
+      14
+     ]
+    }
+   ]
+  },
+  {
+   "id": "organ",
+   "name": "heart",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 795.2 140.2 C 795.2 115.7 827.6 108.5 856.4 115.7 C 892.4 107.8 930.6 122.2 930.6 156.0 C 930.6 205.0 901.8 248.9 880.2 290.0 C 873.0 302.2 862.9 302.9 855.7 295.0 C 819.7 258.3 789.4 205.0 795.2 140.2 Z"
+    }
+   ]
+  },
+  {
+   "id": "system",
+   "name": "circulatory system",
+   "outlines": [
+    {
+     "path": "M 264.0 564.0 C 264.0 550.4 282.0 546.4 298.0 550.4 C 318.0 546.0 339.2 554.0 339.2 572.8 C 339.2 600.0 323.2 624.4 311.2 647.2 C 307.2 654.0 301.6 654.4 297.6 650.0 C 277.6 629.6 260.8 600.0 264.0 564.0 Z"
+    },
+    {
+     "path": "M 262 625 C 110 660 120 900 300 905 C 480 900 490 660 338 625"
+    }
+   ]
+  },
+  {
+   "id": "organism",
+   "name": "person",
+   "outlines": [
+    {
+     "circle": [
+      750,
+      538,
+      44
+     ]
+    },
+    {
+     "path": "M 705 590 L 795 590 L 850 700 L 828 712 L 795 650 L 795 770 L 820 910 L 790 910 L 750 800 L 710 910 L 680 910 L 705 770 L 705 650 L 672 712 L 650 700 Z"
+    }
+   ]
+  },
+  {
+   "id": "arrows",
+   "name": "arrows",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      250,
+      200,
+      345,
+      200
+     ]
+    },
+    {
+     "line": [
+      325.6,
+      189.7,
+      345,
+      200,
+      325.6,
+      210.3
+     ]
+    },
+    {
+     "line": [
+      655,
+      200,
+      745,
+      200
+     ]
+    },
+    {
+     "line": [
+      725.6,
+      189.7,
+      745,
+      200,
+      725.6,
+      210.3
+     ]
+    },
+    {
+     "line": [
+      800,
+      340,
+      430,
+      560
+     ]
+    },
+    {
+     "line": [
+      452.0,
+      559.0,
+      430,
+      560,
+      441.4,
+      541.2
+     ]
+    },
+    {
+     "line": [
+      480,
+      760,
+      630,
+      760
+     ]
+    },
+    {
+     "line": [
+      610.6,
+      749.7,
+      630,
+      760,
+      610.6,
+      770.3
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Cell",
+   "structure": "cell",
+   "instruction": "Trace the heart muscle cell.",
+   "note": {
+    "text": "Cells are the smallest units of life. In humans, cells carry out all the functions of life.",
+    "remember": "Level 1: cell."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Nucleus",
+   "structure": "cell",
+   "part": "details",
+   "instruction": "Draw its nucleus.",
+   "note": {
+    "text": "Each heart muscle cell can shorten, or contract."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Tissue",
+   "structure": "tissue",
+   "instruction": "Trace the nine cells joined together.",
+   "note": {
+    "text": "A tissue is a group of similar cells working together. Heart muscle cells form heart muscle tissue.",
+    "remember": "Level 2: tissue."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Organ",
+   "structure": "organ",
+   "instruction": "Trace the heart.",
+   "note": {
+    "text": "An organ is built from two or more kinds of tissue. The heart has muscle, nerve and other tissues.",
+    "remember": "Level 3: organ."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Organ system",
+   "structure": "system",
+   "instruction": "Trace the small heart and the loop of blood vessels.",
+   "note": {
+    "text": "An organ system is a group of organs working together. The heart and blood vessels form the circulatory system.",
+    "remember": "Level 4: organ system."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Organism",
+   "structure": "organism",
+   "instruction": "Trace the person.",
+   "note": {
+    "text": "Eleven organ systems work together to keep one whole organism alive: you.",
+    "remember": "Level 5: organism."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Building up",
+   "structure": "arrows",
+   "instruction": "Draw the four arrows from smallest to largest.",
+   "note": {
+    "text": "Each level is built from the one before it."
+   }
+  },
+  {
+   "type": "order",
+   "title": "Smallest to largest",
+   "items": [
+    "Cell",
+    "Tissue",
+    "Organ",
+    "Organ system",
+    "Organism"
+   ],
+   "instruction": "Tap the levels in order, smallest first.",
+   "why": "Cells form tissues, tissues form organs, organs form organ systems, and organ systems make up the organism.",
+   "hint": "Start with the smallest living unit."
+  },
+  {
+   "type": "label",
+   "title": "Name the levels",
+   "instruction": "Pick the level for each numbered drawing.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      150,
+      200
+     ],
+     "answer": "Cell",
+     "role": "Smallest unit of life."
+    },
+    {
+     "n": 2,
+     "at": [
+      500,
+      200
+     ],
+     "answer": "Tissue",
+     "role": "Similar cells working together.",
+     "mistakes": {
+      "Organ": "This is a group of one kind of cell. An organ has two or more kinds of tissue."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      860,
+      205
+     ],
+     "answer": "Organ",
+     "role": "Made of several tissues."
+    },
+    {
+     "n": 4,
+     "at": [
+      300,
+      760
+     ],
+     "answer": "Organ system",
+     "role": "Organs working together."
+    },
+    {
+     "n": 5,
+     "at": [
+      750,
+      700
+     ],
+     "answer": "Organism",
+     "role": "A whole living thing."
+    }
+   ],
+   "vocabulary": [
+    "Cell",
+    "Tissue",
+    "Organ",
+    "Organ system",
+    "Organism",
+    "Organelle"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Argue",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "Heart muscle cells stop getting oxygen. Why can this harm the whole body?",
+   "options": [
+    {
+     "text": "The cells form the tissue that makes the heart pump, and the body depends on that blood flow",
+     "correct": true,
+     "feedback": "Yes. Each level depends on the one below: weak cells mean a weak heart, and every system needs blood."
+    },
+    {
+     "text": "It can't: cells are too small to matter",
+     "feedback": "Everything the body does is done by cells. The levels depend on each other."
+    },
+    {
+     "text": "Only the heart is affected",
+     "feedback": "The heart pumps blood to every organ, so the whole body is affected."
+    },
+    {
+     "text": "Other cells will grow a new heart",
+     "feedback": "The body can't grow a new heart. Damaged heart cells affect the whole system."
+    }
+   ]
+  }
+ ]
+}

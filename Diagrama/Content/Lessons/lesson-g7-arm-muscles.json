@@ -1,0 +1,377 @@
+{
+ "id": "g7-arm-muscles",
+ "title": "Muscles moving the arm: biceps and triceps",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS1-3",
+ "minutes": 9,
+ "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS MS-LS1-3: Use argument supported by evidence for how the body is a system of interacting subsystems composed of groups of cells"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 11.1 Interactions of Skeletal Muscles",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-1-interactions-of-skeletal-muscles-their-fascicle-arrangement-and-their-lever-systems"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 10.4 Nervous System Control of Muscle Tension",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/10-4-nervous-system-control-of-muscle-tension"
+  }
+ ],
+ "keywords": [
+  "muscles",
+  "biceps",
+  "triceps",
+  "bones",
+  "tendons",
+  "joint",
+  "elbow",
+  "contract",
+  "pull",
+  "muscle pairs",
+  "skeletal system",
+  "muscular system"
+ ],
+ "printed": [
+  {
+   "text": "Shoulder",
+   "at": [
+    465,
+    100
+   ],
+   "size": 26
+  },
+  {
+   "text": "Elbow",
+   "at": [
+    440,
+    660
+   ],
+   "size": 26
+  },
+  {
+   "text": "Hand",
+   "at": [
+    900,
+    520
+   ],
+   "size": 26
+  }
+ ],
+ "legend": [
+  {
+   "name": "Bone",
+   "color": "#EDE6D3",
+   "meaning": "Hard, pale bone"
+  },
+  {
+   "name": "Muscle",
+   "color": "#B5483F",
+   "meaning": "Red, because it's full of blood vessels"
+  }
+ ],
+ "structures": [
+  {
+   "id": "humerus",
+   "name": "upper arm bone",
+   "colorName": "bone",
+   "fill": "#EDE6D3",
+   "pen": "bold",
+   "outlines": [
+    {
+     "rect": [
+      440,
+      140,
+      50,
+      430,
+      25
+     ]
+    }
+   ]
+  },
+  {
+   "id": "forearm",
+   "name": "forearm bones",
+   "colorName": "bone",
+   "fill": "#EDE6D3",
+   "pen": "bold",
+   "outlines": [
+    {
+     "rect": [
+      470,
+      515,
+      390,
+      36,
+      18
+     ]
+    },
+    {
+     "rect": [
+      436,
+      571,
+      424,
+      36,
+      18
+     ]
+    }
+   ]
+  },
+  {
+   "id": "biceps",
+   "name": "biceps",
+   "colorName": "muscle",
+   "fill": "#B5483F",
+   "outlines": [
+    {
+     "path": "M 500 196 C 600 230 625 400 552 482 L 524 486 C 538 400 528 280 500 196 Z"
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      538,
+      484,
+      580,
+      515
+     ]
+    }
+   ]
+  },
+  {
+   "id": "triceps",
+   "name": "triceps",
+   "colorName": "muscle",
+   "fill": "#B5483F",
+   "outlines": [
+    {
+     "path": "M 432 190 C 340 240 330 420 402 532 L 428 528 C 400 420 410 280 432 190 Z"
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      415,
+      530,
+      440,
+      580
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lift",
+   "name": "forearm lifting",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      800,
+      500,
+      760,
+      360
+     ]
+    },
+    {
+     "line": [
+      754.6,
+      385.4,
+      760,
+      360,
+      778.0,
+      378.7
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Upper arm bone",
+   "structure": "humerus",
+   "instruction": "Trace the upper arm bone.",
+   "note": {
+    "text": "Bones are levers. Muscles move them by pulling."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Forearm bones",
+   "structure": "forearm",
+   "instruction": "Trace the two forearm bones.",
+   "note": {
+    "text": "The forearm has two bones. They meet the upper arm bone at the elbow, a joint that bends."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Biceps",
+   "structure": "biceps",
+   "instruction": "Trace the biceps on the front of the upper arm.",
+   "note": {
+    "text": "When the biceps contracts, it gets shorter and pulls the forearm up, bending the elbow.",
+    "remember": "Biceps: bends the arm."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Biceps tendon",
+   "structure": "biceps",
+   "part": "details",
+   "instruction": "Draw the tendon joining the biceps to the forearm.",
+   "note": {
+    "text": "Tendons are strong bands that join muscles to bones. They pass the muscle's pull to the bone."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Triceps",
+   "structure": "triceps",
+   "instruction": "Trace the triceps on the back of the upper arm.",
+   "note": {
+    "text": "When the triceps contracts, it pulls the forearm down, straightening the elbow.",
+    "remember": "Triceps: straightens the arm."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Triceps tendon",
+   "structure": "triceps",
+   "part": "details",
+   "instruction": "Draw the tendon joining the triceps to the forearm.",
+   "note": {
+    "text": "It attaches just behind the elbow, so its pull straightens the arm."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Lifting",
+   "structure": "lift",
+   "instruction": "Draw the arrow showing the forearm lifting.",
+   "note": {
+    "text": "Nerves signal the biceps to contract. Nervous, muscular and skeletal systems all work together to move."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "humerus",
+    "forearm",
+    "biceps",
+    "triceps"
+   ],
+   "instruction": "Color the bones and the muscles."
+  },
+  {
+   "type": "label",
+   "title": "Name the parts",
+   "instruction": "Pick the name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      570,
+      350
+     ],
+     "answer": "Biceps",
+     "role": "Bends the elbow.",
+     "mistakes": {
+      "Triceps": "The triceps is on the back of the arm. This front muscle is the biceps."
+     }
+    },
+    {
+     "n": 2,
+     "at": [
+      375,
+      350
+     ],
+     "answer": "Triceps",
+     "role": "Straightens the elbow."
+    },
+    {
+     "n": 3,
+     "at": [
+      465,
+      300
+     ],
+     "answer": "Upper arm bone",
+     "synonyms": [
+      "Humerus"
+     ],
+     "role": "Lever moved by muscles."
+    },
+    {
+     "n": 4,
+     "at": [
+      560,
+      500
+     ],
+     "answer": "Tendon",
+     "role": "Joins muscle to bone."
+    }
+   ],
+   "vocabulary": [
+    "Biceps",
+    "Triceps",
+    "Upper arm bone",
+    "Humerus",
+    "Tendon",
+    "Ligament"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Pairs",
+   "instruction": "Muscles can only pull.",
+   "showsDiagram": true,
+   "question": "Muscles can pull but can't push. So how do you straighten your arm again after bending it?",
+   "options": [
+    {
+     "text": "The triceps contracts and pulls the forearm back down",
+     "correct": true,
+     "feedback": "Yes. Muscles work in opposing pairs: the biceps bends the elbow, the triceps straightens it."
+    },
+    {
+     "text": "The biceps pushes it down",
+     "feedback": "Muscles can only pull. The triceps does the straightening."
+    },
+    {
+     "text": "The bones straighten themselves",
+     "feedback": "Bones can't move on their own. The triceps pulls them."
+    },
+    {
+     "text": "The tendon pushes it",
+     "feedback": "Tendons only pass on a muscle's pull. The triceps pulls the arm straight."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Systems",
+   "instruction": "Think about all the systems involved.",
+   "showsDiagram": false,
+   "question": "Which body systems work together when you lift a glass of water?",
+   "options": [
+    {
+     "text": "Nervous, muscular and skeletal, with blood bringing the muscles energy",
+     "correct": true,
+     "feedback": "Right. Nerves signal, muscles pull, bones move, and the circulatory system fuels the muscles."
+    },
+    {
+     "text": "Only the muscular system",
+     "feedback": "Muscles need nerve signals to contract and bones to pull on."
+    },
+    {
+     "text": "Only the skeletal system",
+     "feedback": "Bones can't move on their own. Muscles and nerves are needed too."
+    },
+    {
+     "text": "The digestive system alone",
+     "feedback": "Digestion supplies energy over time, but nerves, muscles and bones do the lifting."
+    }
+   ]
+  }
+ ]
+}

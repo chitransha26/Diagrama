@@ -1,0 +1,423 @@
+{
+ "id": "g7-respiratory-system",
+ "title": "The respiratory system",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS1-3",
+ "minutes": 10,
+ "sources": [
+  {
+   "title": "NGSS MS-LS1-3: Use argument supported by evidence for how the body is a system of interacting subsystems composed of groups of cells"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 22.1 Organs and Structures of the Respiratory System",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+  },
+  {
+   "title": "OpenStax Anatomy and Physiology 2e, 22.3 The Process of Breathing",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-3-the-process-of-breathing"
+  }
+ ],
+ "keywords": [
+  "respiratory system",
+  "lungs",
+  "trachea",
+  "windpipe",
+  "bronchi",
+  "alveoli",
+  "diaphragm",
+  "breathing",
+  "oxygen",
+  "carbon dioxide",
+  "gas exchange",
+  "capillaries"
+ ],
+ "printed": [
+  {
+   "text": "Air sacs, enlarged",
+   "at": [
+    850,
+    300
+   ],
+   "size": 24
+  }
+ ],
+ "structures": [
+  {
+   "id": "trachea",
+   "name": "trachea",
+   "outlines": [
+    {
+     "line": [
+      482,
+      110,
+      482,
+      380
+     ]
+    },
+    {
+     "line": [
+      518,
+      110,
+      518,
+      380
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      482,
+      150,
+      518,
+      150
+     ]
+    },
+    {
+     "line": [
+      482,
+      200,
+      518,
+      200
+     ]
+    },
+    {
+     "line": [
+      482,
+      250,
+      518,
+      250
+     ]
+    },
+    {
+     "line": [
+      482,
+      300,
+      518,
+      300
+     ]
+    },
+    {
+     "line": [
+      482,
+      350,
+      518,
+      350
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bronchi",
+   "name": "bronchi",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      500,
+      380,
+      395,
+      470,
+      340,
+      560
+     ]
+    },
+    {
+     "line": [
+      395,
+      470,
+      410,
+      600
+     ]
+    },
+    {
+     "line": [
+      500,
+      380,
+      605,
+      470,
+      660,
+      560
+     ]
+    },
+    {
+     "line": [
+      605,
+      470,
+      590,
+      600
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lungs",
+   "name": "lungs",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 455 330 C 385 300 255 380 235 560 C 220 700 245 780 300 790 C 360 795 420 782 458 762 C 472 620 472 450 455 330 Z"
+    },
+    {
+     "path": "M 545.0 330 C 615.0 300 745.0 380 765.0 560 C 780.0 700 755.0 780 700.0 790 C 640.0 795 580.0 782 542.0 762 C 528.0 620 528.0 450 545.0 330 Z"
+    }
+   ]
+  },
+  {
+   "id": "diaphragm",
+   "name": "diaphragm",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 180 860 C 320 770 680 770 820 860"
+    }
+   ]
+  },
+  {
+   "id": "alveoli",
+   "name": "alveoli",
+   "outlines": [
+    {
+     "circle": [
+      820,
+      140,
+      22
+     ]
+    },
+    {
+     "circle": [
+      866,
+      130,
+      22
+     ]
+    },
+    {
+     "circle": [
+      842,
+      182,
+      22
+     ]
+    },
+    {
+     "circle": [
+      888,
+      176,
+      22
+     ]
+    },
+    {
+     "circle": [
+      800,
+      190,
+      22
+     ]
+    }
+   ]
+  },
+  {
+   "id": "capillary",
+   "name": "capillary",
+   "pen": "fine",
+   "outlines": [
+    {
+     "path": "M 760 240 C 800 210 860 230 900 214 C 930 205 950 190 960 170"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Trachea",
+   "structure": "trachea",
+   "instruction": "Trace the trachea, the windpipe.",
+   "note": {
+    "text": "Air from your nose and mouth goes down the trachea, or windpipe."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Rings",
+   "structure": "trachea",
+   "part": "details",
+   "instruction": "Draw the rings across it.",
+   "note": {
+    "text": "Rings of cartilage hold the trachea open, so it never collapses."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Bronchi",
+   "structure": "bronchi",
+   "instruction": "Trace the branching tubes into each lung.",
+   "note": {
+    "text": "The trachea splits into two bronchi, which branch again and again into tiny tubes, like an upside-down tree.",
+    "remember": "Air path: trachea, bronchi, air sacs."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Lungs",
+   "structure": "lungs",
+   "instruction": "Trace both lungs.",
+   "note": {
+    "text": "The lungs are spongy organs filled with the branching tubes and millions of tiny air sacs."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Diaphragm",
+   "structure": "diaphragm",
+   "instruction": "Trace the dome-shaped muscle under the lungs.",
+   "note": {
+    "text": "When the diaphragm contracts, it moves down, making more space. The lungs stretch and air rushes in.",
+    "remember": "Diaphragm down = breathe in."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Air sacs",
+   "structure": "alveoli",
+   "instruction": "Trace the cluster of tiny air sacs, shown enlarged.",
+   "note": {
+    "text": "Each air sac, or alveolus, is only about 0.2 mm across. This is where gases are exchanged."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Capillary",
+   "structure": "capillary",
+   "instruction": "Draw the blood capillary next to the air sacs.",
+   "note": {
+    "text": "Oxygen diffuses from the air sacs into the blood, and carbon dioxide diffuses out to be breathed away.",
+    "remember": "Air sacs: oxygen in, CO2 out."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Name the parts",
+   "instruction": "Pick the name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      500,
+      230
+     ],
+     "answer": "Trachea",
+     "synonyms": [
+      "Windpipe"
+     ],
+     "role": "Carries air down to the lungs.",
+     "mistakes": {
+      "Esophagus": "The esophagus carries food. This ringed tube carries air: the trachea."
+     }
+    },
+    {
+     "n": 2,
+     "at": [
+      395,
+      470
+     ],
+     "answer": "Bronchus",
+     "synonyms": [
+      "Bronchi"
+     ],
+     "role": "Branch into a lung."
+    },
+    {
+     "n": 3,
+     "at": [
+      300,
+      600
+     ],
+     "answer": "Lung",
+     "role": "Where gas exchange happens."
+    },
+    {
+     "n": 4,
+     "at": [
+      500,
+      795
+     ],
+     "answer": "Diaphragm",
+     "role": "Muscle that powers breathing."
+    },
+    {
+     "n": 5,
+     "at": [
+      842,
+      160
+     ],
+     "answer": "Alveoli",
+     "synonyms": [
+      "Air sacs"
+     ],
+     "role": "Tiny air sacs."
+    }
+   ],
+   "vocabulary": [
+    "Trachea",
+    "Windpipe",
+    "Esophagus",
+    "Bronchus",
+    "Lung",
+    "Diaphragm",
+    "Alveoli",
+    "Heart"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Breathing in",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "What happens when you breathe in?",
+   "options": [
+    {
+     "text": "The diaphragm contracts and moves down, so the chest gets bigger and air flows in",
+     "correct": true,
+     "feedback": "Yes. Muscles between the ribs help too, lifting the rib cage outward."
+    },
+    {
+     "text": "The lungs suck air in on their own",
+     "feedback": "Lungs have no muscle to do that. The diaphragm and rib muscles make the space."
+    },
+    {
+     "text": "The diaphragm moves up",
+     "feedback": "When it contracts it moves down, making more room for the lungs."
+    },
+    {
+     "text": "The heart pushes air in",
+     "feedback": "The heart pumps blood. Breathing is powered by the diaphragm."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Teamwork",
+   "instruction": "Think about other systems.",
+   "showsDiagram": true,
+   "question": "Why do the air sacs need to be wrapped in blood capillaries?",
+   "options": [
+    {
+     "text": "So oxygen can pass straight into the blood and travel to every cell",
+     "correct": true,
+     "feedback": "Right. The respiratory system brings oxygen in; the circulatory system carries it to the body."
+    },
+    {
+     "text": "To keep the air sacs warm",
+     "feedback": "The capillaries are there for gas exchange: oxygen into the blood, CO2 out."
+    },
+    {
+     "text": "To pump air",
+     "feedback": "Capillaries carry blood. They pick up oxygen from the air sacs."
+    },
+    {
+     "text": "They don't need them",
+     "feedback": "Without capillaries, oxygen in the lungs couldn't reach the body's cells."
+    }
+   ]
+  }
+ ]
+}
