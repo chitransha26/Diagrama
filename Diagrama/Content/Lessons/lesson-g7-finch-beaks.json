@@ -1,0 +1,330 @@
+{
+ "id": "g7-finch-beaks",
+ "title": "Natural selection in finch beaks",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS4-4",
+ "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS MS-LS4-4: Construct an explanation based on evidence that describes how genetic variations of traits in a population increase some individuals' probability of surviving and reproducing in a specific environment"
+  },
+  {
+   "title": "OpenStax Biology 2e, 18.1 Understanding Evolution",
+   "url": "https://openstax.org/books/biology-2e/pages/18-1-understanding-evolution"
+  },
+  {
+   "title": "OpenStax Biology 2e, 19.1 Population Evolution",
+   "url": "https://openstax.org/books/biology-2e/pages/19-1-population-evolution"
+  }
+ ],
+ "keywords": [
+  "natural selection",
+  "finches",
+  "Galápagos",
+  "Darwin",
+  "beaks",
+  "variation",
+  "adaptation",
+  "evolution",
+  "Grants",
+  "El Niño",
+  "seeds",
+  "survival"
+ ],
+ "printed": [
+  {
+   "text": "Wide, deep beak",
+   "at": [
+    260,
+    540
+   ],
+   "size": 26
+  },
+  {
+   "text": "Thinner beak",
+   "at": [
+    760,
+    540
+   ],
+   "size": 26
+  },
+  {
+   "text": "Large, hard seeds",
+   "at": [
+    260,
+    870
+   ],
+   "size": 24
+  },
+  {
+   "text": "Small, soft seeds",
+   "at": [
+    760,
+    870
+   ],
+   "size": 24
+  },
+  {
+   "text": "Medium ground finches, Daphne Major",
+   "at": [
+    500,
+    70
+   ],
+   "size": 26
+  }
+ ],
+ "structures": [
+  {
+   "id": "heads",
+   "name": "two finches' heads",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      220,
+      340,
+      120
+     ]
+    },
+    {
+     "circle": [
+      720,
+      340,
+      120
+     ]
+    }
+   ],
+   "details": [
+    {
+     "circle": [
+      260,
+      300,
+      12
+     ]
+    },
+    {
+     "circle": [
+      760,
+      300,
+      12
+     ]
+    }
+   ]
+  },
+  {
+   "id": "big",
+   "name": "wide, deep beak",
+   "pen": "bold",
+   "outlines": [
+    {
+     "polygon": [
+      335,
+      270,
+      450,
+      340,
+      335,
+      420
+     ]
+    }
+   ]
+  },
+  {
+   "id": "thin",
+   "name": "thinner beak",
+   "pen": "bold",
+   "outlines": [
+    {
+     "polygon": [
+      836,
+      310,
+      960,
+      342,
+      836,
+      372
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hard",
+   "name": "large seeds",
+   "outlines": [
+    {
+     "ellipse": [
+      200,
+      760,
+      50,
+      34
+     ]
+    },
+    {
+     "ellipse": [
+      320,
+      770,
+      46,
+      32
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soft",
+   "name": "small seeds",
+   "outlines": [
+    {
+     "circle": [
+      700,
+      750,
+      12
+     ]
+    },
+    {
+     "circle": [
+      740,
+      780,
+      12
+     ]
+    },
+    {
+     "circle": [
+      780,
+      750,
+      12
+     ]
+    },
+    {
+     "circle": [
+      820,
+      785,
+      12
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Two finches",
+   "structure": "heads",
+   "instruction": "Trace the two finches' heads.",
+   "note": {
+    "text": "Peter and Rosemary Grant have studied the finches on one Galápagos island every year since 1976."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Eyes",
+   "structure": "heads",
+   "part": "details",
+   "instruction": "Dab an eye on each.",
+   "note": {
+    "text": "These two birds belong to the same species, the medium ground finch."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Wide beak",
+   "structure": "big",
+   "instruction": "Trace the wide, deep beak.",
+   "note": {
+    "text": "Beak size varies from bird to bird, and it's inherited: parents pass it to their young.",
+    "remember": "Variation + inheritance."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Thin beak",
+   "structure": "thin",
+   "instruction": "Trace the thinner beak.",
+   "note": {
+    "text": "Some birds in the same population have thinner beaks."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Large seeds",
+   "structure": "hard",
+   "instruction": "Trace the large, hard seeds.",
+   "note": {
+    "text": "Wide, deep beaks are good at cracking large, hard seeds."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Small seeds",
+   "structure": "soft",
+   "instruction": "Dab the small, soft seeds.",
+   "note": {
+    "text": "Thinner beaks handle small, soft seeds well."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "A wet year",
+   "instruction": "Use the model.",
+   "showsDiagram": true,
+   "question": "An El Niño brought heavy rain: few large hard seeds, lots of small soft ones. Which birds did better?",
+   "options": [
+    {
+     "text": "The thinner-beaked birds",
+     "correct": true,
+     "feedback": "Yes. They could eat the plentiful small seeds, so more of them survived and reproduced."
+    },
+    {
+     "text": "The wide-beaked birds",
+     "feedback": "Their food, the large hard seeds, became scarce."
+    },
+    {
+     "text": "Both did equally well",
+     "feedback": "The food changed, so one beak type had an advantage."
+    },
+    {
+     "text": "Neither: all the finches died",
+     "feedback": "Many survived, especially birds with beaks suited to the small seeds."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "The next generation",
+   "instruction": "Beak size is inherited.",
+   "showsDiagram": true,
+   "question": "In the years after the El Niño, what did the Grants find?",
+   "options": [
+    {
+     "text": "The average beak size in the population got smaller",
+     "correct": true,
+     "feedback": "Right. More thin-beaked parents meant more thin-beaked young. That's natural selection."
+    },
+    {
+     "text": "Each bird's beak shrank during its life",
+     "feedback": "Individual birds don't change their beaks. The population changed over generations."
+    },
+    {
+     "text": "Beaks got bigger",
+     "feedback": "The small-beaked birds survived better, so the average got smaller."
+    },
+    {
+     "text": "Nothing changed",
+     "feedback": "The Grants measured a real change: the average beak got smaller."
+    }
+   ]
+  },
+  {
+   "type": "order",
+   "title": "Natural selection",
+   "instruction": "Tap the steps of natural selection in order.",
+   "items": [
+    "Beak sizes vary",
+    "The food supply changes",
+    "Birds with suited beaks survive and reproduce more",
+    "Their young inherit those beaks",
+    "The population's average beak changes"
+   ],
+   "why": "Natural selection needs inherited variation. The environment decides which variations help survival.",
+   "hint": "It starts with differences that already exist."
+  }
+ ]
+}

@@ -1,0 +1,942 @@
+{
+ "id": "g7-dna-genes-chromosomes",
+ "title": "DNA, genes and chromosomes",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS3-1",
+ "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS MS-LS3-1: Develop and use a model to describe why structural changes to genes (mutations) located on chromosomes may affect proteins and may result in harmful, beneficial, or neutral effects to the structure and function of the organism"
+  },
+  {
+   "title": "OpenStax Biology 2e, 10.1 Cell Division",
+   "url": "https://openstax.org/books/biology-2e/pages/10-1-cell-division"
+  },
+  {
+   "title": "OpenStax Biology 2e, 14.2 DNA Structure and Sequencing",
+   "url": "https://openstax.org/books/biology-2e/pages/14-2-dna-structure-and-sequencing"
+  },
+  {
+   "title": "OpenStax Biology 2e, 14.0 Introduction to DNA Structure and Function (genes)",
+   "url": "https://openstax.org/books/biology-2e/pages/14-introduction"
+  }
+ ],
+ "keywords": [
+  "DNA",
+  "gene",
+  "genes",
+  "chromosome",
+  "chromosomes",
+  "nucleus",
+  "double helix",
+  "base pairs",
+  "protein",
+  "mutation",
+  "heredity",
+  "traits",
+  "46 chromosomes"
+ ],
+ "structures": [
+  {
+   "id": "cell",
+   "name": "cell",
+   "outlines": [
+    {
+     "circle": [
+      150,
+      500,
+      120
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nucleus",
+   "name": "nucleus",
+   "pen": "bold",
+   "outlines": [
+    {
+     "circle": [
+      150,
+      500,
+      55
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chromosome",
+   "name": "chromosome",
+   "pen": "bold",
+   "outlines": [
+    {
+     "path": "M 350 330 C 350 312 378 308 382 326 C 400 410 432 470 436 500 C 432 530 400 590 382 674 C 378 692 350 688 350 670 C 368 590 404 530 408 500 C 404 470 368 410 350 330 Z"
+    },
+    {
+     "path": "M 550.0 330 C 550.0 312 522.0 308 518.0 326 C 500.0 410 468.0 470 464.0 500 C 468.0 530 500.0 590 518.0 674 C 522.0 692 550.0 688 550.0 670 C 532.0 590 496.0 530 492.0 500 C 496.0 470 532.0 410 550.0 330 Z"
+    }
+   ]
+  },
+  {
+   "id": "zoom",
+   "name": "zoom arrows",
+   "pen": "fine",
+   "outlines": [
+    {
+     "line": [
+      280,
+      500,
+      340,
+      500
+     ]
+    },
+    {
+     "line": [
+      318.8,
+      488.7,
+      340,
+      500,
+      318.8,
+      511.3
+     ]
+    },
+    {
+     "line": [
+      560,
+      500,
+      640,
+      500
+     ]
+    },
+    {
+     "line": [
+      618.8,
+      488.7,
+      640,
+      500,
+      618.8,
+      511.3
+     ]
+    }
+   ]
+  },
+  {
+   "id": "helix",
+   "name": "DNA double helix",
+   "outlines": [
+    {
+     "line": [
+      800.0,
+      200,
+      807.3,
+      205,
+      814.6,
+      210,
+      821.6,
+      215,
+      828.5,
+      220,
+      835.0,
+      225,
+      841.1,
+      230,
+      846.8,
+      235,
+      852.0,
+      240,
+      856.6,
+      245,
+      860.6,
+      250,
+      863.9,
+      255,
+      866.6,
+      260,
+      868.5,
+      265,
+      869.6,
+      270,
+      870.0,
+      275,
+      869.6,
+      280,
+      868.5,
+      285,
+      866.6,
+      290,
+      863.9,
+      295,
+      860.6,
+      300,
+      856.6,
+      305,
+      852.0,
+      310,
+      846.8,
+      315,
+      841.1,
+      320,
+      835.0,
+      325,
+      828.5,
+      330,
+      821.6,
+      335,
+      814.6,
+      340,
+      807.3,
+      345,
+      800.0,
+      350,
+      792.7,
+      355,
+      785.4,
+      360,
+      778.4,
+      365,
+      771.5,
+      370,
+      765.0,
+      375,
+      758.9,
+      380,
+      753.2,
+      385,
+      748.0,
+      390,
+      743.4,
+      395,
+      739.4,
+      400,
+      736.1,
+      405,
+      733.4,
+      410,
+      731.5,
+      415,
+      730.4,
+      420,
+      730.0,
+      425,
+      730.4,
+      430,
+      731.5,
+      435,
+      733.4,
+      440,
+      736.1,
+      445,
+      739.4,
+      450,
+      743.4,
+      455,
+      748.0,
+      460,
+      753.2,
+      465,
+      758.9,
+      470,
+      765.0,
+      475,
+      771.5,
+      480,
+      778.4,
+      485,
+      785.4,
+      490,
+      792.7,
+      495,
+      800.0,
+      500,
+      807.3,
+      505,
+      814.6,
+      510,
+      821.6,
+      515,
+      828.5,
+      520,
+      835.0,
+      525,
+      841.1,
+      530,
+      846.8,
+      535,
+      852.0,
+      540,
+      856.6,
+      545,
+      860.6,
+      550,
+      863.9,
+      555,
+      866.6,
+      560,
+      868.5,
+      565,
+      869.6,
+      570,
+      870.0,
+      575,
+      869.6,
+      580,
+      868.5,
+      585,
+      866.6,
+      590,
+      863.9,
+      595,
+      860.6,
+      600,
+      856.6,
+      605,
+      852.0,
+      610,
+      846.8,
+      615,
+      841.1,
+      620,
+      835.0,
+      625,
+      828.5,
+      630,
+      821.6,
+      635,
+      814.6,
+      640,
+      807.3,
+      645,
+      800.0,
+      650,
+      792.7,
+      655,
+      785.4,
+      660,
+      778.4,
+      665,
+      771.5,
+      670,
+      765.0,
+      675,
+      758.9,
+      680,
+      753.2,
+      685,
+      748.0,
+      690,
+      743.4,
+      695,
+      739.4,
+      700,
+      736.1,
+      705,
+      733.4,
+      710,
+      731.5,
+      715,
+      730.4,
+      720,
+      730.0,
+      725,
+      730.4,
+      730,
+      731.5,
+      735,
+      733.4,
+      740,
+      736.1,
+      745,
+      739.4,
+      750,
+      743.4,
+      755,
+      748.0,
+      760,
+      753.2,
+      765,
+      758.9,
+      770,
+      765.0,
+      775,
+      771.5,
+      780,
+      778.4,
+      785,
+      785.4,
+      790,
+      792.7,
+      795,
+      800.0,
+      800
+     ]
+    },
+    {
+     "line": [
+      800.0,
+      200,
+      792.7,
+      205,
+      785.4,
+      210,
+      778.4,
+      215,
+      771.5,
+      220,
+      765.0,
+      225,
+      758.9,
+      230,
+      753.2,
+      235,
+      748.0,
+      240,
+      743.4,
+      245,
+      739.4,
+      250,
+      736.1,
+      255,
+      733.4,
+      260,
+      731.5,
+      265,
+      730.4,
+      270,
+      730.0,
+      275,
+      730.4,
+      280,
+      731.5,
+      285,
+      733.4,
+      290,
+      736.1,
+      295,
+      739.4,
+      300,
+      743.4,
+      305,
+      748.0,
+      310,
+      753.2,
+      315,
+      758.9,
+      320,
+      765.0,
+      325,
+      771.5,
+      330,
+      778.4,
+      335,
+      785.4,
+      340,
+      792.7,
+      345,
+      800.0,
+      350,
+      807.3,
+      355,
+      814.6,
+      360,
+      821.6,
+      365,
+      828.5,
+      370,
+      835.0,
+      375,
+      841.1,
+      380,
+      846.8,
+      385,
+      852.0,
+      390,
+      856.6,
+      395,
+      860.6,
+      400,
+      863.9,
+      405,
+      866.6,
+      410,
+      868.5,
+      415,
+      869.6,
+      420,
+      870.0,
+      425,
+      869.6,
+      430,
+      868.5,
+      435,
+      866.6,
+      440,
+      863.9,
+      445,
+      860.6,
+      450,
+      856.6,
+      455,
+      852.0,
+      460,
+      846.8,
+      465,
+      841.1,
+      470,
+      835.0,
+      475,
+      828.5,
+      480,
+      821.6,
+      485,
+      814.6,
+      490,
+      807.3,
+      495,
+      800.0,
+      500,
+      792.7,
+      505,
+      785.4,
+      510,
+      778.4,
+      515,
+      771.5,
+      520,
+      765.0,
+      525,
+      758.9,
+      530,
+      753.2,
+      535,
+      748.0,
+      540,
+      743.4,
+      545,
+      739.4,
+      550,
+      736.1,
+      555,
+      733.4,
+      560,
+      731.5,
+      565,
+      730.4,
+      570,
+      730.0,
+      575,
+      730.4,
+      580,
+      731.5,
+      585,
+      733.4,
+      590,
+      736.1,
+      595,
+      739.4,
+      600,
+      743.4,
+      605,
+      748.0,
+      610,
+      753.2,
+      615,
+      758.9,
+      620,
+      765.0,
+      625,
+      771.5,
+      630,
+      778.4,
+      635,
+      785.4,
+      640,
+      792.7,
+      645,
+      800.0,
+      650,
+      807.3,
+      655,
+      814.6,
+      660,
+      821.6,
+      665,
+      828.5,
+      670,
+      835.0,
+      675,
+      841.1,
+      680,
+      846.8,
+      685,
+      852.0,
+      690,
+      856.6,
+      695,
+      860.6,
+      700,
+      863.9,
+      705,
+      866.6,
+      710,
+      868.5,
+      715,
+      869.6,
+      720,
+      870.0,
+      725,
+      869.6,
+      730,
+      868.5,
+      735,
+      866.6,
+      740,
+      863.9,
+      745,
+      860.6,
+      750,
+      856.6,
+      755,
+      852.0,
+      760,
+      846.8,
+      765,
+      841.1,
+      770,
+      835.0,
+      775,
+      828.5,
+      780,
+      821.6,
+      785,
+      814.6,
+      790,
+      807.3,
+      795,
+      800.0,
+      800
+     ]
+    }
+   ],
+   "details": [
+    {
+     "line": [
+      756.6,
+      239,
+      843.4,
+      239
+     ]
+    },
+    {
+     "line": [
+      742.4,
+      263,
+      857.6,
+      263
+     ]
+    },
+    {
+     "line": [
+      742.4,
+      287,
+      857.6,
+      287
+     ]
+    },
+    {
+     "line": [
+      756.6,
+      311,
+      843.4,
+      311
+     ]
+    },
+    {
+     "line": [
+      837.9,
+      383,
+      762.1,
+      383
+     ]
+    },
+    {
+     "line": [
+      855.3,
+      407,
+      744.7,
+      407
+     ]
+    },
+    {
+     "line": [
+      859.0,
+      431,
+      741.0,
+      431
+     ]
+    },
+    {
+     "line": [
+      848.1,
+      455,
+      751.9,
+      455
+     ]
+    },
+    {
+     "line": [
+      768.1,
+      527,
+      831.9,
+      527
+     ]
+    },
+    {
+     "line": [
+      747.9,
+      551,
+      852.1,
+      551
+     ]
+    },
+    {
+     "line": [
+      740.5,
+      575,
+      859.5,
+      575
+     ]
+    },
+    {
+     "line": [
+      747.9,
+      599,
+      852.1,
+      599
+     ]
+    },
+    {
+     "line": [
+      768.1,
+      623,
+      831.9,
+      623
+     ]
+    },
+    {
+     "line": [
+      848.1,
+      695,
+      751.9,
+      695
+     ]
+    },
+    {
+     "line": [
+      859.0,
+      719,
+      741.0,
+      719
+     ]
+    },
+    {
+     "line": [
+      855.3,
+      743,
+      744.7,
+      743
+     ]
+    },
+    {
+     "line": [
+      837.9,
+      767,
+      762.1,
+      767
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gene",
+   "name": "gene",
+   "pen": "bold",
+   "outlines": [
+    {
+     "line": [
+      890,
+      400,
+      915,
+      400,
+      915,
+      600,
+      890,
+      600
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Cell",
+   "structure": "cell",
+   "instruction": "Trace the cell.",
+   "note": {
+    "text": "Every cell in your body carries a full set of instructions for building and running you."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Nucleus",
+   "structure": "nucleus",
+   "instruction": "Trace the nucleus.",
+   "note": {
+    "text": "The instructions are stored in the nucleus, on chromosomes.",
+    "remember": "Nucleus holds the chromosomes."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Zoom in",
+   "structure": "zoom",
+   "instruction": "Draw the two arrows zooming in.",
+   "note": {
+    "text": "Each arrow zooms in closer: from the nucleus to one chromosome, then to its DNA."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Chromosome",
+   "structure": "chromosome",
+   "instruction": "Trace the X-shaped chromosome.",
+   "note": {
+    "text": "A chromosome is DNA wrapped tightly around proteins. Human body cells have 46 chromosomes, in 23 pairs.",
+    "remember": "Humans: 46 chromosomes."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "DNA",
+   "structure": "helix",
+   "instruction": "Trace the two twisting strands of DNA.",
+   "note": {
+    "text": "DNA is two strands twisted around each other, a shape called a double helix."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Base pairs",
+   "structure": "helix",
+   "part": "details",
+   "instruction": "Draw the rungs between the strands.",
+   "note": {
+    "text": "The rungs are pairs of bases: A always pairs with T, and C with G. Their order spells out the instructions.",
+    "remember": "A with T, C with G."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Gene",
+   "structure": "gene",
+   "instruction": "Draw the bracket marking one section of the DNA.",
+   "note": {
+    "text": "A gene is a section of DNA that codes for one product, usually a protein. Each chromosome carries thousands."
+   }
+  },
+  {
+   "type": "order",
+   "title": "Biggest to smallest",
+   "instruction": "Tap from biggest to smallest.",
+   "items": [
+    "Cell",
+    "Nucleus",
+    "Chromosome",
+    "Gene"
+   ],
+   "why": "A cell has a nucleus, the nucleus holds chromosomes, and each chromosome carries thousands of genes.",
+   "hint": "Each one is inside the one before it."
+  },
+  {
+   "type": "label",
+   "title": "Name the parts",
+   "instruction": "Pick the name for each numbered part.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      150,
+      500
+     ],
+     "answer": "Nucleus",
+     "role": "Holds the chromosomes."
+    },
+    {
+     "n": 2,
+     "at": [
+      450,
+      400
+     ],
+     "answer": "Chromosome",
+     "role": "Tightly packed DNA.",
+     "mistakes": {
+      "Gene": "A gene is a short section of DNA. This whole packed X is a chromosome."
+     }
+    },
+    {
+     "n": 3,
+     "at": [
+      800,
+      250
+     ],
+     "answer": "DNA",
+     "role": "A double helix."
+    },
+    {
+     "n": 4,
+     "at": [
+      945,
+      500
+     ],
+     "answer": "Gene",
+     "role": "Codes for a protein."
+    }
+   ],
+   "vocabulary": [
+    "Nucleus",
+    "Chromosome",
+    "DNA",
+    "Gene",
+    "Protein",
+    "Cell membrane"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Mutations",
+   "instruction": "Think about the instructions.",
+   "showsDiagram": true,
+   "question": "A mutation changes the order of bases in one gene. What could happen?",
+   "options": [
+    {
+     "text": "The protein that gene codes for may change, which could be harmful, helpful or have no effect",
+     "correct": true,
+     "feedback": "Yes. Changed instructions can change a protein, and so a trait. Many mutations have no effect at all."
+    },
+    {
+     "text": "Every mutation is harmful",
+     "feedback": "Some are harmful, but some are helpful and many have no effect."
+    },
+    {
+     "text": "The whole chromosome disappears",
+     "feedback": "A mutation changes the DNA's code. The chromosome is still there."
+    },
+    {
+     "text": "Nothing can ever change",
+     "feedback": "Changing the code of a gene can change the protein it makes."
+    }
+   ]
+  }
+ ]
+}

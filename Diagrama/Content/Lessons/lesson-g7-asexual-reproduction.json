@@ -1,0 +1,403 @@
+{
+ "id": "g7-asexual-reproduction",
+ "title": "Asexual reproduction: budding and fission",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS3-2",
+ "minutes": 8,
+ "sources": [
+  {
+   "title": "NGSS MS-LS3-2: Develop and use a model to describe why asexual reproduction results in offspring with identical genetic information and sexual reproduction results in offspring with genetic variation"
+  },
+  {
+   "title": "OpenStax Biology 2e, 10.5 Prokaryotic Cell Division",
+   "url": "https://openstax.org/books/biology-2e/pages/10-5-prokaryotic-cell-division"
+  },
+  {
+   "title": "OpenStax Biology 2e, 24.1 Characteristics of Fungi (yeast budding)",
+   "url": "https://openstax.org/books/biology-2e/pages/24-1-characteristics-of-fungi"
+  },
+  {
+   "title": "OpenStax Biology 2e, 27.1 Features of the Animal Kingdom (budding)",
+   "url": "https://openstax.org/books/biology-2e/pages/27-1-features-of-the-animal-kingdom"
+  },
+  {
+   "title": "OpenStax Biology 2e, 32.3 Asexual Reproduction",
+   "url": "https://openstax.org/books/biology-2e/pages/32-3-asexual-reproduction"
+  }
+ ],
+ "keywords": [
+  "asexual reproduction",
+  "binary fission",
+  "fission",
+  "budding",
+  "bacteria",
+  "yeast",
+  "identical",
+  "clone",
+  "offspring",
+  "one parent",
+  "genetic variation"
+ ],
+ "printed": [
+  {
+   "text": "Bacterium: binary fission",
+   "at": [
+    500,
+    120
+   ],
+   "size": 28
+  },
+  {
+   "text": "Yeast: budding",
+   "at": [
+    500,
+    560
+   ],
+   "size": 28
+  }
+ ],
+ "structures": [
+  {
+   "id": "f1",
+   "name": "bacterium",
+   "outlines": [
+    {
+     "rect": [
+      60,
+      215,
+      160,
+      70,
+      35
+     ]
+    }
+   ],
+   "details": [
+    {
+     "path": "M 110 250 C 120 230 135 270 145 250 C 155 230 165 265 170 250"
+    }
+   ]
+  },
+  {
+   "id": "f2",
+   "name": "bacterium stretching",
+   "outlines": [
+    {
+     "rect": [
+      320,
+      215,
+      240,
+      70,
+      35
+     ]
+    }
+   ],
+   "details": [
+    {
+     "path": "M 360 250 C 370 230 385 270 395 250 C 405 230 415 265 420 250"
+    },
+    {
+     "path": "M 460 250 C 470 230 485 270 495 250 C 505 230 515 265 520 250"
+    }
+   ]
+  },
+  {
+   "id": "f3",
+   "name": "two bacteria",
+   "outlines": [
+    {
+     "rect": [
+      660,
+      215,
+      140,
+      70,
+      35
+     ]
+    },
+    {
+     "rect": [
+      820,
+      215,
+      140,
+      70,
+      35
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b1",
+   "name": "yeast cell",
+   "outlines": [
+    {
+     "ellipse": [
+      140,
+      720,
+      80,
+      60
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "name": "yeast with a bud",
+   "outlines": [
+    {
+     "ellipse": [
+      440,
+      720,
+      80,
+      60
+     ]
+    },
+    {
+     "circle": [
+      540,
+      706,
+      32
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "name": "two yeast cells",
+   "outlines": [
+    {
+     "ellipse": [
+      760,
+      720,
+      80,
+      60
+     ]
+    },
+    {
+     "circle": [
+      905,
+      706,
+      38
+     ]
+    }
+   ]
+  },
+  {
+   "id": "steps",
+   "name": "arrows",
+   "pen": "fine",
+   "outlines": [
+    {
+     "line": [
+      235,
+      250,
+      300,
+      250
+     ]
+    },
+    {
+     "line": [
+      282.3,
+      240.6,
+      300,
+      250,
+      282.3,
+      259.4
+     ]
+    },
+    {
+     "line": [
+      575,
+      250,
+      640,
+      250
+     ]
+    },
+    {
+     "line": [
+      622.3,
+      240.6,
+      640,
+      250,
+      622.3,
+      259.4
+     ]
+    },
+    {
+     "line": [
+      235,
+      720,
+      340,
+      720
+     ]
+    },
+    {
+     "line": [
+      322.3,
+      710.6,
+      340,
+      720,
+      322.3,
+      729.4
+     ]
+    },
+    {
+     "line": [
+      590,
+      720,
+      662,
+      720
+     ]
+    },
+    {
+     "line": [
+      644.3,
+      710.6,
+      662,
+      720,
+      644.3,
+      729.4
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Bacterium",
+   "structure": "f1",
+   "instruction": "Trace the bacterium at the top left.",
+   "note": {
+    "text": "Bacteria reproduce by binary fission: one cell splits into two."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Its DNA",
+   "structure": "f1",
+   "part": "details",
+   "instruction": "Draw its loop of DNA.",
+   "note": {
+    "text": "A bacterium has one loop-shaped chromosome."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Copying",
+   "structure": "f2",
+   "instruction": "Trace the longer cell.",
+   "note": {
+    "text": "The cell copies its DNA and grows longer."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Two copies",
+   "structure": "f2",
+   "part": "details",
+   "instruction": "Draw the two copies of the DNA.",
+   "note": {
+    "text": "Each copy is exact, so each new cell gets the same instructions.",
+    "remember": "DNA copied exactly."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Split",
+   "structure": "f3",
+   "instruction": "Trace the two new bacteria.",
+   "note": {
+    "text": "A new wall forms across the middle and the cell splits into two identical daughter cells."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Yeast",
+   "structure": "b1",
+   "instruction": "Trace the yeast cell.",
+   "note": {
+    "text": "Yeast is a single-celled fungus. It reproduces by budding."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Bud",
+   "structure": "b2",
+   "instruction": "Trace the yeast cell with a bud bulging out.",
+   "note": {
+    "text": "A bulge forms on the side of the cell. The nucleus divides, and one copy moves into the bud."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "New cell",
+   "structure": "b3",
+   "instruction": "Trace the parent and the bud that broke off.",
+   "note": {
+    "text": "The bud detaches as a new yeast cell.",
+    "remember": "Asexual: one parent, identical offspring."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Steps",
+   "structure": "steps",
+   "instruction": "Draw the arrows between the steps.",
+   "note": {
+    "text": "Each arrow is one step in time. Both processes need just one parent."
+   }
+  },
+  {
+   "type": "choice",
+   "title": "Identical",
+   "instruction": "Compare the offspring with the parent.",
+   "showsDiagram": true,
+   "question": "How do the offspring's genes compare with the parent's?",
+   "options": [
+    {
+     "text": "They're identical, because there's only one parent and its DNA is copied",
+     "correct": true,
+     "feedback": "Yes. Asexual reproduction makes genetically identical offspring, unless a rare mutation happens."
+    },
+    {
+     "text": "Half from each of two parents",
+     "feedback": "That's sexual reproduction. Here there's only one parent."
+    },
+    {
+     "text": "Completely different",
+     "feedback": "The DNA is copied, so the offspring match the parent."
+    },
+    {
+     "text": "They have no genes",
+     "feedback": "Every cell needs DNA. The offspring get an exact copy."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Trade-off",
+   "instruction": "Compare with sexual reproduction.",
+   "showsDiagram": false,
+   "question": "A new disease kills one strain of bacteria. Why might a whole colony made by fission die?",
+   "options": [
+    {
+     "text": "They're all identical, so if one can't survive it, none can",
+     "correct": true,
+     "feedback": "Right. Sexual reproduction makes varied offspring, so some may survive a change. Identical ones can't."
+    },
+    {
+     "text": "Fission makes weak cells",
+     "feedback": "The cells are healthy. The problem is that they're all the same."
+    },
+    {
+     "text": "Bacteria can't get diseases",
+     "feedback": "They can. And identical cells all share the same weakness."
+    },
+    {
+     "text": "Fission is too slow",
+     "feedback": "Fission is fast. The risk is that every cell is identical."
+    }
+   ]
+  }
+ ]
+}

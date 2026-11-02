@@ -1,0 +1,462 @@
+{
+ "id": "g7-homologous-forelimbs",
+ "title": "Homologous forelimbs",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS4-2",
+ "minutes": 9,
+ "colorMode": "illustration",
+ "sources": [
+  {
+   "title": "NGSS MS-LS4-2: Apply scientific ideas to construct an explanation for the anatomical similarities and differences among modern organisms and between modern and fossil organisms to infer evolutionary relationships"
+  },
+  {
+   "title": "OpenStax Biology 2e, 18.1 Understanding Evolution",
+   "url": "https://openstax.org/books/biology-2e/pages/18-1-understanding-evolution"
+  }
+ ],
+ "keywords": [
+  "homologous structures",
+  "forelimbs",
+  "evolution",
+  "common ancestor",
+  "bones",
+  "human arm",
+  "dog leg",
+  "bird wing",
+  "whale flipper",
+  "anatomy",
+  "evidence"
+ ],
+ "printed": [
+  {
+   "text": "Human",
+   "at": [
+    125,
+    940
+   ],
+   "size": 28
+  },
+  {
+   "text": "Dog",
+   "at": [
+    375,
+    940
+   ],
+   "size": 28
+  },
+  {
+   "text": "Bird",
+   "at": [
+    625,
+    940
+   ],
+   "size": 28
+  },
+  {
+   "text": "Whale",
+   "at": [
+    875,
+    940
+   ],
+   "size": 28
+  }
+ ],
+ "legend": [
+  {
+   "name": "Upper arm bone",
+   "color": "#D97B5A",
+   "meaning": "One bone, in every limb"
+  },
+  {
+   "name": "Forearm bones",
+   "color": "#E8C15A",
+   "meaning": "Two bones, in every limb"
+  },
+  {
+   "name": "Wrist and hand",
+   "color": null,
+   "meaning": "Drawn as lines; many small bones"
+  }
+ ],
+ "structures": [
+  {
+   "id": "upper",
+   "name": "upper arm bones",
+   "colorName": "upper arm bone",
+   "fill": "#D97B5A",
+   "pen": "bold",
+   "outlines": [
+    {
+     "rect": [
+      110.0,
+      150,
+      30,
+      250,
+      15.0
+     ]
+    },
+    {
+     "rect": [
+      358.0,
+      150,
+      34,
+      220,
+      17.0
+     ]
+    },
+    {
+     "rect": [
+      610.0,
+      150,
+      30,
+      240,
+      15.0
+     ]
+    },
+    {
+     "rect": [
+      849.0,
+      150,
+      52,
+      120,
+      26.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lower",
+   "name": "forearm bones",
+   "colorName": "forearm bones",
+   "fill": "#E8C15A",
+   "outlines": [
+    {
+     "rect": [
+      94.0,
+      420,
+      22,
+      210,
+      11.0
+     ]
+    },
+    {
+     "rect": [
+      134.0,
+      420,
+      22,
+      210,
+      11.0
+     ]
+    },
+    {
+     "rect": [
+      344.0,
+      390,
+      22,
+      240,
+      11.0
+     ]
+    },
+    {
+     "rect": [
+      384.0,
+      390,
+      22,
+      240,
+      11.0
+     ]
+    },
+    {
+     "rect": [
+      596.0,
+      410,
+      18,
+      260,
+      9.0
+     ]
+    },
+    {
+     "rect": [
+      636.0,
+      410,
+      18,
+      260,
+      9.0
+     ]
+    },
+    {
+     "rect": [
+      832.0,
+      290,
+      34,
+      110,
+      17.0
+     ]
+    },
+    {
+     "rect": [
+      884.0,
+      290,
+      34,
+      110,
+      17.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hand",
+   "name": "hand bones",
+   "pen": "fine",
+   "outlines": [
+    {
+     "line": [
+      89,
+      650,
+      60.2,
+      830
+     ]
+    },
+    {
+     "line": [
+      107,
+      650,
+      92.6,
+      830
+     ]
+    },
+    {
+     "line": [
+      125,
+      650,
+      125.0,
+      830
+     ]
+    },
+    {
+     "line": [
+      143,
+      650,
+      157.4,
+      830
+     ]
+    },
+    {
+     "line": [
+      161,
+      650,
+      189.8,
+      830
+     ]
+    },
+    {
+     "line": [
+      345,
+      650,
+      336.0,
+      760
+     ]
+    },
+    {
+     "line": [
+      365,
+      650,
+      362.0,
+      760
+     ]
+    },
+    {
+     "line": [
+      385,
+      650,
+      388.0,
+      760
+     ]
+    },
+    {
+     "line": [
+      405,
+      650,
+      414.0,
+      760
+     ]
+    },
+    {
+     "line": [
+      625,
+      690,
+      625,
+      860
+     ]
+    },
+    {
+     "line": [
+      607,
+      690,
+      590,
+      780
+     ]
+    },
+    {
+     "line": [
+      835,
+      420,
+      815.0,
+      600
+     ]
+    },
+    {
+     "line": [
+      855,
+      420,
+      845.0,
+      660
+     ]
+    },
+    {
+     "line": [
+      875,
+      420,
+      875.0,
+      720
+     ]
+    },
+    {
+     "line": [
+      895,
+      420,
+      905.0,
+      660
+     ]
+    },
+    {
+     "line": [
+      915,
+      420,
+      935.0,
+      600
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Upper arm",
+   "structure": "upper",
+   "instruction": "Trace the upper arm bone in all four limbs.",
+   "note": {
+    "text": "A human arm, a dog's front leg, a bird's wing and a whale's flipper all start with one upper bone.",
+    "remember": "One bone at the top."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Forearm",
+   "structure": "lower",
+   "instruction": "Trace the pair of forearm bones in each limb.",
+   "note": {
+    "text": "Next come two forearm bones, side by side, in all four.",
+    "remember": "Then two bones."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Hand",
+   "structure": "hand",
+   "instruction": "Draw the hand bones in each limb.",
+   "note": {
+    "text": "Then come wrist and hand bones: long fingers in the flipper, few and fused in the wing."
+   }
+  },
+  {
+   "type": "color",
+   "title": "Color",
+   "structures": [
+    "upper",
+    "lower"
+   ],
+   "instruction": "Color the matching bones the same color in every limb."
+  },
+  {
+   "type": "choice",
+   "title": "Same plan",
+   "instruction": "Compare the four limbs.",
+   "showsDiagram": true,
+   "question": "These limbs do very different jobs. Why do they have the same layout of bones?",
+   "options": [
+    {
+     "text": "They were inherited from a common ancestor",
+     "correct": true,
+     "feedback": "Yes. Parts with the same basic structure from a shared ancestor are called homologous structures."
+    },
+    {
+     "text": "They all do the same job",
+     "feedback": "They don't: grabbing, running, flying, swimming. The layout comes from a shared ancestor."
+    },
+    {
+     "text": "It's a coincidence",
+     "feedback": "The same bones in the same order in so many animals points to a common ancestor."
+    },
+    {
+     "text": "Bones can only grow one way",
+     "feedback": "Bones vary hugely. These match because of shared ancestry."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Differences",
+   "instruction": "Look at the shapes and sizes.",
+   "showsDiagram": true,
+   "question": "Why are the bones different shapes and sizes in each animal?",
+   "options": [
+    {
+     "text": "Over time, evolution changed them to suit each animal's way of life",
+     "correct": true,
+     "feedback": "Right. The layout stayed the same, but shapes and sizes changed for swimming, flying, running or grabbing."
+    },
+    {
+     "text": "They come from different ancestors",
+     "feedback": "The shared layout shows a common ancestor. The shapes changed over time."
+    },
+    {
+     "text": "Each animal grows its bones however it likes",
+     "feedback": "Bone shapes are inherited. They changed over many generations."
+    },
+    {
+     "text": "The bones aren't really different",
+     "feedback": "Compare the flipper's short upper bone with the human's long one."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Infer",
+   "instruction": "Use the evidence.",
+   "showsDiagram": false,
+   "question": "Whales live in water like fish. What do their flipper bones suggest?",
+   "options": [
+    {
+     "text": "Whales are more closely related to land mammals than to fish",
+     "correct": true,
+     "feedback": "Yes. Their flippers hide the same arm bones as a human or dog, inherited from mammal ancestors."
+    },
+    {
+     "text": "Whales are a kind of fish",
+     "feedback": "Their limb bones match mammals' arms, not fish fins. Whales are mammals."
+    },
+    {
+     "text": "Whales have no ancestors",
+     "feedback": "Every species has ancestors. The bones point to land-mammal relatives."
+    },
+    {
+     "text": "Flippers prove nothing",
+     "feedback": "Homologous bones are strong evidence of shared ancestry."
+    }
+   ]
+  }
+ ]
+}

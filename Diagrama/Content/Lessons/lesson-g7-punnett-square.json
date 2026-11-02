@@ -1,0 +1,289 @@
+{
+ "id": "g7-punnett-square",
+ "title": "A Punnett square",
+ "grade": "7",
+ "subject": "Life science",
+ "standard": "MS-LS3-2",
+ "minutes": 9,
+ "sources": [
+  {
+   "title": "NGSS MS-LS3-2: Develop and use a model to describe why asexual reproduction results in offspring with identical genetic information and sexual reproduction results in offspring with genetic variation"
+  },
+  {
+   "title": "OpenStax Biology 2e, 12.2 Characteristics and Traits",
+   "url": "https://openstax.org/books/biology-2e/pages/12-2-characteristics-and-traits"
+  },
+  {
+   "title": "OpenStax Biology 2e, 12.1 Mendel's Experiments and the Laws of Probability",
+   "url": "https://openstax.org/books/biology-2e/pages/12-1-mendels-experiments-and-the-laws-of-probability"
+  }
+ ],
+ "keywords": [
+  "Punnett square",
+  "genetics",
+  "alleles",
+  "dominant",
+  "recessive",
+  "genotype",
+  "phenotype",
+  "Mendel",
+  "pea plants",
+  "heredity",
+  "probability",
+  "traits"
+ ],
+ "printed": [
+  {
+   "text": "Parent 1: Vv",
+   "at": [
+    500,
+    140
+   ],
+   "size": 30
+  },
+  {
+   "text": "Parent 2: Vv",
+   "at": [
+    120,
+    500
+   ],
+   "size": 30
+  },
+  {
+   "text": "V",
+   "at": [
+    400,
+    255
+   ],
+   "size": 40
+  },
+  {
+   "text": "v",
+   "at": [
+    600,
+    255
+   ],
+   "size": 40
+  },
+  {
+   "text": "V",
+   "at": [
+    250,
+    400
+   ],
+   "size": 40
+  },
+  {
+   "text": "v",
+   "at": [
+    250,
+    600
+   ],
+   "size": 40
+  },
+  {
+   "text": "V = violet flowers (dominant)   v = white (recessive)",
+   "at": [
+    500,
+    820
+   ],
+   "size": 26
+  }
+ ],
+ "structures": [
+  {
+   "id": "box",
+   "name": "square",
+   "pen": "bold",
+   "outlines": [
+    {
+     "rect": [
+      300,
+      300,
+      400,
+      400,
+      8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "grid",
+   "name": "dividing lines",
+   "outlines": [
+    {
+     "line": [
+      500,
+      300,
+      500,
+      700
+     ]
+    },
+    {
+     "line": [
+      300,
+      500,
+      700,
+      500
+     ]
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "type": "trace",
+   "title": "Square",
+   "structure": "box",
+   "instruction": "Trace the big square.",
+   "note": {
+    "text": "A Punnett square predicts the offspring of two parents. Here, two pea plants with violet flowers."
+   }
+  },
+  {
+   "type": "trace",
+   "title": "Four boxes",
+   "structure": "grid",
+   "instruction": "Draw the lines that divide it into four boxes.",
+   "note": {
+    "text": "Each parent has two copies of the flower-color gene, called alleles. Each passes one on, by chance.",
+    "remember": "One allele from each parent."
+   }
+  },
+  {
+   "type": "label",
+   "title": "Fill it in",
+   "instruction": "Combine the letter above with the letter at the side for each box.",
+   "targets": [
+    {
+     "n": 1,
+     "at": [
+      400,
+      400
+     ],
+     "answer": "VV",
+     "role": "Two violet alleles."
+    },
+    {
+     "n": 2,
+     "at": [
+      600,
+      400
+     ],
+     "answer": "Vv",
+     "synonyms": [
+      "vV"
+     ],
+     "role": "One of each."
+    },
+    {
+     "n": 3,
+     "at": [
+      400,
+      600
+     ],
+     "answer": "Vv",
+     "synonyms": [
+      "vV"
+     ],
+     "role": "One of each."
+    },
+    {
+     "n": 4,
+     "at": [
+      600,
+      600
+     ],
+     "answer": "vv",
+     "role": "Two white alleles.",
+     "mistakes": {
+      "Vv": "This box gets v from the top and v from the side: vv."
+     }
+    }
+   ],
+   "vocabulary": [
+    "VV",
+    "Vv",
+    "vv"
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Dominant",
+   "instruction": "Read the key.",
+   "showsDiagram": true,
+   "question": "A plant is Vv. What color are its flowers?",
+   "options": [
+    {
+     "text": "Violet, because V is dominant",
+     "correct": true,
+     "feedback": "Yes. One dominant allele is enough to show the trait. The white allele is hidden."
+    },
+    {
+     "text": "White",
+     "feedback": "White shows only with two recessive alleles, vv."
+    },
+    {
+     "text": "Half violet, half white",
+     "feedback": "In peas, V is fully dominant. Vv flowers are violet."
+    },
+    {
+     "text": "Light purple",
+     "feedback": "For pea flower color, V is fully dominant, so Vv is violet."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Predict",
+   "instruction": "Count the boxes.",
+   "showsDiagram": true,
+   "question": "What is the chance that an offspring has white flowers?",
+   "options": [
+    {
+     "text": "1 in 4, or 25%",
+     "correct": true,
+     "feedback": "Right. Only the vv box gives white flowers. The other three give violet: about 3 violet to 1 white."
+    },
+    {
+     "text": "0%: both parents are violet",
+     "feedback": "Both parents carry a hidden v. One box in four is vv: white."
+    },
+    {
+     "text": "50%",
+     "feedback": "Two boxes are Vv, but those are violet. Only vv, one box in four, is white."
+    },
+    {
+     "text": "100%",
+     "feedback": "Three of the four boxes have at least one V, so they're violet."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "title": "Variation",
+   "instruction": "Compare with the parents.",
+   "showsDiagram": true,
+   "question": "Why can two violet parents have a white-flowered offspring?",
+   "options": [
+    {
+     "text": "Each parent passes on one allele, and both can pass on their hidden v",
+     "correct": true,
+     "feedback": "Yes. Sexual reproduction mixes alleles from two parents, so offspring can differ from both."
+    },
+    {
+     "text": "The flower changed color as it grew",
+     "feedback": "The color comes from the alleles it inherited: vv gives white."
+    },
+    {
+     "text": "It's a mistake",
+     "feedback": "It's expected. Mixing alleles from two parents creates variation."
+    },
+    {
+     "text": "White is dominant",
+     "feedback": "White is recessive. It shows when an offspring gets v from both parents."
+    }
+   ]
+  }
+ ]
+}
